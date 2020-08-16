@@ -1,0 +1,35 @@
+{
+  "name": "@bitflower/design-system",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/design-system/design-system.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build-watch": "stencil build --prod --docs --watch",
+    "build": "stencil build --prod --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {
+    "@ryancavanaugh/pkg1": "^3.0.2",
+    "@ryancavanaugh/pkg2": "^3.0.2"
+  },
+  "devDependencies": {
+    "@stencil/core": "^1.12.7",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-polyfills": "^0.1.2",
+    "typescript": "^3.8.3"
+  },
+  "license": "MIT"
+}
