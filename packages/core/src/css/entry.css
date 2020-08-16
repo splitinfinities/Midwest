@@ -1,0 +1,237 @@
+@tailwind base;
+@import "./theme.css";
+@import "./automation.css";
+
+:root {
+  --black: color(black);
+  --white: color(white);
+
+  --gray0: color(gray, 0);
+  --gray1: color(gray, 1);
+  --gray2: color(gray, 2);
+  --gray3: color(gray, 3);
+  --gray4: color(gray, 4);
+  --gray5: color(gray, 5);
+  --gray6: color(gray, 6);
+  --gray7: color(gray, 7);
+  --gray8: color(gray, 8);
+  --gray9: color(gray, 9);
+  --gray10: color(gray, 10);
+  --gray11: color(gray, 11);
+  --gray12: color(gray, 12);
+
+  --red0: color(red, 0);
+  --red1: color(red, 1);
+  --red2: color(red, 2);
+  --red3: color(red, 3);
+  --red4: color(red, 4);
+  --red5: color(red, 5);
+  --red6: color(red, 6);
+  --red7: color(red, 7);
+  --red8: color(red, 8);
+  --red9: color(red, 9);
+  --red10: color(red, 10);
+  --red11: color(red, 11);
+  --red12: color(red, 12);
+
+  --orange0: color(orange, 0);
+  --orange1: color(orange, 1);
+  --orange2: color(orange, 2);
+  --orange3: color(orange, 3);
+  --orange4: color(orange, 4);
+  --orange5: color(orange, 5);
+  --orange6: color(orange, 6);
+  --orange7: color(orange, 7);
+  --orange8: color(orange, 8);
+  --orange9: color(orange, 9);
+  --orange10: color(orange, 10);
+  --orange11: color(orange, 11);
+  --orange12: color(orange, 12);
+
+  --gold0: color(gold, 0);
+  --gold1: color(gold, 1);
+  --gold2: color(gold, 2);
+  --gold3: color(gold, 3);
+  --gold4: color(gold, 4);
+  --gold5: color(gold, 5);
+  --gold6: color(gold, 6);
+  --gold7: color(gold, 7);
+  --gold8: color(gold, 8);
+  --gold9: color(gold, 9);
+  --gold10: color(gold, 10);
+  --gold11: color(gold, 11);
+  --gold12: color(gold, 12);
+
+  --yellow0: color(yellow, 0);
+  --yellow1: color(yellow, 1);
+  --yellow2: color(yellow, 2);
+  --yellow3: color(yellow, 3);
+  --yellow4: color(yellow, 4);
+  --yellow5: color(yellow, 5);
+  --yellow6: color(yellow, 6);
+  --yellow7: color(yellow, 7);
+  --yellow8: color(yellow, 8);
+  --yellow9: color(yellow, 9);
+  --yellow10: color(yellow, 10);
+  --yellow11: color(yellow, 11);
+  --yellow12: color(yellow, 12);
+
+  --lime0: color(lime, 0);
+  --lime1: color(lime, 1);
+  --lime2: color(lime, 2);
+  --lime3: color(lime, 3);
+  --lime4: color(lime, 4);
+  --lime5: color(lime, 5);
+  --lime6: color(lime, 6);
+  --lime7: color(lime, 7);
+  --lime8: color(lime, 8);
+  --lime9: color(lime, 9);
+  --lime10: color(lime, 10);
+  --lime11: color(lime, 11);
+  --lime12: color(lime, 12);
+
+  --green0: color(green, 0);
+  --green1: color(green, 1);
+  --green2: color(green, 2);
+  --green3: color(green, 3);
+  --green4: color(green, 4);
+  --green5: color(green, 5);
+  --green6: color(green, 6);
+  --green7: color(green, 7);
+  --green8: color(green, 8);
+  --green9: color(green, 9);
+  --green10: color(green, 10);
+  --green11: color(green, 11);
+  --green12: color(green, 12);
+
+  --teal0: color(teal, 0);
+  --teal1: color(teal, 1);
+  --teal2: color(teal, 2);
+  --teal3: color(teal, 3);
+  --teal4: color(teal, 4);
+  --teal5: color(teal, 5);
+  --teal6: color(teal, 6);
+  --teal7: color(teal, 7);
+  --teal8: color(teal, 8);
+  --teal9: color(teal, 9);
+  --teal10: color(teal, 10);
+  --teal11: color(teal, 11);
+  --teal12: color(teal, 12);
+
+  --cyan0: color(cyan, 0);
+  --cyan1: color(cyan, 1);
+  --cyan2: color(cyan, 2);
+  --cyan3: color(cyan, 3);
+  --cyan4: color(cyan, 4);
+  --cyan5: color(cyan, 5);
+  --cyan6: color(cyan, 6);
+  --cyan7: color(cyan, 7);
+  --cyan8: color(cyan, 8);
+  --cyan9: color(cyan, 9);
+  --cyan10: color(cyan, 10);
+  --cyan11: color(cyan, 11);
+  --cyan12: color(cyan, 12);
+
+  --blue0: color(blue, 0);
+  --blue1: color(blue, 1);
+  --blue2: color(blue, 2);
+  --blue3: color(blue, 3);
+  --blue4: color(blue, 4);
+  --blue5: color(blue, 5);
+  --blue6: color(blue, 6);
+  --blue7: color(blue, 7);
+  --blue8: color(blue, 8);
+  --blue9: color(blue, 9);
+  --blue10: color(blue, 10);
+  --blue11: color(blue, 11);
+  --blue12: color(blue, 12);
+
+  --indigo0: color(indigo, 0);
+  --indigo1: color(indigo, 1);
+  --indigo2: color(indigo, 2);
+  --indigo3: color(indigo, 3);
+  --indigo4: color(indigo, 4);
+  --indigo5: color(indigo, 5);
+  --indigo6: color(indigo, 6);
+  --indigo7: color(indigo, 7);
+  --indigo8: color(indigo, 8);
+  --indigo9: color(indigo, 9);
+  --indigo10: color(indigo, 10);
+  --indigo11: color(indigo, 11);
+  --indigo12: color(indigo, 12);
+
+  --violet0: color(violet, 0);
+  --violet1: color(violet, 1);
+  --violet2: color(violet, 2);
+  --violet3: color(violet, 3);
+  --violet4: color(violet, 4);
+  --violet5: color(violet, 5);
+  --violet6: color(violet, 6);
+  --violet7: color(violet, 7);
+  --violet8: color(violet, 8);
+  --violet9: color(violet, 9);
+  --violet10: color(violet, 10);
+  --violet11: color(violet, 11);
+  --violet12: color(violet, 12);
+
+  --magenta0: color(magenta, 0);
+  --magenta1: color(magenta, 1);
+  --magenta2: color(magenta, 2);
+  --magenta3: color(magenta, 3);
+  --magenta4: color(magenta, 4);
+  --magenta5: color(magenta, 5);
+  --magenta6: color(magenta, 6);
+  --magenta7: color(magenta, 7);
+  --magenta8: color(magenta, 8);
+  --magenta9: color(magenta, 9);
+  --magenta10: color(magenta, 10);
+  --magenta11: color(magenta, 11);
+  --magenta12: color(magenta, 12);
+
+  --pink0: color(pink, 0);
+  --pink1: color(pink, 1);
+  --pink2: color(pink, 2);
+  --pink3: color(pink, 3);
+  --pink4: color(pink, 4);
+  --pink5: color(pink, 5);
+  --pink6: color(pink, 6);
+  --pink7: color(pink, 7);
+  --pink8: color(pink, 8);
+  --pink9: color(pink, 9);
+  --pink10: color(pink, 10);
+  --pink11: color(pink, 11);
+  --pink12: color(pink, 12);
+
+  --ease: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+  --font-heading: var(--font-system);
+  --font-subheading: var(--font-system);
+  --font-body: var(--font-system);
+
+  --theme-base0: var(--red0);
+  --theme-base1: var(--red1);
+  --theme-base2: var(--red2);
+  --theme-base3: var(--red3);
+  --theme-base4: var(--red4);
+  --theme-base5: var(--red5);
+  --theme-base6: var(--red6);
+  --theme-base7: var(--red7);
+  --theme-base8: var(--red8);
+  --theme-base9: var(--red9);
+
+  --theme-complement0: var(--indigo0);
+  --theme-complement1: var(--indigo1);
+  --theme-complement2: var(--indigo2);
+  --theme-complement3: var(--indigo3);
+  --theme-complement4: var(--indigo4);
+  --theme-complement5: var(--indigo5);
+  --theme-complement6: var(--indigo6);
+  --theme-complement7: var(--indigo7);
+  --theme-complement8: var(--indigo8);
+  --theme-complement9: var(--indigo9);
+}
+
+@tailwind utilities;

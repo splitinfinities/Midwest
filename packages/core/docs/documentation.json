@@ -1,0 +1,258 @@
+{
+  "timestamp": "2020-08-17T03:53:32",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.17.3",
+    "typescriptVersion": "3.9.7"
+  },
+  "components": [
+    {
+      "filePath": "./src/components/avatar/avatar.tsx",
+      "encapsulation": "shadow",
+      "tag": "midwest-avatar",
+      "readme": "# stellar-avatar\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {
+        "colors": "<stellar-avatar name=\"William M. Riley\" color=\"red\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"orange\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"yellow\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"lime\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"green\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"teal\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"cyan\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"blue\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"indigo\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"violet\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"fuschia\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"pink\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" color=\"gray\"></stellar-avatar>\n",
+        "default": "<stellar-avatar name=\"William M. Riley\"></stellar-avatar>\n",
+        "shape": "<stellar-avatar name=\"William M. Riley\" size=\"tiny\" shape=\"circle\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"small\" shape=\"circle\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"medium\" shape=\"circle\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"large\" shape=\"circle\"></stellar-avatar>\n\n<stellar-avatar name=\"William M. Riley\" size=\"tiny\" shape=\"rectangle\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"small\" shape=\"rectangle\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"medium\" shape=\"rectangle\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"large\" shape=\"rectangle\"></stellar-avatar>\n\n<stellar-avatar name=\"William M. Riley\" size=\"tiny\" shape=\"diamond\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"small\" shape=\"diamond\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"medium\" shape=\"diamond\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"large\" shape=\"diamond\"></stellar-avatar>\n\n<stellar-avatar name=\"William M. Riley\" size=\"tiny\" shape=\"star\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"small\" shape=\"star\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"medium\" shape=\"star\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"large\" shape=\"star\"></stellar-avatar>\n\n<stellar-avatar name=\"William M. Riley\" size=\"tiny\" shape=\"message\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"small\" shape=\"message\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"medium\" shape=\"message\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"large\" shape=\"message\"></stellar-avatar>\n",
+        "sizes": "<stellar-avatar name=\"William M. Riley\" size=\"tiny\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"small\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"medium\"></stellar-avatar>\n<stellar-avatar name=\"William M. Riley\" size=\"large\"></stellar-avatar>\n"
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "string",
+          "mutable": true,
+          "attr": "color",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"auto\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "dark",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "dark",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "mutable": false,
+          "attr": "icon",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "initials",
+          "type": "string",
+          "mutable": true,
+          "attr": "initials",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"MW\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "mutable": true,
+          "attr": "name",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"Midwest Design\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "noTooltip",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "no-tooltip",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "processing",
+          "type": "boolean",
+          "mutable": true,
+          "attr": "processing",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "shape",
+          "type": "\"circle\" | \"diamond\" | \"hexagon\" | \"message\" | \"rectangle\" | \"square\" | \"star\"",
+          "mutable": true,
+          "attr": "shape",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"square\"",
+          "values": [
+            {
+              "value": "circle",
+              "type": "string"
+            },
+            {
+              "value": "diamond",
+              "type": "string"
+            },
+            {
+              "value": "hexagon",
+              "type": "string"
+            },
+            {
+              "value": "message",
+              "type": "string"
+            },
+            {
+              "value": "rectangle",
+              "type": "string"
+            },
+            {
+              "value": "square",
+              "type": "string"
+            },
+            {
+              "value": "star",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "size",
+          "type": "\"huge\" | \"large\" | \"medium\" | \"medium-small\" | \"small\" | \"tiny\" | \"xlarge\"",
+          "mutable": true,
+          "attr": "size",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "value": "huge",
+              "type": "string"
+            },
+            {
+              "value": "large",
+              "type": "string"
+            },
+            {
+              "value": "medium",
+              "type": "string"
+            },
+            {
+              "value": "medium-small",
+              "type": "string"
+            },
+            {
+              "value": "small",
+              "type": "string"
+            },
+            {
+              "value": "tiny",
+              "type": "string"
+            },
+            {
+              "value": "xlarge",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "src",
+          "type": "string",
+          "mutable": false,
+          "attr": "src",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "context-consumer"
+      ],
+      "dependencyGraph": {
+        "midwest-avatar": [
+          "context-consumer"
+        ]
+      }
+    }
+  ]
+}

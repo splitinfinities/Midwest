@@ -1,0 +1,106 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "midwest-avatar",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "color",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "icon",
+          "description": ""
+        },
+        {
+          "name": "initials",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "description": ""
+        },
+        {
+          "name": "no-tooltip",
+          "description": ""
+        },
+        {
+          "name": "processing",
+          "description": ""
+        },
+        {
+          "name": "shape",
+          "description": "",
+          "values": [
+            {
+              "name": "circle"
+            },
+            {
+              "name": "diamond"
+            },
+            {
+              "name": "hexagon"
+            },
+            {
+              "name": "message"
+            },
+            {
+              "name": "rectangle"
+            },
+            {
+              "name": "square"
+            },
+            {
+              "name": "star"
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "description": "",
+          "values": [
+            {
+              "name": "huge"
+            },
+            {
+              "name": "large"
+            },
+            {
+              "name": "medium"
+            },
+            {
+              "name": "medium-small"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            },
+            {
+              "name": "xlarge"
+            }
+          ]
+        },
+        {
+          "name": "src",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/avatar/avatar.tsx"
+        }
+      ]
+    }
+  ]
+}

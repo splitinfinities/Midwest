@@ -1,0 +1,56 @@
+{
+  "license": "MIT",
+  "name": "@midwest-design/core",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.js",
+  "module": "./dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/core/core.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "version": "standard-version -t @midwest-design/core\\@",
+    "build": "stencil build --docs",
+    "build.ci": "stencil build --ci",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "storybook.start": "start-storybook -p 6006 -s www",
+    "storybook.build": "build-storybook -c .storybook -o storybook-dist",
+    "generate": "stencil generate",
+    "dev": "npm run watch-dev | npm run dev-stencil",
+    "dev-stencil": "npm run dev-mode && npm run co-prebuild && stencil build --dev --watch --serve",
+    "watch-dev": "node ./build/dev-watch.js"
+  },
+  "contributes": {
+    "html": {
+      "customData": [
+        "./dist/html.html-data.json"
+      ]
+    }
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@midwest-design/common": "0.0.1",
+    "@stencil/core": "latest",
+    "@stencil/postcss": "^1.0.1",
+    "@stencil/state-tunnel": "^1.0.1",
+    "@storybook/addon-a11y": "^6.0.10",
+    "@storybook/addon-knobs": "^6.0.10",
+    "@types/validator": "^13.1.0",
+    "autoprefixer": "^9.8.6",
+    "lit-html": "^1.2.1",
+    "postcss-design-token-function": "^1.0.0",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.6.2",
+    "tailwindcss-animations": "^2.0.0",
+    "validator": "^13.1.1"
+  }
+}

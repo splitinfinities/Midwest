@@ -1,0 +1,293 @@
+:root,
+html {
+  @apply subpixel-antialiased;
+  @apply bg-gray-0;
+  font-variant-numeric: tabular-nums;
+  scroll-behavior: smooth;
+  scroll-padding: 4rem;
+  color: var(--black);
+  letter-spacing: 0.02em;
+  font-size: 10px;
+}
+
+@media (min-width: 400px) {
+  :root,
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 600px) {
+  :root,
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 800px) {
+  :root,
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root,
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root,
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+::selection,
+*::selection {
+  background: var(--theme-base2) !important;
+}
+
+html * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray3) var(--white);
+}
+
+.dark-mode * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray9) var(--black);
+}
+
+html *::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+html *::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+html *::-webkit-scrollbar-thumb {
+  background-color: var(--gray3);
+  border-radius: 6px;
+  border: 3px solid var(--white);
+}
+
+.dark-mode *::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+.dark-mode *::-webkit-scrollbar-thumb {
+  background-color: var(--gray9);
+  border-radius: 6px;
+  border: 3px solid var(--black);
+}
+
+
+.debug,
+.debug * {
+  outline: 1px solid black;
+}
+
+html,
+body {
+  @apply min-h-screen;
+}
+
+html.dark-mode {
+  @apply bg-black;
+}
+
+body {
+  @apply text-xl;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-azo;
+  font-weight: 700;
+  font-weight: bolder;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+h1 {
+  @apply text-5xl;
+}
+
+h2 {
+  @apply text-4xl;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+h4 {
+  @apply text-2xl;
+}
+
+h5 {
+  @apply text-xl;
+}
+
+h6 {
+  @apply text-lg;
+}
+
+p {
+  color: var(--gray10);
+}
+
+.dark-mode p {
+  color: var(--gray2);
+}
+
+a {
+  @apply underline;
+  color: var(--theme-base6, theme("colors.red.6"));
+  text-decoration-color: var(--theme-base3, theme("colors.red.3"));
+  text-decoration-thickness: 2px;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:active {
+  color: var(--theme-base8, theme("colors.red.8"));
+  text-decoration-color: var(--theme-base6, theme("colors.red.6"));
+}
+
+.clip {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.sticky {
+  position: sticky;
+}
+
+
+.layer-children {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.layer-children > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.medium-zoom-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 300ms;
+  will-change: opacity;
+  z-index: 9998;
+}
+
+body > canvas[width="80"][height="80"] {
+  display: none;
+}
+
+.medium-zoom--opened .medium-zoom-overlay {
+  cursor: pointer;
+  cursor: zoom-out;
+  opacity: 1;
+}
+
+.medium-zoom-image {
+  cursor: pointer;
+  cursor: zoom-in;
+  transition: transform 300ms cubic-bezier(0.2, 0, 0.2, 1) !important;
+  object-fit: contain;
+  z-index: 9999;
+}
+
+.medium-zoom-image--hidden {
+  visibility: hidden;
+}
+
+.medium-zoom-image--opened {
+  position: relative;
+  cursor: pointer;
+  cursor: zoom-out;
+  will-change: transform;
+}
+
+midwest-callout a {
+  color: var(--white);
+}
+
+midwest-callout a:hover,
+midwest-callout a:focus {
+  color: var(--theme-base0);
+}
+
+midwest-callout + midwest-callout {
+  margin-top: 0.5rem;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p,
+p + p {
+  @apply font-lato;
+  margin-top: 1rem;
+}
+
+p + sa-button {
+  margin-top: 1rem;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+animate-presence [data-enter] {
+  animation: none;
+}
+}
+
+animate-presence [data-enter] {
+  animation: fadeInUp 0.35s var(--ease);
+}
+@media screen and (prefers-reduced-motion: reduce) {
+animate-presence [data-exit] {
+  animation: none;
+  animation-fill-mode: both;
+}
+}
+animate-presence [data-exit] {
+  animation: fadeInUp 0.35s var(--ease) reverse;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 0.5rem, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

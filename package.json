@@ -1,11 +1,39 @@
 {
+  "name": "@midwest-design/monorepo",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "build": "lerna run build --stream",
-    "dev": "lerna run --scope='app' start --stream",
-    "server": "lerna run start-ts --stream"
+    "build.common": "lerna run build --stream --scope={@midwest-design/common}",
+    "build.core": "lerna run build --stream --scope={@midwest-design/core}",
+    "build.media": "lerna run build --stream --scope={@midwest-design/media}",
+    "build.forms": "lerna run build --stream --scope={@midwest-design/forms}",
+    "build.helpers": "lerna run build --stream --scope={@midwest-design/helpers}",
+    "build.docs": "lerna run build --stream --scope={@midwest-design/docs}",
+    "lint.styles": "lerna run lint.styles --stream",
+    "stylelint.fix": "lerna run stylelint.fix --stream --parallel",
+    "dev": "lerna run start --stream",
+    "bootstrap": "lerna bootstrap && yarn build.common",
+    "clean": "yarn clean.npm && yarn clean.lockfiles && yarn clean.stencil-cache",
+    "clean.npm": "find . -name \"node_modules\" -exec rm -rf '{}' +",
+    "clean.lockfiles": "find . -name \"package-lock.json\" -exec rm -rf '{}' +",
+    "clean.stencil-cache": "find . -name \".stencil\" -exec rm -rf '{}' +",
+    "lerna.version": "lerna version --conventional-commits --yes --no-push",
+    "lerna.publish": "lerna publish from-package",
+    "git.push": "git push --follow-tags",
+    "bump": "yarn build && yarn lerna.version && yarn lerna.publish && yarn git.push",
+    "diff": "lerna diff"
   },
+  "license": "MIT",
+  "engines": {
+    "node": "^12 || ^14"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "lerna": "^3.13.4",
+    "standard-version": "8.0.0",
     "typescript": "^3.8.3"
   }
 }

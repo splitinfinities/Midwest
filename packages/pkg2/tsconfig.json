@@ -1,9 +1,0 @@
-{
-  "extends": "../tsconfig.settings.json",
-  "compilerOptions": {
-    "moduleResolution": "node",
-    "outDir": "lib",
-    "rootDir": "src"
-  },
-  "references": [{ "path": "../pkg1" }]
-}
