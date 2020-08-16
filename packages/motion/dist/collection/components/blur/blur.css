@@ -1,0 +1,35 @@
+:host,
+:host *,
+:host *::before,
+:host *::after {
+  box-sizing: border-box;
+}
+
+:host {
+  display: inline-block;
+}
+
+midwest-blur,
+midwest-blur *,
+midwest-blur *::before,
+midwest-blur *::after {
+  box-sizing: border-box;
+}
+
+midwest-blur {
+  -webkit-filter: var(--blur-url);
+          filter: var(--blur-url);
+  display: block;
+  overflow: initial;
+}
+
+midwest-blur .blur-svg {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  midwest-blur {
+    -webkit-filter: none !important;
+            filter: none !important;
+  }
+}

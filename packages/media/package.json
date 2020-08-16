@@ -1,0 +1,40 @@
+{
+  "name": "@midwest-design/media",
+  "version": "0.0.0",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.js",
+  "module": "./dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/media/media.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@midwest-design/common": "^0.0.0",
+    "@midwest-design/core": "^0.0.0",
+    "@stencil/core": "latest",
+    "@stencil/postcss": "^1.0.1",
+    "async-delay": "^1.0.3",
+    "autoprefixer": "^9.8.6",
+    "ez-clipboard": "^1.0.0",
+    "ionicons": "^5.1.2",
+    "kaleidoscopejs": "^1.1.1",
+    "medium-zoom": "^1.0.6",
+    "postcss-import": "^12.0.1",
+    "small-indexeddb": "^2.0.0"
+  },
+  "license": "MIT"
+}

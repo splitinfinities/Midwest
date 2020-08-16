@@ -1,0 +1,15 @@
+:host,
+:host *,
+:host *:before,
+:host *:after {
+  box-sizing: border-box;
+}
+
+:host {
+  display: inline-block;
+}
+
+:host midwest-label {
+  margin: 0;
+  margin-left: 0.5rem;
+}

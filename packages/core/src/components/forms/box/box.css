@@ -1,0 +1,120 @@
+:host {
+  --border-color: var(--gray2);
+  --active-border-color: var(--gray3);
+  --background: var(--white);
+  --focus: var(--gray0);
+  --border-radius: 0.1em;
+  --active-background: var(--theme-base5);
+
+  font-size: 2rem;
+  display: flex;
+  position: relative;
+  flex: 0 0 1em;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms var(--ease) 0s;
+  margin: 0 7.5px 0 0.2px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 0 1px var(--border-color);
+  background: var(--background) 50% 50% / 5px 4px no-repeat;
+  width: 1em;
+  height: 1em;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  contain: content;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host {
+    transition: none;
+  }
+}
+
+:host .indicator {
+  transition: all 150ms var(--ease) 0s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: 50% 50%;
+  background: var(--active-background);
+  color: var(--white);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border-radius: var(--border-radius);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .indicator {
+    transition: none;
+  }
+}
+
+:host([dark]) {
+  --border-color: var(--gray7);
+  --background: var(--gray8);
+  --focus: var(--gray0);
+  --border-radius: 0.1em;
+  --active-background: var(--theme-base6);
+  --active-border-color: var(--theme-base7);
+}
+
+:host([radio]) .indicator {
+  width: calc(100% - 0.25em);
+  height: calc(100% - 0.25em);
+}
+
+:host .indicator ion-icon {
+  height: 1em;
+  width: 1em;
+  font-size: 1em;
+  align-self: center;
+  margin: 1px;
+  display: flex;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 250ms var(--ease) 0s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .indicator ion-icon {
+    transition: none;
+  }
+}
+
+:host([focused]) {
+  --border-color: var(--theme-base3);
+  --background: var(--white);
+  --focus: var(--gray2);
+  --check-background: var(--white);
+}
+
+:host([disabled]) {
+  --border-color: var(--gray4);
+  --background: var(--gray3);
+  --focus: var(--gray2);
+  --check-background: var(--gray2);
+}
+
+:host([dark][focused]) {
+  --border-color: var(--gray7);
+  --background: var(--gray9);
+  --focus: var(--gray2);
+}
+
+:host([radio]) {
+  --border-radius: 100%;
+}
+
+:host([checked]) {
+  border-color: var(--active-border-color);
+}
+
+:host([checked]) .indicator {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+:host([checked]) .indicator ion-icon {
+  transform: scale(1);
+}

@@ -8,6 +8,7 @@
     "strict": true,
     "composite": true,
     "esModuleInterop": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "noImplicitAny": false
   }
 }

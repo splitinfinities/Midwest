@@ -1,11 +1,47 @@
 {
+  "name": "@midwest-design/monorepo",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "build": "lerna run build --stream",
-    "dev": "lerna run --scope='app' start --stream",
-    "server": "lerna run start-ts --stream"
+    "build.common": "lerna run build --stream --scope=@midwest-design/common",
+    "build.motion": "lerna run build --stream --scope=@midwest-design/motion",
+    "build.audio": "lerna run build --stream --scope=@midwest-design/audio",
+    "build.core": "lerna run build --stream --scope=@midwest-design/core",
+    "build.media": "lerna run build --stream --scope=@midwest-design/media",
+    "build.helpers": "lerna run build --stream --scope=@midwest-design/helpers",
+    "lint.styles": "lerna run lint.styles --stream",
+    "stylelint.fix": "lerna run stylelint.fix --stream --parallel",
+    "dev": "lerna run start --stream --parallel --scope={@midwest-design/common,@midwest-design/core,@midwest-design/media,@midwest-design/audio,@midwest-design/helpers,@midwest-design/motion}",
+    "bootstrap": "lerna bootstrap && yarn build.common",
+    "clean": "yarn clean.npm && yarn clean.lockfiles && yarn clean.stencil-cache && yarn clean.dist",
+    "clean.npm": "find . -name \"node_modules\" -exec rm -rf '{}' +",
+    "clean.lockfiles": "find . -name \"package-lock.json\" -exec rm -rf '{}' +",
+    "clean.stencil-cache": "find . -name \".stencil\" -exec rm -rf '{}' +",
+    "clean.dist": "find . -name \"dist\" -exec rm -rf '{}' +",
+    "lerna.version": "lerna version --conventional-commits --yes --no-push",
+    "lerna.publish": "lerna publish from-package",
+    "git.push": "git push --follow-tags",
+    "cut": "yarn build && yarn lerna.version && yarn lerna.publish && yarn git.push",
+    "diff": "lerna diff"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "bp-smart-commit"
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "^12 || ^14"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
+    "bp-smart-commit": "^1.4.1",
+    "husky": "^4.2.5",
     "lerna": "^3.13.4",
+    "standard-version": "8.0.0",
     "typescript": "^3.8.3"
   }
 }

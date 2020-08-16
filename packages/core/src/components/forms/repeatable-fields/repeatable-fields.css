@@ -1,0 +1,6 @@
+midwest-repeatable-fields,
+midwest-repeatable-fields *,
+midwest-repeatable-fields *:before,
+midwest-repeatable-fields *:after {
+  box-sizing: border-box;
+}

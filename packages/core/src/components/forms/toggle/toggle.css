@@ -1,0 +1,91 @@
+midwest-toggle {
+  box-sizing: border-box;
+  display: block;
+  font-family: inherit;
+  --background: var(--white);
+  --color: var(--black);
+  --border-color: var(--gray2);
+  position: relative;
+  z-index: 0;
+}
+
+midwest-toggle[inline-label] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+midwest-toggle + midwest-toggle {
+  margin-top: 3rem;
+}
+
+midwest-grid midwest-toggle + midwest-toggle {
+  margin-top: 0 !important;
+}
+
+midwest-toggle * {
+  box-sizing: border-box;
+}
+
+midwest-toggle ::selection,
+midwest-toggle *::selection {
+  background: var(--theme-base2) !important;
+}
+
+midwest-toggle .label {
+  margin-bottom: 0.5rem;
+  line-height: 1.69;
+  color: var(--color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+midwest-toggle midwest-card .item {
+  padding: 1rem;
+}
+
+midwest-toggle midwest-grid {
+  width: 100%;
+}
+
+midwest-toggle[block] midwest-grid {
+  border: 1px solid var(--border-color);
+  background: var(--border-color);
+  padding: 0;
+  --grid-gap: 1px !important;
+  align-items: stretch !important;
+}
+
+midwest-toggle[stacked] midwest-grid {
+  --grid-width: 100% !important;
+  border: 1px solid var(--border-color);
+  background: var(--border-color);
+  padding: 0;
+}
+
+midwest-toggle[block] midwest-item {
+  background: var(--gray0);
+}
+
+midwest-toggle[stacked] midwest-grid .grid {
+  width: 100%;
+  grid-gap: 0;
+}
+
+midwest-toggle[dark] {
+  --background: var(--gray9);
+  --color: var(--white);
+  --border-color: var(--gray8);
+}
+
+midwest-toggle .star {
+  color: var(--red5);
+  padding-left: 0.125rem;
+}
+
+.validation {
+  text-align: left;
+  margin-bottom: 0;
+  color: var(--red4);
+  font-weight: 500;
+}

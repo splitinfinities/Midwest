@@ -1,0 +1,24 @@
+:host {
+  @apply rounded;
+  display: block;
+  padding: 1rem;
+  background-color: var(--theme-base4);
+  border: 1px solid var(--theme-base5) !important;
+}
+
+:host .callout-wrap {
+  display: flex;
+  align-items: center;
+}
+
+:host(.db) .callout-wrap {
+  display: block;
+}
+
+:host ::slotted(*) {
+  color: var(--gray9);
+}
+
+:host([dark]) {
+  background-color: var(--theme-base6);
+}

@@ -1,0 +1,56 @@
+:host,
+:host *,
+:host *:before,
+:host *:after {
+  box-sizing: border-box;
+  --color: var(--black);
+}
+
+:host {
+  @apply text-base;
+  --margin: 0.25em;
+  line-height: 1.4;
+  color: var(--color);
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.125em !important;
+  margin-bottom: var(--margin);
+  cursor: pointer;
+}
+
+:host([hidden]) {
+  visibility: hidden !important;
+}
+
+:host([underneath]) {
+  margin-top: var(--margin);
+  margin-bottom: 0;
+  color: var(--gray7);
+  letter-spacing: 0.03em !important;
+}
+
+:host([size="small"]) {
+  @apply text-sm;
+}
+
+:host([size="large"]) {
+  @apply text-lg;
+}
+
+:host label {
+  all: inherit;
+  left: initial;
+  right: initial;
+  bottom: initial;
+  top: initial;
+  margin: auto;
+  box-shadow: none;
+}
+
+:host([dark]) {
+  color: var(--gray0);
+}
+
+:host([underneath][dark]) {
+  color: var(--gray5);
+}

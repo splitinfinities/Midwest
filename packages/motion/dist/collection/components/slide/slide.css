@@ -1,0 +1,51 @@
+:host,
+:host *,
+:host *::before,
+:host *::after {
+  box-sizing: border-box;
+}
+
+:host {
+  display: inline-block;
+}
+
+midwest-slide {
+  display: block;
+  width: var(--width, 100%);
+  height: 100%;
+  contain: content;
+}
+
+midwest-slide midwest-image,
+midwest-slide midwest-video {
+  height: 100%;
+
+  --object-fit: cover;
+  --figure-height: 100%;
+}
+
+.slide-zoom {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}

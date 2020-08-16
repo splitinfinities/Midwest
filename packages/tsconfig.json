@@ -1,10 +1,11 @@
 {
   "files": [],
   "references": [
-    { "path": "pkg1" },
-    { "path": "pkg2" },
-    { "path": "pkg3" },
-    { "path": "design-system" },
-    { "path": "app" }
+    { "path": "core" },
+    { "path": "motion" },
+    { "path": "media" },
+    { "path": "helpers" },
+    { "path": "common" },
+    { "path": "audio" }
   ]
 }

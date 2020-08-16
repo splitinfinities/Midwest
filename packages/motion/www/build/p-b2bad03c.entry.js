@@ -1,0 +1,1 @@
+import{r as s}from"./p-7dc2349f.js";const o=class{constructor(o){s(this,o)}};export{o as midwest_scroll_z_section}

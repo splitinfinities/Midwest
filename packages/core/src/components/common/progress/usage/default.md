@@ -1,0 +1,5 @@
+<midwest-progress value="1" max="20" id="awesome" slender></midwest-progress>
+<midwest-button onClick="document.querySelector('#awesome').value = 3">3</midwest-button>
+<midwest-button onClick="document.querySelector('#awesome').value = 9">9</midwest-button>
+<midwest-button onClick="document.querySelector('#awesome').value = 18">18</midwest-button>
+<midwest-button onClick="document.querySelector('#awesome').slender = !document.querySelector('#awesome').slender">Toggle slender</midwest-button>

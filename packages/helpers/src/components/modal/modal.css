@@ -1,0 +1,111 @@
+midwest-modal,
+midwest-modal *,
+midwest-modal *:before,
+midwest-modal *:after {
+  box-sizing: border-box;
+}
+
+midwest-modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  height: -webkit-fill-available;
+  width: 100% !important;
+  padding: 4rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 999999;
+  overflow-y: auto;
+}
+
+midwest-modal midwest-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right:0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px) grayscale(100%);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out 100ms;
+  transition: opacity 300ms var(--ease) 100ms;
+}
+
+midwest-modal[opening] midwest-overlay,
+midwest-modal[open] midwest-overlay {
+  opacity: 1;
+}
+
+midwest-modal midwest-loading {
+  background: var(--white);
+  display: block;
+  max-width: 30rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+.dark-mode midwest-modal midwest-loading {
+  background: var(--black);
+}
+
+midwest-modal[loading] {
+  align-items: center;
+}
+
+midwest-modal[open],
+midwest-modal[closing],
+midwest-modal[opening],
+midwest-modal[loading] {
+  display: flex;
+}
+
+midwest-modal > div {
+  display: none;
+  width: 100%;
+  animation-duration: .35s;
+  animation-fill-mode: both;
+  justify-content: center;
+  align-items: center;
+}
+
+midwest-modal > div > * {
+  width: 100%;
+}
+
+midwest-modal[open] > div {
+  display: flex; 
+  animation-name: open-modal;
+  opacity: 0;
+}
+
+midwest-modal[closing] > div { display: flex; animation-name: close-modal; }
+
+@keyframes open-modal {
+  from {
+      transform: translate3d(0,1rem,0);
+      opacity: 0;
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+  }
+}
+
+@keyframes close-modal {
+  from {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+  }
+
+  to {
+      transform: translate3d(0,1rem,0);
+      opacity: 0
+  }
+}

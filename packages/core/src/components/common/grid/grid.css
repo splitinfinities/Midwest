@@ -1,0 +1,98 @@
+midwest-grid,
+midwest-grid *,
+midwest-grid *:before,
+midwest-grid *:after {
+  box-sizing: border-box;
+}
+
+midwest-grid {
+  --grid-width: 200px;
+  --grid-gap: 2rem;
+  position: relative;
+  display: flex;
+  display: grid;
+  flex-wrap: wrap;
+  grid-gap: var(--grid-gap);
+  grid-template-columns: repeat(auto-fit, minmax(var(--grid-width), 1fr));
+}
+
+midwest-grid[padding] {
+  padding: var(--grid-gap);
+}
+
+/* Non-Responsive Grid */
+midwest-grid[noresponsive] {
+  grid-template-columns: repeat(auto-fit, minmax(var(--grid-width), 1fr));
+}
+
+midwest-grid[noresponsive][cols="1"] {
+  grid-template-columns: 1fr;
+}
+
+midwest-grid[noresponsive][cols="2"] {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+midwest-grid[noresponsive][cols="3"] {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+midwest-grid[noresponsive][cols="4"] {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+midwest-grid[noresponsive][cols="5"] {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+midwest-grid[noresponsive][cols="6"] {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+midwest-grid > *.width-all {
+  grid-column: 1 / -1;
+}
+
+midwest-grid > *.width-2 {
+  grid-column: auto / span 2;
+}
+
+midwest-grid > *.width-3 {
+  grid-column: auto / span 3;
+}
+
+midwest-grid > *.width-4 {
+  grid-column: auto / span 4;
+}
+
+midwest-grid > *.width-5 {
+  grid-column: auto / span 5;
+}
+
+midwest-grid > *.width-6 {
+  grid-column: auto / span 6;
+}
+
+midwest-grid > *.height-all {
+  grid-row: 1 / -1;
+}
+
+midwest-grid > *.height-2 {
+  grid-row: auto / span 2;
+}
+
+midwest-grid > *.height-3 {
+  grid-row: auto / span 3;
+}
+
+midwest-grid > *.height-4 {
+  grid-row: auto / span 4;
+}
+
+midwest-grid > *.height-5 {
+  grid-row: auto / span 5;
+}
+
+midwest-grid > *.height-6 {
+  grid-row: auto / span 6;
+}

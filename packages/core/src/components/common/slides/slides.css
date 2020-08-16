@@ -1,0 +1,10 @@
+@import "./vendor/slides-vendor.css";
+
+midwest-slides {
+  display: block;
+  contain: content;
+}
+
+midwest-slides midwest-slide > * {
+  width: 100%;
+}
