@@ -3,3 +3,5 @@ node_modules
 lerna-debug.log
 *.tsbuildinfo
 .DS_Store
+custom-elements.json
+documentation.json
