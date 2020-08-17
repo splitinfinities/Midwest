@@ -1,5 +1,5 @@
 {
-  "timestamp": "2020-08-17T19:10:24",
+  "timestamp": "2020-08-17T19:15:47",
   "compiler": {
     "name": "@stencil/core",
     "version": "1.17.3",
@@ -14086,18 +14086,13 @@
       "styles": [],
       "slots": [],
       "parts": [],
-      "dependents": [
-        "midwest-map"
-      ],
+      "dependents": [],
       "dependencies": [
         "midwest-progress"
       ],
       "dependencyGraph": {
         "skeleton-img": [
           "midwest-progress"
-        ],
-        "midwest-map": [
-          "skeleton-img"
         ]
       }
     },

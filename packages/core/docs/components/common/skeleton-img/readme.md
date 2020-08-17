@@ -50,10 +50,6 @@
 
 ## Dependencies
 
-### Used by
-
- - midwest-map
-
 ### Depends on
 
 - [midwest-progress](../progress)
@@ -62,7 +58,6 @@
 ```mermaid
 graph TD;
   skeleton-img --> midwest-progress
-  midwest-map --> skeleton-img
   style skeleton-img fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
