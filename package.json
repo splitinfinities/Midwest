@@ -25,6 +25,11 @@
     "bump": "yarn build && yarn lerna.version && yarn lerna.publish && yarn git.push",
     "diff": "lerna diff"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "bp-smart-commit"
+    }
+  },
   "license": "MIT",
   "engines": {
     "node": "^12 || ^14"
@@ -33,6 +38,8 @@
     "packages/*"
   ],
   "devDependencies": {
+    "bp-smart-commit": "^1.4.1",
+    "husky": "^4.2.5",
     "lerna": "^3.13.4",
     "standard-version": "8.0.0",
     "typescript": "^3.8.3"
