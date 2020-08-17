@@ -5,7 +5,53 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Item } from "./components/forms/item/item";
+import { Calendar, EventDef } from "@fullcalendar/core";
 export namespace Components {
+    interface CopyWrap {
+        "align": string;
+        "clamp": number;
+        "full": boolean;
+    }
+    interface MidwestAccordion {
+        "compact": boolean;
+        "dark": boolean;
+        "label": string;
+        "maxHeight": number;
+        "name": string;
+        "next": string;
+        "open": boolean;
+        "openIfInvalid": () => Promise<void>;
+        "tight": boolean;
+        "valid": boolean;
+        "validate": boolean;
+        "validateThis": () => Promise<void>;
+    }
+    interface MidwestAutocomplete {
+        "dark": boolean;
+        "dummy": boolean;
+        "freeTextField": string;
+        "groups": string[];
+        "inline": boolean;
+        "label": string;
+        "name": string;
+        "noAvatars": boolean;
+        "open": boolean;
+        "option_elements": () => Promise<HTMLMidwestItemElement[]>;
+        "options": Item[];
+        "placeholder": string;
+        "position": "up"|"down";
+        "ready": boolean;
+        "required": boolean;
+        "results": number;
+        "selected": Item[];
+        "tag": "radio"|"checkbox"|"a"|"button";
+        "url": string;
+        "valid": boolean;
+        "validate": (set?: boolean) => Promise<FormResult>;
+        "value": string[]|string;
+        "verbiage": string;
+    }
     interface MidwestAvatar {
         "color": string;
         "dark": boolean;
@@ -18,19 +64,1315 @@ export namespace Components {
         "size": "tiny" | "small" | "medium-small" | "medium" | "large" | "xlarge" | "huge";
         "src": string;
     }
+    interface MidwestButton {
+        /**
+          * Sets the button or link as an active state.
+         */
+        "active": boolean;
+        /**
+          * Authenticty Token
+         */
+        "authenticityToken": string;
+        /**
+          * Sets the button or link to render at full width to the parent.
+         */
+        "block": boolean;
+        "buttonTabIndex": number;
+        "confirm": string;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "contrast": boolean;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark": boolean;
+        /**
+          * Sets the button or link as disabled and not-interactable.
+         */
+        "disabled": boolean;
+        /**
+          * Makes sure the button cannot be exported.
+         */
+        "export": boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "for": string;
+        "ghost": boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "href": string;
+        /**
+          * Sets the button or link as a button with only an icon.
+         */
+        "icon": boolean;
+        /**
+          * Sets the button or link as a button with only an icon.
+         */
+        "iconOnly": boolean;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "invert": boolean;
+        /**
+          * Sets accessibility options on the buttons
+         */
+        "label": string;
+        /**
+          * Sets the button or link as an active state.
+         */
+        "method": "get"|"post"|"patch"|"put"|"delete";
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "modalHref": string;
+        /**
+          * Sets the name on the button if the button is an input. Allows the button to act as an item in a form.
+         */
+        "name": string;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "outline": boolean;
+        /**
+          * Sets the padding inside of the button.
+         */
+        "padding": "tiny" | "small" | "large";
+        /**
+          * Sets the button or link to render as a pill.
+         */
+        "pill": boolean;
+        "pjaxSelector": string;
+        /**
+          * Sets the button or link as processing when clicked.
+         */
+        "processable": boolean;
+        "processing": boolean;
+        /**
+          * Sets the size of the button.
+         */
+        "size": "tiny" | "small" | "large";
+        /**
+          * Sets the button or link as an active state.
+         */
+        "stopPropagation": boolean;
+        /**
+          * Allows the button to render for different tags.
+         */
+        "tag": "button" | "submit" | "link" | "span" | "modal" | "onboarding";
+        /**
+          * Sets the target on the anchor tag if the button is a link.
+         */
+        "target": string;
+        "usePjax": boolean;
+        /**
+          * Sets the value on the button if the button is an input.
+         */
+        "value": string;
+    }
+    interface MidwestCalendar {
+        "addEvent": (event: EventDef) => Promise<void>;
+        "backgroundEvents": any[];
+        "dark": boolean;
+        "events": any[];
+        "getCalendar": () => Promise<Calendar>;
+        "header": boolean|object;
+        "noToolbar": boolean;
+        "select": (date: Date) => Promise<void>;
+        "selectRange": boolean;
+        "selectable": boolean;
+        "size": "medium"|"small";
+        "value": string|Date;
+    }
+    interface MidwestCalendarDate {
+        "clock": boolean;
+        "dark": boolean;
+        "end": string;
+        "start": string;
+        "time": boolean;
+    }
+    interface MidwestCalendarEvent {
+        "event": string;
+        "eventId": string;
+    }
+    interface MidwestCallout {
+        "dark": boolean;
+        "type": "alert" | "error" | "info" | "success" | "default";
+    }
+    interface MidwestCard {
+        "backHeight": number;
+        /**
+          * Renders as a block in certain scenarios
+         */
+        "block": boolean;
+        /**
+          * Sets the minimum height of the card to 0 when true.
+         */
+        "compact": boolean;
+        "dark": boolean;
+        /**
+          * disallows this component from exporting to figma
+         */
+        "export": boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "flipIcon": string;
+        /**
+          * Let's a card be flippable
+         */
+        "flipReady": boolean;
+        "flip_card": () => Promise<void>;
+        /**
+          * Let's a card be flippable
+         */
+        "flippable": boolean;
+        /**
+          * Renders a flipped card
+         */
+        "flipped": boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "for": string;
+        /**
+          * Renders the hard horizontally
+         */
+        "horizontal": boolean;
+        /**
+          * Sets the href if the card is a link.
+         */
+        "href": string;
+        /**
+          * Sets the href if the card is a link.
+         */
+        "modalHref": string;
+        /**
+          * Sets the name if the card is a button.
+         */
+        "name": string;
+        "originalHeight": number;
+        /**
+          * Sets the padding inside of the button. Can be small, medium, or large.
+         */
+        "padding": "none" | "tiny" | "small" | "medium" | "large";
+        /**
+          * Sets the element to render the card as - an anchor tag, a button, or a div.
+         */
+        "tag": "a" | "button" | "div" | "modal";
+        /**
+          * Sets the type on a button
+         */
+        "type": string;
+        /**
+          * Sets the value if the card is a button.
+         */
+        "value": string;
+    }
+    interface MidwestContent {
+        "behavior": string;
+        "for": string;
+        "open": boolean;
+        "scrollWhenActive": boolean;
+    }
+    interface MidwestDatetimePicker {
+        /**
+          * auto close when minute is selected
+         */
+        "autoClose": boolean;
+        "dark": boolean;
+        "decrement": () => Promise<void>;
+        "dialRadius": number;
+        "duration": number;
+        "increment": () => Promise<void>;
+        "innerRadius": number;
+        "method": "date"|"time"|"datetime";
+        "outerRadius": number;
+        "showClear": boolean;
+        "tickRadius": number;
+        "updateHand": (value?: number | string) => Promise<void>;
+        "value": 'now'|string|string[];
+        "view": "minutes"|"hours"|"years"|"months"|"days";
+    }
+    interface MidwestFieldGroup {
+        "addElement": (el: HTMLElement) => Promise<void>;
+        "removeElement": (el: HTMLElement) => Promise<void>;
+        "state": (validate?: boolean) => Promise<{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string; }; formData: any; valid: boolean; }>;
+        "submitForm": () => Promise<void>;
+    }
+    interface MidwestForm {
+        "acceptCharset": string;
+        "action": string;
+        "addElement": (el: HTMLElement) => Promise<void>;
+        "addFieldGroup": (el: any) => Promise<void>;
+        "ajax": boolean;
+        "autocomplete": string;
+        "autosave": boolean;
+        "closeModalOnSuccess": boolean;
+        "enctype": string;
+        "get": (name?: string, validate?: boolean) => Promise<{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string; }; formData: any; valid: boolean; }>;
+        "method": string;
+        "name": string;
+        "novalidate": boolean;
+        "perform": boolean;
+        "removeElement": (el: HTMLElement) => Promise<void>;
+        "removeFieldGroup": (el: any) => Promise<void>;
+        "state": (validate?: boolean) => Promise<{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string; }; formData: any; valid: boolean; }>;
+        "submitForm": (button?: any) => Promise<void>;
+        "target": string;
+    }
+    interface MidwestFormRollup {
+        "appendCopy": string;
+        "count": number;
+        "fallback": string;
+        "for": string;
+        "noAvatars": boolean;
+        "options": HTMLMidwestItemElement[];
+        "placeholder": string;
+        "show": boolean;
+        "update": () => Promise<void>;
+        "verbiage": string;
+    }
+    interface MidwestGrid {
+        "cols": number | string;
+        "columnGap": number;
+        "columnWidth": number;
+        "noresponsive": boolean;
+        "padding": boolean;
+        "refresh": () => Promise<void>;
+    }
+    interface MidwestInput {
+        "autocomplete": "name" | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "username" | "current-password" | "new-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1" | "address-line2" | "address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "url" | "photo";
+        "autofocus": boolean;
+        "autoformat": boolean;
+        "capsLock": boolean;
+        "cols": number;
+        "customValidations": CustomFunction;
+        /**
+          * Sets the button to dark.
+         */
+        "dark": boolean;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "default": string|readonly string[];
+        "description": string;
+        "descriptionTransform": "capitalize" | "uppercase" | "lowercase" | "none" | "full-width" | "full-size-kana";
+        "disabled": boolean;
+        "focused": boolean;
+        "formatter": string;
+        "icon": boolean;
+        /**
+          * The name of the input element
+         */
+        "increments": boolean;
+        /**
+          * Sets the display to inline
+         */
+        "inline": boolean;
+        "inputTabIndex": number;
+        "label": string;
+        /**
+          * Sets the button to dark.
+         */
+        "leftIcon": string;
+        "match": string;
+        "max": number;
+        "maxlength": number;
+        "min": number;
+        "minChars": number;
+        /**
+          * The name of the input element
+         */
+        "name": string;
+        "novalidate": boolean;
+        "placeholder": string;
+        "processing": boolean;
+        "readonly": boolean;
+        "required": boolean;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "requirements": boolean;
+        "resetValue": () => Promise<void>;
+        "rows": number;
+        "setFocus": () => Promise<void>;
+        "shift": boolean;
+        "showCapsLock": boolean;
+        "size": "small" | "default" | "large";
+        "spellcheck": boolean;
+        "step": number;
+        "stepDown": () => Promise<void>;
+        "stepUp": () => Promise<void>;
+        "tooltip": string;
+        /**
+          * The kind of element that the Input should be rendered as
+         */
+        "type": "text" | "password" | "textarea" | "email" | "hidden" | "number" | "search" | "tel" | "postal-code" | "url" | "currency";
+        "valid": boolean;
+        "validate": (set?: boolean) => Promise<FormResult>;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "value": string|readonly string[];
+        "wrap": string;
+    }
+    interface MidwestInputDate {
+        "autofocus": boolean;
+        "customValidations": CustomFunction;
+        /**
+          * Sets the button to dark.
+         */
+        "dark": boolean;
+        "dateFocus": "month"|"date"|"year"|"hour"|"minute"|"ampm";
+        "dateRangeFocus": "from"|"to";
+        "description": string;
+        "disabled": boolean;
+        "focused": boolean;
+        "from": string;
+        "getDateTimeFromModal": () => Promise<void>;
+        /**
+          * Sets the display to inline
+         */
+        "inline": boolean;
+        "inputTabIndex": number;
+        "label": string;
+        /**
+          * Sets the button to dark.
+         */
+        "leftIcon": string;
+        "max": number;
+        "min": number;
+        /**
+          * The name of the input element
+         */
+        "name": string;
+        "noDuration": boolean;
+        "novalidate": boolean;
+        "placeholder": string;
+        "processing": boolean;
+        /**
+          * The kind of element that the Input should be rendered as
+         */
+        "range": "time" | "date" | "datetime";
+        "readonly": boolean;
+        "required": boolean;
+        "resetValue": () => Promise<void>;
+        "setFocus": () => Promise<void>;
+        "shift": boolean;
+        "size": "small" | "default" | "large";
+        "step": number;
+        "stepDown": () => Promise<void>;
+        "stepUp": () => Promise<void>;
+        "to": string;
+        "tooltip": string;
+        /**
+          * The kind of element that the Input should be rendered as
+         */
+        "type": "time" | "date" | "datetime";
+        "valid": boolean;
+        "validate": (set?: boolean) => Promise<FormResult>;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "value": string;
+    }
+    interface MidwestInputFile {
+        "accept": string;
+        /**
+          * Sets the button to dark.
+         */
+        "dark": boolean;
+        "description": string;
+        "disabled": boolean;
+        "droppable": boolean;
+        /**
+          * Hides this element from exporting to figma
+         */
+        "export": boolean;
+        "files": any[];
+        "focused": boolean;
+        "hideState": boolean;
+        "inputTabIndex": number;
+        "label": string;
+        "multiple": boolean;
+        "multipleFileCaption": string;
+        /**
+          * The name of the input element
+         */
+        "name": string;
+        "novalidate": boolean;
+        "placeholder": string;
+        "readonly": boolean;
+        "replacePlaceholder": string;
+        "required": boolean;
+        "size": "small" | "default" | "large";
+        "tooltip": string;
+        "validate": (set?: boolean) => Promise<FormResult>;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "value": any;
+    }
+    interface MidwestInputTags {
+        "allowNewItems": boolean;
+        "autofocus": boolean;
+        "base": ThemeableColors;
+        "complement": ThemeableColors;
+        "customValidations": CustomFunction;
+        "dark": boolean;
+        "description": string;
+        "disabled": boolean;
+        "export": boolean;
+        "focused": boolean;
+        "inputTabIndex": number;
+        "items": {id: number, name: string}[];
+        "label": string;
+        "minChars": number;
+        "name": string;
+        "novalidate": boolean;
+        "placeholder": string;
+        "readonly": boolean;
+        "required": boolean;
+        "size": "small" | "default" | "large";
+        "tooltip": string;
+        "valid": boolean;
+        "validate": (set?: boolean) => Promise<FormResult>;
+        "value": any;
+    }
+    interface MidwestItem {
+        "avatar": string;
+        "avatarIcon": string;
+        "avatarShape": "circle" | "square" | "rectangle" | "diamond" | "hexagon" | "message";
+        "avatarSize": "small" | "medium";
+        "avatarSrc": string;
+        "block": boolean;
+        "checked": boolean;
+        "content": string;
+        "dark": boolean;
+        "default": any;
+        "disabled": boolean;
+        /**
+          * Makes sure this element cannot be exported.
+         */
+        "export": boolean;
+        "focused": boolean;
+        "group": string;
+        "hasSelected": boolean;
+        "href": string;
+        "icon": string;
+        "inline": boolean;
+        "name": string;
+        "quiet": boolean;
+        "required": boolean;
+        "settableContent": boolean;
+        "settableParent": any;
+        "tag": "a" | "button" | "span" | "checkbox" | "radio";
+        "target": string;
+        "tooltip": string;
+        "validate": () => Promise<FormResult>;
+        "value": string;
+    }
+    interface MidwestItemGroup {
+        "dark": boolean;
+        "name": string;
+        "supplement": string;
+    }
+    interface MidwestLabel {
+        "color": string;
+        "colorIntensity": number;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark": boolean;
+        "for": string;
+        "italicized": boolean;
+        "size": string;
+        "textTransformation": "capitalize" | "uppercase" | "lowercase" | "none" | "full-width" | "full-size-kana";
+        "underneath": boolean;
+    }
+    interface MidwestLayout {
+        "align": "baseline" | "center" | "top" | "bottom";
+        "content": "baseline" | "center" | "top" | "bottom";
+        "hasNav": boolean;
+        "height": "fill";
+        "padding": "none" | "tiny" | "small" | "medium" | "large";
+        "size": "tiny" | "small" | "medium" | "large" | "xlarge" | "full" | "flush";
+        "type": string;
+    }
+    interface MidwestMessage {
+        "autoHide": boolean;
+        "closable": boolean;
+        "closing": boolean;
+        "dark": boolean;
+        "height": number|boolean;
+        "name": string;
+        "opening": boolean;
+        "remember": boolean;
+        "shown": boolean;
+        "size": "full" | "default";
+        "striped": boolean;
+        "type": "alert" | "error" | "info" | "success";
+    }
+    interface MidwestPagination {
+        "color": string;
+        "current": number;
+        "dark": boolean;
+        "first": () => Promise<void>;
+        "last": () => Promise<void>;
+        "next": () => Promise<void>;
+        "padding": number;
+        /**
+          * Public: Sets the max cap of pages you can skip through
+         */
+        "pages": number;
+        "previous": () => Promise<void>;
+        "type": "full" | "compact";
+        "url": any;
+    }
+    interface MidwestPasswordRequirements {
+        "for": string;
+        "size": "small" | "large";
+    }
+    interface MidwestRepeatableFields {
+        "addOneIfEmpty": boolean;
+        "custom": boolean;
+        "data": string;
+        "readonly": boolean;
+        "removeByIndex": (index: number) => Promise<void>;
+        "verbiage": string;
+    }
+    interface MidwestRichText {
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark": boolean;
+        "description": string;
+        "enableAlignment": boolean;
+        "enableEmojis": boolean;
+        "enableImages": boolean;
+        "enableLinks": boolean;
+        "enableMentions": boolean;
+        "enableRich": boolean;
+        "enableRicher": boolean;
+        /**
+          * Hides this element from exporting to figma
+         */
+        "export": boolean;
+        "getContents": () => Promise<{ ops: DeltaOperation[]; html: string; text: string; }>;
+        "getEditor": () => Promise<Quill>;
+        "getStringifiedContents": () => Promise<string>;
+        "inline": boolean;
+        "label": string;
+        "max": number;
+        "mentionDataFunction": () => void;
+        "mentionsData": {id: string, value: string}[];
+        "name": string;
+        "novalidate": boolean;
+        "placeholder": string;
+        "readonly": boolean;
+        "replace": (needle: string, becomes: string) => Promise<void>;
+        "required": boolean;
+        "setContents": (json: string) => Promise<void>;
+        "size": string;
+        "tooltip": string;
+        "twitterBased": boolean;
+        "valid": boolean;
+        "validate": (set?: boolean) => Promise<FormResult>;
+        "value": string;
+    }
+    interface MidwestSelect {
+        "align": "left"|"right";
+        "changeTheme": boolean;
+        "close": () => Promise<void>;
+        "dark": boolean;
+        "description": string;
+        "export": boolean;
+        "focused": boolean;
+        "inline": boolean;
+        "invert": boolean;
+        "label": string;
+        "loading": boolean;
+        "multiple": boolean;
+        "name": string;
+        "noAvatars": boolean;
+        "noClear": boolean;
+        "novalidate": boolean;
+        "open": boolean;
+        "optionEls": () => Promise<HTMLMidwestItemElement[]>;
+        "options": () => Promise<string[]>;
+        "pjaxReplace": string;
+        "placeholder": string;
+        "position": "up"|"down";
+        "ready": boolean;
+        "required": boolean;
+        "resize": boolean | "full";
+        "search": boolean;
+        "size": "tiny" | "small" | "large";
+        "tooltip": string;
+        "valid": boolean;
+        "validate": (set?: boolean) => Promise<FormResult>;
+        "value": string[]|string;
+        "verbiage": string;
+        "verbiageAn": boolean;
+        "wide": boolean;
+    }
+    interface MidwestShowIf {
+        "equals": string;
+        "field": string;
+        "notEquals": string;
+        "present": boolean;
+        "property": string;
+        "selector": string;
+        "triggered": string;
+    }
+    interface MidwestSlide {
+        "slideId": number;
+        "width": string;
+    }
+    interface MidwestSlides {
+        "autoHeight": boolean;
+        "autoplay": boolean;
+        "centeredSlides": boolean;
+        "direction": "horizontal" | "vertical";
+        "effect": "slide" | "fade" | "cube" | "coverflow" | "flip";
+        /**
+          * Get the index of the active slide.
+         */
+        "getActiveIndex": () => Promise<number>;
+        /**
+          * Get the index of the previous slide.
+         */
+        "getPreviousIndex": () => Promise<number>;
+        "initialSlide": number;
+        "instance": () => Promise<any>;
+        /**
+          * Get whether or not the current slide is the first slide.
+         */
+        "isBeginning": () => Promise<boolean>;
+        /**
+          * Get whether or not the current slide is the last slide.
+         */
+        "isEnd": () => Promise<boolean>;
+        /**
+          * Get the total number of slides.
+         */
+        "length": () => Promise<number>;
+        /**
+          * Lock or unlock the ability to slide to the next slides.
+         */
+        "lockSwipeToNext": (shouldLockSwipeToNext: boolean) => Promise<any>;
+        /**
+          * Lock or unlock the ability to slide to the previous slides.
+         */
+        "lockSwipeToPrev": (shouldLockSwipeToPrev: boolean) => Promise<any>;
+        /**
+          * Lock or unlock the ability to slide to change slides.
+         */
+        "lockSwipes": (shouldLockSwipes: boolean) => Promise<any>;
+        "loop": boolean;
+        "nested": boolean;
+        /**
+          * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
+         */
+        "options": any;
+        "pagination": boolean;
+        "responsive": boolean;
+        /**
+          * Transition to the next slide.
+         */
+        "slideNext": (speed?: number, runCallbacks?: boolean) => Promise<void>;
+        /**
+          * Transition to the previous slide.
+         */
+        "slidePrev": (speed?: number, runCallbacks?: boolean) => Promise<void>;
+        /**
+          * Transition to the specified slide.
+         */
+        "slideTo": (index: number, speed?: number, runCallbacks?: boolean) => Promise<void>;
+        "slidesPerView": number;
+        "spaceBetween": number;
+        "speed": number;
+        /**
+          * Start auto play.
+         */
+        "startAutoplay": () => Promise<void>;
+        /**
+          * Stop auto play.
+         */
+        "stopAutoplay": () => Promise<void>;
+        /**
+          * Update the underlying slider implementation. Call this if you've added or removed child slides.
+         */
+        "update": () => Promise<void>;
+        "watchSlidesProgress": boolean;
+        "watchSlidesVisibility": boolean;
+    }
+    interface MidwestStep {
+        "activate": () => Promise<void>;
+        "base": ThemeableColors;
+        "complete": boolean;
+        "current": boolean;
+        "dark": boolean;
+        "disabled": boolean;
+        "error": boolean;
+        "export": boolean;
+        "href": string;
+        "isValid": () => Promise<boolean>;
+        "open": boolean;
+        "order": number;
+        "past": boolean;
+        "show_validation": () => Promise<void>;
+        "tabCount": number;
+        "validate": boolean;
+    }
+    interface MidwestSteps {
+        "contents": () => Promise<HTMLMidwestContentElement[]>;
+        "dark": boolean;
+        "name": string;
+        "steps": () => Promise<HTMLMidwestStepElement[]>;
+        "switch": (step: HTMLMidwestStepElement) => Promise<void>;
+        "validate": boolean;
+    }
+    interface MidwestSwitch {
+        "activate": (event?: any) => Promise<void>;
+        "base": ThemeableColors;
+        "changeTheme": boolean;
+        "checked": boolean;
+        "checkedDefault": boolean;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark": boolean;
+        "description": string;
+        "disabled": boolean;
+        /**
+          * Hides this element from exporting to figma
+         */
+        "export": boolean;
+        "label": string;
+        "name": string;
+        "noValue": string;
+        "novalidate": boolean;
+        "required": boolean;
+        "size": "small" | "default" | "large";
+        "tooltip": string;
+        "validate": (set?: boolean) => Promise<FormResult>;
+        "value": string | boolean;
+        "yesValue": string;
+    }
+    interface MidwestTab {
+        "activate": () => Promise<void>;
+        "dark": boolean;
+        "disabled": boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "href": string;
+        "name": string;
+        "notifications": boolean | number;
+        "notificationsColor": string;
+        "open": boolean;
+        "order": number;
+        "size": "tiny" | "small" | "medium" | "large";
+        "tabCount": number;
+        "tag": "button" | "link";
+        /**
+          * Sets the target on the anchor tag if the button is a link.
+         */
+        "target": string;
+        "vertical": boolean;
+    }
+    interface MidwestTabs {
+        "behavior": string;
+        "block": boolean;
+        "blockIndicator": boolean;
+        "contents": () => Promise<HTMLMidwestContentElement[]>;
+        "dark": boolean;
+        "flipIndicator": boolean;
+        "height": string;
+        "name": string;
+        "noanimation": boolean;
+        "ready": boolean;
+        "size": "tiny" | "small" | "medium" | "large";
+        "tabHeight": number;
+        "tabLeft": number;
+        "tabOpacity": number;
+        "tabTop": number;
+        "tabWidth": number;
+        "tabs": () => Promise<HTMLMidwestTabElement[]>;
+        "vertical": boolean;
+    }
+    interface MidwestTag {
+        "base": ThemeableColors;
+        "color": ThemeableColors;
+        "complement": ThemeableColors;
+        "dark": boolean;
+        "icon": string;
+        "outline": boolean;
+        "pill": boolean;
+        "size": "tiny" | "small" | "large";
+    }
+    interface MidwestTheme {
+        "base": ThemeableColors;
+        "body": boolean;
+        "colors": string[];
+        "complement": ThemeableColors;
+        "dark": boolean;
+        "light": boolean;
+        "system": boolean;
+    }
+    interface MidwestTime {
+        "format": string;
+        "relative": boolean;
+        "unix": number;
+        "value": string;
+    }
+    interface MidwestToggle {
+        "base": ThemeableColors;
+        "block": boolean;
+        "complement": ThemeableColors;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark": boolean;
+        "description": string;
+        /**
+          * Makes sure this element cannot be exported.
+         */
+        "export": boolean;
+        "flip": boolean;
+        "inlineLabel": boolean;
+        "label": string;
+        "name": string;
+        "novalidate": boolean;
+        "optionEls": () => Promise<HTMLMidwestItemElement[]>;
+        "required": boolean;
+        "single": boolean;
+        "size": string;
+        "stacked": boolean;
+        "type": "checkbox" | "radio";
+        "validate": (set?: boolean) => Promise<FormResult>;
+        "value": string | string[];
+    }
+    interface MidwestTooltip {
+        "align": "left" | "center" | "right" | "middle-left" | "middle-center" | "middle-right" | "bottom-left" | "bottom-center" | "bottom-right";
+        "dark": boolean;
+        "focused": boolean;
+    }
+    interface MidwestUnit {
+        "decimals": number;
+        "from": any;
+        "money": boolean;
+        "round": boolean;
+        "to": any;
+        "value": number;
+    }
+    interface MidwestValidate {
+        "check": CustomFunction;
+        "color": string;
+        "customRender": (message: string[]) => any;
+        "element": ValidatableElements;
+        "get": () => Promise<FormResult>;
+        "name": string;
+        "silent": boolean;
+        "size": string;
+        "validate": (set?: boolean) => Promise<FormResult>;
+    }
+    interface SkeletonImg {
+        "block": boolean;
+        "height": number;
+        "icon": boolean;
+        "loading": boolean;
+        "width": number;
+    }
+    interface SkeletonText {
+        "as": string | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
+        "loading": boolean;
+        "width": number;
+    }
 }
 declare global {
+    interface HTMLCopyWrapElement extends Components.CopyWrap, HTMLStencilElement {
+    }
+    var HTMLCopyWrapElement: {
+        prototype: HTMLCopyWrapElement;
+        new (): HTMLCopyWrapElement;
+    };
+    interface HTMLMidwestAccordionElement extends Components.MidwestAccordion, HTMLStencilElement {
+    }
+    var HTMLMidwestAccordionElement: {
+        prototype: HTMLMidwestAccordionElement;
+        new (): HTMLMidwestAccordionElement;
+    };
+    interface HTMLMidwestAutocompleteElement extends Components.MidwestAutocomplete, HTMLStencilElement {
+    }
+    var HTMLMidwestAutocompleteElement: {
+        prototype: HTMLMidwestAutocompleteElement;
+        new (): HTMLMidwestAutocompleteElement;
+    };
     interface HTMLMidwestAvatarElement extends Components.MidwestAvatar, HTMLStencilElement {
     }
     var HTMLMidwestAvatarElement: {
         prototype: HTMLMidwestAvatarElement;
         new (): HTMLMidwestAvatarElement;
     };
+    interface HTMLMidwestButtonElement extends Components.MidwestButton, HTMLStencilElement {
+    }
+    var HTMLMidwestButtonElement: {
+        prototype: HTMLMidwestButtonElement;
+        new (): HTMLMidwestButtonElement;
+    };
+    interface HTMLMidwestCalendarElement extends Components.MidwestCalendar, HTMLStencilElement {
+    }
+    var HTMLMidwestCalendarElement: {
+        prototype: HTMLMidwestCalendarElement;
+        new (): HTMLMidwestCalendarElement;
+    };
+    interface HTMLMidwestCalendarDateElement extends Components.MidwestCalendarDate, HTMLStencilElement {
+    }
+    var HTMLMidwestCalendarDateElement: {
+        prototype: HTMLMidwestCalendarDateElement;
+        new (): HTMLMidwestCalendarDateElement;
+    };
+    interface HTMLMidwestCalendarEventElement extends Components.MidwestCalendarEvent, HTMLStencilElement {
+    }
+    var HTMLMidwestCalendarEventElement: {
+        prototype: HTMLMidwestCalendarEventElement;
+        new (): HTMLMidwestCalendarEventElement;
+    };
+    interface HTMLMidwestCalloutElement extends Components.MidwestCallout, HTMLStencilElement {
+    }
+    var HTMLMidwestCalloutElement: {
+        prototype: HTMLMidwestCalloutElement;
+        new (): HTMLMidwestCalloutElement;
+    };
+    interface HTMLMidwestCardElement extends Components.MidwestCard, HTMLStencilElement {
+    }
+    var HTMLMidwestCardElement: {
+        prototype: HTMLMidwestCardElement;
+        new (): HTMLMidwestCardElement;
+    };
+    interface HTMLMidwestContentElement extends Components.MidwestContent, HTMLStencilElement {
+    }
+    var HTMLMidwestContentElement: {
+        prototype: HTMLMidwestContentElement;
+        new (): HTMLMidwestContentElement;
+    };
+    interface HTMLMidwestDatetimePickerElement extends Components.MidwestDatetimePicker, HTMLStencilElement {
+    }
+    var HTMLMidwestDatetimePickerElement: {
+        prototype: HTMLMidwestDatetimePickerElement;
+        new (): HTMLMidwestDatetimePickerElement;
+    };
+    interface HTMLMidwestFieldGroupElement extends Components.MidwestFieldGroup, HTMLStencilElement {
+    }
+    var HTMLMidwestFieldGroupElement: {
+        prototype: HTMLMidwestFieldGroupElement;
+        new (): HTMLMidwestFieldGroupElement;
+    };
+    interface HTMLMidwestFormElement extends Components.MidwestForm, HTMLStencilElement {
+    }
+    var HTMLMidwestFormElement: {
+        prototype: HTMLMidwestFormElement;
+        new (): HTMLMidwestFormElement;
+    };
+    interface HTMLMidwestFormRollupElement extends Components.MidwestFormRollup, HTMLStencilElement {
+    }
+    var HTMLMidwestFormRollupElement: {
+        prototype: HTMLMidwestFormRollupElement;
+        new (): HTMLMidwestFormRollupElement;
+    };
+    interface HTMLMidwestGridElement extends Components.MidwestGrid, HTMLStencilElement {
+    }
+    var HTMLMidwestGridElement: {
+        prototype: HTMLMidwestGridElement;
+        new (): HTMLMidwestGridElement;
+    };
+    interface HTMLMidwestInputElement extends Components.MidwestInput, HTMLStencilElement {
+    }
+    var HTMLMidwestInputElement: {
+        prototype: HTMLMidwestInputElement;
+        new (): HTMLMidwestInputElement;
+    };
+    interface HTMLMidwestInputDateElement extends Components.MidwestInputDate, HTMLStencilElement {
+    }
+    var HTMLMidwestInputDateElement: {
+        prototype: HTMLMidwestInputDateElement;
+        new (): HTMLMidwestInputDateElement;
+    };
+    interface HTMLMidwestInputFileElement extends Components.MidwestInputFile, HTMLStencilElement {
+    }
+    var HTMLMidwestInputFileElement: {
+        prototype: HTMLMidwestInputFileElement;
+        new (): HTMLMidwestInputFileElement;
+    };
+    interface HTMLMidwestInputTagsElement extends Components.MidwestInputTags, HTMLStencilElement {
+    }
+    var HTMLMidwestInputTagsElement: {
+        prototype: HTMLMidwestInputTagsElement;
+        new (): HTMLMidwestInputTagsElement;
+    };
+    interface HTMLMidwestItemElement extends Components.MidwestItem, HTMLStencilElement {
+    }
+    var HTMLMidwestItemElement: {
+        prototype: HTMLMidwestItemElement;
+        new (): HTMLMidwestItemElement;
+    };
+    interface HTMLMidwestItemGroupElement extends Components.MidwestItemGroup, HTMLStencilElement {
+    }
+    var HTMLMidwestItemGroupElement: {
+        prototype: HTMLMidwestItemGroupElement;
+        new (): HTMLMidwestItemGroupElement;
+    };
+    interface HTMLMidwestLabelElement extends Components.MidwestLabel, HTMLStencilElement {
+    }
+    var HTMLMidwestLabelElement: {
+        prototype: HTMLMidwestLabelElement;
+        new (): HTMLMidwestLabelElement;
+    };
+    interface HTMLMidwestLayoutElement extends Components.MidwestLayout, HTMLStencilElement {
+    }
+    var HTMLMidwestLayoutElement: {
+        prototype: HTMLMidwestLayoutElement;
+        new (): HTMLMidwestLayoutElement;
+    };
+    interface HTMLMidwestMessageElement extends Components.MidwestMessage, HTMLStencilElement {
+    }
+    var HTMLMidwestMessageElement: {
+        prototype: HTMLMidwestMessageElement;
+        new (): HTMLMidwestMessageElement;
+    };
+    interface HTMLMidwestPaginationElement extends Components.MidwestPagination, HTMLStencilElement {
+    }
+    var HTMLMidwestPaginationElement: {
+        prototype: HTMLMidwestPaginationElement;
+        new (): HTMLMidwestPaginationElement;
+    };
+    interface HTMLMidwestPasswordRequirementsElement extends Components.MidwestPasswordRequirements, HTMLStencilElement {
+    }
+    var HTMLMidwestPasswordRequirementsElement: {
+        prototype: HTMLMidwestPasswordRequirementsElement;
+        new (): HTMLMidwestPasswordRequirementsElement;
+    };
+    interface HTMLMidwestRepeatableFieldsElement extends Components.MidwestRepeatableFields, HTMLStencilElement {
+    }
+    var HTMLMidwestRepeatableFieldsElement: {
+        prototype: HTMLMidwestRepeatableFieldsElement;
+        new (): HTMLMidwestRepeatableFieldsElement;
+    };
+    interface HTMLMidwestRichTextElement extends Components.MidwestRichText, HTMLStencilElement {
+    }
+    var HTMLMidwestRichTextElement: {
+        prototype: HTMLMidwestRichTextElement;
+        new (): HTMLMidwestRichTextElement;
+    };
+    interface HTMLMidwestSelectElement extends Components.MidwestSelect, HTMLStencilElement {
+    }
+    var HTMLMidwestSelectElement: {
+        prototype: HTMLMidwestSelectElement;
+        new (): HTMLMidwestSelectElement;
+    };
+    interface HTMLMidwestShowIfElement extends Components.MidwestShowIf, HTMLStencilElement {
+    }
+    var HTMLMidwestShowIfElement: {
+        prototype: HTMLMidwestShowIfElement;
+        new (): HTMLMidwestShowIfElement;
+    };
+    interface HTMLMidwestSlideElement extends Components.MidwestSlide, HTMLStencilElement {
+    }
+    var HTMLMidwestSlideElement: {
+        prototype: HTMLMidwestSlideElement;
+        new (): HTMLMidwestSlideElement;
+    };
+    interface HTMLMidwestSlidesElement extends Components.MidwestSlides, HTMLStencilElement {
+    }
+    var HTMLMidwestSlidesElement: {
+        prototype: HTMLMidwestSlidesElement;
+        new (): HTMLMidwestSlidesElement;
+    };
+    interface HTMLMidwestStepElement extends Components.MidwestStep, HTMLStencilElement {
+    }
+    var HTMLMidwestStepElement: {
+        prototype: HTMLMidwestStepElement;
+        new (): HTMLMidwestStepElement;
+    };
+    interface HTMLMidwestStepsElement extends Components.MidwestSteps, HTMLStencilElement {
+    }
+    var HTMLMidwestStepsElement: {
+        prototype: HTMLMidwestStepsElement;
+        new (): HTMLMidwestStepsElement;
+    };
+    interface HTMLMidwestSwitchElement extends Components.MidwestSwitch, HTMLStencilElement {
+    }
+    var HTMLMidwestSwitchElement: {
+        prototype: HTMLMidwestSwitchElement;
+        new (): HTMLMidwestSwitchElement;
+    };
+    interface HTMLMidwestTabElement extends Components.MidwestTab, HTMLStencilElement {
+    }
+    var HTMLMidwestTabElement: {
+        prototype: HTMLMidwestTabElement;
+        new (): HTMLMidwestTabElement;
+    };
+    interface HTMLMidwestTabsElement extends Components.MidwestTabs, HTMLStencilElement {
+    }
+    var HTMLMidwestTabsElement: {
+        prototype: HTMLMidwestTabsElement;
+        new (): HTMLMidwestTabsElement;
+    };
+    interface HTMLMidwestTagElement extends Components.MidwestTag, HTMLStencilElement {
+    }
+    var HTMLMidwestTagElement: {
+        prototype: HTMLMidwestTagElement;
+        new (): HTMLMidwestTagElement;
+    };
+    interface HTMLMidwestThemeElement extends Components.MidwestTheme, HTMLStencilElement {
+    }
+    var HTMLMidwestThemeElement: {
+        prototype: HTMLMidwestThemeElement;
+        new (): HTMLMidwestThemeElement;
+    };
+    interface HTMLMidwestTimeElement extends Components.MidwestTime, HTMLStencilElement {
+    }
+    var HTMLMidwestTimeElement: {
+        prototype: HTMLMidwestTimeElement;
+        new (): HTMLMidwestTimeElement;
+    };
+    interface HTMLMidwestToggleElement extends Components.MidwestToggle, HTMLStencilElement {
+    }
+    var HTMLMidwestToggleElement: {
+        prototype: HTMLMidwestToggleElement;
+        new (): HTMLMidwestToggleElement;
+    };
+    interface HTMLMidwestTooltipElement extends Components.MidwestTooltip, HTMLStencilElement {
+    }
+    var HTMLMidwestTooltipElement: {
+        prototype: HTMLMidwestTooltipElement;
+        new (): HTMLMidwestTooltipElement;
+    };
+    interface HTMLMidwestUnitElement extends Components.MidwestUnit, HTMLStencilElement {
+    }
+    var HTMLMidwestUnitElement: {
+        prototype: HTMLMidwestUnitElement;
+        new (): HTMLMidwestUnitElement;
+    };
+    interface HTMLMidwestValidateElement extends Components.MidwestValidate, HTMLStencilElement {
+    }
+    var HTMLMidwestValidateElement: {
+        prototype: HTMLMidwestValidateElement;
+        new (): HTMLMidwestValidateElement;
+    };
+    interface HTMLSkeletonImgElement extends Components.SkeletonImg, HTMLStencilElement {
+    }
+    var HTMLSkeletonImgElement: {
+        prototype: HTMLSkeletonImgElement;
+        new (): HTMLSkeletonImgElement;
+    };
+    interface HTMLSkeletonTextElement extends Components.SkeletonText, HTMLStencilElement {
+    }
+    var HTMLSkeletonTextElement: {
+        prototype: HTMLSkeletonTextElement;
+        new (): HTMLSkeletonTextElement;
+    };
     interface HTMLElementTagNameMap {
+        "copy-wrap": HTMLCopyWrapElement;
+        "midwest-accordion": HTMLMidwestAccordionElement;
+        "midwest-autocomplete": HTMLMidwestAutocompleteElement;
         "midwest-avatar": HTMLMidwestAvatarElement;
+        "midwest-button": HTMLMidwestButtonElement;
+        "midwest-calendar": HTMLMidwestCalendarElement;
+        "midwest-calendar-date": HTMLMidwestCalendarDateElement;
+        "midwest-calendar-event": HTMLMidwestCalendarEventElement;
+        "midwest-callout": HTMLMidwestCalloutElement;
+        "midwest-card": HTMLMidwestCardElement;
+        "midwest-content": HTMLMidwestContentElement;
+        "midwest-datetime-picker": HTMLMidwestDatetimePickerElement;
+        "midwest-field-group": HTMLMidwestFieldGroupElement;
+        "midwest-form": HTMLMidwestFormElement;
+        "midwest-form-rollup": HTMLMidwestFormRollupElement;
+        "midwest-grid": HTMLMidwestGridElement;
+        "midwest-input": HTMLMidwestInputElement;
+        "midwest-input-date": HTMLMidwestInputDateElement;
+        "midwest-input-file": HTMLMidwestInputFileElement;
+        "midwest-input-tags": HTMLMidwestInputTagsElement;
+        "midwest-item": HTMLMidwestItemElement;
+        "midwest-item-group": HTMLMidwestItemGroupElement;
+        "midwest-label": HTMLMidwestLabelElement;
+        "midwest-layout": HTMLMidwestLayoutElement;
+        "midwest-message": HTMLMidwestMessageElement;
+        "midwest-pagination": HTMLMidwestPaginationElement;
+        "midwest-password-requirements": HTMLMidwestPasswordRequirementsElement;
+        "midwest-repeatable-fields": HTMLMidwestRepeatableFieldsElement;
+        "midwest-rich-text": HTMLMidwestRichTextElement;
+        "midwest-select": HTMLMidwestSelectElement;
+        "midwest-show-if": HTMLMidwestShowIfElement;
+        "midwest-slide": HTMLMidwestSlideElement;
+        "midwest-slides": HTMLMidwestSlidesElement;
+        "midwest-step": HTMLMidwestStepElement;
+        "midwest-steps": HTMLMidwestStepsElement;
+        "midwest-switch": HTMLMidwestSwitchElement;
+        "midwest-tab": HTMLMidwestTabElement;
+        "midwest-tabs": HTMLMidwestTabsElement;
+        "midwest-tag": HTMLMidwestTagElement;
+        "midwest-theme": HTMLMidwestThemeElement;
+        "midwest-time": HTMLMidwestTimeElement;
+        "midwest-toggle": HTMLMidwestToggleElement;
+        "midwest-tooltip": HTMLMidwestTooltipElement;
+        "midwest-unit": HTMLMidwestUnitElement;
+        "midwest-validate": HTMLMidwestValidateElement;
+        "skeleton-img": HTMLSkeletonImgElement;
+        "skeleton-text": HTMLSkeletonTextElement;
     }
 }
 declare namespace LocalJSX {
+    interface CopyWrap {
+        "align"?: string;
+        "clamp"?: number;
+        "full"?: boolean;
+    }
+    interface MidwestAccordion {
+        "compact"?: boolean;
+        "dark"?: boolean;
+        "label"?: string;
+        "maxHeight"?: number;
+        "name"?: string;
+        "next"?: string;
+        "onClosed"?: (event: CustomEvent<any>) => void;
+        "onOpened"?: (event: CustomEvent<any>) => void;
+        "open"?: boolean;
+        "tight"?: boolean;
+        "valid"?: boolean;
+        "validate"?: boolean;
+    }
+    interface MidwestAutocomplete {
+        "dark"?: boolean;
+        "dummy"?: boolean;
+        "freeTextField"?: string;
+        "groups"?: string[];
+        "inline"?: boolean;
+        "label"?: string;
+        "name"?: string;
+        "noAvatars"?: boolean;
+        "onCustom"?: (event: CustomEvent<any>) => void;
+        "onPredefined"?: (event: CustomEvent<any>) => void;
+        "onSelectionChanged"?: (event: CustomEvent<any>) => void;
+        "open"?: boolean;
+        "options"?: Item[];
+        "placeholder"?: string;
+        "position"?: "up"|"down";
+        "ready"?: boolean;
+        "required"?: boolean;
+        "results"?: number;
+        "selected"?: Item[];
+        "tag"?: "radio"|"checkbox"|"a"|"button";
+        "url"?: string;
+        "valid"?: boolean;
+        "value"?: string[]|string;
+        "verbiage"?: string;
+    }
     interface MidwestAvatar {
         "color"?: string;
         "dark"?: boolean;
@@ -43,15 +1385,1054 @@ declare namespace LocalJSX {
         "size"?: "tiny" | "small" | "medium-small" | "medium" | "large" | "xlarge" | "huge";
         "src"?: string;
     }
+    interface MidwestButton {
+        /**
+          * Sets the button or link as an active state.
+         */
+        "active"?: boolean;
+        /**
+          * Authenticty Token
+         */
+        "authenticityToken"?: string;
+        /**
+          * Sets the button or link to render at full width to the parent.
+         */
+        "block"?: boolean;
+        "buttonTabIndex"?: number;
+        "confirm"?: string;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "contrast"?: boolean;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark"?: boolean;
+        /**
+          * Sets the button or link as disabled and not-interactable.
+         */
+        "disabled"?: boolean;
+        /**
+          * Makes sure the button cannot be exported.
+         */
+        "export"?: boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "for"?: string;
+        "ghost"?: boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "href"?: string;
+        /**
+          * Sets the button or link as a button with only an icon.
+         */
+        "icon"?: boolean;
+        /**
+          * Sets the button or link as a button with only an icon.
+         */
+        "iconOnly"?: boolean;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "invert"?: boolean;
+        /**
+          * Sets accessibility options on the buttons
+         */
+        "label"?: string;
+        /**
+          * Sets the button or link as an active state.
+         */
+        "method"?: "get"|"post"|"patch"|"put"|"delete";
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "modalHref"?: string;
+        /**
+          * Sets the name on the button if the button is an input. Allows the button to act as an item in a form.
+         */
+        "name"?: string;
+        "onClose-modal"?: (event: CustomEvent<any>) => void;
+        "onClose-onboarding"?: (event: CustomEvent<any>) => void;
+        "onDelete-entry"?: (event: CustomEvent<any>) => void;
+        "onOpen-modal"?: (event: CustomEvent<any>) => void;
+        "onOpen-onboarding"?: (event: CustomEvent<any>) => void;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "outline"?: boolean;
+        /**
+          * Sets the padding inside of the button.
+         */
+        "padding"?: "tiny" | "small" | "large";
+        /**
+          * Sets the button or link to render as a pill.
+         */
+        "pill"?: boolean;
+        "pjaxSelector"?: string;
+        /**
+          * Sets the button or link as processing when clicked.
+         */
+        "processable"?: boolean;
+        "processing"?: boolean;
+        /**
+          * Sets the size of the button.
+         */
+        "size"?: "tiny" | "small" | "large";
+        /**
+          * Sets the button or link as an active state.
+         */
+        "stopPropagation"?: boolean;
+        /**
+          * Allows the button to render for different tags.
+         */
+        "tag"?: "button" | "submit" | "link" | "span" | "modal" | "onboarding";
+        /**
+          * Sets the target on the anchor tag if the button is a link.
+         */
+        "target"?: string;
+        "usePjax"?: boolean;
+        /**
+          * Sets the value on the button if the button is an input.
+         */
+        "value"?: string;
+    }
+    interface MidwestCalendar {
+        "backgroundEvents"?: any[];
+        "dark"?: boolean;
+        "events"?: any[];
+        "header"?: boolean|object;
+        "noToolbar"?: boolean;
+        "onDateClick"?: (event: CustomEvent<any>) => void;
+        "selectRange"?: boolean;
+        "selectable"?: boolean;
+        "size"?: "medium"|"small";
+        "value"?: string|Date;
+    }
+    interface MidwestCalendarDate {
+        "clock"?: boolean;
+        "dark"?: boolean;
+        "end"?: string;
+        "start"?: string;
+        "time"?: boolean;
+    }
+    interface MidwestCalendarEvent {
+        "event"?: string;
+        "eventId"?: string;
+    }
+    interface MidwestCallout {
+        "dark"?: boolean;
+        "type"?: "alert" | "error" | "info" | "success" | "default";
+    }
+    interface MidwestCard {
+        "backHeight"?: number;
+        /**
+          * Renders as a block in certain scenarios
+         */
+        "block"?: boolean;
+        /**
+          * Sets the minimum height of the card to 0 when true.
+         */
+        "compact"?: boolean;
+        "dark"?: boolean;
+        /**
+          * disallows this component from exporting to figma
+         */
+        "export"?: boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "flipIcon"?: string;
+        /**
+          * Let's a card be flippable
+         */
+        "flipReady"?: boolean;
+        /**
+          * Let's a card be flippable
+         */
+        "flippable"?: boolean;
+        /**
+          * Renders a flipped card
+         */
+        "flipped"?: boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "for"?: string;
+        /**
+          * Renders the hard horizontally
+         */
+        "horizontal"?: boolean;
+        /**
+          * Sets the href if the card is a link.
+         */
+        "href"?: string;
+        /**
+          * Sets the href if the card is a link.
+         */
+        "modalHref"?: string;
+        /**
+          * Sets the name if the card is a button.
+         */
+        "name"?: string;
+        "onClose-modal"?: (event: CustomEvent<any>) => void;
+        "onFlip"?: (event: CustomEvent<any>) => void;
+        "onOpen-modal"?: (event: CustomEvent<any>) => void;
+        "originalHeight"?: number;
+        /**
+          * Sets the padding inside of the button. Can be small, medium, or large.
+         */
+        "padding"?: "none" | "tiny" | "small" | "medium" | "large";
+        /**
+          * Sets the element to render the card as - an anchor tag, a button, or a div.
+         */
+        "tag"?: "a" | "button" | "div" | "modal";
+        /**
+          * Sets the type on a button
+         */
+        "type"?: string;
+        /**
+          * Sets the value if the card is a button.
+         */
+        "value"?: string;
+    }
+    interface MidwestContent {
+        "behavior"?: string;
+        "for"?: string;
+        "open"?: boolean;
+        "scrollWhenActive"?: boolean;
+    }
+    interface MidwestDatetimePicker {
+        /**
+          * auto close when minute is selected
+         */
+        "autoClose"?: boolean;
+        "dark"?: boolean;
+        "dialRadius"?: number;
+        "duration"?: number;
+        "innerRadius"?: number;
+        "method"?: "date"|"time"|"datetime";
+        "onBlurred"?: (event: CustomEvent<any>) => void;
+        "onCancel"?: (event: CustomEvent<any>) => void;
+        "onClose-modal"?: (event: CustomEvent<any>) => void;
+        "onMicro-update"?: (event: CustomEvent<any>) => void;
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "outerRadius"?: number;
+        "showClear"?: boolean;
+        "tickRadius"?: number;
+        "value"?: 'now'|string|string[];
+        "view"?: "minutes"|"hours"|"years"|"months"|"days";
+    }
+    interface MidwestFieldGroup {
+        "onFast-updates"?: (event: CustomEvent<any>) => void;
+        "onSubmitted"?: (event: CustomEvent<any>) => void;
+        "onUpdated"?: (event: CustomEvent<any>) => void;
+    }
+    interface MidwestForm {
+        "acceptCharset"?: string;
+        "action"?: string;
+        "ajax"?: boolean;
+        "autocomplete"?: string;
+        "autosave"?: boolean;
+        "closeModalOnSuccess"?: boolean;
+        "enctype"?: string;
+        "method"?: string;
+        "name"?: string;
+        "novalidate"?: boolean;
+        "onClose-modal"?: (event: CustomEvent<any>) => void;
+        "onFast-updates"?: (event: CustomEvent<any>) => void;
+        "onOpen-modal"?: (event: CustomEvent<any>) => void;
+        "onSubmitted"?: (event: CustomEvent<any>) => void;
+        "onUpdated"?: (event: CustomEvent<any>) => void;
+        "perform"?: boolean;
+        "target"?: string;
+    }
+    interface MidwestFormRollup {
+        "appendCopy"?: string;
+        "count"?: number;
+        "fallback"?: string;
+        "for"?: string;
+        "noAvatars"?: boolean;
+        "options"?: HTMLMidwestItemElement[];
+        "placeholder"?: string;
+        "show"?: boolean;
+        "verbiage"?: string;
+    }
+    interface MidwestGrid {
+        "cols"?: number | string;
+        "columnGap"?: number;
+        "columnWidth"?: number;
+        "noresponsive"?: boolean;
+        "padding"?: boolean;
+    }
+    interface MidwestInput {
+        "autocomplete"?: "name" | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "username" | "current-password" | "new-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1" | "address-line2" | "address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "url" | "photo";
+        "autofocus"?: boolean;
+        "autoformat"?: boolean;
+        "capsLock"?: boolean;
+        "cols"?: number;
+        "customValidations"?: CustomFunction;
+        /**
+          * Sets the button to dark.
+         */
+        "dark"?: boolean;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "default"?: string|readonly string[];
+        "description"?: string;
+        "descriptionTransform"?: "capitalize" | "uppercase" | "lowercase" | "none" | "full-width" | "full-size-kana";
+        "disabled"?: boolean;
+        "focused"?: boolean;
+        "formatter"?: string;
+        "icon"?: boolean;
+        /**
+          * The name of the input element
+         */
+        "increments"?: boolean;
+        /**
+          * Sets the display to inline
+         */
+        "inline"?: boolean;
+        "inputTabIndex"?: number;
+        "label"?: string;
+        /**
+          * Sets the button to dark.
+         */
+        "leftIcon"?: string;
+        "match"?: string;
+        "max"?: number;
+        "maxlength"?: number;
+        "min"?: number;
+        "minChars"?: number;
+        /**
+          * The name of the input element
+         */
+        "name"?: string;
+        "novalidate"?: boolean;
+        /**
+          * Public: Blur event
+         */
+        "onBlurring"?: (event: CustomEvent<any>) => void;
+        /**
+          * Public: Focus event
+         */
+        "onFocusing"?: (event: CustomEvent<any>) => void;
+        /**
+          * Public: Updated event
+         */
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "placeholder"?: string;
+        "processing"?: boolean;
+        "readonly"?: boolean;
+        "required"?: boolean;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "requirements"?: boolean;
+        "rows"?: number;
+        "shift"?: boolean;
+        "showCapsLock"?: boolean;
+        "size"?: "small" | "default" | "large";
+        "spellcheck"?: boolean;
+        "step"?: number;
+        "tooltip"?: string;
+        /**
+          * The kind of element that the Input should be rendered as
+         */
+        "type"?: "text" | "password" | "textarea" | "email" | "hidden" | "number" | "search" | "tel" | "postal-code" | "url" | "currency";
+        "valid"?: boolean;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "value"?: string|readonly string[];
+        "wrap"?: string;
+    }
+    interface MidwestInputDate {
+        "autofocus"?: boolean;
+        "customValidations"?: CustomFunction;
+        /**
+          * Sets the button to dark.
+         */
+        "dark"?: boolean;
+        "dateFocus"?: "month"|"date"|"year"|"hour"|"minute"|"ampm";
+        "dateRangeFocus"?: "from"|"to";
+        "description"?: string;
+        "disabled"?: boolean;
+        "focused"?: boolean;
+        "from"?: string;
+        /**
+          * Sets the display to inline
+         */
+        "inline"?: boolean;
+        "inputTabIndex"?: number;
+        "label"?: string;
+        /**
+          * Sets the button to dark.
+         */
+        "leftIcon"?: string;
+        "max"?: number;
+        "min"?: number;
+        /**
+          * The name of the input element
+         */
+        "name"?: string;
+        "noDuration"?: boolean;
+        "novalidate"?: boolean;
+        /**
+          * Public: Blur event
+         */
+        "onBlurring"?: (event: CustomEvent<any>) => void;
+        /**
+          * Public: Focus event
+         */
+        "onFocusing"?: (event: CustomEvent<any>) => void;
+        /**
+          * Public: Updated event
+         */
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "placeholder"?: string;
+        "processing"?: boolean;
+        /**
+          * The kind of element that the Input should be rendered as
+         */
+        "range"?: "time" | "date" | "datetime";
+        "readonly"?: boolean;
+        "required"?: boolean;
+        "shift"?: boolean;
+        "size"?: "small" | "default" | "large";
+        "step"?: number;
+        "to"?: string;
+        "tooltip"?: string;
+        /**
+          * The kind of element that the Input should be rendered as
+         */
+        "type"?: "time" | "date" | "datetime";
+        "valid"?: boolean;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "value"?: string;
+    }
+    interface MidwestInputFile {
+        "accept"?: string;
+        /**
+          * Sets the button to dark.
+         */
+        "dark"?: boolean;
+        "description"?: string;
+        "disabled"?: boolean;
+        "droppable"?: boolean;
+        /**
+          * Hides this element from exporting to figma
+         */
+        "export"?: boolean;
+        "files"?: any[];
+        "focused"?: boolean;
+        "hideState"?: boolean;
+        "inputTabIndex"?: number;
+        "label"?: string;
+        "multiple"?: boolean;
+        "multipleFileCaption"?: string;
+        /**
+          * The name of the input element
+         */
+        "name"?: string;
+        "novalidate"?: boolean;
+        /**
+          * Public: Blur event
+         */
+        "onBluring"?: (event: CustomEvent<any>) => void;
+        /**
+          * Public: Focus event
+         */
+        "onFocusing"?: (event: CustomEvent<any>) => void;
+        /**
+          * Public: Updated event
+         */
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "placeholder"?: string;
+        "readonly"?: boolean;
+        "replacePlaceholder"?: string;
+        "required"?: boolean;
+        "size"?: "small" | "default" | "large";
+        "tooltip"?: string;
+        /**
+          * The pre-set value to pass to the input element
+         */
+        "value"?: any;
+    }
+    interface MidwestInputTags {
+        "allowNewItems"?: boolean;
+        "autofocus"?: boolean;
+        "base"?: ThemeableColors;
+        "complement"?: ThemeableColors;
+        "customValidations"?: CustomFunction;
+        "dark"?: boolean;
+        "description"?: string;
+        "disabled"?: boolean;
+        "export"?: boolean;
+        "focused"?: boolean;
+        "inputTabIndex"?: number;
+        "items"?: {id: number, name: string}[];
+        "label"?: string;
+        "minChars"?: number;
+        "name"?: string;
+        "novalidate"?: boolean;
+        "onBluring"?: (event: CustomEvent<any>) => void;
+        "onFocusing"?: (event: CustomEvent<any>) => void;
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "placeholder"?: string;
+        "readonly"?: boolean;
+        "required"?: boolean;
+        "size"?: "small" | "default" | "large";
+        "tooltip"?: string;
+        "valid"?: boolean;
+        "value"?: any;
+    }
+    interface MidwestItem {
+        "avatar"?: string;
+        "avatarIcon"?: string;
+        "avatarShape"?: "circle" | "square" | "rectangle" | "diamond" | "hexagon" | "message";
+        "avatarSize"?: "small" | "medium";
+        "avatarSrc"?: string;
+        "block"?: boolean;
+        "checked"?: boolean;
+        "content"?: string;
+        "dark"?: boolean;
+        "default"?: any;
+        "disabled"?: boolean;
+        /**
+          * Makes sure this element cannot be exported.
+         */
+        "export"?: boolean;
+        "focused"?: boolean;
+        "group"?: string;
+        "hasSelected"?: boolean;
+        "href"?: string;
+        "icon"?: string;
+        "inline"?: boolean;
+        "name"?: string;
+        "onSelectionChanged"?: (event: CustomEvent<any>) => void;
+        "quiet"?: boolean;
+        "required"?: boolean;
+        "settableContent"?: boolean;
+        "settableParent"?: any;
+        "tag"?: "a" | "button" | "span" | "checkbox" | "radio";
+        "target"?: string;
+        "tooltip"?: string;
+        "value"?: string;
+    }
+    interface MidwestItemGroup {
+        "dark"?: boolean;
+        "name"?: string;
+        "supplement"?: string;
+    }
+    interface MidwestLabel {
+        "color"?: string;
+        "colorIntensity"?: number;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark"?: boolean;
+        "for"?: string;
+        "italicized"?: boolean;
+        "size"?: string;
+        "textTransformation"?: "capitalize" | "uppercase" | "lowercase" | "none" | "full-width" | "full-size-kana";
+        "underneath"?: boolean;
+    }
+    interface MidwestLayout {
+        "align"?: "baseline" | "center" | "top" | "bottom";
+        "content"?: "baseline" | "center" | "top" | "bottom";
+        "hasNav"?: boolean;
+        "height"?: "fill";
+        "padding"?: "none" | "tiny" | "small" | "medium" | "large";
+        "size"?: "tiny" | "small" | "medium" | "large" | "xlarge" | "full" | "flush";
+        "type"?: string;
+    }
+    interface MidwestMessage {
+        "autoHide"?: boolean;
+        "closable"?: boolean;
+        "closing"?: boolean;
+        "dark"?: boolean;
+        "height"?: number|boolean;
+        "name"?: string;
+        "opening"?: boolean;
+        "remember"?: boolean;
+        "shown"?: boolean;
+        "size"?: "full" | "default";
+        "striped"?: boolean;
+        "type"?: "alert" | "error" | "info" | "success";
+    }
+    interface MidwestPagination {
+        "color"?: string;
+        "current"?: number;
+        "dark"?: boolean;
+        "onChanged"?: (event: CustomEvent<any>) => void;
+        "padding"?: number;
+        /**
+          * Public: Sets the max cap of pages you can skip through
+         */
+        "pages"?: number;
+        "type"?: "full" | "compact";
+        "url"?: any;
+    }
+    interface MidwestPasswordRequirements {
+        "for"?: string;
+        "size"?: "small" | "large";
+    }
+    interface MidwestRepeatableFields {
+        "addOneIfEmpty"?: boolean;
+        "custom"?: boolean;
+        "data"?: string;
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "readonly"?: boolean;
+        "verbiage"?: string;
+    }
+    interface MidwestRichText {
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark"?: boolean;
+        "description"?: string;
+        "enableAlignment"?: boolean;
+        "enableEmojis"?: boolean;
+        "enableImages"?: boolean;
+        "enableLinks"?: boolean;
+        "enableMentions"?: boolean;
+        "enableRich"?: boolean;
+        "enableRicher"?: boolean;
+        /**
+          * Hides this element from exporting to figma
+         */
+        "export"?: boolean;
+        "inline"?: boolean;
+        "label"?: string;
+        "max"?: number;
+        "mentionDataFunction"?: () => void;
+        "mentionsData"?: {id: string, value: string}[];
+        "name"?: string;
+        "novalidate"?: boolean;
+        /**
+          * Public: Bluring event
+         */
+        "onBluring"?: (event: CustomEvent<any>) => void;
+        /**
+          * Public: Bluring event
+         */
+        "onFocusing"?: (event: CustomEvent<any>) => void;
+        /**
+          * Public: Updated event
+         */
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "placeholder"?: string;
+        "readonly"?: boolean;
+        "required"?: boolean;
+        "size"?: string;
+        "tooltip"?: string;
+        "twitterBased"?: boolean;
+        "valid"?: boolean;
+        "value"?: string;
+    }
+    interface MidwestSelect {
+        "align"?: "left"|"right";
+        "changeTheme"?: boolean;
+        "dark"?: boolean;
+        "description"?: string;
+        "export"?: boolean;
+        "focused"?: boolean;
+        "inline"?: boolean;
+        "invert"?: boolean;
+        "label"?: string;
+        "loading"?: boolean;
+        "multiple"?: boolean;
+        "name"?: string;
+        "noAvatars"?: boolean;
+        "noClear"?: boolean;
+        "novalidate"?: boolean;
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "open"?: boolean;
+        "pjaxReplace"?: string;
+        "placeholder"?: string;
+        "position"?: "up"|"down";
+        "ready"?: boolean;
+        "required"?: boolean;
+        "resize"?: boolean | "full";
+        "search"?: boolean;
+        "size"?: "tiny" | "small" | "large";
+        "tooltip"?: string;
+        "valid"?: boolean;
+        "value"?: string[]|string;
+        "verbiage"?: string;
+        "verbiageAn"?: boolean;
+        "wide"?: boolean;
+    }
+    interface MidwestShowIf {
+        "equals"?: string;
+        "field"?: string;
+        "notEquals"?: string;
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "present"?: boolean;
+        "property"?: string;
+        "selector"?: string;
+        "triggered"?: string;
+    }
+    interface MidwestSlide {
+        "onSwitched"?: (event: CustomEvent<any>) => void;
+        "slideId"?: number;
+        "width"?: string;
+    }
+    interface MidwestSlides {
+        "autoHeight"?: boolean;
+        "autoplay"?: boolean;
+        "centeredSlides"?: boolean;
+        "direction"?: "horizontal" | "vertical";
+        "effect"?: "slide" | "fade" | "cube" | "coverflow" | "flip";
+        "initialSlide"?: number;
+        "loop"?: boolean;
+        "nested"?: boolean;
+        /**
+          * Emitted after the active slide has changed.
+         */
+        "onIonSlideDidChange"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slider is actively being moved.
+         */
+        "onIonSlideDrag"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the next slide has ended.
+         */
+        "onIonSlideNextEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the next slide has started.
+         */
+        "onIonSlideNextStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the previous slide has ended.
+         */
+        "onIonSlidePrevEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the previous slide has started.
+         */
+        "onIonSlidePrevStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slider is at the last slide.
+         */
+        "onIonSlideReachEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slider is at its initial position.
+         */
+        "onIonSlideReachStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the user releases the touch.
+         */
+        "onIonSlideTouchEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the user first touches the slider.
+         */
+        "onIonSlideTouchStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slide transition has ended.
+         */
+        "onIonSlideTransitionEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slide transition has started.
+         */
+        "onIonSlideTransitionStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted before the active slide has changed.
+         */
+        "onIonSlideWillChange"?: (event: CustomEvent<any>) => void;
+        /**
+          * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
+         */
+        "options"?: any;
+        "pagination"?: boolean;
+        "responsive"?: boolean;
+        "slidesPerView"?: number;
+        "spaceBetween"?: number;
+        "speed"?: number;
+        "watchSlidesProgress"?: boolean;
+        "watchSlidesVisibility"?: boolean;
+    }
+    interface MidwestStep {
+        "base"?: ThemeableColors;
+        "complete"?: boolean;
+        "current"?: boolean;
+        "dark"?: boolean;
+        "disabled"?: boolean;
+        "error"?: boolean;
+        "export"?: boolean;
+        "href"?: string;
+        "onContentChange"?: (event: CustomEvent<any>) => void;
+        "onUpdated"?: (event: CustomEvent<any>) => void;
+        "open"?: boolean;
+        "order"?: number;
+        "past"?: boolean;
+        "tabCount"?: number;
+        "validate"?: boolean;
+    }
+    interface MidwestSteps {
+        "dark"?: boolean;
+        "name"?: string;
+        "validate"?: boolean;
+    }
+    interface MidwestSwitch {
+        "base"?: ThemeableColors;
+        "changeTheme"?: boolean;
+        "checked"?: boolean;
+        "checkedDefault"?: boolean;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark"?: boolean;
+        "description"?: string;
+        "disabled"?: boolean;
+        /**
+          * Hides this element from exporting to figma
+         */
+        "export"?: boolean;
+        "label"?: string;
+        "name"?: string;
+        "noValue"?: string;
+        "novalidate"?: boolean;
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "required"?: boolean;
+        "size"?: "small" | "default" | "large";
+        "tooltip"?: string;
+        "value"?: string | boolean;
+        "yesValue"?: string;
+    }
+    interface MidwestTab {
+        "dark"?: boolean;
+        "disabled"?: boolean;
+        /**
+          * Sets the href on the anchor tag if the button is a link.
+         */
+        "href"?: string;
+        "name"?: string;
+        "notifications"?: boolean | number;
+        "notificationsColor"?: string;
+        "onContentChange"?: (event: CustomEvent<any>) => void;
+        "open"?: boolean;
+        "order"?: number;
+        "size"?: "tiny" | "small" | "medium" | "large";
+        "tabCount"?: number;
+        "tag"?: "button" | "link";
+        /**
+          * Sets the target on the anchor tag if the button is a link.
+         */
+        "target"?: string;
+        "vertical"?: boolean;
+    }
+    interface MidwestTabs {
+        "behavior"?: string;
+        "block"?: boolean;
+        "blockIndicator"?: boolean;
+        "dark"?: boolean;
+        "flipIndicator"?: boolean;
+        "height"?: string;
+        "name"?: string;
+        "noanimation"?: boolean;
+        "ready"?: boolean;
+        "size"?: "tiny" | "small" | "medium" | "large";
+        "tabHeight"?: number;
+        "tabLeft"?: number;
+        "tabOpacity"?: number;
+        "tabTop"?: number;
+        "tabWidth"?: number;
+        "vertical"?: boolean;
+    }
+    interface MidwestTag {
+        "base"?: ThemeableColors;
+        "color"?: ThemeableColors;
+        "complement"?: ThemeableColors;
+        "dark"?: boolean;
+        "icon"?: string;
+        "outline"?: boolean;
+        "pill"?: boolean;
+        "size"?: "tiny" | "small" | "large";
+    }
+    interface MidwestTheme {
+        "base"?: ThemeableColors;
+        "body"?: boolean;
+        "colors"?: string[];
+        "complement"?: ThemeableColors;
+        "dark"?: boolean;
+        "light"?: boolean;
+        "system"?: boolean;
+    }
+    interface MidwestTime {
+        "format"?: string;
+        "relative"?: boolean;
+        "unix"?: number;
+        "value"?: string;
+    }
+    interface MidwestToggle {
+        "base"?: ThemeableColors;
+        "block"?: boolean;
+        "complement"?: ThemeableColors;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark"?: boolean;
+        "description"?: string;
+        /**
+          * Makes sure this element cannot be exported.
+         */
+        "export"?: boolean;
+        "flip"?: boolean;
+        "inlineLabel"?: boolean;
+        "label"?: string;
+        "name"?: string;
+        "novalidate"?: boolean;
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "required"?: boolean;
+        "single"?: boolean;
+        "size"?: string;
+        "stacked"?: boolean;
+        "type"?: "checkbox" | "radio";
+        "value"?: string | string[];
+    }
+    interface MidwestTooltip {
+        "align"?: "left" | "center" | "right" | "middle-left" | "middle-center" | "middle-right" | "bottom-left" | "bottom-center" | "bottom-right";
+        "dark"?: boolean;
+        "focused"?: boolean;
+    }
+    interface MidwestUnit {
+        "decimals"?: number;
+        "from"?: any;
+        "money"?: boolean;
+        "round"?: boolean;
+        "to"?: any;
+        "value"?: number;
+    }
+    interface MidwestValidate {
+        "check"?: CustomFunction;
+        "color"?: string;
+        "customRender"?: (message: string[]) => any;
+        "element"?: ValidatableElements;
+        "name"?: string;
+        "onCorrect"?: (event: CustomEvent<any>) => void;
+        "onIncorrect"?: (event: CustomEvent<any>) => void;
+        "onTest"?: (event: CustomEvent<any>) => void;
+        "silent"?: boolean;
+        "size"?: string;
+    }
+    interface SkeletonImg {
+        "block"?: boolean;
+        "height"?: number;
+        "icon"?: boolean;
+        "loading"?: boolean;
+        "width"?: number;
+    }
+    interface SkeletonText {
+        "as"?: string | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
+        "loading"?: boolean;
+        "width"?: number;
+    }
     interface IntrinsicElements {
+        "copy-wrap": CopyWrap;
+        "midwest-accordion": MidwestAccordion;
+        "midwest-autocomplete": MidwestAutocomplete;
         "midwest-avatar": MidwestAvatar;
+        "midwest-button": MidwestButton;
+        "midwest-calendar": MidwestCalendar;
+        "midwest-calendar-date": MidwestCalendarDate;
+        "midwest-calendar-event": MidwestCalendarEvent;
+        "midwest-callout": MidwestCallout;
+        "midwest-card": MidwestCard;
+        "midwest-content": MidwestContent;
+        "midwest-datetime-picker": MidwestDatetimePicker;
+        "midwest-field-group": MidwestFieldGroup;
+        "midwest-form": MidwestForm;
+        "midwest-form-rollup": MidwestFormRollup;
+        "midwest-grid": MidwestGrid;
+        "midwest-input": MidwestInput;
+        "midwest-input-date": MidwestInputDate;
+        "midwest-input-file": MidwestInputFile;
+        "midwest-input-tags": MidwestInputTags;
+        "midwest-item": MidwestItem;
+        "midwest-item-group": MidwestItemGroup;
+        "midwest-label": MidwestLabel;
+        "midwest-layout": MidwestLayout;
+        "midwest-message": MidwestMessage;
+        "midwest-pagination": MidwestPagination;
+        "midwest-password-requirements": MidwestPasswordRequirements;
+        "midwest-repeatable-fields": MidwestRepeatableFields;
+        "midwest-rich-text": MidwestRichText;
+        "midwest-select": MidwestSelect;
+        "midwest-show-if": MidwestShowIf;
+        "midwest-slide": MidwestSlide;
+        "midwest-slides": MidwestSlides;
+        "midwest-step": MidwestStep;
+        "midwest-steps": MidwestSteps;
+        "midwest-switch": MidwestSwitch;
+        "midwest-tab": MidwestTab;
+        "midwest-tabs": MidwestTabs;
+        "midwest-tag": MidwestTag;
+        "midwest-theme": MidwestTheme;
+        "midwest-time": MidwestTime;
+        "midwest-toggle": MidwestToggle;
+        "midwest-tooltip": MidwestTooltip;
+        "midwest-unit": MidwestUnit;
+        "midwest-validate": MidwestValidate;
+        "skeleton-img": SkeletonImg;
+        "skeleton-text": SkeletonText;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "copy-wrap": LocalJSX.CopyWrap & JSXBase.HTMLAttributes<HTMLCopyWrapElement>;
+            "midwest-accordion": LocalJSX.MidwestAccordion & JSXBase.HTMLAttributes<HTMLMidwestAccordionElement>;
+            "midwest-autocomplete": LocalJSX.MidwestAutocomplete & JSXBase.HTMLAttributes<HTMLMidwestAutocompleteElement>;
             "midwest-avatar": LocalJSX.MidwestAvatar & JSXBase.HTMLAttributes<HTMLMidwestAvatarElement>;
+            "midwest-button": LocalJSX.MidwestButton & JSXBase.HTMLAttributes<HTMLMidwestButtonElement>;
+            "midwest-calendar": LocalJSX.MidwestCalendar & JSXBase.HTMLAttributes<HTMLMidwestCalendarElement>;
+            "midwest-calendar-date": LocalJSX.MidwestCalendarDate & JSXBase.HTMLAttributes<HTMLMidwestCalendarDateElement>;
+            "midwest-calendar-event": LocalJSX.MidwestCalendarEvent & JSXBase.HTMLAttributes<HTMLMidwestCalendarEventElement>;
+            "midwest-callout": LocalJSX.MidwestCallout & JSXBase.HTMLAttributes<HTMLMidwestCalloutElement>;
+            "midwest-card": LocalJSX.MidwestCard & JSXBase.HTMLAttributes<HTMLMidwestCardElement>;
+            "midwest-content": LocalJSX.MidwestContent & JSXBase.HTMLAttributes<HTMLMidwestContentElement>;
+            "midwest-datetime-picker": LocalJSX.MidwestDatetimePicker & JSXBase.HTMLAttributes<HTMLMidwestDatetimePickerElement>;
+            "midwest-field-group": LocalJSX.MidwestFieldGroup & JSXBase.HTMLAttributes<HTMLMidwestFieldGroupElement>;
+            "midwest-form": LocalJSX.MidwestForm & JSXBase.HTMLAttributes<HTMLMidwestFormElement>;
+            "midwest-form-rollup": LocalJSX.MidwestFormRollup & JSXBase.HTMLAttributes<HTMLMidwestFormRollupElement>;
+            "midwest-grid": LocalJSX.MidwestGrid & JSXBase.HTMLAttributes<HTMLMidwestGridElement>;
+            "midwest-input": LocalJSX.MidwestInput & JSXBase.HTMLAttributes<HTMLMidwestInputElement>;
+            "midwest-input-date": LocalJSX.MidwestInputDate & JSXBase.HTMLAttributes<HTMLMidwestInputDateElement>;
+            "midwest-input-file": LocalJSX.MidwestInputFile & JSXBase.HTMLAttributes<HTMLMidwestInputFileElement>;
+            "midwest-input-tags": LocalJSX.MidwestInputTags & JSXBase.HTMLAttributes<HTMLMidwestInputTagsElement>;
+            "midwest-item": LocalJSX.MidwestItem & JSXBase.HTMLAttributes<HTMLMidwestItemElement>;
+            "midwest-item-group": LocalJSX.MidwestItemGroup & JSXBase.HTMLAttributes<HTMLMidwestItemGroupElement>;
+            "midwest-label": LocalJSX.MidwestLabel & JSXBase.HTMLAttributes<HTMLMidwestLabelElement>;
+            "midwest-layout": LocalJSX.MidwestLayout & JSXBase.HTMLAttributes<HTMLMidwestLayoutElement>;
+            "midwest-message": LocalJSX.MidwestMessage & JSXBase.HTMLAttributes<HTMLMidwestMessageElement>;
+            "midwest-pagination": LocalJSX.MidwestPagination & JSXBase.HTMLAttributes<HTMLMidwestPaginationElement>;
+            "midwest-password-requirements": LocalJSX.MidwestPasswordRequirements & JSXBase.HTMLAttributes<HTMLMidwestPasswordRequirementsElement>;
+            "midwest-repeatable-fields": LocalJSX.MidwestRepeatableFields & JSXBase.HTMLAttributes<HTMLMidwestRepeatableFieldsElement>;
+            "midwest-rich-text": LocalJSX.MidwestRichText & JSXBase.HTMLAttributes<HTMLMidwestRichTextElement>;
+            "midwest-select": LocalJSX.MidwestSelect & JSXBase.HTMLAttributes<HTMLMidwestSelectElement>;
+            "midwest-show-if": LocalJSX.MidwestShowIf & JSXBase.HTMLAttributes<HTMLMidwestShowIfElement>;
+            "midwest-slide": LocalJSX.MidwestSlide & JSXBase.HTMLAttributes<HTMLMidwestSlideElement>;
+            "midwest-slides": LocalJSX.MidwestSlides & JSXBase.HTMLAttributes<HTMLMidwestSlidesElement>;
+            "midwest-step": LocalJSX.MidwestStep & JSXBase.HTMLAttributes<HTMLMidwestStepElement>;
+            "midwest-steps": LocalJSX.MidwestSteps & JSXBase.HTMLAttributes<HTMLMidwestStepsElement>;
+            "midwest-switch": LocalJSX.MidwestSwitch & JSXBase.HTMLAttributes<HTMLMidwestSwitchElement>;
+            "midwest-tab": LocalJSX.MidwestTab & JSXBase.HTMLAttributes<HTMLMidwestTabElement>;
+            "midwest-tabs": LocalJSX.MidwestTabs & JSXBase.HTMLAttributes<HTMLMidwestTabsElement>;
+            "midwest-tag": LocalJSX.MidwestTag & JSXBase.HTMLAttributes<HTMLMidwestTagElement>;
+            "midwest-theme": LocalJSX.MidwestTheme & JSXBase.HTMLAttributes<HTMLMidwestThemeElement>;
+            "midwest-time": LocalJSX.MidwestTime & JSXBase.HTMLAttributes<HTMLMidwestTimeElement>;
+            "midwest-toggle": LocalJSX.MidwestToggle & JSXBase.HTMLAttributes<HTMLMidwestToggleElement>;
+            "midwest-tooltip": LocalJSX.MidwestTooltip & JSXBase.HTMLAttributes<HTMLMidwestTooltipElement>;
+            "midwest-unit": LocalJSX.MidwestUnit & JSXBase.HTMLAttributes<HTMLMidwestUnitElement>;
+            "midwest-validate": LocalJSX.MidwestValidate & JSXBase.HTMLAttributes<HTMLMidwestValidateElement>;
+            "skeleton-img": LocalJSX.SkeletonImg & JSXBase.HTMLAttributes<HTMLSkeletonImgElement>;
+            "skeleton-text": LocalJSX.SkeletonText & JSXBase.HTMLAttributes<HTMLSkeletonTextElement>;
         }
     }
 }

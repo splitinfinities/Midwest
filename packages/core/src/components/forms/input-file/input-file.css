@@ -1,0 +1,236 @@
+:host,
+:host *,
+:host *:before,
+:host *:after {
+  box-sizing: border-box;
+}
+
+:host {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+
+  --font-size: 1rem;
+  --complementing-font-size: 0.875rem;
+  --height: 3em;
+  --padding: 0 1em;
+  --background: var(--white);
+  --color: var(--black);
+  --icon-color: var(--gray4);
+  --border-color: var(--gray2);
+  --border: 1px solid var(--border-color);
+  --line-height: 1.4;
+  --border-radius: 0.3rem;
+  --validation-spacing: 0.2em;
+}
+
+:host input {
+  box-sizing: inherit;
+  background: var(--background);
+  outline: 0;
+  padding: var(--padding);
+  height: var(--height);
+  overflow: hidden;
+  line-height: var(--line-height);
+  font-size: var(--font-size);
+}
+
+:host input {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  outline: 0;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: 100%;
+  color: var(--color);
+  font-weight: 500;
+  -moz-appearance: none;
+  font-family: inherit;
+}
+
+:host midwest-tooltip {
+  width: calc(100% - 1.5em);
+  pointer-events: none;
+}
+
+:host([size="small"]) {
+  --font-size: 0.875rem;
+  --complementing-font-size: 0.75rem;
+  --padding: 0 1em;
+}
+
+:host([size="large"]) {
+  --font-size: 1.125em;
+  --complementing-font-size: 1em;
+  --padding: 0 1.125em;
+}
+
+:host ::-webkit-input-placeholder {
+  color: var(--gray5);
+}
+
+:host ::-moz-placeholder {
+  color: var(--gray5);
+}
+
+:host :-ms-input-placeholder {
+  color: var(--gray5);
+}
+
+:host :-moz-placeholder {
+  color: var(--gray5);
+}
+
+:host(.db) input,
+:host(.dib) input,
+:host(.di) input {
+  width: auto;
+}
+
+:host input::-moz-focus-inner,
+:host textarea::-moz-focus-inner,
+:host .tags-input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+:host input[disabled] {
+  background: var(--gray0);
+}
+
+:host([focused]) .input,
+:host(.invalid) .input {
+  --border: 1px solid var(--theme-base5);
+  box-shadow: inset 0 0 0 1px var(--theme-base5);
+}
+
+:host input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+:host .file-wrapper,
+:host .file-wrapper input {
+  cursor: pointer;
+  font-size: 1em;
+}
+
+:host .file-wrapper h3,
+:host .file-wrapper h4 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  color: inherit;
+  font-size: var(--font-size);
+  font-weight: 500;
+  color: var(--theme-base5);
+  padding: 0 1em;
+}
+
+:host .file-wrapper h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:host .file-wrapper h4 midwest-icon {
+  font-size: 1.5em;
+  margin-right: 0.25rem;
+}
+
+:host .file-wrapper h3 {
+  font-size: var(--font-size);
+  margin-bottom: 0.4em;
+  color: var(--black);
+}
+
+:host([dark]) .file-wrapper h4 {
+  color: var(--theme-base4);
+}
+
+:host([dark]) .file-wrapper h3 {
+  color: var(--white);
+}
+
+:host .file-wrapper .upload-card {
+  background: var(--background);
+  min-height: auto;
+  color: var(--theme-base5);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.625rem 0;
+  overflow: hidden;
+}
+
+:host([value]:not([hide-state])) .file-wrapper .upload-card {
+  border: 1px solid var(--border-color);
+}
+
+:host([hide-state]) .file-wrapper .upload-card {
+  padding: 2rem 1rem;
+}
+
+:host([size="large"]) .file-wrapper .upload-card {
+  padding: 0.8rem 0;
+}
+
+:host .file-list {
+  margin: 1em 0 -1em;
+  padding: 0;
+  list-style-type: none;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+:host .file-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+:host .file-list li:nth-of-type(even) {
+  background: var(--theme-base1);
+}
+
+:host .file-list li:nth-of-type(odd) {
+  background: var(--theme-base0);
+}
+
+:host .file-list li p,
+:host .file-list li a {
+  margin: 0;
+  padding: 1rem;
+  font-size: 0.75em;
+  font-weight: 400;
+  color: var(--theme-base9);
+}
+
+:host .file-list li a {
+  min-width: 3.2rem;
+  color: var(--black);
+}
+
+:host .file-list li a :hover,
+:host .file-list li a :focus {
+  color: var(--theme-base5);
+}
+
+:host([dark]) {
+  --border-color: var(--gray8);
+  --background: var(--gray9);
+  --color: var(--white);
+  --icon-color: var(--gray6);
+}

@@ -6,13 +6,11 @@ export interface State {
     readonly complement: ThemeableColors,
     readonly dark: boolean,
     readonly light: boolean
-    readonly ie: boolean
 }
 
 export default createProviderConsumer<State>({
     base: "red",
-    complement: "blue",
+    complement: "indigo",
     dark: false,
-    light: false,
-    ie: false
+    light: false
 }, (subscribe, child) => <context-consumer subscribe={subscribe} renderer={child} />);

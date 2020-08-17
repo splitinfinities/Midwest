@@ -13,10 +13,13 @@ export * from './lib/format';
 export * from './lib/generateID';
 export * from './lib/onFocusOutsideOf';
 export * from './lib/customElementDocGenerator';
+export * from './lib/storyTemplate';
+export * from './lib/typicalStencilConfig';
 
 declare global {
   type ThemeableColors = "red"|"orange"|"gold"|"yellow"|"lime"|"green"|"teal"|"cyan"|"blue"|"indigo"|"violet"|"magenta"|"pink"|"gray";
   type ValidatableElements = any
+
 
   interface String {
     // tslint:disable-next-line: no-method-signature
@@ -67,5 +70,51 @@ declare global {
     stop: () => void
     on: (name: string, callback: () => void) => void
     progress: number
+  }
+
+
+  interface MentionObject {
+    id: string;
+    value: string;
+    startPosition: number;
+    endPosition: number;
+    length: number;
+  }
+
+  interface MentionOperation {
+    mention: {
+      index: number;
+      denotationChar: "@";
+      id: string;
+      value: string;
+    }
+  }
+
+  interface Quill {
+    getModule: any;
+    on: any;
+    getSelection: any;
+    setContents: any;
+    setSelection: any;
+    setText: any;
+    getContents: any;
+    root: any;
+  }
+
+  interface DeltaOperation {
+    insert: string | MentionOperation;
+  }
+
+  interface QuillOptions {
+      debug?: string | boolean;
+      modules?: StringMap;
+      placeholder?: string;
+      readOnly?: boolean;
+      theme?: string;
+      formats?: string[];
+      bounds?: HTMLElement | string;
+      scrollingContainer?: HTMLElement | string;
+      strict?: boolean;
+      sanitizeHtml?: boolean;
   }
 }

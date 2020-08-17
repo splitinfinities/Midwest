@@ -1,0 +1,283 @@
+midwest-input-tags,
+midwest-input-tags *,
+midwest-input-tags *:before,
+midwest-input-tags *:after {
+  box-sizing: border-box;
+}
+
+midwest-input-tags {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+
+  --font-size: 1rem;
+  --complementing-font-size: 0.875rem;
+  --height: 3em;
+  --padding: 0 1em;
+  --background: var(--white);
+  --color: var(--black);
+  --icon-color: var(--gray4);
+  --border-color: var(--gray2);
+  --border: 1px solid var(--border-color);
+  --line-height: 1.4;
+  --border-radius: 0.3rem;
+  --validation-spacing: 0.2em;
+}
+
+midwest-input-tags ::-webkit-input-placeholder {
+  color: var(--gray5);
+}
+
+midwest-input-tags ::-moz-placeholder {
+  color: var(--gray5);
+}
+
+midwest-input-tags :-ms-input-placeholder {
+  color: var(--gray5);
+}
+
+midwest-input-tags :-moz-placeholder {
+  color: var(--gray5);
+}
+
+midwest-input-tags[size="small"] {
+  --font-size: 0.875rem;
+  --complementing-font-size: 0.75rem;
+  --padding: 0 1em;
+}
+
+midwest-input-tags[size="large"] {
+  --font-size: 1.125em;
+  --complementing-font-size: 1em;
+  --padding: 0 1.125em;
+}
+
+midwest-input-tags:hover,
+midwest-input-tags:focus {
+  --border-color: var(--theme-base3);
+}
+
+midwest-input-tags ::selection,
+midwest-input-tags *::selection {
+  background: var(--theme-base2) !important;
+}
+
+midwest-input-tags .content {
+  position: relative;
+}
+
+midwest-input-tags midwest-tooltip {
+  width: calc(100% - 1.5em);
+  pointer-events: none;
+}
+
+midwest-input-tags .tags-input {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  outline: 0;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: 100%;
+  color: var(--color);
+  font-weight: 500;
+  -moz-appearance: none;
+  font-family: inherit;
+}
+
+midwest-input-tags.db .tags-input,
+midwest-input-tags.dib .tags-input,
+midwest-input-tags.di .tags-input {
+  width: auto;
+}
+
+midwest-input-tags .tags-input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+midwest-input-tags .tags-input::-webkit-inner-spin-button,
+midwest-input-tags .tags-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+midwest-input-tags input {
+  box-sizing: inherit;
+  background: var(--background);
+  outline: 0;
+  padding: var(--padding);
+  height: var(--height);
+  overflow: hidden;
+  line-height: var(--line-height);
+  font-size: var(--font-size);
+}
+
+midwest-input-tags input[disabled] {
+  background: var(--gray0);
+}
+
+midwest-input-tags label {
+  display: block;
+}
+
+midwest-input-tags[focused] .input,
+midwest-input-tags:focus-within .input,
+midwest-input-tags.invalid .input,
+midwest-input-tags[focused] .tokenfield,
+midwest-input-tags:focus-within .tokenfield,
+midwest-input-tags.invalid .tokenfield {
+  --border: 1px solid var(--theme-base5);
+  box-shadow: inset 0 0 0 1px var(--theme-base5);
+}
+
+midwest-input-tags .tokenfield {
+  position: relative;
+}
+
+midwest-input-tags .tokenfield::before,
+midwest-input-tags .tokenfield::after {
+  content: " ";
+  display: table;
+}
+
+midwest-input-tags .tokenfield::after {
+  clear: both;
+}
+
+midwest-input-tags .tokenfield.tokenfield-mode-tokens {
+  display: block;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+  background-image: none;
+  padding: 0 1rem;
+  width: 100%;
+  min-height: var(--height);
+  line-height: 1.4;
+  color: var(--black);
+  font-size: var(--complementing-font-size);
+}
+
+midwest-input-tags .tokenfield.tokenfield-mode-tokens[disabled],
+midwest-input-tags .tokenfield.tokenfield-mode-tokens[readonly],
+midwest-input-tags fieldset[disabled] .tokenfield.tokenfield-mode-tokens {
+  opacity: 1;
+  background-color: var(--theme-base2);
+}
+
+midwest-input-tags .tokenfield.tokenfield-mode-tokens[disabled],
+midwest-input-tags fieldset[disabled] .tokenfield.tokenfield-mode-tokens {
+  cursor: not-allowed;
+}
+
+midwest-input-tags .tokenfield.tokenfield-mode-tokens .focused {
+  background: var(--theme-base7);
+  color: var(--background);
+}
+
+midwest-input-tags .tokenfield.tokenfield-mode-tokens .focused .item-remove {
+  color: var(--background);
+}
+
+midwest-input-tags .tokenfield.tokenfield-mode-tokens .selected {
+  background: var(--theme-base0);
+}
+
+midwest-input-tags .tokenfield .tokenfield-set > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+midwest-input-tags .tokenfield .tokenfield-set > ul > li {
+  float: left;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  border-radius: 100em;
+  background: var(--theme-base5);
+  padding: 0.125em 1em;
+  height: 1.75rem;
+  line-height: 1;
+  color: var(--white);
+}
+
+midwest-input-tags .tokenfield .tokenfield-set > ul > li:hover,
+midwest-input-tags .tokenfield .tokenfield-set > ul > li:focus {
+  background: var(--theme-base7);
+  color: var(--theme-base0);
+}
+
+midwest-input-tags .tokenfield .tokenfield-set > ul > li .item-remove {
+  cursor: pointer;
+  display: flex;
+  height: 1rem;
+  text-decoration: none;
+  line-height: 0;
+  color: var(--white);
+  position: relative;
+  width: 1rem;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+midwest-input-tags .tokenfield .tokenfield-set > ul > li .item-remove:hover,
+midwest-input-tags .tokenfield .tokenfield-set > ul > li .item-remove:focus {
+  color: var(--theme-base1);
+}
+
+midwest-input-tags .tokenfield .tokenfield-input {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0.7rem 0;
+  max-width: 100%;
+  width: 100% !important;
+  height: auto;
+}
+
+midwest-input-tags .tokenfield-suggest {
+  box-sizing: content-box;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  z-index: 10;
+  border: 1px solid var(--theme-base2);
+  border-radius: 4px;
+  background-color: var(--white);
+  width: 100%;
+  overflow: auto;
+}
+
+midwest-input-tags .tokenfield .tokenfield-suggest > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+midwest-input-tags .tokenfield .tokenfield-suggest > ul > li {
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+midwest-input-tags[dark] {
+  --border-color: var(--gray8);
+  --background: var(--gray9);
+  --color: var(--white);
+  --icon-color: var(--gray6);
+}
+
+midwest-input-tags[dark] .tokenfield.tokenfield-mode-tokens .focused {
+  background: var(--theme-base7);
+}
+
+midwest-input-tags[dark] .tokenfield .tokenfield-set > ul > li {
+  background: var(--theme-base9);
+}

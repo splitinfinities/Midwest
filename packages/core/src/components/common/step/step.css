@@ -1,0 +1,129 @@
+:host {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  font-weight: bold;
+  height: inherit;
+  position: relative;
+  text-decoration: none;
+  cursor: default;
+  margin-right: calc(-2rem + 2px);
+  clip-path: url(#middle);
+  clip-path: polygon(
+    calc(100% - 2rem) 0%,
+    100% 50%,
+    calc(100% - 2rem) 100%,
+    0% 100%,
+    2rem 50%,
+    0% 0%
+  );
+}
+
+:host([disabled]) {
+  cursor: default;
+  pointer-events: none;
+}
+
+:host ion-icon.valid {
+  font-size: 2rem;
+  margin-left: -1rem;
+  margin-right: 0.5rem;
+  --secondary: var(--theme-base3);
+  color: var(--theme-base1);
+}
+
+:host button {
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  padding: 0;
+  border: 0;
+  position: relative;
+  background: var(--gray5);
+  cursor: pointer;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host midwest-label {
+    margin: 0;
+    color: white;
+    z-index: 1;
+    position: relative;
+    transition: none;
+  }
+}
+
+:host midwest-label {
+  margin: 0;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+:host .title {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:host .title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+:host([complete]) button {
+  background: var(--theme-base6);
+}
+
+:host([complete]) button:hover,
+:host([complete]) button:focus {
+  background: var(--theme-base7);
+}
+
+:host([open]) button,
+:host([current]) button {
+  background: var(--theme-base5);
+}
+
+:host([open]) button .loading,
+:host([current]) button .loading {
+  opacity: 1;
+}
+
+
+:host([dark]) button {
+  background: var(--gray7);
+}
+
+:host([dark]) ion-icon.valid {
+  --secondary: var(--theme-base4);
+  color: var(--theme-base2);
+}
+
+
+:host([dark][complete]) button {
+  background: var(--theme-base7);
+}
+
+:host([dark][complete]) button:hover,
+:host([dark][complete]) button:focus {
+  background: var(--theme-base8);
+}
+
+:host([dark][open]) button,
+:host([dark][current]) button {
+  background: var(--theme-base6);
+}
+
+:host([dark][open]) button .loading,
+:host([dark][current]) button .loading {
+  opacity: 1;
+}

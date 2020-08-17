@@ -2,7 +2,7 @@
   "extends": "../tsconfig.settings.json",
   "compilerOptions": {
     "target": "es2017",
-    "outDir": "build/main",
+    "outDir": "dist/main",
     "rootDir": "src",
     "moduleResolution": "node",
     "module": "commonjs",
@@ -26,6 +26,6 @@
     "typeRoots": ["node_modules/@types", "src/types"]
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules/**", "build/**"],
+  "exclude": ["node_modules/**", "dist/**"],
   "compileOnSave": false
 }

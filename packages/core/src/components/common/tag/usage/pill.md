@@ -1,0 +1,5 @@
+<midwest-tag size="tiny" pill>Awesome</midwest-tag>
+<midwest-tag size="small" pill>Awesome</midwest-tag>
+<midwest-tag pill>Awesome</midwest-tag>
+<midwest-tag size="medium" pill>Awesome</midwest-tag>
+<midwest-tag size="large" pill>Awesome</midwest-tag>

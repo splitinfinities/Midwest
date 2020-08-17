@@ -23,9 +23,14 @@
     "generate": "stencil generate"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@midwest-design/common": "0.0.1",
+    "@midwest-design/core": "0.0.1",
     "@stencil/core": "latest",
     "@stencil/postcss": "^1.0.1",
+    "async-delay": "^1.0.3",
     "autoprefixer": "^9.8.6",
+    "pjax": "^0.2.8",
     "postcss-import": "^12.0.1"
   },
   "license": "MIT"

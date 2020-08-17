@@ -2,6 +2,88 @@
   "version": 1.1,
   "tags": [
     {
+      "name": "copy-wrap",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "align",
+          "description": ""
+        },
+        {
+          "name": "clamp",
+          "description": ""
+        },
+        {
+          "name": "full",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/copy-wrap/copy-wrap.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-accordion",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "compact",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "label",
+          "description": ""
+        },
+        {
+          "name": "max-height",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "description": ""
+        },
+        {
+          "name": "next",
+          "description": ""
+        },
+        {
+          "name": "open",
+          "description": ""
+        },
+        {
+          "name": "tight",
+          "description": ""
+        },
+        {
+          "name": "valid",
+          "description": ""
+        },
+        {
+          "name": "validate",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/accordion/accordion.tsx"
+        }
+      ]
+    },
+    {
       "name": "midwest-avatar",
       "description": {
         "kind": "markdown",
@@ -99,6 +181,1636 @@
         {
           "name": "Source code",
           "url": "./https:/github.com/splitinfinities/midwest/src/components/avatar/avatar.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-button",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "active",
+          "description": "Sets the button or link as an active state."
+        },
+        {
+          "name": "authenticity-token",
+          "description": "Authenticty Token"
+        },
+        {
+          "name": "block",
+          "description": "Sets the button or link to render at full width to the parent."
+        },
+        {
+          "name": "button-tab-index",
+          "description": ""
+        },
+        {
+          "name": "confirm",
+          "description": ""
+        },
+        {
+          "name": "contrast",
+          "description": "Sets the button or link as an outlined button."
+        },
+        {
+          "name": "dark",
+          "description": "Sets the button or link as an outlined button."
+        },
+        {
+          "name": "disabled",
+          "description": "Sets the button or link as disabled and not-interactable."
+        },
+        {
+          "name": "export",
+          "description": "Makes sure the button cannot be exported."
+        },
+        {
+          "name": "for",
+          "description": "Sets the href on the anchor tag if the button is a link."
+        },
+        {
+          "name": "ghost",
+          "description": ""
+        },
+        {
+          "name": "href",
+          "description": "Sets the href on the anchor tag if the button is a link."
+        },
+        {
+          "name": "icon",
+          "description": "Sets the button or link as a button with only an icon."
+        },
+        {
+          "name": "icon-only",
+          "description": "Sets the button or link as a button with only an icon."
+        },
+        {
+          "name": "invert",
+          "description": "Sets the button or link as an outlined button."
+        },
+        {
+          "name": "label",
+          "description": "Sets accessibility options on the buttons"
+        },
+        {
+          "name": "method",
+          "description": "Sets the button or link as an active state.",
+          "values": [
+            {
+              "name": "delete"
+            },
+            {
+              "name": "get"
+            },
+            {
+              "name": "patch"
+            },
+            {
+              "name": "post"
+            },
+            {
+              "name": "put"
+            }
+          ]
+        },
+        {
+          "name": "modal-href",
+          "description": "Sets the href on the anchor tag if the button is a link."
+        },
+        {
+          "name": "name",
+          "description": "Sets the name on the button if the button is an input. Allows the button to act as an item in a form."
+        },
+        {
+          "name": "outline",
+          "description": "Sets the button or link as an outlined button."
+        },
+        {
+          "name": "padding",
+          "description": "Sets the padding inside of the button.",
+          "values": [
+            {
+              "name": "large"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            }
+          ]
+        },
+        {
+          "name": "pill",
+          "description": "Sets the button or link to render as a pill."
+        },
+        {
+          "name": "pjax-selector",
+          "description": ""
+        },
+        {
+          "name": "processable",
+          "description": "Sets the button or link as processing when clicked."
+        },
+        {
+          "name": "processing",
+          "description": ""
+        },
+        {
+          "name": "size",
+          "description": "Sets the size of the button.",
+          "values": [
+            {
+              "name": "large"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            }
+          ]
+        },
+        {
+          "name": "stop-propagation",
+          "description": "Sets the button or link as an active state."
+        },
+        {
+          "name": "tag",
+          "description": "Allows the button to render for different tags.",
+          "values": [
+            {
+              "name": "button"
+            },
+            {
+              "name": "link"
+            },
+            {
+              "name": "modal"
+            },
+            {
+              "name": "onboarding"
+            },
+            {
+              "name": "span"
+            },
+            {
+              "name": "submit"
+            }
+          ]
+        },
+        {
+          "name": "target",
+          "description": "Sets the target on the anchor tag if the button is a link."
+        },
+        {
+          "name": "use-pjax",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "description": "Sets the value on the button if the button is an input."
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/button/button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-callout",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "type",
+          "description": "",
+          "values": [
+            {
+              "name": "alert"
+            },
+            {
+              "name": "default"
+            },
+            {
+              "name": "error"
+            },
+            {
+              "name": "info"
+            },
+            {
+              "name": "success"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/callout/callout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-card",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "back-height",
+          "description": ""
+        },
+        {
+          "name": "block",
+          "description": "Renders as a block in certain scenarios"
+        },
+        {
+          "name": "compact",
+          "description": "Sets the minimum height of the card to 0 when true."
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "export",
+          "description": "disallows this component from exporting to figma"
+        },
+        {
+          "name": "flip-icon",
+          "description": "Sets the href on the anchor tag if the button is a link."
+        },
+        {
+          "name": "flip-ready",
+          "description": "Let's a card be flippable"
+        },
+        {
+          "name": "flippable",
+          "description": "Let's a card be flippable"
+        },
+        {
+          "name": "flipped",
+          "description": "Renders a flipped card"
+        },
+        {
+          "name": "for",
+          "description": "Sets the href on the anchor tag if the button is a link."
+        },
+        {
+          "name": "horizontal",
+          "description": "Renders the hard horizontally"
+        },
+        {
+          "name": "href",
+          "description": "Sets the href if the card is a link."
+        },
+        {
+          "name": "modal-href",
+          "description": "Sets the href if the card is a link."
+        },
+        {
+          "name": "name",
+          "description": "Sets the name if the card is a button."
+        },
+        {
+          "name": "original-height",
+          "description": ""
+        },
+        {
+          "name": "padding",
+          "description": "Sets the padding inside of the button. Can be small, medium, or large.",
+          "values": [
+            {
+              "name": "large"
+            },
+            {
+              "name": "medium"
+            },
+            {
+              "name": "none"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            }
+          ]
+        },
+        {
+          "name": "tag",
+          "description": "Sets the element to render the card as - an anchor tag, a button, or a div.",
+          "values": [
+            {
+              "name": "a"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "div"
+            },
+            {
+              "name": "modal"
+            }
+          ]
+        },
+        {
+          "name": "type",
+          "description": "Sets the type on a button"
+        },
+        {
+          "name": "value",
+          "description": "Sets the value if the card is a button."
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/card/card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-content",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "behavior",
+          "description": ""
+        },
+        {
+          "name": "for",
+          "description": ""
+        },
+        {
+          "name": "open",
+          "description": ""
+        },
+        {
+          "name": "scroll-when-active",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/content/content.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-grid",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "cols",
+          "description": ""
+        },
+        {
+          "name": "column-gap",
+          "description": ""
+        },
+        {
+          "name": "column-width",
+          "description": ""
+        },
+        {
+          "name": "noresponsive",
+          "description": ""
+        },
+        {
+          "name": "padding",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/grid/grid.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-layout",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "align",
+          "description": "",
+          "values": [
+            {
+              "name": "baseline"
+            },
+            {
+              "name": "bottom"
+            },
+            {
+              "name": "center"
+            },
+            {
+              "name": "top"
+            }
+          ]
+        },
+        {
+          "name": "content",
+          "description": "",
+          "values": [
+            {
+              "name": "baseline"
+            },
+            {
+              "name": "bottom"
+            },
+            {
+              "name": "center"
+            },
+            {
+              "name": "top"
+            }
+          ]
+        },
+        {
+          "name": "has-nav",
+          "description": ""
+        },
+        {
+          "name": "height",
+          "description": "",
+          "values": [
+            {
+              "name": "fill"
+            }
+          ]
+        },
+        {
+          "name": "padding",
+          "description": "",
+          "values": [
+            {
+              "name": "large"
+            },
+            {
+              "name": "medium"
+            },
+            {
+              "name": "none"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "description": "",
+          "values": [
+            {
+              "name": "flush"
+            },
+            {
+              "name": "full"
+            },
+            {
+              "name": "large"
+            },
+            {
+              "name": "medium"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            },
+            {
+              "name": "xlarge"
+            }
+          ]
+        },
+        {
+          "name": "type",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/layout/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-message",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "auto-hide",
+          "description": ""
+        },
+        {
+          "name": "closable",
+          "description": ""
+        },
+        {
+          "name": "closing",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "description": ""
+        },
+        {
+          "name": "opening",
+          "description": ""
+        },
+        {
+          "name": "remember",
+          "description": ""
+        },
+        {
+          "name": "shown",
+          "description": ""
+        },
+        {
+          "name": "size",
+          "description": "",
+          "values": [
+            {
+              "name": "default"
+            },
+            {
+              "name": "full"
+            }
+          ]
+        },
+        {
+          "name": "striped",
+          "description": ""
+        },
+        {
+          "name": "type",
+          "description": "",
+          "values": [
+            {
+              "name": "alert"
+            },
+            {
+              "name": "error"
+            },
+            {
+              "name": "info"
+            },
+            {
+              "name": "success"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/message/message.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-pagination",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "color",
+          "description": ""
+        },
+        {
+          "name": "current",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "padding",
+          "description": ""
+        },
+        {
+          "name": "pages",
+          "description": "Public: Sets the max cap of pages you can skip through"
+        },
+        {
+          "name": "type",
+          "description": "",
+          "values": [
+            {
+              "name": "compact"
+            },
+            {
+              "name": "full"
+            }
+          ]
+        },
+        {
+          "name": "url",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/pagination/pagination.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-slide",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "slide-id",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/slide/slide.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-slides",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "auto-height",
+          "description": ""
+        },
+        {
+          "name": "autoplay",
+          "description": ""
+        },
+        {
+          "name": "centered-slides",
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "description": "",
+          "values": [
+            {
+              "name": "horizontal"
+            },
+            {
+              "name": "vertical"
+            }
+          ]
+        },
+        {
+          "name": "effect",
+          "description": "",
+          "values": [
+            {
+              "name": "coverflow"
+            },
+            {
+              "name": "cube"
+            },
+            {
+              "name": "fade"
+            },
+            {
+              "name": "flip"
+            },
+            {
+              "name": "slide"
+            }
+          ]
+        },
+        {
+          "name": "initial-slide",
+          "description": ""
+        },
+        {
+          "name": "loop",
+          "description": ""
+        },
+        {
+          "name": "nested",
+          "description": ""
+        },
+        {
+          "name": "options",
+          "description": "Options to pass to the swiper instance.\nSee http://idangero.us/swiper/api/ for valid options"
+        },
+        {
+          "name": "pagination",
+          "description": ""
+        },
+        {
+          "name": "responsive",
+          "description": ""
+        },
+        {
+          "name": "slides-per-view",
+          "description": ""
+        },
+        {
+          "name": "space-between",
+          "description": ""
+        },
+        {
+          "name": "speed",
+          "description": ""
+        },
+        {
+          "name": "watch-slides-progress",
+          "description": ""
+        },
+        {
+          "name": "watch-slides-visibility",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/slides/slides.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-step",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "base",
+          "description": "",
+          "values": [
+            {
+              "name": "blue"
+            },
+            {
+              "name": "cyan"
+            },
+            {
+              "name": "gold"
+            },
+            {
+              "name": "gray"
+            },
+            {
+              "name": "green"
+            },
+            {
+              "name": "indigo"
+            },
+            {
+              "name": "lime"
+            },
+            {
+              "name": "magenta"
+            },
+            {
+              "name": "orange"
+            },
+            {
+              "name": "pink"
+            },
+            {
+              "name": "red"
+            },
+            {
+              "name": "teal"
+            },
+            {
+              "name": "violet"
+            },
+            {
+              "name": "yellow"
+            }
+          ]
+        },
+        {
+          "name": "complete",
+          "description": ""
+        },
+        {
+          "name": "current",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "disabled",
+          "description": ""
+        },
+        {
+          "name": "error",
+          "description": ""
+        },
+        {
+          "name": "export",
+          "description": ""
+        },
+        {
+          "name": "href",
+          "description": ""
+        },
+        {
+          "name": "open",
+          "description": ""
+        },
+        {
+          "name": "order",
+          "description": ""
+        },
+        {
+          "name": "past",
+          "description": ""
+        },
+        {
+          "name": "tab-count",
+          "description": ""
+        },
+        {
+          "name": "validate",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/step/step.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-steps",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "description": ""
+        },
+        {
+          "name": "validate",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/steps/steps.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-tab",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "disabled",
+          "description": ""
+        },
+        {
+          "name": "href",
+          "description": "Sets the href on the anchor tag if the button is a link."
+        },
+        {
+          "name": "name",
+          "description": ""
+        },
+        {
+          "name": "notifications",
+          "description": ""
+        },
+        {
+          "name": "notifications-color",
+          "description": ""
+        },
+        {
+          "name": "open",
+          "description": ""
+        },
+        {
+          "name": "order",
+          "description": ""
+        },
+        {
+          "name": "size",
+          "description": "",
+          "values": [
+            {
+              "name": "large"
+            },
+            {
+              "name": "medium"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            }
+          ]
+        },
+        {
+          "name": "tab-count",
+          "description": ""
+        },
+        {
+          "name": "tag",
+          "description": "",
+          "values": [
+            {
+              "name": "button"
+            },
+            {
+              "name": "link"
+            }
+          ]
+        },
+        {
+          "name": "target",
+          "description": "Sets the target on the anchor tag if the button is a link."
+        },
+        {
+          "name": "vertical",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/tab/tab.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-tabs",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "behavior",
+          "description": ""
+        },
+        {
+          "name": "block",
+          "description": ""
+        },
+        {
+          "name": "block-indicator",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "flip-indicator",
+          "description": ""
+        },
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "description": ""
+        },
+        {
+          "name": "noanimation",
+          "description": ""
+        },
+        {
+          "name": "ready",
+          "description": ""
+        },
+        {
+          "name": "size",
+          "description": "",
+          "values": [
+            {
+              "name": "large"
+            },
+            {
+              "name": "medium"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            }
+          ]
+        },
+        {
+          "name": "tab-height",
+          "description": ""
+        },
+        {
+          "name": "tab-left",
+          "description": ""
+        },
+        {
+          "name": "tab-opacity",
+          "description": ""
+        },
+        {
+          "name": "tab-top",
+          "description": ""
+        },
+        {
+          "name": "tab-width",
+          "description": ""
+        },
+        {
+          "name": "vertical",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/tabs/tabs.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-tag",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "base",
+          "description": "",
+          "values": [
+            {
+              "name": "blue"
+            },
+            {
+              "name": "cyan"
+            },
+            {
+              "name": "gold"
+            },
+            {
+              "name": "gray"
+            },
+            {
+              "name": "green"
+            },
+            {
+              "name": "indigo"
+            },
+            {
+              "name": "lime"
+            },
+            {
+              "name": "magenta"
+            },
+            {
+              "name": "orange"
+            },
+            {
+              "name": "pink"
+            },
+            {
+              "name": "red"
+            },
+            {
+              "name": "teal"
+            },
+            {
+              "name": "violet"
+            },
+            {
+              "name": "yellow"
+            }
+          ]
+        },
+        {
+          "name": "color",
+          "description": "",
+          "values": [
+            {
+              "name": "blue"
+            },
+            {
+              "name": "cyan"
+            },
+            {
+              "name": "gold"
+            },
+            {
+              "name": "gray"
+            },
+            {
+              "name": "green"
+            },
+            {
+              "name": "indigo"
+            },
+            {
+              "name": "lime"
+            },
+            {
+              "name": "magenta"
+            },
+            {
+              "name": "orange"
+            },
+            {
+              "name": "pink"
+            },
+            {
+              "name": "red"
+            },
+            {
+              "name": "teal"
+            },
+            {
+              "name": "violet"
+            },
+            {
+              "name": "yellow"
+            }
+          ]
+        },
+        {
+          "name": "complement",
+          "description": "",
+          "values": [
+            {
+              "name": "blue"
+            },
+            {
+              "name": "cyan"
+            },
+            {
+              "name": "gold"
+            },
+            {
+              "name": "gray"
+            },
+            {
+              "name": "green"
+            },
+            {
+              "name": "indigo"
+            },
+            {
+              "name": "lime"
+            },
+            {
+              "name": "magenta"
+            },
+            {
+              "name": "orange"
+            },
+            {
+              "name": "pink"
+            },
+            {
+              "name": "red"
+            },
+            {
+              "name": "teal"
+            },
+            {
+              "name": "violet"
+            },
+            {
+              "name": "yellow"
+            }
+          ]
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "icon",
+          "description": ""
+        },
+        {
+          "name": "outline",
+          "description": ""
+        },
+        {
+          "name": "pill",
+          "description": ""
+        },
+        {
+          "name": "size",
+          "description": "",
+          "values": [
+            {
+              "name": "large"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/tag/tag.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-theme",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "base",
+          "description": "",
+          "values": [
+            {
+              "name": "blue"
+            },
+            {
+              "name": "cyan"
+            },
+            {
+              "name": "gold"
+            },
+            {
+              "name": "gray"
+            },
+            {
+              "name": "green"
+            },
+            {
+              "name": "indigo"
+            },
+            {
+              "name": "lime"
+            },
+            {
+              "name": "magenta"
+            },
+            {
+              "name": "orange"
+            },
+            {
+              "name": "pink"
+            },
+            {
+              "name": "red"
+            },
+            {
+              "name": "teal"
+            },
+            {
+              "name": "violet"
+            },
+            {
+              "name": "yellow"
+            }
+          ]
+        },
+        {
+          "name": "body",
+          "description": ""
+        },
+        {
+          "name": "complement",
+          "description": "",
+          "values": [
+            {
+              "name": "blue"
+            },
+            {
+              "name": "cyan"
+            },
+            {
+              "name": "gold"
+            },
+            {
+              "name": "gray"
+            },
+            {
+              "name": "green"
+            },
+            {
+              "name": "indigo"
+            },
+            {
+              "name": "lime"
+            },
+            {
+              "name": "magenta"
+            },
+            {
+              "name": "orange"
+            },
+            {
+              "name": "pink"
+            },
+            {
+              "name": "red"
+            },
+            {
+              "name": "teal"
+            },
+            {
+              "name": "violet"
+            },
+            {
+              "name": "yellow"
+            }
+          ]
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "light",
+          "description": ""
+        },
+        {
+          "name": "system",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/theme/theme.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-time",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "format",
+          "description": ""
+        },
+        {
+          "name": "relative",
+          "description": ""
+        },
+        {
+          "name": "unix",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/time/time.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-tooltip",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "align",
+          "description": "",
+          "values": [
+            {
+              "name": "bottom-center"
+            },
+            {
+              "name": "bottom-left"
+            },
+            {
+              "name": "bottom-right"
+            },
+            {
+              "name": "center"
+            },
+            {
+              "name": "left"
+            },
+            {
+              "name": "middle-center"
+            },
+            {
+              "name": "middle-left"
+            },
+            {
+              "name": "middle-right"
+            },
+            {
+              "name": "right"
+            }
+          ]
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "focused",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/tooltip/tooltip.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-unit",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "decimals",
+          "description": ""
+        },
+        {
+          "name": "from",
+          "description": ""
+        },
+        {
+          "name": "money",
+          "description": ""
+        },
+        {
+          "name": "round",
+          "description": ""
+        },
+        {
+          "name": "to",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/unit/unit.tsx"
+        }
+      ]
+    },
+    {
+      "name": "skeleton-img",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "block",
+          "description": ""
+        },
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "icon",
+          "description": ""
+        },
+        {
+          "name": "loading",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/skeleton-img/skeleton-img.tsx"
+        }
+      ]
+    },
+    {
+      "name": "skeleton-text",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "as",
+          "description": ""
+        },
+        {
+          "name": "loading",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/skeleton-text/skeleton-text.tsx"
         }
       ]
     }

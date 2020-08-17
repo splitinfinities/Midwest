@@ -1,0 +1,352 @@
+:host {
+  font-variant-numeric: tabular-nums;
+  display: block;
+  contain: content;
+}
+
+:host([disabled]) {
+  background: var(--gray2) !important;
+  color: var(--gray5) !important;
+  cursor: not-allowed !important;
+}
+
+:host([disabled]) * {
+  cursor: not-allowed !important;
+}
+
+:host(:hover),
+:host(:focus),
+:host(:focus-within) {
+  background: var(--gray0);
+  outline: 0;
+}
+
+:host([dark]) {
+  background: var(--black);
+}
+
+:host([dark]:hover),
+:host([dark]:focus),
+:host([dark]:focus-within) {
+  background: var(--gray9);
+}
+
+:host([icon]) .supplementalIcon {
+  font-size: 2rem;
+  margin: -0.25em 0.125em -0.25em 0;
+  height: 0.75em;
+  width: 1em;
+}
+
+:host([icon]) .supplementalIcon[aria-label="logo facebook"] {
+  color: var(--facebook);
+}
+
+:host([icon]) .supplementalIcon[aria-label="logo twitter"] {
+  color: var(--twitter);
+}
+
+:host([icon]) .supplementalIcon[aria-label="logo linkedin"] {
+  color: var(--linkedin);
+}
+
+:host([icon]) .supplementalIcon[aria-label="logo instagram"] {
+  background: var(--instagram-gradient);
+  border-radius: 6px;
+  color: var(--white);
+}
+
+:host([disabled]) midwest-label {
+  color: var(--gray5);
+}
+
+:host .clickable {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 0.5rem;
+  align-items: center;
+  appearance: none !important;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: 0;
+}
+
+:host([block]) .clickable {
+  flex-direction: column;
+}
+
+:host([type="radio"]) .clickable,
+:host([type="checkbox"]) .clickable {
+  grid-template-columns: 1fr auto;
+}
+
+:host([avatar]) .clickable {
+  grid-template-columns: auto 1fr;
+}
+
+:host([type="radio"][avatar]) .clickable,
+:host([type="checkbox"][avatar]) .clickable {
+  grid-template-columns: auto 1fr auto;
+}
+
+:host .input {
+  display: none;
+}
+
+:host .clickable > midwest-label {
+  margin: 0;
+  width: 100%;
+}
+
+:host([avatar]) midwest-avatar {
+  margin-right: 0.5rem;
+}
+
+:host([avatar][inline]) midwest-avatar {
+  margin-right: 0.5rem;
+  width: 2rem;
+}
+
+:host([tag="radio"]) midwest-label,
+:host([tag="checkbox"]) midwest-label {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+:host([tag="radio"]) midwest-box,
+:host([tag="checkbox"]) midwest-box {
+  margin-left: auto;
+}
+
+:host([tag="radio"][block]) midwest-box,
+:host([tag="checkbox"][block]) midwest-box {
+  margin-left: 0.5rem;
+}
+
+:host midwest-box {
+  margin: 0;
+}
+
+/* Inline */
+:host([inline]) {
+  display: inline-block;
+}
+
+:host([inline]) .clickable {
+  padding: 0.5rem;
+}
+
+:host([inline]) midwest-box {
+  margin: 0 0.5rem 0 0;
+}
+
+/* Block */
+:host([block]) {
+  overflow: hidden;
+  --focus: var(--theme-base7);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host([block]) .clickable {
+    position: relative;
+    border: 1px solid var(--border);
+    transition: none;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+:host([block]) .clickable {
+  position: relative;
+  border: 1px solid var(--border);
+  transition: all 200ms var(--ease) 0s;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host([block]) .clickable .wrapper {
+    transition: none;
+  }
+}
+
+:host([block]) .clickable .wrapper {
+  transition: all 200ms var(--ease) 0s;
+}
+
+:host([block]):hover,
+:host([block]):focus {
+  box-shadow: 0 2px 6px 0 rgba(72, 72, 73, 0.15);
+}
+
+:host([block]):focus-within .wrapper,
+:host([block]) .clickable:hover .wrapper,
+:host([block]) .clickable:focus .wrapper {
+  background: var(--hover-background);
+}
+
+:host([block]):focus-within .clickable,
+:host([block]) .clickable:hover,
+:host([block]) .clickable:focus {
+  border-color: var(--gray3);
+}
+
+:host([block]) .clickable:active {
+  border-color: var(--focus);
+}
+
+:host([block]) .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--background);
+  padding: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+:host([block]) .block-content {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+:host([block]) midwest-box {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+:host([block][icon]) .wrapper {
+  justify-content: space-between;
+}
+
+:host([block][icon]) .block-content {
+  justify-content: space-between;
+  grid-template-columns: 1fr 4fr;
+}
+
+:host([block][icon]) midwest-box {
+  order: 3;
+  margin-right: 0;
+  margin-left: 1.5rem;
+}
+
+:host([block]) copy-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+:host([block][inline]) {
+  margin: 0;
+}
+
+:host([block][inline]) label {
+  padding: 1rem 0;
+}
+
+:host([block][size="small"]) label {
+  padding: 0.5rem 0;
+}
+
+:host([block][checked]) {
+  z-index: 3;
+  border-color: var(--background);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host([has-selected]) .selected {
+    border-top: 1px solid var(--gray1);
+    background: white;
+    flex: 1 1 100%;
+    width: 100%;
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: none;
+  }
+}
+
+:host([has-selected]) .selected {
+  border-top: 1px solid var(--gray1);
+  background: white;
+  flex: 1 1 100%;
+  width: 100%;
+  max-height: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 350ms var(--ease) 0s, max-height 350ms var(--ease) 0s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host([has-selected]) .selected .selected-wrapper {
+    padding: 1.5rem;
+    transform: translate3d(0, -1.5rem, 0);
+    transition: none;
+  }
+}
+
+:host([has-selected]) .selected .selected-wrapper {
+  padding: 1.5rem;
+  transform: translate3d(0, -1.5rem, 0);
+  transition: transform 350ms var(--ease) 0s;
+}
+
+:host([has-selected]) .selected.active {
+  opacity: 1;
+  max-height: 100%;
+  height: 100%;
+}
+
+:host([has-selected]) .selected.active .selected-wrapper {
+  transform: translate3d(0, 0, 0);
+}
+
+:host .status midwest-tag {
+  display: block;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .status {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    transform: translate3d(calc(100% + 1rem), 0%, 0);
+    transition: none;
+  }
+}
+
+:host .status {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  transform: translate3d(calc(100% + 1rem), 0%, 0);
+  transition: all 125ms var(--ease) 0ms;
+}
+
+:host .status.active {
+  transform: translate3d(0%, 0%, 0);
+}
+
+:host([avatar-size="medium"]) .clickable {
+  padding: 0.25rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

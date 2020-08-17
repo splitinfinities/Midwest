@@ -1,0 +1,39 @@
+
+
+:host {
+  display: none;
+  animation-name: fadeInUp;
+  animation-timing-function: var(--ease);
+  animation-duration: 450ms;
+  animation-fill-mode: both;
+  transform: translate3d(0, 1rem, 0);
+  opacity: 0;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host {
+    animation: none;
+  }
+}
+
+:host([open]) {
+  display: block;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1rem, 0);
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

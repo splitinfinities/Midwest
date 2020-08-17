@@ -1,0 +1,43 @@
+midwest-rich-text .ql-mention-list-container {
+  width: 270px;
+  border: 1px solid var(--theme-base2);
+  border-radius: 8px;
+  background-color: var(--white);
+  box-shadow: 0 2px 12px 0 rgba(30, 30, 30, 0.08);
+  z-index: 9001;
+  overflow: hidden;
+}
+
+midwest-rich-text .ql-mention-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+midwest-rich-text .ql-mention-list-item {
+  cursor: pointer;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+midwest-rich-text .ql-mention-list-item.selected {
+  background-color: var(--theme-base0);
+  text-decoration: none;
+}
+
+midwest-rich-text .mention {
+  height: 24px;
+  width: 65px;
+  border-radius: 6px;
+  background-color: var(--theme-base2);
+  padding: 3px 0;
+  margin-right: 2px;
+}
+
+midwest-rich-text .mention > span {
+  margin: 0 3px;
+}

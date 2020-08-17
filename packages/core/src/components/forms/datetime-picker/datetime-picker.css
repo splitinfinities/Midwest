@@ -1,0 +1,330 @@
+@import "../../../global/css/theme.css";
+
+:host,
+:host *,
+:host *:before,
+:host *:after {
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+	padding: 0;
+	align-items: stretch;
+	max-width: 50rem;
+	position: fixed;
+	z-index: 99999999;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+:host([method="date"]) {
+	max-width: 30rem;
+}
+
+:host midwest-card {
+	--card-width: 100% !important;
+}
+
+:host midwest-card section {
+	padding: 0;
+}
+
+:host midwest-card footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+:host .layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: stretch;
+}
+
+@media (min-width: 700px) {
+	:host .layout {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: stretch;
+		flex-direction: row;
+		min-width: 46.875rem;
+		min-height: 21.875rem;
+	}
+
+
+	:host([method="date"]) .layout  {
+		min-width: auto;
+		min-height: auto;
+	}
+
+	:host .layout > *:first-child {
+		flex: 1 1 300px;
+	}
+
+	:host .layout > * {
+		flex: 0 0 50%;
+		width: 50%;
+	}
+}
+
+:host midwest-calendar {
+	cursor: pointer;
+}
+
+:host .span-am-pm {
+	display: block;
+	font-size: 1rem;
+}
+
+/* Clock Digital Display */
+:host .digital-display {
+  flex: 1 auto;
+  background-color: $gray0;
+  background-color: var(--gray0);
+	padding: 0;
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+:host .digital-display.hidden {
+	display: none;
+}
+
+:host .text-container {
+	font-size: 4rem;
+	font-weight: bold;
+	text-align: center;
+	color: $black;
+	color: var(--black);
+  font-weight: 700;
+	position: relative;
+	user-select: none;
+	padding: 1rem;
+}
+
+:host .display-column {
+	color: $gray7;
+	color: var(--gray7);
+}
+
+:host h2 {
+	margin: 0;
+}
+
+:host .display-hours,
+:host .display-minutes,
+:host .display-years,
+:host .display-months,
+:host .display-days {
+	@apply font-lato;
+	font-variant-numeric: tabular-nums;
+	font-size: 4rem;
+	color: $gray7;
+	color: var(--gray7);
+  font-weight: 700;
+	border: none;
+	appearance: none;
+	background: transparent;
+}
+
+
+:host .display-years,
+:host .display-months,
+:host .display-days {
+	font-size: 2.5rem;
+}
+
+:host .display-date {
+	font-size: 3rem;
+}
+
+:host .display-hours.open,
+:host .display-minutes.open,
+:host .display-years.open,
+:host .display-months.open,
+:host .display-days.open {
+	color: $black;
+	color: var(--black);
+}
+
+:host .display-hours,
+:host .display-minutes,
+:host .am-pm div,
+:host .display-years,
+:host .display-months,
+:host .display-days {
+	cursor: pointer;
+}
+
+:host .display-hours {
+  margin-right: 3px;
+}
+
+:host .display-days,
+:host .display-years {
+  margin-left: 6px;
+}
+
+:host .display-minutes {
+  margin-left: 3px;
+}
+
+/* Analog Clock Display */
+:host .analog-display {
+	flex: 2.5 auto;
+	padding: 2rem;
+	display: flex;
+	-ms-grid-column: 2;
+	flex-direction: column;
+	opacity: 1;
+	transform: scale3d(1);
+	transition: opacity 100ms var(--ease) 0s, transform 100ms var(--ease) 0s;
+}
+
+:host .calendar-display {
+	flex: 2.5 auto;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	opacity: 1;
+	transform: scale3d(1);
+	transition: opacity 100ms var(--ease) 0s, transform 100ms var(--ease) 0s;
+}
+
+:host .analog-display.out,
+:host .calendar-display.out {
+	visibility: hidden !important;
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transform: scale3d(0.8);
+}
+
+
+:host .plate {
+	background-color: $gray0;
+	background-color: var(--theme-base0);
+	border: 4px solid $gray1;
+	border: 4px solid var(--theme-base1);
+	border-radius: 50%;
+	width: 270px;
+	height: 270px;
+	overflow: visible;
+	position: relative;
+  margin: auto;
+	user-select: none;
+	cursor: pointer;
+}
+
+:host midwest-button[hidden] {
+	visibility: hidden;
+}
+
+:host .canvas,
+:host .dial {
+	position: absolute;
+	left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+:host .tick {
+	border-radius: 50%;
+	color: $gray5;
+	color: var(--theme-base5);
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:host .tick.active,
+:host .tick:hover {
+	background-color: $gray2;
+	background-color: var(--theme-base2);
+}
+
+:host .dial {
+	transition: transform 350ms, opacity 350ms;
+}
+
+:host .dial-out {
+  &.hours {
+	  transform: scale(1.1, 1.1);
+  }
+
+  &.minutes {
+	  transform: scale(.8, .8);
+  }
+
+	opacity: 0;
+}
+
+:host .canvas {
+	transition: opacity 175ms;
+
+  line {
+	  stroke: $gray5;
+	  stroke: var(--theme-base5);
+	  stroke-width: 4;
+	  stroke-linecap: round;
+  }
+}
+
+:host .canvas-out {
+	opacity: 0.25;
+}
+
+:host .canvas-bearing {
+	stroke: none;
+	fill: $gray1;
+	fill: var(--theme-base1);
+}
+
+:host .canvas-bg {
+	stroke: none;
+	fill: $gray1;
+	fill: var(--theme-base1);
+}
+
+:host midwest-switch {
+	display: inline-block;
+}
+
+/* Footer */
+:host .footer {
+  margin: 0 auto;
+  padding: 5px 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+:host .clear,
+:host .close {
+  padding: 0 20px;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+	:host .display-am-pm {
+	  position: relative;
+	  right: auto;
+	  bottom: auto;
+	  text-align: center;
+	  margin-top: 1.2rem;
+	}
+}

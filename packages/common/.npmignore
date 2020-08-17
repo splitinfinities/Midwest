@@ -8,7 +8,7 @@ tslint.json
 .prettierignore
 .vscode
 node_modules
-build/docs
+dist/docs
 **/*.spec.*
 coverage
 .nyc_output

@@ -22,6 +22,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@stencil/core": "latest",
     "@stencil/postcss": "^1.0.1",
     "autoprefixer": "^9.8.6",

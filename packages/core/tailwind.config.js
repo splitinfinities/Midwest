@@ -59,12 +59,11 @@ module.exports = {
       xl: '1280px',
     },
     fontFamily: {
-      display: ['Azo Sans', 'azo-sans-web', 'sans-serif'],
-      body: ['lato', 'Lato', 'sans-serif'],
+      display: ['Inter Var', 'Inter', 'sans-serif'],
+      body: ['Inter Var', 'Inter', 'sans-serif'],
       system: ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
-      lato: ['lato', 'Lato', 'sans-serif'],
-      azo: ['Azo Sans', 'azo-sans-web', 'sans-serif'],
       mono: ['SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+      inter: ['Inter Var', 'Inter', 'sans-serif'],
     },
     fontSize: {
       'xs': '.75rem',

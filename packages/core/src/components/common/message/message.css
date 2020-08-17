@@ -1,0 +1,186 @@
+:host {
+  display: none;
+  position: relative;
+  padding: 0 20px;
+  width: 100%;
+  height: auto;
+  height: var(--height, auto);
+  overflow: hidden;
+  background-color: var(--theme-base4, var(--gray5));
+  animation-duration: .35s;
+  animation-fill-mode: both;
+  animation-name: open-message;
+  transform: translate3d(0,-100%,0);
+  opacity: 0;
+  height: 0px;
+}
+
+:host([shown]) {
+  animation-duration: .35s;
+  animation-fill-mode: both;
+  animation-name: open-message;
+  transform: translate3d(0,-100%,0);
+  display: block !important;
+  height: 0px;
+}
+
+:host([closing]) {
+  animation-duration: .35s;
+  animation-fill-mode: both;
+  transform: translate3d(0,0,0);
+  animation-name: close-message;
+  display: block !important;
+  height: 0px;
+}
+
+:host([striped])::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  top: 0;
+  left: -10%;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--theme-base0),
+    var(--theme-base0) 2rem,
+    var(--theme-base1) 0,
+    var(--theme-base1) 4rem
+  );
+  mix-blend-mode: multiply;
+  animation: moveStripes 10s linear both infinite;
+}
+
+:host([visible="false"]) {
+  height: 0;
+  overflow: hidden;
+}
+
+:host([visible="false"]) * {
+  opacity: 0;
+}
+
+:host .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  z-index: 1;
+  overflow: auto;
+}
+
+:host .wrap ::slotted(p),
+:host .wrap ::slotted(div) {
+  width: 100%;
+}
+
+:host .wrap ::slotted(midwest-button) {
+  margin-left: 0;
+  align-self: center;
+  line-height: 1;
+}
+
+:host([size="full"]) .wrap {
+  min-width: 30rem;
+  max-width: 100%;
+}
+
+:host a {
+  color: white;
+}
+
+:host a:hover,
+:host a:active,
+:host a:focus,
+:host a:active {
+  color: var(--theme-base1);
+}
+
+:host p {
+  color: var(--theme-base9);
+}
+
+:host .wrap ion-icon {
+  font-size: 2rem;
+  color: var(--theme-base1);
+}
+
+:host button {
+  margin-right: 0;
+  margin-left: auto;
+  appearance: none;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+}
+
+:host button ion-icon {
+  color: currentColor !important;
+}
+
+:host button[icon] ion-icon {
+  margin-right: 0;
+  margin-left: 1rem;
+  color: var(--black);
+  background: transparent;
+  border: none;
+}
+
+:host([dark]) {
+  background-color: var(--theme-base6, var(--gray6));
+}
+
+:host([dark][striped])::after {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--theme-base6),
+    var(--theme-base6) 2rem,
+    var(--theme-base7) 0,
+    var(--theme-base7) 4rem
+  );
+}
+
+:host([dark]) .wrap ion-icon {
+  color: var(--theme-base1);
+}
+
+@keyframes open-message {
+  from {
+      transform: translate3d(0,-100%,0);
+      opacity: 0;
+      height: 0px;
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+      height: var(--height);
+  }
+}
+
+@keyframes close-message {
+  from {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+      height: var(--height);
+  }
+
+  to {
+      transform: translate3d(0,-100%,0);
+      opacity: 0;
+      height: 0px;
+  }
+}

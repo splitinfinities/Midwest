@@ -4,9 +4,7 @@
     { "path": "core" },
     { "path": "media" },
     { "path": "helpers" },
-    { "path": "forms" },
     { "path": "common" },
-    { "path": "audio" },
-    { "path": "docs" }
+    { "path": "audio" }
   ]
 }

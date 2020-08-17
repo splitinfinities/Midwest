@@ -1,0 +1,145 @@
+:host,
+:host *,
+:host *:before,
+:host *:after {
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  --accordion-height: 200vh;
+  --padding-underneath: 6rem;
+  outline: none;
+}
+
+:host .expander {
+  transition: all 0.35s ease-out 0.1s, opacity 0.25s ease-out 0s;
+  opacity: 0;
+  padding: 0;
+  width: 100%;
+  max-height: var(--expander-max-height);
+  height: 0;
+  overflow: hidden;
+  transform: translateY(-60px);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .expander {
+    transition: none;
+  }
+}
+
+:host .expander.open {
+  transition: all 0.35s ease-in-out 0s, opacity 0.175s ease-in-out 0.175s,
+    overflow 0s ease-in-out 0.2s;
+  opacity: 1;
+  height: calc(var(--accordion-height) + var(--padding-underneath));
+  overflow: auto;
+  transform: translateY(0px);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .expander.open {
+    transition: none;
+  }
+}
+
+:host .expander midwest-item {
+  padding-left: 1rem;
+}
+
+:host .expander midwest-item:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+:host([tight]) {
+  --padding-underneath: 1rem;
+}
+
+:host([tight]) .expander ::slotted(midwest-item) {
+  padding: 0 1.5rem;
+}
+
+:host([tight]) .expander ::slotted(midwest-item) {
+  padding: 0 0.75rem;
+}
+
+:host .wrap {
+  transform: translateZ(0);
+}
+
+:host .wrap .button-wrap {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9;
+  min-height: 3rem;
+  padding: 1rem 0;
+  color: var(--theme-base9);
+  outline: 0;
+}
+
+:host([compact]) .wrap .button-wrap {
+  padding: 0;
+}
+
+:host .wrap .button-wrap midwest-item button.button {
+  padding: 0;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .chevron {
+    position: absolute;
+    right: 1rem;
+    color: var(--gray4);
+    margin-left: auto;
+    transition: none;
+  }
+}
+
+:host .chevron {
+  position: absolute;
+  right: 1rem;
+  color: var(--gray4);
+  margin-left: auto;
+  transition: all 350ms ease-in-out 0s;
+}
+
+:host([open]) .chevron {
+  transform: rotate(180deg);
+}
+
+:host .wrap .button-wrap midwest-button {
+  --color: var(--gray9);
+}
+
+:host #icon {
+  display: flex;
+  margin-right: 3rem;
+}
+
+:host ::slotted(midwest-icon[slot="icon"]),
+:host #icon midwest-icon {
+  font-size: 3rem;
+  right: 3rem;
+  color: var(--red5);
+}
+
+:host([valid]) #icon midwest-icon {
+  color: var(--green5);
+  --secondary: var(--green1);
+}
+
+:host ::slotted(*[slot="label"]) {
+  padding-right: 2rem;
+}
+
+:host([dark]) ::slotted(*),
+:host([dark]) ::slotted(*[slot="label"]) {
+  color: var(--theme-base5);
+}

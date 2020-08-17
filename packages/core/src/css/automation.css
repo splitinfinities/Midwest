@@ -116,7 +116,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-azo;
+  @apply font-inter;
   font-weight: 700;
   font-weight: bolder;
   letter-spacing: 0.02em;
@@ -253,7 +253,7 @@ h4 + p,
 h5 + p,
 h6 + p,
 p + p {
-  @apply font-lato;
+  @apply font-inter;
   margin-top: 1rem;
 }
 
