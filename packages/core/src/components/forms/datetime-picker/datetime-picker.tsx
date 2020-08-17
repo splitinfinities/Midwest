@@ -7,7 +7,7 @@ dayjs.extend(customParseFormat)
 
 @Component({
   tag: 'midwest-datetime-picker',
-  styleUrl: 'datetime-picker.scss',
+  styleUrl: 'datetime-picker.css',
   shadow: true,
 })
 export class DateTimePicker {

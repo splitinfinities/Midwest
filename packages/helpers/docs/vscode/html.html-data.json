@@ -2,29 +2,149 @@
   "version": 1.1,
   "tags": [
     {
-      "name": "my-component",
+      "name": "midwest-map",
       "description": {
         "kind": "markdown",
         "value": ""
       },
       "attributes": [
         {
-          "name": "first",
-          "description": "The first name"
+          "name": "api-key",
+          "description": ""
         },
         {
-          "name": "last",
-          "description": "The last name"
+          "name": "block",
+          "description": ""
         },
         {
-          "name": "middle",
-          "description": "The middle name"
+          "name": "fullscreen-control",
+          "description": ""
+        },
+        {
+          "name": "gesture-handling",
+          "description": "",
+          "values": [
+            {
+              "name": "auto"
+            },
+            {
+              "name": "cooperative"
+            },
+            {
+              "name": "greedy"
+            },
+            {
+              "name": "none"
+            }
+          ]
+        },
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "lat",
+          "description": ""
+        },
+        {
+          "name": "lng",
+          "description": ""
+        },
+        {
+          "name": "map-type",
+          "description": ""
+        },
+        {
+          "name": "no-ui",
+          "description": ""
+        },
+        {
+          "name": "street-view",
+          "description": ""
+        },
+        {
+          "name": "theme",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        },
+        {
+          "name": "zoom",
+          "description": ""
+        },
+        {
+          "name": "zoom-controls",
+          "description": ""
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/my-component/my-component.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/map/map.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-map-marker",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "address",
+          "description": ""
+        },
+        {
+          "name": "icon",
+          "description": ""
+        },
+        {
+          "name": "icon-height",
+          "description": ""
+        },
+        {
+          "name": "icon-width",
+          "description": ""
+        },
+        {
+          "name": "lat",
+          "description": ""
+        },
+        {
+          "name": "lng",
+          "description": ""
+        },
+        {
+          "name": "marker-title",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/map-marker/marker.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-pjax",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "pjax",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/pjax/pjax.tsx"
         }
       ]
     }

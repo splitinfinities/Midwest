@@ -1,5 +1,5 @@
 {
-  "timestamp": "2020-08-17T16:25:55",
+  "timestamp": "2020-08-17T19:11:17",
   "compiler": {
     "name": "@stencil/core",
     "version": "1.17.3",
@@ -7,21 +7,21 @@
   },
   "components": [
     {
-      "filePath": "./src/components/my-component/my-component.tsx",
-      "encapsulation": "shadow",
-      "tag": "my-component",
-      "readme": "# my-component\n\n\n",
+      "filePath": "./src/components/map/map.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-map",
+      "readme": "# midwest-google-maps\n\n\n",
       "docs": "",
       "docsTags": [],
       "usage": {},
       "props": [
         {
-          "name": "first",
+          "name": "apiKey",
           "type": "string",
           "mutable": false,
-          "attr": "first",
+          "attr": "api-key",
           "reflectToAttr": false,
-          "docs": "The first name",
+          "docs": "",
           "docsTags": [],
           "values": [
             {
@@ -32,12 +32,178 @@
           "required": false
         },
         {
-          "name": "last",
+          "name": "block",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "block",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "true",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "fullscreenControl",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "fullscreen-control",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "gestureHandling",
+          "type": "\"auto\" | \"cooperative\" | \"greedy\" | \"none\"",
+          "mutable": false,
+          "attr": "gesture-handling",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"auto\"",
+          "values": [
+            {
+              "value": "auto",
+              "type": "string"
+            },
+            {
+              "value": "cooperative",
+              "type": "string"
+            },
+            {
+              "value": "greedy",
+              "type": "string"
+            },
+            {
+              "value": "none",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "mutable": false,
+          "attr": "height",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "900",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "lat",
+          "type": "number",
+          "mutable": false,
+          "attr": "lat",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "-34.397",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "lng",
+          "type": "number",
+          "mutable": false,
+          "attr": "lng",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "150.644",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "mapType",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "map-type",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "noUi",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "no-ui",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "streetView",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "street-view",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "theme",
           "type": "string",
           "mutable": false,
-          "attr": "last",
+          "attr": "theme",
           "reflectToAttr": false,
-          "docs": "The last name",
+          "docs": "",
           "docsTags": [],
           "values": [
             {
@@ -48,13 +214,207 @@
           "required": false
         },
         {
-          "name": "middle",
+          "name": "width",
+          "type": "number",
+          "mutable": false,
+          "attr": "width",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "1600",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "zoom",
+          "type": "number",
+          "mutable": false,
+          "attr": "zoom",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "8",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "zoomControls",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "zoom-controls",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "geocodeAddress",
+          "returns": {
+            "type": "Promise<any>",
+            "docs": ""
+          },
+          "signature": "geocodeAddress(address: string) => Promise<any>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "skeleton-img"
+      ],
+      "dependencyGraph": {
+        "midwest-map": [
+          "skeleton-img"
+        ],
+        "skeleton-img": [
+          "midwest-progress"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/map-marker/marker.tsx",
+      "encapsulation": "shadow",
+      "tag": "midwest-map-marker",
+      "readme": "# midwest-google-maps-marker\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "address",
           "type": "string",
           "mutable": false,
-          "attr": "middle",
+          "attr": "address",
           "reflectToAttr": false,
-          "docs": "The middle name",
+          "docs": "",
           "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "mutable": false,
+          "attr": "icon",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "iconHeight",
+          "type": "number",
+          "mutable": false,
+          "attr": "icon-height",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "50",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "iconWidth",
+          "type": "number",
+          "mutable": false,
+          "attr": "icon-width",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "50",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "lat",
+          "type": "number",
+          "mutable": false,
+          "attr": "lat",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "-34.397",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "lng",
+          "type": "number",
+          "mutable": false,
+          "attr": "lng",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "150.644",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "markerTitle",
+          "type": "string",
+          "mutable": false,
+          "attr": "marker-title",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"nice\"",
           "values": [
             {
               "type": "string"
@@ -64,7 +424,100 @@
           "required": false
         }
       ],
-      "methods": [],
+      "methods": [
+        {
+          "name": "configuration",
+          "returns": {
+            "type": "Promise<any>",
+            "docs": ""
+          },
+          "signature": "configuration(map: any) => Promise<any>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        },
+        {
+          "name": "geocodeAddress",
+          "returns": {
+            "type": "Promise<any>",
+            "docs": ""
+          },
+          "signature": "geocodeAddress() => Promise<any>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/pjax/pjax.tsx",
+      "encapsulation": "shadow",
+      "tag": "midwest-pjax",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "pjax",
+          "type": "any",
+          "mutable": false,
+          "attr": "pjax",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "new Pjax({\n    cacheBust: false,\n    scrollTo: 0,\n    selectors: [\n      \"title\",\n      \"meta[name=description]\",\n      \"main\",\n      \"meta[name='csrf-token']\",\n      \"meta[name='csrf-param']\"\n    ],\n    switches: {\n      async \"main\" (oldEl, newEl, options) {\n        const ie = (document.querySelector('html').getAttribute(\"mode\") === \"ie\");\n        \n        if (ie) {\n          // @ts-ignore\n          oldEl.innerHTML = newEl.innerHTML\n        } else {\n          await oldEl.querySelector(\"animate-presence\").exit();\n          oldEl.outerHTML = newEl.outerHTML\n        }\n\n        this.onSwitch(oldEl, newEl, options)\n      },\n    }\n  })",
+          "values": [
+            {
+              "type": "any"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "loadContent",
+          "returns": {
+            "type": "Promise<any>",
+            "docs": ""
+          },
+          "signature": "loadContent(body: any) => Promise<any>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        },
+        {
+          "name": "loadUrl",
+          "returns": {
+            "type": "Promise<any>",
+            "docs": ""
+          },
+          "signature": "loadUrl(url: any) => Promise<any>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        },
+        {
+          "name": "replace",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "replace(selector: any, url: any) => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        }
+      ],
       "events": [],
       "listeners": [],
       "styles": [],

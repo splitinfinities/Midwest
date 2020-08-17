@@ -4,7 +4,7 @@ import delay from 'async-delay';
 
 @Component({
   tag: 'midwest-repeatable-fields',
-  styleUrl: 'midwest-repeatable-fields.css'
+  styleUrl: 'repeatable-fields.css'
 })
 export class RepeatableFields {
   @Element() element: HTMLElement;

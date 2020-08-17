@@ -14,7 +14,7 @@ export const config: Config = {
   namespace: 'media',
   devServer: {
     openBrowser: false,
-    port: 3336,
+    port: 3335,
   },
   plugins: [
     postcss({

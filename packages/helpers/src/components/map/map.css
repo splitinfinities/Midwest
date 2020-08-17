@@ -1,0 +1,40 @@
+midwest-map {
+  display: grid;
+  padding-bottom: var(--aspect-ratio);
+  overflow: hidden;
+  max-width: var(--width);
+  max-height: var(--height);
+}
+
+midwest-map[block],
+midwest-map[block] skeleton-img,
+midwest-map[block] #map {
+  max-width: 100%;
+  max-height: auto;
+}
+
+midwest-map skeleton-img {
+  order: 1;
+  grid-row: 1;
+  grid-column: 1;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  max-width: var(--width);
+  max-height: var(--height);
+}
+
+midwest-map #map {
+  order: 1;
+  grid-row: 1;
+  grid-column: 1;
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  contain: content;
+  max-width: var(--width);
+  max-height: var(--height);
+}

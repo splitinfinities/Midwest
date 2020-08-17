@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { Card } from './card';
+import { Card } from '../card';
 import delay from 'async-delay';
 
 describe('midwest-card', () => {

@@ -1,5 +1,5 @@
 import { Component, Host, h, Prop, Event, EventEmitter, Method } from '@stencil/core';
-import { Calendar, OptionsInput, EventDef } from '@fullcalendar/core';
+import { Calendar, EventDef } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction';
 import dayjs from 'dayjs';
@@ -7,7 +7,7 @@ import delay from 'async-delay';
 
 @Component({
   tag: 'midwest-calendar',
-  styleUrl: 'midwest-calendar.scss'
+  styleUrl: 'calendar.css'
 })
 export class MidwestCalendar {
 
@@ -25,11 +25,11 @@ export class MidwestCalendar {
 
   @Event() dateClick: EventEmitter;
   
-  pjax: HTMLMidwestPjaxElement = document.querySelector("midwest-pjax");
+  pjax: any = document.querySelector("midwest-pjax");
   calendar: Calendar;
   calendarEl: HTMLDivElement;
 
-  options: OptionsInput = {
+  options: any = {
     plugins: [ interactionPlugin, dayGridPlugin ].filter(Boolean),
     defaultView: 'dayGridMonth',
     header: this.header ? this.header : this.noToolbar ? false : {
@@ -57,7 +57,7 @@ export class MidwestCalendar {
     events: []
   }
 
-  get normalizedOpts (): OptionsInput {
+  get normalizedOpts (): any {
     return {
       ...this.options,
       ...{

@@ -23,7 +23,6 @@
 }
 
 :host([underneath]) {
-  @apply font-lato;
   margin-top: var(--margin);
   margin-bottom: 0;
   color: var(--gray7);

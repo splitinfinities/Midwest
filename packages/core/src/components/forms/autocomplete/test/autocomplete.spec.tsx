@@ -10,7 +10,7 @@ describe('midwest-autocomplete', () => {
     expect(page.root).toEqualHtml(`
       <midwest-autocomplete position="down">
         <mock:shadow-root>
-          <midwest-input name="post[assigned_to_id]" type="hidden"></midwest-input>
+          <midwest-input name="user" type="hidden"></midwest-input>
           <div class="relative">
             <midwest-input label="Choose a user" novalidate="" type="search"></midwest-input>
             <midwest-form-rollup placeholder="Search for a User..." verbiage="User"></midwest-form-rollup>

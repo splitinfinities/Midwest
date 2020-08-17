@@ -37,7 +37,7 @@ export namespace Components {
         "name": string;
         "noAvatars": boolean;
         "open": boolean;
-        "option_elements": () => Promise<HTMLMidwestItemElement[]>;
+        "optionEls": () => Promise<HTMLMidwestItemElement[]>;
         "options": Item[];
         "placeholder": string;
         "position": "up"|"down";
@@ -636,6 +636,44 @@ export namespace Components {
         "for": string;
         "size": "small" | "large";
     }
+    interface MidwestProgress {
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark": boolean;
+        /**
+          * Allows the progress bar to be clicked on, to help the user to navigate through the progressing content.
+         */
+        "editable": boolean;
+        /**
+          * Sets the maximum cap for steps in the progress bar
+         */
+        "indeterminate": boolean;
+        /**
+          * Sets the maximum cap for steps in the progress bar
+         */
+        "max": number;
+        /**
+          * eliminates the easing in the css so you can apply value updates without jitter.
+         */
+        "noease": boolean;
+        /**
+          * eliminates the easing in the css so you can apply value updates without jitter.
+         */
+        "rounded": boolean;
+        /**
+          * Sets the value of the progress bar
+         */
+        "secondary": number;
+        /**
+          * Renders if this element is slender or not
+         */
+        "slender": boolean;
+        /**
+          * Sets the value of the progress bar
+         */
+        "value": number;
+    }
     interface MidwestRepeatableFields {
         "addOneIfEmpty": boolean;
         "custom": boolean;
@@ -1157,6 +1195,12 @@ declare global {
         prototype: HTMLMidwestPasswordRequirementsElement;
         new (): HTMLMidwestPasswordRequirementsElement;
     };
+    interface HTMLMidwestProgressElement extends Components.MidwestProgress, HTMLStencilElement {
+    }
+    var HTMLMidwestProgressElement: {
+        prototype: HTMLMidwestProgressElement;
+        new (): HTMLMidwestProgressElement;
+    };
     interface HTMLMidwestRepeatableFieldsElement extends Components.MidwestRepeatableFields, HTMLStencilElement {
     }
     var HTMLMidwestRepeatableFieldsElement: {
@@ -1305,6 +1349,7 @@ declare global {
         "midwest-message": HTMLMidwestMessageElement;
         "midwest-pagination": HTMLMidwestPaginationElement;
         "midwest-password-requirements": HTMLMidwestPasswordRequirementsElement;
+        "midwest-progress": HTMLMidwestProgressElement;
         "midwest-repeatable-fields": HTMLMidwestRepeatableFieldsElement;
         "midwest-rich-text": HTMLMidwestRichTextElement;
         "midwest-select": HTMLMidwestSelectElement;
@@ -1982,6 +2027,45 @@ declare namespace LocalJSX {
         "for"?: string;
         "size"?: "small" | "large";
     }
+    interface MidwestProgress {
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark"?: boolean;
+        /**
+          * Allows the progress bar to be clicked on, to help the user to navigate through the progressing content.
+         */
+        "editable"?: boolean;
+        /**
+          * Sets the maximum cap for steps in the progress bar
+         */
+        "indeterminate"?: boolean;
+        /**
+          * Sets the maximum cap for steps in the progress bar
+         */
+        "max"?: number;
+        /**
+          * eliminates the easing in the css so you can apply value updates without jitter.
+         */
+        "noease"?: boolean;
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        /**
+          * eliminates the easing in the css so you can apply value updates without jitter.
+         */
+        "rounded"?: boolean;
+        /**
+          * Sets the value of the progress bar
+         */
+        "secondary"?: number;
+        /**
+          * Renders if this element is slender or not
+         */
+        "slender"?: boolean;
+        /**
+          * Sets the value of the progress bar
+         */
+        "value"?: number;
+    }
     interface MidwestRepeatableFields {
         "addOneIfEmpty"?: boolean;
         "custom"?: boolean;
@@ -2360,6 +2444,7 @@ declare namespace LocalJSX {
         "midwest-message": MidwestMessage;
         "midwest-pagination": MidwestPagination;
         "midwest-password-requirements": MidwestPasswordRequirements;
+        "midwest-progress": MidwestProgress;
         "midwest-repeatable-fields": MidwestRepeatableFields;
         "midwest-rich-text": MidwestRichText;
         "midwest-select": MidwestSelect;
@@ -2413,6 +2498,7 @@ declare module "@stencil/core" {
             "midwest-message": LocalJSX.MidwestMessage & JSXBase.HTMLAttributes<HTMLMidwestMessageElement>;
             "midwest-pagination": LocalJSX.MidwestPagination & JSXBase.HTMLAttributes<HTMLMidwestPaginationElement>;
             "midwest-password-requirements": LocalJSX.MidwestPasswordRequirements & JSXBase.HTMLAttributes<HTMLMidwestPasswordRequirementsElement>;
+            "midwest-progress": LocalJSX.MidwestProgress & JSXBase.HTMLAttributes<HTMLMidwestProgressElement>;
             "midwest-repeatable-fields": LocalJSX.MidwestRepeatableFields & JSXBase.HTMLAttributes<HTMLMidwestRepeatableFieldsElement>;
             "midwest-rich-text": LocalJSX.MidwestRichText & JSXBase.HTMLAttributes<HTMLMidwestRichTextElement>;
             "midwest-select": LocalJSX.MidwestSelect & JSXBase.HTMLAttributes<HTMLMidwestSelectElement>;

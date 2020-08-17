@@ -35,7 +35,7 @@ export class SaPjax {
     }
   });
 
-  loader: HTMLSaProgressElement = document.querySelector("midwest-progress");
+  loader: HTMLMidwestProgressElement = document.querySelector("midwest-progress");
   interval: any;
 
   @Method()

@@ -1,12 +1,3 @@
-@import "../../../global/css/theme.css";
-
-:host,
-:host *,
-:host *:before,
-:host *:after {
-  box-sizing: border-box;
-}
-
 :host {
   display: block;
 	padding: 0;
@@ -118,7 +109,7 @@
 :host .display-years,
 :host .display-months,
 :host .display-days {
-	@apply font-lato;
+	
 	font-variant-numeric: tabular-nums;
 	font-size: 4rem;
 	color: $gray7;

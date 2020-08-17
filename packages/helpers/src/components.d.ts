@@ -6,6 +6,34 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface MidwestMap {
+        "apiKey": string;
+        "block": boolean;
+        "fullscreenControl": boolean;
+        "geocodeAddress": (address: string) => Promise<any>;
+        "gestureHandling": "greedy" | "cooperative" | "none" | "auto";
+        "height": number;
+        "lat": number;
+        "lng": number;
+        "mapType": boolean;
+        "noUi": boolean;
+        "streetView": boolean;
+        "theme": string;
+        "width": number;
+        "zoom": number;
+        "zoomControls": boolean;
+    }
+    interface MidwestMapMarker {
+        "address": string;
+        "configuration": (map: any) => Promise<any>;
+        "geocodeAddress": () => Promise<any>;
+        "icon": string;
+        "iconHeight": number;
+        "iconWidth": number;
+        "lat": number;
+        "lng": number;
+        "markerTitle": string;
+    }
     interface MidwestPjax {
         "loadContent": (body: any) => Promise<any>;
         "loadUrl": (url: any) => Promise<any>;
@@ -14,6 +42,18 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLMidwestMapElement extends Components.MidwestMap, HTMLStencilElement {
+    }
+    var HTMLMidwestMapElement: {
+        prototype: HTMLMidwestMapElement;
+        new (): HTMLMidwestMapElement;
+    };
+    interface HTMLMidwestMapMarkerElement extends Components.MidwestMapMarker, HTMLStencilElement {
+    }
+    var HTMLMidwestMapMarkerElement: {
+        prototype: HTMLMidwestMapMarkerElement;
+        new (): HTMLMidwestMapMarkerElement;
+    };
     interface HTMLMidwestPjaxElement extends Components.MidwestPjax, HTMLStencilElement {
     }
     var HTMLMidwestPjaxElement: {
@@ -21,14 +61,43 @@ declare global {
         new (): HTMLMidwestPjaxElement;
     };
     interface HTMLElementTagNameMap {
+        "midwest-map": HTMLMidwestMapElement;
+        "midwest-map-marker": HTMLMidwestMapMarkerElement;
         "midwest-pjax": HTMLMidwestPjaxElement;
     }
 }
 declare namespace LocalJSX {
+    interface MidwestMap {
+        "apiKey"?: string;
+        "block"?: boolean;
+        "fullscreenControl"?: boolean;
+        "gestureHandling"?: "greedy" | "cooperative" | "none" | "auto";
+        "height"?: number;
+        "lat"?: number;
+        "lng"?: number;
+        "mapType"?: boolean;
+        "noUi"?: boolean;
+        "streetView"?: boolean;
+        "theme"?: string;
+        "width"?: number;
+        "zoom"?: number;
+        "zoomControls"?: boolean;
+    }
+    interface MidwestMapMarker {
+        "address"?: string;
+        "icon"?: string;
+        "iconHeight"?: number;
+        "iconWidth"?: number;
+        "lat"?: number;
+        "lng"?: number;
+        "markerTitle"?: string;
+    }
     interface MidwestPjax {
         "pjax"?: any;
     }
     interface IntrinsicElements {
+        "midwest-map": MidwestMap;
+        "midwest-map-marker": MidwestMapMarker;
         "midwest-pjax": MidwestPjax;
     }
 }
@@ -36,6 +105,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "midwest-map": LocalJSX.MidwestMap & JSXBase.HTMLAttributes<HTMLMidwestMapElement>;
+            "midwest-map-marker": LocalJSX.MidwestMapMarker & JSXBase.HTMLAttributes<HTMLMidwestMapMarkerElement>;
             "midwest-pjax": LocalJSX.MidwestPjax & JSXBase.HTMLAttributes<HTMLMidwestPjaxElement>;
         }
     }

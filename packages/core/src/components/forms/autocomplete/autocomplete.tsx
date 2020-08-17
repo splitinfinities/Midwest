@@ -108,7 +108,7 @@ export class Autocomplete {
   }
 
   @Method()
-  async option_elements(): Promise<HTMLMidwestItemElement[]> {
+  async optionEls(): Promise<HTMLMidwestItemElement[]> {
     return Array.from(this.list.querySelectorAll('midwest-item'));
   }
 

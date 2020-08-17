@@ -2,7 +2,7 @@ import { Component, ComponentInterface, Host, h, Prop, State, Method, Element, E
 
 @Component({
   tag: 'midwest-input-file',
-  styleUrl: 'midwest-input-file.css',
+  styleUrl: 'input-file.css',
   shadow: true,
 })
 export class InputFile implements ComponentInterface {

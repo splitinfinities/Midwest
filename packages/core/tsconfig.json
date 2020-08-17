@@ -18,5 +18,5 @@
   },
   "include": ["src", "types/jsx.d.ts", "tailwind.config.js"],
   "exclude": ["node_modules", "src/**/*.spec.ts*", "src/**/*.e2e.ts*"],
-  "references": [{"path": "../common"}]
+  "references": [{"path": "../common"}, {"path": "../helpers"}]
 }

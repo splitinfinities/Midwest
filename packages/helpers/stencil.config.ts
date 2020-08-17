@@ -14,7 +14,7 @@ export const config: Config = {
   namespace: 'helpers',
   devServer: {
     openBrowser: false,
-    port: 3335,
+    port: 3334,
   },
   plugins: [
     postcss({

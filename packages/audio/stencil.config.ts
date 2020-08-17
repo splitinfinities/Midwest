@@ -14,7 +14,7 @@ export const config: Config = {
   namespace: 'audio',
   devServer: {
     openBrowser: false,
-    port: 3337,
+    port: 3336,
   },
   plugins: [
     postcss({
