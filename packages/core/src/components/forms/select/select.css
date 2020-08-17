@@ -108,11 +108,11 @@
 
 /* Open indicator */
 @media screen and (prefers-reduced-motion: reduce) {
-  :host .title midwest-icon {
+  :host .title ion-icon {
     transition: none;
   }
 }
-:host .title midwest-icon {
+:host .title ion-icon {
   position: absolute;
   right: 0.5em;
   transition: transform 100ms var(--ease) 0s;
@@ -123,7 +123,7 @@
   pointer-events: none;
 }
 
-:host([open]) .title midwest-icon {
+:host([open]) .title ion-icon {
   transform: rotate(180deg);
 }
 
@@ -311,7 +311,7 @@
 }
 
 
-:host([inline]) .title midwest-icon {
+:host([inline]) .title ion-icon {
   position: static;
   right: initial;
   margin-left: 0.5rem;
@@ -427,7 +427,7 @@
   animation-fill-mode: both;
 }
 
-:host .select .loading midwest-icon {
+:host .select .loading ion-icon {
   font-size: 1.25rem;
 }
 

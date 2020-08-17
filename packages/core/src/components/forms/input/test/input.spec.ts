@@ -7,7 +7,7 @@ describe('midwest-input', () => {
   it('renders by default', async () => {
     const page = await newSpecPage({
       components: [Input],
-      html: `<midwest-input label="Nice label!" description="Great description!" tooltip="Awesome tooltip!"><midwest-icon name="nice" slot="icon"/></midwest-input>`,
+      html: `<midwest-input label="Nice label!" description="Great description!" tooltip="Awesome tooltip!"><ion-icon name="nice" slot="icon"/></midwest-input>`,
     });
 
     expect(page.root).toEqualHtml(`
@@ -35,7 +35,7 @@ describe('midwest-input', () => {
             </label>
           </div>
         </mock:shadow-root>
-        <midwest-icon name="nice" slot="icon"/>
+        <ion-icon name="nice" slot="icon"/>
       </midwest-input>
     `);
   });
@@ -249,7 +249,7 @@ describe('midwest-input', () => {
               <label>
                 <div class="content">
                   <input autocomplete="password" class="input" id="input" maxlength="1000" placeholder="Enter a value" step="1" tabindex="0" type="password">
-                  <midwest-icon class="smile" data-level="-1" name="sad"/>
+                  <ion-icon class="smile" data-level="-1" name="sad"/>
                 </div>
                 <midwest-validate></midwest-validate>
               </label>
@@ -276,7 +276,7 @@ describe('midwest-input', () => {
               <label>
                 <div class="content">
                   <input autocomplete="password" class="input" id="input" maxlength="1000" placeholder="Enter a value" step="1" tabindex="0" type="password" value="qwertyqwerty">
-                  <midwest-icon class="smile" data-level="-1" name="sad"/>
+                  <ion-icon class="smile" data-level="-1" name="sad"/>
                 </div>
                 <midwest-validate>
                   <midwest-label size="default">
@@ -326,7 +326,7 @@ describe('midwest-input', () => {
             <label>
               <div class="content">
                 <input autocomplete="password" class="input" id="input" maxlength="1000" placeholder="Enter a value" step="1" tabindex="0" type="password" value="asdf">
-                <midwest-icon class="smile" data-level="-1" name="sad"/>
+                <ion-icon class="smile" data-level="-1" name="sad"/>
               </div>
               <midwest-validate size="default"></midwest-validate>
             </label>
@@ -341,7 +341,7 @@ describe('midwest-input', () => {
             <label>
               <div class="content">
                 <input autocomplete="password" class="input" id="input" maxlength="1000" placeholder="Enter a value" step="1" tabindex="0" type="password" value="asdr">
-                <midwest-icon class="smile" data-level="-1" name="sad"/>
+                <ion-icon class="smile" data-level="-1" name="sad"/>
               </div>
               <midwest-validate size="default"></midwest-validate>
             </label>
@@ -382,7 +382,7 @@ describe('midwest-input', () => {
           <label>
             <div class="content">
               <input autocomplete="password" class="input" id="input" maxlength="1000" placeholder="Enter a value" step="1" tabindex="0" type="password" value="asdf">
-              <midwest-icon class="smile" data-level="-1" name="sad"/>
+              <ion-icon class="smile" data-level="-1" name="sad"/>
             </div>
             <midwest-validate>
               <midwest-label size="default">
@@ -409,7 +409,7 @@ describe('midwest-input', () => {
           <label>
             <div class="content">
               <input autocomplete="password" class="input" id="input" maxlength="1000" placeholder="Enter a value" step="1" tabindex="0" type="password" value="asdf">
-              <midwest-icon class="smile" data-level="-1" name="sad"/>
+              <ion-icon class="smile" data-level="-1" name="sad"/>
             </div>
             <midwest-validate size="default"></midwest-validate>
           </label>
@@ -431,9 +431,9 @@ describe('midwest-input', () => {
         <div class="wrapper">
           <label>
             <div class="content">
-              <midwest-icon class="search" name="search"/>
+              <ion-icon class="search" name="search"/>
               <input autocomplete="search" class="input" id="input" maxlength="1000" placeholder="Enter a value" step="1" tabindex="0" type="search" value="asdf">
-              <midwest-icon class="close" name="close" tabindex="0" title="Reset"/>
+              <ion-icon class="close" name="close" tabindex="0" title="Reset"/>
             </div>
             <midwest-validate size="default"></midwest-validate>
           </label>
@@ -443,7 +443,7 @@ describe('midwest-input', () => {
     `);
 
     // @ts-ignore
-    await page.root.shadowRoot.querySelector('midwest-icon.close').click();
+    await page.root.shadowRoot.querySelector('ion-icon.close').click();
 
     await page.waitForChanges()
 
@@ -454,7 +454,7 @@ describe('midwest-input', () => {
           <div class="wrapper">
             <label>
               <div class="content">
-                <midwest-icon class="search" name="search"/>
+                <ion-icon class="search" name="search"/>
                 <input autocomplete="search" class="input" id="input" maxlength="1000" placeholder="Enter a value" step="1" tabindex="0" type="search">
               </div>
               <midwest-validate size="default"></midwest-validate>
@@ -485,10 +485,10 @@ describe('midwest-input', () => {
                 <input autocomplete="number" class="input" id="input" maxlength="1000" placeholder="Enter a value" required="" step="1" tabindex="0" type="number" value="10">
                 <div class="incrementing">
                   <button class="increment" type="button">
-                    <midwest-icon name="arrow-up"/>
+                    <ion-icon name="arrow-up"/>
                   </button>
                   <button class="decrement" type="button">
-                    <midwest-icon name="arrow-down"/>
+                    <ion-icon name="arrow-down"/>
                   </button>
                 </div>
               </div>
@@ -529,10 +529,10 @@ describe('midwest-input', () => {
               <input autocomplete=\"number\" class=\"input\" id=\"input\" maxlength=\"1000\" placeholder=\"Enter a value\" required="" step=\"1\" tabindex=\"0\" type=\"number\" value=\"10\">
               <div class=\"incrementing\">
                 <button class=\"increment\" type=\"button\">
-                  <midwest-icon name=\"arrow-up\"/>
+                  <ion-icon name=\"arrow-up\"/>
                 </button>
                 <button class=\"decrement\" type=\"button\">
-                  <midwest-icon name=\"arrow-down\"/>
+                  <ion-icon name=\"arrow-down\"/>
                 </button>
               </div>
             </div>
@@ -562,10 +562,10 @@ describe('midwest-input', () => {
               <input autocomplete=\"number\" class=\"input\" id=\"input\" maxlength=\"1000\" placeholder=\"Enter a value\" required="" step=\"1\" tabindex=\"0\" type=\"number\" value=\"10\">
               <div class=\"incrementing\">
                 <button class=\"increment\" type=\"button\">
-                  <midwest-icon name=\"arrow-up\"/>
+                  <ion-icon name=\"arrow-up\"/>
                 </button>
                 <button class=\"decrement\" type=\"button\">
-                  <midwest-icon name=\"arrow-down\"/>
+                  <ion-icon name=\"arrow-down\"/>
                 </button>
               </div>
             </div>
@@ -594,10 +594,10 @@ describe('midwest-input', () => {
               <input autocomplete=\"number\" class=\"input\" id=\"input\" maxlength=\"1000\" placeholder=\"Enter a value\" required="" step=\"1\" tabindex=\"0\" type=\"number\" value=\"2\">
               <div class=\"incrementing\">
                 <button class=\"increment\" type=\"button\">
-                  <midwest-icon name=\"arrow-up\"/>
+                  <ion-icon name=\"arrow-up\"/>
                 </button>
                 <button class=\"decrement\" type=\"button\">
-                  <midwest-icon name=\"arrow-down\"/>
+                  <ion-icon name=\"arrow-down\"/>
                 </button>
               </div>
             </div>
@@ -634,10 +634,10 @@ describe('midwest-input', () => {
             <input autocomplete=\"number\" class=\"input\" id=\"input\" maxlength=\"1000\" placeholder=\"Enter a value\" required="" step=\"1\" tabindex=\"0\" type=\"number\" value=\"2\">
             <div class=\"incrementing\">
               <button class=\"increment\" type=\"button\">
-                <midwest-icon name=\"arrow-up\"/>
+                <ion-icon name=\"arrow-up\"/>
               </button>
               <button class=\"decrement\" type=\"button\">
-                <midwest-icon name=\"arrow-down\"/>
+                <ion-icon name=\"arrow-down\"/>
               </button>
             </div>
           </div>
@@ -675,10 +675,10 @@ describe('midwest-input', () => {
             <input autocomplete=\"number\" class=\"input\" id=\"input\" maxlength=\"1000\" placeholder=\"Enter a value\" required="" step=\"1\" tabindex=\"0\" type=\"number\" value=\"2\">
             <div class=\"incrementing\">
               <button class=\"increment\" type=\"button\">
-                <midwest-icon name=\"arrow-up\"/>
+                <ion-icon name=\"arrow-up\"/>
               </button>
               <button class=\"decrement\" type=\"button\">
-                <midwest-icon name=\"arrow-down\"/>
+                <ion-icon name=\"arrow-down\"/>
               </button>
             </div>
           </div>

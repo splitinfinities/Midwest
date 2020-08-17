@@ -58,6 +58,7 @@ graph TD;
   midwest-tab --> midwest-tag
   midwest-tab --> midwest-label
   midwest-tab --> context-consumer
+  midwest-tag --> ion-icon
   midwest-tag --> midwest-label
   midwest-tag --> context-consumer
   midwest-label --> context-consumer

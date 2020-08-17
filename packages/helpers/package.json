@@ -29,11 +29,16 @@
     "@stencil/core": "latest",
     "@stencil/postcss": "^1.0.1",
     "@types/googlemaps": "^3.39.13",
+    "ag-grid-community": "^23.2.1",
     "async-delay": "^1.0.3",
     "autoprefixer": "^9.8.6",
     "googlemaps": "^1.12.0",
+    "highcharts": "8",
+    "parallaxis": "^1.2.1",
     "pjax": "^0.2.8",
-    "postcss-import": "^12.0.1"
+    "postcss-import": "^12.0.1",
+    "shepherd.js": "^8.0.2",
+    "showdown": "^1.9.1"
   },
   "license": "MIT"
 }

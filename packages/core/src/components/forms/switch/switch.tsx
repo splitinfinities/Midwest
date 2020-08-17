@@ -102,7 +102,7 @@ export class Switch {
         <input type="checkbox" disabled={this.disabled} name={this.name} id={this.name} checked={this.checked} value={this.yesValue} tabindex="-1" onClick={(e) => this.activate(e)} />
         <span class="button">
           <span>
-            <midwest-icon name={this.checked ? "checkmark" : "close"} />
+            <ion-icon name={this.checked ? "checkmark" : "close"} />
           </span>
         </span>
         <div class={this.checked ? "show yes" : "hide yes"}  onClick={(e) => { e.stopPropagation() }} onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation() }}}><slot name="yes" /></div>

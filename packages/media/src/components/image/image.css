@@ -1,0 +1,130 @@
+:host,
+:host *,
+:host *::before,
+:host *::after {
+  box-sizing: border-box;
+}
+
+:host {
+  --filter: blur(10px);
+  --background-color: transparent;
+  --aspect-ratio: 100%;
+  --ease: ease-in-out;
+  --gradient: none;
+  --blend: multiply;
+  --initial-opacity: 1;
+  --speed: 0.85s;
+  --figure-height: 0;
+
+  contain: content;
+  display: inline-flex;
+  background: var(--background-color);
+  width: 100%;
+  max-width: var(--width, 300px);
+  max-height: var(--height, 300px);
+  align-items: center;
+}
+
+:host([type="background"]) {
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+:host([block]) {
+  display: flex;
+
+  --width: 100% !important;
+  --height: 100% !important;
+}
+
+:host figure {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding-bottom: var(--aspect-ratio);
+  width: 100%;
+  height: var(--figure-height);
+  cursor: zoom-in;
+  transition: all 200ms var(--ease) 0s;
+}
+
+:host figure:hover,
+:host figure:focus {
+  transform: scale(1.025);
+}
+
+:host([nozoom]) figure {
+  transform: none !important;
+  cursor: inherit !important;
+}
+
+:host figure:active {
+  transform: scale(0.975);
+}
+
+:host picture,
+:host img.placeholder,
+:host .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all var(--speed) cubic-bezier(0.2, 0.3, 0.25, 0.9) 1s;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+:host .overlay {
+  opacity: 0.5;
+  z-index: 3;
+  pointer-events: none;
+  background: var(--gradient);
+  mix-blend-mode: var(--blend);
+}
+
+:host picture {
+  transition: all var(--speed) cubic-bezier(0.2, 0.3, 0.25, 0.9) 1s;
+  opacity: 0;
+  z-index: 2;
+}
+
+:host picture img.final_image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:host .placeholder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: var(--initial-opacity);
+  z-index: 1;
+  background: var(--background-color) 50% 50% / cover no-repeat;
+  filter: var(--filter);
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  transition: all var(--speed) cubic-bezier(0.2, 0.3, 0.25, 0.9) 1s;
+}
+
+:host figure.loaded picture {
+  opacity: 1;
+}
+
+:host figure.loaded .placeholder {
+  filter: none;
+  opacity: 0;
+}
+
+:host figure.loaded .overlay {
+  opacity: 0.3;
+}

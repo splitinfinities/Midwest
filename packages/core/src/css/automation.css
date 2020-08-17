@@ -257,8 +257,79 @@ p + p {
   margin-top: 1rem;
 }
 
-p + sa-button {
+p + midwest-button {
   margin-top: 1rem;
+}
+
+.f-invert {
+  filter: invert(100%);
+}
+
+.mbm-color {
+  mix-blend-mode: color;
+}
+
+.mbm-screen {
+  mix-blend-mode: screen;
+}
+
+.fs-massive {
+  font-size: 15vw;
+}
+
+@media (min-width: 960px) {
+  .fs-massive {
+    font-size: 8rem;
+  }
+}
+
+.fs-large {
+  font-size: 12.5vw;
+}
+
+@media (min-width: 960px) {
+  .fs-large {
+    font-size: 6rem;
+  }
+}
+
+.animation-spin {
+  animation: spin 1s infinite linear;
+}
+
+.animation-gradient {
+  background:
+    linear-gradient(
+      var(--red8) 0%,
+      var(--red8) 10%,
+      var(--orange8) 10%,
+      var(--orange8) 20%,
+      var(--yellow8) 20%,
+      var(--yellow8) 30%,
+      var(--lime8) 30%,
+      var(--lime8) 40%,
+      var(--green8) 40%,
+      var(--green8) 50%,
+      var(--cyan8) 50%,
+      var(--cyan8) 60%,
+      var(--blue8) 60%,
+      var(--blue8) 70%,
+      var(--indigo8) 70%,
+      var(--indigo8) 80%,
+      var(--violet8) 80%,
+      var(--violet8) 90%,
+      var(--fuschia8) 90%,
+      var(--fuschia8) 100%
+    );
+  background-position: 1000px 75vh;
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  animation: gradient 9s infinite linear;
+}
+
+.clip-text {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

@@ -16,7 +16,7 @@ export class Message {
   @Prop() autoHide: boolean;
   @Prop() remember: boolean;
   @Prop() height: number|boolean = 60;
-  @Prop({ mutable: true, reflect: true }) name: string = "social-assurance";
+  @Prop({ mutable: true, reflect: true }) name: string = "midwest-design";
   @Prop({ mutable: true, reflect: true }) shown: boolean;
   @Prop({ reflect: true }) striped: boolean = false;
   @Prop({ reflect: true }) dark: boolean = false;

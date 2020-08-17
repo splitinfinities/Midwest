@@ -67,6 +67,7 @@ Type: `Promise<FormResult>`
 ### Depends on
 
 - [midwest-label](../../common/label)
+- ion-icon
 - [midwest-tooltip](../../common/tooltip)
 - [midwest-validate](../validate)
 - export-to-figma
@@ -75,6 +76,7 @@ Type: `Promise<FormResult>`
 ```mermaid
 graph TD;
   midwest-switch --> midwest-label
+  midwest-switch --> ion-icon
   midwest-switch --> midwest-tooltip
   midwest-switch --> midwest-validate
   midwest-switch --> export-to-figma

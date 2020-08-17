@@ -18,11 +18,13 @@
 ### Depends on
 
 - [midwest-grid](../../common/grid)
+- ion-icon
 
 ### Graph
 ```mermaid
 graph TD;
   midwest-password-requirements --> midwest-grid
+  midwest-password-requirements --> ion-icon
   style midwest-password-requirements fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

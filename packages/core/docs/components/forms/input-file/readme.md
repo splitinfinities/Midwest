@@ -60,6 +60,7 @@ Type: `Promise<FormResult>`
 ### Depends on
 
 - [midwest-unit](../../common/unit)
+- ion-icon
 - [midwest-label](../../common/label)
 - [midwest-tooltip](../../common/tooltip)
 - [midwest-validate](../validate)
@@ -69,6 +70,7 @@ Type: `Promise<FormResult>`
 ```mermaid
 graph TD;
   midwest-input-file --> midwest-unit
+  midwest-input-file --> ion-icon
   midwest-input-file --> midwest-label
   midwest-input-file --> midwest-tooltip
   midwest-input-file --> midwest-validate

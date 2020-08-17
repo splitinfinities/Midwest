@@ -408,9 +408,9 @@ export class Input {
 
   renderLeftIcon() {
     if (this.type === "search" && !this.leftIcon) {
-      return <midwest-icon name="search" class="search" />
+      return <ion-icon name="search" class="search" />
     } else if (this.leftIcon) {
-      return <midwest-icon name={this.leftIcon} class="search" />
+      return <ion-icon name={this.leftIcon} class="search" />
     }
   }
 
@@ -418,10 +418,10 @@ export class Input {
     if (hasIncrements(this.type) && this.increments) {
       return <div class="incrementing">
         <button type="button" class="increment" tabIndex={-1} onClick={(event: UIEvent) => this.handleIncrement(event)} onKeyDown={(event: KeyboardEvent) => this.handleKeyDownIncrement(event)} onFocus={() => { this.handleFocus() }} onBlur={() => { this.handleBlur() }}>
-          <midwest-icon name="arrow-up"/>
+          <ion-icon name="arrow-up"/>
         </button>
         <button type="button" class="decrement" tabIndex={-1} onClick={(event: UIEvent) => this.handleDecrement(event)} onKeyDown={(event: KeyboardEvent) => this.handleKeyDownDecrement(event)} onFocus={() => { this.handleFocus() }} onBlur={() => { this.handleBlur() }}>
-          <midwest-icon name="arrow-down"/>
+          <ion-icon name="arrow-down"/>
         </button>
       </div>
     }
@@ -435,27 +435,27 @@ export class Input {
 
   renderPasswordStrengthSmile() {
     if (this.level === 5) {
-      return <midwest-icon class="smile" name="excited" data-level={this.level}/>
+      return <ion-icon class="smile" name="excited" data-level={this.level}/>
     } 
     if (this.level === 4 || this.level === 3) {
-      return <midwest-icon class="smile" name="happy" data-level={this.level}/>
+      return <ion-icon class="smile" name="happy" data-level={this.level}/>
     } else if (this.level === 2 || this.level === 1 || this.level === 0) {
-      return <midwest-icon class="smile" name="sad" data-level={this.level}/>
+      return <ion-icon class="smile" name="sad" data-level={this.level}/>
     } else {
-      return <midwest-icon class="smile" name="yikes" data-level="-1"/>
+      return <ion-icon class="smile" name="yikes" data-level="-1"/>
     }
   }
 
   renderSearchClearButton() {
     if (this.type === "search" && hasValue(this.value)) {
-      return <midwest-icon 
+      return <ion-icon 
         name="close"
         class="close"
         onClick={(event: UIEvent) => this.handleReset(event)} 
         onKeyDown={(event: KeyboardEvent) => this.handleKeyDownReset(event)} 
         tabIndex={-1} 
         title="Reset">
-      </midwest-icon>
+      </ion-icon>
     }
   }
 
@@ -542,7 +542,7 @@ export class Input {
               <midwest-progress indeterminate />
             </div>}
 
-            {this.showCapsLock && this.capsLock && <div class="caps-lock"><midwest-label size={this.size}>Caps Lock</midwest-label><midwest-icon name="keyboard-shift" /></div>}
+            {this.showCapsLock && this.capsLock && <div class="caps-lock"><midwest-label size={this.size}>Caps Lock</midwest-label><ion-icon name="keyboard-shift" /></div>}
             {this.tooltip && <midwest-tooltip align="bottom-left">{this.tooltip}</midwest-tooltip>}
           </div>
 

@@ -24,10 +24,12 @@
 ### Used by
 
  - [midwest-autocomplete](../../forms/autocomplete)
+ - [midwest-breadcrumbs](../breadcrumbs)
  - [midwest-button](../button)
  - [midwest-calendar-date](../calendar-date)
  - [midwest-datetime-picker](../../forms/datetime-picker)
  - [midwest-form-rollup](../../forms/form-rollup)
+ - [midwest-group-overflow](../group-overflow)
  - [midwest-input](../../forms/input)
  - [midwest-input-date](../../forms/input-date)
  - [midwest-input-file](../../forms/input-file)
@@ -52,10 +54,12 @@
 graph TD;
   midwest-label --> context-consumer
   midwest-autocomplete --> midwest-label
+  midwest-breadcrumbs --> midwest-label
   midwest-button --> midwest-label
   midwest-calendar-date --> midwest-label
   midwest-datetime-picker --> midwest-label
   midwest-form-rollup --> midwest-label
+  midwest-group-overflow --> midwest-label
   midwest-input --> midwest-label
   midwest-input-date --> midwest-label
   midwest-input-file --> midwest-label

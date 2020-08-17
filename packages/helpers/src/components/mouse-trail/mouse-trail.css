@@ -1,0 +1,11 @@
+.midwest-mouse-trail-element {
+  contain: content;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+midwest-mouse-trail {
+  display: none;
+}

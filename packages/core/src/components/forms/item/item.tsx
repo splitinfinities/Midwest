@@ -153,7 +153,7 @@ export class Item {
         if (this.tag === "a" && this.pjaxElement) {
           e.preventDefault();
           this.pjaxElement.loadUrl(this.href);
-          if (this.parent.nodeName === "SA-SELECT") {
+          if (this.parent.nodeName === "MIDWEST-SELECT") {
             // @ts-ignore
             this.parent.close()
           }
@@ -171,7 +171,7 @@ export class Item {
   }
 
   renderIcon() {
-    return this.icon && !["", "false"].includes(this.avatar) && <midwest-icon name={this.icon || this.value} tabIndex={-1} class="supplementalIcon" />
+    return this.icon && !["", "false"].includes(this.avatar) && <ion-icon name={this.icon || this.value} tabIndex={-1} class="supplementalIcon" />
   }
 
   renderRadioBlock() {

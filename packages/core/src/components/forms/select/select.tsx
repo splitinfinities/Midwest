@@ -411,7 +411,7 @@ export class Select {
         >
           <midwest-form-rollup ref={(el: HTMLMidwestFormRollupElement) => {this.rollup = el;}} noAvatars={this.noAvatars} for={this.name} placeholder={this.placeholder} fallback={`Choose ${this.multiple ? "some " : " "}${pluralize(this.verbiage, 2)}`} verbiage={this.verbiage} />
           <slot name="avatar" />
-          <midwest-icon name="chevron-down" />
+          <ion-icon name="chevron-down" />
         </button>
 
         {this.tooltip && <midwest-tooltip align="bottom-left">{this.tooltip}</midwest-tooltip>}

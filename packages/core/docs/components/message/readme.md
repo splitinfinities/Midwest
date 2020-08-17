@@ -14,7 +14,7 @@
 | `closing`  | `closing`   |             | `boolean`                                   | `undefined`          |
 | `dark`     | `dark`      |             | `boolean`                                   | `false`              |
 | `height`   | `height`    |             | `boolean \| number`                         | `60`                 |
-| `name`     | `name`      |             | `string`                                    | `"social-assurance"` |
+| `name`     | `name`      |             | `string`                                    | `"midwest-design"` |
 | `opening`  | `opening`   |             | `boolean`                                   | `undefined`          |
 | `remember` | `remember`  |             | `boolean`                                   | `undefined`          |
 | `shown`    | `shown`     |             | `boolean`                                   | `undefined`          |

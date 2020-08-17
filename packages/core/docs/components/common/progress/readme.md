@@ -48,7 +48,6 @@
  - [midwest-input](../../forms/input)
  - [midwest-input-date](../../forms/input-date)
  - [midwest-select](../../forms/select)
- - [skeleton-img](../skeleton-img)
 
 ### Graph
 ```mermaid
@@ -58,7 +57,6 @@ graph TD;
   midwest-input --> midwest-progress
   midwest-input-date --> midwest-progress
   midwest-select --> midwest-progress
-  skeleton-img --> midwest-progress
   style midwest-progress fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

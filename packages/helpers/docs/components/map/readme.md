@@ -1,4 +1,4 @@
-# midwest-google-maps
+# midwest-map
 
 
 
@@ -37,20 +37,6 @@ Type: `Promise<any>`
 
 
 
-
-## Dependencies
-
-### Depends on
-
-- skeleton-img
-
-### Graph
-```mermaid
-graph TD;
-  midwest-map --> skeleton-img
-  skeleton-img --> midwest-progress
-  style midwest-map fill:#f9f,stroke:#333,stroke-width:4px
-```
 
 ----------------------------------------------
 

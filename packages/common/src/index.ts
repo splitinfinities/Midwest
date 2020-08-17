@@ -15,6 +15,9 @@ export * from './lib/onFocusOutsideOf';
 export * from './lib/customElementDocGenerator';
 export * from './lib/storyTemplate';
 export * from './lib/typicalStencilConfig';
+export * from './lib/asTime';
+export * from './lib/leadingZeroIndex';
+export * from './lib/relPathAsAbs';
 
 declare global {
   type ThemeableColors = "red"|"orange"|"gold"|"yellow"|"lime"|"green"|"teal"|"cyan"|"blue"|"indigo"|"violet"|"magenta"|"pink"|"gray";

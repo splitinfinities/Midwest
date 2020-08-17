@@ -61,6 +61,7 @@ Type: `Promise<void>`
 ### Depends on
 
 - [midwest-button](../button)
+- ion-icon
 - export-to-figma
 - context-consumer
 
@@ -68,6 +69,7 @@ Type: `Promise<void>`
 ```mermaid
 graph TD;
   midwest-card --> midwest-button
+  midwest-card --> ion-icon
   midwest-card --> export-to-figma
   midwest-card --> context-consumer
   midwest-button --> midwest-progress

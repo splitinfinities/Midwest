@@ -1,0 +1,22 @@
+midwest-blur,
+midwest-blur *,
+midwest-blur *::before,
+midwest-blur *::after {
+  box-sizing: border-box;
+}
+
+midwest-blur {
+  filter: var(--blur-url);
+  display: block;
+  overflow: initial;
+}
+
+midwest-blur .blur-svg {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  midwest-blur {
+    filter: none !important;
+  }
+}

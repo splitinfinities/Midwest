@@ -68,11 +68,13 @@ Type: `Promise<void>`
 
 ### Depends on
 
+- ion-icon
 - context-consumer
 
 ### Graph
 ```mermaid
 graph TD;
+  midwest-accordion --> ion-icon
   midwest-accordion --> context-consumer
   style midwest-accordion fill:#f9f,stroke:#333,stroke-width:4px
 ```

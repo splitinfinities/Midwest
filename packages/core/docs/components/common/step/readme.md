@@ -69,6 +69,7 @@ Type: `Promise<void>`
 
 ### Depends on
 
+- ion-icon
 - [midwest-label](../label)
 - export-to-figma
 - context-consumer
@@ -76,6 +77,7 @@ Type: `Promise<void>`
 ### Graph
 ```mermaid
 graph TD;
+  midwest-step --> ion-icon
   midwest-step --> midwest-label
   midwest-step --> export-to-figma
   midwest-step --> context-consumer

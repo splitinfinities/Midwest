@@ -1,0 +1,15 @@
+:host,
+:host *,
+:host *::before,
+:host *::after {
+  box-sizing: border-box;
+}
+
+:host {
+  contain: content;
+  display: block;
+}
+
+:host ::slotted(midwest-comment) {
+  margin-top: 1rem;
+}

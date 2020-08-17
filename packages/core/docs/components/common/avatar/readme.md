@@ -92,6 +92,7 @@
 ### Depends on
 
 - [midwest-progress](../progress)
+- ion-icon
 - [midwest-tooltip](../tooltip)
 - context-consumer
 
@@ -99,6 +100,7 @@
 ```mermaid
 graph TD;
   midwest-avatar --> midwest-progress
+  midwest-avatar --> ion-icon
   midwest-avatar --> midwest-tooltip
   midwest-avatar --> context-consumer
   midwest-tooltip --> context-consumer

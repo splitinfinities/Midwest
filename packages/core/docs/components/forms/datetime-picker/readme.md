@@ -90,9 +90,11 @@ graph TD;
   midwest-button --> context-consumer
   midwest-label --> context-consumer
   midwest-card --> midwest-button
+  midwest-card --> ion-icon
   midwest-card --> export-to-figma
   midwest-card --> context-consumer
   midwest-switch --> midwest-label
+  midwest-switch --> ion-icon
   midwest-switch --> midwest-tooltip
   midwest-switch --> midwest-validate
   midwest-switch --> export-to-figma

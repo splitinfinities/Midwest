@@ -68,19 +68,23 @@
 
 ### Used by
 
+ - [midwest-group](../group)
  - [midwest-tab](../tab)
 
 ### Depends on
 
+- ion-icon
 - [midwest-label](../label)
 - context-consumer
 
 ### Graph
 ```mermaid
 graph TD;
+  midwest-tag --> ion-icon
   midwest-tag --> midwest-label
   midwest-tag --> context-consumer
   midwest-label --> context-consumer
+  midwest-group --> midwest-tag
   midwest-tab --> midwest-tag
   style midwest-tag fill:#f9f,stroke:#333,stroke-width:4px
 ```

@@ -44,17 +44,27 @@ Type: `Promise<void>`
 
 - [midwest-label](../../common/label)
 - [midwest-avatar](../../common/avatar)
+- [midwest-group](../../common/group)
 
 ### Graph
 ```mermaid
 graph TD;
   midwest-form-rollup --> midwest-label
   midwest-form-rollup --> midwest-avatar
+  midwest-form-rollup --> midwest-group
   midwest-label --> context-consumer
   midwest-avatar --> midwest-progress
+  midwest-avatar --> ion-icon
   midwest-avatar --> midwest-tooltip
   midwest-avatar --> context-consumer
   midwest-tooltip --> context-consumer
+  midwest-group --> midwest-tag
+  midwest-group --> midwest-group-overflow
+  midwest-tag --> ion-icon
+  midwest-tag --> midwest-label
+  midwest-tag --> context-consumer
+  midwest-group-overflow --> midwest-label
+  midwest-group-overflow --> midwest-tooltip
   midwest-autocomplete --> midwest-form-rollup
   midwest-select --> midwest-form-rollup
   style midwest-form-rollup fill:#f9f,stroke:#333,stroke-width:4px

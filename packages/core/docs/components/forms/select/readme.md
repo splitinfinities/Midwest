@@ -99,6 +99,7 @@ Type: `Promise<FormResult>`
 - [midwest-label](../../common/label)
 - [midwest-progress](../../common/progress)
 - [midwest-form-rollup](../form-rollup)
+- ion-icon
 - [midwest-tooltip](../../common/tooltip)
 - [midwest-input](../input)
 - [midwest-validate](../validate)
@@ -111,6 +112,7 @@ graph TD;
   midwest-select --> midwest-label
   midwest-select --> midwest-progress
   midwest-select --> midwest-form-rollup
+  midwest-select --> ion-icon
   midwest-select --> midwest-tooltip
   midwest-select --> midwest-input
   midwest-select --> midwest-validate
@@ -122,11 +124,21 @@ graph TD;
   midwest-label --> context-consumer
   midwest-form-rollup --> midwest-label
   midwest-form-rollup --> midwest-avatar
+  midwest-form-rollup --> midwest-group
   midwest-avatar --> midwest-progress
+  midwest-avatar --> ion-icon
   midwest-avatar --> midwest-tooltip
   midwest-avatar --> context-consumer
   midwest-tooltip --> context-consumer
+  midwest-group --> midwest-tag
+  midwest-group --> midwest-group-overflow
+  midwest-tag --> ion-icon
+  midwest-tag --> midwest-label
+  midwest-tag --> context-consumer
+  midwest-group-overflow --> midwest-label
+  midwest-group-overflow --> midwest-tooltip
   midwest-input --> midwest-label
+  midwest-input --> ion-icon
   midwest-input --> midwest-progress
   midwest-input --> midwest-tooltip
   midwest-input --> midwest-validate

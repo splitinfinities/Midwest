@@ -2,29 +2,509 @@
   "version": 1.1,
   "tags": [
     {
-      "name": "my-component",
+      "name": "midwest-360-image",
       "description": {
         "kind": "markdown",
         "value": ""
       },
       "attributes": [
         {
-          "name": "first",
-          "description": "The first name"
+          "name": "height",
+          "description": ""
         },
         {
-          "name": "last",
-          "description": "The last name"
+          "name": "nolazyload",
+          "description": ""
         },
         {
-          "name": "middle",
-          "description": "The middle name"
+          "name": "poster",
+          "description": ""
+        },
+        {
+          "name": "src",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/my-component/my-component.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/360-image/360-image.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-360-video",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "poster",
+          "description": ""
+        },
+        {
+          "name": "src",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/360-video/360-video.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-image",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "alt",
+          "description": ""
+        },
+        {
+          "name": "bg",
+          "description": ""
+        },
+        {
+          "name": "block",
+          "description": ""
+        },
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "large",
+          "description": ""
+        },
+        {
+          "name": "nozoom",
+          "description": ""
+        },
+        {
+          "name": "poster",
+          "description": ""
+        },
+        {
+          "name": "type",
+          "description": "",
+          "values": [
+            {
+              "name": "background"
+            },
+            {
+              "name": "picture"
+            }
+          ]
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/image/image.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-interview",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "aspect-ratio",
+          "description": ""
+        },
+        {
+          "name": "color",
+          "description": ""
+        },
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "playing",
+          "description": ""
+        },
+        {
+          "name": "src",
+          "description": ""
+        },
+        {
+          "name": "visualization",
+          "description": "",
+          "values": [
+            {
+              "name": "bars"
+            },
+            {
+              "name": "bars2"
+            },
+            {
+              "name": "circle"
+            },
+            {
+              "name": "wave"
+            }
+          ]
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/interview/interview.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-interview-line",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "complement",
+          "description": ""
+        },
+        {
+          "name": "in",
+          "description": ""
+        },
+        {
+          "name": "out",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/interview-line/interview-line.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-playlist",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "artwork",
+          "description": ""
+        },
+        {
+          "name": "autoplay",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "load",
+          "description": ""
+        },
+        {
+          "name": "loading",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "description": ""
+        },
+        {
+          "name": "playing",
+          "description": ""
+        },
+        {
+          "name": "playlist",
+          "description": "",
+          "values": [
+            {
+              "name": "hide"
+            },
+            {
+              "name": "show"
+            }
+          ]
+        },
+        {
+          "name": "remember",
+          "description": ""
+        },
+        {
+          "name": "view",
+          "description": "",
+          "values": [
+            {
+              "name": "art"
+            },
+            {
+              "name": "playlist"
+            }
+          ]
+        },
+        {
+          "name": "visualization-color",
+          "description": ""
+        },
+        {
+          "name": "visualization-type",
+          "description": "",
+          "values": [
+            {
+              "name": "bars"
+            },
+            {
+              "name": "bars2"
+            },
+            {
+              "name": "circle"
+            },
+            {
+              "name": "wave"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/playlist/playlist.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-song",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "artwork",
+          "description": ""
+        },
+        {
+          "name": "playing",
+          "description": ""
+        },
+        {
+          "name": "src",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/song/song.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-video",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "autoplay",
+          "description": ""
+        },
+        {
+          "name": "controls",
+          "description": ""
+        },
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "muted",
+          "description": ""
+        },
+        {
+          "name": "overlay",
+          "description": ""
+        },
+        {
+          "name": "playing",
+          "description": ""
+        },
+        {
+          "name": "playsinline",
+          "description": ""
+        },
+        {
+          "name": "poster",
+          "description": ""
+        },
+        {
+          "name": "preload",
+          "description": ""
+        },
+        {
+          "name": "track-in-view",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/video/video.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-video-interview",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "aspect-ratio",
+          "description": ""
+        },
+        {
+          "name": "color",
+          "description": ""
+        },
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "playing",
+          "description": ""
+        },
+        {
+          "name": "src",
+          "description": ""
+        },
+        {
+          "name": "visualization",
+          "description": "",
+          "values": [
+            {
+              "name": "bars"
+            },
+            {
+              "name": "bars2"
+            },
+            {
+              "name": "circle"
+            },
+            {
+              "name": "wave"
+            }
+          ]
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/video-interview/video-interview.tsx"
+        }
+      ]
+    },
+    {
+      "name": "skeleton-img",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "block",
+          "description": ""
+        },
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "icon",
+          "description": ""
+        },
+        {
+          "name": "loading",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/skeleton-img/skeleton-img.tsx"
+        }
+      ]
+    },
+    {
+      "name": "skeleton-text",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "as",
+          "description": ""
+        },
+        {
+          "name": "loading",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/skeleton-text/skeleton-text.tsx"
         }
       ]
     }

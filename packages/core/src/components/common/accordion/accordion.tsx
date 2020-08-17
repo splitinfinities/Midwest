@@ -181,8 +181,8 @@ export class Accordion {
         <div class="button-wrap" title="Selecting this opens the content of this accordion" onClick={() => this.handleClick()}>
           <slot name="label"></slot>
           {this.hasIcon && <div id="icon"><slot name="icon"></slot></div>}
-          {this.validate && <div id="icon"><midwest-icon name={this.valid ? "valid" : "close" } /></div>}
-          <midwest-icon class="chevron" name="chevron-down"/>
+          {this.validate && <div id="icon"><ion-icon name={this.valid ? "valid" : "close" } /></div>}
+          <ion-icon class="chevron" name="chevron-down"/>
         </div>
 
         <div class={this.currentClasses} ref={(el) => {  this.expander = el; }}>

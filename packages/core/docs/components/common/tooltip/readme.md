@@ -122,6 +122,7 @@
 ### Used by
 
  - [midwest-avatar](../avatar)
+ - [midwest-group-overflow](../group-overflow)
  - [midwest-input](../../forms/input)
  - [midwest-input-date](../../forms/input-date)
  - [midwest-input-file](../../forms/input-file)
@@ -140,6 +141,7 @@
 graph TD;
   midwest-tooltip --> context-consumer
   midwest-avatar --> midwest-tooltip
+  midwest-group-overflow --> midwest-tooltip
   midwest-input --> midwest-tooltip
   midwest-input-date --> midwest-tooltip
   midwest-input-file --> midwest-tooltip

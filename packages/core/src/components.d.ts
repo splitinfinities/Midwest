@@ -64,6 +64,37 @@ export namespace Components {
         "size": "tiny" | "small" | "medium-small" | "medium" | "large" | "xlarge" | "huge";
         "src": string;
     }
+    interface MidwestBox {
+        "base": ThemeableColors;
+        "checked": boolean;
+        "dark": boolean;
+        "disabled": boolean;
+        "focused": boolean;
+        "radio": boolean;
+    }
+    interface MidwestBreadcrumb {
+        "color": string;
+        "dark": boolean;
+        "disabled": boolean;
+        "first": boolean;
+        "href": string;
+        "label": string;
+        "last": boolean;
+        "tag": "link" | "route";
+        "target": string;
+    }
+    interface MidwestBreadcrumbs {
+        "color": string;
+        "dark": boolean;
+        "description": string;
+        "home": string;
+        "icon": string;
+        "icon_size": number;
+        "icon_src": string;
+        "label": string;
+        "size": "tiny" | "small" | "medium" | "large";
+        "tag": "link" | "route";
+    }
     interface MidwestButton {
         /**
           * Sets the button or link as an active state.
@@ -271,6 +302,14 @@ export namespace Components {
          */
         "value": string;
     }
+    interface MidwestColorPicker {
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark": boolean;
+        "notransparent": boolean;
+        "val": string;
+    }
     interface MidwestContent {
         "behavior": string;
         "for": string;
@@ -295,6 +334,14 @@ export namespace Components {
         "updateHand": (value?: number | string) => Promise<void>;
         "value": 'now'|string|string[];
         "view": "minutes"|"hours"|"years"|"months"|"days";
+    }
+    interface MidwestDropdown {
+        "dark": boolean;
+        "icon": boolean;
+        "iconName": string;
+        "label": string;
+        "open": boolean;
+        "position": "left" | "center" | "right";
     }
     interface MidwestFieldGroup {
         "addElement": (el: HTMLElement) => Promise<void>;
@@ -342,6 +389,25 @@ export namespace Components {
         "noresponsive": boolean;
         "padding": boolean;
         "refresh": () => Promise<void>;
+    }
+    interface MidwestGroup {
+        "avatars": boolean;
+        "buttons": boolean;
+        "choice": boolean;
+        "count": number;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark": boolean;
+        "extras": number;
+        "overflow": boolean;
+        "size": string;
+        "verbiage": string;
+    }
+    interface MidwestGroupOverflow {
+        "count": number;
+        "tooltip": boolean;
+        "verbiage": string;
     }
     interface MidwestInput {
         "autocomplete": "name" | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "username" | "current-password" | "new-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1" | "address-line2" | "address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "url" | "photo";
@@ -1019,18 +1085,6 @@ export namespace Components {
         "size": string;
         "validate": (set?: boolean) => Promise<FormResult>;
     }
-    interface SkeletonImg {
-        "block": boolean;
-        "height": number;
-        "icon": boolean;
-        "loading": boolean;
-        "width": number;
-    }
-    interface SkeletonText {
-        "as": string | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
-        "loading": boolean;
-        "width": number;
-    }
 }
 declare global {
     interface HTMLCopyWrapElement extends Components.CopyWrap, HTMLStencilElement {
@@ -1056,6 +1110,24 @@ declare global {
     var HTMLMidwestAvatarElement: {
         prototype: HTMLMidwestAvatarElement;
         new (): HTMLMidwestAvatarElement;
+    };
+    interface HTMLMidwestBoxElement extends Components.MidwestBox, HTMLStencilElement {
+    }
+    var HTMLMidwestBoxElement: {
+        prototype: HTMLMidwestBoxElement;
+        new (): HTMLMidwestBoxElement;
+    };
+    interface HTMLMidwestBreadcrumbElement extends Components.MidwestBreadcrumb, HTMLStencilElement {
+    }
+    var HTMLMidwestBreadcrumbElement: {
+        prototype: HTMLMidwestBreadcrumbElement;
+        new (): HTMLMidwestBreadcrumbElement;
+    };
+    interface HTMLMidwestBreadcrumbsElement extends Components.MidwestBreadcrumbs, HTMLStencilElement {
+    }
+    var HTMLMidwestBreadcrumbsElement: {
+        prototype: HTMLMidwestBreadcrumbsElement;
+        new (): HTMLMidwestBreadcrumbsElement;
     };
     interface HTMLMidwestButtonElement extends Components.MidwestButton, HTMLStencilElement {
     }
@@ -1093,6 +1165,12 @@ declare global {
         prototype: HTMLMidwestCardElement;
         new (): HTMLMidwestCardElement;
     };
+    interface HTMLMidwestColorPickerElement extends Components.MidwestColorPicker, HTMLStencilElement {
+    }
+    var HTMLMidwestColorPickerElement: {
+        prototype: HTMLMidwestColorPickerElement;
+        new (): HTMLMidwestColorPickerElement;
+    };
     interface HTMLMidwestContentElement extends Components.MidwestContent, HTMLStencilElement {
     }
     var HTMLMidwestContentElement: {
@@ -1104,6 +1182,12 @@ declare global {
     var HTMLMidwestDatetimePickerElement: {
         prototype: HTMLMidwestDatetimePickerElement;
         new (): HTMLMidwestDatetimePickerElement;
+    };
+    interface HTMLMidwestDropdownElement extends Components.MidwestDropdown, HTMLStencilElement {
+    }
+    var HTMLMidwestDropdownElement: {
+        prototype: HTMLMidwestDropdownElement;
+        new (): HTMLMidwestDropdownElement;
     };
     interface HTMLMidwestFieldGroupElement extends Components.MidwestFieldGroup, HTMLStencilElement {
     }
@@ -1128,6 +1212,18 @@ declare global {
     var HTMLMidwestGridElement: {
         prototype: HTMLMidwestGridElement;
         new (): HTMLMidwestGridElement;
+    };
+    interface HTMLMidwestGroupElement extends Components.MidwestGroup, HTMLStencilElement {
+    }
+    var HTMLMidwestGroupElement: {
+        prototype: HTMLMidwestGroupElement;
+        new (): HTMLMidwestGroupElement;
+    };
+    interface HTMLMidwestGroupOverflowElement extends Components.MidwestGroupOverflow, HTMLStencilElement {
+    }
+    var HTMLMidwestGroupOverflowElement: {
+        prototype: HTMLMidwestGroupOverflowElement;
+        new (): HTMLMidwestGroupOverflowElement;
     };
     interface HTMLMidwestInputElement extends Components.MidwestInput, HTMLStencilElement {
     }
@@ -1309,35 +1405,30 @@ declare global {
         prototype: HTMLMidwestValidateElement;
         new (): HTMLMidwestValidateElement;
     };
-    interface HTMLSkeletonImgElement extends Components.SkeletonImg, HTMLStencilElement {
-    }
-    var HTMLSkeletonImgElement: {
-        prototype: HTMLSkeletonImgElement;
-        new (): HTMLSkeletonImgElement;
-    };
-    interface HTMLSkeletonTextElement extends Components.SkeletonText, HTMLStencilElement {
-    }
-    var HTMLSkeletonTextElement: {
-        prototype: HTMLSkeletonTextElement;
-        new (): HTMLSkeletonTextElement;
-    };
     interface HTMLElementTagNameMap {
         "copy-wrap": HTMLCopyWrapElement;
         "midwest-accordion": HTMLMidwestAccordionElement;
         "midwest-autocomplete": HTMLMidwestAutocompleteElement;
         "midwest-avatar": HTMLMidwestAvatarElement;
+        "midwest-box": HTMLMidwestBoxElement;
+        "midwest-breadcrumb": HTMLMidwestBreadcrumbElement;
+        "midwest-breadcrumbs": HTMLMidwestBreadcrumbsElement;
         "midwest-button": HTMLMidwestButtonElement;
         "midwest-calendar": HTMLMidwestCalendarElement;
         "midwest-calendar-date": HTMLMidwestCalendarDateElement;
         "midwest-calendar-event": HTMLMidwestCalendarEventElement;
         "midwest-callout": HTMLMidwestCalloutElement;
         "midwest-card": HTMLMidwestCardElement;
+        "midwest-color-picker": HTMLMidwestColorPickerElement;
         "midwest-content": HTMLMidwestContentElement;
         "midwest-datetime-picker": HTMLMidwestDatetimePickerElement;
+        "midwest-dropdown": HTMLMidwestDropdownElement;
         "midwest-field-group": HTMLMidwestFieldGroupElement;
         "midwest-form": HTMLMidwestFormElement;
         "midwest-form-rollup": HTMLMidwestFormRollupElement;
         "midwest-grid": HTMLMidwestGridElement;
+        "midwest-group": HTMLMidwestGroupElement;
+        "midwest-group-overflow": HTMLMidwestGroupOverflowElement;
         "midwest-input": HTMLMidwestInputElement;
         "midwest-input-date": HTMLMidwestInputDateElement;
         "midwest-input-file": HTMLMidwestInputFileElement;
@@ -1368,8 +1459,6 @@ declare global {
         "midwest-tooltip": HTMLMidwestTooltipElement;
         "midwest-unit": HTMLMidwestUnitElement;
         "midwest-validate": HTMLMidwestValidateElement;
-        "skeleton-img": HTMLSkeletonImgElement;
-        "skeleton-text": HTMLSkeletonTextElement;
     }
 }
 declare namespace LocalJSX {
@@ -1429,6 +1518,37 @@ declare namespace LocalJSX {
         "shape"?: "circle" | "square" | "rectangle" | "diamond" | "hexagon" | "star" | "message";
         "size"?: "tiny" | "small" | "medium-small" | "medium" | "large" | "xlarge" | "huge";
         "src"?: string;
+    }
+    interface MidwestBox {
+        "base"?: ThemeableColors;
+        "checked"?: boolean;
+        "dark"?: boolean;
+        "disabled"?: boolean;
+        "focused"?: boolean;
+        "radio"?: boolean;
+    }
+    interface MidwestBreadcrumb {
+        "color"?: string;
+        "dark"?: boolean;
+        "disabled"?: boolean;
+        "first"?: boolean;
+        "href"?: string;
+        "label"?: string;
+        "last"?: boolean;
+        "tag"?: "link" | "route";
+        "target"?: string;
+    }
+    interface MidwestBreadcrumbs {
+        "color"?: string;
+        "dark"?: boolean;
+        "description"?: string;
+        "home"?: string;
+        "icon"?: string;
+        "icon_size"?: number;
+        "icon_src"?: string;
+        "label"?: string;
+        "size"?: "tiny" | "small" | "medium" | "large";
+        "tag"?: "link" | "route";
     }
     interface MidwestButton {
         /**
@@ -1642,6 +1762,15 @@ declare namespace LocalJSX {
          */
         "value"?: string;
     }
+    interface MidwestColorPicker {
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark"?: boolean;
+        "notransparent"?: boolean;
+        "onUpdate"?: (event: CustomEvent<any>) => void;
+        "val"?: string;
+    }
     interface MidwestContent {
         "behavior"?: string;
         "for"?: string;
@@ -1668,6 +1797,14 @@ declare namespace LocalJSX {
         "tickRadius"?: number;
         "value"?: 'now'|string|string[];
         "view"?: "minutes"|"hours"|"years"|"months"|"days";
+    }
+    interface MidwestDropdown {
+        "dark"?: boolean;
+        "icon"?: boolean;
+        "iconName"?: string;
+        "label"?: string;
+        "open"?: boolean;
+        "position"?: "left" | "center" | "right";
     }
     interface MidwestFieldGroup {
         "onFast-updates"?: (event: CustomEvent<any>) => void;
@@ -1710,6 +1847,25 @@ declare namespace LocalJSX {
         "columnWidth"?: number;
         "noresponsive"?: boolean;
         "padding"?: boolean;
+    }
+    interface MidwestGroup {
+        "avatars"?: boolean;
+        "buttons"?: boolean;
+        "choice"?: boolean;
+        "count"?: number;
+        /**
+          * Sets the button or link as an outlined button.
+         */
+        "dark"?: boolean;
+        "extras"?: number;
+        "overflow"?: boolean;
+        "size"?: string;
+        "verbiage"?: string;
+    }
+    interface MidwestGroupOverflow {
+        "count"?: number;
+        "tooltip"?: boolean;
+        "verbiage"?: string;
     }
     interface MidwestInput {
         "autocomplete"?: "name" | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "username" | "current-password" | "new-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1" | "address-line2" | "address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "url" | "photo";
@@ -2404,35 +2560,30 @@ declare namespace LocalJSX {
         "silent"?: boolean;
         "size"?: string;
     }
-    interface SkeletonImg {
-        "block"?: boolean;
-        "height"?: number;
-        "icon"?: boolean;
-        "loading"?: boolean;
-        "width"?: number;
-    }
-    interface SkeletonText {
-        "as"?: string | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
-        "loading"?: boolean;
-        "width"?: number;
-    }
     interface IntrinsicElements {
         "copy-wrap": CopyWrap;
         "midwest-accordion": MidwestAccordion;
         "midwest-autocomplete": MidwestAutocomplete;
         "midwest-avatar": MidwestAvatar;
+        "midwest-box": MidwestBox;
+        "midwest-breadcrumb": MidwestBreadcrumb;
+        "midwest-breadcrumbs": MidwestBreadcrumbs;
         "midwest-button": MidwestButton;
         "midwest-calendar": MidwestCalendar;
         "midwest-calendar-date": MidwestCalendarDate;
         "midwest-calendar-event": MidwestCalendarEvent;
         "midwest-callout": MidwestCallout;
         "midwest-card": MidwestCard;
+        "midwest-color-picker": MidwestColorPicker;
         "midwest-content": MidwestContent;
         "midwest-datetime-picker": MidwestDatetimePicker;
+        "midwest-dropdown": MidwestDropdown;
         "midwest-field-group": MidwestFieldGroup;
         "midwest-form": MidwestForm;
         "midwest-form-rollup": MidwestFormRollup;
         "midwest-grid": MidwestGrid;
+        "midwest-group": MidwestGroup;
+        "midwest-group-overflow": MidwestGroupOverflow;
         "midwest-input": MidwestInput;
         "midwest-input-date": MidwestInputDate;
         "midwest-input-file": MidwestInputFile;
@@ -2463,8 +2614,6 @@ declare namespace LocalJSX {
         "midwest-tooltip": MidwestTooltip;
         "midwest-unit": MidwestUnit;
         "midwest-validate": MidwestValidate;
-        "skeleton-img": SkeletonImg;
-        "skeleton-text": SkeletonText;
     }
 }
 export { LocalJSX as JSX };
@@ -2475,18 +2624,25 @@ declare module "@stencil/core" {
             "midwest-accordion": LocalJSX.MidwestAccordion & JSXBase.HTMLAttributes<HTMLMidwestAccordionElement>;
             "midwest-autocomplete": LocalJSX.MidwestAutocomplete & JSXBase.HTMLAttributes<HTMLMidwestAutocompleteElement>;
             "midwest-avatar": LocalJSX.MidwestAvatar & JSXBase.HTMLAttributes<HTMLMidwestAvatarElement>;
+            "midwest-box": LocalJSX.MidwestBox & JSXBase.HTMLAttributes<HTMLMidwestBoxElement>;
+            "midwest-breadcrumb": LocalJSX.MidwestBreadcrumb & JSXBase.HTMLAttributes<HTMLMidwestBreadcrumbElement>;
+            "midwest-breadcrumbs": LocalJSX.MidwestBreadcrumbs & JSXBase.HTMLAttributes<HTMLMidwestBreadcrumbsElement>;
             "midwest-button": LocalJSX.MidwestButton & JSXBase.HTMLAttributes<HTMLMidwestButtonElement>;
             "midwest-calendar": LocalJSX.MidwestCalendar & JSXBase.HTMLAttributes<HTMLMidwestCalendarElement>;
             "midwest-calendar-date": LocalJSX.MidwestCalendarDate & JSXBase.HTMLAttributes<HTMLMidwestCalendarDateElement>;
             "midwest-calendar-event": LocalJSX.MidwestCalendarEvent & JSXBase.HTMLAttributes<HTMLMidwestCalendarEventElement>;
             "midwest-callout": LocalJSX.MidwestCallout & JSXBase.HTMLAttributes<HTMLMidwestCalloutElement>;
             "midwest-card": LocalJSX.MidwestCard & JSXBase.HTMLAttributes<HTMLMidwestCardElement>;
+            "midwest-color-picker": LocalJSX.MidwestColorPicker & JSXBase.HTMLAttributes<HTMLMidwestColorPickerElement>;
             "midwest-content": LocalJSX.MidwestContent & JSXBase.HTMLAttributes<HTMLMidwestContentElement>;
             "midwest-datetime-picker": LocalJSX.MidwestDatetimePicker & JSXBase.HTMLAttributes<HTMLMidwestDatetimePickerElement>;
+            "midwest-dropdown": LocalJSX.MidwestDropdown & JSXBase.HTMLAttributes<HTMLMidwestDropdownElement>;
             "midwest-field-group": LocalJSX.MidwestFieldGroup & JSXBase.HTMLAttributes<HTMLMidwestFieldGroupElement>;
             "midwest-form": LocalJSX.MidwestForm & JSXBase.HTMLAttributes<HTMLMidwestFormElement>;
             "midwest-form-rollup": LocalJSX.MidwestFormRollup & JSXBase.HTMLAttributes<HTMLMidwestFormRollupElement>;
             "midwest-grid": LocalJSX.MidwestGrid & JSXBase.HTMLAttributes<HTMLMidwestGridElement>;
+            "midwest-group": LocalJSX.MidwestGroup & JSXBase.HTMLAttributes<HTMLMidwestGroupElement>;
+            "midwest-group-overflow": LocalJSX.MidwestGroupOverflow & JSXBase.HTMLAttributes<HTMLMidwestGroupOverflowElement>;
             "midwest-input": LocalJSX.MidwestInput & JSXBase.HTMLAttributes<HTMLMidwestInputElement>;
             "midwest-input-date": LocalJSX.MidwestInputDate & JSXBase.HTMLAttributes<HTMLMidwestInputDateElement>;
             "midwest-input-file": LocalJSX.MidwestInputFile & JSXBase.HTMLAttributes<HTMLMidwestInputFileElement>;
@@ -2517,8 +2673,6 @@ declare module "@stencil/core" {
             "midwest-tooltip": LocalJSX.MidwestTooltip & JSXBase.HTMLAttributes<HTMLMidwestTooltipElement>;
             "midwest-unit": LocalJSX.MidwestUnit & JSXBase.HTMLAttributes<HTMLMidwestUnitElement>;
             "midwest-validate": LocalJSX.MidwestValidate & JSXBase.HTMLAttributes<HTMLMidwestValidateElement>;
-            "skeleton-img": LocalJSX.SkeletonImg & JSXBase.HTMLAttributes<HTMLSkeletonImgElement>;
-            "skeleton-text": LocalJSX.SkeletonText & JSXBase.HTMLAttributes<HTMLSkeletonTextElement>;
         }
     }
 }

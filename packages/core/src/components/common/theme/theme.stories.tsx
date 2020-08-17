@@ -10,5 +10,5 @@ storiesOf('Helpers|Theme', module)
   })
 
   .add('Default', () => {
-    return `<sa-theme></sa-theme>`;
+    return `<midwest-theme></midwest-theme>`;
   });

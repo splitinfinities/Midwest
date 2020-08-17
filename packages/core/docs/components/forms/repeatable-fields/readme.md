@@ -42,12 +42,14 @@ Type: `Promise<void>`
 
 - [midwest-grid](../../common/grid)
 - [midwest-button](../../common/button)
+- ion-icon
 
 ### Graph
 ```mermaid
 graph TD;
   midwest-repeatable-fields --> midwest-grid
   midwest-repeatable-fields --> midwest-button
+  midwest-repeatable-fields --> ion-icon
   midwest-button --> midwest-progress
   midwest-button --> midwest-label
   midwest-button --> export-to-figma

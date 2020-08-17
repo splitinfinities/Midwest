@@ -5,7 +5,92 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { HighchartsModel } from "./components/chart/lib/options";
 export namespace Components {
+    interface HorizontalScroll {
+    }
+    interface MidwestAssetLibrary {
+    }
+    interface MidwestChart {
+        "chartTitle": string;
+        "config": HighchartsModel;
+        "dark": boolean;
+        "data": string;
+        "enableCredits": boolean;
+        "exporting": boolean;
+        "for": string;
+        "get_options": () => Promise<any>;
+        "options": (newOptions: any) => Promise<void>;
+        "refresh": () => Promise<void>;
+        "src": string;
+        "type": "area" | "areaspline" | "bar" | "bubble" | "column" | "line" | "pie" | "polygon" | "scatter" | "spline" | "waterfall";
+    }
+    interface MidwestClock {
+        "animated": boolean;
+        "between": string | Date;
+        "size": number;
+        "time": string | Date;
+    }
+    interface MidwestCode {
+        "clipboard": () => Promise<void>;
+        "codeString": string;
+        "copy": boolean;
+        "dark": boolean;
+        "expandable": boolean;
+        "expanded": boolean;
+        "feature": boolean;
+        "highlight": () => Promise<void>;
+        "language": string;
+        "preview": boolean;
+        "result": () => Promise<string>;
+        "setCode": (code: any) => Promise<void>;
+        "simple": boolean;
+    }
+    interface MidwestColorLibrary {
+        "colors": string;
+        "shape": string;
+    }
+    interface MidwestComment {
+        "content": any;
+        "dark": boolean;
+        "name": any;
+    }
+    interface MidwestComments {
+    }
+    interface MidwestContext {
+        "apikey": string;
+        "time": boolean;
+        "weather": boolean;
+    }
+    interface MidwestIntersection {
+        "element": HTMLElement | string;
+        "in": Function;
+        "margin": string;
+        "multiple": boolean;
+        "out": Function;
+    }
+    interface MidwestInterstitial {
+        "fullscreen": boolean;
+        "remember": boolean;
+        "shown": boolean;
+    }
+    interface MidwestLoading {
+        "cta": any;
+        "error": string;
+        "show": boolean;
+        "step": number;
+        "steps": number;
+        "stretch": boolean;
+    }
+    interface MidwestLongShadow {
+        "active": boolean;
+        "delay": number;
+        "direction": "top-left" | "top-right" | "bottom-left" | "bottom-right";
+        "in": () => Promise<void>;
+        "length": number;
+        "out": () => Promise<void>;
+        "timing": number;
+    }
     interface MidwestMap {
         "apiKey": string;
         "block": boolean;
@@ -34,14 +119,157 @@ export namespace Components {
         "lng": number;
         "markerTitle": string;
     }
+    interface MidwestMarkdown {
+        /**
+          * Used to set
+          * @type {string}
+          * @memberof Markdown
+         */
+        "codeString": string;
+        "editable": boolean;
+        "flavor": "github" | "original" | "vanilla";
+        /**
+          * Used to reference an external markdown file
+          * @type string
+          * @memberof Markdown
+         */
+        "src": string;
+    }
+    interface MidwestModal {
+        "closing": boolean;
+        "loading": boolean;
+        "open": boolean;
+        "opening": boolean;
+        "remote": boolean;
+    }
+    interface MidwestMouseTrail {
+        "count": number;
+        "speed": number;
+        "threedee": boolean;
+    }
+    interface MidwestOnboarding {
+        "autoOpen": boolean;
+        "returnsTo": string;
+        "returnsToStep": string;
+        "show": (name: string) => Promise<void>;
+        "start": () => Promise<void>;
+    }
+    interface MidwestOnboardingStep {
+        "awaitModal": boolean;
+        "back": string;
+        "canClickTarget": boolean;
+        "chainTo": string;
+        "closeModalAfterward": boolean;
+        "completeText": string;
+        "delay": number;
+        "details": (tour: any, id: any) => Promise<{ id: string; text: string; title: string; beforeShowPromise: any; canClickTarget: boolean; advanceOn: { selector: string; event: string; }; when: { hide: () => void; }; attachTo: { element: string; on: "auto" | "auto-start" | "auto-end" | "top" | "top-start" | "top-end" | "bottom" | "bottom-start" | "bottom-end" | "right" | "right-start" | "right-end" | "left" | "left-start" | "left-end"; }; buttons: { text: string; action: () => void; }[]; }>;
+        "forceAction": boolean;
+        "name": string;
+        "navigateTo": string;
+        "next": string;
+        "nextText": string;
+        "position": 'auto'|'auto-start'|'auto-end'|'top'|'top-start'|'top-end'|'bottom'|'bottom-start'|'bottom-end'|'right'|'right-start'|'right-end'|'left'|'left-start'|'left-end';
+        "selector": string;
+        "stepTitle": string;
+    }
     interface MidwestPjax {
         "loadContent": (body: any) => Promise<any>;
         "loadUrl": (url: any) => Promise<any>;
         "pjax": any;
         "replace": (selector: any, url: any) => Promise<void>;
     }
+    interface MidwestScatter {
+        "colors": boolean;
+        "float": boolean;
+        "max": number;
+        "min": number;
+        "sizes": boolean;
+    }
+    interface MidwestStarscape {
+    }
+    interface MidwestStory {
+        "target": string;
+    }
 }
 declare global {
+    interface HTMLHorizontalScrollElement extends Components.HorizontalScroll, HTMLStencilElement {
+    }
+    var HTMLHorizontalScrollElement: {
+        prototype: HTMLHorizontalScrollElement;
+        new (): HTMLHorizontalScrollElement;
+    };
+    interface HTMLMidwestAssetLibraryElement extends Components.MidwestAssetLibrary, HTMLStencilElement {
+    }
+    var HTMLMidwestAssetLibraryElement: {
+        prototype: HTMLMidwestAssetLibraryElement;
+        new (): HTMLMidwestAssetLibraryElement;
+    };
+    interface HTMLMidwestChartElement extends Components.MidwestChart, HTMLStencilElement {
+    }
+    var HTMLMidwestChartElement: {
+        prototype: HTMLMidwestChartElement;
+        new (): HTMLMidwestChartElement;
+    };
+    interface HTMLMidwestClockElement extends Components.MidwestClock, HTMLStencilElement {
+    }
+    var HTMLMidwestClockElement: {
+        prototype: HTMLMidwestClockElement;
+        new (): HTMLMidwestClockElement;
+    };
+    interface HTMLMidwestCodeElement extends Components.MidwestCode, HTMLStencilElement {
+    }
+    var HTMLMidwestCodeElement: {
+        prototype: HTMLMidwestCodeElement;
+        new (): HTMLMidwestCodeElement;
+    };
+    interface HTMLMidwestColorLibraryElement extends Components.MidwestColorLibrary, HTMLStencilElement {
+    }
+    var HTMLMidwestColorLibraryElement: {
+        prototype: HTMLMidwestColorLibraryElement;
+        new (): HTMLMidwestColorLibraryElement;
+    };
+    interface HTMLMidwestCommentElement extends Components.MidwestComment, HTMLStencilElement {
+    }
+    var HTMLMidwestCommentElement: {
+        prototype: HTMLMidwestCommentElement;
+        new (): HTMLMidwestCommentElement;
+    };
+    interface HTMLMidwestCommentsElement extends Components.MidwestComments, HTMLStencilElement {
+    }
+    var HTMLMidwestCommentsElement: {
+        prototype: HTMLMidwestCommentsElement;
+        new (): HTMLMidwestCommentsElement;
+    };
+    interface HTMLMidwestContextElement extends Components.MidwestContext, HTMLStencilElement {
+    }
+    var HTMLMidwestContextElement: {
+        prototype: HTMLMidwestContextElement;
+        new (): HTMLMidwestContextElement;
+    };
+    interface HTMLMidwestIntersectionElement extends Components.MidwestIntersection, HTMLStencilElement {
+    }
+    var HTMLMidwestIntersectionElement: {
+        prototype: HTMLMidwestIntersectionElement;
+        new (): HTMLMidwestIntersectionElement;
+    };
+    interface HTMLMidwestInterstitialElement extends Components.MidwestInterstitial, HTMLStencilElement {
+    }
+    var HTMLMidwestInterstitialElement: {
+        prototype: HTMLMidwestInterstitialElement;
+        new (): HTMLMidwestInterstitialElement;
+    };
+    interface HTMLMidwestLoadingElement extends Components.MidwestLoading, HTMLStencilElement {
+    }
+    var HTMLMidwestLoadingElement: {
+        prototype: HTMLMidwestLoadingElement;
+        new (): HTMLMidwestLoadingElement;
+    };
+    interface HTMLMidwestLongShadowElement extends Components.MidwestLongShadow, HTMLStencilElement {
+    }
+    var HTMLMidwestLongShadowElement: {
+        prototype: HTMLMidwestLongShadowElement;
+        new (): HTMLMidwestLongShadowElement;
+    };
     interface HTMLMidwestMapElement extends Components.MidwestMap, HTMLStencilElement {
     }
     var HTMLMidwestMapElement: {
@@ -54,19 +282,165 @@ declare global {
         prototype: HTMLMidwestMapMarkerElement;
         new (): HTMLMidwestMapMarkerElement;
     };
+    interface HTMLMidwestMarkdownElement extends Components.MidwestMarkdown, HTMLStencilElement {
+    }
+    var HTMLMidwestMarkdownElement: {
+        prototype: HTMLMidwestMarkdownElement;
+        new (): HTMLMidwestMarkdownElement;
+    };
+    interface HTMLMidwestModalElement extends Components.MidwestModal, HTMLStencilElement {
+    }
+    var HTMLMidwestModalElement: {
+        prototype: HTMLMidwestModalElement;
+        new (): HTMLMidwestModalElement;
+    };
+    interface HTMLMidwestMouseTrailElement extends Components.MidwestMouseTrail, HTMLStencilElement {
+    }
+    var HTMLMidwestMouseTrailElement: {
+        prototype: HTMLMidwestMouseTrailElement;
+        new (): HTMLMidwestMouseTrailElement;
+    };
+    interface HTMLMidwestOnboardingElement extends Components.MidwestOnboarding, HTMLStencilElement {
+    }
+    var HTMLMidwestOnboardingElement: {
+        prototype: HTMLMidwestOnboardingElement;
+        new (): HTMLMidwestOnboardingElement;
+    };
+    interface HTMLMidwestOnboardingStepElement extends Components.MidwestOnboardingStep, HTMLStencilElement {
+    }
+    var HTMLMidwestOnboardingStepElement: {
+        prototype: HTMLMidwestOnboardingStepElement;
+        new (): HTMLMidwestOnboardingStepElement;
+    };
     interface HTMLMidwestPjaxElement extends Components.MidwestPjax, HTMLStencilElement {
     }
     var HTMLMidwestPjaxElement: {
         prototype: HTMLMidwestPjaxElement;
         new (): HTMLMidwestPjaxElement;
     };
+    interface HTMLMidwestScatterElement extends Components.MidwestScatter, HTMLStencilElement {
+    }
+    var HTMLMidwestScatterElement: {
+        prototype: HTMLMidwestScatterElement;
+        new (): HTMLMidwestScatterElement;
+    };
+    interface HTMLMidwestStarscapeElement extends Components.MidwestStarscape, HTMLStencilElement {
+    }
+    var HTMLMidwestStarscapeElement: {
+        prototype: HTMLMidwestStarscapeElement;
+        new (): HTMLMidwestStarscapeElement;
+    };
+    interface HTMLMidwestStoryElement extends Components.MidwestStory, HTMLStencilElement {
+    }
+    var HTMLMidwestStoryElement: {
+        prototype: HTMLMidwestStoryElement;
+        new (): HTMLMidwestStoryElement;
+    };
     interface HTMLElementTagNameMap {
+        "horizontal-scroll": HTMLHorizontalScrollElement;
+        "midwest-asset-library": HTMLMidwestAssetLibraryElement;
+        "midwest-chart": HTMLMidwestChartElement;
+        "midwest-clock": HTMLMidwestClockElement;
+        "midwest-code": HTMLMidwestCodeElement;
+        "midwest-color-library": HTMLMidwestColorLibraryElement;
+        "midwest-comment": HTMLMidwestCommentElement;
+        "midwest-comments": HTMLMidwestCommentsElement;
+        "midwest-context": HTMLMidwestContextElement;
+        "midwest-intersection": HTMLMidwestIntersectionElement;
+        "midwest-interstitial": HTMLMidwestInterstitialElement;
+        "midwest-loading": HTMLMidwestLoadingElement;
+        "midwest-long-shadow": HTMLMidwestLongShadowElement;
         "midwest-map": HTMLMidwestMapElement;
         "midwest-map-marker": HTMLMidwestMapMarkerElement;
+        "midwest-markdown": HTMLMidwestMarkdownElement;
+        "midwest-modal": HTMLMidwestModalElement;
+        "midwest-mouse-trail": HTMLMidwestMouseTrailElement;
+        "midwest-onboarding": HTMLMidwestOnboardingElement;
+        "midwest-onboarding-step": HTMLMidwestOnboardingStepElement;
         "midwest-pjax": HTMLMidwestPjaxElement;
+        "midwest-scatter": HTMLMidwestScatterElement;
+        "midwest-starscape": HTMLMidwestStarscapeElement;
+        "midwest-story": HTMLMidwestStoryElement;
     }
 }
 declare namespace LocalJSX {
+    interface HorizontalScroll {
+    }
+    interface MidwestAssetLibrary {
+    }
+    interface MidwestChart {
+        "chartTitle"?: string;
+        "config"?: HighchartsModel;
+        "dark"?: boolean;
+        "data"?: string;
+        "enableCredits"?: boolean;
+        "exporting"?: boolean;
+        "for"?: string;
+        "src"?: string;
+        "type"?: "area" | "areaspline" | "bar" | "bubble" | "column" | "line" | "pie" | "polygon" | "scatter" | "spline" | "waterfall";
+    }
+    interface MidwestClock {
+        "animated"?: boolean;
+        "between"?: string | Date;
+        "size"?: number;
+        "time"?: string | Date;
+    }
+    interface MidwestCode {
+        "codeString"?: string;
+        "copy"?: boolean;
+        "dark"?: boolean;
+        "expandable"?: boolean;
+        "expanded"?: boolean;
+        "feature"?: boolean;
+        "language"?: string;
+        "preview"?: boolean;
+        "simple"?: boolean;
+    }
+    interface MidwestColorLibrary {
+        "colors"?: string;
+        "shape"?: string;
+    }
+    interface MidwestComment {
+        "content"?: any;
+        "dark"?: boolean;
+        "name"?: any;
+    }
+    interface MidwestComments {
+    }
+    interface MidwestContext {
+        "apikey"?: string;
+        "onTimeChange"?: (event: CustomEvent<any>) => void;
+        "onWeatherChange"?: (event: CustomEvent<any>) => void;
+        "time"?: boolean;
+        "weather"?: boolean;
+    }
+    interface MidwestIntersection {
+        "element"?: HTMLElement | string;
+        "in"?: Function;
+        "margin"?: string;
+        "multiple"?: boolean;
+        "out"?: Function;
+    }
+    interface MidwestInterstitial {
+        "fullscreen"?: boolean;
+        "remember"?: boolean;
+        "shown"?: boolean;
+    }
+    interface MidwestLoading {
+        "cta"?: any;
+        "error"?: string;
+        "show"?: boolean;
+        "step"?: number;
+        "steps"?: number;
+        "stretch"?: boolean;
+    }
+    interface MidwestLongShadow {
+        "active"?: boolean;
+        "delay"?: number;
+        "direction"?: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+        "length"?: number;
+        "timing"?: number;
+    }
     interface MidwestMap {
         "apiKey"?: string;
         "block"?: boolean;
@@ -92,22 +466,129 @@ declare namespace LocalJSX {
         "lng"?: number;
         "markerTitle"?: string;
     }
+    interface MidwestMarkdown {
+        /**
+          * Used to set
+          * @type {string}
+          * @memberof Markdown
+         */
+        "codeString"?: string;
+        "editable"?: boolean;
+        "flavor"?: "github" | "original" | "vanilla";
+        /**
+          * Used to reference an external markdown file
+          * @type string
+          * @memberof Markdown
+         */
+        "src"?: string;
+    }
+    interface MidwestModal {
+        "closing"?: boolean;
+        "loading"?: boolean;
+        "onModal:closed"?: (event: CustomEvent<any>) => void;
+        "onModal:opened"?: (event: CustomEvent<any>) => void;
+        "open"?: boolean;
+        "opening"?: boolean;
+        "remote"?: boolean;
+    }
+    interface MidwestMouseTrail {
+        "count"?: number;
+        "speed"?: number;
+        "threedee"?: boolean;
+    }
+    interface MidwestOnboarding {
+        "autoOpen"?: boolean;
+        "returnsTo"?: string;
+        "returnsToStep"?: string;
+    }
+    interface MidwestOnboardingStep {
+        "awaitModal"?: boolean;
+        "back"?: string;
+        "canClickTarget"?: boolean;
+        "chainTo"?: string;
+        "closeModalAfterward"?: boolean;
+        "completeText"?: string;
+        "delay"?: number;
+        "forceAction"?: boolean;
+        "name"?: string;
+        "navigateTo"?: string;
+        "next"?: string;
+        "nextText"?: string;
+        "onClose-modal"?: (event: CustomEvent<any>) => void;
+        "position"?: 'auto'|'auto-start'|'auto-end'|'top'|'top-start'|'top-end'|'bottom'|'bottom-start'|'bottom-end'|'right'|'right-start'|'right-end'|'left'|'left-start'|'left-end';
+        "selector"?: string;
+        "stepTitle"?: string;
+    }
     interface MidwestPjax {
         "pjax"?: any;
     }
+    interface MidwestScatter {
+        "colors"?: boolean;
+        "float"?: boolean;
+        "max"?: number;
+        "min"?: number;
+        "sizes"?: boolean;
+    }
+    interface MidwestStarscape {
+    }
+    interface MidwestStory {
+        "target"?: string;
+    }
     interface IntrinsicElements {
+        "horizontal-scroll": HorizontalScroll;
+        "midwest-asset-library": MidwestAssetLibrary;
+        "midwest-chart": MidwestChart;
+        "midwest-clock": MidwestClock;
+        "midwest-code": MidwestCode;
+        "midwest-color-library": MidwestColorLibrary;
+        "midwest-comment": MidwestComment;
+        "midwest-comments": MidwestComments;
+        "midwest-context": MidwestContext;
+        "midwest-intersection": MidwestIntersection;
+        "midwest-interstitial": MidwestInterstitial;
+        "midwest-loading": MidwestLoading;
+        "midwest-long-shadow": MidwestLongShadow;
         "midwest-map": MidwestMap;
         "midwest-map-marker": MidwestMapMarker;
+        "midwest-markdown": MidwestMarkdown;
+        "midwest-modal": MidwestModal;
+        "midwest-mouse-trail": MidwestMouseTrail;
+        "midwest-onboarding": MidwestOnboarding;
+        "midwest-onboarding-step": MidwestOnboardingStep;
         "midwest-pjax": MidwestPjax;
+        "midwest-scatter": MidwestScatter;
+        "midwest-starscape": MidwestStarscape;
+        "midwest-story": MidwestStory;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "horizontal-scroll": LocalJSX.HorizontalScroll & JSXBase.HTMLAttributes<HTMLHorizontalScrollElement>;
+            "midwest-asset-library": LocalJSX.MidwestAssetLibrary & JSXBase.HTMLAttributes<HTMLMidwestAssetLibraryElement>;
+            "midwest-chart": LocalJSX.MidwestChart & JSXBase.HTMLAttributes<HTMLMidwestChartElement>;
+            "midwest-clock": LocalJSX.MidwestClock & JSXBase.HTMLAttributes<HTMLMidwestClockElement>;
+            "midwest-code": LocalJSX.MidwestCode & JSXBase.HTMLAttributes<HTMLMidwestCodeElement>;
+            "midwest-color-library": LocalJSX.MidwestColorLibrary & JSXBase.HTMLAttributes<HTMLMidwestColorLibraryElement>;
+            "midwest-comment": LocalJSX.MidwestComment & JSXBase.HTMLAttributes<HTMLMidwestCommentElement>;
+            "midwest-comments": LocalJSX.MidwestComments & JSXBase.HTMLAttributes<HTMLMidwestCommentsElement>;
+            "midwest-context": LocalJSX.MidwestContext & JSXBase.HTMLAttributes<HTMLMidwestContextElement>;
+            "midwest-intersection": LocalJSX.MidwestIntersection & JSXBase.HTMLAttributes<HTMLMidwestIntersectionElement>;
+            "midwest-interstitial": LocalJSX.MidwestInterstitial & JSXBase.HTMLAttributes<HTMLMidwestInterstitialElement>;
+            "midwest-loading": LocalJSX.MidwestLoading & JSXBase.HTMLAttributes<HTMLMidwestLoadingElement>;
+            "midwest-long-shadow": LocalJSX.MidwestLongShadow & JSXBase.HTMLAttributes<HTMLMidwestLongShadowElement>;
             "midwest-map": LocalJSX.MidwestMap & JSXBase.HTMLAttributes<HTMLMidwestMapElement>;
             "midwest-map-marker": LocalJSX.MidwestMapMarker & JSXBase.HTMLAttributes<HTMLMidwestMapMarkerElement>;
+            "midwest-markdown": LocalJSX.MidwestMarkdown & JSXBase.HTMLAttributes<HTMLMidwestMarkdownElement>;
+            "midwest-modal": LocalJSX.MidwestModal & JSXBase.HTMLAttributes<HTMLMidwestModalElement>;
+            "midwest-mouse-trail": LocalJSX.MidwestMouseTrail & JSXBase.HTMLAttributes<HTMLMidwestMouseTrailElement>;
+            "midwest-onboarding": LocalJSX.MidwestOnboarding & JSXBase.HTMLAttributes<HTMLMidwestOnboardingElement>;
+            "midwest-onboarding-step": LocalJSX.MidwestOnboardingStep & JSXBase.HTMLAttributes<HTMLMidwestOnboardingStepElement>;
             "midwest-pjax": LocalJSX.MidwestPjax & JSXBase.HTMLAttributes<HTMLMidwestPjaxElement>;
+            "midwest-scatter": LocalJSX.MidwestScatter & JSXBase.HTMLAttributes<HTMLMidwestScatterElement>;
+            "midwest-starscape": LocalJSX.MidwestStarscape & JSXBase.HTMLAttributes<HTMLMidwestStarscapeElement>;
+            "midwest-story": LocalJSX.MidwestStory & JSXBase.HTMLAttributes<HTMLMidwestStoryElement>;
         }
     }
 }

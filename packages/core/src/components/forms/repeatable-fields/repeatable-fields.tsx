@@ -94,11 +94,11 @@ export class RepeatableFields {
         } else {
           const element = row?.querySelector(`[name*="${key}"]`);
 
-          if (element.nodeName === "SA-INPUT" && !!item[key]) {
+          if (element.nodeName === "MIDWEST-INPUT" && !!item[key]) {
             (element as HTMLMidwestInputElement).setAttribute("value", item[key]);
           }
 
-          if (element.nodeName === "SA-TOGGLE" && !!item[key]) {
+          if (element.nodeName === "MIDWEST-TOGGLE" && !!item[key]) {
             //@ts-ignore
             if (element.type === "radio") {
               (element as HTMLMidwestToggleElement).setAttribute("value", item[key]);
@@ -141,7 +141,7 @@ export class RepeatableFields {
       <midwest-grid cols={1} noresponsive ref={(el) => { this.gridEl = el}} />
       <midwest-empty class={`${this.count > 0 ? "hidden" : "block"}`}><slot name="empty" /></midwest-empty>
       {!this.readonly && <midwest-button outline tag="button" class="mt-6" onClick={() => this.appendEmptyTemplate()} onKeyDown={(e) => {this.handleKeyDown(e)}}>
-        <midwest-icon name="add" slot="icon"/>
+        <ion-icon name="add" slot="icon"/>
         Add Another {this.verbiage}
       </midwest-button>}
     </Host>

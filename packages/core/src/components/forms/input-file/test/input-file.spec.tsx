@@ -19,7 +19,7 @@ describe('midwest-input-file', () => {
                    <section>
                      <input class="input" id="input" placeholder="Enter a value" tabindex="0" type="file">
                      <h4>
-                       <midwest-icon name="add-circle"/>
+                       <ion-icon name="add-circle"/>
                        Enter a value
                      </h4>
                    </section>

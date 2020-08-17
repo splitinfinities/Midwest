@@ -1,4 +1,4 @@
-# midwest-google-maps-marker
+# midwest-map-marker
 
 
 

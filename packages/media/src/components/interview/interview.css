@@ -1,0 +1,152 @@
+midwest-interview {
+  --width: 800px;
+  --height: 800px;
+
+  display: block;
+  contain: content;
+}
+
+midwest-interview div.card {
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+midwest-interview div.card section {
+  height: inherit;
+  display: block;
+  position: relative;
+  padding-top: 0 !important;
+}
+
+midwest-interview web-audio-visualizer {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+midwest-interview web-audio-visualizer[type="circle"] {
+  height: 100%;
+}
+
+midwest-interview web-audio-visualizer[type="bars2"] {
+  width: 80%;
+  left: 10%;
+  right: 10%;
+}
+
+midwest-interview midwest-image,
+midwest-interview midwest-360-image,
+midwest-interview midwest-video,
+midwest-interview midwest-360-video {
+  --gradient: radial-gradient(circle at 30% 107%, var(--theme-base5) 0%, var(--theme-base8) 5%, var(--theme-complement8) 45%, var(--theme-complement5) 60%, var(--theme-base5) 90%);
+
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+midwest-interview midwest-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+midwest-interview midwest-progress .progress {
+  border: 0;
+}
+
+midwest-interview h3 {
+  color: white;
+}
+
+midwest-interview midwest-unit {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 2;
+  color: white !important;
+  font-weight: 700;
+}
+
+midwest-interview midwest-unit.current {
+  left: 1rem;
+}
+
+midwest-interview midwest-unit.duration {
+  right: 1rem;
+}
+
+midwest-interview .transcript {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  left: 15%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+midwest-interview .button {
+  position: absolute;
+  transition: all 0.35s var(--ease) 0s, background 0.175s var(--ease) 0s;
+  width: 9rem;
+  height: 9rem;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 100%;
+  padding: 0;
+  border: 0;
+  z-index: 3;
+  appearance: none;
+  background: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  outline: 0;
+  cursor: pointer;
+  padding-left: 1rem;
+  mix-blend-mode: soft-light;
+}
+
+midwest-interview .button:hover,
+midwest-interview .button:focus {
+  transform: translate(50%, -50%) scale(1.1);
+  mix-blend-mode: hard-light;
+}
+
+midwest-interview .button ion-icon {
+  font-size: 7rem;
+  margin: auto;
+  display: block;
+}
+
+midwest-interview .button.loading {
+  padding: 0;
+}
+
+midwest-interview .button.playing {
+  width: 2.8rem;
+  height: 2.8rem;
+  top: 2.2rem;
+  right: 1.8rem;
+  padding: 0;
+  background: transparent;
+  transition: all 0.35s var(--ease) 0s, background 0.175s var(--ease) 0s;
+}
+
+midwest-interview .button.playing ion-icon {
+  font-size: 2.8rem;
+}

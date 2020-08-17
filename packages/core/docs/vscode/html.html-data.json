@@ -294,6 +294,225 @@
       ]
     },
     {
+      "name": "midwest-box",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "base",
+          "description": "",
+          "values": [
+            {
+              "name": "blue"
+            },
+            {
+              "name": "cyan"
+            },
+            {
+              "name": "gold"
+            },
+            {
+              "name": "gray"
+            },
+            {
+              "name": "green"
+            },
+            {
+              "name": "indigo"
+            },
+            {
+              "name": "lime"
+            },
+            {
+              "name": "magenta"
+            },
+            {
+              "name": "orange"
+            },
+            {
+              "name": "pink"
+            },
+            {
+              "name": "red"
+            },
+            {
+              "name": "teal"
+            },
+            {
+              "name": "violet"
+            },
+            {
+              "name": "yellow"
+            }
+          ]
+        },
+        {
+          "name": "checked",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "disabled",
+          "description": ""
+        },
+        {
+          "name": "focused",
+          "description": ""
+        },
+        {
+          "name": "radio",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/box/box.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-breadcrumb",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "color",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "disabled",
+          "description": ""
+        },
+        {
+          "name": "first",
+          "description": ""
+        },
+        {
+          "name": "href",
+          "description": ""
+        },
+        {
+          "name": "label",
+          "description": ""
+        },
+        {
+          "name": "last",
+          "description": ""
+        },
+        {
+          "name": "tag",
+          "description": "",
+          "values": [
+            {
+              "name": "link"
+            },
+            {
+              "name": "route"
+            }
+          ]
+        },
+        {
+          "name": "target",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/breadcrumb/breadcrumb.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-breadcrumbs",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "color",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "description",
+          "description": ""
+        },
+        {
+          "name": "home",
+          "description": ""
+        },
+        {
+          "name": "icon",
+          "description": ""
+        },
+        {
+          "name": "icon_size",
+          "description": ""
+        },
+        {
+          "name": "icon_src",
+          "description": ""
+        },
+        {
+          "name": "label",
+          "description": ""
+        },
+        {
+          "name": "size",
+          "description": "",
+          "values": [
+            {
+              "name": "large"
+            },
+            {
+              "name": "medium"
+            },
+            {
+              "name": "small"
+            },
+            {
+              "name": "tiny"
+            }
+          ]
+        },
+        {
+          "name": "tag",
+          "description": "",
+          "values": [
+            {
+              "name": "link"
+            },
+            {
+              "name": "route"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/breadcrumbs/breadcrumbs.tsx"
+        }
+      ]
+    },
+    {
       "name": "midwest-button",
       "description": {
         "kind": "markdown",
@@ -763,6 +982,33 @@
       ]
     },
     {
+      "name": "midwest-color-picker",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "dark",
+          "description": "Sets the button or link as an outlined button."
+        },
+        {
+          "name": "notransparent",
+          "description": ""
+        },
+        {
+          "name": "val",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/color-picker/color-picker.tsx"
+        }
+      ]
+    },
+    {
       "name": "midwest-content",
       "description": {
         "kind": "markdown",
@@ -877,6 +1123,56 @@
         {
           "name": "Source code",
           "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/datetime-picker/datetime-picker.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-dropdown",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "dark",
+          "description": ""
+        },
+        {
+          "name": "icon",
+          "description": ""
+        },
+        {
+          "name": "icon-name",
+          "description": ""
+        },
+        {
+          "name": "label",
+          "description": ""
+        },
+        {
+          "name": "open",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "description": "",
+          "values": [
+            {
+              "name": "center"
+            },
+            {
+              "name": "left"
+            },
+            {
+              "name": "right"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/dropdown/dropdown.tsx"
         }
       ]
     },
@@ -1036,6 +1332,84 @@
         {
           "name": "Source code",
           "url": "./https:/github.com/splitinfinities/midwest/src/components/common/grid/grid.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-group",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "avatars",
+          "description": ""
+        },
+        {
+          "name": "buttons",
+          "description": ""
+        },
+        {
+          "name": "choice",
+          "description": ""
+        },
+        {
+          "name": "count",
+          "description": ""
+        },
+        {
+          "name": "dark",
+          "description": "Sets the button or link as an outlined button."
+        },
+        {
+          "name": "extras",
+          "description": ""
+        },
+        {
+          "name": "overflow",
+          "description": ""
+        },
+        {
+          "name": "size",
+          "description": ""
+        },
+        {
+          "name": "verbiage",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/group/group.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-group-overflow",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "count",
+          "description": ""
+        },
+        {
+          "name": "tooltip",
+          "description": ""
+        },
+        {
+          "name": "verbiage",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/group-overflow/group-overflow.tsx"
         }
       ]
     },
@@ -4109,68 +4483,6 @@
         {
           "name": "Source code",
           "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/validate/validate.tsx"
-        }
-      ]
-    },
-    {
-      "name": "skeleton-img",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "block",
-          "description": ""
-        },
-        {
-          "name": "height",
-          "description": ""
-        },
-        {
-          "name": "icon",
-          "description": ""
-        },
-        {
-          "name": "loading",
-          "description": ""
-        },
-        {
-          "name": "width",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/skeleton-img/skeleton-img.tsx"
-        }
-      ]
-    },
-    {
-      "name": "skeleton-text",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "as",
-          "description": ""
-        },
-        {
-          "name": "loading",
-          "description": ""
-        },
-        {
-          "name": "width",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/skeleton-text/skeleton-text.tsx"
         }
       ]
     }

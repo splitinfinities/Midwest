@@ -72,15 +72,18 @@ Type: `Promise<void>`
 
 ### Depends on
 
+- ion-icon
 - [midwest-input](../../forms/input)
 - context-consumer
 
 ### Graph
 ```mermaid
 graph TD;
+  midwest-pagination --> ion-icon
   midwest-pagination --> midwest-input
   midwest-pagination --> context-consumer
   midwest-input --> midwest-label
+  midwest-input --> ion-icon
   midwest-input --> midwest-progress
   midwest-input --> midwest-tooltip
   midwest-input --> midwest-validate

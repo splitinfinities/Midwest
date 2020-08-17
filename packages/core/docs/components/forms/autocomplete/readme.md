@@ -86,6 +86,7 @@ graph TD;
   midwest-autocomplete --> midwest-validate
   midwest-label --> context-consumer
   midwest-input --> midwest-label
+  midwest-input --> ion-icon
   midwest-input --> midwest-progress
   midwest-input --> midwest-tooltip
   midwest-input --> midwest-validate
@@ -93,14 +94,26 @@ graph TD;
   midwest-validate --> midwest-label
   midwest-form-rollup --> midwest-label
   midwest-form-rollup --> midwest-avatar
+  midwest-form-rollup --> midwest-group
   midwest-avatar --> midwest-progress
+  midwest-avatar --> ion-icon
   midwest-avatar --> midwest-tooltip
   midwest-avatar --> context-consumer
+  midwest-group --> midwest-tag
+  midwest-group --> midwest-group-overflow
+  midwest-tag --> ion-icon
+  midwest-tag --> midwest-label
+  midwest-tag --> context-consumer
+  midwest-group-overflow --> midwest-label
+  midwest-group-overflow --> midwest-tooltip
   midwest-item-group --> midwest-label
   midwest-item --> midwest-avatar
+  midwest-item --> ion-icon
+  midwest-item --> midwest-box
   midwest-item --> midwest-label
   midwest-item --> midwest-tooltip
   midwest-item --> export-to-figma
+  midwest-box --> ion-icon
   style midwest-autocomplete fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

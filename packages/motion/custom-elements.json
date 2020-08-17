@@ -1,0 +1,1762 @@
+{
+  "timestamp": "2020-08-17T23:29:12",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.17.3",
+    "typescriptVersion": "3.9.7"
+  },
+  "tags": [
+    {
+      "filePath": "./src/components/animate-text/animate-text.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-animate-text",
+      "name": "midwest-animate-text",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "delay",
+          "type": "number",
+          "mutable": false,
+          "attr": "delay",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "50",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "number",
+          "mutable": false,
+          "attr": "duration",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "1000",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "mutable": false,
+          "attr": "method",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"lettering\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "onlyIn",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "only-in",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "phrase",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "phrase",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "words",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "words",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "delay",
+          "type": "number",
+          "mutable": false,
+          "attr": "delay",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "50",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "number",
+          "mutable": false,
+          "attr": "duration",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "1000",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "mutable": false,
+          "attr": "method",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"lettering\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "only-in",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "only-in",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "phrase",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "phrase",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "words",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "words",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [
+        {
+          "name": "in",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "in() => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        },
+        {
+          "name": "out",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "out() => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/auto-scroll/auto-scroll.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-auto-scroll",
+      "name": "midwest-auto-scroll",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "autoplay",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "autoplay",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "loop",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "loop",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "speed",
+          "type": "number",
+          "mutable": false,
+          "attr": "speed",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "2",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "startPosition",
+          "type": "number",
+          "mutable": false,
+          "attr": "start-position",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "0",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "autoplay",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "autoplay",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "loop",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "loop",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "speed",
+          "type": "number",
+          "mutable": false,
+          "attr": "speed",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "2",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "start-position",
+          "type": "number",
+          "mutable": false,
+          "attr": "start-position",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "0",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [
+        {
+          "name": "play",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "play() => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        },
+        {
+          "name": "stop",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "stop() => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/blur/blur.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-blur",
+      "name": "midwest-blur",
+      "description": "",
+      "docsTags": [],
+      "usage": {
+        "animate-text": "<copy-wrap align=\"center\">\n\t<midwest-animate-text method=\"lettering\">\n\t\t<h1>Stellar!</h1>\n\t\t<h3 alt>A Beautiful, Complete Design System</h3>\n\t</midwest-animate-text>\n</copy-wrap>\n",
+        "default": "<midwest-blur class=\"example mb4 db\">\n\t<copy-wrap>\n\t\t<h1>Awesome~</h1>\n\t\t<h2 alt>Change the values below to see the blurring changes.</h2>\n\t</copy-wrap>\n</midwest-blur>\n<midwest-grid cols=\"1\" class=\"theme-gray\">\n\t<midwest-input type=\"number\" max=\"50\" min=\"0\" placeholder=\"Vertical\" onChange=\"document.querySelector('midwest-blur.example').vertical = this.value;\"></midwest-input>\n\t<midwest-input type=\"number\" max=\"50\" min=\"0\" placeholder=\"Horizontal\" onChange=\"document.querySelector('midwest-blur.example').horizontal = this.value;\"></midwest-input>\n</midwest-grid>\n"
+      },
+      "properties": [
+        {
+          "name": "horizontal",
+          "type": "number",
+          "mutable": true,
+          "attr": "horizontal",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "0",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "vertical",
+          "type": "number",
+          "mutable": true,
+          "attr": "vertical",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "0",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "horizontal",
+          "type": "number",
+          "mutable": true,
+          "attr": "horizontal",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "0",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "vertical",
+          "type": "number",
+          "mutable": true,
+          "attr": "vertical",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "0",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/follow/follow.tsx",
+      "encapsulation": "shadow",
+      "tag": "midwest-follow",
+      "name": "midwest-follow",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "distance",
+          "type": "number",
+          "mutable": false,
+          "attr": "distance",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "0.5",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "padding",
+          "type": "number",
+          "mutable": false,
+          "attr": "padding",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "40",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "\"cursor\" | \"scroll\"",
+          "mutable": false,
+          "attr": "type",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"cursor\"",
+          "values": [
+            {
+              "value": "cursor",
+              "type": "string"
+            },
+            {
+              "value": "scroll",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "distance",
+          "type": "number",
+          "mutable": false,
+          "attr": "distance",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "0.5",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "padding",
+          "type": "number",
+          "mutable": false,
+          "attr": "padding",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "40",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "\"cursor\" | \"scroll\"",
+          "mutable": false,
+          "attr": "type",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"cursor\"",
+          "values": [
+            {
+              "value": "cursor",
+              "type": "string"
+            },
+            {
+              "value": "scroll",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/keyframes/keyframes.tsx",
+      "encapsulation": "shadow",
+      "tag": "midwest-keyframes",
+      "name": "midwest-keyframes",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "frame",
+          "type": "number",
+          "mutable": false,
+          "attr": "frame",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "mutable": false,
+          "attr": "height",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "400",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "src",
+          "type": "string",
+          "mutable": false,
+          "attr": "src",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "mutable": false,
+          "attr": "width",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "400",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "frame",
+          "type": "number",
+          "mutable": false,
+          "attr": "frame",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "mutable": false,
+          "attr": "height",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "400",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "src",
+          "type": "string",
+          "mutable": false,
+          "attr": "src",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "mutable": false,
+          "attr": "width",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "400",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/parallax/parallax.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-parallax",
+      "name": "midwest-parallax",
+      "description": "",
+      "docsTags": [],
+      "usage": {
+        "default": "<midwest-parallax>\n\t<midwest-parallax-section speed=\"0\">\n\t\t<midwest-starscape></midwest-starscape>\n\t</midwest-parallax-section>\n\t<midwest-parallax-section speed=\"-4\" class=\"h6 ml6 self-start\">\n\t\t<ion-icon name=\"airplane\" language=\"md-\" class=\"fs-massive theme-base5\"></ion-icon>\n\t</midwest-parallax-section>\n\t<midwest-parallax-section speed=\"-10\" class=\"h6 mr6 left--2\">\n\t\t<ion-icon name=\"airplane\" language=\"md-\" class=\"fs-massive theme-complement5\"></ion-icon>\n\t</midwest-parallax-section>\n\t<midwest-parallax-section speed=\"10\" class=\"h6 mr6 mb6 right--2\">\n\t\t<ion-icon name=\"airplane\" language=\"md-\" class=\"fs-massive theme-base5\"></ion-icon>\n\t</midwest-parallax-section>\n\t<midwest-parallax-section speed=\"4\" class=\"h6 ml4 mt6\">\n\t\t<ion-icon name=\"airplane\" language=\"md-\" class=\"fs-massive theme-complement5\"></ion-icon>\n\t</midwest-parallax-section>\n</midwest-parallax>\n"
+      },
+      "properties": [
+        {
+          "name": "center",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "center",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "horizontal",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "horizontal",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "center",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "center",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "horizontal",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "horizontal",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [
+        "midwest-starscape"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "midwest-starscape": [
+          "midwest-parallax"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/parallax-section/parallax-section.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-parallax-section",
+      "name": "midwest-parallax-section",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number",
+          "mutable": false,
+          "attr": "speed",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "speed",
+          "type": "number",
+          "mutable": false,
+          "attr": "speed",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [
+        "midwest-starscape"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "midwest-starscape": [
+          "midwest-parallax-section"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/scatter/scatter.tsx",
+      "encapsulation": "shadow",
+      "tag": "midwest-scatter",
+      "name": "midwest-scatter",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "colors",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "colors",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "float",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "float",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "max",
+          "type": "number",
+          "mutable": false,
+          "attr": "max",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "100",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "min",
+          "type": "number",
+          "mutable": false,
+          "attr": "min",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "0",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "sizes",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "sizes",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "colors",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "colors",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "float",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "float",
+          "reflectToAttr": true,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "max",
+          "type": "number",
+          "mutable": false,
+          "attr": "max",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "100",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "min",
+          "type": "number",
+          "mutable": false,
+          "attr": "min",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "0",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "sizes",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "sizes",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/scroll-z-root/scroll-z-root.tsx",
+      "encapsulation": "shadow",
+      "tag": "midwest-scroll-z-root",
+      "name": "midwest-scroll-z-root",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "cameraSpeed",
+          "type": "number",
+          "mutable": false,
+          "attr": "camera-speed",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "150",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "cameraZ",
+          "type": "number",
+          "mutable": false,
+          "attr": "camera-z",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "-1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "initialOriginX",
+          "type": "number",
+          "mutable": false,
+          "attr": "initial-origin-x",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "50",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "initialOriginY",
+          "type": "number",
+          "mutable": false,
+          "attr": "initial-origin-y",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "30",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "itemZ",
+          "type": "number",
+          "mutable": false,
+          "attr": "item-z",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "10",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "scenePerspective",
+          "type": "number",
+          "mutable": false,
+          "attr": "scene-perspective",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "camera-speed",
+          "type": "number",
+          "mutable": false,
+          "attr": "camera-speed",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "150",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "camera-z",
+          "type": "number",
+          "mutable": false,
+          "attr": "camera-z",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "-1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "initial-origin-x",
+          "type": "number",
+          "mutable": false,
+          "attr": "initial-origin-x",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "50",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "initial-origin-y",
+          "type": "number",
+          "mutable": false,
+          "attr": "initial-origin-y",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "30",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "item-z",
+          "type": "number",
+          "mutable": false,
+          "attr": "item-z",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "10",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "scene-perspective",
+          "type": "number",
+          "mutable": false,
+          "attr": "scene-perspective",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [
+        {
+          "name": "scatter",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "scatter() => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/scroll-z-section/scroll-z-section.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-scroll-z-section",
+      "name": "midwest-scroll-z-section",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [],
+      "attributes": [],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/slide/slide.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-slide",
+      "name": "midwest-slide",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "slideId",
+          "type": "number",
+          "mutable": false,
+          "attr": "slide-id",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "mutable": false,
+          "attr": "width",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"auto\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "slide-id",
+          "type": "number",
+          "mutable": false,
+          "attr": "slide-id",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "mutable": false,
+          "attr": "width",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"auto\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "switched",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "",
+          "docsTags": [],
+          "name": "switched",
+          "description": "",
+          "type": "any"
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/slides/slides.tsx",
+      "encapsulation": "shadow",
+      "tag": "midwest-slides",
+      "name": "midwest-slides",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "padding",
+          "type": "string",
+          "mutable": false,
+          "attr": "padding",
+          "reflectToAttr": false,
+          "docs": "Show or hide the pager",
+          "docsTags": [],
+          "default": "\"1rem\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": "Show or hide the pager"
+        },
+        {
+          "name": "pager",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "pager",
+          "reflectToAttr": false,
+          "docs": "Show or hide the pager",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": "Show or hide the pager"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "padding",
+          "type": "string",
+          "mutable": false,
+          "attr": "padding",
+          "reflectToAttr": false,
+          "docs": "Show or hide the pager",
+          "docsTags": [],
+          "default": "\"1rem\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": "Show or hide the pager"
+        },
+        {
+          "name": "pager",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "pager",
+          "reflectToAttr": false,
+          "docs": "Show or hide the pager",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": "Show or hide the pager"
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [
+        "ion-icon"
+      ],
+      "dependencyGraph": {
+        "midwest-slides": [
+          "ion-icon"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/starscape/starscape.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-starscape",
+      "name": "midwest-starscape",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [],
+      "attributes": [],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [
+        "midwest-parallax",
+        "midwest-parallax-section"
+      ],
+      "dependencyGraph": {
+        "midwest-starscape": [
+          "midwest-parallax",
+          "midwest-parallax-section"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/story/story.tsx",
+      "encapsulation": "none",
+      "tag": "midwest-story",
+      "name": "midwest-story",
+      "description": "",
+      "docsTags": [],
+      "usage": {},
+      "properties": [
+        {
+          "name": "target",
+          "type": "string",
+          "mutable": false,
+          "attr": "target",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"story\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "attributes": [
+        {
+          "name": "target",
+          "type": "string",
+          "mutable": false,
+          "attr": "target",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "\"story\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false,
+          "description": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    }
+  ]
+}

@@ -206,7 +206,7 @@ export class InputFile implements ComponentInterface {
           {!this.hideState && this._fileLabel && <h3>{this._fileLabel}</h3>}
 
           <h4>
-            <midwest-icon name={(!this.hideState && this._fileLabel) ? "create" : "add-circle"}  />
+            <ion-icon name={(!this.hideState && this._fileLabel) ? "create" : "add-circle"}  />
             {!this.hideState && this.filePlaceholder}
             {this.hideState && this.placeholder}
           </h4>

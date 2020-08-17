@@ -14,7 +14,7 @@ describe('midwest-select', () => {
       <div class=\"select\">
         <button class=\"title\" type=\"button\">
           <midwest-form-rollup fallback=\"Choose  items\" for=\"select\" placeholder=\"Choose something...\" verbiage=\"item\"></midwest-form-rollup>
-          <midwest-icon name=\"ios-arrow-down\"/>
+          <ion-icon name=\"ios-arrow-down\"/>
         </button>
         <div class=\"list\">
           <div class=\"body\">

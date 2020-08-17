@@ -67,6 +67,8 @@ Type: `Promise<FormResult>`
 ### Depends on
 
 - [midwest-avatar](../../common/avatar)
+- ion-icon
+- [midwest-box](../box)
 - [midwest-label](../../common/label)
 - [midwest-tooltip](../../common/tooltip)
 - export-to-figma
@@ -75,13 +77,17 @@ Type: `Promise<FormResult>`
 ```mermaid
 graph TD;
   midwest-item --> midwest-avatar
+  midwest-item --> ion-icon
+  midwest-item --> midwest-box
   midwest-item --> midwest-label
   midwest-item --> midwest-tooltip
   midwest-item --> export-to-figma
   midwest-avatar --> midwest-progress
+  midwest-avatar --> ion-icon
   midwest-avatar --> midwest-tooltip
   midwest-avatar --> context-consumer
   midwest-tooltip --> context-consumer
+  midwest-box --> ion-icon
   midwest-label --> context-consumer
   midwest-autocomplete --> midwest-item
   style midwest-item fill:#f9f,stroke:#333,stroke-width:4px

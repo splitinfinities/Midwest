@@ -116,14 +116,14 @@
   margin-right: 3rem;
 }
 
-:host ::slotted(midwest-icon[slot="icon"]),
-:host #icon midwest-icon {
+:host ::slotted(ion-icon[slot="icon"]),
+:host #icon ion-icon {
   font-size: 3rem;
   right: 3rem;
   color: var(--red5);
 }
 
-:host([valid]) #icon midwest-icon {
+:host([valid]) #icon ion-icon {
   color: var(--green5);
   --secondary: var(--green1);
 }

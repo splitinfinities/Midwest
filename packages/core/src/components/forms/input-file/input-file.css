@@ -140,7 +140,7 @@
   justify-content: center;
 }
 
-:host .file-wrapper h4 midwest-icon {
+:host .file-wrapper h4 ion-icon {
   font-size: 1.5em;
   margin-right: 0.25rem;
 }

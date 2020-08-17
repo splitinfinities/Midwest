@@ -1,0 +1,11 @@
+<midwest-dropdown>
+	<midwest-button ghost slot="handle">Account</midwest-button>
+	<midwest-item>
+		<midwest-avatar name="William M. Riley" size="small" notooltip></midwest-avatar>
+		Your Account
+	</midwest-item>
+	<midwest-item>Billing</midwest-item>
+	<midwest-item selectable="false" slot="footer">
+		<midwest-button pill outline block size="tiny" padding="small">Sign out</midwest-button>
+	</midwest-item>
+</midwest-dropdown>

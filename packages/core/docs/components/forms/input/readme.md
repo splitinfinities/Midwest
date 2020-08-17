@@ -126,6 +126,7 @@ Type: `Promise<FormResult>`
 ### Depends on
 
 - [midwest-label](../../common/label)
+- ion-icon
 - [midwest-progress](../../common/progress)
 - [midwest-tooltip](../../common/tooltip)
 - [midwest-validate](../validate)
@@ -134,6 +135,7 @@ Type: `Promise<FormResult>`
 ```mermaid
 graph TD;
   midwest-input --> midwest-label
+  midwest-input --> ion-icon
   midwest-input --> midwest-progress
   midwest-input --> midwest-tooltip
   midwest-input --> midwest-validate

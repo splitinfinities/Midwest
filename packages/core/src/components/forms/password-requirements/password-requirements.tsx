@@ -59,7 +59,7 @@ export class PasswordRequirements {
 
     renderItem(test: boolean, copy: string) {
         return <midwest-grid style={{ "grid-template-columns": "1.25rem 1fr", "--grid-gap": "0.5rem" }} class={`items-center ${test ? 'text-green-6' : 'text-red-6'}`}>
-            <midwest-icon class={`${this.fontSize} text-2xl`} name={test ? "valid" : "close"} />
+            <ion-icon class={`${this.fontSize} text-2xl`} name={test ? "valid" : "close"} />
             <p class={`${this.fontSize} ${test ? 'text-green-5' : 'text-red-5'}`}>{copy}</p>
         </midwest-grid>
     }

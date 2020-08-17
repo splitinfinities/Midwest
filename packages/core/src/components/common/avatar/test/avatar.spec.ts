@@ -8,13 +8,13 @@ describe('midwest-avatar', () => {
       html: `<midwest-avatar></midwest-avatar>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-avatar class=\"theme-orange\" color=\"orange\" initials=\"SA\" name=\"Midwest Design\" shape=\"square\">
+    expect(page.root).toEqualHtml(`<midwest-avatar class=\"theme-orange\" color=\"orange\" initials=\"MW\" name=\"Midwest Design\" shape=\"square\">
     <mock:shadow-root>
       <button class=\"wrapper\" title=\"You tabbed on an Avatar for Midwest Design\">
         <div class=\"content\">
           <div class=\"spacer\"></div>
           <div class=\"letter\" title=\"Midwest Design\">
-            SA
+            MW
           </div>
         </div>
         <midwest-tooltip>

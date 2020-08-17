@@ -16,7 +16,7 @@ describe('midwest-switch', () => {
                 <input tabindex=\"-1\" type=\"checkbox\" value=\"true\">
                 <span class=\"button\">
                     <span>
-                        <midwest-icon name=\"close\"/>
+                        <ion-icon name=\"close\"/>
                     </span>
                 </span>
                 <div class=\"hide yes\"></div>

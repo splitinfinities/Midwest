@@ -52,7 +52,7 @@ export default class Validator {
 			this.methods.push(this.element.getAttribute("type"))
 		}
 
-		if (this.element.nodeName === "SA-RICH-TEXT") {
+		if (this.element.nodeName === "MIDWEST-RICH-TEXT") {
 			this.methods.push("midwest-rich-text");
 		}
 	}
@@ -153,9 +153,9 @@ export default class Validator {
 		if (check.isIn("required", this.methods)) {
 			let result = false; 
 			
-			if (this.element.tagName === "SA-INPUT-TAGS") {
+			if (this.element.tagName === "MIDWEST-INPUT-TAGS") {
 				result = this.value.length === 0;
-			} else if (this.element.tagName === "SA-SELECT") {
+			} else if (this.element.tagName === "MIDWEST-SELECT") {
 				result = this.element.multiple ? this.value && this.value.length === 0 : check.isEmpty(this.value);
 			} else if (this.element.type === "radio") {
 				result = this.value && this.value.length === 0;

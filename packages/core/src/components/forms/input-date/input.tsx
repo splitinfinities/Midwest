@@ -551,7 +551,7 @@ export class InputDate {
 
           <div class="content">
             {!this.range && <button class="icon right" tabIndex={-1} onClick={(e) => { e.preventDefault(); this.getDateTimeFromModal() }}>
-              <midwest-icon name={this.open ? "close-circle" : "calendar"} />
+              <ion-icon name={this.open ? "close-circle" : "calendar"} />
             </button>}
 
             {this.renderDatePicker()}
