@@ -1,7 +1,7 @@
 {
   "name": "@midwest-design/motion",
   "public": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
@@ -40,5 +40,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "57d53b7e072f87de5a836e44ba5cb15d1a73917b"
 }
