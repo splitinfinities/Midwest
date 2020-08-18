@@ -1,6 +1,7 @@
 {
   "license": "MIT",
   "name": "@midwest-design/core",
+  "public": true,
   "version": "0.0.2",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
@@ -16,7 +17,6 @@
     "loader/"
   ],
   "scripts": {
-    "version": "standard-version -t @midwest-design/core\\@",
     "build": "stencil build --docs",
     "build.ci": "stencil build --ci",
     "start": "stencil build --dev --watch --serve",

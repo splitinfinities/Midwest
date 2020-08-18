@@ -1,5 +1,6 @@
 {
   "name": "@midwest-design/docs",
+  "public": true,
   "version": "0.0.1",
   "description": "docs",
   "license": "MIT",
