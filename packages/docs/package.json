@@ -1,7 +1,7 @@
 {
   "name": "@midwest-design/docs",
   "public": true,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "docs",
   "license": "MIT",
   "files": [
@@ -19,12 +19,12 @@
   },
   "devDependencies": {
     "@ionic/core": "^5.3.1",
-    "@midwest-design/audio": "^0.0.1",
-    "@midwest-design/common": "^0.0.1",
-    "@midwest-design/core": "0.0.2",
-    "@midwest-design/helpers": "^0.0.1",
-    "@midwest-design/media": "^0.0.1",
-    "@midwest-design/motion": "^0.0.1",
+    "@midwest-design/audio": "^0.0.3",
+    "@midwest-design/common": "^0.0.3",
+    "@midwest-design/core": "^0.0.3",
+    "@midwest-design/helpers": "^0.0.3",
+    "@midwest-design/media": "^0.0.3",
+    "@midwest-design/motion": "^0.0.3",
     "@stencil/core": "^1.17.3"
   }
 }

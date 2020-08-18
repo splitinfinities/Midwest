@@ -1,7 +1,7 @@
 {
   "name": "@midwest-design/export-to-figma",
   "public": true,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
@@ -28,10 +28,10 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@stencil/core": "latest",
     "@stencil/postcss": "^1.0.1",
-    "autoprefixer": "^9.8.6",
-    "postcss-import": "^12.0.1",
     "@types/react": "^16.9.23",
-    "figma-js": "^1.9.0"
+    "autoprefixer": "^9.8.6",
+    "figma-js": "^1.9.0",
+    "postcss-import": "^12.0.1"
   },
   "publishConfig": {
     "access": "public"
