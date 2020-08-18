@@ -36,6 +36,9 @@
       ]
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@f/contains-element": "^1.0.0",
     "@fullcalendar/core": "^5.3.0",

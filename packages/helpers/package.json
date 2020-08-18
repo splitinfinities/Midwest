@@ -40,5 +40,8 @@
     "shepherd.js": "^8.0.2",
     "showdown": "^1.9.1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT"
 }

@@ -47,6 +47,9 @@
     "reset": "Delete all untracked files and reset the repo to the last commit",
     "prepare-release": "One-step: clean, build, test, publish docs, and prep a release"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": "^12 || ^14"
   },

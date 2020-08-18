@@ -32,5 +32,8 @@
     "raf": "^3.4.1",
     "webmidi": "^2.5.1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT"
 }
