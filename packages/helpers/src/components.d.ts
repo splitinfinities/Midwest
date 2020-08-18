@@ -128,6 +128,7 @@ export namespace Components {
         "codeString": string;
         "editable": boolean;
         "flavor": "github" | "original" | "vanilla";
+        "loading": boolean;
         /**
           * Used to reference an external markdown file
           * @type string
@@ -475,6 +476,7 @@ declare namespace LocalJSX {
         "codeString"?: string;
         "editable"?: boolean;
         "flavor"?: "github" | "original" | "vanilla";
+        "loading"?: boolean;
         /**
           * Used to reference an external markdown file
           * @type string

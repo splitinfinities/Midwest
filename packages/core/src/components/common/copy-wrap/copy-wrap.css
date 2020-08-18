@@ -51,6 +51,10 @@
   margin-bottom: 2rem;
 }
 
+:host ::slotted(*) {
+  margin-bottom: 1rem;
+}
+
 :host ::slotted(*:last-child) {
   margin-bottom: 0;
 }

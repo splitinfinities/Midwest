@@ -81,30 +81,33 @@ export class DisplayFeed {
   }
 
   renderItem (item) {
+    const cardClass = "hover:bg-base-0 bg-white dm:bg-base-11 hover:dm:bg-base-10 overflow-hidden"
+    const tagClass = "mb-2 inline-block bg-base-1 dm:bg-base-10"
+
     if (item.image) {
-      return <midwest-card tag="a" href={item.link} class="hover:bg-base-1 bg-base-0 dm:bg-base-11 hover:dm:bg-base-10" style={{"--background": "transparent", "--background-active": "rgba(0, 0, 0, 0.1)"}}>
-        <header class="mb-2 flush p-0 flex">
+      return <midwest-card tag="a" href={item.link} class={cardClass} style={{"--background": "transparent", "--background-active": "rgba(0, 0, 0, 0.05)", "--overflow": "hidden"}}>
+        <header class="mb-2 flush p-0 flex overflow-hidden">
           { this.renderImage(item) }
         </header>
         <section>
-          <midwest-tag class="mb-2 inline-block bg-base-4 dm:bg-base-10">
+          <midwest-tag class={tagClass}>
             <midwest-time value={item.date} relative />
           </midwest-tag>
           <h3 class="text-black dm:text-white">{item.title}</h3>
         </section>
       </midwest-card>
     } else {
-      return <midwest-card tag="a" href={item.link} class="hover:bg-base-1 bg-base-0 dm:bg-base-11 hover:dm:bg-base-10" style={{"--background": "transparent", "--background-active": "rgba(0, 0, 0, 0.1)"}}>
+      return <midwest-card tag="a" href={item.link} class={cardClass} style={{"--background": "transparent", "--background-active": "rgba(0, 0, 0, 0.05)", "--overflow": "hidden"}}>
         <section>
           <copy-wrap>
-            <midwest-tag class="mb-2 inline-block bg-base-4 dm:bg-base-10">
+            <midwest-tag class={tagClass}>
               <midwest-time value={item.date} relative />
             </midwest-tag>
             <h3 class="text-black dm:text-white">{item.title}</h3>
             {item.description && <p class="text-black dm:text-white">{item.description}</p>}
           </copy-wrap>
         </section>
-        <footer class="dm:bg-base-12 bg-base-1">
+        <footer class="dm:bg-base-12 bg-base-1 w-full max-w-none">
           {this.renderStats(item)}
         </footer>
       </midwest-card>
@@ -113,7 +116,7 @@ export class DisplayFeed {
 
   renderList () {
     return (
-      <section class="list bg-base-0 bg-opacity-50 dm:bg-base-10 p-4">
+      <section class="list bg-white dm:bg-black p-4">
         { !this.data && !this.displayAccessButton && this.renderLoading() }
         { this.data && <midwest-grid class={this.type} cols={1} noresponsive>
           <animate-presence>
@@ -125,8 +128,8 @@ export class DisplayFeed {
   }
 
   render () {
-    return <midwest-card padding="none" class="overflow-hidden">
-      <header class={`${this.type} py-4 px-3 flex items-between bg-base-2 dm:bg-base-12`}>
+    return <midwest-card padding="none">
+      <header class={`${this.type} py-4 px-3 flex items-between bg-white dm:bg-black sticky z-20`} style={{top: "5.25rem"}}>
         <ion-icon name={this.icon} class="text-4xl text-black dm:text-white mr-4" />
         <h2 class="text-black dm:text-white uppercase">{this.title}</h2>
       </header>

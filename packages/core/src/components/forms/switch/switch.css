@@ -7,6 +7,10 @@ midwest-switch {
   z-index: 0;
 }
 
+midwest-switch:focus {
+  outline: none;
+}
+
 midwest-switch .label {
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
@@ -83,32 +87,19 @@ midwest-switch:not([checked]) .no {
   display: block;
 }
 
-midwest-switch .label .button:focus {
+midwest-switch .label .button:focus,
+midwest-switch:focus .label .button {
   background-color: var(--theme-base-0);
 }
 
-midwest-switch .label .button:focus::after {
+midwest-switch .label .button:focus::after,
+midwest-switch:focus .label .button::after {
   box-shadow: 0 0 0 0.3em var(--theme-base-5);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   midwest-switch .label .button span {
     transition: none;
-    font-size: calc(var(--font-size) * 1.5);
-    font-weight: 700;
-    color: var(--gray7);
-    position: absolute;
-    left: calc(var(--font-size) * 0.125);
-    top: 0;
-    font-style: normal;
-    text-transform: uppercase;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    pointer-events: none;
-    z-index: 1;
   }
 }
 

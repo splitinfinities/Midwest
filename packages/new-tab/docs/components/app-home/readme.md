@@ -29,6 +29,11 @@ graph TD;
   midwest-docs --> midwest-switch
   midwest-docs --> midwest-select
   midwest-docs --> midwest-item
+  midwest-docs --> animate-presence
+  midwest-docs --> midwest-label
+  midwest-docs --> midwest-card
+  midwest-docs --> midwest-button
+  midwest-docs --> midwest-markdown
   midwest-input --> midwest-label
   midwest-input --> ion-icon
   midwest-input --> midwest-progress
@@ -72,6 +77,13 @@ graph TD;
   midwest-item --> midwest-tooltip
   midwest-item --> export-to-figma
   midwest-box --> ion-icon
+  midwest-card --> midwest-button
+  midwest-card --> ion-icon
+  midwest-card --> export-to-figma
+  midwest-markdown --> midwest-progress
+  midwest-markdown --> midwest-card
+  midwest-markdown --> copy-wrap
+  midwest-markdown --> midwest-input
   display-feed --> copy-wrap
   display-feed --> midwest-progress
   display-feed --> midwest-grid
@@ -82,9 +94,6 @@ graph TD;
   display-feed --> animate-presence
   display-feed --> ion-icon
   midwest-image --> midwest-intersection
-  midwest-card --> midwest-button
-  midwest-card --> ion-icon
-  midwest-card --> export-to-figma
   style app-home fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

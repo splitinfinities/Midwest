@@ -33,6 +33,7 @@
 | `codeString` | `code-string` | Used to set                                 | `string`                              | `undefined` |
 | `editable`   | `editable`    |                                             | `boolean`                             | `false`     |
 | `flavor`     | `flavor`      |                                             | `"github" \| "original" \| "vanilla"` | `"vanilla"` |
+| `loading`    | `loading`     |                                             | `boolean`                             | `false`     |
 | `src`        | `src`         | Used to reference an external markdown file | `string`                              | `undefined` |
 
 
@@ -40,6 +41,7 @@
 
 ### Depends on
 
+- midwest-progress
 - midwest-card
 - copy-wrap
 - midwest-input
@@ -47,6 +49,7 @@
 ### Graph
 ```mermaid
 graph TD;
+  midwest-markdown --> midwest-progress
   midwest-markdown --> midwest-card
   midwest-markdown --> copy-wrap
   midwest-markdown --> midwest-input

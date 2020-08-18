@@ -15,8 +15,6 @@ export const fetchDribbble = async (filter, limit = 5) => {
         comments: item.source.commentsCount || "0",
         votes: item.source.likesCount || "0"
       })
-
-      console.log(item.image);
     }
   });
 

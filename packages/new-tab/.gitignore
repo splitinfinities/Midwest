@@ -3,6 +3,8 @@ dist/
 www/
 loader/
 
+app.zip
+
 *~
 *.sw[mnpcod]
 *.log

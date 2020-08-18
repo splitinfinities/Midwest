@@ -22,6 +22,7 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
+    "create-app": "zip -r app.zip www",
     "generate": "stencil generate"
   },
   "dependencies": {
@@ -30,6 +31,8 @@
     "@midwest-design/core": "^0.0.3",
     "@midwest-design/helpers": "^0.0.3",
     "@midwest-design/media": "^0.0.3",
+    "@midwest-design/audio": "^0.0.3",
+    "@midwest-design/device": "^0.0.3",
     "@midwest-design/motion": "^0.0.3",
     "@stencil/core": "latest",
     "@stencil/postcss": "^1.0.1",

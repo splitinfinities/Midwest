@@ -3,14 +3,10 @@
   "short_name": "midwest-new-tab",
   "manifest_version": 2,
   "version": "1.0.0",
-  "start_url": "/",
-  "display": "standalone",
   "incognito": "split",
   "content_security_policy":"script-src 'self' blob: filesystem: chrome-extension-resource: chrome-extension:; blob: filesystem: chrome-extension:; object-src 'self' blob: filesystem:;",
   "permissions" : ["management"],
   "chrome_url_overrides" : {
       "newtab": "index.html"
-  },
-  "background_color": "#16161d",
-  "theme_color": "#16161d"
+  }
 }

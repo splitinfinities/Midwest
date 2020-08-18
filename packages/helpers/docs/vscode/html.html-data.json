@@ -585,6 +585,10 @@
           ]
         },
         {
+          "name": "loading",
+          "description": ""
+        },
+        {
           "name": "src",
           "description": "Used to reference an external markdown file"
         }

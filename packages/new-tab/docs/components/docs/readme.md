@@ -17,6 +17,11 @@
 - midwest-switch
 - midwest-select
 - midwest-item
+- animate-presence
+- midwest-label
+- midwest-card
+- midwest-button
+- midwest-markdown
 
 ### Graph
 ```mermaid
@@ -25,6 +30,11 @@ graph TD;
   midwest-docs --> midwest-switch
   midwest-docs --> midwest-select
   midwest-docs --> midwest-item
+  midwest-docs --> animate-presence
+  midwest-docs --> midwest-label
+  midwest-docs --> midwest-card
+  midwest-docs --> midwest-button
+  midwest-docs --> midwest-markdown
   midwest-input --> midwest-label
   midwest-input --> ion-icon
   midwest-input --> midwest-progress
@@ -68,6 +78,13 @@ graph TD;
   midwest-item --> midwest-tooltip
   midwest-item --> export-to-figma
   midwest-box --> ion-icon
+  midwest-card --> midwest-button
+  midwest-card --> ion-icon
+  midwest-card --> export-to-figma
+  midwest-markdown --> midwest-progress
+  midwest-markdown --> midwest-card
+  midwest-markdown --> copy-wrap
+  midwest-markdown --> midwest-input
   app-home --> midwest-docs
   style midwest-docs fill:#f9f,stroke:#333,stroke-width:4px
 ```

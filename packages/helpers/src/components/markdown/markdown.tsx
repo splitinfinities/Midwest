@@ -26,6 +26,7 @@ export class Markdown {
   @Prop() flavor: "github" | "original" | "vanilla" = "vanilla";
 
   @Prop() editable: boolean = false;
+  @Prop() loading: boolean = false;
 
   @State() converted: string;
   @State() raw: string;
@@ -88,27 +89,31 @@ export class Markdown {
   }
 
   async fetchMarkdown() {
+    this.loading = true;
     const response = await fetch(this.src);
     const text = await response.text();
 
     this.raw = text;
     this.convertMarkdown();
+    this.loading = false;
   }
 
   render() {
+    if (this.loading) {
+      return <midwest-progress indeterminate class="text-5xl" />
+    }
+    
     if (this.editable) {
       return <midwest-card>
-        <section><copy-wrap full class="wrap">
-          <div innerHTML={this.converted}></div>
-        </copy-wrap></section>
+        <section>
+          <copy-wrap full class="wrap" innerHTML={this.converted} />
+        </section>
         <footer class="bg-theme-base0">
           <midwest-input type="textarea" default={this.codeString} onUpdate={(e) => { this.codeString = e.detail; this.convert(); }} />
         </footer>
       </midwest-card>
     } else {
-      return <copy-wrap full class="wrap">
-        <div innerHTML={this.converted}></div>
-      </copy-wrap>
+      return <copy-wrap full class="wrap" innerHTML={this.converted} />
     }
   }
 }
