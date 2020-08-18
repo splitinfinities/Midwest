@@ -1,6 +1,6 @@
 {
   "name": "@midwest-design/motion",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
-    "@midwest-design/common": "^0.0.0",
-    "@midwest-design/core": "^0.0.0",
+    "@midwest-design/common": "^0.0.1",
+    "@midwest-design/core": "^0.0.1",
     "@stencil/core": "^1.17.3",
     "@stencil/postcss": "^1.0.1",
     "animejs": "^3.2.0",
