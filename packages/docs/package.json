@@ -21,7 +21,7 @@
     "@ionic/core": "^5.3.1",
     "@midwest-design/audio": "^0.0.1",
     "@midwest-design/common": "^0.0.1",
-    "@midwest-design/core": "^0.0.1",
+    "@midwest-design/core": "0.0.2",
     "@midwest-design/helpers": "^0.0.1",
     "@midwest-design/media": "^0.0.1",
     "@midwest-design/motion": "^0.0.1",

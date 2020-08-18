@@ -58,8 +58,8 @@
     "appmetrics.js": "0.0.9",
     "base-64": "^0.1.0",
     "css-custom-properties": "^0.1.0",
-    "dayjs": "latest",
-    "jest": "latest",
+    "dayjs": "^1.8.33",
+    "jest": "^26.0.0",
     "sha.js": "^2.4.11"
   },
   "devDependencies": {

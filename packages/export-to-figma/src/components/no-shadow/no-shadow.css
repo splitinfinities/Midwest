@@ -1,0 +1,11 @@
+example-no-shadow {
+  display: block;
+}
+
+example-no-shadow p {
+  color: blue;
+}
+
+example-no-shadow slot-fb p {
+  color: green;
+}

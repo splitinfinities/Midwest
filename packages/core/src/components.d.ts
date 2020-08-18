@@ -633,7 +633,6 @@ export namespace Components {
         "name": string;
         "quiet": boolean;
         "required": boolean;
-        "settableContent": boolean;
         "settableParent": any;
         "tag": "a" | "button" | "span" | "checkbox" | "radio";
         "target": string;
@@ -2118,7 +2117,6 @@ declare namespace LocalJSX {
         "onSelectionChanged"?: (event: CustomEvent<any>) => void;
         "quiet"?: boolean;
         "required"?: boolean;
-        "settableContent"?: boolean;
         "settableParent"?: any;
         "tag"?: "a" | "button" | "span" | "checkbox" | "radio";
         "target"?: string;

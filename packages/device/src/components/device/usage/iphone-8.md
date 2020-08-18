@@ -1,0 +1,15 @@
+  <stellar-device frame="iphone-8-silver">
+    <img src="https://placehold.it/750x1334/ABC/FFF">
+  </stellar-device>
+
+  <stellar-device frame="iphone-8-spacegray">
+    <img src="https://placehold.it/750x1334/ABC/FFF">
+  </stellar-device>
+
+  <stellar-device frame="iphone-8-plus-silver">
+    <img src="https://placehold.it/828x1472/ABC/FFF">
+  </stellar-device>
+
+  <stellar-device frame="iphone-8-plus-spacegray">
+    <img src="https://placehold.it/828x1472/ABC/FFF">
+  </stellar-device>

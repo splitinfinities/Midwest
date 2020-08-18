@@ -1,0 +1,27 @@
+display-feed midwest-card {
+  --border: 1px solid var(--theme-base2);
+}
+
+.dark-mode display-feed midwest-card {
+  --border: 1px solid var(--theme-base9);
+}
+
+display-feed .loading {
+  display: flex;
+  margin-top: -3rem;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+display-feed midwest-asset {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+
+display-feed .loading midwest-asset {
+  margin-right: 1rem;
+}

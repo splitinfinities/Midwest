@@ -1,0 +1,15 @@
+<stellar-device frame="apple-watch-42-black">
+    <img src="https://placehold.it/624x780/ABC/FFF">
+</stellar-device>
+
+<stellar-device frame="apple-watch-42-white">
+    <img src="https://placehold.it/624x780/ABC/FFF">
+</stellar-device>
+
+<stellar-device frame="apple-watch-44-black">
+    <img src="https://placehold.it/736x896/ABC/FFF">
+</stellar-device>
+
+<stellar-device frame="apple-watch-44-white">
+    <img src="https://placehold.it/736x896/ABC/FFF">
+</stellar-device>

@@ -1,0 +1,15 @@
+  <stellar-device frame="ipod-touch-portrait-blue">
+    <img src="https://placehold.it/640x1136/ABC/FFF">
+  </stellar-device>
+
+  <stellar-device frame="ipod-touch-landscape-blue">
+    <img src="https://placehold.it/1136x640/ABC/FFF">
+  </stellar-device>
+
+  <stellar-device frame="ipod-touch-portrait-silver">
+    <img src="https://placehold.it/640x1136/ABC/FFF">
+  </stellar-device>
+
+  <stellar-device frame="ipod-touch-landscape-silver">
+    <img src="https://placehold.it/1136x640/ABC/FFF">
+  </stellar-device>

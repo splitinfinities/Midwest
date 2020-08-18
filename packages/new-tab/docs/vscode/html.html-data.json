@@ -1,0 +1,64 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "app-home",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/app-home/app-home.tsx"
+        }
+      ]
+    },
+    {
+      "name": "display-feed",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "filter",
+          "description": ""
+        },
+        {
+          "name": "icon",
+          "description": ""
+        },
+        {
+          "name": "icon-color",
+          "description": ""
+        },
+        {
+          "name": "type",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/display-feed/display-feed.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stellar-docs",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/docs/docs.tsx"
+        }
+      ]
+    }
+  ]
+}

@@ -37,7 +37,6 @@ export class Item {
   @Prop({ reflect: true, mutable: true }) focused: boolean = false;
   @Prop() tooltip: string;
   @Prop({mutable: true}) content: string;
-  @Prop({mutable: true}) settableContent: boolean = true;
   @Prop({mutable: true}) settableParent: any;
 
   pjaxElement: any = document.querySelector('midwest-pjax');
@@ -55,11 +54,10 @@ export class Item {
   input!: HTMLInputElement;
 
   componentWillLoad() {
-    this.setContent();
     this.handleTagChange();
 
     this.hasSelected = (this.element.querySelectorAll("*[slot='selected']").length !== 0);
-    this.parent = this.settableParent ? this.settableParent : this.element.closest('midwest-select, midwest-dropdown, midwest-toggle, midwest-autocomplete, midwest-remote-select') ;
+    this.parent = this.settableParent ? this.settableParent : this.element.closest('midwest-select, midwest-dropdown, midwest-toggle, midwest-autocomplete') ;
     this.form = this.element.closest('midwest-form');
     
     this.element.querySelectorAll('midwest-button').forEach((el) => {
@@ -68,18 +66,6 @@ export class Item {
 
     if (!this.value) {
       this.value = this.element.innerHTML
-    }
-  }
-
-  componentDidUpdate() {
-    this.setContent();
-  }
-
-  setContent() {
-    if (this.settableContent) {
-      let content;
-      content = this.element.innerText
-      this.content = content.replace('Selected', '').replace('Not selected', '');
     }
   }
 

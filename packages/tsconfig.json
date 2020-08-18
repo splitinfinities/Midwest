@@ -1,11 +1,15 @@
 {
   "files": [],
   "references": [
-    { "path": "core" },
+    { "path": "common" },
     { "path": "motion" },
+    { "path": "audio" }
+    { "path": "core" },
     { "path": "media" },
     { "path": "helpers" },
-    { "path": "common" },
-    { "path": "audio" }
+    { "path": "device" },
+    { "path": "docs" },
+    { "path": "export-to-figma" },
+    { "path": "new-tab" },
   ]
 }
