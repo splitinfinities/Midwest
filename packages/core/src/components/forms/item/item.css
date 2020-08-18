@@ -148,7 +148,7 @@
 /* Block */
 :host([block]) {
   overflow: hidden;
-  --focus: var(--theme-base7);
+  --focus: var(--theme-base-7);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

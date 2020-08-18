@@ -84,11 +84,11 @@ midwest-switch:not([checked]) .no {
 }
 
 midwest-switch .label .button:focus {
-  background-color: var(--theme-base0);
+  background-color: var(--theme-base-0);
 }
 
 midwest-switch .label .button:focus::after {
-  box-shadow: 0 0 0 0.3em var(--theme-base5);
+  box-shadow: 0 0 0 0.3em var(--theme-base-5);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -189,7 +189,7 @@ midwest-switch .label input {
 }
 
 midwest-switch .label input:checked + .button {
-  background-color: var(--theme-base6);
+  background-color: var(--theme-base-6);
   color: white;
 }
 
@@ -204,7 +204,7 @@ midwest-switch .label input:checked + .button::after {
     calc(var(--font-size) * 0.125),
     0
   );
-  background: var(--theme-base5);
+  background: var(--theme-base-5);
 }
 
 midwest-switch[size="small"] {

@@ -73,7 +73,7 @@
   z-index: 9;
   min-height: 3rem;
   padding: 1rem 0;
-  color: var(--theme-base9);
+  color: var(--theme-base-9);
   outline: 0;
 }
 
@@ -134,5 +134,5 @@
 
 :host([dark]) ::slotted(*),
 :host([dark]) ::slotted(*[slot="label"]) {
-  color: var(--theme-base5);
+  color: var(--theme-base-5);
 }

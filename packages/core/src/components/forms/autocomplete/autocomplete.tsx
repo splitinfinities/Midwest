@@ -4,6 +4,7 @@ import faker from 'faker';
 import * as JsSearch from 'js-search';
 import Debounce from 'debounce-decorator';
 import delay from 'async-delay';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-autocomplete',
@@ -63,6 +64,7 @@ export class Autocomplete {
   validator: HTMLMidwestValidateElement;
 
   componentWillLoad() {
+    darkMode(this)
     if (this.freeTextField) {
       this.initializeFreeText()
     }
@@ -318,7 +320,6 @@ export class Autocomplete {
               key={option.value}
               name={this.name}
               onFocus={() => { this.open = true; }} 
-              settableContent={false} 
               quiet={this.quiet}
               settableParent={this.element} 
               tag={this.tag} 
@@ -332,7 +333,6 @@ export class Autocomplete {
               {...this.freeTextOption} 
               key="free-text"
               onFocus={() => { this.open = true; }} 
-              settableContent={false} 
               quiet={this.quiet}
               settableParent={this.element} 
               tag={this.tag} 
@@ -348,7 +348,6 @@ export class Autocomplete {
             {...o} 
             checked 
             class="selected"
-            settableContent={false} 
             tag={this.tag} 
             name={this.name}
           >

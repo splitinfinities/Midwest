@@ -1,6 +1,7 @@
 import { Component, Host, h, Prop, Element, State, Event, EventEmitter, Method, Listen, Watch } from '@stencil/core';
 import pluralize from 'pluralize';
 import delay from 'async-delay';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-select',
@@ -33,7 +34,7 @@ export class Select {
   @Prop({ reflect: true }) dark: boolean = false;
   @Prop({ reflect: true }) noClear: boolean;
   @Prop() export: boolean;
-  @Prop() changeTheme: boolean;
+  @Prop() changeTheme: boolean|"base"|"complement";
 
   // Copy things
   @Prop() verbiage: string = "item";  
@@ -66,6 +67,7 @@ export class Select {
   valueInitialized: boolean = false;
 
   componentWillLoad() {
+    darkMode(this)
     if (this.position) {
       this.manualPosition = true;
     }
@@ -245,7 +247,14 @@ export class Select {
       }
 
       if (this.changeTheme && typeof this.value === "string") {
-        document.querySelector("midwest-theme").base = (this.value as ThemeableColors)
+        console.log(this.changeTheme);
+        if (this.changeTheme === "base") {
+          document.querySelector("midwest-theme").base = (this.value as ThemeableColors)
+        } else if (this.changeTheme === "complement") {
+          document.querySelector("midwest-theme").complement = (this.value as ThemeableColors)
+        } else {
+          document.querySelector("midwest-theme").base = (this.value as ThemeableColors)
+        }
       }  
     }
   }
@@ -257,6 +266,10 @@ export class Select {
 
   handleTitleFocus() { 
     this.focused = true;
+    this.element.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    })
   }
 
   handleTitleBlur() { 

@@ -396,7 +396,7 @@ midwest-rich-text .ql-snow.ql-toolbar .ql-picker-item:hover,
 midwest-rich-text .ql-snow .ql-toolbar .ql-picker-item:hover,
 midwest-rich-text .ql-snow.ql-toolbar .ql-picker-item.ql-selected,
 midwest-rich-text .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
-  color: var(--theme-base5);
+  color: var(--theme-base-5);
 }
 midwest-rich-text .ql-snow.ql-toolbar button:hover .ql-fill,
 midwest-rich-text .ql-snow .ql-toolbar button:hover .ql-fill,
@@ -430,7 +430,7 @@ midwest-rich-text
   .ql-toolbar
   .ql-picker-item.ql-selected
   .ql-stroke.ql-fill {
-  fill: var(--theme-base5);
+  fill: var(--theme-base-5);
 }
 midwest-rich-text .ql-snow.ql-toolbar button:hover .ql-stroke,
 midwest-rich-text .ql-snow .ql-toolbar button:hover .ql-stroke,
@@ -460,7 +460,7 @@ midwest-rich-text .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
 midwest-rich-text .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
 midwest-rich-text .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
 midwest-rich-text .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
-  stroke: var(--theme-base5);
+  stroke: var(--theme-base-5);
 }
 @media (pointer: coarse) {
   midwest-rich-text .ql-snow.ql-toolbar button:hover:not(.ql-active),
@@ -1058,7 +1058,7 @@ midwest-rich-text .ql-snow .ql-tooltip[data-mode="video"]::before {
   content: "Enter video:";
 }
 midwest-rich-text .ql-snow a {
-  color: var(--theme-base5);
+  color: var(--theme-base-5);
 }
 midwest-rich-text .ql-container.ql-snow {
   border: none;

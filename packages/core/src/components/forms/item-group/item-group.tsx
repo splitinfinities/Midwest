@@ -1,4 +1,5 @@
 import { Component, Host, h, Prop, Listen, Element, State } from '@stencil/core';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-item-group',
@@ -14,6 +15,7 @@ export class ItemGroup {
   @State() visible: boolean = true;
 
   componentWillLoad() {
+    darkMode(this)
     const select = this.element.closest('midwest-select, midwest-remote-select');
     
     if (select) {

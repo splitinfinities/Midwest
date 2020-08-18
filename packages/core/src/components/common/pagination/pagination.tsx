@@ -1,6 +1,5 @@
 import { Component, Prop, State, Watch, Element, Event, EventEmitter, h, Host, Listen, Method } from '@stencil/core';
-import { format } from '@midwest-design/common';
-import Tunnel from '../../../tunnels/theme';
+import { format, darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-pagination',
@@ -17,7 +16,6 @@ export class Pagination {
   @Prop({ reflect: true, mutable: true }) type: "full" | "compact" = "full";
   @Prop({ reflect: true, mutable: true }) current: number = 1;
   @Prop({ reflect: true, mutable: true }) padding: number = 2;
-  @Prop() color: string = "gray";
   @Prop({ reflect: true }) dark: boolean = false;
 
   @Prop() url: any = "#page-{0}";
@@ -74,6 +72,7 @@ export class Pagination {
   }
 
   componentWillLoad() {
+    darkMode(this);
     this.firstPrivate = 1;
     this.currentPrivate = this.current;
     this.previousPrivate = (this.current > this.firstPrivate) ? this.current - 1 : false;
@@ -306,5 +305,3 @@ export class Pagination {
     </Host>;
   }
 }
-
-Tunnel.injectProps(Pagination, ['dark']);

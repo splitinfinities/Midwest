@@ -1,4 +1,5 @@
 import { Component, Prop, Element, Event, EventEmitter, Method, Watch, h, State, Host } from '@stencil/core';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-switch',
@@ -41,6 +42,10 @@ export class Switch {
   @Prop({ reflect: true }) dark: boolean = false;
 
   validator: HTMLMidwestValidateElement
+
+  componentWillLoad() {
+    darkMode(this)
+  }
 
   componentDidLoad() {
     if (this.checkedDefault) {

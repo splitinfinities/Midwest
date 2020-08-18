@@ -42,8 +42,8 @@
   left: -1.25rem;
   top: -1.5rem;
   z-index: 0;
-  background: var(--theme-complement4);
-  background: linear-gradient(135deg, var(--theme-complement4) 0%, var(--theme-base4) calc(100% - 2rem), var(--theme-base4) 100%);
+  background: var(--theme-complement-4);
+  background: linear-gradient(135deg, var(--theme-complement-4) 0%, var(--theme-base-4) calc(100% - 2rem), var(--theme-base-4) 100%);
 }
 
 :host .comment > .thread::before {
@@ -54,7 +54,7 @@
   left: -1.25rem;
   bottom: 2rem;
   z-index: 0;
-  background: var(--theme-base4);
+  background: var(--theme-base-4);
 }
 
 :host .comment.empty > .content {
@@ -75,10 +75,10 @@
 }
 
 :host([dark]) .comment > .thread::after {
-  background: var(--theme-complement9);
-  background: linear-gradient(135deg, var(--theme-complement9) 0%, var(--theme-base9) calc(100% - 2rem), var(--theme-base9) 100%);
+  background: var(--theme-complement-9);
+  background: linear-gradient(135deg, var(--theme-complement-9) 0%, var(--theme-base-9) calc(100% - 2rem), var(--theme-base-9) 100%);
 }
 
 :host([dark]) .comment > .thread::before {
-  background: var(--theme-base9);
+  background: var(--theme-base-9);
 }

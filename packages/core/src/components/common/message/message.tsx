@@ -1,6 +1,6 @@
 import { Component, Prop, State, Element, h, Host, Watch } from '@stencil/core';
 import Base64 from 'base-64';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-message',
@@ -25,6 +25,7 @@ export class Message {
   @Prop({ mutable: true, reflect: true }) closing: boolean;
 
   componentWillLoad() {
+    darkMode(this)
     if (this.remember) {
       const messageString = this.element.innerHTML;
       this.name = this.name + "_" + Base64.encode(unescape(encodeURIComponent(messageString)));
@@ -103,5 +104,3 @@ export class Message {
     </Host>
   }
 }
-
-Tunnel.injectProps(Message, ['dark']);

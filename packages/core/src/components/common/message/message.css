@@ -6,7 +6,7 @@
   height: auto;
   height: var(--height, auto);
   overflow: hidden;
-  background-color: var(--theme-base4, var(--gray5));
+  background-color: var(--theme-base-4, var(--gray5));
   animation-duration: .35s;
   animation-fill-mode: both;
   animation-name: open-message;
@@ -44,10 +44,10 @@
   z-index: 0;
   background: repeating-linear-gradient(
     45deg,
-    var(--theme-base0),
-    var(--theme-base0) 2rem,
-    var(--theme-base1) 0,
-    var(--theme-base1) 4rem
+    var(--theme-base-0),
+    var(--theme-base-0) 2rem,
+    var(--theme-base-1) 0,
+    var(--theme-base-1) 4rem
   );
   mix-blend-mode: multiply;
   animation: moveStripes 10s linear both infinite;
@@ -99,16 +99,16 @@
 :host a:active,
 :host a:focus,
 :host a:active {
-  color: var(--theme-base1);
+  color: var(--theme-base-1);
 }
 
 :host p {
-  color: var(--theme-base9);
+  color: var(--theme-base-9);
 }
 
 :host .wrap ion-icon {
   font-size: 2rem;
-  color: var(--theme-base1);
+  color: var(--theme-base-1);
 }
 
 :host button {
@@ -140,21 +140,21 @@
 }
 
 :host([dark]) {
-  background-color: var(--theme-base6, var(--gray6));
+  background-color: var(--theme-base-6, var(--gray6));
 }
 
 :host([dark][striped])::after {
   background: repeating-linear-gradient(
     45deg,
-    var(--theme-base6),
-    var(--theme-base6) 2rem,
-    var(--theme-base7) 0,
-    var(--theme-base7) 4rem
+    var(--theme-base-6),
+    var(--theme-base-6) 2rem,
+    var(--theme-base-7) 0,
+    var(--theme-base-7) 4rem
   );
 }
 
 :host([dark]) .wrap ion-icon {
-  color: var(--theme-base1);
+  color: var(--theme-base-1);
 }
 
 @keyframes open-message {

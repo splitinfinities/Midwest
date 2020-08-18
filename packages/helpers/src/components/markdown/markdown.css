@@ -4,5 +4,5 @@ midwest-markdown {
 
 midwest-markdown table tr,
 midwest-markdown table td {
-  border: 1px solid var(--theme-base1);
+  border: 1px solid var(--theme-base-1);
 }

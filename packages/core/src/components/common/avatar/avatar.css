@@ -4,8 +4,8 @@
   max-height: var(--avatar-size);
   font-size: var(--avatar-font-size);
   
-  --avatar-color: var(--theme-base5);
-  --avatar-color-dark: var(--theme-base7);
+  --avatar-color: var(--theme-base-5);
+  --avatar-color-dark: var(--theme-base-7);
   --avatar-font-color: var(--white);
   --avatar-size: 2rem;
   --avatar-font-size: 1rem;
@@ -91,7 +91,7 @@
 }
 
 :host .spacer {
-  filter: drop-shadow(0px var(--shadow-size) 0 var(--theme-base7)) drop-shadow(0px calc(var(--shadow-size) * -1) 0 var(--theme-base7)) drop-shadow(var(--shadow-size) 0px 0 var(--theme-base7)) drop-shadow(calc(var(--shadow-size) * -1) 0px 0 var(--theme-base7));
+  filter: drop-shadow(0px var(--shadow-size) 0 var(--theme-base-7)) drop-shadow(0px calc(var(--shadow-size) * -1) 0 var(--theme-base-7)) drop-shadow(var(--shadow-size) 0px 0 var(--theme-base-7)) drop-shadow(calc(var(--shadow-size) * -1) 0px 0 var(--theme-base-7));
 }
 
 :host([src]) .spacer {
@@ -208,14 +208,14 @@
 }
 
 :host([dark]) {
-  --avatar-color: var(--theme-base5, var(--red5));
-  --avatar-color-dark: var(--theme-base6, var(--red6));
-  --avatar-font-color: var(--theme-base1);
+  --avatar-color: var(--theme-base-5, var(--red5));
+  --avatar-color-dark: var(--theme-base-6, var(--red6));
+  --avatar-font-color: var(--theme-base-1);
   --avatar-text-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
 }
 
 :host([processing][dark]) midwest-progress {
-  --theme-base9: white !important;
-  --theme-base8: white !important;
-  --theme-base7: white !important;
+  --theme-base-9: white !important;
+  --theme-base-8: white !important;
+  --theme-base-7: white !important;
 }

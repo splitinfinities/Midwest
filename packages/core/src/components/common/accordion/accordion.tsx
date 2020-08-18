@@ -1,6 +1,6 @@
 import { Component, Element, Prop, State, Method, h, Event, EventEmitter, Watch, Host, Listen } from '@stencil/core'
-import Tunnel from '../../../tunnels/theme';
 import Debouncer from 'debounce-decorator';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-accordion',
@@ -33,9 +33,9 @@ export class Accordion {
   expander!: HTMLElement;
   fieldGroupEl!: any;
   els: HTMLElement[] = [];
-  ie: boolean;
 
   componentWillLoad() {
+    darkMode(this)
     if (window.MutationObserver) {
       const callback = (mutationsList: any) => {
         for (const mutation of mutationsList) {
@@ -192,5 +192,3 @@ export class Accordion {
     </Host>
   }
 }
-
-Tunnel.injectProps(Accordion, ["dark"])

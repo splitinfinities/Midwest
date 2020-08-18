@@ -1,6 +1,5 @@
 import { Component, Prop, State, Watch, Element, h, Host } from '@stencil/core';
-import { titleCase, colors } from '@midwest-design/common';
-import Tunnel from '../../../tunnels/theme';
+import { titleCase, colors, darkMode } from '@midwest-design/common';
 import validate from 'validator';
 
 @Component({
@@ -27,6 +26,7 @@ export class Avatar {
   @State() focus: boolean;
 
   componentWillLoad() {
+    darkMode(this)
     this.colors = Object.keys(colors).filter((color) => {
       // @ts-ignore
       return !["base", "white", "black"].includes(color)
@@ -74,5 +74,3 @@ export class Avatar {
     </Host>
   }
 }
-
-Tunnel.injectProps(Avatar, ['dark']);

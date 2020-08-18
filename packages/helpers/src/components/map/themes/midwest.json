@@ -3,7 +3,7 @@
 		"elementType": "geometry",
 		"stylers": [
 			{
-				"color": "var(--theme-base1)"
+				"color": "var(--theme-base-1)"
 			}
 		]
 	},
@@ -19,7 +19,7 @@
 		"elementType": "labels.text.fill",
 		"stylers": [
 			{
-				"color": "var(--theme-base5)"
+				"color": "var(--theme-base-5)"
 			}
 		]
 	},
@@ -27,7 +27,7 @@
 		"elementType": "labels.text.stroke",
 		"stylers": [
 			{
-				"color": "var(--theme-base0)"
+				"color": "var(--theme-base-0)"
 			}
 		]
 	},
@@ -36,7 +36,7 @@
 		"elementType": "labels.text.fill",
 		"stylers": [
 			{
-				"color": "var(--theme-base1)"
+				"color": "var(--theme-base-1)"
 			}
 		]
 	},
@@ -45,7 +45,7 @@
 		"elementType": "geometry",
 		"stylers": [
 			{
-				"color": "var(--theme-base1)"
+				"color": "var(--theme-base-1)"
 			}
 		]
 	},
@@ -54,7 +54,7 @@
 		"elementType": "labels.text.fill",
 		"stylers": [
 			{
-				"color": "var(--theme-base7)"
+				"color": "var(--theme-base-7)"
 			}
 		]
 	},
@@ -63,7 +63,7 @@
 		"elementType": "geometry",
 		"stylers": [
 			{
-				"color": "var(--theme-base2)"
+				"color": "var(--theme-base-2)"
 			}
 		]
 	},
@@ -90,7 +90,7 @@
 		"elementType": "labels.text.fill",
 		"stylers": [
 			{
-				"color": "var(--theme-base5)"
+				"color": "var(--theme-base-5)"
 			}
 		]
 	},
@@ -99,7 +99,7 @@
 		"elementType": "geometry",
 		"stylers": [
 			{
-				"color": "var(--theme-base2)"
+				"color": "var(--theme-base-2)"
 			}
 		]
 	},
@@ -108,7 +108,7 @@
 		"elementType": "labels.text.fill",
 		"stylers": [
 			{
-				"color": "var(--theme-base6)"
+				"color": "var(--theme-base-6)"
 			}
 		]
 	},
@@ -117,7 +117,7 @@
 		"elementType": "labels.text.fill",
 		"stylers": [
 			{
-				"color": "var(--theme-base2)"
+				"color": "var(--theme-base-2)"
 			}
 		]
 	},
@@ -126,7 +126,7 @@
 		"elementType": "geometry",
 		"stylers": [
 			{
-				"color": "var(--theme-base7)"
+				"color": "var(--theme-base-7)"
 			}
 		]
 	},
@@ -135,7 +135,7 @@
 		"elementType": "geometry",
 		"stylers": [
 			{
-				"color": "var(--theme-base1)"
+				"color": "var(--theme-base-1)"
 			}
 		]
 	},
@@ -144,7 +144,7 @@
 		"elementType": "geometry",
 		"stylers": [
 			{
-				"color": "var(--theme-base7)"
+				"color": "var(--theme-base-7)"
 			}
 		]
 	},
@@ -153,7 +153,7 @@
 		"elementType": "labels.text.fill",
 		"stylers": [
 			{
-				"color": "var(--theme-base7)"
+				"color": "var(--theme-base-7)"
 			}
 		]
 	}

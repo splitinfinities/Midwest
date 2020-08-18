@@ -28,8 +28,8 @@
   font-size: 2rem;
   margin-left: -1rem;
   margin-right: 0.5rem;
-  --secondary: var(--theme-base3);
-  color: var(--theme-base1);
+  --secondary: var(--theme-base-3);
+  color: var(--theme-base-1);
 }
 
 :host button {
@@ -80,17 +80,17 @@
 }
 
 :host([complete]) button {
-  background: var(--theme-base6);
+  background: var(--theme-base-6);
 }
 
 :host([complete]) button:hover,
 :host([complete]) button:focus {
-  background: var(--theme-base7);
+  background: var(--theme-base-7);
 }
 
 :host([open]) button,
 :host([current]) button {
-  background: var(--theme-base5);
+  background: var(--theme-base-5);
 }
 
 :host([open]) button .loading,
@@ -104,23 +104,23 @@
 }
 
 :host([dark]) ion-icon.valid {
-  --secondary: var(--theme-base4);
-  color: var(--theme-base2);
+  --secondary: var(--theme-base-4);
+  color: var(--theme-base-2);
 }
 
 
 :host([dark][complete]) button {
-  background: var(--theme-base7);
+  background: var(--theme-base-7);
 }
 
 :host([dark][complete]) button:hover,
 :host([dark][complete]) button:focus {
-  background: var(--theme-base8);
+  background: var(--theme-base-8);
 }
 
 :host([dark][open]) button,
 :host([dark][current]) button {
-  background: var(--theme-base6);
+  background: var(--theme-base-6);
 }
 
 :host([dark][open]) button .loading,

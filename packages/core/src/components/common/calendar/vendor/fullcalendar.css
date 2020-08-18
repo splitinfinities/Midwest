@@ -574,7 +574,7 @@ midwest-calendar {
   }
   
   .fc-unthemed td.fc-today {
-    background: var(--theme-base0);
+    background: var(--theme-base-0);
   }
   
   .fc-unthemed .fc-disabled-day {
@@ -611,7 +611,7 @@ midwest-calendar {
     }
     
     .fc-unthemed td.fc-today {
-      background: var(--theme-base9);
+      background: var(--theme-base-9);
     }
     
     .fc-unthemed .fc-disabled-day {
@@ -715,7 +715,7 @@ midwest-calendar {
     display: inline-block;
     font-weight: 700;
     color: var(--gray5);
-    color: var(--theme-base5);
+    color: var(--theme-base-5);
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -732,7 +732,7 @@ midwest-calendar {
   
   .fc-button:hover {
     color: var(--gray7);
-    color: var(--theme-base7);
+    color: var(--theme-base-7);
     text-decoration: none;
   }
   
@@ -750,17 +750,17 @@ midwest-calendar {
   .fc-button-primary {
     color: var(--white);
     background-color: var(--gray5);
-    background-color: var(--theme-base5);
+    background-color: var(--theme-base-5);
     border-color: var(--gray5);
-    border-color: var(--theme-base5);
+    border-color: var(--theme-base-5);
   }
   
   .fc-button-primary:hover {
     color: var(--white);
     background-color: var(--gray7);
-    background-color: var(--theme-base7);
+    background-color: var(--theme-base-7);
     border-color: var(--gray7);
-    border-color: var(--theme-base7);
+    border-color: var(--theme-base-7);
   }
   
   .fc-button-primary:focus {

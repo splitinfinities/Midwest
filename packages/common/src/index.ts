@@ -18,11 +18,11 @@ export * from './lib/typicalStencilConfig';
 export * from './lib/asTime';
 export * from './lib/leadingZeroIndex';
 export * from './lib/relPathAsAbs';
+export * from './lib/darkMode';
 
 declare global {
   type ThemeableColors = "red"|"orange"|"gold"|"yellow"|"lime"|"green"|"teal"|"cyan"|"blue"|"indigo"|"violet"|"magenta"|"pink"|"gray";
   type ValidatableElements = any
-
 
   interface String {
     // tslint:disable-next-line: no-method-signature

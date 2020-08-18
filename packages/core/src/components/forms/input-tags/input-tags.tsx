@@ -1,5 +1,6 @@
 import { Component, ComponentInterface, Host, h, Prop, Element, State, Event, EventEmitter, Method } from '@stencil/core';
 import { Tokens } from './lib/Tokens';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-input-tags',
@@ -52,7 +53,11 @@ export class SaInputTags implements ComponentInterface {
   tokenfield!: any;
   validator!: HTMLMidwestValidateElement
 
-  componentDidLoad () {``
+  componentWillLoad(){
+    darkMode(this)
+  }
+
+  componentDidLoad () {
     this.tokenfield = new Tokens({
       el: this.input,
       delimiters: [","],

@@ -5,6 +5,7 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import utc from 'dayjs/plugin/utc';
 import duration from 'dayjs/plugin/duration';
 import { getDateTimeFromModal, incrementSomething, decrementSomething } from './lib';
+import { darkMode } from '@midwest-design/common';
 
 dayjs.extend(customParseFormat)
 dayjs.extend(relativeTime)
@@ -123,9 +124,9 @@ export class InputDate {
 
   validator: HTMLMidwestValidateElement
   dateTimeElement: HTMLMidwestDatetimePickerElement
-  ie: boolean = document.querySelector("html").getAttribute("mode") === "ie";
 
   componentWillLoad() {
+    darkMode(this)
     this.inputTabIndex = -1;
 
     if (this.range && this.from && this.to) {

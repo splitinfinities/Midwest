@@ -1,7 +1,7 @@
 import { Component, Element, Prop, State, h, Host } from '@stencil/core'
 import focusWithin from 'focus-within'
-import Tunnel from '../../../tunnels/theme';
 import "ionicons";
+import { darkMode } from '@midwest-design/common';
 
 focusWithin(document)
 
@@ -23,6 +23,7 @@ export class Dropdown {
   @State() footer: boolean = false;
 
   componentWillLoad() {
+    darkMode(this)
     this.footer = this.element.querySelectorAll('[slot="footer"]').length !== 0;
   }
 
@@ -53,5 +54,3 @@ export class Dropdown {
     </Host>
   }
 }
-
-Tunnel.injectProps(Dropdown, ['dark']);

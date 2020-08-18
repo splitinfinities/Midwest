@@ -201,9 +201,9 @@
 
 :host .plate {
 	background-color: $gray0;
-	background-color: var(--theme-base0);
+	background-color: var(--theme-base-0);
 	border: 4px solid $gray1;
-	border: 4px solid var(--theme-base1);
+	border: 4px solid var(--theme-base-1);
 	border-radius: 50%;
 	width: 270px;
 	height: 270px;
@@ -230,7 +230,7 @@
 :host .tick {
 	border-radius: 50%;
 	color: $gray5;
-	color: var(--theme-base5);
+	color: var(--theme-base-5);
 	line-height: 40px;
 	text-align: center;
 	width: 40px;
@@ -246,7 +246,7 @@
 :host .tick.active,
 :host .tick:hover {
 	background-color: $gray2;
-	background-color: var(--theme-base2);
+	background-color: var(--theme-base-2);
 }
 
 :host .dial {
@@ -270,7 +270,7 @@
 
   line {
 	  stroke: $gray5;
-	  stroke: var(--theme-base5);
+	  stroke: var(--theme-base-5);
 	  stroke-width: 4;
 	  stroke-linecap: round;
   }
@@ -283,13 +283,13 @@
 :host .canvas-bearing {
 	stroke: none;
 	fill: $gray1;
-	fill: var(--theme-base1);
+	fill: var(--theme-base-1);
 }
 
 :host .canvas-bg {
 	stroke: none;
 	fill: $gray1;
-	fill: var(--theme-base1);
+	fill: var(--theme-base-1);
 }
 
 :host midwest-switch {

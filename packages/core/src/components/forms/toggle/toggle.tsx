@@ -1,4 +1,5 @@
 import { Component, Prop, State, Element, Method, Event, EventEmitter, h, Host, Watch, Listen } from "@stencil/core";
+import { darkMode } from "@midwest-design/common";
 
 @Component({
   tag: "midwest-toggle",
@@ -44,6 +45,7 @@ export class Toggle {
   validator: HTMLMidwestValidateElement
 
   componentWillLoad() {
+    darkMode(this)
     this.handleOrder();
     this.handleTypeChange();
   }

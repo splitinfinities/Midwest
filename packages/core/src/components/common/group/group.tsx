@@ -1,5 +1,6 @@
 import { Component, Prop, State, Element, h, Host } from '@stencil/core'
 import pluralize from 'pluralize';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
 	tag: 'midwest-group',
@@ -26,6 +27,7 @@ export class Group {
 	@State() toSlot: Element[] = []
 
 	componentWillLoad() {
+		darkMode(this)
 		this.sizes()
 
 		this.element.querySelectorAll('midwest-button').forEach((el) => el.block = true);

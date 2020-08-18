@@ -53,7 +53,7 @@ html {
 
 ::selection,
 *::selection {
-  background: var(--theme-base2) !important;
+  background: var(--theme-base-2) !important;
 }
 
 html * {
@@ -157,8 +157,8 @@ p {
 
 a {
   @apply underline;
-  color: var(--theme-base6, theme("colors.red.6"));
-  text-decoration-color: var(--theme-base3, theme("colors.red.3"));
+  color: var(--theme-base-6, theme("colors.red.6"));
+  text-decoration-color: var(--theme-base-3, theme("colors.red.3"));
   text-decoration-thickness: 2px;
 }
 
@@ -166,8 +166,8 @@ a:hover,
 a:active,
 a:focus,
 a:active {
-  color: var(--theme-base8, theme("colors.red.8"));
-  text-decoration-color: var(--theme-base6, theme("colors.red.6"));
+  color: var(--theme-base-8, theme("colors.red.8"));
+  text-decoration-color: var(--theme-base-6, theme("colors.red.6"));
 }
 
 .clip {
@@ -239,7 +239,7 @@ midwest-callout a {
 
 midwest-callout a:hover,
 midwest-callout a:focus {
-  color: var(--theme-base0);
+  color: var(--theme-base-0);
 }
 
 midwest-callout + midwest-callout {

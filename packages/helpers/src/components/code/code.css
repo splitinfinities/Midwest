@@ -19,13 +19,13 @@ midwest-code ::-webkit-scrollbar {
 midwest-code ::-webkit-scrollbar-track {
   background: transparent;
   mix-blend-mode: hard-light;
-  background: var(--theme-base0, var(--gray0));
+  background: var(--theme-base-0, var(--gray0));
 }
 
 midwest-code ::-webkit-scrollbar-thumb {
   cursor: pointer;
   display: block;
-  background: var(--theme-base7, var(--gray7));
+  background: var(--theme-base-7, var(--gray7));
 }
 
 midwest-code ::-webkit-scrollbar-thumb:window-inactive {
@@ -34,7 +34,7 @@ midwest-code ::-webkit-scrollbar-thumb:window-inactive {
 
 midwest-code ::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
-  background: var(--theme-base5, var(--gray5));
+  background: var(--theme-base-5, var(--gray5));
 }
 
 midwest-code {

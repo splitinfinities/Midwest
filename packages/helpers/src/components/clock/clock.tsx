@@ -120,7 +120,7 @@ export class Clock {
         data: [
           {
             y: this.duration,
-            color: "var(--theme-base5)",
+            color: "var(--theme-base-5)",
             borderColor: "var(--black)",
             borderWidth: this.size * .0125
           }, {
@@ -138,7 +138,7 @@ export class Clock {
       <Host style={{ "--size": `${this.size}px` }}>
         <svg viewBox={`0 0 ${this.size} ${this.size}`}>
           <g>
-            <circle id="circle" style={{ "stroke": "var(--theme-base5)", "stroke-width": `${this.size * .02}px`, "fill": "var(--theme-base0)" }} cx={this.size / 2} cy={this.size / 2} r={this.size / 2 * .95}></circle>
+            <circle id="circle" style={{ "stroke": "var(--theme-base-5)", "stroke-width": `${this.size * .02}px`, "fill": "var(--theme-base-0)" }} cx={this.size / 2} cy={this.size / 2} r={this.size / 2 * .95}></circle>
           </g>
 
           {Array(12).fill("").map((_, i) => <line x1={this.size / 2} y1={(this.size / 100) + (this.size / 8)} x2={this.size / 2} y2={(this.size / 100) + (this.size / 30)} transform={`rotate(${30 * i} ${this.size / 2} ${this.size / 2})`} style={{ "stroke": "#000", "stroke-width": `${this.size / 80}px` }} />)}
@@ -154,7 +154,7 @@ export class Clock {
               x2={this.size / 2}
               y2={this.size * .7}
               transform={`rotate(${this.hourAngle - 180} ${this.size / 2} ${this.size / 2})`}
-              style={{ "stroke-width": `${this.size * .03}px`, "stroke": "var(--theme-base9)" }}
+              style={{ "stroke-width": `${this.size * .03}px`, "stroke": "var(--theme-base-9)" }}
               id="hourhand"
             />
 
@@ -164,7 +164,7 @@ export class Clock {
               x2={this.size / 2}
               y2={this.size * .8}
               transform={`rotate(${this.minuteAngle - 180} ${this.size / 2} ${this.size / 2})`}
-              style={{ "stroke-width": `${this.size * .04}px`, "stroke": "var(--theme-base7)" }}
+              style={{ "stroke-width": `${this.size * .04}px`, "stroke": "var(--theme-base-7)" }}
               id="minutehand"
             />
 
@@ -174,14 +174,14 @@ export class Clock {
               x2={this.size / 2}
               y2={this.size * .9}
               transform={`rotate(${this.secondAngle - 180} ${this.size / 2} ${this.size / 2})`}
-              style={{ "stroke-width": `${this.size * .02}px`, "stroke": "var(--theme-base3)" }}
+              style={{ "stroke-width": `${this.size * .02}px`, "stroke": "var(--theme-base-3)" }}
               id="secondhand"
             />
           </g>
 
           <circle
             id="center"
-            style={{ "fill": "var(--theme-base0)", "stroke": "var(--theme-base3)", "stroke-width": `5px` }}
+            style={{ "fill": "var(--theme-base-0)", "stroke": "var(--theme-base-3)", "stroke-width": `5px` }}
             cx={this.size / 2}
             cy={this.size / 2}
             r={this.size * .02}

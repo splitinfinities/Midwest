@@ -83,5 +83,5 @@
 }
 
 :host([dark]) {
-  --background: linear-gradient(45deg, var(--theme-base7) 0%, var(--theme-base9) 100%);
+  --background: linear-gradient(45deg, var(--theme-base-7) 0%, var(--theme-base-9) 100%);
 }

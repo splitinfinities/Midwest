@@ -23,7 +23,7 @@ midwest-rich-text[dark] .ql-snow.ql-toolbar .ql-picker-item:hover,
 midwest-rich-text[dark] .ql-snow .ql-toolbar .ql-picker-item:hover,
 midwest-rich-text[dark] .ql-snow.ql-toolbar .ql-picker-item.ql-selected,
 midwest-rich-text[dark] .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
-  color: var(--theme-base5);
+  color: var(--theme-base-5);
 }
 midwest-rich-text[dark] .ql-snow.ql-toolbar button:hover .ql-fill,
 midwest-rich-text[dark] .ql-snow .ql-toolbar button:hover .ql-fill,
@@ -78,7 +78,7 @@ midwest-rich-text[dark]
   .ql-toolbar
   .ql-picker-item.ql-selected
   .ql-stroke.ql-fill {
-  fill: var(--theme-base5);
+  fill: var(--theme-base-5);
 }
 midwest-rich-text[dark] .ql-snow.ql-toolbar button:hover .ql-stroke,
 midwest-rich-text[dark] .ql-snow .ql-toolbar button:hover .ql-stroke,
@@ -122,7 +122,7 @@ midwest-rich-text[dark]
   .ql-toolbar
   .ql-picker-item.ql-selected
   .ql-stroke-miter {
-  stroke: var(--theme-base5);
+  stroke: var(--theme-base-5);
 }
 
 midwest-rich-text[dark] .ql-editor.ql-blank::before {
@@ -293,7 +293,7 @@ midwest-rich-text[dark] .ql-snow .ql-tooltip a.ql-action::after {
   border-right: 1px solid var(--gray2);
 }
 midwest-rich-text[dark] .ql-snow a {
-  color: var(--theme-base5);
+  color: var(--theme-base-5);
 }
 midwest-rich-text[dark] .ql-container.ql-snow {
   border: none;

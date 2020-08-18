@@ -29,44 +29,44 @@ midwest-calendar[size="small"] .fc-toolbar h2 {
 
 midwest-calendar .fc-highlight {
   opacity: 1;
-  background: var(--theme-base2);
+  background: var(--theme-base-2);
 }
 
 midwest-calendar .fc-event {
-  border: 1px solid var(--theme-base5);
+  border: 1px solid var(--theme-base-5);
 }
 
 midwest-calendar .fc-event,
 midwest-calendar .fc-event-dot {
-  background-color: var(--theme-base5);
+  background-color: var(--theme-base-5);
 }
 
 midwest-calendar[dark] .fc-event,
 midwest-calendar[dark] .fc-event-dot {
-  color: var(--theme-base9);
-  background-color: var(--theme-base5);
+  color: var(--theme-base-9);
+  background-color: var(--theme-base-5);
 }
 
 midwest-calendar .fc-unthemed td.fc-today:not(.fc-day-top) {
-  background: var(--theme-base2);
+  background: var(--theme-base-2);
 }
 
 midwest-calendar[dark] .fc-unthemed td.fc-today:not(.fc-day-top) {
-  background: var(--theme-base9);
+  background: var(--theme-base-9);
 }
 
 midwest-calendar .fc-button {
-  color: var(--theme-base5);
+  color: var(--theme-base-5);
 }
 
 midwest-calendar .fc-button:hover {
-  color: var(--theme-base7);
+  color: var(--theme-base-7);
 }
 
 midwest-calendar .fc-button-primary {
   color: var(--white);
-  background-color: var(--theme-base5);
-  border-color: var(--theme-base5);
+  background-color: var(--theme-base-5);
+  border-color: var(--theme-base-5);
 }
 
 midwest-calendar[dark] .fc-view-container {
@@ -76,5 +76,5 @@ midwest-calendar[dark] .fc-view-container {
 
 midwest-calendar[dark] .fc-highlight {
   opacity: 1;
-  background: var(--theme-base8);
+  background: var(--theme-base-8);
 }

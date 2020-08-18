@@ -1,4 +1,5 @@
 import { Component, Prop, Element, Event, EventEmitter, h, Host } from '@stencil/core'
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-progress',
@@ -55,6 +56,10 @@ export class Progress {
   @Prop({ reflect: true, mutable: true }) secondary: number = 0;
 
   @Event() update: EventEmitter;
+
+  componentWillLoad() {
+    darkMode(this);
+  }
 
   handleClick(e: MouseEvent) {
     if (this.editable) {

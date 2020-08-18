@@ -1,6 +1,6 @@
 import { Component, Prop, Element, h } from '@stencil/core';
-import Tunnel from '../../../tunnels/theme';
 import "ionicons";
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-breadcrumbs',
@@ -23,6 +23,7 @@ export class Breadcrumbs {
   @Prop() color: string = "blue5";
 
   componentWillLoad() {
+    darkMode(this)
     this.updateBreadcrumbs();
   }
 
@@ -53,4 +54,3 @@ export class Breadcrumbs {
     );
   }
 }
-Tunnel.injectProps(Breadcrumbs, ['dark']);

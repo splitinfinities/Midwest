@@ -29,7 +29,7 @@ midwest-toggle * {
 
 midwest-toggle ::selection,
 midwest-toggle *::selection {
-  background: var(--theme-base2) !important;
+  background: var(--theme-base-2) !important;
 }
 
 midwest-toggle .label {

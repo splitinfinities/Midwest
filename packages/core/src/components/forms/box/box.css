@@ -4,7 +4,7 @@
   --background: var(--white);
   --focus: var(--gray0);
   --border-radius: 0.1em;
-  --active-background: var(--theme-base5);
+  --active-background: var(--theme-base-5);
 
   font-size: 2rem;
   display: flex;
@@ -57,8 +57,8 @@
   --background: var(--gray8);
   --focus: var(--gray0);
   --border-radius: 0.1em;
-  --active-background: var(--theme-base6);
-  --active-border-color: var(--theme-base7);
+  --active-background: var(--theme-base-6);
+  --active-border-color: var(--theme-base-7);
 }
 
 :host([radio]) .indicator {
@@ -84,7 +84,7 @@
 }
 
 :host([focused]) {
-  --border-color: var(--theme-base3);
+  --border-color: var(--theme-base-3);
   --background: var(--white);
   --focus: var(--gray2);
   --check-background: var(--white);

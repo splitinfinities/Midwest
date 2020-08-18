@@ -61,7 +61,7 @@
     bottom: 0;
     left: -100%;
     transition: none;
-    background: var(--theme-base5, var(--gray5));
+    background: var(--theme-base-5, var(--gray5));
     width: 100%;
     z-index: 2;
   }
@@ -76,7 +76,7 @@
     bottom: 0;
     left: -100%;
     transition: none;
-    background: var(--theme-base5, var(--gray5));
+    background: var(--theme-base-5, var(--gray5));
     width: 100%;
     z-index: 2;
   }
@@ -91,7 +91,7 @@
   bottom: 0;
   left: -100%;
   transition: none;
-  background: var(--theme-base5, var(--gray5));
+  background: var(--theme-base-5, var(--gray5));
   width: 100%;
   z-index: 2;
 }
@@ -105,13 +105,13 @@
   bottom: 0;
   left: -100%;
   transition: all 0.35s var(--ease, ease-in-out) 0ms;
-  background: var(--theme-base5, var(--gray5));
+  background: var(--theme-base-5, var(--gray5));
   width: 100%;
   z-index: 2;
 }
 
 :host .secondary {
-  background: var(--theme-base2, var(--gray2));
+  background: var(--theme-base-2, var(--gray2));
   z-index: 1;
 }
 
@@ -138,7 +138,7 @@
 
 :host([indeterminate]) svg {
   transform: rotate(0deg);
-  stroke: var(--theme-base5);
+  stroke: var(--theme-base-5);
   animation: rotate var(--ease) 9.2s infinite;
   width: 1em;
   height: 1em;
@@ -170,7 +170,7 @@
 }
 
 :host([dark]) .secondary {
-  background: var(--theme-base7, var(--gray7));
+  background: var(--theme-base-7, var(--gray7));
   z-index: 1;
 }
 
@@ -186,17 +186,17 @@
 
 @keyframes load {
   0% {
-    stroke: var(--theme-base6);
+    stroke: var(--theme-base-6);
   }
 
   50% {
     stroke-dashoffset: 0;
-    stroke: var(--theme-base5);
+    stroke: var(--theme-base-5);
   }
 
   100% {
     stroke-dashoffset: var(--negative-time);
-    stroke: var(--theme-base4);
+    stroke: var(--theme-base-4);
   }
 }
 
@@ -224,20 +224,20 @@
 
 @keyframes load-dark {
   0% {
-    stroke: var(--theme-base7);
+    stroke: var(--theme-base-7);
   }
 
   50% {
     stroke-dashoffset: 0;
-    stroke: var(--theme-base8);
+    stroke: var(--theme-base-8);
   }
 
   75% {
-    stroke: var(--theme-base9);
+    stroke: var(--theme-base-9);
   }
 
   100% {
     stroke-dashoffset: var(--negative-time);
-    stroke: var(--theme-base7);
+    stroke: var(--theme-base-7);
   }
 }

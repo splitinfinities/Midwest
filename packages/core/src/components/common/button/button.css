@@ -16,10 +16,10 @@
   --padding-vertical: 0.5em;
   --padding-horizontal: 1em;
   --padding: var(--padding-vertical) var(--padding-horizontal);
-  --background: var(--theme-base5);
+  --background: var(--theme-base-5);
   --color: var(--white);
   --border: none;
-  --active-background: var(--theme-base7);
+  --active-background: var(--theme-base-7);
   --active-color: var(--white);
   --active-border: none;
   --border: none;
@@ -33,10 +33,10 @@
   --padding-vertical: calc(0.5em - 2px);
   --padding-horizontal: calc(1em - 2px);
   --background: transparent;
-  --color: var(--theme-base5);
+  --color: var(--theme-base-5);
   --border: 2px solid currentColor;
-  --active-background: var(--theme-base0);
-  --active-color: var(--theme-base7);
+  --active-background: var(--theme-base-0);
+  --active-color: var(--theme-base-7);
   --active-border: 2px solid currentColor;
 }
 
@@ -58,10 +58,10 @@
   --padding-vertical: 0;
   --padding-horizontal: 0;
   --background: none;
-  --color: var(--theme-base5);
+  --color: var(--theme-base-5);
   --border: none;
   --active-background: none;
-  --active-color: var(--theme-base7);
+  --active-color: var(--theme-base-7);
   --active-border: none;
   line-height: 1;
 }
@@ -69,7 +69,7 @@
 :host([outline][invert]) {
   --background: transparent;
   --border: 2px solid currentColor;
-  --active-background: var(--theme-base0);
+  --active-background: var(--theme-base-0);
   --active-border: 2px solid currentColor;
 }
 
@@ -78,35 +78,35 @@
   --color: var(--white);
   --border: none;
   --active-background: none;
-  --active-color: var(--theme-base1);
+  --active-color: var(--theme-base-1);
   --active-border: none;
 }
 
 :host([invert]) {
   --background: var(--white);
-  --color: var(--theme-base2);
+  --color: var(--theme-base-2);
   --border: none;
-  --active-background: var(--theme-base0);
-  --active-color: var(--theme-base5);
+  --active-background: var(--theme-base-0);
+  --active-color: var(--theme-base-5);
   --active-border: none;
 }
 
 :host([contrast]) {
-  --background: var(--theme-base7);
+  --background: var(--theme-base-7);
   --color: var(--white);
   --border: none;
-  --active-background: var(--theme-base9);
-  --active-color: var(--theme-base0);
+  --active-background: var(--theme-base-9);
+  --active-color: var(--theme-base-0);
   --active-border: none;
 }
 
 :host([contrast][outline]) {
   --border: 2px solid var(--white);
-  --active-border: 2px solid var(--theme-base0);
+  --active-border: 2px solid var(--theme-base-0);
 }
 
 :host([contrast][invert]) {
-  --active-color: var(--theme-base5);
+  --active-color: var(--theme-base-5);
 }
 
 :host([pill]) {
@@ -283,9 +283,9 @@
 }
 
 :host([dark]) {
-  --background: var(--theme-base6);
+  --background: var(--theme-base-6);
   --color: var(--white);
-  --active-background: var(--theme-base7);
+  --active-background: var(--theme-base-7);
   --active-color: var(--white);
   --active-border: none;
 }
@@ -301,46 +301,46 @@
 
 :host([dark][outline]) {
   --background: transparent;
-  --color: var(--theme-base0);
-  --border: 2px solid var(--theme-base0);
-  --active-background: var(--theme-base5);
+  --color: var(--theme-base-0);
+  --border: 2px solid var(--theme-base-0);
+  --active-background: var(--theme-base-5);
   --active-color: var(--white);
-  --active-border: 2px solid var(--theme-base5);
+  --active-border: 2px solid var(--theme-base-5);
 }
 
 :host([dark][outline][invert]) {
   --background: transparent;
-  --color: var(--theme-base0);
-  --border: 2px solid var(--theme-base0);
-  --active-background: var(--theme-base1);
-  --active-color: var(--theme-base7);
-  --active-border: 2px solid var(--theme-base1);
+  --color: var(--theme-base-0);
+  --border: 2px solid var(--theme-base-0);
+  --active-background: var(--theme-base-1);
+  --active-color: var(--theme-base-7);
+  --active-border: 2px solid var(--theme-base-1);
 }
 
 :host([dark][ghost]) {
   --padding: 0.05em 0 0.125em;
   --background: none;
-  --color: var(--theme-base3);
+  --color: var(--theme-base-3);
   --border: none;
   --active-background: none;
-  --active-color: var(--theme-base4);
+  --active-color: var(--theme-base-4);
   --active-border: none;
 }
 
 :host([dark][ghost][invert]) {
   --padding: 0.05em 0 0.125em;
   --background: none;
-  --color: var(--theme-base0);
+  --color: var(--theme-base-0);
   --border: none;
   --active-background: none;
-  --active-color: var(--theme-base1);
+  --active-color: var(--theme-base-1);
   --active-border: none;
 }
 
 :host([dark][ghost][disabled]) {
-  --active-color: var(--theme-base3);
+  --active-color: var(--theme-base-3);
 }
 
 :host([dark][ghost][invert][disabled]) {
-  --active-color: var(--theme-base0);
+  --active-color: var(--theme-base-0);
 }

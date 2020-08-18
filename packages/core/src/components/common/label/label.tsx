@@ -1,5 +1,5 @@
 import { Component, Prop, h, Host, Element } from '@stencil/core';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-label',
@@ -22,6 +22,10 @@ export class Label {
    */
   @Prop({ reflect: true }) dark: boolean = false;
 
+  componentWillLoad() {
+    darkMode(this)
+  }
+
   get labelColor() {
     const check = (["white", "black"].includes(this.color));
     const color = check ? this.color : `${this.color}${this.colorIntensity}`;
@@ -32,5 +36,3 @@ export class Label {
     return <Host style={{ "--color": `var(--${this.labelColor})` }}><label htmlFor={this.for}><slot /></label></Host>
   }
 }
-
-Tunnel.injectProps(Label, ['dark']);

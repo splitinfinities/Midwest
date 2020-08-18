@@ -1,5 +1,5 @@
 import { Component, Prop, Element, h, Host, Event, EventEmitter } from '@stencil/core';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-button',
@@ -156,6 +156,7 @@ export class Button {
   pjaxElement: any = document.querySelector('midwest-pjax');
 
   componentWillLoad() {
+    darkMode(this)
     this.label = (!this.element.getAttribute("title")) ? this.element.innerText : this.element.getAttribute("title");
     this.icon = this.element.querySelectorAll('[slot="icon"]').length > 0;
   }
@@ -295,7 +296,7 @@ export class Button {
   }
 
   renderSVG() {
-    return <midwest-progress indeterminate style={{"--theme-base5": "currentColor"}} />
+    return <midwest-progress indeterminate style={{"--theme-base-5": "currentColor"}} />
   }
 
   renderSlot() {
@@ -353,5 +354,3 @@ export class Button {
     </Host>
   }
 }
-
-Tunnel.injectProps(Button, ['dark'])

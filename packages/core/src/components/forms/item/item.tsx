@@ -1,4 +1,5 @@
 import { Component, Host, h, Prop, Element, Method, Event, EventEmitter, Watch } from '@stencil/core';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-item',
@@ -54,6 +55,7 @@ export class Item {
   input!: HTMLInputElement;
 
   componentWillLoad() {
+    darkMode(this)
     this.handleTagChange();
 
     this.hasSelected = (this.element.querySelectorAll("*[slot='selected']").length !== 0);
@@ -162,7 +164,7 @@ export class Item {
 
   renderRadioBlock() {
     return <div class="wrapper">
-      <midwest-box radio focused={this.focused} checked={this.checked} disabled={this.disabled} />
+      <midwest-box radio focused={this.focused} checked={this.checked} disabled={this.disabled} dark={this.dark} />
       <div class="block-content">
         <slot></slot>
       </div>
@@ -171,7 +173,7 @@ export class Item {
 
   renderCheckBlock() {
     return <div class="wrapper">
-      <midwest-box focused={this.focused} checked={this.checked} disabled={this.disabled} />
+      <midwest-box focused={this.focused} checked={this.checked} disabled={this.disabled} dark={this.dark} />
       <div class="block-content">
         <slot></slot>
       </div>
@@ -203,7 +205,7 @@ export class Item {
 
       {(this.block && this.tag === "radio") && this.renderRadioBlock()}
       {(this.block && this.tag === "checkbox") && this.renderCheckBlock()}
-      {this.inline && !this.block && <midwest-box radio={this.tag === "radio"} focused={this.focused} checked={this.checked} disabled={this.disabled} />}
+      {this.inline && !this.block && <midwest-box radio={this.tag === "radio"} focused={this.focused} checked={this.checked} disabled={this.disabled} dark={this.dark} />}
       {this.inline && !this.block && <midwest-label for={"input"}>
         <slot>{this.checked ? "Selected" : "Not selected"}</slot>
       </midwest-label>}
@@ -212,7 +214,7 @@ export class Item {
       {!this.inline && !this.block && <midwest-label for={"input"}>
         <slot>{this.checked ? "Selected" : "Not selected"}</slot>
       </midwest-label>}
-      {!this.inline && !this.block && <midwest-box radio={this.tag === "radio"} checked={this.checked} disabled={this.disabled} />}
+      {!this.inline && !this.block && <midwest-box radio={this.tag === "radio"} checked={this.checked} disabled={this.disabled} dark={this.dark} />}
 
       {(["radio", "checkbox"].includes(this.tag) && this.block) && this.hasSelected && <div class={this.checked ? "selected active" : "selected"} onClick={e => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={e => { e.preventDefault(); e.stopPropagation(); }}>
         <div class="selected-wrapper"><slot name="selected"></slot></div>

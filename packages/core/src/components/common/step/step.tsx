@@ -1,6 +1,5 @@
 import { Component, Prop, State, Element, Event, EventEmitter, h, Host, Method, Watch, Listen } from '@stencil/core'
-import { asyncForEach } from '@midwest-design/common';
-import Tunnel from '../../../tunnels/theme';
+import { asyncForEach, darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-step',
@@ -40,6 +39,8 @@ export class Step {
   validatables: HTMLMidwestFormElement[]|HTMLMidwestFieldGroupElement[] = []
 
   componentWillLoad() {
+    darkMode(this);
+    
     if (this.past) {
       this.complete = this.past
     }
@@ -180,4 +181,3 @@ export class Step {
   }
 }
 
-Tunnel.injectProps(Step, ["dark"])

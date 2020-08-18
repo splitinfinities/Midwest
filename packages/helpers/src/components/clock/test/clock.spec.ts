@@ -12,7 +12,7 @@ describe('midwest-clock', () => {
       <mock:shadow-root>
         <svg viewBox=\"0 0 200 200\">
           <g>
-            <circle cx=\"100\" cy=\"100\" id=\"circle\" r=\"95\" style=\"stroke: var(--theme-base5); stroke-width: 4px; fill: var(--theme-base0);\"></circle>
+            <circle cx=\"100\" cy=\"100\" id=\"circle\" r=\"95\" style=\"stroke: var(--theme-base-5); stroke-width: 4px; fill: var(--theme-base-0);\"></circle>
           </g>
           <line transform=\"rotate(0 100 100)\" x1=\"100\" x2=\"100\" y1=\"27\" y2=\"8.666666666666668\" style=\"stroke: #000; stroke-width: 2.5px;\"></line>
           <line transform=\"rotate(30 100 100)\" x1=\"100\" x2=\"100\" y1=\"27\" y2=\"8.666666666666668\" style=\"stroke: #000; stroke-width: 2.5px;\"></line>
@@ -30,11 +30,11 @@ describe('midwest-clock', () => {
         <midwest-chart class=\"dn\" id=\"chart\" type=\"pie\"></midwest-chart>
         <svg class=\"above\" viewBox=\"0 0 200 200\">
           <g>
-            <line id=\"hourhand\" transform=\"rotate(180 100 100)\" x1=\"100\" x2=\"100\" y1=\"100\" y2=\"140\" style=\"stroke-width: 6px; stroke: var(--theme-base9);\"></line>
-            <line id=\"minutehand\" transform=\"rotate(-180 100 100)\" x1=\"100\" x2=\"100\" y1=\"100\" y2=\"160\" style=\"stroke-width: 8px; stroke: var(--theme-base7);\"></line>
-            <line id=\"secondhand\" transform=\"rotate(-180 100 100)\" x1=\"100\" x2=\"100\" y1=\"100\" y2=\"180\" style=\"stroke-width: 4px; stroke: var(--theme-base3);\"></line>
+            <line id=\"hourhand\" transform=\"rotate(180 100 100)\" x1=\"100\" x2=\"100\" y1=\"100\" y2=\"140\" style=\"stroke-width: 6px; stroke: var(--theme-base-9);\"></line>
+            <line id=\"minutehand\" transform=\"rotate(-180 100 100)\" x1=\"100\" x2=\"100\" y1=\"100\" y2=\"160\" style=\"stroke-width: 8px; stroke: var(--theme-base-7);\"></line>
+            <line id=\"secondhand\" transform=\"rotate(-180 100 100)\" x1=\"100\" x2=\"100\" y1=\"100\" y2=\"180\" style=\"stroke-width: 4px; stroke: var(--theme-base-3);\"></line>
           </g>
-          <circle cx=\"100\" cy=\"100\" id=\"center\" r=\"4\" style=\"fill: var(--theme-base0); stroke: var(--theme-base3); stroke-width: 5px;\"></circle>
+          <circle cx=\"100\" cy=\"100\" id=\"center\" r=\"4\" style=\"fill: var(--theme-base-0); stroke: var(--theme-base-3); stroke-width: 5px;\"></circle>
         </svg>
         <midwest-tooltip align=\"bottom-center\">
           12:00:00 PM

@@ -4,6 +4,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction';
 import dayjs from 'dayjs';
 import delay from 'async-delay';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-calendar',
@@ -65,6 +66,10 @@ export class MidwestCalendar {
         events: this.events,
       },
     }
+  }
+
+  componentWillLoad() {
+    darkMode(this)
   }
 
   async componentDidLoad() {

@@ -4,7 +4,7 @@ import Data from 'highcharts/modules/data';
 import Exporting from 'highcharts/modules/exporting'
 import OfflineExporting from 'highcharts/modules/offline-exporting'
 import { theme, HighchartsModel } from './lib/options';
-import { shuffledColors } from '@midwest-design/common';
+import { shuffledColors, darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-chart',
@@ -31,6 +31,7 @@ export class Chart {
   @Prop() exporting: boolean = false;
 
   componentWillLoad() {
+    darkMode(this)
     Data(Highcharts);
 
     if (this.exporting) {

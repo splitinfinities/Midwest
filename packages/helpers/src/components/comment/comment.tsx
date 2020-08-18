@@ -1,4 +1,5 @@
 import { Component, Element, State, Prop, h } from '@stencil/core';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-comment',
@@ -15,6 +16,7 @@ export class Comment {
   @State() empty: boolean = false;
 
   componentWillLoad() {
+    darkMode(this)
     this.empty = this.element.querySelectorAll('midwest-comment').length === 0
   }
 

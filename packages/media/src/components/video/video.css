@@ -37,7 +37,7 @@ midwest-video::after {
 }
 
 midwest-video[overlay]::after {
-  background: linear-gradient(35deg, var(--theme-complement5) 0%, var(--theme-base5) 40%, var(--theme-complement5) 100%);
+  background: linear-gradient(35deg, var(--theme-complement-5) 0%, var(--theme-base-5) 40%, var(--theme-complement-5) 100%);
   mix-blend-mode: color;
 }
 

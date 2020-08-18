@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, State } from '@stencil/core';
 import '@midwest-design/core';
 
 @Component({
@@ -6,8 +6,12 @@ import '@midwest-design/core';
 })
 export class AppHome {
 
+  @State() base: ThemeableColors = localStorage.getItem("base") as ThemeableColors || "red";
+  @State() complement: ThemeableColors = localStorage.getItem("complement") as ThemeableColors || "red";
+  @State() dark: "true"|"false" = localStorage.getItem("dark") as "true"|"false" || "false";
+
   render() {
-    return (
+    return <midwest-theme dark={this.dark === "true"} base={this.base} complement={this.complement} body>
       <midwest-layout size="flush" class="p-8" padding="none">
         <midwest-docs class="mb-8 block" />
 
@@ -19,6 +23,6 @@ export class AppHome {
         </midwest-grid>
         <midwest-starscape />
       </midwest-layout>
-    );
+    </midwest-theme>
   }
 }

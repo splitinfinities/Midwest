@@ -1,5 +1,5 @@
 import { Component, Prop, Element, h, Host } from '@stencil/core';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-tag',
@@ -19,6 +19,10 @@ export class Tag {
   @Prop({ reflect: true }) dark: boolean = false;
   @Prop() icon: string;
 
+  componentWillLoad() {
+    darkMode(this);
+  }
+
   render() {
     return <Host>
       { this.icon && <span style={ {"margin-right": "0.5em"} }><ion-icon name={ this.icon } /></span> }
@@ -29,5 +33,3 @@ export class Tag {
     </Host>
   }
 }
-
-Tunnel.injectProps(Tag, ['dark'])

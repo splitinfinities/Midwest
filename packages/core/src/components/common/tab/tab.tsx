@@ -1,7 +1,7 @@
 import { Component, Prop, State, Element, Listen, Event, EventEmitter, h, Method, Host } from '@stencil/core'
 import delay from 'async-delay';
 import properties from 'css-custom-properties';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-tab',
@@ -41,6 +41,7 @@ export class Tab {
   @Event() contentChange: EventEmitter;
 
   componentWillLoad() {
+    darkMode(this);
     this.parent = this.element.closest('midwest-tabs');
     if (window.location.hash && this.href.includes(window.location.hash)) {
       this.handleClick()
@@ -162,5 +163,3 @@ export class Tab {
     </Host>
   }
 }
-
-Tunnel.injectProps(Tab, ["dark"])

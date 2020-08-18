@@ -5,6 +5,7 @@ import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-bash';
 import ezClipboard from 'ez-clipboard';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-code',
@@ -30,6 +31,7 @@ export class Code {
   @State() raw: string;
 
   componentWillLoad() {
+    darkMode(this)
     this.getCode()
   }
 

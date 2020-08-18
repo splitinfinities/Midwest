@@ -221,8 +221,8 @@
 
 .shepherd-button {
   @apply font-azo;
-  background: var(--theme-base5);
-  border-top: 4px solid var(--theme-base5);
+  background: var(--theme-base-5);
+  border-top: 4px solid var(--theme-base-5);
   border-radius: 0;
   color: var(--white);
   display: flex;
@@ -252,7 +252,7 @@
 
 .shepherd-button:not(:disabled):hover,
 .shepherd-button:not(:disabled):focus {
-  background: var(--theme-base7);
+  background: var(--theme-base-7);
   color: var(--white);
 }
 
@@ -261,17 +261,17 @@
 }
 
 .shepherd-button.shepherd-button-secondary {
-  background: var(--theme-base5);
+  background: var(--theme-base-5);
 }
 
 .shepherd-button.shepherd-button-secondary:hover,
 .shepherd-button.shepherd-button-secondary:focus {
-  color: var(--theme-base7);
+  color: var(--theme-base-7);
   background: var(--black);
 }
 
 .shepherd-element {
-  border: solid 4px var(--theme-base5);
+  border: solid 4px var(--theme-base-5);
   background: var(--white);
   border-radius: 0.4rem;
 }
@@ -341,7 +341,7 @@
 }
 
 .shepherd-footer button:not(:last-of-type) {
-  border-right: solid 4px var(--theme-base5);
+  border-right: solid 4px var(--theme-base-5);
   border-bottom-left-radius: 0;
 }
 

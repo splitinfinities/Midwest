@@ -1,5 +1,5 @@
 import { Component, Element, Prop, h, Host } from '@stencil/core';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-tooltip',
@@ -13,6 +13,10 @@ export class Tooltip {
   @Prop({ reflect: true }) dark: boolean = false;
   @Prop({ reflect: true }) focused: boolean = false;
 
+  componentWillLoad() {
+    darkMode(this);
+  }
+
   render() {
     return <Host>
       <div class="wrap">
@@ -22,5 +26,3 @@ export class Tooltip {
     </Host>
   }
 }
-
-Tunnel.injectProps(Tooltip, ['dark']);

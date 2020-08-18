@@ -1,7 +1,7 @@
 import { Component, Prop, State, Element, Event, EventEmitter, Method, h, Watch, Listen, Host } from '@stencil/core';
 import ResizeObserver from 'resize-observer-polyfill';
 import delay from 'async-delay';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-card',
@@ -109,6 +109,10 @@ export class Card {
 
   front!: HTMLDivElement;
   back!: HTMLDivElement;
+
+  componentWillLoad() {
+    darkMode(this)
+  }
 
   componentDidLoad() {
     this.updateFlippableCardHeight();
@@ -262,4 +266,3 @@ export class Card {
     </Host>
   }
 }
-Tunnel.injectProps(Card, ['dark']);

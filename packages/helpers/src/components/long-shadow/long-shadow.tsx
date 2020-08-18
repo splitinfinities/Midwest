@@ -35,7 +35,7 @@ export class LongShadow {
             const y = index * (horizontal ? -1 : 1);
             const x = index * (vertical ? -1 : 1);
 
-            return `${y}px ${x}px var(--theme-complement7)`;
+            return `${y}px ${x}px var(--theme-complement-7)`;
         });
 
         return css.join()

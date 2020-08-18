@@ -51,7 +51,7 @@
 
 :host ::selection,
 :host *::selection {
-  background: var(--theme-base2) !important;
+  background: var(--theme-base-2) !important;
 }
 
 :host([open]) {
@@ -96,14 +96,14 @@
 :host([focused]) .title,
 :host .title:focus,
 :host .wrapper:hover .title {
-  border-color: var(--theme-base3);
+  border-color: var(--theme-base-3);
 }
 
 :host([open][focused]) .title,
 :host([open]) .title:focus,
 :host([open]) .wrapper:hover .title {
-  border-color: var(--theme-base5);
-  box-shadow: 0 0 0 1px var(--theme-base5);
+  border-color: var(--theme-base-5);
+  box-shadow: 0 0 0 1px var(--theme-base-5);
 }
 
 /* Open indicator */
@@ -117,7 +117,7 @@
   right: 0.5em;
   transition: transform 100ms var(--ease) 0s;
   font-size: 1.25rem;
-  color: var(--theme-base5);
+  color: var(--theme-base-5);
   background: transparent;
   border: 0;
   pointer-events: none;
@@ -193,7 +193,7 @@
   max-height: 0rem;
   overflow-x: hidden;
   overflow-y: auto;
-  color: var(--theme-base5);
+  color: var(--theme-base-5);
   border: 1px solid var(--border-color);
   pointer-events: none;
   border-radius: var(--border-radius);
@@ -333,7 +333,7 @@
 :host([focused]) .title,
 :host .title:focus,
 :host .wrapper:hover .title {
-  border-bottom: 1px solid var(--theme-base5) !important;
+  border-bottom: 1px solid var(--theme-base-5) !important;
 }
 
 /* Resizable */
@@ -396,7 +396,7 @@
     justify-content: center;
     grid-template-columns: auto auto;
     grid-gap: 1rem;
-    color: var(--theme-base7);
+    color: var(--theme-base-7);
     background: rgba(255, 255, 255, 1);
     animation: none;
     animation-duration: 0.0625s;
@@ -420,7 +420,7 @@
   justify-content: center;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
-  color: var(--theme-base7);
+  color: var(--theme-base-7);
   background: rgba(255, 255, 255, 1);
   animation-name: fadeIn;
   animation-duration: 0.0625s;
@@ -439,8 +439,8 @@
 }
 
 :host([dark]) .select .loading {
-  background: var(--theme-base9);
-  color: var(--theme-base5);
+  background: var(--theme-base-9);
+  color: var(--theme-base-5);
 }
 
 @keyframes fadeIn {

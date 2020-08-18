@@ -1,5 +1,6 @@
 import { Component, Prop, Watch, Element, State, h, Host } from '@stencil/core';
 import zxcvbn from "zxcvbn";
+import { darkMode } from '@midwest-design/common';
 
 @Component({
     tag: 'midwest-password-requirements'
@@ -20,6 +21,10 @@ export class PasswordRequirements {
     @State() commonPasswords: boolean = true;
     @State() commonNames: boolean = true;
     @State() repeated: boolean = true;
+
+    componentWillLoad() {
+        darkMode(this)
+    }
 
     componentDidLoad() {
         setTimeout(() => {

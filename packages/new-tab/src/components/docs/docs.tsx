@@ -31,12 +31,24 @@ export class Docs {
     this.dark = e.detail.checked ? "true" : "false";
     localStorage.setItem("dark", this.dark)
   }
-
-
+  
   async fetchDocs() {
-    const response = await fetch(`https://unpkg.com/@midwest-design/core/dist/collection/data/documentation.json`);
-    const json = await response.json();
-    this.data = json;
+    const docs = {
+      "core": 'https://unpkg.com/@midwest-design/core/dist/docs/documentation.json'
+    };
+
+    const promises = Object.keys(docs).map(async (key) => {
+      const response = await fetch(docs[key]);
+      const json = await response.json();
+      console.log(json);
+      return json
+    })
+
+    const data = await Promise.all(promises);
+
+    console.log(data);
+
+    this.data = data;
   }
 
   search(e) {
@@ -53,49 +65,47 @@ export class Docs {
 
   render() {
     return <Host class="block sticky top-0 z-50 -mt-8 -mx-8 bg-black bg-opacity-75" style={{"backdrop-filter": "blur(4px)"}}>
-      <midwest-theme dark={this.dark === "true"} base={this.base} body />
-
       <div class="flex items-center justify-between p-4">
-        <midwest-input type="search" size="large" required={false} onUpdate={this.search.bind(this)} placeholder="Search Midwest Documentation" class="w-full mr-4" />
+        <midwest-input type="search" size="large" required={false} autofocus onUpdate={this.search.bind(this)} placeholder="Search Midwest Documentation" class="w-full mr-4" />
         <div class="flex items-center p-4">
           
-          <midwest-switch class="m-4" tabindex="-1" checked={this.dark === "true"} onUpdate={this.changeDarkTheme.bind(this)}>
+          <midwest-switch class="m-4" tabindex="-1" checked={this.dark === "true"} changeTheme onUpdate={this.changeDarkTheme.bind(this)}>
             <p slot="yes" class="text-white dm:text-white">Dark</p>
             <p slot="no" class="text-white dm:text-white">Light</p>
           </midwest-switch>
 
-          <midwest-select class="m-4 w-48" tabindex="-1" onUpdate={this.changeBaseTheme.bind(this)}>
+          <midwest-select class="m-4 w-48" tabindex="-1" changeTheme="base" noAvatars onUpdate={this.changeBaseTheme.bind(this)}>
             <midwest-item value="red" checked={this.base === "red"}>Red</midwest-item>
             <midwest-item value="orange" checked={this.base === "orange"}>Orange</midwest-item>
             <midwest-item value="gold" checked={this.base === "gold"}>Gold</midwest-item>
             <midwest-item value="yellow" checked={this.base === "yellow"}>Yellow</midwest-item>
-            <midwest-item value="lime" checked={this.base === "lime"}>lime</midwest-item>
-            <midwest-item value="green" checked={this.base === "green"}>green</midwest-item>
-            <midwest-item value="teal" checked={this.base === "teal"}>teal</midwest-item>
-            <midwest-item value="cyan" checked={this.base === "cyan"}>cyan</midwest-item>
-            <midwest-item value="blue" checked={this.base === "blue"}>blue</midwest-item>
+            <midwest-item value="lime" checked={this.base === "lime"}>Lime</midwest-item>
+            <midwest-item value="green" checked={this.base === "green"}>Green</midwest-item>
+            <midwest-item value="teal" checked={this.base === "teal"}>Teal</midwest-item>
+            <midwest-item value="cyan" checked={this.base === "cyan"}>Cyan</midwest-item>
+            <midwest-item value="blue" checked={this.base === "blue"}>Blue</midwest-item>
             <midwest-item value="indigo" checked={this.base === "indigo"}>Indigo</midwest-item>
-            <midwest-item value="violet" checked={this.base === "violet"}>violet</midwest-item>
-            <midwest-item value="magenta" checked={this.base === "magenta"}>magenta</midwest-item>
-            <midwest-item value="pink" checked={this.base === "pink"}>pink</midwest-item>
-            <midwest-item value="gray" checked={this.base === "gray"}>gray</midwest-item>
+            <midwest-item value="violet" checked={this.base === "violet"}>Violet</midwest-item>
+            <midwest-item value="magenta" checked={this.base === "magenta"}>Magenta</midwest-item>
+            <midwest-item value="pink" checked={this.base === "pink"}>Pink</midwest-item>
+            <midwest-item value="gray" checked={this.base === "gray"}>Gray</midwest-item>
           </midwest-select>
 
-          <midwest-select class="m-4 w-48" tabindex="-1" onUpdate={this.changeComplementTheme.bind(this)}>
+          <midwest-select class="m-4 w-48" tabindex="-1" changeTheme="complement" noAvatars onUpdate={this.changeComplementTheme.bind(this)}>
             <midwest-item value="red" checked={this.complement === "red"}>Red</midwest-item>
             <midwest-item value="orange" checked={this.complement === "orange"}>Orange</midwest-item>
             <midwest-item value="gold" checked={this.complement === "gold"}>Gold</midwest-item>
             <midwest-item value="yellow" checked={this.complement === "yellow"}>Yellow</midwest-item>
-            <midwest-item value="lime" checked={this.complement === "lime"}>lime</midwest-item>
-            <midwest-item value="green" checked={this.complement === "green"}>green</midwest-item>
-            <midwest-item value="teal" checked={this.complement === "teal"}>teal</midwest-item>
-            <midwest-item value="cyan" checked={this.complement === "cyan"}>cyan</midwest-item>
-            <midwest-item value="blue" checked={this.complement === "blue"}>blue</midwest-item>
+            <midwest-item value="lime" checked={this.complement === "lime"}>Lime</midwest-item>
+            <midwest-item value="green" checked={this.complement === "green"}>Green</midwest-item>
+            <midwest-item value="teal" checked={this.complement === "teal"}>Teal</midwest-item>
+            <midwest-item value="cyan" checked={this.complement === "cyan"}>Cyan</midwest-item>
+            <midwest-item value="blue" checked={this.complement === "blue"}>Blue</midwest-item>
             <midwest-item value="indigo" checked={this.complement === "indigo"}>Indigo</midwest-item>
-            <midwest-item value="violet" checked={this.complement === "violet"}>violet</midwest-item>
-            <midwest-item value="magenta" checked={this.complement === "magenta"}>magenta</midwest-item>
-            <midwest-item value="pink" checked={this.complement === "pink"}>pink</midwest-item>
-            <midwest-item value="gray" checked={this.complement === "gray"}>gray</midwest-item>
+            <midwest-item value="violet" checked={this.complement === "violet"}>Violet</midwest-item>
+            <midwest-item value="magenta" checked={this.complement === "magenta"}>Magenta</midwest-item>
+            <midwest-item value="pink" checked={this.complement === "pink"}>Pink</midwest-item>
+            <midwest-item value="gray" checked={this.complement === "gray"}>Gray</midwest-item>
           </midwest-select>
         </div>
       </div>

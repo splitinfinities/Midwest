@@ -1,5 +1,6 @@
 import { Component, Element, Prop, State, Listen, Method, Event, EventEmitter, Watch, h, Host } from '@stencil/core';
 import { shouldBeAnInput, hasIncrements, hasValue, formatters } from "./lib";
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-input',
@@ -136,11 +137,12 @@ export class Input {
   @Prop({ mutable: true, reflect: true }) showCapsLock: boolean = false;
 
   @Prop() inputTabIndex: number = 0;
-  @State() ie: boolean;
 
   validator: HTMLMidwestValidateElement
 
   componentWillLoad() {
+    darkMode(this)
+
     if (this.default) {
       this.value = this.default;
     }
@@ -167,6 +169,7 @@ export class Input {
     if (this.type === "email" || this.type === "password") {
       this.addLightDomInput();
     }
+
   }
 
   async componentDidLoad() {
@@ -435,14 +438,14 @@ export class Input {
 
   renderPasswordStrengthSmile() {
     if (this.level === 5) {
-      return <ion-icon class="smile" name="excited" data-level={this.level}/>
+      return <ion-icon class="smile" name="happy" data-level={this.level}/>
     } 
     if (this.level === 4 || this.level === 3) {
       return <ion-icon class="smile" name="happy" data-level={this.level}/>
     } else if (this.level === 2 || this.level === 1 || this.level === 0) {
       return <ion-icon class="smile" name="sad" data-level={this.level}/>
     } else {
-      return <ion-icon class="smile" name="yikes" data-level="-1"/>
+      return <ion-icon class="smile" name="sad" data-level="-1"/>
     }
   }
 

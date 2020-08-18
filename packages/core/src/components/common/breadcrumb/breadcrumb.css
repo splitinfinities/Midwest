@@ -20,20 +20,20 @@
   background: var(--white);
   text-align: center;
   text-decoration: none;
-  color: var(--theme-base8);
+  color: var(--theme-base-8);
 }
 
 :host a:hover,
 :host a:focus,
 :host(:focus-within) {
-  background: var(--theme-base0);
-  color: var(--theme-base9);
+  background: var(--theme-base-0);
+  color: var(--theme-base-9);
 }
 
 :host([first]) a:hover,
 :host([first]) a:focus,
 :host([first]:focus-within) {
-  background: var(--theme-base9);
+  background: var(--theme-base-9);
   color: white;
 }
 
@@ -60,11 +60,11 @@
 :host(:hover),
 :host(:focus) {
   color: var(--white);
-  background: var(--theme-base5);
+  background: var(--theme-base-5);
 }
 
 :host([first]) {
-  background: var(--theme-base7);
+  background: var(--theme-base-7);
   color: var(--white);
   margin: 0 -0.25rem 0 -0.15em;
   position: sticky;
@@ -97,7 +97,7 @@
 
 :host([dark]) {
   background: var(--black);
-  color: var(--theme-base0);
+  color: var(--theme-base-0);
 }
 
 :host([dark]:hover),
@@ -106,7 +106,7 @@
 :host([dark]) a:focus,
 :host([dark]:focus-within) {
   color: var(--white);
-  background: var(--theme-base7);
+  background: var(--theme-base-7);
 }
 
 :host([dark][last]) {
@@ -115,7 +115,7 @@
 }
 
 :host([dark][first]) {
-  background: var(--theme-base9);
+  background: var(--theme-base-9);
 }
 
 :host([dark][last]:hover),

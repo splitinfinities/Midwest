@@ -1,5 +1,5 @@
 import { Component, Prop, State, Element, Method, Listen, EventEmitter, Event, h } from '@stencil/core';
-import { asTime } from '@midwest-design/common';
+import { asTime, darkMode } from '@midwest-design/common';
 import "ionicons";
 
 @Component({
@@ -43,6 +43,7 @@ export class Playlist {
   currentPlaylistItem!: HTMLMidwestSongElement;
 
   componentWillLoad() {
+    darkMode(this)
     this.loadFromStorage();
   }
 

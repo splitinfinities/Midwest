@@ -8,7 +8,7 @@
 
   --border: 1px solid var(--gray1);
   --background: var(--white);
-  --background-active: var(--theme-base0);
+  --background-active: var(--theme-base-0);
   --flipped-background: var(--white);
   --flipped-min-height: var(--flipped-min-height, 20rem);
   --flipped-transition: none;
@@ -156,7 +156,7 @@
 }
 
 :host .wrap ::slotted(header.subhead) {
-  background: var(--theme-base8);
+  background: var(--theme-base-8);
 }
 
 :host .wrap ::slotted(header.sticky) {

@@ -1,5 +1,5 @@
 import { Component, Prop, State, Element, Method, h, Watch, Host } from '@stencil/core';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-tabs',
@@ -47,6 +47,7 @@ export class Tabs {
   }
 
   async componentWillLoad() {
+    darkMode(this);
     await this.tabs();
     await this.contents();
 
@@ -108,5 +109,3 @@ export class Tabs {
     </Host>
   }
 }
-
-Tunnel.injectProps(Tabs, ["dark"])

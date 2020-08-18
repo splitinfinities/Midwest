@@ -1,5 +1,5 @@
 import { Component, Prop, State, Element, Watch, h, Host } from '@stencil/core';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-callout',
@@ -14,6 +14,7 @@ export class Callout {
   @State() theme: string = "gray";
 
   componentDidLoad() {
+    darkMode(this)
     this.element.setAttribute('aria-label', `An ${this.type} message. ${this.element.textContent}`);
     this.element.setAttribute('aria-role', "status");
     this.element.setAttribute('tabindex', `0`);
@@ -67,5 +68,3 @@ export class Callout {
     </Host>
   }
 }
-
-Tunnel.injectProps(Callout, ['dark']);

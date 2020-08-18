@@ -1,5 +1,6 @@
 import { Component, Host, h, Prop, State, Watch, forceUpdate, Element } from '@stencil/core';
 import dayjs, { Dayjs } from 'dayjs';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-calendar-date',
@@ -20,6 +21,7 @@ export class CalendarDate {
   @State() endDayJs: Dayjs;
 
   componentWillLoad () {
+    darkMode(this)
     this.startDayJs = dayjs(this.start);
     this.endDayJs = dayjs(this.end);
   }

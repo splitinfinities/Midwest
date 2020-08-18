@@ -6,13 +6,13 @@
 }
 
 :host {
-  --dropdown-color: var(--theme-base7);
-  --dropdown-hover-color: var(--theme-base8);
+  --dropdown-color: var(--theme-base-7);
+  --dropdown-hover-color: var(--theme-base-8);
   --dropdown-width: 20rem;
   --border-radius: 0.3rem;
   --clip-from: polygon(0 0, 100% 0, 100% 0, 0 0);
   --clip-to: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  --filter: drop-shadow(0 2px 2px var(--theme-base1));
+  --filter: drop-shadow(0 2px 2px var(--theme-base-1));
   --icon-rotation: 180deg;
 
   cursor: pointer;
@@ -26,7 +26,7 @@
 }
 
 :host([dark]) {
-  --filter: drop-shadow(0 2px 2px var(--theme-base9));
+  --filter: drop-shadow(0 2px 2px var(--theme-base-9));
 }
 
 :host .clipper {
@@ -204,7 +204,7 @@
 }
 
 :host .footer {
-  border-top: 1px solid var(--theme-base1);
+  border-top: 1px solid var(--theme-base-1);
   margin-top: 0.5rem;
 }
 

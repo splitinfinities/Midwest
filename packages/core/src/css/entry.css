@@ -216,27 +216,27 @@ html { font-family: 'Inter', sans-serif; }
   --font-subheading: var(--font-system);
   --font-body: var(--font-system);
 
-  --theme-base0: var(--red0);
-  --theme-base1: var(--red1);
-  --theme-base2: var(--red2);
-  --theme-base3: var(--red3);
-  --theme-base4: var(--red4);
-  --theme-base5: var(--red5);
-  --theme-base6: var(--red6);
-  --theme-base7: var(--red7);
-  --theme-base8: var(--red8);
-  --theme-base9: var(--red9);
+  --theme-base-0: var(--red0);
+  --theme-base-1: var(--red1);
+  --theme-base-2: var(--red2);
+  --theme-base-3: var(--red3);
+  --theme-base-4: var(--red4);
+  --theme-base-5: var(--red5);
+  --theme-base-6: var(--red6);
+  --theme-base-7: var(--red7);
+  --theme-base-8: var(--red8);
+  --theme-base-9: var(--red9);
 
-  --theme-complement0: var(--indigo0);
-  --theme-complement1: var(--indigo1);
-  --theme-complement2: var(--indigo2);
-  --theme-complement3: var(--indigo3);
-  --theme-complement4: var(--indigo4);
-  --theme-complement5: var(--indigo5);
-  --theme-complement6: var(--indigo6);
-  --theme-complement7: var(--indigo7);
-  --theme-complement8: var(--indigo8);
-  --theme-complement9: var(--indigo9);
+  --theme-complement-0: var(--indigo0);
+  --theme-complement-1: var(--indigo1);
+  --theme-complement-2: var(--indigo2);
+  --theme-complement-3: var(--indigo3);
+  --theme-complement-4: var(--indigo4);
+  --theme-complement-5: var(--indigo5);
+  --theme-complement-6: var(--indigo6);
+  --theme-complement-7: var(--indigo7);
+  --theme-complement-8: var(--indigo8);
+  --theme-complement-9: var(--indigo9);
 }
 
 @tailwind utilities;

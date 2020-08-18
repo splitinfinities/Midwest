@@ -1,7 +1,7 @@
 import { Component, Host, h, Prop, Event, EventEmitter, State, Listen, Element, Method } from '@stencil/core';
 import dayjs, { Dayjs } from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
-import { simulate, onFocusOutsideOf } from '@midwest-design/common';
+import { simulate, onFocusOutsideOf, darkMode } from '@midwest-design/common';
 
 dayjs.extend(customParseFormat)
 
@@ -63,6 +63,7 @@ export class DateTimePicker {
   private calendarEl: HTMLMidwestCalendarElement;
 
   componentWillLoad() {
+    darkMode(this)
     if (this.method === "date") {
       this.view = "months";
     }

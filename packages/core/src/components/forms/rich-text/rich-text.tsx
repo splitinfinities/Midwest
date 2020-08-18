@@ -6,6 +6,7 @@ import QuillEditor from 'quill';
 // @ts-ignore
 import parseTweet from 'twitter-text/dist/parseTweet.js';
 import { validateMentionsData, validateHasValue } from './lib/helpers';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-rich-text',
@@ -85,6 +86,7 @@ export class RichText {
   validator: HTMLMidwestValidateElement
 
   componentWillLoad() {
+    darkMode(this)
     // Allow rich text to act as a textarea element by passing content into the element.
     if (!this.value && this.element.textContent !== "") {
       this.value = JSON.stringify({ 

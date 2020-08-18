@@ -15,27 +15,42 @@ module.exports = {
     function ({ addVariant, e }) {
       addVariant('dark-mode', ({ modifySelectors, separator }) => {
         modifySelectors(({ className }) => {
-          return `.dark-mode .${e(`dm${separator}${className}`)}`
+          return `midwest-theme.dark-mode:not(.light-mode) .${e(`dm${separator}${className}`)}`
         })
       }),
       addVariant('dark-mode-hover', ({ modifySelectors, separator }) => {
         modifySelectors(({ className }) => {
-          return `.dark-mode .${e(`dm${separator}hover${separator}${className}`)}:hover`
+          return `midwest-theme.dark-mode:not(.light-mode) .${e(`dm${separator}hover${separator}${className}`)}:hover`
         })
       }),
       addVariant('dark-mode-focus', ({ modifySelectors, separator }) => {
         modifySelectors(({ className }) => {
-          return `.dark-mode .${e(`dm${separator}focus${separator}${className}`)}:focus`
+          return `midwest-theme.dark-mode:not(.light-mode) .${e(`dm${separator}focus${separator}${className}`)}:focus`
+        })
+      }),
+      addVariant('light-mode', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `midwest-theme.light-mode .${e(`${className}`)}`
+        })
+      }),
+      addVariant('light-mode-hover', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `midwest-theme.light-mode .${e(`hover${separator}${className}`)}:hover`
+        })
+      }),
+      addVariant('light-mode-focus', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `midwest-theme.light-mode .${e(`focus${separator}${className}`)}:focus`
         })
       })
     },
     require('tailwindcss-animations'),
   ],
   variants: {
-    borderColor: ['responsive', 'hover', 'focus', 'dark-mode', 'dark-mode-hover', 'dark-mode-focus'],
-    backgroundColor: ['responsive', 'hover', 'focus', 'dark-mode', 'dark-mode-hover', 'dark-mode-focus'],
-    textColor: ['responsive', 'hover', 'focus', 'dark-mode', 'dark-mode-hover', 'dark-mode-focus'],
-    placeholderColor: ['responsive', 'focus', 'dark-mode', 'dark-mode-hover', 'dark-mode-focus'],
+    borderColor: ['responsive', 'hover', 'focus', 'dark-mode', 'dark-mode-hover', 'dark-mode-focus', 'light-mode', 'light-mode-hover', 'light-mode-focus'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'dark-mode', 'dark-mode-hover', 'dark-mode-focus', 'light-mode', 'light-mode-hover', 'light-mode-focus'],
+    textColor: ['responsive', 'hover', 'focus', 'dark-mode', 'dark-mode-hover', 'dark-mode-focus', 'light-mode', 'light-mode-hover', 'light-mode-focus'],
+    placeholderColor: ['responsive', 'focus', 'dark-mode', 'dark-mode-hover', 'dark-mode-focus', 'light-mode', 'light-mode-hover', 'light-mode-focus'],
     animations: ['responsive'],
     animationDuration: ['responsive'],
     animationTimingFunction: ['responsive'],
@@ -131,6 +146,36 @@ module.exports = {
       colors: {
         "black": "#000000",
         "white": "#ffffff",
+        "base": {
+          "0": "var(--theme-base-0)",
+          "1": "var(--theme-base-1)",
+          "2": "var(--theme-base-2)",
+          "3": "var(--theme-base-3)",
+          "4": "var(--theme-base-4)",
+          "5": "var(--theme-base-5)",
+          "6": "var(--theme-base-6)",
+          "7": "var(--theme-base-7)",
+          "8": "var(--theme-base-8)",
+          "9": "var(--theme-base-9)",
+          "10": "var(--theme-base-10)",
+          "11": "var(--theme-base-11)",
+          "12": "var(--theme-base-12)",
+        },
+        "complement": {
+          "0": "var(--theme-complement-0)",
+          "1": "var(--theme-complement-1)",
+          "2": "var(--theme-complement-2)",
+          "3": "var(--theme-complement-3)",
+          "4": "var(--theme-complement-4)",
+          "5": "var(--theme-complement-5)",
+          "6": "var(--theme-complement-6)",
+          "7": "var(--theme-complement-7)",
+          "8": "var(--theme-complement-8)",
+          "9": "var(--theme-complement-9)",
+          "10": "var(--theme-complement-10)",
+          "11": "var(--theme-complement-11)",
+          "12": "var(--theme-complement-12)",
+        },
         "red": {
           "0": "#ffdbdb",
           "1": "#ffbcbc",

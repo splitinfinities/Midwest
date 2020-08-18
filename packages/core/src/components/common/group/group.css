@@ -25,7 +25,7 @@
 }
 
 :host([buttons]) {
-  background: var(--theme-base8);
+  background: var(--theme-base-8);
 }
 
 :host ::slotted(*) {

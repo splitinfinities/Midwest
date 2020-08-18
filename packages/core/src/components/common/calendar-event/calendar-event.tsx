@@ -12,7 +12,6 @@ export class CalendarEvent {
   @Prop() event: string;
   @Prop() eventId: string;
 
-
   async componentWillLoad() {
     if (this.event && typeof this.event === "string") {
       this.object = JSON.parse(this.event);

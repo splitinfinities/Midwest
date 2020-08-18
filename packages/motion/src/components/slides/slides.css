@@ -94,7 +94,7 @@
   height: 1rem;
   border-radius: 100%;
   border: none;
-  background: var(--theme-base5);
+  background: var(--theme-base-5);
   font-size: 0;
   text-indent: -10000px;
   cursor: pointer;

@@ -11,6 +11,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
 });
 
+// @ts-ignore
 export const config: Config = {
   ...typicalStencilConfig,
   namespace: 'core',
@@ -34,9 +35,7 @@ export const config: Config = {
         }),
         tailwindcss("tailwind.config.js"),
         autoprefixer,
-        ...(process.env.NODE_ENV === "production"
-          ? [purgecss, require("cssnano")]
-          : []),
+        require("cssnano")
       ]
     })
   ]

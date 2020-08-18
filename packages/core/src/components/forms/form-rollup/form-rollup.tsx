@@ -21,8 +21,6 @@ export class FormRollup {
   @State() items: HTMLMidwestItemElement[];
   @State() checked: HTMLMidwestItemElement[];
 
-  @State() ie: boolean = (document.querySelector("html").getAttribute("mode") === "ie")
-
   boundUpdate: any;
 
   componentWillLoad() {
@@ -53,7 +51,7 @@ export class FormRollup {
   }
 
   showCheckedContent(index = 0) {
-    const fallback = (this.ie) ? this.checked[index].querySelector("midwest-label") : this.checked[index];
+    const fallback = this.checked[index];
     return this.checked[index].content || fallback.textContent.replace('Selected', '').replace('Not selected', '');
   }
 

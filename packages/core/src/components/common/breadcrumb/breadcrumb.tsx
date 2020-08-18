@@ -1,5 +1,5 @@
 import { Component, Prop, Element, h } from '@stencil/core';
-import Tunnel from '../../../tunnels/theme';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-breadcrumb',
@@ -20,6 +20,10 @@ export class Breadcrumb {
 
   @Prop({ reflect: true }) first: boolean;
   @Prop({ reflect: true }) last: boolean;
+
+  componentWillLoad() {
+    darkMode(this)
+  }
 
   componentDidLoad() {
     this.label += ` for ${this.element.textContent}`
@@ -44,4 +48,3 @@ export class Breadcrumb {
     </Tag>
   }
 }
-Tunnel.injectProps(Breadcrumb, ['dark']);

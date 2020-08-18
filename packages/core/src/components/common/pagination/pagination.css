@@ -5,7 +5,7 @@
   color: var(--color);
   font-size: 1rem;
   --color: var(--gray5);
-  --hover: var(--theme-base5);
+  --hover: var(--theme-base-5);
   text-align: center;
   position: relative;
   z-index: 0;
@@ -115,7 +115,7 @@
 :host .number::after {
   content: "";
   position: absolute;
-  background: var(--theme-base5);
+  background: var(--theme-base-5);
   width: 100%;
   height: 100%;
   border-radius: 0.2em;

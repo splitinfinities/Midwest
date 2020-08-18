@@ -1,7 +1,7 @@
 :host {
   color: var(--gray7);
-  --focus-color: var(--theme-base7);
-  --active-color: var(--theme-base5);
+  --focus-color: var(--theme-base-7);
+  --active-color: var(--theme-base-5);
   --font-size: 1rem;
   --height: auto;
   --button-padding: 1rem;
@@ -130,7 +130,7 @@
 }
 
 :host([open]) .tab-wrap .tab-button .title {
-  color: var(--theme-base5);
+  color: var(--theme-base-5);
 }
 
 :host([vertical]) .tab-wrap .tab-button .title {
@@ -179,5 +179,5 @@
 }
 
 :host([open][dark]) .tab-wrap .tab-button .title {
-  color: var(--theme-base3) !important;
+  color: var(--theme-base-3) !important;
 }

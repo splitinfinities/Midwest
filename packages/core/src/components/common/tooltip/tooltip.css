@@ -19,7 +19,7 @@
   transition: all 250ms var(--ease) 50ms;
   opacity: 0;
   margin: 0 auto;
-  background: var(--theme-base9);
+  background: var(--theme-base-9);
   padding: 0.65em 0.65em;
   width: auto;
   line-height: 1.2;
@@ -43,7 +43,7 @@
   left: 0;
   transform: rotate(45deg);
   margin: 0 auto;
-  background: var(--theme-base9);
+  background: var(--theme-base-9);
   width: 1em;
   height: 1em;
   z-index: -1;
@@ -226,9 +226,9 @@
 }
 
 :host([dark]) .wrap {
-  background: var(--theme-base7);
+  background: var(--theme-base-7);
 }
 
 :host([dark]) .wrap .after {
-  background: var(--theme-base7);
+  background: var(--theme-base-7);
 }

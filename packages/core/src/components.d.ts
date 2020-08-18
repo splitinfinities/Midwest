@@ -682,7 +682,6 @@ export namespace Components {
         "type": "alert" | "error" | "info" | "success";
     }
     interface MidwestPagination {
-        "color": string;
         "current": number;
         "dark": boolean;
         "first": () => Promise<void>;
@@ -788,7 +787,7 @@ export namespace Components {
     }
     interface MidwestSelect {
         "align": "left"|"right";
-        "changeTheme": boolean;
+        "changeTheme": boolean|"base"|"complement";
         "close": () => Promise<void>;
         "dark": boolean;
         "description": string;
@@ -1024,7 +1023,7 @@ export namespace Components {
         "colors": string[];
         "complement": ThemeableColors;
         "dark": boolean;
-        "light": boolean;
+        "store": any;
         "system": boolean;
     }
     interface MidwestTime {
@@ -2165,7 +2164,6 @@ declare namespace LocalJSX {
         "type"?: "alert" | "error" | "info" | "success";
     }
     interface MidwestPagination {
-        "color"?: string;
         "current"?: number;
         "dark"?: boolean;
         "onChanged"?: (event: CustomEvent<any>) => void;
@@ -2275,7 +2273,7 @@ declare namespace LocalJSX {
     }
     interface MidwestSelect {
         "align"?: "left"|"right";
-        "changeTheme"?: boolean;
+        "changeTheme"?: boolean|"base"|"complement";
         "dark"?: boolean;
         "description"?: string;
         "export"?: boolean;
@@ -2498,7 +2496,7 @@ declare namespace LocalJSX {
         "colors"?: string[];
         "complement"?: ThemeableColors;
         "dark"?: boolean;
-        "light"?: boolean;
+        "store"?: any;
         "system"?: boolean;
     }
     interface MidwestTime {

@@ -1,7 +1,6 @@
 import { Component, Prop, Element, State, Event, EventEmitter, Watch, h, Host } from '@stencil/core';
-import { colors } from '@midwest-design/common';
+import { colors, darkMode } from '@midwest-design/common';
 import properties from 'css-custom-properties'
-import Tunnel from '../../../tunnels/theme';
 
 @Component({
     tag: 'midwest-color-picker',
@@ -21,6 +20,7 @@ export class ColorPicker {
     @Prop({ reflect: true }) dark: boolean = false;
 
     componentWillLoad() {
+        darkMode(this)
         this.options = Object.keys(colors).filter((color) => {
             // @ts-ignore
             return !["base", "white", "black", "black-alt"].includes(color)
@@ -65,4 +65,3 @@ export class ColorPicker {
         </Host>
     }
 }
-Tunnel.injectProps(ColorPicker, ['dark']);

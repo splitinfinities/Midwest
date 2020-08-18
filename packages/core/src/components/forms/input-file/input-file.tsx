@@ -1,4 +1,5 @@
 import { Component, ComponentInterface, Host, h, Prop, State, Method, Element, EventEmitter, Event } from '@stencil/core';
+import { darkMode } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-input-file',
@@ -80,6 +81,7 @@ export class InputFile implements ComponentInterface {
   validator: HTMLMidwestValidateElement
 
   componentWillLoad() {
+    darkMode(this);
     this._prepareFileLabels();
   }
 

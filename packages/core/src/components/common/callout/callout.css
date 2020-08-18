@@ -2,8 +2,8 @@
   @apply rounded;
   display: block;
   padding: 1rem;
-  background-color: var(--theme-base4);
-  border: 1px solid var(--theme-base5) !important;
+  background-color: var(--theme-base-4);
+  border: 1px solid var(--theme-base-5) !important;
 }
 
 :host .callout-wrap {
@@ -20,5 +20,5 @@
 }
 
 :host([dark]) {
-  background-color: var(--theme-base6);
+  background-color: var(--theme-base-6);
 }

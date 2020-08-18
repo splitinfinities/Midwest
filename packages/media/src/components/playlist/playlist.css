@@ -6,26 +6,26 @@
 }
 
 :host {
-  --color-one: var(--theme-base1);
-  --color-two: var(--theme-base9);
-  --color-three: var(--theme-base5);
-  --color-four: var(--theme-base7);
-  --color-bg: var(--theme-base0);
-  --color-bg-active: var(--theme-base1);
-  --color-bg-playing: var(--theme-base2);
-  --color-line: var(--theme-base1);
+  --color-one: var(--theme-base-1);
+  --color-two: var(--theme-base-9);
+  --color-three: var(--theme-base-5);
+  --color-four: var(--theme-base-7);
+  --color-bg: var(--theme-base-0);
+  --color-bg-active: var(--theme-base-1);
+  --color-bg-playing: var(--theme-base-2);
+  --color-line: var(--theme-base-1);
 
   contain: content;
 }
 
 :host([dark]) {
-  --color-one: var(--theme-base9);
-  --color-two: var(--theme-base1);
-  --color-three: var(--theme-base7);
-  --color-four: var(--theme-base2);
+  --color-one: var(--theme-base-9);
+  --color-two: var(--theme-base-1);
+  --color-three: var(--theme-base-7);
+  --color-four: var(--theme-base-2);
   --color-bg: var(--black-alt);
-  --color-bg-active: var(--theme-base8);
-  --color-bg-playing: var(--theme-base8);
+  --color-bg-active: var(--theme-base-8);
+  --color-bg-playing: var(--theme-base-8);
   --color-line: var(--black);
 }
 
