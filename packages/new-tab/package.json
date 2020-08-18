@@ -13,7 +13,9 @@
   "unpkg": "dist/new-tab/new-tab.js",
   "files": [
     "dist/",
-    "loader/"
+    "loader/",
+    "docs/",
+    "custom-elements.json"
   ],
   "scripts": {
     "build": "stencil build --docs",
