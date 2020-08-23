@@ -1,7 +1,7 @@
 {
   "name": "@midwest-design/device",
   "public": true,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
