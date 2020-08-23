@@ -1,7 +1,7 @@
 {
   "name": "@midwest-design/export-to-figma",
   "public": true,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
