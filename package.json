@@ -57,8 +57,5 @@
     "lerna": "^3.13.4",
     "standard-version": "8.0.0",
     "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "@midwest-design/core": "0.0.2"
   }
 }

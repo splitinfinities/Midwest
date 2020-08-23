@@ -9,7 +9,7 @@ import { darkMode } from '@midwest-design/common';
 export class Item {
   @Element() element: HTMLElement;
   
-  @Prop({ reflect: true, mutable: true }) tag: "a" | "button" | "span" | "checkbox" | "radio" = "button";
+  @Prop({ reflect: true, mutable: true }) tag: "a" | "button" | "span" | "checkbox" | "radio" | "stencil-route" = "button";
   @Prop({ reflect: true, mutable: true }) name: string = "item";
   @Prop({ reflect: true, mutable: true }) value: string;
   @Prop({ reflect: true, mutable: true }) disabled: boolean = false;
@@ -271,11 +271,28 @@ export class Item {
     </span>
   }
 
+  renderStencilRoute () {
+    return <stencil-route-link
+      url={this.href} 
+      class="clickable" 
+      tabIndex={-1}
+      ref={(el) => { this.clickable = el }}
+    >
+      {this.renderAvatar()}
+      {this.renderIcon()}
+      <midwest-label>
+        <slot>{this.checked ? "Selected" : "Not selected"}</slot>
+      </midwest-label>
+    </stencil-route-link>
+  }
+
+
   render() {
     return <Host tabIndex={0} onKeyDown={this.onKeyDown.bind(this)}>
       {this.tag === "a" && this.renderLink()}
       {this.tag === "button" && this.renderButton()}
       {this.tag === "span" && this.renderSpan()}
+      {this.tag === "stencil-route" && this.renderStencilRoute()}
       {["radio", "checkbox"].includes(this.tag) && this.renderToggle()}
       {this.export && <export-to-figma />}
     </Host>

@@ -192,7 +192,7 @@ export namespace Components {
         /**
           * Allows the button to render for different tags.
          */
-        "tag": "button" | "submit" | "link" | "span" | "modal" | "onboarding";
+        "tag": "button" | "submit" | "link" | "span" | "modal" | "onboarding" | "stencil-route";
         /**
           * Sets the target on the anchor tag if the button is a link.
          */
@@ -634,7 +634,7 @@ export namespace Components {
         "quiet": boolean;
         "required": boolean;
         "settableParent": any;
-        "tag": "a" | "button" | "span" | "checkbox" | "radio";
+        "tag": "a" | "button" | "span" | "checkbox" | "radio" | "stencil-route";
         "target": string;
         "tooltip": string;
         "validate": () => Promise<FormResult>;
@@ -1650,7 +1650,7 @@ declare namespace LocalJSX {
         /**
           * Allows the button to render for different tags.
          */
-        "tag"?: "button" | "submit" | "link" | "span" | "modal" | "onboarding";
+        "tag"?: "button" | "submit" | "link" | "span" | "modal" | "onboarding" | "stencil-route";
         /**
           * Sets the target on the anchor tag if the button is a link.
          */
@@ -2117,7 +2117,7 @@ declare namespace LocalJSX {
         "quiet"?: boolean;
         "required"?: boolean;
         "settableParent"?: any;
-        "tag"?: "a" | "button" | "span" | "checkbox" | "radio";
+        "tag"?: "a" | "button" | "span" | "checkbox" | "radio" | "stencil-route";
         "target"?: string;
         "tooltip"?: string;
         "value"?: string;

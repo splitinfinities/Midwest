@@ -2194,6 +2194,23 @@
     npmlog "^4.1.2"
     write-file-atomic "^2.3.0"
 
+"@midwest-design/motion@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@midwest-design/motion/-/motion-0.0.4.tgz#00b0ad2bb62a26672a2c3098e31ae091bf68830d"
+  integrity sha512-tEJELyqBEyYOFNFPEDTfi41Wkqf7/7Ml6/Y6GNxE09ikvs33YaYTYwW9zA/+YgSqY9tHDCOErmSnd7yQLMIJVw==
+  dependencies:
+    "@fullhuman/postcss-purgecss" "^2.3.0"
+    "@midwest-design/common" "^0.0.4"
+    "@midwest-design/core" "^0.0.4"
+    "@stencil/core" "^1.17.3"
+    "@stencil/postcss" "^1.0.1"
+    animejs "^3.2.0"
+    autoprefixer "^9.8.6"
+    basicscroll "^3.0.3"
+    css-custom-properties "^0.1.0"
+    cssnano "^4.1.10"
+    postcss-import "^12.0.1"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -5701,7 +5718,7 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
-copy-to-clipboard@^3.0.8:
+copy-to-clipboard@^3.0.8, copy-to-clipboard@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/copy-to-clipboard/-/copy-to-clipboard-3.3.1.tgz#115aa1a9998ffab6196f93076ad6da3b913662ae"
   integrity sha512-i13qo6kIHTTpCm8/Wup+0b1mVWETvu2kIMzKoK8FpkLkFxlt0znUAHcMzox+T8sPlqtZXq3CulEjQHsYiGFJUw==

@@ -16,10 +16,10 @@ export class AppHome {
         <midwest-docs class="mb-8 block" />
 
         <midwest-grid columnGap={1} columnWidth={250}>
-          <display-feed type="designer-news" />
-          <display-feed type="hacker-news" />
-          <display-feed type="github" />
-          <display-feed type="dribbble" />
+          <display-feed type="designer-news" icon="logo-designernews" iconColor="blue" />
+          <display-feed type="hacker-news" icon="logo-hackernews" iconColor="orange" />
+          <display-feed type="github" iconColor="black" />
+          <display-feed type="dribbble" icon="logo-dribbble" iconColor="pink" />
         </midwest-grid>
         <midwest-starscape />
       </midwest-layout>

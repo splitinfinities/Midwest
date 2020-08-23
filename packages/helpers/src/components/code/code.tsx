@@ -4,8 +4,9 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-bash';
-import ezClipboard from 'ez-clipboard';
+import copy from 'copy-to-clipboard';
 import { darkMode } from '@midwest-design/common';
+import delay from "async-delay";
 
 @Component({
   tag: 'midwest-code',
@@ -22,7 +23,7 @@ export class Code {
   @Prop() expandable: boolean = false;
   @State() randomName: number = Math.round((Math.random() * 10000));
   @State() observer: MutationObserver;
-
+t
   @Prop() preview: boolean = true;
   @Prop() feature: boolean = false;
   @Prop({ reflect: true }) dark: boolean = false;
@@ -36,24 +37,6 @@ export class Code {
   }
 
   componentDidLoad() {
-    this.highlight();
-
-    if (window && window.MutationObserver) {
-      var observer = new MutationObserver((mutations) => {
-        mutations.forEach(() => {
-          this.getCode()
-        });
-      });
-
-      observer.observe(this.element, { attributes: true, childList: true, subtree: true });
-    }
-  }
-
-  componentWillUpdate() {
-    this.getCode()
-  }
-
-  componentDidUpdate() {
     this.highlight();
   }
 
@@ -84,7 +67,10 @@ export class Code {
   @Method()
   async clipboard() {
     const copyText = await this.result();
-    ezClipboard.copyPlain(copyText);
+    copy(copyText);
+    this.copied = true;
+    await delay(3500);
+    this.copied = false;
   }
 
   @Method()
@@ -106,13 +92,12 @@ export class Code {
           this.language = language[0].substr(9)
         }
 
-
-        if (!code.innerHTML) {
+        if (code.innerHTML) {
+          code = code.innerHTML
+        } else {
           code = Array.from(code.children).map((node: any) => {
             return node.outerHTML
           }).join()
-        } else {
-          code = code.innerHTML
         }
 
         this.raw = code;
@@ -129,10 +114,12 @@ export class Code {
   }
 
   renderCode() {
-    return <pre aria-label={`The ${this.language} code`} tabindex={0}>
-      <code class={`language-${this.language}`} innerHTML={this.code}></code>
+    return <div>
+      <pre aria-label={`The ${this.language} code`} tabindex={0}>
+        <code class={`language-${this.language}`} innerHTML={this.code}></code>
+      </pre>
       <div class="hidden"><slot><template><p>There's no code here!</p></template></slot></div>
-    </pre>;
+    </div>
   }
 
   render() {
@@ -143,6 +130,7 @@ export class Code {
         {this.feature && <header><slot name="feature" /><slot name="property" /></header>}
         {this.preview && this.renderPreview()}
         <footer class="code">
+          {this.copy && <midwest-button class="copy" ghost onClick={this.clipboard.bind(this)}>{this.copied ? "Copied!" : "Copy"}</midwest-button>}
           {this.renderCode()}
         </footer>
       </midwest-card>

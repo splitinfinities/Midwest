@@ -18,7 +18,10 @@
 - midwest-select
 - midwest-item
 - animate-presence
-- midwest-label
+- ion-icon
+- midwest-item-group
+- copy-wrap
+- midwest-long-shadow
 - midwest-card
 - midwest-button
 - midwest-markdown
@@ -31,7 +34,10 @@ graph TD;
   midwest-docs --> midwest-select
   midwest-docs --> midwest-item
   midwest-docs --> animate-presence
-  midwest-docs --> midwest-label
+  midwest-docs --> ion-icon
+  midwest-docs --> midwest-item-group
+  midwest-docs --> copy-wrap
+  midwest-docs --> midwest-long-shadow
   midwest-docs --> midwest-card
   midwest-docs --> midwest-button
   midwest-docs --> midwest-markdown
@@ -76,8 +82,11 @@ graph TD;
   midwest-item --> midwest-box
   midwest-item --> midwest-label
   midwest-item --> midwest-tooltip
+  midwest-item --> stencil-route-link
   midwest-item --> export-to-figma
   midwest-box --> ion-icon
+  midwest-item-group --> midwest-label
+  midwest-long-shadow --> midwest-intersection
   midwest-card --> midwest-button
   midwest-card --> ion-icon
   midwest-card --> export-to-figma

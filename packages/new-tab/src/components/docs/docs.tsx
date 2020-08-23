@@ -1,4 +1,4 @@
-import { Component, Host, h, State } from '@stencil/core';
+import { Component, Host, h, State, Watch } from '@stencil/core';
 
 @Component({
   tag: 'midwest-docs',
@@ -7,15 +7,30 @@ import { Component, Host, h, State } from '@stencil/core';
 export class Docs {
 
   @State() data: any;
+  @State() query: string;
   @State() matches: any;
+  @State() groups: string[];
   @State() readmeUrl: string;
 
   @State() base: ThemeableColors = localStorage.getItem("base") as ThemeableColors || "red";
   @State() complement: ThemeableColors = localStorage.getItem("complement") as ThemeableColors || "red";
   @State() dark: "true"|"false" = localStorage.getItem("dark") as "true"|"false" || "false";
 
+  inputEl!: HTMLMidwestInputElement;
+
   componentWillLoad() {
     this.fetchDocs()
+  }
+
+  @Watch("matches")
+  handleMatches() {
+    if (this.matches && this.matches.length > 0) {
+      document.querySelector("html").classList.add("overflow-hidden")
+      document.querySelector("body").classList.add("overflow-hidden")
+    } else {
+      document.querySelector("html").classList.remove("overflow-hidden")
+      document.querySelector("body").classList.remove("overflow-hidden")
+    }
   }
 
   changeBaseTheme(e) {
@@ -57,10 +72,12 @@ export class Docs {
   }
 
   search(e) {
-    if (this.data && e.detail && e.detail.length >= 2) {
+    this.query = e.detail;
+
+    if (this.data && this.query && this.query.length >= 1) {
       const matches = this.data.map((npmPackage) => {
         return npmPackage.components.filter(component => {
-          return component.tag.includes(e.detail)
+          return component.tag.includes(this.query)
         }).map(component => {
           // `https://unpkg.com/${npmPackage.package}/docs/components/${component.tag}/readme.md`
           const relativePath = component.filePath.replace("./src/components/", "").replace(/[^/]*$/.exec(component.filePath)[0], "");
@@ -69,18 +86,30 @@ export class Docs {
           component["package"] = npmPackage.package;
           return component;
         });
-      }).filter(Boolean).filter(e => e.length !== 0).flat().slice(0, 15)
+      }).filter(Boolean).filter(e => e.length !== 0).flat().slice(0, 30)
 
       this.matches = matches;
+      this.groups = [...new Set(this.matches.map(e => e.package).filter(Boolean))] as string[]
+      if (this.matches && this.matches[0].readme) {
+        this.readmeUrl = this.matches[0].readme
+      } else {
+        this.readmeUrl = undefined;
+      }
     } else {
       this.matches = undefined;
+      this.groups = undefined;
+      this.readmeUrl = undefined;
     }
+  }
+
+  get isEmpty() {
+    return (!this.groups || this.groups.length === 0) && (!this.matches || this.matches.length === 0)
   }
 
   render() {
     return <Host class="block sticky top-0 z-50 -mt-4 -mx-4 bg-white dm:bg-black bg-opacity-75" style={{"backdrop-filter": "blur(4px)"}}>
       <div class="flex items-center justify-between p-4">
-        <midwest-input type="search" size="large" inline required={false} autofocus onUpdate={this.search.bind(this)} placeholder="Search Midwest Documentation" class="w-full mr-4" />
+        <midwest-input type="search" size="large" inline required={false} autofocus onUpdate={this.search.bind(this)} placeholder="Search Midwest Documentation" class="w-full mr-4" ref={e => { this.inputEl = e; }} />
         <div class="flex items-center">
           
           <midwest-switch class="ml-4" tabindex="-1" tabIndex={-1} checked={this.dark === "true"} changeTheme onUpdate={this.changeDarkTheme.bind(this)}>
@@ -124,32 +153,42 @@ export class Docs {
         </div>
       </div>
 
-      {this.matches && <div class="absolute w-full db bg-white dm:bg-black overflow-auto flex" style={{"max-height": "calc(100vh - 4rem)"}}>
-        <div class="w-96 sticky top-0" style={{"min-width": "24rem"}}>
-        <animate-presence>
-          {this.matches.map(match => <midwest-item 
-            onFocus={() => { this.readmeUrl = match.readme }}
-            tag="button"
-            class="p-4">
-            <midwest-label size="small" class="text-base-6">{match.package}</midwest-label>
-            <h4 class="mb-0">{match.tag}</h4>
-          </midwest-item>
-          )}
+      {this.matches && this.groups && <div class="absolute w-full db bg-white dm:bg-black overflow-auto flex border-t border-b border-base-1 dm:border-base-10 bg-white" style={{"max-height": "calc(100vh - 4rem)", "height": "100vh"}}>
+        <div class="w-96 h-full sticky top-0 border-r border-base-1 dm:border-base-10 overflow-auto" style={{"min-width": "24rem"}}>
+          <animate-presence>
+            {this.isEmpty && <div class="flex w-full h-full items-center justify-center">
+              <ion-icon name="sad" class="text-base-4 dm:text-base-11 mb-24" style={{"font-size": "10rem"}} />
+            </div>}
+            {this.groups.map((group) => <midwest-item-group title={group} name={group}>
+              {this.matches.map(match => (group === match.package) && <midwest-item 
+                onFocus={() => { this.readmeUrl = match.readme }}
+                tag="button"
+                class="p-4">
+                <h4 class="mb-0">{match.tag}</h4>
+              </midwest-item>
+              )}
+            </midwest-item-group>)}
           </animate-presence>
         </div>
-        {this.readmeUrl && <div class="text-black dm:text-white overflow-auto h-full p-12 bg-base-1 dm:bg-base-12 w-full">
-          <animate-presence>
-            <midwest-card>
-              <header class="flex justify-between">
-                <h2>Documentation</h2>
-                <midwest-button tag="button" onClick={() => { this.readmeUrl = undefined; this.matches = undefined; }}>Close</midwest-button>
-              </header>
-              <section>
-                <midwest-markdown src={this.readmeUrl} />
-              </section>
-            </midwest-card>
-          </animate-presence>
-        </div>}
+        <div class="text-black dm:text-white overflow-auto h-full p-12 bg-base-1 dm:bg-base-12 w-full flex items-center justify-center">
+          {this.isEmpty && <copy-wrap align="center" class="mb-24">
+            <h1 class="mb-4 text-base-6"><midwest-long-shadow>Oops! We couldn't find anything matching "{this.query}"</midwest-long-shadow></h1>
+            <h3 class="text-base-4 dm:text-base-8">Maybe refine your search?</h3>
+          </copy-wrap>}
+          {!this.isEmpty && this.readmeUrl && <div class="text-black dm:text-white overflow-auto h-full p-12 bg-base-1 dm:bg-base-12 w-full">
+            <animate-presence>
+              <midwest-card>
+                <header class="flex justify-between">
+                  <h2>Documentation</h2>
+                  <midwest-button tag="button" onClick={() => { this.readmeUrl = undefined; this.matches = undefined; this.inputEl.resetValue(); }}>Close</midwest-button>
+                </header>
+                <section>
+                  <midwest-markdown src={this.readmeUrl} />
+                </section>
+              </midwest-card>
+            </animate-presence>
+          </div>}
+        </div>
       </div>}
     </Host>
   }

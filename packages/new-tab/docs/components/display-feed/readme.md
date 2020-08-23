@@ -9,7 +9,7 @@
 
 | Property    | Attribute    | Description | Type     | Default         |
 | ----------- | ------------ | ----------- | -------- | --------------- |
-| `filter`    | `filter`     |             | `string` | `"popular"`     |
+| `filter`    | `filter`     |             | `string` | `"latest"`      |
 | `icon`      | `icon`       |             | `string` | `"logo-github"` |
 | `iconColor` | `icon-color` |             | `string` | `"blue"`        |
 | `type`      | `type`       |             | `string` | `"midwest"`     |
@@ -32,6 +32,7 @@
 - midwest-time
 - animate-presence
 - ion-icon
+- midwest-button
 
 ### Graph
 ```mermaid
@@ -45,6 +46,7 @@ graph TD;
   display-feed --> midwest-time
   display-feed --> animate-presence
   display-feed --> ion-icon
+  display-feed --> midwest-button
   midwest-image --> midwest-intersection
   midwest-card --> midwest-button
   midwest-card --> ion-icon

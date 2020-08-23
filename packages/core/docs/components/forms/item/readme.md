@@ -31,7 +31,7 @@
 | `quiet`          | `quiet`           |                                             | `boolean`                                                                    | `undefined` |
 | `required`       | `required`        |                                             | `boolean`                                                                    | `false`     |
 | `settableParent` | `settable-parent` |                                             | `any`                                                                        | `undefined` |
-| `tag`            | `tag`             |                                             | `"a" \| "button" \| "checkbox" \| "radio" \| "span"`                         | `"button"`  |
+| `tag`            | `tag`             |                                             | `"a" \| "button" \| "checkbox" \| "radio" \| "span" \| "stencil-route"`      | `"button"`  |
 | `target`         | `target`          |                                             | `string`                                                                     | `"_self"`   |
 | `tooltip`        | `tooltip`         |                                             | `string`                                                                     | `undefined` |
 | `value`          | `value`           |                                             | `string`                                                                     | `undefined` |

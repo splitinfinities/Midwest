@@ -686,6 +686,9 @@
               "name": "span"
             },
             {
+              "name": "stencil-route"
+            },
+            {
               "name": "submit"
             }
           ]
@@ -2437,6 +2440,9 @@
             },
             {
               "name": "span"
+            },
+            {
+              "name": "stencil-route"
             }
           ]
         },

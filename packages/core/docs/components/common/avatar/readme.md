@@ -9,52 +9,33 @@
 
 ### Colors
 
-<midwest-avatar name="William M. Riley" color="red"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="orange"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="yellow"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="lime"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="green"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="teal"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="cyan"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="blue"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="indigo"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="violet"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="fuschia"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="pink"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="gray"></midwest-avatar>
+<midwest-code>
+      <template>
+            <midwest-avatar name="William M. Riley" color="red"></midwest-avatar>
+      </template>
+</midwest-code>
 
 
 ### Default
 
-<midwest-avatar name="William M. Riley"></midwest-avatar>
+<midwest-code>
+      <template>
+            <midwest-avatar name="William M. Riley"></midwest-avatar>
+      </template>
+</midwest-code>
 
 
 ### Shape
 
-<midwest-avatar name="William M. Riley" size="tiny" shape="circle"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="small" shape="circle"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="medium" shape="circle"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="large" shape="circle"></midwest-avatar>
-
-<midwest-avatar name="William M. Riley" size="tiny" shape="rectangle"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="small" shape="rectangle"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="medium" shape="rectangle"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="large" shape="rectangle"></midwest-avatar>
-
-<midwest-avatar name="William M. Riley" size="tiny" shape="diamond"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="small" shape="diamond"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="medium" shape="diamond"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="large" shape="diamond"></midwest-avatar>
-
-<midwest-avatar name="William M. Riley" size="tiny" shape="star"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="small" shape="star"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="medium" shape="star"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="large" shape="star"></midwest-avatar>
-
-<midwest-avatar name="William M. Riley" size="tiny" shape="message"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="small" shape="message"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="medium" shape="message"></midwest-avatar>
-<midwest-avatar name="William M. Riley" size="large" shape="message"></midwest-avatar>
+<midwest-code>
+      <template>
+            <midwest-avatar name="William M. Riley" shape="circle"></midwest-avatar>
+            <midwest-avatar name="William M. Riley" shape="rectangle"></midwest-avatar>
+            <midwest-avatar name="William M. Riley" shape="diamond"></midwest-avatar>
+            <midwest-avatar name="William M. Riley" shape="star"></midwest-avatar>
+            <midwest-avatar name="William M. Riley" shape="message"></midwest-avatar>
+      </template>
+</midwest-code>
 
 
 ### Sizes

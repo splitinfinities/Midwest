@@ -12,7 +12,7 @@ export class Button {
   /**
    * Allows the button to render for different tags.
    */
-  @Prop() tag: "button" | "submit" | "link" | "span" | "modal" | "onboarding" = "link";
+  @Prop() tag: "button" | "submit" | "link" | "span" | "modal" | "onboarding" | "stencil-route" = "link";
 
   /**
    * Sets accessibility options on the buttons
@@ -327,7 +327,7 @@ export class Button {
     </a>
   }
 
-  renderAppLink() {
+  renderStencilRoute() {
     return <stencil-route-link url={this.href} anchorClass="button" data-disabled={this.disabled} title={this.label} onClick={this.handleClick.bind(this)} onKeyDown={this.onKeyDown.bind(this)} onKeyUp={this.onKeyUp.bind(this)} tabIndex={this.buttonTabIndex}>
       <slot name="icon" />
       <midwest-label class="content" size={this.size}>{this.renderSlot()}</midwest-label>
@@ -349,6 +349,7 @@ export class Button {
       {this.tag === "submit" && this.renderSubmit()}
       {this.tag === "link" && this.renderLink()}
       {this.tag === "span" && this.renderSpan()}
+      {this.tag === "stencil-route" && this.renderStencilRoute()}
 
       {this.export && <export-to-figma />}
     </Host>

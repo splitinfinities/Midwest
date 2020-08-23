@@ -23,16 +23,9 @@
 
  - [midwest-modal](../modal)
 
-### Depends on
-
-- copy-wrap
-- midwest-progress
-
 ### Graph
 ```mermaid
 graph TD;
-  midwest-loading --> copy-wrap
-  midwest-loading --> midwest-progress
   midwest-modal --> midwest-loading
   style midwest-loading fill:#f9f,stroke:#333,stroke-width:4px
 ```

@@ -69,20 +69,9 @@ Type: `Promise<void>`
 
  - [midwest-asset-library](../asset-library)
 
-### Depends on
-
-- midwest-card
-
 ### Graph
 ```mermaid
 graph TD;
-  midwest-code --> midwest-card
-  midwest-card --> midwest-button
-  midwest-card --> ion-icon
-  midwest-card --> export-to-figma
-  midwest-button --> midwest-progress
-  midwest-button --> midwest-label
-  midwest-button --> export-to-figma
   midwest-asset-library --> midwest-code
   style midwest-code fill:#f9f,stroke:#333,stroke-width:4px
 ```

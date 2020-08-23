@@ -8,7 +8,7 @@ import '@midwest-design/core';
 })
 export class DisplayFeed {
   @Prop() type: string = "midwest";
-  @Prop() filter: string|"latest"|"popular" = "popular";
+  @Prop({mutable: true}) filter: string|"latest"|"popular" = "latest";
   @Prop() icon: string = "logo-github";
   @Prop() iconColor: string = "blue";
   @State() data: { date: string; title: string; description: string; image: string; link: string; votes: number; comments: number; }[];
@@ -25,6 +25,11 @@ export class DisplayFeed {
   }
 
   componentDidLoad() {
+    this.handleMethod()
+  }
+
+  @Watch("filter")
+  handleMethod() {
     const caller = {
       "designer-news": "fetchDesignerNews",
       "github": "fetchGithub",
@@ -63,7 +68,7 @@ export class DisplayFeed {
   }
 
   renderStats (item) {
-    return <midwest-grid columnGap={1} class="text-center">
+    return <midwest-grid columnGap={1} columnWidth={150} class="text-center">
       { item.stars && <h6 class="text-base-11 dm:text-base-1">{item.stars} <br /> Stars</h6>}
       { item.watchers && <h6 class="text-base-11 dm:text-base-1">{item.watchers} <br /> Watchers</h6>}
       { item.forks && <h6 class="text-base-11 dm:text-base-1">{item.forks} <br /> Forks</h6>}
@@ -129,9 +134,12 @@ export class DisplayFeed {
 
   render () {
     return <midwest-card padding="none">
-      <header class={`${this.type} py-4 px-3 flex items-between bg-white dm:bg-black sticky z-20`} style={{top: "5.25rem"}}>
-        <ion-icon name={this.icon} class="text-4xl text-black dm:text-white mr-4" />
-        <h2 class="text-black dm:text-white uppercase">{this.title}</h2>
+      <header class={`${this.type} py-4 px-3 flex justify-between items-center bg-white dm:bg-black sticky z-20`} style={{top: "5.5rem"}}>
+        <div class="flex items-center">
+          <ion-icon name={this.icon} class={`text-5xl mr-4 text-${this.iconColor}-6 dm:text-${this.iconColor}-6`} />
+          <h4 class="text-black dm:text-white uppercase">{this.title}</h4>
+        </div>
+        <midwest-button ghost onClick={() => { this.filter = this.filter === "latest" ? "popular" : "latest"; }} class="mr-2"><ion-icon name="refresh-circle" slot="icon" class="right" />{this.filter}</midwest-button>
       </header>
       {this.renderList()}
     </midwest-card>

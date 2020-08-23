@@ -1,9 +1,9 @@
 display-feed .list midwest-card {
-  --border: transparent;
+  --border: 1px solid var(--gray0);
 }
 
-.dark-mode .list display-feed midwest-card {
-  --border: transparent;
+.dark-mode display-feed .list midwest-card {
+  --border: 1px solid var(--theme-base-12);
 }
 
 display-feed .loading {

@@ -1,13 +1,5 @@
-<midwest-avatar name="William M. Riley" color="red"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="orange"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="yellow"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="lime"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="green"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="teal"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="cyan"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="blue"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="indigo"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="violet"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="fuschia"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="pink"></midwest-avatar>
-<midwest-avatar name="William M. Riley" color="gray"></midwest-avatar>
+<midwest-code>
+      <template>
+            <midwest-avatar name="William M. Riley" color="red"></midwest-avatar>
+      </template>
+</midwest-code>
