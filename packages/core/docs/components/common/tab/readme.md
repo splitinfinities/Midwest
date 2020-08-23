@@ -19,7 +19,7 @@
 | `order`              | `order`               |                                                            | `number`                                   | `undefined` |
 | `size`               | `size`                |                                                            | `"large" \| "medium" \| "small" \| "tiny"` | `"medium"`  |
 | `tabCount`           | `tab-count`           |                                                            | `number`                                   | `undefined` |
-| `tag`                | `tag`                 |                                                            | `"button" \| "link"`                       | `"button"`  |
+| `tag`                | `tag`                 |                                                            | `"button" \| "link" \| "stencil-route"`    | `"button"`  |
 | `target`             | `target`              | Sets the target on the anchor tag if the button is a link. | `string`                                   | `'_self'`   |
 | `vertical`           | `vertical`            |                                                            | `boolean`                                  | `false`     |
 

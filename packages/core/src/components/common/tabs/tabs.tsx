@@ -20,6 +20,7 @@ export class Tabs {
   @Prop({ reflect: true }) behavior: string;
   @Prop({ reflect: true }) flipIndicator: boolean;
   @Prop({ reflect: true }) blockIndicator: boolean;
+  @Prop({ reflect: true }) payAttention: boolean;
 
   @Prop() ready: boolean = false;
   @Prop() tabTop: number;

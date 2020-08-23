@@ -980,7 +980,7 @@ export namespace Components {
         "order": number;
         "size": "tiny" | "small" | "medium" | "large";
         "tabCount": number;
-        "tag": "button" | "link";
+        "tag": "button" | "link" | "stencil-route";
         /**
           * Sets the target on the anchor tag if the button is a link.
          */
@@ -997,6 +997,7 @@ export namespace Components {
         "height": string;
         "name": string;
         "noanimation": boolean;
+        "payAttention": boolean;
         "ready": boolean;
         "size": "tiny" | "small" | "medium" | "large";
         "tabHeight": number;
@@ -2455,7 +2456,7 @@ declare namespace LocalJSX {
         "order"?: number;
         "size"?: "tiny" | "small" | "medium" | "large";
         "tabCount"?: number;
-        "tag"?: "button" | "link";
+        "tag"?: "button" | "link" | "stencil-route";
         /**
           * Sets the target on the anchor tag if the button is a link.
          */
@@ -2471,6 +2472,7 @@ declare namespace LocalJSX {
         "height"?: string;
         "name"?: string;
         "noanimation"?: boolean;
+        "payAttention"?: boolean;
         "ready"?: boolean;
         "size"?: "tiny" | "small" | "medium" | "large";
         "tabHeight"?: number;

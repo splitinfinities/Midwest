@@ -3723,6 +3723,9 @@
             },
             {
               "name": "link"
+            },
+            {
+              "name": "stencil-route"
             }
           ]
         },
@@ -3779,6 +3782,10 @@
         },
         {
           "name": "noanimation",
+          "description": ""
+        },
+        {
+          "name": "pay-attention",
           "description": ""
         },
         {

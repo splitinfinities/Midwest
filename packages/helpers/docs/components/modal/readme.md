@@ -34,6 +34,8 @@
 ```mermaid
 graph TD;
   midwest-modal --> midwest-loading
+  midwest-loading --> copy-wrap
+  midwest-loading --> midwest-progress
   style midwest-modal fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

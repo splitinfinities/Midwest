@@ -36,7 +36,7 @@
     "lerna.version": "lerna version --conventional-commits --yes --no-push",
     "lerna.publish": "lerna publish from-package",
     "git.push": "git push --follow-tags",
-    "cut": "yarn build && yarn lerna.version && yarn lerna.publish && yarn git.push",
+    "cut": "yarn lerna.version && yarn lerna.publish && yarn git.push",
     "diff": "lerna diff"
   },
   "husky": {

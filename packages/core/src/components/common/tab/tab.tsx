@@ -19,7 +19,7 @@ export class Tab {
   @Prop({ mutable: true, reflect: true }) dark: boolean = false
   @Prop() notifications: boolean | number = false
   @Prop() notificationsColor: string = "cyan";
-  @Prop() tag: "button" | "link" = "button";
+  @Prop() tag: "button" | "link" | "stencil-route" = "button";
 
   /**
    * Sets the href on the anchor tag if the button is a link.
@@ -96,6 +96,14 @@ export class Tab {
     }
   }
 
+  async sectionIsOnScreen() {
+    if (this.parent.payAttention) {
+      this.disabled = true;
+      await this.handleClick();
+      this.disabled = false;
+    }
+  }
+
   handleIndicatorPosition() {
     if (this.open && this.parent && this.parent.nodeName === "MIDWEST-TABS") {
       if (this.parent.vertical) {
@@ -152,14 +160,26 @@ export class Tab {
       {this.notifications && this.renderNotifications()}
       {this.renderTitle()}
     </a>
+  }  
+  
+  renderStencilRoute() {
+    return (
+      <stencil-route-link role="tab" url={this.href} anchorClass="tab-button" data-disabled={this.disabled} onClick={(e) => { this.handleClick(e) }}>
+        {this.renderNotifications()}
+        {this.renderTitle()}
+      </stencil-route-link>
+    );
   }
+
 
   render() {
     return <Host>
       <div class="tab-wrap">
         {this.tag === "button" && this.renderButton()}
         {this.tag === "link" && this.renderLink()}
+        {this.tag === "stencil-route" && this.renderStencilRoute()}
       </div>
+      {this.parent?.payAttention && <stellar-intersection in={this.sectionIsOnScreen.bind(this)} element={this.href} multiple margin="-50%" />}
     </Host>
   }
 }

@@ -21,11 +21,13 @@
 ### Used by
 
  - [midwest-long-shadow](../long-shadow)
+ - midwest-slide
 
 ### Graph
 ```mermaid
 graph TD;
   midwest-long-shadow --> midwest-intersection
+  midwest-slide --> midwest-intersection
   style midwest-intersection fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

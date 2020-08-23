@@ -17,6 +17,7 @@
 | `height`         | `height`          |             | `string`                                   | `undefined` |
 | `name`           | `name`            |             | `string`                                   | `undefined` |
 | `noanimation`    | `noanimation`     |             | `boolean`                                  | `false`     |
+| `payAttention`   | `pay-attention`   |             | `boolean`                                  | `undefined` |
 | `ready`          | `ready`           |             | `boolean`                                  | `false`     |
 | `size`           | `size`            |             | `"large" \| "medium" \| "small" \| "tiny"` | `undefined` |
 | `tabHeight`      | `tab-height`      |             | `number`                                   | `undefined` |
