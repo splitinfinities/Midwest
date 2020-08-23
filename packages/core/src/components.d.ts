@@ -830,88 +830,6 @@ export namespace Components {
         "selector": string;
         "triggered": string;
     }
-    interface MidwestSlide {
-        "slideId": number;
-        "width": string;
-    }
-    interface MidwestSlides {
-        "autoHeight": boolean;
-        "autoplay": boolean;
-        "centeredSlides": boolean;
-        "direction": "horizontal" | "vertical";
-        "effect": "slide" | "fade" | "cube" | "coverflow" | "flip";
-        /**
-          * Get the index of the active slide.
-         */
-        "getActiveIndex": () => Promise<number>;
-        /**
-          * Get the index of the previous slide.
-         */
-        "getPreviousIndex": () => Promise<number>;
-        "initialSlide": number;
-        "instance": () => Promise<any>;
-        /**
-          * Get whether or not the current slide is the first slide.
-         */
-        "isBeginning": () => Promise<boolean>;
-        /**
-          * Get whether or not the current slide is the last slide.
-         */
-        "isEnd": () => Promise<boolean>;
-        /**
-          * Get the total number of slides.
-         */
-        "length": () => Promise<number>;
-        /**
-          * Lock or unlock the ability to slide to the next slides.
-         */
-        "lockSwipeToNext": (shouldLockSwipeToNext: boolean) => Promise<any>;
-        /**
-          * Lock or unlock the ability to slide to the previous slides.
-         */
-        "lockSwipeToPrev": (shouldLockSwipeToPrev: boolean) => Promise<any>;
-        /**
-          * Lock or unlock the ability to slide to change slides.
-         */
-        "lockSwipes": (shouldLockSwipes: boolean) => Promise<any>;
-        "loop": boolean;
-        "nested": boolean;
-        /**
-          * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
-         */
-        "options": any;
-        "pagination": boolean;
-        "responsive": boolean;
-        /**
-          * Transition to the next slide.
-         */
-        "slideNext": (speed?: number, runCallbacks?: boolean) => Promise<void>;
-        /**
-          * Transition to the previous slide.
-         */
-        "slidePrev": (speed?: number, runCallbacks?: boolean) => Promise<void>;
-        /**
-          * Transition to the specified slide.
-         */
-        "slideTo": (index: number, speed?: number, runCallbacks?: boolean) => Promise<void>;
-        "slidesPerView": number;
-        "spaceBetween": number;
-        "speed": number;
-        /**
-          * Start auto play.
-         */
-        "startAutoplay": () => Promise<void>;
-        /**
-          * Stop auto play.
-         */
-        "stopAutoplay": () => Promise<void>;
-        /**
-          * Update the underlying slider implementation. Call this if you've added or removed child slides.
-         */
-        "update": () => Promise<void>;
-        "watchSlidesProgress": boolean;
-        "watchSlidesVisibility": boolean;
-    }
     interface MidwestStep {
         "activate": () => Promise<void>;
         "base": ThemeableColors;
@@ -1320,18 +1238,6 @@ declare global {
         prototype: HTMLMidwestShowIfElement;
         new (): HTMLMidwestShowIfElement;
     };
-    interface HTMLMidwestSlideElement extends Components.MidwestSlide, HTMLStencilElement {
-    }
-    var HTMLMidwestSlideElement: {
-        prototype: HTMLMidwestSlideElement;
-        new (): HTMLMidwestSlideElement;
-    };
-    interface HTMLMidwestSlidesElement extends Components.MidwestSlides, HTMLStencilElement {
-    }
-    var HTMLMidwestSlidesElement: {
-        prototype: HTMLMidwestSlidesElement;
-        new (): HTMLMidwestSlidesElement;
-    };
     interface HTMLMidwestStepElement extends Components.MidwestStep, HTMLStencilElement {
     }
     var HTMLMidwestStepElement: {
@@ -1444,8 +1350,6 @@ declare global {
         "midwest-rich-text": HTMLMidwestRichTextElement;
         "midwest-select": HTMLMidwestSelectElement;
         "midwest-show-if": HTMLMidwestShowIfElement;
-        "midwest-slide": HTMLMidwestSlideElement;
-        "midwest-slides": HTMLMidwestSlidesElement;
         "midwest-step": HTMLMidwestStepElement;
         "midwest-steps": HTMLMidwestStepsElement;
         "midwest-switch": HTMLMidwestSwitchElement;
@@ -2315,84 +2219,6 @@ declare namespace LocalJSX {
         "selector"?: string;
         "triggered"?: string;
     }
-    interface MidwestSlide {
-        "onSwitched"?: (event: CustomEvent<any>) => void;
-        "slideId"?: number;
-        "width"?: string;
-    }
-    interface MidwestSlides {
-        "autoHeight"?: boolean;
-        "autoplay"?: boolean;
-        "centeredSlides"?: boolean;
-        "direction"?: "horizontal" | "vertical";
-        "effect"?: "slide" | "fade" | "cube" | "coverflow" | "flip";
-        "initialSlide"?: number;
-        "loop"?: boolean;
-        "nested"?: boolean;
-        /**
-          * Emitted after the active slide has changed.
-         */
-        "onIonSlideDidChange"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the slider is actively being moved.
-         */
-        "onIonSlideDrag"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the next slide has ended.
-         */
-        "onIonSlideNextEnd"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the next slide has started.
-         */
-        "onIonSlideNextStart"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the previous slide has ended.
-         */
-        "onIonSlidePrevEnd"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the previous slide has started.
-         */
-        "onIonSlidePrevStart"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the slider is at the last slide.
-         */
-        "onIonSlideReachEnd"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the slider is at its initial position.
-         */
-        "onIonSlideReachStart"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the user releases the touch.
-         */
-        "onIonSlideTouchEnd"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the user first touches the slider.
-         */
-        "onIonSlideTouchStart"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the slide transition has ended.
-         */
-        "onIonSlideTransitionEnd"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted when the slide transition has started.
-         */
-        "onIonSlideTransitionStart"?: (event: CustomEvent<any>) => void;
-        /**
-          * Emitted before the active slide has changed.
-         */
-        "onIonSlideWillChange"?: (event: CustomEvent<any>) => void;
-        /**
-          * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
-         */
-        "options"?: any;
-        "pagination"?: boolean;
-        "responsive"?: boolean;
-        "slidesPerView"?: number;
-        "spaceBetween"?: number;
-        "speed"?: number;
-        "watchSlidesProgress"?: boolean;
-        "watchSlidesVisibility"?: boolean;
-    }
     interface MidwestStep {
         "base"?: ThemeableColors;
         "complete"?: boolean;
@@ -2598,8 +2424,6 @@ declare namespace LocalJSX {
         "midwest-rich-text": MidwestRichText;
         "midwest-select": MidwestSelect;
         "midwest-show-if": MidwestShowIf;
-        "midwest-slide": MidwestSlide;
-        "midwest-slides": MidwestSlides;
         "midwest-step": MidwestStep;
         "midwest-steps": MidwestSteps;
         "midwest-switch": MidwestSwitch;
@@ -2657,8 +2481,6 @@ declare module "@stencil/core" {
             "midwest-rich-text": LocalJSX.MidwestRichText & JSXBase.HTMLAttributes<HTMLMidwestRichTextElement>;
             "midwest-select": LocalJSX.MidwestSelect & JSXBase.HTMLAttributes<HTMLMidwestSelectElement>;
             "midwest-show-if": LocalJSX.MidwestShowIf & JSXBase.HTMLAttributes<HTMLMidwestShowIfElement>;
-            "midwest-slide": LocalJSX.MidwestSlide & JSXBase.HTMLAttributes<HTMLMidwestSlideElement>;
-            "midwest-slides": LocalJSX.MidwestSlides & JSXBase.HTMLAttributes<HTMLMidwestSlidesElement>;
             "midwest-step": LocalJSX.MidwestStep & JSXBase.HTMLAttributes<HTMLMidwestStepElement>;
             "midwest-steps": LocalJSX.MidwestSteps & JSXBase.HTMLAttributes<HTMLMidwestStepsElement>;
             "midwest-switch": LocalJSX.MidwestSwitch & JSXBase.HTMLAttributes<HTMLMidwestSwitchElement>;
