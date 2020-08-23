@@ -15,7 +15,11 @@ export class Slide {
 
   componentWillLoad() {
     if (this.el.closest('midwest-slides')) {
-      this.swiper = (this.el.closest('midwest-slides').nodeName === "STELLAR-SLIDES");
+      this.swiper = (this.el.closest('midwest-slides').nodeName === "MIDWEST-SLIDES");
+    }
+
+    if (this.el.closest('midwest-slick-slides')) {
+      this.swiper = (this.el.closest('midwest-slick-slides').nodeName === "MIDWEST-SLICK-SLIDES");
     }
   }
 
