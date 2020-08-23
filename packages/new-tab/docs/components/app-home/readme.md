@@ -14,7 +14,6 @@
 - [midwest-docs](../docs)
 - midwest-grid
 - [display-feed](../display-feed)
-- midwest-starscape
 
 ### Graph
 ```mermaid
@@ -24,7 +23,6 @@ graph TD;
   app-home --> midwest-docs
   app-home --> midwest-grid
   app-home --> display-feed
-  app-home --> midwest-starscape
   midwest-docs --> midwest-input
   midwest-docs --> midwest-switch
   midwest-docs --> midwest-select

@@ -179,18 +179,6 @@ export namespace Components {
         "pjax": any;
         "replace": (selector: any, url: any) => Promise<void>;
     }
-    interface MidwestScatter {
-        "colors": boolean;
-        "float": boolean;
-        "max": number;
-        "min": number;
-        "sizes": boolean;
-    }
-    interface MidwestStarscape {
-    }
-    interface MidwestStory {
-        "target": string;
-    }
 }
 declare global {
     interface HTMLHorizontalScrollElement extends Components.HorizontalScroll, HTMLStencilElement {
@@ -319,24 +307,6 @@ declare global {
         prototype: HTMLMidwestPjaxElement;
         new (): HTMLMidwestPjaxElement;
     };
-    interface HTMLMidwestScatterElement extends Components.MidwestScatter, HTMLStencilElement {
-    }
-    var HTMLMidwestScatterElement: {
-        prototype: HTMLMidwestScatterElement;
-        new (): HTMLMidwestScatterElement;
-    };
-    interface HTMLMidwestStarscapeElement extends Components.MidwestStarscape, HTMLStencilElement {
-    }
-    var HTMLMidwestStarscapeElement: {
-        prototype: HTMLMidwestStarscapeElement;
-        new (): HTMLMidwestStarscapeElement;
-    };
-    interface HTMLMidwestStoryElement extends Components.MidwestStory, HTMLStencilElement {
-    }
-    var HTMLMidwestStoryElement: {
-        prototype: HTMLMidwestStoryElement;
-        new (): HTMLMidwestStoryElement;
-    };
     interface HTMLElementTagNameMap {
         "horizontal-scroll": HTMLHorizontalScrollElement;
         "midwest-asset-library": HTMLMidwestAssetLibraryElement;
@@ -359,9 +329,6 @@ declare global {
         "midwest-onboarding": HTMLMidwestOnboardingElement;
         "midwest-onboarding-step": HTMLMidwestOnboardingStepElement;
         "midwest-pjax": HTMLMidwestPjaxElement;
-        "midwest-scatter": HTMLMidwestScatterElement;
-        "midwest-starscape": HTMLMidwestStarscapeElement;
-        "midwest-story": HTMLMidwestStoryElement;
     }
 }
 declare namespace LocalJSX {
@@ -524,18 +491,6 @@ declare namespace LocalJSX {
     interface MidwestPjax {
         "pjax"?: any;
     }
-    interface MidwestScatter {
-        "colors"?: boolean;
-        "float"?: boolean;
-        "max"?: number;
-        "min"?: number;
-        "sizes"?: boolean;
-    }
-    interface MidwestStarscape {
-    }
-    interface MidwestStory {
-        "target"?: string;
-    }
     interface IntrinsicElements {
         "horizontal-scroll": HorizontalScroll;
         "midwest-asset-library": MidwestAssetLibrary;
@@ -558,9 +513,6 @@ declare namespace LocalJSX {
         "midwest-onboarding": MidwestOnboarding;
         "midwest-onboarding-step": MidwestOnboardingStep;
         "midwest-pjax": MidwestPjax;
-        "midwest-scatter": MidwestScatter;
-        "midwest-starscape": MidwestStarscape;
-        "midwest-story": MidwestStory;
     }
 }
 export { LocalJSX as JSX };
@@ -588,9 +540,6 @@ declare module "@stencil/core" {
             "midwest-onboarding": LocalJSX.MidwestOnboarding & JSXBase.HTMLAttributes<HTMLMidwestOnboardingElement>;
             "midwest-onboarding-step": LocalJSX.MidwestOnboardingStep & JSXBase.HTMLAttributes<HTMLMidwestOnboardingStepElement>;
             "midwest-pjax": LocalJSX.MidwestPjax & JSXBase.HTMLAttributes<HTMLMidwestPjaxElement>;
-            "midwest-scatter": LocalJSX.MidwestScatter & JSXBase.HTMLAttributes<HTMLMidwestScatterElement>;
-            "midwest-starscape": LocalJSX.MidwestStarscape & JSXBase.HTMLAttributes<HTMLMidwestStarscapeElement>;
-            "midwest-story": LocalJSX.MidwestStory & JSXBase.HTMLAttributes<HTMLMidwestStoryElement>;
         }
     }
 }

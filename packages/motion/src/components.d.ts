@@ -64,6 +64,84 @@ export namespace Components {
     }
     interface MidwestScrollZSection {
     }
+    interface MidwestSlickSlides {
+        "autoHeight": boolean;
+        "autoplay": boolean;
+        "centeredSlides": boolean;
+        "direction": "horizontal" | "vertical";
+        "effect": "slide" | "fade" | "cube" | "coverflow" | "flip";
+        /**
+          * Get the index of the active slide.
+         */
+        "getActiveIndex": () => Promise<number>;
+        /**
+          * Get the index of the previous slide.
+         */
+        "getPreviousIndex": () => Promise<number>;
+        "initialSlide": number;
+        "instance": () => Promise<any>;
+        /**
+          * Get whether or not the current slide is the first slide.
+         */
+        "isBeginning": () => Promise<boolean>;
+        /**
+          * Get whether or not the current slide is the last slide.
+         */
+        "isEnd": () => Promise<boolean>;
+        /**
+          * Get the total number of slides.
+         */
+        "length": () => Promise<number>;
+        /**
+          * Lock or unlock the ability to slide to the next slides.
+         */
+        "lockSwipeToNext": (shouldLockSwipeToNext: boolean) => Promise<any>;
+        /**
+          * Lock or unlock the ability to slide to the previous slides.
+         */
+        "lockSwipeToPrev": (shouldLockSwipeToPrev: boolean) => Promise<any>;
+        /**
+          * Lock or unlock the ability to slide to change slides.
+         */
+        "lockSwipes": (shouldLockSwipes: boolean) => Promise<any>;
+        "loop": boolean;
+        "nested": boolean;
+        /**
+          * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
+         */
+        "options": any;
+        "pagination": boolean;
+        "responsive": boolean;
+        /**
+          * Transition to the next slide.
+         */
+        "slideNext": (speed?: number, runCallbacks?: boolean) => Promise<void>;
+        /**
+          * Transition to the previous slide.
+         */
+        "slidePrev": (speed?: number, runCallbacks?: boolean) => Promise<void>;
+        /**
+          * Transition to the specified slide.
+         */
+        "slideTo": (index: number, speed?: number, runCallbacks?: boolean) => Promise<void>;
+        "slidesPerView": number;
+        "spaceBetween": number;
+        "speed": number;
+        /**
+          * Start auto play.
+         */
+        "startAutoplay": () => Promise<void>;
+        /**
+          * Stop auto play.
+         */
+        "stopAutoplay": () => Promise<void>;
+        /**
+          * Update the underlying slider implementation. Call this if you've added or removed child slides.
+         */
+        "update": () => Promise<void>;
+        "watchSlidesProgress": boolean;
+        "watchSlidesVisibility": boolean;
+    }
     interface MidwestSlide {
         "slideId": number;
         "width": string;
@@ -145,6 +223,12 @@ declare global {
         prototype: HTMLMidwestScrollZSectionElement;
         new (): HTMLMidwestScrollZSectionElement;
     };
+    interface HTMLMidwestSlickSlidesElement extends Components.MidwestSlickSlides, HTMLStencilElement {
+    }
+    var HTMLMidwestSlickSlidesElement: {
+        prototype: HTMLMidwestSlickSlidesElement;
+        new (): HTMLMidwestSlickSlidesElement;
+    };
     interface HTMLMidwestSlideElement extends Components.MidwestSlide, HTMLStencilElement {
     }
     var HTMLMidwestSlideElement: {
@@ -180,6 +264,7 @@ declare global {
         "midwest-scatter": HTMLMidwestScatterElement;
         "midwest-scroll-z-root": HTMLMidwestScrollZRootElement;
         "midwest-scroll-z-section": HTMLMidwestScrollZSectionElement;
+        "midwest-slick-slides": HTMLMidwestSlickSlidesElement;
         "midwest-slide": HTMLMidwestSlideElement;
         "midwest-slides": HTMLMidwestSlidesElement;
         "midwest-starscape": HTMLMidwestStarscapeElement;
@@ -240,6 +325,79 @@ declare namespace LocalJSX {
     }
     interface MidwestScrollZSection {
     }
+    interface MidwestSlickSlides {
+        "autoHeight"?: boolean;
+        "autoplay"?: boolean;
+        "centeredSlides"?: boolean;
+        "direction"?: "horizontal" | "vertical";
+        "effect"?: "slide" | "fade" | "cube" | "coverflow" | "flip";
+        "initialSlide"?: number;
+        "loop"?: boolean;
+        "nested"?: boolean;
+        /**
+          * Emitted after the active slide has changed.
+         */
+        "onIonSlideDidChange"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slider is actively being moved.
+         */
+        "onIonSlideDrag"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the next slide has ended.
+         */
+        "onIonSlideNextEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the next slide has started.
+         */
+        "onIonSlideNextStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the previous slide has ended.
+         */
+        "onIonSlidePrevEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the previous slide has started.
+         */
+        "onIonSlidePrevStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slider is at the last slide.
+         */
+        "onIonSlideReachEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slider is at its initial position.
+         */
+        "onIonSlideReachStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the user releases the touch.
+         */
+        "onIonSlideTouchEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the user first touches the slider.
+         */
+        "onIonSlideTouchStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slide transition has ended.
+         */
+        "onIonSlideTransitionEnd"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the slide transition has started.
+         */
+        "onIonSlideTransitionStart"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted before the active slide has changed.
+         */
+        "onIonSlideWillChange"?: (event: CustomEvent<any>) => void;
+        /**
+          * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
+         */
+        "options"?: any;
+        "pagination"?: boolean;
+        "responsive"?: boolean;
+        "slidesPerView"?: number;
+        "spaceBetween"?: number;
+        "speed"?: number;
+        "watchSlidesProgress"?: boolean;
+        "watchSlidesVisibility"?: boolean;
+    }
     interface MidwestSlide {
         "onSwitched"?: (event: CustomEvent<any>) => void;
         "slideId"?: number;
@@ -271,6 +429,7 @@ declare namespace LocalJSX {
         "midwest-scatter": MidwestScatter;
         "midwest-scroll-z-root": MidwestScrollZRoot;
         "midwest-scroll-z-section": MidwestScrollZSection;
+        "midwest-slick-slides": MidwestSlickSlides;
         "midwest-slide": MidwestSlide;
         "midwest-slides": MidwestSlides;
         "midwest-starscape": MidwestStarscape;
@@ -291,6 +450,7 @@ declare module "@stencil/core" {
             "midwest-scatter": LocalJSX.MidwestScatter & JSXBase.HTMLAttributes<HTMLMidwestScatterElement>;
             "midwest-scroll-z-root": LocalJSX.MidwestScrollZRoot & JSXBase.HTMLAttributes<HTMLMidwestScrollZRootElement>;
             "midwest-scroll-z-section": LocalJSX.MidwestScrollZSection & JSXBase.HTMLAttributes<HTMLMidwestScrollZSectionElement>;
+            "midwest-slick-slides": LocalJSX.MidwestSlickSlides & JSXBase.HTMLAttributes<HTMLMidwestSlickSlidesElement>;
             "midwest-slide": LocalJSX.MidwestSlide & JSXBase.HTMLAttributes<HTMLMidwestSlideElement>;
             "midwest-slides": LocalJSX.MidwestSlides & JSXBase.HTMLAttributes<HTMLMidwestSlidesElement>;
             "midwest-starscape": LocalJSX.MidwestStarscape & JSXBase.HTMLAttributes<HTMLMidwestStarscapeElement>;
