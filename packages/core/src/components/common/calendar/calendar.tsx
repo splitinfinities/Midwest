@@ -3,7 +3,6 @@ import { Calendar, EventDef } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction';
 import dayjs from 'dayjs';
-import delay from 'async-delay';
 import { darkMode } from '@midwest-design/common';
 
 @Component({
@@ -30,33 +29,7 @@ export class MidwestCalendar {
   calendar: Calendar;
   calendarEl: HTMLDivElement;
 
-  options: any = {
-    plugins: [ interactionPlugin, dayGridPlugin ].filter(Boolean),
-    defaultView: 'dayGridMonth',
-    header: this.header ? this.header : this.noToolbar ? false : {
-      left: 'today',
-      center: 'title',
-      right: 'prevYear,prev,next,nextYear'
-    },
-    navLinks: false,
-    editable: true,
-    selectable: true,
-    selectOverlap: false,
-    selectAllow: (a) => this.selectRange || dayjs(a.end).diff(a.start, "day") === 1,
-    dateClick: (info) => {
-      this.dateClick.emit({
-        date: info.date,
-        value: info.dateStr
-      });
-    },
-    eventClick: (info) => {
-      if (this.pjax) {
-        info.jsEvent.preventDefault();
-        this.pjax.loadUrl(info.event.url)
-      }
-    },
-    events: []
-  }
+  options: any;
 
   get normalizedOpts (): any {
     return {
@@ -69,12 +42,42 @@ export class MidwestCalendar {
   }
 
   componentWillLoad() {
+    this.setOptions()
     darkMode(this)
+  }
+
+  setOptions() {
+    this.options = {
+      plugins: [ interactionPlugin, dayGridPlugin ].filter(Boolean),
+      defaultView: 'dayGridMonth',
+      header: this.header ? this.header : this.noToolbar ? false : {
+        left: 'today',
+        center: 'title',
+        right: 'prevYear,prev,next,nextYear'
+      },
+      navLinks: false,
+      editable: true,
+      selectable: true,
+      selectOverlap: false,
+      selectAllow: (a) => this.selectRange || dayjs(a.end).diff(a.start, "day") === 1,
+      dateClick: (info) => {
+        this.dateClick.emit({
+          date: info.date,
+          value: info.dateStr
+        });
+      },
+      eventClick: (info) => {
+        if (this.pjax) {
+          info.jsEvent.preventDefault();
+          this.pjax.loadUrl(info.event.url)
+        }
+      },
+      events: []
+    }
   }
 
   async componentDidLoad() {
     this.calendar = new Calendar(this.calendarEl, this.normalizedOpts);
-    await delay(200);
     this.calendar.render();
     this.calendar.gotoDate(dayjs(this.value).toDate());
     this.calendar.select({

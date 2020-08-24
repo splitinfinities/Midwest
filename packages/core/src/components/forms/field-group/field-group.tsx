@@ -66,7 +66,7 @@ export class SaFieldGroup {
     }
   }
 
-  @Listen("keydown", {target: "parent"})
+  @Listen("keydown", { target: "document" })
   async onKeyDown (e: KeyboardEvent) { 
     if (e.key === "Enter") {
       e.preventDefault();

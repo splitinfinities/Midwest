@@ -91,7 +91,7 @@ export class SaInputTags implements ComponentInterface {
     });
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
     this.tokenfield.remove();
   }
 

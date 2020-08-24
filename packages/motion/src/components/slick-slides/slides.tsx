@@ -134,7 +134,7 @@ export class SlickSlides {
     setTimeout(this.initSlides.bind(this), 10)
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
     this.swiper.destroy(true, true)
   }
 

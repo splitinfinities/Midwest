@@ -10,7 +10,7 @@ export class Devices {
   /**
    * The Device Name
    */
-  @Prop({reflectToAttr: true}) frame: "apple-tv"|"apple-tv-in-app"|"apple-watch-42-black"|"apple-watch-42-white"|"apple-watch-44-black"|"apple-watch-44-white"|"imac-pro"|"imac"|"ipad-pro-portrait"|"ipad-pro-landscape"|"iphone-8-silver"|"iphone-8-spacegray"|"iphone-8-plus-silver"|"iphone-8-plus-spacegray"|"iphone-xs"|"iphone-xs-max"|"ipod-touch-portrait-blue"|"ipod-touch-landscape-blue"|"ipod-touch-portrait-silver"|"ipod-touch-landscape-silver"|"macbook-air"|"macbook-pro" = "macbook-pro";
+  @Prop({ reflect: true }) frame: "apple-tv"|"apple-tv-in-app"|"apple-watch-42-black"|"apple-watch-42-white"|"apple-watch-44-black"|"apple-watch-44-white"|"imac-pro"|"imac"|"ipad-pro-portrait"|"ipad-pro-landscape"|"iphone-8-silver"|"iphone-8-spacegray"|"iphone-8-plus-silver"|"iphone-8-plus-spacegray"|"iphone-xs"|"iphone-xs-max"|"ipod-touch-portrait-blue"|"ipod-touch-landscape-blue"|"ipod-touch-portrait-silver"|"ipod-touch-landscape-silver"|"macbook-air"|"macbook-pro" = "macbook-pro";
 
   // Render device at retina size (rarely needed)
   @Prop() retina: boolean;

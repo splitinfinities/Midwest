@@ -52,8 +52,8 @@ export class Accordion {
     this.els = Array.from(this.element.querySelectorAll(":scope > *:not([slot='label']):not(midwest-field-group)"));
   }
 
-  @Listen('update', { target: 'parent' })
-  @Listen('test', { target: 'parent' })
+  @Listen('update', { target: 'document' })
+  @Listen('test', { target: 'document' })
   @Debouncer(200)
   async handleUpdate() {
     this.refresh()

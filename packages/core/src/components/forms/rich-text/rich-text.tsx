@@ -11,7 +11,7 @@ import { darkMode } from '@midwest-design/common';
 @Component({
   tag: 'midwest-rich-text',
   styleUrl: 'rich-text.css',
-  assetsDir: "assets"
+  assetsDirs: ["assets"]
 })
 
 export class RichText {

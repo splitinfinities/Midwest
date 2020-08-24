@@ -20,7 +20,7 @@ export class Intersection {
         this.addIntersectionObserver();
     }
 
-    componentDidUnload() {
+    disconnectedCallback() {
         this.removeIntersectionObserver();
     }
 

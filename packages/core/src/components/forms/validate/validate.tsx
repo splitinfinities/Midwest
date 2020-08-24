@@ -29,7 +29,7 @@ export class Validate implements ComponentInterface {
   hookedForm: HTMLMidwestFormElement;
   validator: Validator
 
-  componentDidUnload() {
+  disconnectedCallback() {
     if (this.hookedFieldGroups) {
       this.hookedFieldGroups.forEach((item) => {
         item.removeElement(this.element);

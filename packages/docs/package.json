@@ -25,6 +25,6 @@
     "@midwest-design/helpers": "^0.0.11",
     "@midwest-design/media": "^0.0.11",
     "@midwest-design/motion": "^0.0.4",
-    "@stencil/core": "^1.17.3"
+    "@stencil/core": "^2.0.0-6"
   }
 }
