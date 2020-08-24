@@ -80,7 +80,7 @@ export class Tab {
     if (!this.disabled) {
       e && e.preventDefault();
 
-      if (this.tag === "button") {
+      if (this.tag === "button" || this.tag === "stencil-route") {
         this.contentChange.emit({
           parent: this.parent,
           name: this.name.replace(/[#]/g, "")
@@ -163,12 +163,10 @@ export class Tab {
   }  
   
   renderStencilRoute() {
-    return (
-      <stencil-route-link role="tab" url={this.href} anchorClass="tab-button" data-disabled={this.disabled} onClick={(e) => { this.handleClick(e) }}>
-        {this.renderNotifications()}
-        {this.renderTitle()}
-      </stencil-route-link>
-    );
+    return <stencil-route-link role="tab" url={this.href} anchorClass="tab-button" data-disabled={this.disabled} onClick={(e) => { this.handleClick(e) }}>
+      {this.notifications && this.renderNotifications()}
+      {this.renderTitle()}
+    </stencil-route-link>
   }
 
 
