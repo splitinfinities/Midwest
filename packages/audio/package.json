@@ -1,7 +1,7 @@
 {
   "name": "@midwest-design/audio",
   "public": true,
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Stencil Component Starter",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",
@@ -25,8 +25,8 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@midwest-design/common": "^0.0.11",
     "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@midwest-design/common": "^0.0.12",
     "@stencil/core": "^2.0.0-6",
     "@stencil/postcss": "^1.0.1",
     "autoprefixer": "^9.8.6",
