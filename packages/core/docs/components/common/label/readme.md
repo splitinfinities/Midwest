@@ -23,7 +23,6 @@
 
 ### Used by
 
- - [midwest-autocomplete](../../forms/autocomplete)
  - [midwest-breadcrumbs](../breadcrumbs)
  - [midwest-button](../button)
  - [midwest-calendar-date](../calendar-date)
@@ -48,7 +47,6 @@
 ### Graph
 ```mermaid
 graph TD;
-  midwest-autocomplete --> midwest-label
   midwest-breadcrumbs --> midwest-label
   midwest-button --> midwest-label
   midwest-calendar-date --> midwest-label

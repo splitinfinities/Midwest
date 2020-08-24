@@ -59,10 +59,6 @@ Type: `Promise<FormResult>`
 
 ## Dependencies
 
-### Used by
-
- - [midwest-autocomplete](../autocomplete)
-
 ### Depends on
 
 - [midwest-avatar](../../common/avatar)
@@ -85,7 +81,6 @@ graph TD;
   midwest-avatar --> ion-icon
   midwest-avatar --> midwest-tooltip
   midwest-box --> ion-icon
-  midwest-autocomplete --> midwest-item
   style midwest-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

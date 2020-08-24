@@ -37,7 +37,6 @@ Type: `Promise<void>`
 
 ### Used by
 
- - [midwest-autocomplete](../autocomplete)
  - [midwest-select](../select)
 
 ### Depends on
@@ -61,7 +60,6 @@ graph TD;
   midwest-tag --> midwest-label
   midwest-group-overflow --> midwest-label
   midwest-group-overflow --> midwest-tooltip
-  midwest-autocomplete --> midwest-form-rollup
   midwest-select --> midwest-form-rollup
   style midwest-form-rollup fill:#f9f,stroke:#333,stroke-width:4px
 ```

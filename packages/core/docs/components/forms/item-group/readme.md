@@ -16,10 +16,6 @@
 
 ## Dependencies
 
-### Used by
-
- - [midwest-autocomplete](../autocomplete)
-
 ### Depends on
 
 - [midwest-label](../../common/label)
@@ -28,7 +24,6 @@
 ```mermaid
 graph TD;
   midwest-item-group --> midwest-label
-  midwest-autocomplete --> midwest-item-group
   style midwest-item-group fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

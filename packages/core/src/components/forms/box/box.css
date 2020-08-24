@@ -53,12 +53,17 @@
 }
 
 :host([dark]) {
-  --border-color: var(--gray7);
-  --background: var(--gray8);
+  --border-color: var(--gray9);
+  --background: var(--gray12);
   --focus: var(--gray0);
   --border-radius: 0.1em;
   --active-background: var(--theme-base-6);
   --active-border-color: var(--theme-base-7);
+}
+
+
+:host([dark]) .indicator {
+  color: var(--theme-base-10);
 }
 
 :host([radio]) .indicator {

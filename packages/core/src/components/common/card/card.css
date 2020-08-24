@@ -328,8 +328,8 @@
 }
 
 :host([dark]) {
-  --border: 1px solid var(--gray8);
-  --background: var(--gray9);
-  --background-active: var(--gray8);
-  --flipped-background: var(--gray9);
+  --border: 1px solid var(--gray10);
+  --background: var(--gray11);
+  --background-active: var(--gray10);
+  --flipped-background: var(--gray11);
 }

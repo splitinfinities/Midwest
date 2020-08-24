@@ -119,7 +119,6 @@ Type: `Promise<FormResult>`
 
 ### Used by
 
- - [midwest-autocomplete](../autocomplete)
  - [midwest-pagination](../../common/pagination)
  - [midwest-select](../select)
 
@@ -140,7 +139,6 @@ graph TD;
   midwest-input --> midwest-tooltip
   midwest-input --> midwest-validate
   midwest-validate --> midwest-label
-  midwest-autocomplete --> midwest-input
   midwest-pagination --> midwest-input
   midwest-select --> midwest-input
   style midwest-input fill:#f9f,stroke:#333,stroke-width:4px

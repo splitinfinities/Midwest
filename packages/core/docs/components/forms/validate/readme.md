@@ -54,7 +54,6 @@ Type: `Promise<FormResult>`
 
 ### Used by
 
- - [midwest-autocomplete](../autocomplete)
  - [midwest-input](../input)
  - [midwest-input-date](../input-date)
  - [midwest-input-file](../input-file)
@@ -72,7 +71,6 @@ Type: `Promise<FormResult>`
 ```mermaid
 graph TD;
   midwest-validate --> midwest-label
-  midwest-autocomplete --> midwest-validate
   midwest-input --> midwest-validate
   midwest-input-date --> midwest-validate
   midwest-input-file --> midwest-validate

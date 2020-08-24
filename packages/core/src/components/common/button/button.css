@@ -284,9 +284,9 @@
 
 :host([dark]) {
   --background: var(--theme-base-6);
-  --color: var(--white);
+  --color: var(--theme-base-11);
   --active-background: var(--theme-base-7);
-  --active-color: var(--white);
+  --active-color: var(--theme-base-11);
   --active-border: none;
 }
 

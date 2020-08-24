@@ -5,7 +5,6 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Item } from "./components/forms/item/item";
 import { Calendar, EventDef } from "@fullcalendar/core";
 export namespace Components {
     interface CopyWrap {
@@ -26,31 +25,6 @@ export namespace Components {
         "valid": boolean;
         "validate": boolean;
         "validateThis": () => Promise<void>;
-    }
-    interface MidwestAutocomplete {
-        "dark": boolean;
-        "dummy": boolean;
-        "freeTextField": string;
-        "groups": string[];
-        "inline": boolean;
-        "label": string;
-        "name": string;
-        "noAvatars": boolean;
-        "open": boolean;
-        "optionEls": () => Promise<HTMLMidwestItemElement[]>;
-        "options": Item[];
-        "placeholder": string;
-        "position": "up"|"down";
-        "ready": boolean;
-        "required": boolean;
-        "results": number;
-        "selected": Item[];
-        "tag": "radio"|"checkbox"|"a"|"button";
-        "url": string;
-        "valid": boolean;
-        "validate": (set?: boolean) => Promise<FormResult>;
-        "value": string[]|string;
-        "verbiage": string;
     }
     interface MidwestAvatar {
         "color": string;
@@ -1016,12 +990,6 @@ declare global {
         prototype: HTMLMidwestAccordionElement;
         new (): HTMLMidwestAccordionElement;
     };
-    interface HTMLMidwestAutocompleteElement extends Components.MidwestAutocomplete, HTMLStencilElement {
-    }
-    var HTMLMidwestAutocompleteElement: {
-        prototype: HTMLMidwestAutocompleteElement;
-        new (): HTMLMidwestAutocompleteElement;
-    };
     interface HTMLMidwestAvatarElement extends Components.MidwestAvatar, HTMLStencilElement {
     }
     var HTMLMidwestAvatarElement: {
@@ -1313,7 +1281,6 @@ declare global {
     interface HTMLElementTagNameMap {
         "copy-wrap": HTMLCopyWrapElement;
         "midwest-accordion": HTMLMidwestAccordionElement;
-        "midwest-autocomplete": HTMLMidwestAutocompleteElement;
         "midwest-avatar": HTMLMidwestAvatarElement;
         "midwest-box": HTMLMidwestBoxElement;
         "midwest-breadcrumb": HTMLMidwestBreadcrumbElement;
@@ -1383,32 +1350,6 @@ declare namespace LocalJSX {
         "tight"?: boolean;
         "valid"?: boolean;
         "validate"?: boolean;
-    }
-    interface MidwestAutocomplete {
-        "dark"?: boolean;
-        "dummy"?: boolean;
-        "freeTextField"?: string;
-        "groups"?: string[];
-        "inline"?: boolean;
-        "label"?: string;
-        "name"?: string;
-        "noAvatars"?: boolean;
-        "onCustom"?: (event: CustomEvent<any>) => void;
-        "onPredefined"?: (event: CustomEvent<any>) => void;
-        "onSelectionChanged"?: (event: CustomEvent<any>) => void;
-        "open"?: boolean;
-        "options"?: Item[];
-        "placeholder"?: string;
-        "position"?: "up"|"down";
-        "ready"?: boolean;
-        "required"?: boolean;
-        "results"?: number;
-        "selected"?: Item[];
-        "tag"?: "radio"|"checkbox"|"a"|"button";
-        "url"?: string;
-        "valid"?: boolean;
-        "value"?: string[]|string;
-        "verbiage"?: string;
     }
     interface MidwestAvatar {
         "color"?: string;
@@ -2387,7 +2328,6 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "copy-wrap": CopyWrap;
         "midwest-accordion": MidwestAccordion;
-        "midwest-autocomplete": MidwestAutocomplete;
         "midwest-avatar": MidwestAvatar;
         "midwest-box": MidwestBox;
         "midwest-breadcrumb": MidwestBreadcrumb;
@@ -2444,7 +2384,6 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "copy-wrap": LocalJSX.CopyWrap & JSXBase.HTMLAttributes<HTMLCopyWrapElement>;
             "midwest-accordion": LocalJSX.MidwestAccordion & JSXBase.HTMLAttributes<HTMLMidwestAccordionElement>;
-            "midwest-autocomplete": LocalJSX.MidwestAutocomplete & JSXBase.HTMLAttributes<HTMLMidwestAutocompleteElement>;
             "midwest-avatar": LocalJSX.MidwestAvatar & JSXBase.HTMLAttributes<HTMLMidwestAvatarElement>;
             "midwest-box": LocalJSX.MidwestBox & JSXBase.HTMLAttributes<HTMLMidwestBoxElement>;
             "midwest-breadcrumb": LocalJSX.MidwestBreadcrumb & JSXBase.HTMLAttributes<HTMLMidwestBreadcrumbElement>;

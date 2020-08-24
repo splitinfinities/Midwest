@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../BarCamp/app"
+		},
+		{
+			"path": "../test-monorepo"
 		}
 	],
 	"settings": {}

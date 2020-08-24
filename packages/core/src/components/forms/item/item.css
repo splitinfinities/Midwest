@@ -22,13 +22,18 @@
 }
 
 :host([dark]) {
-  background: var(--black);
+  background: transparent;
+}
+
+:host([dark]) ::slotted(*),
+:host([dark]) .block-content {
+  color: var(--white)
 }
 
 :host([dark]:hover),
 :host([dark]:focus),
 :host([dark]:focus-within) {
-  background: var(--gray9);
+  background: var(--gray10);
 }
 
 :host([icon]) .supplementalIcon {
@@ -188,13 +193,20 @@
 :host([block]):focus-within .wrapper,
 :host([block]) .clickable:hover .wrapper,
 :host([block]) .clickable:focus .wrapper {
-  background: var(--hover-background);
+  background: var(--gray0);
 }
 
-:host([block]):focus-within .clickable,
-:host([block]) .clickable:hover,
-:host([block]) .clickable:focus {
-  border-color: var(--gray3);
+
+:host([block][dark]):focus-within .wrapper,
+:host([block][dark]) .clickable:hover .wrapper,
+:host([block][dark]) .clickable:focus .wrapper {
+  background: var(--gray11);
+}
+
+:host([block][dark]):focus-within .clickable,
+:host([block][dark]) .clickable:hover,
+:host([block][dark]) .clickable:focus {
+  border-color: var(--gray12);
 }
 
 :host([block]) .clickable:active {
@@ -262,20 +274,6 @@
   border-color: var(--background);
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  :host([has-selected]) .selected {
-    border-top: 1px solid var(--gray1);
-    background: white;
-    flex: 1 1 100%;
-    width: 100%;
-    max-height: 0;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: none;
-  }
-}
-
 :host([has-selected]) .selected {
   border-top: 1px solid var(--gray1);
   background: white;
@@ -286,14 +284,6 @@
   overflow: hidden;
   opacity: 0;
   transition: opacity 350ms var(--ease) 0s, max-height 350ms var(--ease) 0s;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  :host([has-selected]) .selected .selected-wrapper {
-    padding: 1.5rem;
-    transform: translate3d(0, -1.5rem, 0);
-    transition: none;
-  }
 }
 
 :host([has-selected]) .selected .selected-wrapper {
