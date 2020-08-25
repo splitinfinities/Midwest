@@ -8,6 +8,7 @@ export const typicalStencilConfig = {
     { type: 'dist-custom-elements-bundle' },
     { type: "docs-vscode", file: './docs/vscode/html.html-data.json', sourceCodeBaseUrl: 'https://github.com/splitinfinities/midwest/' },
     { type: 'docs-readme', dir: "./docs" },
+    { type: 'docs-readme' },
     { type: "docs-json", file: "./docs/documentation.json" },
     { type: 'www', serviceWorker: null },
     { type: "stats", file: "./docs/stats.json" },

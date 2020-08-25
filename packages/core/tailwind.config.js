@@ -43,8 +43,7 @@ module.exports = {
           return `midwest-theme.light-mode .${e(`focus${separator}${className}`)}:focus`
         })
       })
-    },
-    require('tailwindcss-animations'),
+    }
   ],
   variants: {
     borderColor: ['responsive', 'hover', 'focus', 'dark-mode', 'dark-mode-hover', 'dark-mode-focus', 'light-mode', 'light-mode-hover', 'light-mode-focus'],

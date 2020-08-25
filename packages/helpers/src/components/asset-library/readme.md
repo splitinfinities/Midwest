@@ -9,7 +9,7 @@
 
 ### Depends on
 
-- [midwest-grid](../../ui/grid)
+- midwest-grid
 - [midwest-code](../code)
 
 ### Graph
@@ -18,13 +18,13 @@ graph TD;
   midwest-asset-library --> midwest-grid
   midwest-asset-library --> midwest-code
   midwest-code --> midwest-card
-  midwest-code --> context-consumer
+  midwest-code --> midwest-button
   midwest-card --> midwest-button
   midwest-card --> ion-icon
-  midwest-card --> context-consumer
-  midwest-button --> ion-icon
-  midwest-button --> stencil-route-link
-  midwest-button --> context-consumer
+  midwest-card --> export-to-figma
+  midwest-button --> midwest-progress
+  midwest-button --> midwest-label
+  midwest-button --> export-to-figma
   style midwest-asset-library fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

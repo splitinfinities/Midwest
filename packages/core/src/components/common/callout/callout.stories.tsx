@@ -1,18 +1,26 @@
 import notes from './readme.md';
-import { storiesOf } from '@storybook/html';
-import { text, select } from '@storybook/addon-knobs';
+import { withKnobs } from "@storybook/addon-knobs";
+import { withA11y } from "@storybook/addon-a11y";
+import { html } from 'lit-html';
+import { spreadProps } from '@open-wc/lit-helpers';
 
-storiesOf('UI|Callout', module)
-  .addParameters({
-    notes: {
-      markdown: notes,
+export default {
+	title: "Common/Callout",
+	component: "midwest-callout",
+	decorators: [withKnobs, withA11y],
+	notes: {
+		markdown: notes,
+	},
+  argTypes: {
+    content: {
+      defaultValue: "Button!",
+			control: { type: 'text' } 
     },
-  })
+    link: {
+      defaultValue: "Button!",
+			control: { type: 'text' } 
+    }
+  }
+};
 
-  .add('Default', () => {
-    return `
-      <midwest-callout type=${select("Type", ["alert", "error", "info", "success", "default"], "default")}>
-        <p>${text("Text", "Hello there!!")} <a href="#">${text("Link Text", "Click here")}</a></p>
-      </midwest-callout>
-    `;
-  });
+export const basic = ({ content, link, ...args }) => html`<midwest-callout ...="${spreadProps(args)}"><p>${content} <a href="#">${link}</a></p></midwest-callout>`;

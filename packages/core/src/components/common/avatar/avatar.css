@@ -180,7 +180,7 @@
 /* Processing */
 
 /* Processing */
-:host([processing]) midwest-progress {
+:host([processing]:not([processing="false"])) midwest-progress {
   font-size: 1.5em;
   width: 100%;
   height: 100%;
@@ -196,14 +196,14 @@
   color: white;
 }
 
-:host([processing]) .content {
+:host([processing]:not([processing="false"])) .content {
   filter: blur(10px) grayscale(75%);
 }
 
-:host([processing][shape="rectangle"]) midwest-progress,
-:host([processing][shape="star"]) midwest-progress,
-:host([processing][shape="diamond"]) midwest-progress,
-:host([processing][shape="hexagon"]) midwest-progress {
+:host([processing][shape="rectangle"]:not([processing="false"])) midwest-progress,
+:host([processing][shape="star"]:not([processing="false"])) midwest-progress,
+:host([processing][shape="diamond"]:not([processing="false"])) midwest-progress,
+:host([processing][shape="hexagon"]:not([processing="false"])) midwest-progress {
   font-size: 1em;
 }
 
@@ -214,7 +214,7 @@
   --avatar-text-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
 }
 
-:host([processing][dark]) midwest-progress {
+:host([processing][dark]:not([processing="false"])) midwest-progress {
   --theme-base-9: white !important;
   --theme-base-8: white !important;
   --theme-base-7: white !important;

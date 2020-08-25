@@ -1,33 +1,3 @@
-<script>
-  // Replace Stencil Polyfill document.baseURI
-  if (typeof document.baseURI !== 'string') {
-    Object.defineProperty(Document.prototype, 'baseURI', {
-      enumerable: true,
-      configurable: true,
-      get: function () {
-        var base = document.querySelector('base');
-        if (base && base.href) {
-          return base.href;
-        }
-        return document.URL;
-      }
-    });
-  }
-</script>
-<link rel="stylesheet" href="/build/design-system.css" />
-<script type="module" src="/build/design-system.esm.js"></script>
-<script nomodule src="/build/design-system.js"></script>
-<style>
-  .sb-show-main {
-    padding: 2rem;
-  }
-
-  #root {
-    height: 100vh;
-  }
-
-  midwest-code {
-    overflow: initial;
-  }
-</style>
-<ie-compat></ie-compat>
+<link rel="stylesheet" href="/core/core.css" />
+<script type="module" src="/core/core.esm.js"></script>
+<script nomodule src="/core/core.js"></script>
