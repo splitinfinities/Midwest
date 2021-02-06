@@ -13,434 +13,434 @@
 }
 
 .theme-gray {
-  --theme-base-0: var(--gray0);
-  --theme-base-1: var(--gray1);
-  --theme-base-2: var(--gray2);
-  --theme-base-3: var(--gray3);
-  --theme-base-4: var(--gray4);
-  --theme-base-5: var(--gray5);
-  --theme-base-6: var(--gray6);
-  --theme-base-7: var(--gray7);
-  --theme-base-8: var(--gray8);
-  --theme-base-9: var(--gray9);
-  --theme-base-10: var(--gray10);
-  --theme-base-11: var(--gray11);
-  --theme-base-12: var(--gray12);
+  --theme-0: var(--gray-0);
+  --theme-1: var(--gray-1);
+  --theme-2: var(--gray-2);
+  --theme-3: var(--gray-3);
+  --theme-4: var(--gray-4);
+  --theme-5: var(--gray-5);
+  --theme-6: var(--gray-6);
+  --theme-7: var(--gray-7);
+  --theme-8: var(--gray-8);
+  --theme-9: var(--gray-9);
+  --theme-10: var(--gray-10);
+  --theme-11: var(--gray-11);
+  --theme-12: var(--gray-12);
 }
 
 .theme-red {
-  --theme-base-0: var(--red0);
-  --theme-base-1: var(--red1);
-  --theme-base-2: var(--red2);
-  --theme-base-3: var(--red3);
-  --theme-base-4: var(--red4);
-  --theme-base-5: var(--red5);
-  --theme-base-6: var(--red6);
-  --theme-base-7: var(--red7);
-  --theme-base-8: var(--red8);
-  --theme-base-9: var(--red9);
-  --theme-base-10: var(--red10);
-  --theme-base-11: var(--red11);
-  --theme-base-12: var(--red12);
+  --theme-0: var(--red-0);
+  --theme-1: var(--red-1);
+  --theme-2: var(--red-2);
+  --theme-3: var(--red-3);
+  --theme-4: var(--red-4);
+  --theme-5: var(--red-5);
+  --theme-6: var(--red-6);
+  --theme-7: var(--red-7);
+  --theme-8: var(--red-8);
+  --theme-9: var(--red-9);
+  --theme-10: var(--red-10);
+  --theme-11: var(--red-11);
+  --theme-12: var(--red-12);
 }
 
 .theme-orange {
-  --theme-base-0: var(--orange0);
-  --theme-base-1: var(--orange1);
-  --theme-base-2: var(--orange2);
-  --theme-base-3: var(--orange3);
-  --theme-base-4: var(--orange4);
-  --theme-base-5: var(--orange5);
-  --theme-base-6: var(--orange6);
-  --theme-base-7: var(--orange7);
-  --theme-base-8: var(--orange8);
-  --theme-base-9: var(--orange9);
-  --theme-base-10: var(--orange10);
-  --theme-base-11: var(--orange11);
-  --theme-base-12: var(--orange12);
+  --theme-0: var(--orange-0);
+  --theme-1: var(--orange-1);
+  --theme-2: var(--orange-2);
+  --theme-3: var(--orange-3);
+  --theme-4: var(--orange-4);
+  --theme-5: var(--orange-5);
+  --theme-6: var(--orange-6);
+  --theme-7: var(--orange-7);
+  --theme-8: var(--orange-8);
+  --theme-9: var(--orange-9);
+  --theme-10: var(--orange-10);
+  --theme-11: var(--orange-11);
+  --theme-12: var(--orange-12);
 }
 
 .theme-gold {
-  --theme-base-0: var(--gold0);
-  --theme-base-1: var(--gold1);
-  --theme-base-2: var(--gold2);
-  --theme-base-3: var(--gold3);
-  --theme-base-4: var(--gold4);
-  --theme-base-5: var(--gold5);
-  --theme-base-6: var(--gold6);
-  --theme-base-7: var(--gold7);
-  --theme-base-8: var(--gold8);
-  --theme-base-9: var(--gold9);
-  --theme-base-10: var(--gold10);
-  --theme-base-11: var(--gold11);
-  --theme-base-12: var(--gold12);
+  --theme-0: var(--gold-0);
+  --theme-1: var(--gold-1);
+  --theme-2: var(--gold-2);
+  --theme-3: var(--gold-3);
+  --theme-4: var(--gold-4);
+  --theme-5: var(--gold-5);
+  --theme-6: var(--gold-6);
+  --theme-7: var(--gold-7);
+  --theme-8: var(--gold-8);
+  --theme-9: var(--gold-9);
+  --theme-10: var(--gold-10);
+  --theme-11: var(--gold-11);
+  --theme-12: var(--gold-12);
 }
 
 .theme-yellow {
-  --theme-base-0: var(--yellow0);
-  --theme-base-1: var(--yellow1);
-  --theme-base-2: var(--yellow2);
-  --theme-base-3: var(--yellow3);
-  --theme-base-4: var(--yellow4);
-  --theme-base-5: var(--yellow5);
-  --theme-base-6: var(--yellow6);
-  --theme-base-7: var(--yellow7);
-  --theme-base-8: var(--yellow8);
-  --theme-base-9: var(--yellow9);
-  --theme-base-10: var(--yellow10);
-  --theme-base-11: var(--yellow11);
-  --theme-base-12: var(--yellow12);
+  --theme-0: var(--yellow-0);
+  --theme-1: var(--yellow-1);
+  --theme-2: var(--yellow-2);
+  --theme-3: var(--yellow-3);
+  --theme-4: var(--yellow-4);
+  --theme-5: var(--yellow-5);
+  --theme-6: var(--yellow-6);
+  --theme-7: var(--yellow-7);
+  --theme-8: var(--yellow-8);
+  --theme-9: var(--yellow-9);
+  --theme-10: var(--yellow-10);
+  --theme-11: var(--yellow-11);
+  --theme-12: var(--yellow-12);
 }
 
 .theme-lime {
-  --theme-base-0: var(--lime0);
-  --theme-base-1: var(--lime1);
-  --theme-base-2: var(--lime2);
-  --theme-base-3: var(--lime3);
-  --theme-base-4: var(--lime4);
-  --theme-base-5: var(--lime5);
-  --theme-base-6: var(--lime6);
-  --theme-base-7: var(--lime7);
-  --theme-base-8: var(--lime8);
-  --theme-base-9: var(--lime9);
-  --theme-base-10: var(--lime10);
-  --theme-base-11: var(--lime11);
-  --theme-base-12: var(--lime12);
+  --theme-0: var(--lime-0);
+  --theme-1: var(--lime-1);
+  --theme-2: var(--lime-2);
+  --theme-3: var(--lime-3);
+  --theme-4: var(--lime-4);
+  --theme-5: var(--lime-5);
+  --theme-6: var(--lime-6);
+  --theme-7: var(--lime-7);
+  --theme-8: var(--lime-8);
+  --theme-9: var(--lime-9);
+  --theme-10: var(--lime-10);
+  --theme-11: var(--lime-11);
+  --theme-12: var(--lime-12);
 }
 
 .theme-green {
-  --theme-base-0: var(--green0);
-  --theme-base-1: var(--green1);
-  --theme-base-2: var(--green2);
-  --theme-base-3: var(--green3);
-  --theme-base-4: var(--green4);
-  --theme-base-5: var(--green5);
-  --theme-base-6: var(--green6);
-  --theme-base-7: var(--green7);
-  --theme-base-8: var(--green8);
-  --theme-base-9: var(--green9);
-  --theme-base-10: var(--green10);
-  --theme-base-11: var(--green11);
-  --theme-base-12: var(--green12);
+  --theme-0: var(--green-0);
+  --theme-1: var(--green-1);
+  --theme-2: var(--green-2);
+  --theme-3: var(--green-3);
+  --theme-4: var(--green-4);
+  --theme-5: var(--green-5);
+  --theme-6: var(--green-6);
+  --theme-7: var(--green-7);
+  --theme-8: var(--green-8);
+  --theme-9: var(--green-9);
+  --theme-10: var(--green-10);
+  --theme-11: var(--green-11);
+  --theme-12: var(--green-12);
 }
 
 .theme-teal {
-  --theme-base-0: var(--teal0);
-  --theme-base-1: var(--teal1);
-  --theme-base-2: var(--teal2);
-  --theme-base-3: var(--teal3);
-  --theme-base-4: var(--teal4);
-  --theme-base-5: var(--teal5);
-  --theme-base-6: var(--teal6);
-  --theme-base-7: var(--teal7);
-  --theme-base-8: var(--teal8);
-  --theme-base-9: var(--teal9);
-  --theme-base-10: var(--teal10);
-  --theme-base-11: var(--teal11);
-  --theme-base-12: var(--teal12);
+  --theme-0: var(--teal-0);
+  --theme-1: var(--teal-1);
+  --theme-2: var(--teal-2);
+  --theme-3: var(--teal-3);
+  --theme-4: var(--teal-4);
+  --theme-5: var(--teal-5);
+  --theme-6: var(--teal-6);
+  --theme-7: var(--teal-7);
+  --theme-8: var(--teal-8);
+  --theme-9: var(--teal-9);
+  --theme-10: var(--teal-10);
+  --theme-11: var(--teal-11);
+  --theme-12: var(--teal-12);
 }
 
 .theme-cyan {
-  --theme-base-0: var(--cyan0);
-  --theme-base-1: var(--cyan1);
-  --theme-base-2: var(--cyan2);
-  --theme-base-3: var(--cyan3);
-  --theme-base-4: var(--cyan4);
-  --theme-base-5: var(--cyan5);
-  --theme-base-6: var(--cyan6);
-  --theme-base-7: var(--cyan7);
-  --theme-base-8: var(--cyan8);
-  --theme-base-9: var(--cyan9);
-  --theme-base-10: var(--cyan10);
-  --theme-base-11: var(--cyan11);
-  --theme-base-12: var(--cyan12);
+  --theme-0: var(--cyan-0);
+  --theme-1: var(--cyan-1);
+  --theme-2: var(--cyan-2);
+  --theme-3: var(--cyan-3);
+  --theme-4: var(--cyan-4);
+  --theme-5: var(--cyan-5);
+  --theme-6: var(--cyan-6);
+  --theme-7: var(--cyan-7);
+  --theme-8: var(--cyan-8);
+  --theme-9: var(--cyan-9);
+  --theme-10: var(--cyan-10);
+  --theme-11: var(--cyan-11);
+  --theme-12: var(--cyan-12);
 }
 
 .theme-blue {
-  --theme-base-0: var(--blue0);
-  --theme-base-1: var(--blue1);
-  --theme-base-2: var(--blue2);
-  --theme-base-3: var(--blue3);
-  --theme-base-4: var(--blue4);
-  --theme-base-5: var(--blue5);
-  --theme-base-6: var(--blue6);
-  --theme-base-7: var(--blue7);
-  --theme-base-8: var(--blue8);
-  --theme-base-9: var(--blue9);
-  --theme-base-10: var(--blue10);
-  --theme-base-11: var(--blue11);
-  --theme-base-12: var(--blue12);
+  --theme-0: var(--blue-0);
+  --theme-1: var(--blue-1);
+  --theme-2: var(--blue-2);
+  --theme-3: var(--blue-3);
+  --theme-4: var(--blue-4);
+  --theme-5: var(--blue-5);
+  --theme-6: var(--blue-6);
+  --theme-7: var(--blue-7);
+  --theme-8: var(--blue-8);
+  --theme-9: var(--blue-9);
+  --theme-10: var(--blue-10);
+  --theme-11: var(--blue-11);
+  --theme-12: var(--blue-12);
 }
 
 .theme-indigo {
-  --theme-base-0: var(--indigo0);
-  --theme-base-1: var(--indigo1);
-  --theme-base-2: var(--indigo2);
-  --theme-base-3: var(--indigo3);
-  --theme-base-4: var(--indigo4);
-  --theme-base-5: var(--indigo5);
-  --theme-base-6: var(--indigo6);
-  --theme-base-7: var(--indigo7);
-  --theme-base-8: var(--indigo8);
-  --theme-base-9: var(--indigo9);
-  --theme-base-10: var(--indigo10);
-  --theme-base-11: var(--indigo11);
-  --theme-base-12: var(--indigo12);
+  --theme-0: var(--indigo-0);
+  --theme-1: var(--indigo-1);
+  --theme-2: var(--indigo-2);
+  --theme-3: var(--indigo-3);
+  --theme-4: var(--indigo-4);
+  --theme-5: var(--indigo-5);
+  --theme-6: var(--indigo-6);
+  --theme-7: var(--indigo-7);
+  --theme-8: var(--indigo-8);
+  --theme-9: var(--indigo-9);
+  --theme-10: var(--indigo-10);
+  --theme-11: var(--indigo-11);
+  --theme-12: var(--indigo-12);
 }
 
 .theme-violet {
-  --theme-base-0: var(--violet0);
-  --theme-base-1: var(--violet1);
-  --theme-base-2: var(--violet2);
-  --theme-base-3: var(--violet3);
-  --theme-base-4: var(--violet4);
-  --theme-base-5: var(--violet5);
-  --theme-base-6: var(--violet6);
-  --theme-base-7: var(--violet7);
-  --theme-base-8: var(--violet8);
-  --theme-base-9: var(--violet9);
-  --theme-base-10: var(--violet10);
-  --theme-base-11: var(--violet11);
-  --theme-base-12: var(--violet12);
+  --theme-0: var(--violet-0);
+  --theme-1: var(--violet-1);
+  --theme-2: var(--violet-2);
+  --theme-3: var(--violet-3);
+  --theme-4: var(--violet-4);
+  --theme-5: var(--violet-5);
+  --theme-6: var(--violet-6);
+  --theme-7: var(--violet-7);
+  --theme-8: var(--violet-8);
+  --theme-9: var(--violet-9);
+  --theme-10: var(--violet-10);
+  --theme-11: var(--violet-11);
+  --theme-12: var(--violet-12);
 }
 
 .theme-magenta {
-  --theme-base-0: var(--magenta0);
-  --theme-base-1: var(--magenta1);
-  --theme-base-2: var(--magenta2);
-  --theme-base-3: var(--magenta3);
-  --theme-base-4: var(--magenta4);
-  --theme-base-5: var(--magenta5);
-  --theme-base-6: var(--magenta6);
-  --theme-base-7: var(--magenta7);
-  --theme-base-8: var(--magenta8);
-  --theme-base-9: var(--magenta9);
-  --theme-base-10: var(--magenta10);
-  --theme-base-11: var(--magenta11);
-  --theme-base-12: var(--magenta12);
+  --theme-0: var(--magenta-0);
+  --theme-1: var(--magenta-1);
+  --theme-2: var(--magenta-2);
+  --theme-3: var(--magenta-3);
+  --theme-4: var(--magenta-4);
+  --theme-5: var(--magenta-5);
+  --theme-6: var(--magenta-6);
+  --theme-7: var(--magenta-7);
+  --theme-8: var(--magenta-8);
+  --theme-9: var(--magenta-9);
+  --theme-10: var(--magenta-10);
+  --theme-11: var(--magenta-11);
+  --theme-12: var(--magenta-12);
 }
 
 .theme-pink {
-  --theme-base-0: var(--pink0);
-  --theme-base-1: var(--pink1);
-  --theme-base-2: var(--pink2);
-  --theme-base-3: var(--pink3);
-  --theme-base-4: var(--pink4);
-  --theme-base-5: var(--pink5);
-  --theme-base-6: var(--pink6);
-  --theme-base-7: var(--pink7);
-  --theme-base-8: var(--pink8);
-  --theme-base-9: var(--pink9);
-  --theme-base-10: var(--pink10);
-  --theme-base-11: var(--pink11);
-  --theme-base-12: var(--pink12);
+  --theme-0: var(--pink0);
+  --theme-1: var(--pink1);
+  --theme-2: var(--pink2);
+  --theme-3: var(--pink3);
+  --theme-4: var(--pink4);
+  --theme-5: var(--pink5);
+  --theme-6: var(--pink6);
+  --theme-7: var(--pink7);
+  --theme-8: var(--pink8);
+  --theme-9: var(--pink9);
+  --theme-10: var(--pink10);
+  --theme-11: var(--pink11);
+  --theme-12: var(--pink12);
 }
 
 /* Completing */
 .complement-gray {
-  --theme-complement-0: var(--gray0);
-  --theme-complement-1: var(--gray1);
-  --theme-complement-2: var(--gray2);
-  --theme-complement-3: var(--gray3);
-  --theme-complement-4: var(--gray4);
-  --theme-complement-5: var(--gray5);
-  --theme-complement-6: var(--gray6);
-  --theme-complement-7: var(--gray7);
-  --theme-complement-8: var(--gray8);
-  --theme-complement-9: var(--gray9);
-  --theme-complement-10: var(--gray10);
-  --theme-complement-11: var(--gray11);
-  --theme-complement-12: var(--gray12);
+  --complement-0: var(--gray-0);
+  --complement-1: var(--gray-1);
+  --complement-2: var(--gray-2);
+  --complement-3: var(--gray-3);
+  --complement-4: var(--gray-4);
+  --complement-5: var(--gray-5);
+  --complement-6: var(--gray-6);
+  --complement-7: var(--gray-7);
+  --complement-8: var(--gray-8);
+  --complement-9: var(--gray-9);
+  --complement-10: var(--gray-10);
+  --complement-11: var(--gray-11);
+  --complement-12: var(--gray-12);
 }
 
 .complement-red {
-  --theme-complement-0: var(--red0);
-  --theme-complement-1: var(--red1);
-  --theme-complement-2: var(--red2);
-  --theme-complement-3: var(--red3);
-  --theme-complement-4: var(--red4);
-  --theme-complement-5: var(--red5);
-  --theme-complement-6: var(--red6);
-  --theme-complement-7: var(--red7);
-  --theme-complement-8: var(--red8);
-  --theme-complement-9: var(--red9);
-  --theme-complement-10: var(--red10);
-  --theme-complement-11: var(--red11);
-  --theme-complement-12: var(--red12);
+  --complement-0: var(--red-0);
+  --complement-1: var(--red-1);
+  --complement-2: var(--red-2);
+  --complement-3: var(--red-3);
+  --complement-4: var(--red-4);
+  --complement-5: var(--red-5);
+  --complement-6: var(--red-6);
+  --complement-7: var(--red-7);
+  --complement-8: var(--red-8);
+  --complement-9: var(--red-9);
+  --complement-10: var(--red-10);
+  --complement-11: var(--red-11);
+  --complement-12: var(--red-12);
 }
 
 .complement-orange {
-  --theme-complement-0: var(--orange0);
-  --theme-complement-1: var(--orange1);
-  --theme-complement-2: var(--orange2);
-  --theme-complement-3: var(--orange3);
-  --theme-complement-4: var(--orange4);
-  --theme-complement-5: var(--orange5);
-  --theme-complement-6: var(--orange6);
-  --theme-complement-7: var(--orange7);
-  --theme-complement-8: var(--orange8);
-  --theme-complement-9: var(--orange9);
-  --theme-complement-10: var(--orange10);
-  --theme-complement-11: var(--orange11);
-  --theme-complement-12: var(--orange12);
+  --complement-0: var(--orange-0);
+  --complement-1: var(--orange-1);
+  --complement-2: var(--orange-2);
+  --complement-3: var(--orange-3);
+  --complement-4: var(--orange-4);
+  --complement-5: var(--orange-5);
+  --complement-6: var(--orange-6);
+  --complement-7: var(--orange-7);
+  --complement-8: var(--orange-8);
+  --complement-9: var(--orange-9);
+  --complement-10: var(--orange-10);
+  --complement-11: var(--orange-11);
+  --complement-12: var(--orange-12);
 }
 
 .complement-yellow {
-  --theme-complement-0: var(--yellow0);
-  --theme-complement-1: var(--yellow1);
-  --theme-complement-2: var(--yellow2);
-  --theme-complement-3: var(--yellow3);
-  --theme-complement-4: var(--yellow4);
-  --theme-complement-5: var(--yellow5);
-  --theme-complement-6: var(--yellow6);
-  --theme-complement-7: var(--yellow7);
-  --theme-complement-8: var(--yellow8);
-  --theme-complement-9: var(--yellow9);
-  --theme-complement-10: var(--yellow10);
-  --theme-complement-11: var(--yellow11);
-  --theme-complement-12: var(--yellow12);
+  --complement-0: var(--yellow-0);
+  --complement-1: var(--yellow-1);
+  --complement-2: var(--yellow-2);
+  --complement-3: var(--yellow-3);
+  --complement-4: var(--yellow-4);
+  --complement-5: var(--yellow-5);
+  --complement-6: var(--yellow-6);
+  --complement-7: var(--yellow-7);
+  --complement-8: var(--yellow-8);
+  --complement-9: var(--yellow-9);
+  --complement-10: var(--yellow-10);
+  --complement-11: var(--yellow-11);
+  --complement-12: var(--yellow-12);
 }
 
 .complement-lime {
-  --theme-complement-0: var(--lime0);
-  --theme-complement-1: var(--lime1);
-  --theme-complement-2: var(--lime2);
-  --theme-complement-3: var(--lime3);
-  --theme-complement-4: var(--lime4);
-  --theme-complement-5: var(--lime5);
-  --theme-complement-6: var(--lime6);
-  --theme-complement-7: var(--lime7);
-  --theme-complement-8: var(--lime8);
-  --theme-complement-9: var(--lime9);
-  --theme-complement-10: var(--lime10);
-  --theme-complement-11: var(--lime11);
-  --theme-complement-12: var(--lime12);
+  --complement-0: var(--lime-0);
+  --complement-1: var(--lime-1);
+  --complement-2: var(--lime-2);
+  --complement-3: var(--lime-3);
+  --complement-4: var(--lime-4);
+  --complement-5: var(--lime-5);
+  --complement-6: var(--lime-6);
+  --complement-7: var(--lime-7);
+  --complement-8: var(--lime-8);
+  --complement-9: var(--lime-9);
+  --complement-10: var(--lime-10);
+  --complement-11: var(--lime-11);
+  --complement-12: var(--lime-12);
 }
 
 .complement-green {
-  --theme-complement-0: var(--green0);
-  --theme-complement-1: var(--green1);
-  --theme-complement-2: var(--green2);
-  --theme-complement-3: var(--green3);
-  --theme-complement-4: var(--green4);
-  --theme-complement-5: var(--green5);
-  --theme-complement-6: var(--green6);
-  --theme-complement-7: var(--green7);
-  --theme-complement-8: var(--green8);
-  --theme-complement-9: var(--green9);
-  --theme-complement-10: var(--green10);
-  --theme-complement-11: var(--green11);
-  --theme-complement-12: var(--green12);
+  --complement-0: var(--green-0);
+  --complement-1: var(--green-1);
+  --complement-2: var(--green-2);
+  --complement-3: var(--green-3);
+  --complement-4: var(--green-4);
+  --complement-5: var(--green-5);
+  --complement-6: var(--green-6);
+  --complement-7: var(--green-7);
+  --complement-8: var(--green-8);
+  --complement-9: var(--green-9);
+  --complement-10: var(--green-10);
+  --complement-11: var(--green-11);
+  --complement-12: var(--green-12);
 }
 
 .complement-teal {
-  --theme-complement-0: var(--teal0);
-  --theme-complement-1: var(--teal1);
-  --theme-complement-2: var(--teal2);
-  --theme-complement-3: var(--teal3);
-  --theme-complement-4: var(--teal4);
-  --theme-complement-5: var(--teal5);
-  --theme-complement-6: var(--teal6);
-  --theme-complement-7: var(--teal7);
-  --theme-complement-8: var(--teal8);
-  --theme-complement-9: var(--teal9);
-  --theme-complement-10: var(--teal10);
-  --theme-complement-11: var(--teal11);
-  --theme-complement-12: var(--teal12);
+  --complement-0: var(--teal-0);
+  --complement-1: var(--teal-1);
+  --complement-2: var(--teal-2);
+  --complement-3: var(--teal-3);
+  --complement-4: var(--teal-4);
+  --complement-5: var(--teal-5);
+  --complement-6: var(--teal-6);
+  --complement-7: var(--teal-7);
+  --complement-8: var(--teal-8);
+  --complement-9: var(--teal-9);
+  --complement-10: var(--teal-10);
+  --complement-11: var(--teal-11);
+  --complement-12: var(--teal-12);
 }
 
 .complement-cyan {
-  --theme-complement-0: var(--cyan0);
-  --theme-complement-1: var(--cyan1);
-  --theme-complement-2: var(--cyan2);
-  --theme-complement-3: var(--cyan3);
-  --theme-complement-4: var(--cyan4);
-  --theme-complement-5: var(--cyan5);
-  --theme-complement-6: var(--cyan6);
-  --theme-complement-7: var(--cyan7);
-  --theme-complement-8: var(--cyan8);
-  --theme-complement-9: var(--cyan9);
-  --theme-complement-10: var(--cyan10);
-  --theme-complement-11: var(--cyan11);
-  --theme-complement-12: var(--cyan12);
+  --complement-0: var(--cyan-0);
+  --complement-1: var(--cyan-1);
+  --complement-2: var(--cyan-2);
+  --complement-3: var(--cyan-3);
+  --complement-4: var(--cyan-4);
+  --complement-5: var(--cyan-5);
+  --complement-6: var(--cyan-6);
+  --complement-7: var(--cyan-7);
+  --complement-8: var(--cyan-8);
+  --complement-9: var(--cyan-9);
+  --complement-10: var(--cyan-10);
+  --complement-11: var(--cyan-11);
+  --complement-12: var(--cyan-12);
 }
 
 .complement-blue {
-  --theme-complement-0: var(--blue0);
-  --theme-complement-1: var(--blue1);
-  --theme-complement-2: var(--blue2);
-  --theme-complement-3: var(--blue3);
-  --theme-complement-4: var(--blue4);
-  --theme-complement-5: var(--blue5);
-  --theme-complement-6: var(--blue6);
-  --theme-complement-7: var(--blue7);
-  --theme-complement-8: var(--blue8);
-  --theme-complement-9: var(--blue9);
-  --theme-complement-10: var(--blue10);
-  --theme-complement-11: var(--blue11);
-  --theme-complement-12: var(--blue12);
+  --complement-0: var(--blue-0);
+  --complement-1: var(--blue-1);
+  --complement-2: var(--blue-2);
+  --complement-3: var(--blue-3);
+  --complement-4: var(--blue-4);
+  --complement-5: var(--blue-5);
+  --complement-6: var(--blue-6);
+  --complement-7: var(--blue-7);
+  --complement-8: var(--blue-8);
+  --complement-9: var(--blue-9);
+  --complement-10: var(--blue-10);
+  --complement-11: var(--blue-11);
+  --complement-12: var(--blue-12);
 }
 
 .complement-indigo {
-  --theme-complement-0: var(--indigo0);
-  --theme-complement-1: var(--indigo1);
-  --theme-complement-2: var(--indigo2);
-  --theme-complement-3: var(--indigo3);
-  --theme-complement-4: var(--indigo4);
-  --theme-complement-5: var(--indigo5);
-  --theme-complement-6: var(--indigo6);
-  --theme-complement-7: var(--indigo7);
-  --theme-complement-8: var(--indigo8);
-  --theme-complement-9: var(--indigo9);
-  --theme-complement-10: var(--indigo10);
-  --theme-complement-11: var(--indigo11);
-  --theme-complement-12: var(--indigo12);
+  --complement-0: var(--indigo-0);
+  --complement-1: var(--indigo-1);
+  --complement-2: var(--indigo-2);
+  --complement-3: var(--indigo-3);
+  --complement-4: var(--indigo-4);
+  --complement-5: var(--indigo-5);
+  --complement-6: var(--indigo-6);
+  --complement-7: var(--indigo-7);
+  --complement-8: var(--indigo-8);
+  --complement-9: var(--indigo-9);
+  --complement-10: var(--indigo-10);
+  --complement-11: var(--indigo-11);
+  --complement-12: var(--indigo-12);
 }
 
 .complement-violet {
-  --theme-complement-0: var(--violet0);
-  --theme-complement-1: var(--violet1);
-  --theme-complement-2: var(--violet2);
-  --theme-complement-3: var(--violet3);
-  --theme-complement-4: var(--violet4);
-  --theme-complement-5: var(--violet5);
-  --theme-complement-6: var(--violet6);
-  --theme-complement-7: var(--violet7);
-  --theme-complement-8: var(--violet8);
-  --theme-complement-9: var(--violet9);
-  --theme-complement-10: var(--violet10);
-  --theme-complement-11: var(--violet11);
-  --theme-complement-12: var(--violet12);
+  --complement-0: var(--violet-0);
+  --complement-1: var(--violet-1);
+  --complement-2: var(--violet-2);
+  --complement-3: var(--violet-3);
+  --complement-4: var(--violet-4);
+  --complement-5: var(--violet-5);
+  --complement-6: var(--violet-6);
+  --complement-7: var(--violet-7);
+  --complement-8: var(--violet-8);
+  --complement-9: var(--violet-9);
+  --complement-10: var(--violet-10);
+  --complement-11: var(--violet-11);
+  --complement-12: var(--violet-12);
 }
 
 .complement-magenta {
-  --theme-complement-0: var(--magenta0);
-  --theme-complement-1: var(--magenta1);
-  --theme-complement-2: var(--magenta2);
-  --theme-complement-3: var(--magenta3);
-  --theme-complement-4: var(--magenta4);
-  --theme-complement-5: var(--magenta5);
-  --theme-complement-6: var(--magenta6);
-  --theme-complement-7: var(--magenta7);
-  --theme-complement-8: var(--magenta8);
-  --theme-complement-9: var(--magenta9);
-  --theme-complement-10: var(--magenta10);
-  --theme-complement-11: var(--magenta11);
-  --theme-complement-12: var(--magenta12);
+  --complement-0: var(--magenta-0);
+  --complement-1: var(--magenta-1);
+  --complement-2: var(--magenta-2);
+  --complement-3: var(--magenta-3);
+  --complement-4: var(--magenta-4);
+  --complement-5: var(--magenta-5);
+  --complement-6: var(--magenta-6);
+  --complement-7: var(--magenta-7);
+  --complement-8: var(--magenta-8);
+  --complement-9: var(--magenta-9);
+  --complement-10: var(--magenta-10);
+  --complement-11: var(--magenta-11);
+  --complement-12: var(--magenta-12);
 }
 
 .complement-pink {
-  --theme-complement-0: var(--pink0);
-  --theme-complement-1: var(--pink1);
-  --theme-complement-2: var(--pink2);
-  --theme-complement-3: var(--pink3);
-  --theme-complement-4: var(--pink4);
-  --theme-complement-5: var(--pink5);
-  --theme-complement-6: var(--pink6);
-  --theme-complement-7: var(--pink7);
-  --theme-complement-8: var(--pink8);
-  --theme-complement-9: var(--pink9);
-  --theme-complement-10: var(--pink10);
-  --theme-complement-11: var(--pink11);
-  --theme-complement-12: var(--pink12);
+  --complement-0: var(--pink0);
+  --complement-1: var(--pink1);
+  --complement-2: var(--pink2);
+  --complement-3: var(--pink3);
+  --complement-4: var(--pink4);
+  --complement-5: var(--pink5);
+  --complement-6: var(--pink6);
+  --complement-7: var(--pink7);
+  --complement-8: var(--pink8);
+  --complement-9: var(--pink9);
+  --complement-10: var(--pink10);
+  --complement-11: var(--pink11);
+  --complement-12: var(--pink12);
 }

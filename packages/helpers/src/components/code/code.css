@@ -19,13 +19,13 @@ midwest-code ::-webkit-scrollbar {
 midwest-code ::-webkit-scrollbar-track {
   background: transparent;
   mix-blend-mode: hard-light;
-  background: var(--theme-base-0, var(--gray0));
+  background: var(--theme-0, var(--gray-0));
 }
 
 midwest-code ::-webkit-scrollbar-thumb {
   cursor: pointer;
   display: block;
-  background: var(--theme-base-7, var(--gray7));
+  background: var(--theme-7, var(--gray-7));
 }
 
 midwest-code ::-webkit-scrollbar-thumb:window-inactive {
@@ -34,14 +34,14 @@ midwest-code ::-webkit-scrollbar-thumb:window-inactive {
 
 midwest-code ::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
-  background: var(--theme-base-5, var(--gray5));
+  background: var(--theme-5, var(--gray-5));
 }
 
 midwest-code {
   display: block;
   width: 100%;
   overflow: auto;
-  background: var(--gray0);
+  background: var(--gray-0);
   letter-spacing: 0;
 }
 
@@ -60,7 +60,7 @@ midwest-code .preview .result {
   min-width: 0;
   width: 100%;
   height: 100%;
-  border-right: 1rem solid var(--gray2);
+  border-right: 1rem solid var(--gray-2);
 }
 
 midwest-code midwest-card {
@@ -80,7 +80,7 @@ midwest-code header {
 midwest-code footer {
   width: 100%;
   overflow: auto;
-  background: var(--gray0);
+  background: var(--gray-0);
 }
 
 midwest-code .hidden {
@@ -94,7 +94,7 @@ midwest-code pre {
   tab-size: 4;
   word-break: break-word;
   white-space: pre-wrap;
-  color: var(--gray1);
+  color: var(--gray-1);
   font-size: 1rem;
   font-weight: 400;
 }
@@ -103,7 +103,7 @@ midwest-code code[class*=language-],
 midwest-code pre[class*=language-] {
   background: none;
   text-align: left;
-  text-shadow: 0 1px var(--gray1);
+  text-shadow: 0 1px var(--gray-1);
   line-height: 1.5rem;
   tab-size: 4;
   -webkit-hyphens: none;
@@ -114,7 +114,7 @@ midwest-code pre[class*=language-] {
   word-wrap: normal;
   word-spacing: normal;
   white-space: pre;
-  color: var(--gray9);
+  color: var(--gray-9);
   font-family: "Hack", monospace;
   font-size: 1rem;
   width: 0;
@@ -152,11 +152,11 @@ midwest-code pre .token.comment,
 midwest-code pre .token.prolog,
 midwest-code pre .token.doctype,
 midwest-code pre .token.cdata {
-  color: var(--gray7);
+  color: var(--gray-7);
 }
 
 midwest-code pre .token.punctuation {
-  color: var(--gray7);
+  color: var(--gray-7);
 }
 
 midwest-code pre .namespace {
@@ -170,7 +170,7 @@ midwest-code pre .token.number,
 midwest-code pre .token.constant,
 midwest-code pre .token.symbol,
 midwest-code pre .token.deleted {
-  color: var(--cyan5);
+  color: var(--cyan-5);
 }
 
 midwest-code pre .token.selector,
@@ -179,7 +179,7 @@ midwest-code pre .token.string,
 midwest-code pre .token.char,
 midwest-code pre .token.builtin,
 midwest-code pre .token.inserted {
-  color: var(--green5);
+  color: var(--green-5);
 }
 
 midwest-code pre .token.operator,
@@ -187,24 +187,24 @@ midwest-code pre .token.entity,
 midwest-code pre .token.url,
 midwest-code pre.language-css .token.string,
 midwest-code pre.style .token.string {
-  color: var(--yellow5);
+  color: var(--yellow-5);
   font-family: "Hack", monospace;
 }
 
 midwest-code pre .token.atrule,
 midwest-code pre .token.attr-value,
 midwest-code pre .token.keyword {
-  color: var(--cyan5);
+  color: var(--cyan-5);
 }
 
 midwest-code pre .token.function {
-  color: var(--blue5);
+  color: var(--blue-5);
 }
 
 midwest-code pre .token.regex,
 midwest-code pre .token.important,
 midwest-code pre .token.variable {
-  color: var(--red5);
+  color: var(--red-5);
 }
 
 midwest-code pre .token.important,
@@ -240,7 +240,7 @@ midwest-code pre.show-line-numbers .line-numbers-rows {
   position: absolute;
   top: 0.125em;
   left: -3.8em;
-  border-right: 1px solid var(--gray8);
+  border-right: 1px solid var(--gray-8);
   width: 3em;
   line-height: 1.5rem;
   letter-spacing: -1px;
@@ -261,7 +261,7 @@ midwest-code pre.show-line-numbers .line-numbers-rows > span::before {
   padding-right: 0.8em;
   text-align: right;
   line-height: 1.5rem;
-  color: var(--gray8);
+  color: var(--gray-8);
   font-size: 1rem;
 }
 
@@ -278,7 +278,7 @@ midwest-code .token.cr::before,
 midwest-code .token.lf::before,
 midwest-code .token.space::before {
   position: absolute;
-  color: var(--gray8);
+  color: var(--gray-8);
 }
 
 midwest-code pre.show-invisibles .token.tab:not(:empty)::before {
@@ -303,7 +303,7 @@ midwest-code pre.show-invisibles .token.space::before {
 
 midwest-code[dark],
 midwest-code[dark] footer {
-  background: var(--gray9);
+  background: var(--gray-9);
 }
 
 midwest-code[dark] midwest-card {
@@ -311,24 +311,24 @@ midwest-code[dark] midwest-card {
 }
 
 midwest-code[dark] .preview .result {
-  border-right: 1rem solid var(--gray10);
+  border-right: 1rem solid var(--gray-10);
 }
 
 midwest-code[dark] code[class*=language-],
 midwest-code[dark] pre[class*=language-] {
-  color: var(--gray1);
-  text-shadow: 0 1px var(--gray9);
+  color: var(--gray-1);
+  text-shadow: 0 1px var(--gray-9);
 }
 
 midwest-code[dark] pre .token.comment,
 midwest-code[dark] pre .token.prolog,
 midwest-code[dark] pre .token.doctype,
 midwest-code[dark] pre .token.cdata {
-  color: var(--gray5);
+  color: var(--gray-5);
 }
 
 midwest-code[dark] pre .token.punctuation {
-  color: var(--gray5);
+  color: var(--gray-5);
 }
 
 midwest-code[dark] pre .token.property,
@@ -338,7 +338,7 @@ midwest-code[dark] pre .token.number,
 midwest-code[dark] pre .token.constant,
 midwest-code[dark] pre .token.symbol,
 midwest-code[dark] pre .token.deleted {
-  color: var(--cyan5);
+  color: var(--cyan-5);
 }
 
 midwest-code[dark] pre .token.selector,
@@ -347,7 +347,7 @@ midwest-code[dark] pre .token.string,
 midwest-code[dark] pre .token.char,
 midwest-code[dark] pre .token.builtin,
 midwest-code[dark] pre .token.inserted {
-  color: var(--green5);
+  color: var(--green-5);
 }
 
 midwest-code[dark] pre .token.operator,
@@ -355,43 +355,43 @@ midwest-code[dark] pre .token.entity,
 midwest-code[dark] pre .token.url,
 midwest-code[dark] pre.language-css .token.string,
 midwest-code[dark] pre.style .token.string {
-  color: var(--yellow5);
+  color: var(--yellow-5);
   font-family: "Hack", monospace;
 }
 
 midwest-code[dark] pre .token.atrule,
 midwest-code[dark] pre .token.attr-value,
 midwest-code[dark] pre .token.keyword {
-  color: var(--cyan5);
+  color: var(--cyan-5);
 }
 
 midwest-code[dark] pre .token.function {
-  color: var(--blue5);
+  color: var(--blue-5);
 }
 
 midwest-code[dark] pre .token.regex,
 midwest-code[dark] pre .token.important,
 midwest-code[dark] pre .token.variable {
-  color: var(--red5);
+  color: var(--red-5);
 }
 
 midwest-code[dark] pre .token.regex,
 midwest-code[dark] pre .token.important,
 midwest-code[dark] pre .token.variable {
-  color: var(--red5);
+  color: var(--red-5);
 }
 
 midwest-code[dark] pre.show-line-numbers .line-numbers-rows {
-  color: var(--gray2);
+  color: var(--gray-2);
 }
 
 midwest-code[dark] pre.show-line-numbers .line-numbers-rows > span::before {
-  color: var(--gray2);
+  color: var(--gray-2);
 }
 
 midwest-code[dark] .token.tab:not(:empty)::before,
 midwest-code[dark] .token.cr::before,
 midwest-code[dark] .token.lf::before,
 midwest-code[dark] .token.space::before {
-  color: var(--gray2);
+  color: var(--gray-2);
 }

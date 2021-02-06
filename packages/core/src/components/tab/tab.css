@@ -1,0 +1,183 @@
+:host {
+  color: var(--gray-7);
+  --focus-color: var(--theme-7);
+  --active-color: var(--theme-5);
+  --font-size: 1rem;
+  --height: auto;
+  --button-padding: 1rem;
+  --text-transform: initial;
+  --margin: -1px 0.25em;
+  font-weight: 700;
+  display: block;
+  z-index: 2;
+  position: relative;
+  font-size: var(--font-size);
+  height: var(--height);
+  font-family: inherit;
+}
+
+:host .tab-wrap {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: var(--margin);
+  padding: var(--padding);
+  color: inherit;
+  font-size: inherit;
+  height: var(--height);
+}
+
+:host .tab-wrap {
+  padding: 0;
+}
+
+:host .tab-wrap midwest-tag.notifications {
+  position: absolute;
+  top: 0;
+  right: -0.5rem;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .tab-wrap .tab-button {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    font-size: inherit;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    transition: none;
+    outline: none;
+    padding: var(--button-padding);
+    text-decoration: none;
+    line-height: 0.75rem;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-family: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    font-weight: inherit;
+  }
+}
+
+:host .tab-wrap .tab-button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  font-size: inherit;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  transition: color 0.2s;
+  outline: none;
+  padding: var(--button-padding);
+  text-decoration: none;
+  line-height: 0.75rem;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
+}
+
+:host .tab-wrap stencil-route-link {
+  display: inline-flex;
+}
+
+:host .tab-button:hover .title,
+:host .tab-button:focus .title {
+  color: var(--focus-color) !important;
+}
+
+:host .tab-button:hover,
+:host .tab-button:focus {
+  background: var(--gray-0);
+}
+
+:host([open]) .tab-wrap .tab-button .title {
+  color: var(--active-color) !important;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .tab-wrap .tab-button .title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: inherit;
+    font-weight: inherit;
+    color: var(--gray-7);
+    transition: none;
+  }
+}
+
+:host .tab-wrap .tab-button .title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--gray-7);
+  transition: color 0.15s var(--ease) 0s;
+}
+
+:host([open]) .tab-wrap .tab-button .title {
+  color: var(--theme-5);
+}
+
+:host([vertical]) .tab-wrap .tab-button .title {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+:host .tab-wrap .tab-button .title ::slotted(ion-icon) {
+  line-height: 0;
+  margin-right: 0.25em;
+}
+
+:host .tab-wrap .tab-button .title ::slotted(midwest-avatar) {
+  line-height: 0;
+  margin: -1.175em 0.5em -1.075em -0.5em;
+}
+
+:host([disabled]) .tab-wrap {
+  cursor: not-allowed;
+  background: var(--gray-1);
+  color: var(--gray-3);
+}
+
+:host([disabled]) .tab-wrap * {
+  cursor: not-allowed;
+}
+
+:host([disabled]) .tab-wrap midwest-tag.notifications {
+  background: var(--gray-1);
+  color: var(--gray-3);
+}
+
+:host([dark]) .tab-wrap .tab-button .title,
+:host([dark]) .tab-wrap .tab-button .title {
+  color: var(--gray-4);
+}
+
+:host([dark]) .tab-wrap .tab-button:hover,
+:host([dark]) .tab-wrap .tab-button:focus,
+:host([dark]) .tab-wrap .tab-button:hover .title,
+:host([dark]) .tab-wrap .tab-button:focus .title {
+  color: var(--gray-2) !important;
+  background: var(--black);
+}
+
+:host([open][dark]) .tab-wrap .tab-button .title {
+  color: var(--theme-3) !important;
+}

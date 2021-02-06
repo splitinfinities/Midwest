@@ -1,0 +1,57 @@
+:host {
+  display: inline-block;
+  font-size: 1rem;
+  width: 4em;
+  min-width: 4em;
+}
+
+:host .date-area {
+  border: 1px solid var(--theme-6);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5em;
+  background: var(--white);
+  overflow: hidden;
+  margin-bottom: 0.5em;
+}
+
+:host .date-area .day,
+:host .date-area .month {
+  padding: 0.125em 0.5em;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+:host .date-area .day {
+  margin: 0;
+  color: var(--black);
+}
+
+:host .date-area .month {
+  margin: 0;
+  border-top: 1px solid var(--theme-6);
+  background: var(--theme-5);
+  color: var(--white);
+}
+
+:host midwest-label[underneath] {
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--theme-9);
+}
+
+:host([dark]) .date-area {
+  background: var(--black);
+  border: 1px solid var(--gray-7);
+}
+
+:host([dark]) .date-area .day {
+  color: var(--white);
+}
+
+:host([dark]) .date-area .month {
+  color: var(--white);
+  border-top: 1px solid var(--theme-4);
+}

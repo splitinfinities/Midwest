@@ -62,12 +62,14 @@ graph TD;
   midwest-form-rollup --> midwest-label
   midwest-form-rollup --> midwest-avatar
   midwest-form-rollup --> midwest-group
+  midwest-form-rollup --> midwest-tag
+  midwest-form-rollup --> midwest-button
+  midwest-form-rollup --> ion-icon
   midwest-avatar --> midwest-progress
   midwest-avatar --> ion-icon
   midwest-avatar --> midwest-tooltip
   midwest-group --> midwest-tag
   midwest-group --> midwest-group-overflow
-  midwest-tag --> ion-icon
   midwest-tag --> midwest-label
   midwest-group-overflow --> midwest-label
   midwest-group-overflow --> midwest-tooltip

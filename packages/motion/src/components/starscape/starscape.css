@@ -1,6 +1,6 @@
 midwest-starscape {
   contain: content;
-  background: linear-gradient(50deg, var(--theme-base-7), var(--theme-complement-7), var(--theme-base-7), var(--theme-complement-7));
+  background: linear-gradient(50deg, var(--theme-7), var(--complement-7), var(--theme-7), var(--complement-7));
   background-size: 400% 400%;
   position: absolute;
   top: 0;

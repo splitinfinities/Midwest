@@ -1,0 +1,227 @@
+:host {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  --border-radius: 0.1rem;
+  --time: 124;
+  --negative-time: -124;
+}
+
+:host .blur-content {
+  display: block;
+  height: 100%;
+}
+
+:host([editable]) {
+  cursor: pointer;
+}
+
+:host .progress {
+  display: block;
+  position: relative;
+  transition: all 0.25s var(--ease) 0ms;
+  background: var(--gray-1);
+  width: 100%;
+  height: 0.6rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+:host([dark]) .progress {
+  background: var(--gray-11);
+}
+
+:host([editable]:hover) .progress,
+:host([editable]:focus) .progress {
+  height: 2.4rem;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .status,
+  :host .secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -100%;
+    transition: none;
+    background: var(--theme-6, var(--gray-6));
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .status,
+  :host .secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -100%;
+    transition: none;
+    background: var(--theme-6, var(--gray-6));
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+:host .status,
+:host .secondary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -100%;
+  transition: none;
+  background: var(--theme-6, var(--gray-6));
+  width: 100%;
+  z-index: 2;
+}
+}
+
+:host .status,
+:host .secondary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -100%;
+  transition: all 0.35s var(--ease, ease-in-out) 0ms;
+  background: var(--theme-6, var(--gray-6));
+  width: 100%;
+  z-index: 2;
+}
+
+:host .secondary {
+  background: var(--theme-3, var(--gray-2));
+  z-index: 1;
+}
+
+:host([slender]) .progress {
+  border: 0;
+  height: 0.2rem;
+}
+
+:host([slender][editable]:hover) .progress,
+:host([slender][editable]:focus) .progress {
+  height: 0.4rem;
+}
+
+:host([noease]) .progress,
+:host([noease]) .status,
+:host([noease]) .secondary {
+  transition: none !important;
+}
+
+:host([indeterminate]) {
+  height: 1em;
+  width: 1em;
+}
+
+:host([indeterminate]) svg {
+  transform: rotate(0deg);
+  stroke: var(--theme-6);
+  animation: rotate var(--ease) 9.2s infinite;
+  width: 1em;
+  height: 1em;
+  margin-left: 0;
+  top: 0;
+  position: relative;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host([indeterminate]) svg {
+    animation: none;
+  }
+}
+
+:host([indeterminate]) circle {
+  stroke-dasharray: var(--time);
+  stroke-dashoffset: var(--time);
+  animation: load var(--ease) 2.3s infinite;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host([indeterminate]) circle {
+    animation: none;
+  }
+}
+
+:host([dark]) .progress {
+  background: var(--gray-9);
+}
+
+:host([dark]) .secondary {
+  background: var(--theme-7, var(--gray-7));
+  z-index: 1;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host([dark]) circle {
+    animation: none;
+  }
+}
+
+:host([dark]) circle {
+  animation: load-dark var(--ease) 2.3s infinite;
+}
+
+@keyframes load {
+  0% {
+    stroke: var(--theme-7);
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+    stroke: var(--theme-6);
+  }
+
+  100% {
+    stroke-dashoffset: var(--negative-time);
+    stroke: var(--theme-5);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load-dark {
+  0% {
+    stroke: var(--theme-8);
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+    stroke: var(--theme-9);
+  }
+
+  75% {
+    stroke: var(--theme-10);
+  }
+
+  100% {
+    stroke-dashoffset: var(--negative-time);
+    stroke: var(--theme-8);
+  }
+}

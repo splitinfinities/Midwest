@@ -22,7 +22,7 @@
   align-items: center;
   padding: 1rem;
   background: white;
-  border: 1px solid var(--gray2);
+  border: 1px solid var(--gray-2);
 }
 
 :host .comment > .thread {
@@ -42,8 +42,8 @@
   left: -1.25rem;
   top: -1.5rem;
   z-index: 0;
-  background: var(--theme-complement-4);
-  background: linear-gradient(135deg, var(--theme-complement-4) 0%, var(--theme-base-4) calc(100% - 2rem), var(--theme-base-4) 100%);
+  background: var(--complement-4);
+  background: linear-gradient(135deg, var(--complement-4) 0%, var(--theme-4) calc(100% - 2rem), var(--theme-4) 100%);
 }
 
 :host .comment > .thread::before {
@@ -54,7 +54,7 @@
   left: -1.25rem;
   bottom: 2rem;
   z-index: 0;
-  background: var(--theme-base-4);
+  background: var(--theme-4);
 }
 
 :host .comment.empty > .content {
@@ -70,15 +70,15 @@
 }
 
 :host([dark]) .comment > .content {
-  background: var(--gray9);
-  border: 1px solid var(--gray8);
+  background: var(--gray-9);
+  border: 1px solid var(--gray-8);
 }
 
 :host([dark]) .comment > .thread::after {
-  background: var(--theme-complement-9);
-  background: linear-gradient(135deg, var(--theme-complement-9) 0%, var(--theme-base-9) calc(100% - 2rem), var(--theme-base-9) 100%);
+  background: var(--complement-9);
+  background: linear-gradient(135deg, var(--complement-9) 0%, var(--theme-9) calc(100% - 2rem), var(--theme-9) 100%);
 }
 
 :host([dark]) .comment > .thread::before {
-  background: var(--theme-base-9);
+  background: var(--theme-9);
 }

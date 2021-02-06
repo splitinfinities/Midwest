@@ -2,8 +2,9 @@
   "files": [],
   "references": [
     { "path": "common" },
+    { "path": "forms" },
     { "path": "motion" },
-    { "path": "audio" }
+    { "path": "audio" },
     { "path": "core" },
     { "path": "media" },
     { "path": "helpers" },

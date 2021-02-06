@@ -14,7 +14,7 @@ export const config: Config = {
   namespace: 'motion',
   devServer: {
     openBrowser: false,
-    port: 3337,
+    port: 3340,
   },
   plugins: [
     postcss({

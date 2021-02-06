@@ -60,7 +60,7 @@
 :host midwest-360-image,
 :host midwest-video,
 :host midwest-360-video {
-  --gradient: radial-gradient(circle at 30% 107%, var(--theme-base-5) 0%, var(--theme-base-8) 5%, var(--theme-complement-8) 45%, var(--theme-complement-5) 60%, var(--theme-base-5) 90%);
+  --gradient: radial-gradient(circle at 30% 107%, var(--theme-5) 0%, var(--theme-8) 5%, var(--complement-8) 45%, var(--complement-5) 60%, var(--theme-5) 90%);
 
   position: relative;
   z-index: 1;

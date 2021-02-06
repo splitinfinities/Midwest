@@ -1,0 +1,278 @@
+:host,
+:host *,
+:host *::before,
+:host *::after {
+  box-sizing: border-box;
+}
+
+:host {
+  --dropdown-color: var(--theme-7);
+  --dropdown-hover-color: var(--theme-8);
+  --dropdown-width: 20rem;
+  --border-radius: 0.3rem;
+  --clip-from: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --clip-to: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --filter: drop-shadow(0 2px 2px var(--theme-1));
+  --icon-rotation: 180deg;
+
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  outline: 0;
+  height: 100%;
+  color: var(--dropdown-color);
+  transition: z-index 0ms linear 200ms;
+}
+
+:host([dark]) {
+  --filter: drop-shadow(0 2px 2px var(--theme-9));
+}
+
+:host .clipper {
+  filter: var(--filter);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 50%;
+  left: calc(50% - (var(--dropdown-width) /2));
+  width: var(--dropdown-width);
+  height: 0;
+  transition: all 250ms var(--ease) 250ms;
+}
+
+:host .list-wrap {
+  z-index: 10;
+  transition: all 250ms var(--ease) 250ms;
+  width: var(--dropdown-width);
+  display: initial;
+  clip-path: var(--clip-from);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: block;
+}
+
+:host .caret {
+  color: var(--dropdown-color);
+  margin-left: 1.5rem;
+  transition: all 210ms var(--ease);
+  font-size: 2rem;
+}
+
+:host(:hover) .caret,
+:host(:focus-within) .caret {
+  transform: scale(1) rotate(var(--icon-rotation));
+  color: var(--dropdown-hover-color);
+}
+
+:host(:hover),
+:host(:active),
+:host(:focus-within) {
+  z-index: 6;
+  color: var(--dropdown-hover-color);
+}
+
+:host(:hover) .clipper,
+:host(:active) .clipper,
+:host(:focus-within) .clipper {
+  height: auto;
+}
+
+:host(:hover) .toggle::after,
+:host(:active) .toggle::after,
+:host(:focus-within) .toggle::after {
+  margin-top: -2px;
+  background: var(--dropdown-hover-color);
+  height: 2px;
+}
+
+:host(.toggle:hover),
+:host(.toggle:active) {
+  z-index: 6;
+  color: var(--dropdown-hover-color);
+}
+
+:host(.toggle:hover::after),
+:host(.toggle:active::after) {
+  margin-top: -2px;
+  background: var(--dropdown-hover-color);
+  height: 2px;
+}
+
+:host(:hover) .list-wrap,
+:host(:active) .list-wrap,
+:host(:focus-within) .list-wrap {
+  clip-path: var(--clip-to);
+  height: 100%;
+}
+
+:host .dropdown-placeholder {
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+}
+
+:host .toggle {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 3rem;
+}
+
+:host ion-icon[slot="handle"] {
+  color: var(--dropdown-color);
+}
+
+:host ion-icon[slot="handle"]:hover,
+:host ion-icon[slot="handle"]:active,
+:host(:focus-within) ion-icon[slot="handle"],
+:host([focus-within]) ion-icon[slot="handle"] {
+  color: var(--dropdown-color);
+}
+
+:host .toggle span {
+  color: inherit;
+}
+
+:host .toggle .hidden {
+  display: inline-block !important;
+}
+
+:host .list {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  transition: all 110ms var(--ease) 250ms;
+  box-shadow: 0 0 2px 0 rgba(128, 128, 128, 0.35);
+  background: white;
+  list-style-type: none;
+  padding: 0;
+}
+
+:host .list ::slotted(midwest-item) {
+  --item-size: 3.25rem;
+}
+
+:host .list .loader {
+  cursor: wait;
+  display: none;
+}
+
+:host .list .separator {
+  position: relative;
+}
+
+:host .list .separator::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 0.5px);
+  background: var(--gray-5);
+  width: 100%;
+  height: 0.1rem;
+}
+
+:host .icon {
+  flex: 0 0 2.25em;
+  order: -1;
+  transition: all 0.05s var(--ease) 0s;
+  margin-right: 1em;
+}
+
+:host .thumb {
+  flex: 0 0 2.25em;
+  order: -1;
+  transition: all 0.05s var(--ease) 0s;
+  margin-right: 1rem;
+  width: 2.25em;
+  height: 2.25em;
+}
+
+:host .notification {
+  display: inline-block;
+  margin: 0 0 0 0.8rem;
+  border-radius: 50%;
+  background: var(--yellow-5);
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+:host ::slotted(midwest-item) {
+  border: 0;
+  overflow: hidden;
+  color: var(--gray-9);
+  font-size: 1rem;
+}
+
+:host .footer {
+  border-top: 1px solid var(--theme-1);
+  margin-top: 0.5rem;
+}
+
+:host .footer ::slotted(*) {
+  background: transparent !important;
+}
+
+:host .footer:empty {
+  display: none;
+}
+
+/* Left */
+:host([position="left"]) {
+  --clip-from: polygon(0% 0, 0% 50%, 0% 50%, 0 50%);
+}
+
+:host([position="left"]) .clipper {
+  left: 0;
+  right: auto;
+}
+
+:host([position="left"][icon]) .clipper {
+  left: var(--dropdown-offset, -3rem);
+}
+
+:host([position="left"]) .list::after {
+  right: 0;
+  left: 4rem;
+}
+
+:host([position="left"]) .list::before {
+  right: 0;
+  left: 4rem;
+}
+
+/* Right */
+:host([position="right"]) {
+  --clip-from: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --clip-from: polygon(0 0, 100% 0%, 100% 0%, 50% 0);
+}
+
+:host([position="right"]) .clipper {
+  left: auto;
+  right: 0;
+}
+
+:host([position="right"][icon]) .clipper {
+  right: var(--dropdown-offset, 3rem);
+}
+
+:host([position="right"]) .list::after {
+  right: 3rem;
+  left: auto;
+}
+
+:host([position="right"]) .list::before {
+  right: 3rem;
+  left: auto;
+}
+
+:host([dark]) .list {
+  background: var(--gray-9);
+}
+
+:host([dark]) ::slotted(midwest-item) {
+  color: var(--gray-0);
+}
+
+:host([dark]) .footer {
+  border-top-color: var(--black);
+}

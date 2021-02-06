@@ -1,0 +1,49 @@
+:host {
+  width: 100%;
+  display: block;
+}
+
+:host midwest-label.single,
+:host midwest-label.multiple,
+:host midwest-label.empty {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1;
+  margin: auto 0 auto 0.5rem;
+}
+
+:host midwest-group {
+  overflow: initial;
+}
+
+:host midwest-label.append {
+  color: var(--theme-6);
+  margin-left: 1rem;
+}
+
+:host midwest-label.single midwest-avatar {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+:host.inline {
+  margin-left: 0;
+}
+
+:host .tags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+:host .tags midwest-tag {
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
+}

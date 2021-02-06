@@ -24,7 +24,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/copy-wrap/copy-wrap.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/copy-wrap/copy-wrap.tsx"
         }
       ]
     },
@@ -56,30 +56,18 @@
           "description": ""
         },
         {
-          "name": "next",
-          "description": ""
-        },
-        {
           "name": "open",
           "description": ""
         },
         {
           "name": "tight",
           "description": ""
-        },
-        {
-          "name": "valid",
-          "description": ""
-        },
-        {
-          "name": "validate",
-          "description": ""
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/accordion/accordion.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/accordion/accordion.tsx"
         }
       ]
     },
@@ -180,90 +168,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/avatar/avatar.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-box",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "base",
-          "description": "",
-          "values": [
-            {
-              "name": "blue"
-            },
-            {
-              "name": "cyan"
-            },
-            {
-              "name": "gold"
-            },
-            {
-              "name": "gray"
-            },
-            {
-              "name": "green"
-            },
-            {
-              "name": "indigo"
-            },
-            {
-              "name": "lime"
-            },
-            {
-              "name": "magenta"
-            },
-            {
-              "name": "orange"
-            },
-            {
-              "name": "pink"
-            },
-            {
-              "name": "red"
-            },
-            {
-              "name": "teal"
-            },
-            {
-              "name": "violet"
-            },
-            {
-              "name": "yellow"
-            }
-          ]
-        },
-        {
-          "name": "checked",
-          "description": ""
-        },
-        {
-          "name": "dark",
-          "description": ""
-        },
-        {
-          "name": "disabled",
-          "description": ""
-        },
-        {
-          "name": "focused",
-          "description": ""
-        },
-        {
-          "name": "radio",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/box/box.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/avatar/avatar.tsx"
         }
       ]
     },
@@ -307,6 +212,9 @@
           "description": "",
           "values": [
             {
+              "name": "button"
+            },
+            {
               "name": "link"
             },
             {
@@ -322,7 +230,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/breadcrumb/breadcrumb.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/breadcrumb/breadcrumb.tsx"
         }
       ]
     },
@@ -334,35 +242,7 @@
       },
       "attributes": [
         {
-          "name": "color",
-          "description": ""
-        },
-        {
           "name": "dark",
-          "description": ""
-        },
-        {
-          "name": "description",
-          "description": ""
-        },
-        {
-          "name": "home",
-          "description": ""
-        },
-        {
-          "name": "icon",
-          "description": ""
-        },
-        {
-          "name": "icon_size",
-          "description": ""
-        },
-        {
-          "name": "icon_src",
-          "description": ""
-        },
-        {
-          "name": "label",
           "description": ""
         },
         {
@@ -382,24 +262,12 @@
               "name": "tiny"
             }
           ]
-        },
-        {
-          "name": "tag",
-          "description": "",
-          "values": [
-            {
-              "name": "link"
-            },
-            {
-              "name": "route"
-            }
-          ]
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/breadcrumbs/breadcrumbs.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/breadcrumbs/breadcrumbs.tsx"
         }
       ]
     },
@@ -412,15 +280,11 @@
       "attributes": [
         {
           "name": "active",
-          "description": "Sets the button or link as an active state."
-        },
-        {
-          "name": "authenticity-token",
-          "description": "Authenticty Token"
+          "description": ""
         },
         {
           "name": "block",
-          "description": "Sets the button or link to render at full width to the parent."
+          "description": ""
         },
         {
           "name": "button-tab-index",
@@ -432,23 +296,23 @@
         },
         {
           "name": "contrast",
-          "description": "Sets the button or link as an outlined button."
+          "description": ""
         },
         {
           "name": "dark",
-          "description": "Sets the button or link as an outlined button."
+          "description": ""
         },
         {
           "name": "disabled",
-          "description": "Sets the button or link as disabled and not-interactable."
+          "description": ""
         },
         {
           "name": "export",
-          "description": "Makes sure the button cannot be exported."
+          "description": ""
         },
         {
           "name": "for",
-          "description": "Sets the href on the anchor tag if the button is a link."
+          "description": ""
         },
         {
           "name": "ghost",
@@ -456,60 +320,39 @@
         },
         {
           "name": "href",
-          "description": "Sets the href on the anchor tag if the button is a link."
+          "description": ""
         },
         {
           "name": "icon",
-          "description": "Sets the button or link as a button with only an icon."
+          "description": ""
         },
         {
           "name": "icon-only",
-          "description": "Sets the button or link as a button with only an icon."
+          "description": ""
         },
         {
           "name": "invert",
-          "description": "Sets the button or link as an outlined button."
+          "description": ""
         },
         {
           "name": "label",
-          "description": "Sets accessibility options on the buttons"
-        },
-        {
-          "name": "method",
-          "description": "Sets the button or link as an active state.",
-          "values": [
-            {
-              "name": "delete"
-            },
-            {
-              "name": "get"
-            },
-            {
-              "name": "patch"
-            },
-            {
-              "name": "post"
-            },
-            {
-              "name": "put"
-            }
-          ]
+          "description": ""
         },
         {
           "name": "modal-href",
-          "description": "Sets the href on the anchor tag if the button is a link."
+          "description": ""
         },
         {
           "name": "name",
-          "description": "Sets the name on the button if the button is an input. Allows the button to act as an item in a form."
+          "description": ""
         },
         {
           "name": "outline",
-          "description": "Sets the button or link as an outlined button."
+          "description": ""
         },
         {
           "name": "padding",
-          "description": "Sets the padding inside of the button.",
+          "description": "",
           "values": [
             {
               "name": "large"
@@ -524,7 +367,7 @@
         },
         {
           "name": "pill",
-          "description": "Sets the button or link to render as a pill."
+          "description": ""
         },
         {
           "name": "pjax-selector",
@@ -532,7 +375,7 @@
         },
         {
           "name": "processable",
-          "description": "Sets the button or link as processing when clicked."
+          "description": ""
         },
         {
           "name": "processing",
@@ -540,7 +383,7 @@
         },
         {
           "name": "size",
-          "description": "Sets the size of the button.",
+          "description": "",
           "values": [
             {
               "name": "large"
@@ -554,12 +397,8 @@
           ]
         },
         {
-          "name": "stop-propagation",
-          "description": "Sets the button or link as an active state."
-        },
-        {
           "name": "tag",
-          "description": "Allows the button to render for different tags.",
+          "description": "",
           "values": [
             {
               "name": "button"
@@ -586,7 +425,7 @@
         },
         {
           "name": "target",
-          "description": "Sets the target on the anchor tag if the button is a link."
+          "description": ""
         },
         {
           "name": "use-pjax",
@@ -594,64 +433,13 @@
         },
         {
           "name": "value",
-          "description": "Sets the value on the button if the button is an input."
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/button/button.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-calendar",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "dark",
-          "description": ""
-        },
-        {
-          "name": "header",
-          "description": ""
-        },
-        {
-          "name": "no-toolbar",
-          "description": ""
-        },
-        {
-          "name": "select-range",
-          "description": ""
-        },
-        {
-          "name": "selectable",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": "",
-          "values": [
-            {
-              "name": "medium"
-            },
-            {
-              "name": "small"
-            }
-          ]
-        },
-        {
-          "name": "value",
           "description": ""
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/calendar/calendar.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/button/button.tsx"
         }
       ]
     },
@@ -686,30 +474,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/calendar-date/calendar-date.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-calendar-event",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "event",
-          "description": ""
-        },
-        {
-          "name": "event-id",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/calendar-event/calendar-event.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/calendar-date/calendar-date.tsx"
         }
       ]
     },
@@ -749,7 +514,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/callout/callout.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/callout/callout.tsx"
         }
       ]
     },
@@ -766,11 +531,11 @@
         },
         {
           "name": "block",
-          "description": "Renders as a block in certain scenarios"
+          "description": ""
         },
         {
           "name": "compact",
-          "description": "Sets the minimum height of the card to 0 when true."
+          "description": ""
         },
         {
           "name": "dark",
@@ -778,43 +543,43 @@
         },
         {
           "name": "export",
-          "description": "disallows this component from exporting to figma"
+          "description": ""
         },
         {
           "name": "flip-icon",
-          "description": "Sets the href on the anchor tag if the button is a link."
+          "description": ""
         },
         {
           "name": "flip-ready",
-          "description": "Let's a card be flippable"
+          "description": ""
         },
         {
           "name": "flippable",
-          "description": "Let's a card be flippable"
+          "description": ""
         },
         {
           "name": "flipped",
-          "description": "Renders a flipped card"
+          "description": ""
         },
         {
           "name": "for",
-          "description": "Sets the href on the anchor tag if the button is a link."
+          "description": ""
         },
         {
           "name": "horizontal",
-          "description": "Renders the hard horizontally"
+          "description": ""
         },
         {
           "name": "href",
-          "description": "Sets the href if the card is a link."
+          "description": ""
         },
         {
           "name": "modal-href",
-          "description": "Sets the href if the card is a link."
+          "description": ""
         },
         {
           "name": "name",
-          "description": "Sets the name if the card is a button."
+          "description": ""
         },
         {
           "name": "original-height",
@@ -822,7 +587,7 @@
         },
         {
           "name": "padding",
-          "description": "Sets the padding inside of the button. Can be small, medium, or large.",
+          "description": "",
           "values": [
             {
               "name": "large"
@@ -842,8 +607,16 @@
           ]
         },
         {
+          "name": "small",
+          "description": ""
+        },
+        {
+          "name": "small-size",
+          "description": ""
+        },
+        {
           "name": "tag",
-          "description": "Sets the element to render the card as - an anchor tag, a button, or a div.",
+          "description": "",
           "values": [
             {
               "name": "a"
@@ -861,44 +634,17 @@
         },
         {
           "name": "type",
-          "description": "Sets the type on a button"
+          "description": ""
         },
         {
           "name": "value",
-          "description": "Sets the value if the card is a button."
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/card/card.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-color-picker",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "dark",
-          "description": "Sets the button or link as an outlined button."
-        },
-        {
-          "name": "notransparent",
-          "description": ""
-        },
-        {
-          "name": "val",
           "description": ""
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/color-picker/color-picker.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/card/card.tsx"
         }
       ]
     },
@@ -929,94 +675,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/content/content.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-datetime-picker",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "auto-close",
-          "description": "auto close when minute is selected"
-        },
-        {
-          "name": "dark",
-          "description": ""
-        },
-        {
-          "name": "dial-radius",
-          "description": ""
-        },
-        {
-          "name": "duration",
-          "description": ""
-        },
-        {
-          "name": "inner-radius",
-          "description": ""
-        },
-        {
-          "name": "method",
-          "description": "",
-          "values": [
-            {
-              "name": "date"
-            },
-            {
-              "name": "datetime"
-            },
-            {
-              "name": "time"
-            }
-          ]
-        },
-        {
-          "name": "outer-radius",
-          "description": ""
-        },
-        {
-          "name": "show-clear",
-          "description": ""
-        },
-        {
-          "name": "tick-radius",
-          "description": ""
-        },
-        {
-          "name": "value",
-          "description": ""
-        },
-        {
-          "name": "view",
-          "description": "",
-          "values": [
-            {
-              "name": "days"
-            },
-            {
-              "name": "hours"
-            },
-            {
-              "name": "minutes"
-            },
-            {
-              "name": "months"
-            },
-            {
-              "name": "years"
-            }
-          ]
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/datetime-picker/datetime-picker.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/content/content.tsx"
         }
       ]
     },
@@ -1066,131 +725,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/dropdown/dropdown.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-field-group",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/field-group/field-group.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-form",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "accept-charset",
-          "description": ""
-        },
-        {
-          "name": "action",
-          "description": ""
-        },
-        {
-          "name": "ajax",
-          "description": ""
-        },
-        {
-          "name": "autocomplete",
-          "description": ""
-        },
-        {
-          "name": "autosave",
-          "description": ""
-        },
-        {
-          "name": "close-modal-on-success",
-          "description": ""
-        },
-        {
-          "name": "enctype",
-          "description": ""
-        },
-        {
-          "name": "method",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": ""
-        },
-        {
-          "name": "novalidate",
-          "description": ""
-        },
-        {
-          "name": "perform",
-          "description": ""
-        },
-        {
-          "name": "target",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/form/form.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-form-rollup",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "append-copy",
-          "description": ""
-        },
-        {
-          "name": "count",
-          "description": ""
-        },
-        {
-          "name": "fallback",
-          "description": ""
-        },
-        {
-          "name": "for",
-          "description": ""
-        },
-        {
-          "name": "no-avatars",
-          "description": ""
-        },
-        {
-          "name": "placeholder",
-          "description": ""
-        },
-        {
-          "name": "show",
-          "description": ""
-        },
-        {
-          "name": "verbiage",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/form-rollup/form-rollup.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/dropdown/dropdown.tsx"
         }
       ]
     },
@@ -1214,18 +749,18 @@
           "description": ""
         },
         {
-          "name": "noresponsive",
+          "name": "padding",
           "description": ""
         },
         {
-          "name": "padding",
+          "name": "responsive",
           "description": ""
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/grid/grid.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/grid/grid.tsx"
         }
       ]
     },
@@ -1276,7 +811,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/group/group.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/group/group.tsx"
         }
       ]
     },
@@ -1303,1084 +838,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/group-overflow/group-overflow.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-input",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "autocomplete",
-          "description": "",
-          "values": [
-            {
-              "name": "postal-code"
-            },
-            {
-              "name": "url"
-            },
-            {
-              "name": "name"
-            },
-            {
-              "name": "honorific-prefix"
-            },
-            {
-              "name": "given-name"
-            },
-            {
-              "name": "additional-name"
-            },
-            {
-              "name": "family-name"
-            },
-            {
-              "name": "honorific-suffix"
-            },
-            {
-              "name": "nickname"
-            },
-            {
-              "name": "username"
-            },
-            {
-              "name": "current-password"
-            },
-            {
-              "name": "new-password"
-            },
-            {
-              "name": "one-time-code"
-            },
-            {
-              "name": "organization-title"
-            },
-            {
-              "name": "organization"
-            },
-            {
-              "name": "street-address"
-            },
-            {
-              "name": "address-line1"
-            },
-            {
-              "name": "address-line2"
-            },
-            {
-              "name": "address-line3"
-            },
-            {
-              "name": "address-level4"
-            },
-            {
-              "name": "address-level3"
-            },
-            {
-              "name": "address-level2"
-            },
-            {
-              "name": "address-level1"
-            },
-            {
-              "name": "country"
-            },
-            {
-              "name": "country-name"
-            },
-            {
-              "name": "cc-name"
-            },
-            {
-              "name": "cc-given-name"
-            },
-            {
-              "name": "cc-additional-name"
-            },
-            {
-              "name": "cc-family-name"
-            },
-            {
-              "name": "cc-number"
-            },
-            {
-              "name": "cc-exp"
-            },
-            {
-              "name": "cc-exp-month"
-            },
-            {
-              "name": "cc-exp-year"
-            },
-            {
-              "name": "cc-csc"
-            },
-            {
-              "name": "cc-type"
-            },
-            {
-              "name": "transaction-currency"
-            },
-            {
-              "name": "transaction-amount"
-            },
-            {
-              "name": "language"
-            },
-            {
-              "name": "bday"
-            },
-            {
-              "name": "bday-day"
-            },
-            {
-              "name": "bday-month"
-            },
-            {
-              "name": "bday-year"
-            },
-            {
-              "name": "sex"
-            },
-            {
-              "name": "photo"
-            }
-          ]
-        },
-        {
-          "name": "autofocus",
-          "description": ""
-        },
-        {
-          "name": "autoformat",
-          "description": ""
-        },
-        {
-          "name": "caps-lock",
-          "description": ""
-        },
-        {
-          "name": "cols",
-          "description": ""
-        },
-        {
-          "name": "dark",
-          "description": "Sets the button to dark."
-        },
-        {
-          "name": "default",
-          "description": "The pre-set value to pass to the input element"
-        },
-        {
-          "name": "description",
-          "description": ""
-        },
-        {
-          "name": "description-transform",
-          "description": "",
-          "values": [
-            {
-              "name": "capitalize"
-            },
-            {
-              "name": "full-size-kana"
-            },
-            {
-              "name": "full-width"
-            },
-            {
-              "name": "lowercase"
-            },
-            {
-              "name": "none"
-            },
-            {
-              "name": "uppercase"
-            }
-          ]
-        },
-        {
-          "name": "disabled",
-          "description": ""
-        },
-        {
-          "name": "focused",
-          "description": ""
-        },
-        {
-          "name": "formatter",
-          "description": ""
-        },
-        {
-          "name": "icon",
-          "description": ""
-        },
-        {
-          "name": "increments",
-          "description": "The name of the input element"
-        },
-        {
-          "name": "inline",
-          "description": "Sets the display to inline"
-        },
-        {
-          "name": "input-tab-index",
-          "description": ""
-        },
-        {
-          "name": "label",
-          "description": ""
-        },
-        {
-          "name": "left-icon",
-          "description": "Sets the button to dark."
-        },
-        {
-          "name": "match",
-          "description": ""
-        },
-        {
-          "name": "max",
-          "description": ""
-        },
-        {
-          "name": "maxlength",
-          "description": ""
-        },
-        {
-          "name": "min",
-          "description": ""
-        },
-        {
-          "name": "min-chars",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": "The name of the input element"
-        },
-        {
-          "name": "novalidate",
-          "description": ""
-        },
-        {
-          "name": "placeholder",
-          "description": ""
-        },
-        {
-          "name": "processing",
-          "description": ""
-        },
-        {
-          "name": "readonly",
-          "description": ""
-        },
-        {
-          "name": "required",
-          "description": ""
-        },
-        {
-          "name": "requirements",
-          "description": "The pre-set value to pass to the input element"
-        },
-        {
-          "name": "rows",
-          "description": ""
-        },
-        {
-          "name": "shift",
-          "description": ""
-        },
-        {
-          "name": "show-caps-lock",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": "",
-          "values": [
-            {
-              "name": "default"
-            },
-            {
-              "name": "large"
-            },
-            {
-              "name": "small"
-            }
-          ]
-        },
-        {
-          "name": "spellcheck",
-          "description": ""
-        },
-        {
-          "name": "step",
-          "description": ""
-        },
-        {
-          "name": "tooltip",
-          "description": ""
-        },
-        {
-          "name": "type",
-          "description": "The kind of element that the Input should be rendered as",
-          "values": [
-            {
-              "name": "currency"
-            },
-            {
-              "name": "email"
-            },
-            {
-              "name": "hidden"
-            },
-            {
-              "name": "number"
-            },
-            {
-              "name": "password"
-            },
-            {
-              "name": "postal-code"
-            },
-            {
-              "name": "search"
-            },
-            {
-              "name": "tel"
-            },
-            {
-              "name": "text"
-            },
-            {
-              "name": "textarea"
-            },
-            {
-              "name": "url"
-            }
-          ]
-        },
-        {
-          "name": "valid",
-          "description": ""
-        },
-        {
-          "name": "value",
-          "description": "The pre-set value to pass to the input element"
-        },
-        {
-          "name": "wrap",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/input/input.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-input-date",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "autofocus",
-          "description": ""
-        },
-        {
-          "name": "dark",
-          "description": "Sets the button to dark."
-        },
-        {
-          "name": "date-focus",
-          "description": "",
-          "values": [
-            {
-              "name": "ampm"
-            },
-            {
-              "name": "date"
-            },
-            {
-              "name": "hour"
-            },
-            {
-              "name": "minute"
-            },
-            {
-              "name": "month"
-            },
-            {
-              "name": "year"
-            }
-          ]
-        },
-        {
-          "name": "date-range-focus",
-          "description": "",
-          "values": [
-            {
-              "name": "from"
-            },
-            {
-              "name": "to"
-            }
-          ]
-        },
-        {
-          "name": "description",
-          "description": ""
-        },
-        {
-          "name": "disabled",
-          "description": ""
-        },
-        {
-          "name": "focused",
-          "description": ""
-        },
-        {
-          "name": "from",
-          "description": ""
-        },
-        {
-          "name": "inline",
-          "description": "Sets the display to inline"
-        },
-        {
-          "name": "input-tab-index",
-          "description": ""
-        },
-        {
-          "name": "label",
-          "description": ""
-        },
-        {
-          "name": "left-icon",
-          "description": "Sets the button to dark."
-        },
-        {
-          "name": "max",
-          "description": ""
-        },
-        {
-          "name": "min",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": "The name of the input element"
-        },
-        {
-          "name": "no-duration",
-          "description": ""
-        },
-        {
-          "name": "novalidate",
-          "description": ""
-        },
-        {
-          "name": "placeholder",
-          "description": ""
-        },
-        {
-          "name": "processing",
-          "description": ""
-        },
-        {
-          "name": "range",
-          "description": "The kind of element that the Input should be rendered as",
-          "values": [
-            {
-              "name": "date"
-            },
-            {
-              "name": "datetime"
-            },
-            {
-              "name": "time"
-            }
-          ]
-        },
-        {
-          "name": "readonly",
-          "description": ""
-        },
-        {
-          "name": "required",
-          "description": ""
-        },
-        {
-          "name": "shift",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": "",
-          "values": [
-            {
-              "name": "default"
-            },
-            {
-              "name": "large"
-            },
-            {
-              "name": "small"
-            }
-          ]
-        },
-        {
-          "name": "step",
-          "description": ""
-        },
-        {
-          "name": "to",
-          "description": ""
-        },
-        {
-          "name": "tooltip",
-          "description": ""
-        },
-        {
-          "name": "type",
-          "description": "The kind of element that the Input should be rendered as",
-          "values": [
-            {
-              "name": "date"
-            },
-            {
-              "name": "datetime"
-            },
-            {
-              "name": "time"
-            }
-          ]
-        },
-        {
-          "name": "valid",
-          "description": ""
-        },
-        {
-          "name": "value",
-          "description": "The pre-set value to pass to the input element"
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/input-date/input.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-input-file",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "accept",
-          "description": ""
-        },
-        {
-          "name": "dark",
-          "description": "Sets the button to dark."
-        },
-        {
-          "name": "description",
-          "description": ""
-        },
-        {
-          "name": "disabled",
-          "description": ""
-        },
-        {
-          "name": "droppable",
-          "description": ""
-        },
-        {
-          "name": "export",
-          "description": "Hides this element from exporting to figma"
-        },
-        {
-          "name": "focused",
-          "description": ""
-        },
-        {
-          "name": "hide-state",
-          "description": ""
-        },
-        {
-          "name": "input-tab-index",
-          "description": ""
-        },
-        {
-          "name": "label",
-          "description": ""
-        },
-        {
-          "name": "multiple",
-          "description": ""
-        },
-        {
-          "name": "multiple-file-caption",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": "The name of the input element"
-        },
-        {
-          "name": "novalidate",
-          "description": ""
-        },
-        {
-          "name": "placeholder",
-          "description": ""
-        },
-        {
-          "name": "readonly",
-          "description": ""
-        },
-        {
-          "name": "replace-placeholder",
-          "description": ""
-        },
-        {
-          "name": "required",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": "",
-          "values": [
-            {
-              "name": "default"
-            },
-            {
-              "name": "large"
-            },
-            {
-              "name": "small"
-            }
-          ]
-        },
-        {
-          "name": "tooltip",
-          "description": ""
-        },
-        {
-          "name": "value",
-          "description": "The pre-set value to pass to the input element"
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/input-file/input-file.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-input-tags",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "allow-new-items",
-          "description": ""
-        },
-        {
-          "name": "autofocus",
-          "description": ""
-        },
-        {
-          "name": "base",
-          "description": "",
-          "values": [
-            {
-              "name": "blue"
-            },
-            {
-              "name": "cyan"
-            },
-            {
-              "name": "gold"
-            },
-            {
-              "name": "gray"
-            },
-            {
-              "name": "green"
-            },
-            {
-              "name": "indigo"
-            },
-            {
-              "name": "lime"
-            },
-            {
-              "name": "magenta"
-            },
-            {
-              "name": "orange"
-            },
-            {
-              "name": "pink"
-            },
-            {
-              "name": "red"
-            },
-            {
-              "name": "teal"
-            },
-            {
-              "name": "violet"
-            },
-            {
-              "name": "yellow"
-            }
-          ]
-        },
-        {
-          "name": "complement",
-          "description": "",
-          "values": [
-            {
-              "name": "blue"
-            },
-            {
-              "name": "cyan"
-            },
-            {
-              "name": "gold"
-            },
-            {
-              "name": "gray"
-            },
-            {
-              "name": "green"
-            },
-            {
-              "name": "indigo"
-            },
-            {
-              "name": "lime"
-            },
-            {
-              "name": "magenta"
-            },
-            {
-              "name": "orange"
-            },
-            {
-              "name": "pink"
-            },
-            {
-              "name": "red"
-            },
-            {
-              "name": "teal"
-            },
-            {
-              "name": "violet"
-            },
-            {
-              "name": "yellow"
-            }
-          ]
-        },
-        {
-          "name": "dark",
-          "description": ""
-        },
-        {
-          "name": "description",
-          "description": ""
-        },
-        {
-          "name": "disabled",
-          "description": ""
-        },
-        {
-          "name": "export",
-          "description": ""
-        },
-        {
-          "name": "focused",
-          "description": ""
-        },
-        {
-          "name": "input-tab-index",
-          "description": ""
-        },
-        {
-          "name": "label",
-          "description": ""
-        },
-        {
-          "name": "min-chars",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": ""
-        },
-        {
-          "name": "novalidate",
-          "description": ""
-        },
-        {
-          "name": "placeholder",
-          "description": ""
-        },
-        {
-          "name": "readonly",
-          "description": ""
-        },
-        {
-          "name": "required",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": "",
-          "values": [
-            {
-              "name": "default"
-            },
-            {
-              "name": "large"
-            },
-            {
-              "name": "small"
-            }
-          ]
-        },
-        {
-          "name": "tooltip",
-          "description": ""
-        },
-        {
-          "name": "valid",
-          "description": ""
-        },
-        {
-          "name": "value",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/input-tags/input-tags.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-item",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "avatar",
-          "description": ""
-        },
-        {
-          "name": "avatar-icon",
-          "description": ""
-        },
-        {
-          "name": "avatar-shape",
-          "description": "",
-          "values": [
-            {
-              "name": "circle"
-            },
-            {
-              "name": "diamond"
-            },
-            {
-              "name": "hexagon"
-            },
-            {
-              "name": "message"
-            },
-            {
-              "name": "rectangle"
-            },
-            {
-              "name": "square"
-            }
-          ]
-        },
-        {
-          "name": "avatar-size",
-          "description": "",
-          "values": [
-            {
-              "name": "medium"
-            },
-            {
-              "name": "small"
-            }
-          ]
-        },
-        {
-          "name": "avatar-src",
-          "description": ""
-        },
-        {
-          "name": "block",
-          "description": ""
-        },
-        {
-          "name": "checked",
-          "description": ""
-        },
-        {
-          "name": "content",
-          "description": ""
-        },
-        {
-          "name": "dark",
-          "description": ""
-        },
-        {
-          "name": "default",
-          "description": ""
-        },
-        {
-          "name": "disabled",
-          "description": ""
-        },
-        {
-          "name": "export",
-          "description": "Makes sure this element cannot be exported."
-        },
-        {
-          "name": "focused",
-          "description": ""
-        },
-        {
-          "name": "group",
-          "description": ""
-        },
-        {
-          "name": "has-selected",
-          "description": ""
-        },
-        {
-          "name": "href",
-          "description": ""
-        },
-        {
-          "name": "icon",
-          "description": ""
-        },
-        {
-          "name": "inline",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": ""
-        },
-        {
-          "name": "quiet",
-          "description": ""
-        },
-        {
-          "name": "required",
-          "description": ""
-        },
-        {
-          "name": "settable-parent",
-          "description": ""
-        },
-        {
-          "name": "tag",
-          "description": "",
-          "values": [
-            {
-              "name": "a"
-            },
-            {
-              "name": "button"
-            },
-            {
-              "name": "checkbox"
-            },
-            {
-              "name": "radio"
-            },
-            {
-              "name": "span"
-            },
-            {
-              "name": "stencil-route"
-            }
-          ]
-        },
-        {
-          "name": "target",
-          "description": ""
-        },
-        {
-          "name": "tooltip",
-          "description": ""
-        },
-        {
-          "name": "value",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/item/item.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-item-group",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "dark",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": ""
-        },
-        {
-          "name": "supplement",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/item-group/item-group.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/group-overflow/group-overflow.tsx"
         }
       ]
     },
@@ -2392,52 +850,16 @@
       },
       "attributes": [
         {
-          "name": "color",
-          "description": ""
-        },
-        {
-          "name": "color-intensity",
-          "description": ""
-        },
-        {
           "name": "dark",
-          "description": "Sets the button or link as an outlined button."
+          "description": ""
         },
         {
           "name": "for",
           "description": ""
         },
         {
-          "name": "italicized",
-          "description": ""
-        },
-        {
           "name": "size",
           "description": ""
-        },
-        {
-          "name": "text-transformation",
-          "description": "",
-          "values": [
-            {
-              "name": "capitalize"
-            },
-            {
-              "name": "full-size-kana"
-            },
-            {
-              "name": "full-width"
-            },
-            {
-              "name": "lowercase"
-            },
-            {
-              "name": "none"
-            },
-            {
-              "name": "uppercase"
-            }
-          ]
         },
         {
           "name": "underneath",
@@ -2447,7 +869,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/label/label.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/label/label.tsx"
         }
       ]
     },
@@ -2556,6 +978,10 @@
           ]
         },
         {
+          "name": "small",
+          "description": ""
+        },
+        {
           "name": "type",
           "description": ""
         }
@@ -2563,7 +989,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/layout/layout.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/layout/layout.tsx"
         }
       ]
     },
@@ -2634,6 +1060,9 @@
               "name": "alert"
             },
             {
+              "name": "default"
+            },
+            {
               "name": "error"
             },
             {
@@ -2648,7 +1077,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/message/message.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/message/message.tsx"
         }
       ]
     },
@@ -2695,38 +1124,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/pagination/pagination.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-password-requirements",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "for",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": "",
-          "values": [
-            {
-              "name": "large"
-            },
-            {
-              "name": "small"
-            }
-          ]
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/password-requirements/password-requirements.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/pagination/pagination.tsx"
         }
       ]
     },
@@ -2739,176 +1137,34 @@
       "attributes": [
         {
           "name": "dark",
-          "description": "Sets the button or link as an outlined button."
+          "description": ""
+        },
+        {
+          "name": "ease",
+          "description": ""
         },
         {
           "name": "editable",
-          "description": "Allows the progress bar to be clicked on, to help the user to navigate through the progressing content."
+          "description": ""
         },
         {
           "name": "indeterminate",
-          "description": "Sets the maximum cap for steps in the progress bar"
+          "description": ""
         },
         {
           "name": "max",
-          "description": "Sets the maximum cap for steps in the progress bar"
-        },
-        {
-          "name": "noease",
-          "description": "eliminates the easing in the css so you can apply value updates without jitter."
+          "description": ""
         },
         {
           "name": "rounded",
-          "description": "eliminates the easing in the css so you can apply value updates without jitter."
+          "description": ""
         },
         {
           "name": "secondary",
-          "description": "Sets the value of the progress bar"
+          "description": ""
         },
         {
           "name": "slender",
-          "description": "Renders if this element is slender or not"
-        },
-        {
-          "name": "value",
-          "description": "Sets the value of the progress bar"
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/progress/progress.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-repeatable-fields",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "add-one-if-empty",
-          "description": ""
-        },
-        {
-          "name": "custom",
-          "description": ""
-        },
-        {
-          "name": "data",
-          "description": ""
-        },
-        {
-          "name": "readonly",
-          "description": ""
-        },
-        {
-          "name": "verbiage",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/repeatable-fields/repeatable-fields.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-rich-text",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "dark",
-          "description": "Sets the button or link as an outlined button."
-        },
-        {
-          "name": "description",
-          "description": ""
-        },
-        {
-          "name": "enable-alignment",
-          "description": ""
-        },
-        {
-          "name": "enable-emojis",
-          "description": ""
-        },
-        {
-          "name": "enable-images",
-          "description": ""
-        },
-        {
-          "name": "enable-links",
-          "description": ""
-        },
-        {
-          "name": "enable-mentions",
-          "description": ""
-        },
-        {
-          "name": "enable-rich",
-          "description": ""
-        },
-        {
-          "name": "enable-richer",
-          "description": ""
-        },
-        {
-          "name": "export",
-          "description": "Hides this element from exporting to figma"
-        },
-        {
-          "name": "inline",
-          "description": ""
-        },
-        {
-          "name": "label",
-          "description": ""
-        },
-        {
-          "name": "max",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": ""
-        },
-        {
-          "name": "novalidate",
-          "description": ""
-        },
-        {
-          "name": "placeholder",
-          "description": ""
-        },
-        {
-          "name": "readonly",
-          "description": ""
-        },
-        {
-          "name": "required",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": ""
-        },
-        {
-          "name": "tooltip",
-          "description": ""
-        },
-        {
-          "name": "twitter-based",
-          "description": ""
-        },
-        {
-          "name": "valid",
           "description": ""
         },
         {
@@ -2919,225 +1175,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/rich-text/rich-text.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-select",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "align",
-          "description": "",
-          "values": [
-            {
-              "name": "left"
-            },
-            {
-              "name": "right"
-            }
-          ]
-        },
-        {
-          "name": "change-theme",
-          "description": "",
-          "values": [
-            {
-              "name": "base"
-            },
-            {
-              "name": "complement"
-            }
-          ]
-        },
-        {
-          "name": "dark",
-          "description": ""
-        },
-        {
-          "name": "description",
-          "description": ""
-        },
-        {
-          "name": "export",
-          "description": ""
-        },
-        {
-          "name": "focused",
-          "description": ""
-        },
-        {
-          "name": "inline",
-          "description": ""
-        },
-        {
-          "name": "invert",
-          "description": ""
-        },
-        {
-          "name": "label",
-          "description": ""
-        },
-        {
-          "name": "loading",
-          "description": ""
-        },
-        {
-          "name": "multiple",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": ""
-        },
-        {
-          "name": "no-avatars",
-          "description": ""
-        },
-        {
-          "name": "no-clear",
-          "description": ""
-        },
-        {
-          "name": "novalidate",
-          "description": ""
-        },
-        {
-          "name": "open",
-          "description": ""
-        },
-        {
-          "name": "pjax-replace",
-          "description": ""
-        },
-        {
-          "name": "placeholder",
-          "description": ""
-        },
-        {
-          "name": "position",
-          "description": "",
-          "values": [
-            {
-              "name": "down"
-            },
-            {
-              "name": "up"
-            }
-          ]
-        },
-        {
-          "name": "ready",
-          "description": ""
-        },
-        {
-          "name": "required",
-          "description": ""
-        },
-        {
-          "name": "resize",
-          "description": "",
-          "values": [
-            {
-              "name": "full"
-            }
-          ]
-        },
-        {
-          "name": "search",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": "",
-          "values": [
-            {
-              "name": "large"
-            },
-            {
-              "name": "small"
-            },
-            {
-              "name": "tiny"
-            }
-          ]
-        },
-        {
-          "name": "tooltip",
-          "description": ""
-        },
-        {
-          "name": "valid",
-          "description": ""
-        },
-        {
-          "name": "value",
-          "description": ""
-        },
-        {
-          "name": "verbiage",
-          "description": ""
-        },
-        {
-          "name": "verbiage-an",
-          "description": ""
-        },
-        {
-          "name": "wide",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/select/select.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-show-if",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "equals",
-          "description": ""
-        },
-        {
-          "name": "field",
-          "description": ""
-        },
-        {
-          "name": "not-equals",
-          "description": ""
-        },
-        {
-          "name": "present",
-          "description": ""
-        },
-        {
-          "name": "property",
-          "description": ""
-        },
-        {
-          "name": "selector",
-          "description": ""
-        },
-        {
-          "name": "triggered",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/show-if/show-if.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/progress/progress.tsx"
         }
       ]
     },
@@ -3148,54 +1186,6 @@
         "value": ""
       },
       "attributes": [
-        {
-          "name": "base",
-          "description": "",
-          "values": [
-            {
-              "name": "blue"
-            },
-            {
-              "name": "cyan"
-            },
-            {
-              "name": "gold"
-            },
-            {
-              "name": "gray"
-            },
-            {
-              "name": "green"
-            },
-            {
-              "name": "indigo"
-            },
-            {
-              "name": "lime"
-            },
-            {
-              "name": "magenta"
-            },
-            {
-              "name": "orange"
-            },
-            {
-              "name": "pink"
-            },
-            {
-              "name": "red"
-            },
-            {
-              "name": "teal"
-            },
-            {
-              "name": "violet"
-            },
-            {
-              "name": "yellow"
-            }
-          ]
-        },
         {
           "name": "complete",
           "description": ""
@@ -3210,14 +1200,6 @@
         },
         {
           "name": "disabled",
-          "description": ""
-        },
-        {
-          "name": "error",
-          "description": ""
-        },
-        {
-          "name": "export",
           "description": ""
         },
         {
@@ -3239,16 +1221,12 @@
         {
           "name": "tab-count",
           "description": ""
-        },
-        {
-          "name": "validate",
-          "description": ""
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/step/step.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/step/step.tsx"
         }
       ]
     },
@@ -3266,154 +1244,12 @@
         {
           "name": "name",
           "description": ""
-        },
-        {
-          "name": "validate",
-          "description": ""
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/steps/steps.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-switch",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "base",
-          "description": "",
-          "values": [
-            {
-              "name": "blue"
-            },
-            {
-              "name": "cyan"
-            },
-            {
-              "name": "gold"
-            },
-            {
-              "name": "gray"
-            },
-            {
-              "name": "green"
-            },
-            {
-              "name": "indigo"
-            },
-            {
-              "name": "lime"
-            },
-            {
-              "name": "magenta"
-            },
-            {
-              "name": "orange"
-            },
-            {
-              "name": "pink"
-            },
-            {
-              "name": "red"
-            },
-            {
-              "name": "teal"
-            },
-            {
-              "name": "violet"
-            },
-            {
-              "name": "yellow"
-            }
-          ]
-        },
-        {
-          "name": "change-theme",
-          "description": ""
-        },
-        {
-          "name": "checked",
-          "description": ""
-        },
-        {
-          "name": "checked-default",
-          "description": ""
-        },
-        {
-          "name": "dark",
-          "description": "Sets the button or link as an outlined button."
-        },
-        {
-          "name": "description",
-          "description": ""
-        },
-        {
-          "name": "disabled",
-          "description": ""
-        },
-        {
-          "name": "export",
-          "description": "Hides this element from exporting to figma"
-        },
-        {
-          "name": "label",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": ""
-        },
-        {
-          "name": "no-value",
-          "description": ""
-        },
-        {
-          "name": "novalidate",
-          "description": ""
-        },
-        {
-          "name": "required",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": "",
-          "values": [
-            {
-              "name": "default"
-            },
-            {
-              "name": "large"
-            },
-            {
-              "name": "small"
-            }
-          ]
-        },
-        {
-          "name": "tooltip",
-          "description": ""
-        },
-        {
-          "name": "value",
-          "description": ""
-        },
-        {
-          "name": "yes-value",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/switch/switch.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/steps/steps.tsx"
         }
       ]
     },
@@ -3434,7 +1270,7 @@
         },
         {
           "name": "href",
-          "description": "Sets the href on the anchor tag if the button is a link."
+          "description": ""
         },
         {
           "name": "name",
@@ -3495,7 +1331,7 @@
         },
         {
           "name": "target",
-          "description": "Sets the target on the anchor tag if the button is a link."
+          "description": ""
         },
         {
           "name": "vertical",
@@ -3505,7 +1341,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/tab/tab.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/tab/tab.tsx"
         }
       ]
     },
@@ -3529,6 +1365,10 @@
           "description": ""
         },
         {
+          "name": "collapse",
+          "description": ""
+        },
+        {
           "name": "dark",
           "description": ""
         },
@@ -3541,11 +1381,11 @@
           "description": ""
         },
         {
-          "name": "name",
+          "name": "hidden-active",
           "description": ""
         },
         {
-          "name": "noanimation",
+          "name": "name",
           "description": ""
         },
         {
@@ -3602,7 +1442,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/tabs/tabs.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/tabs/tabs.tsx"
         }
       ]
     },
@@ -3614,103 +1454,7 @@
       },
       "attributes": [
         {
-          "name": "base",
-          "description": "",
-          "values": [
-            {
-              "name": "blue"
-            },
-            {
-              "name": "cyan"
-            },
-            {
-              "name": "gold"
-            },
-            {
-              "name": "gray"
-            },
-            {
-              "name": "green"
-            },
-            {
-              "name": "indigo"
-            },
-            {
-              "name": "lime"
-            },
-            {
-              "name": "magenta"
-            },
-            {
-              "name": "orange"
-            },
-            {
-              "name": "pink"
-            },
-            {
-              "name": "red"
-            },
-            {
-              "name": "teal"
-            },
-            {
-              "name": "violet"
-            },
-            {
-              "name": "yellow"
-            }
-          ]
-        },
-        {
           "name": "color",
-          "description": "",
-          "values": [
-            {
-              "name": "blue"
-            },
-            {
-              "name": "cyan"
-            },
-            {
-              "name": "gold"
-            },
-            {
-              "name": "gray"
-            },
-            {
-              "name": "green"
-            },
-            {
-              "name": "indigo"
-            },
-            {
-              "name": "lime"
-            },
-            {
-              "name": "magenta"
-            },
-            {
-              "name": "orange"
-            },
-            {
-              "name": "pink"
-            },
-            {
-              "name": "red"
-            },
-            {
-              "name": "teal"
-            },
-            {
-              "name": "violet"
-            },
-            {
-              "name": "yellow"
-            }
-          ]
-        },
-        {
-          "name": "complement",
           "description": "",
           "values": [
             {
@@ -3762,10 +1506,6 @@
           "description": ""
         },
         {
-          "name": "icon",
-          "description": ""
-        },
-        {
           "name": "outline",
           "description": ""
         },
@@ -3792,7 +1532,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/tag/tag.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/tag/tag.tsx"
         }
       ]
     },
@@ -3908,6 +1648,10 @@
           "description": ""
         },
         {
+          "name": "size",
+          "description": ""
+        },
+        {
           "name": "store",
           "description": ""
         },
@@ -3919,7 +1663,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/theme/theme.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/theme/theme.tsx"
         }
       ]
     },
@@ -3950,186 +1694,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/time/time.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-toggle",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "base",
-          "description": "",
-          "values": [
-            {
-              "name": "blue"
-            },
-            {
-              "name": "cyan"
-            },
-            {
-              "name": "gold"
-            },
-            {
-              "name": "gray"
-            },
-            {
-              "name": "green"
-            },
-            {
-              "name": "indigo"
-            },
-            {
-              "name": "lime"
-            },
-            {
-              "name": "magenta"
-            },
-            {
-              "name": "orange"
-            },
-            {
-              "name": "pink"
-            },
-            {
-              "name": "red"
-            },
-            {
-              "name": "teal"
-            },
-            {
-              "name": "violet"
-            },
-            {
-              "name": "yellow"
-            }
-          ]
-        },
-        {
-          "name": "block",
-          "description": ""
-        },
-        {
-          "name": "complement",
-          "description": "",
-          "values": [
-            {
-              "name": "blue"
-            },
-            {
-              "name": "cyan"
-            },
-            {
-              "name": "gold"
-            },
-            {
-              "name": "gray"
-            },
-            {
-              "name": "green"
-            },
-            {
-              "name": "indigo"
-            },
-            {
-              "name": "lime"
-            },
-            {
-              "name": "magenta"
-            },
-            {
-              "name": "orange"
-            },
-            {
-              "name": "pink"
-            },
-            {
-              "name": "red"
-            },
-            {
-              "name": "teal"
-            },
-            {
-              "name": "violet"
-            },
-            {
-              "name": "yellow"
-            }
-          ]
-        },
-        {
-          "name": "dark",
-          "description": "Sets the button or link as an outlined button."
-        },
-        {
-          "name": "description",
-          "description": ""
-        },
-        {
-          "name": "export",
-          "description": "Makes sure this element cannot be exported."
-        },
-        {
-          "name": "flip",
-          "description": ""
-        },
-        {
-          "name": "inline-label",
-          "description": ""
-        },
-        {
-          "name": "label",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": ""
-        },
-        {
-          "name": "novalidate",
-          "description": ""
-        },
-        {
-          "name": "required",
-          "description": ""
-        },
-        {
-          "name": "single",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": ""
-        },
-        {
-          "name": "stacked",
-          "description": ""
-        },
-        {
-          "name": "type",
-          "description": "",
-          "values": [
-            {
-              "name": "checkbox"
-            },
-            {
-              "name": "radio"
-            }
-          ]
-        },
-        {
-          "name": "value",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/toggle/toggle.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/time/time.tsx"
         }
       ]
     },
@@ -4180,12 +1745,16 @@
         {
           "name": "focused",
           "description": ""
+        },
+        {
+          "name": "hover",
+          "description": ""
         }
       ],
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/tooltip/tooltip.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/tooltip/tooltip.tsx"
         }
       ]
     },
@@ -4224,42 +1793,7 @@
       "references": [
         {
           "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/common/unit/unit.tsx"
-        }
-      ]
-    },
-    {
-      "name": "midwest-validate",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "color",
-          "description": ""
-        },
-        {
-          "name": "element",
-          "description": ""
-        },
-        {
-          "name": "name",
-          "description": ""
-        },
-        {
-          "name": "silent",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/forms/validate/validate.tsx"
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/unit/unit.tsx"
         }
       ]
     }

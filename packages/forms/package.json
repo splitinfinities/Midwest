@@ -1,0 +1,46 @@
+{
+  "name": "@midwest-design/forms",
+  "public": true,
+  "version": "0.0.12",
+  "description": "Stencil Component Starter",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/forms/forms.js",
+  "files": [
+    "dist/",
+    "loader/",
+    "docs/",
+    "custom-elements.json"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "build.ci": "stencil build --ci",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@midwest-design/common": "^0.0.12",
+    "@midwest-design/core": "^0.0.12",
+    "@stencil/core": "^2.0.0-6",
+    "@stencil/postcss": "^1.0.1",
+    "animejs": "^3.2.0",
+    "autoprefixer": "^9.8.6",
+    "basicscroll": "^3.0.3",
+    "css-custom-properties": "^0.1.0",
+    "cssnano": "^4.1.10",
+    "postcss-import": "^12.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "gitHead": "57d53b7e072f87de5a836e44ba5cb15d1a73917b"
+}

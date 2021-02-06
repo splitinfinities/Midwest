@@ -53,17 +53,17 @@ html {
 
 ::selection,
 *::selection {
-  background: var(--theme-base-2) !important;
+  background: var(--theme-2) !important;
 }
 
 html * {
   scrollbar-width: thin;
-  scrollbar-color: var(--gray3) var(--white);
+  scrollbar-color: var(--gray-3) var(--white);
 }
 
 .dark-mode * {
   scrollbar-width: thin;
-  scrollbar-color: var(--gray9) var(--black);
+  scrollbar-color: var(--gray-9) var(--black);
 }
 
 html *::-webkit-scrollbar {
@@ -76,7 +76,7 @@ html *::-webkit-scrollbar-track {
 }
 
 html *::-webkit-scrollbar-thumb {
-  background-color: var(--gray3);
+  background-color: var(--gray-3);
   border-radius: 6px;
   border: 3px solid var(--white);
 }
@@ -86,7 +86,7 @@ html *::-webkit-scrollbar-thumb {
 }
 
 .dark-mode *::-webkit-scrollbar-thumb {
-  background-color: var(--gray9);
+  background-color: var(--gray-9);
   border-radius: 6px;
   border: 3px solid var(--black);
 }
@@ -148,17 +148,17 @@ h6 {
 }
 
 p {
-  color: var(--gray10);
+  color: var(--gray-10);
 }
 
 .dark-mode p {
-  color: var(--gray2);
+  color: var(--gray-2);
 }
 
 a {
   @apply underline;
-  color: var(--theme-base-6, theme("colors.red.6"));
-  text-decoration-color: var(--theme-base-3, theme("colors.red.3"));
+  color: var(--theme-6, theme("colors.red.6"));
+  text-decoration-color: var(--theme-3, theme("colors.red.3"));
   text-decoration-thickness: 2px;
 }
 
@@ -166,8 +166,8 @@ a:hover,
 a:active,
 a:focus,
 a:active {
-  color: var(--theme-base-8, theme("colors.red.8"));
-  text-decoration-color: var(--theme-base-6, theme("colors.red.6"));
+  color: var(--theme-8, theme("colors.red.8"));
+  text-decoration-color: var(--theme-6, theme("colors.red.6"));
 }
 
 .clip {
@@ -239,7 +239,7 @@ midwest-callout a {
 
 midwest-callout a:hover,
 midwest-callout a:focus {
-  color: var(--theme-base-0);
+  color: var(--theme-0);
 }
 
 midwest-callout + midwest-callout {
@@ -300,26 +300,26 @@ p + midwest-button {
 .animation-gradient {
   background:
     linear-gradient(
-      var(--red8) 0%,
-      var(--red8) 10%,
-      var(--orange8) 10%,
-      var(--orange8) 20%,
-      var(--yellow8) 20%,
-      var(--yellow8) 30%,
-      var(--lime8) 30%,
-      var(--lime8) 40%,
-      var(--green8) 40%,
-      var(--green8) 50%,
-      var(--cyan8) 50%,
-      var(--cyan8) 60%,
-      var(--blue8) 60%,
-      var(--blue8) 70%,
-      var(--indigo8) 70%,
-      var(--indigo8) 80%,
-      var(--violet8) 80%,
-      var(--violet8) 90%,
-      var(--fuschia8) 90%,
-      var(--fuschia8) 100%
+      var(--red-8) 0%,
+      var(--red-8) 10%,
+      var(--orange-8) 10%,
+      var(--orange-8) 20%,
+      var(--yellow-8) 20%,
+      var(--yellow-8) 30%,
+      var(--lime-8) 30%,
+      var(--lime-8) 40%,
+      var(--green-8) 40%,
+      var(--green-8) 50%,
+      var(--cyan-8) 50%,
+      var(--cyan-8) 60%,
+      var(--blue-8) 60%,
+      var(--blue-8) 70%,
+      var(--indigo-8) 70%,
+      var(--indigo-8) 80%,
+      var(--violet-8) 80%,
+      var(--violet-8) 90%,
+      var(--magenta-8) 90%,
+      var(--magenta-8) 100%
     );
   background-position: 1000px 75vh;
   background-repeat: repeat-y;

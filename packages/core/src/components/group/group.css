@@ -1,0 +1,154 @@
+:host,
+:host *,
+:host *:before,
+:host *:after {
+  box-sizing: border-box;
+}
+
+:host {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-left: 0.05rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+:host([avatars]) {
+  align-items: center;
+}
+
+:host([avatars]) ::slotted(midwest-avatar) {
+  align-self: center;
+}
+
+:host([buttons]) {
+  background: var(--theme-8);
+}
+
+:host ::slotted(*) {
+  display: block;
+  margin-left: 1px !important;
+}
+
+:host ::slotted(midwest-avatar[shape="circle"]) {
+  margin-left: -0.25rem !important;
+  filter: drop-shadow(1px 1px 0px var(--gray-0))
+    drop-shadow(-1px 1px 0px var(--gray-0))
+    drop-shadow(1px -1px 0px var(--gray-0))
+    drop-shadow(-1px -1px 0px var(--gray-0));
+}
+
+:host ::slotted(midwest-avatar[shape="circle"]:first-child) {
+  margin-left: 0.25rem !important;
+}
+
+:host ::slotted(midwest-avatar[shape="circle"]:last-child) {
+  margin-right: 0.25rem !important;
+}
+
+:host([fill]) {
+  display: flex;
+  width: 100%;
+}
+
+:host([choice]) .choice {
+  --background-color: var(--white) !important;
+  --color: var(--black) !important;
+  -ms-flex-order: 1;
+  order: 1;
+  padding: 0;
+  margin: 0 -1.125em;
+  z-index: 2;
+  border-radius: 100%;
+  align-self: center;
+}
+
+:host([choice]) ::slotted(midwest-button:first-child) {
+  order: 0;
+  --padding: 0.5em 2.25em 0.5em 1em;
+}
+
+:host([choice]) ::slotted(midwest-button:last-child) {
+  order: 2;
+  --padding: 0.5em 1em 0.5em 2.25em;
+}
+
+:host ::slotted(*) {
+  align-self: stretch;
+}
+
+:host([fill]) ::slotted(*) {
+  width: 100%;
+}
+
+:host ::slotted(midwest-button),
+:host ::slotted(midwest-input),
+:host ::slotted(midwest-card) {
+  --border-radius: 0;
+  margin: 0;
+}
+
+:host ::slotted(*:nth-of-type(1)) {
+  margin-left: -1px !important;
+}
+
+:host ::slotted([emphasis]) {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+:host ::slotted(midwest-avatar) {
+  margin-left: 2px;
+  --drop-shadow: none;
+}
+
+:host ::slotted(midwest-avatar) {
+  position: relative;
+  margin-left: -0.5em;
+  --drop-shadow: 0.1em 0 0 white;
+  transition: all 200ms var(--ease) 0s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host ::slotted(midwest-avatar) {
+    transition: none;
+  }
+}
+
+:host([overflow]) > *:nth-of-type(1) {
+  z-index: 10;
+}
+:host([overflow]) > *:nth-of-type(2) {
+  z-index: 9;
+}
+:host([overflow]) > *:nth-of-type(3) {
+  z-index: 8;
+}
+:host([overflow]) > *:nth-of-type(4) {
+  z-index: 7;
+}
+:host([overflow]) > *:nth-of-type(5) {
+  z-index: 6;
+}
+:host([overflow]) > *:nth-of-type(6) {
+  z-index: 5;
+}
+:host([overflow]) > *:nth-of-type(7) {
+  z-index: 4;
+}
+:host([overflow]) > *:nth-of-type(8) {
+  z-index: 3;
+}
+:host([overflow]) > *:nth-of-type(9) {
+  z-index: 2;
+}
+:host([overflow]) > *:nth-of-type(10) {
+  z-index: 1;
+}
+
+:host midwest-group-overflow {
+  margin-left: 0.25em;
+}

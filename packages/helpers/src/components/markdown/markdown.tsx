@@ -108,7 +108,7 @@ export class Markdown {
         <section>
           <copy-wrap full class="wrap" innerHTML={this.converted} />
         </section>
-        <footer class="bg-theme-base0">
+        <footer class="bg-theme-0">
           <midwest-input type="textarea" default={this.codeString} onUpdate={(e) => { this.codeString = e.detail; this.convert(); }} />
         </footer>
       </midwest-card>

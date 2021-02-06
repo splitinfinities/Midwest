@@ -9,8 +9,8 @@
 
 ### Colors
 
-<midwest-tag color="theme-base5">Theming</midwest-tag>
-<midwest-tag color="theme-complement5">Theming</midwest-tag>
+<midwest-tag color="theme-5">Theming</midwest-tag>
+<midwest-tag color="complement-5">Theming</midwest-tag>
 
 <midwest-tag color="red5">Awesome</midwest-tag>
 <midwest-tag color="orange5">Awesome</midwest-tag>
@@ -21,7 +21,7 @@
 <midwest-tag color="blue5">Awesome</midwest-tag>
 <midwest-tag color="indigo5">Awesome</midwest-tag>
 <midwest-tag color="violet5">Awesome</midwest-tag>
-<midwest-tag color="fuschia5">Awesome</midwest-tag>
+<midwest-tag color="magenta5">Awesome</midwest-tag>
 <midwest-tag color="pink5">Awesome</midwest-tag>
 <midwest-tag color="gray5">Awesome</midwest-tag>
 

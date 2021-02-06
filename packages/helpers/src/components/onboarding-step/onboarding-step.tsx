@@ -105,11 +105,11 @@ export class OnboardingStep {
       details.beforeShowPromise = async () => { 
         await new Promise((resolve) => {
           document.addEventListener("modal:opened", () => {
-            resolve();
+            resolve(false);
           });
           
           document.addEventListener("modal:closed", () => {
-            resolve();
+            resolve(false);
           });
         });
 
@@ -126,7 +126,7 @@ export class OnboardingStep {
         if (this.navigateTo && this.pjax) {
           await new Promise((resolve) => {
             document.addEventListener("pjax:complete", () => {
-              resolve();
+              resolve(false);
             });
 
             this.pjax.loadUrl(this.navigateTo)

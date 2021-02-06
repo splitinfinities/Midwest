@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start": "run-p dev storybook",
     "build": "lerna run build --stream",
     "build.common": "lerna run build --stream --scope=@midwest-design/common",
     "build.motion": "lerna run build --stream --scope=@midwest-design/motion",
     "build.audio": "lerna run build --stream --scope=@midwest-design/audio",
     "build.core": "lerna run build --stream --scope=@midwest-design/core",
+    "build.forms": "lerna run build --stream --scope=@midwest-design/forms",
     "build.media": "lerna run build --stream --scope=@midwest-design/media",
     "build.helpers": "lerna run build --stream --scope=@midwest-design/helpers",
     "build.new-tab": "lerna run build --stream --scope=@midwest-design/new-tab",
@@ -16,11 +18,12 @@
     "build.docs": "lerna run build --stream --scope=@midwest-design/docs",
     "lint.styles": "lerna run lint.styles --stream",
     "stylelint.fix": "lerna run stylelint.fix --stream --parallel",
-    "dev": "lerna run start --stream --parallel --scope={@midwest-design/common,@midwest-design/core,@midwest-design/media,@midwest-design/audio,@midwest-design/helpers,@midwest-design/motion,@midwest-design/device}",
+    "dev": "lerna run start --stream --parallel",
     "dev.common": "lerna run start --stream --scope=@midwest-design/common",
     "dev.motion": "lerna run start --stream --scope=@midwest-design/motion",
     "dev.audio": "lerna run start --stream --scope=@midwest-design/audio",
     "dev.core": "lerna run start --stream --scope=@midwest-design/core",
+    "dev.forms": "lerna run start --stream --scope=@midwest-design/forms",
     "dev.media": "lerna run start --stream --scope=@midwest-design/media",
     "dev.helpers": "lerna run start --stream --scope=@midwest-design/helpers",
     "dev.new-tab": "lerna run start --stream --scope=@midwest-design/new-tab",
@@ -37,7 +40,9 @@
     "lerna.publish": "lerna publish from-package",
     "git.push": "git push --follow-tags",
     "cut": "yarn lerna.version && yarn lerna.publish && yarn git.push",
-    "diff": "lerna diff"
+    "diff": "lerna diff",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "husky": {
     "hooks": {
@@ -45,13 +50,14 @@
     }
   },
   "license": "MIT",
-  "engines": {
-    "node": "^12 || ^14"
-  },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "@storybook/web-components": "^6.0.16",
+    "@storybook/addon-a11y": "^6.0.16",
+    "@storybook/addon-essentials": "^6.0.0-rc.26",
+    "@storybook/addon-knobs": "^6.0.16",
     "bp-smart-commit": "^1.4.1",
     "husky": "^4.2.5",
     "lerna": "^3.13.4",

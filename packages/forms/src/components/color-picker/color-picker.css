@@ -1,0 +1,166 @@
+:host,
+:host *,
+:host *::before,
+:host *::after {
+  box-sizing: border-box;
+}
+
+:host {
+  contain: content;
+
+  --width: 32px;
+  --height: 32px;
+  --gap: 2px;
+  --mod-width: calc(var(--width) + var(--gap));
+  --mod-height: calc(var(--height) + var(--gap));
+
+  display: inline-block;
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  background: var(--selected-color, var(--red-5));
+  border: 2px solid var(--selected-color, var(--red-5));
+  border-radius: 100%;
+}
+
+:host([size="large"]) {
+  --width: 64px;
+  --height: 64px;
+  --gap: 4px;
+}
+
+:host .wrap {
+  border-radius: 100%;
+  position: relative;
+  left: calc(var(--gap) * -1);
+  top: calc(var(--gap) * -1);
+  height: calc(100% + var(--gap) * 2);
+  width: calc(100% + var(--gap) * 2);
+}
+
+:host button {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  transition: all 400ms var(--ease, ease-out) 100ms;
+  opacity: 0;
+  border: 0;
+  width: var(--width);
+  height: var(--height);
+  border-radius: 100%;
+  transform: translate3d(0, 0, 0);
+}
+
+:host button.current {
+  position: relative;
+  border: var(--gap) solid var(--gray-2);
+  background: var(--white);
+  overflow: hidden;
+}
+
+:host button.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  background: var(--red-);
+  height: 4px;
+}
+
+:host([val="none"]),
+:host button.none {
+  background: white;
+  border: var(--gap) solid var(--black);
+}
+
+:host([val="none"])::after,
+:host button.none::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(50% - var(--gap));
+  top: calc(0% - var(--gap));
+  width: calc(var(--gap) * 2);
+  height: calc(100% + (var(--gap) * 2));
+  transform: rotate(45deg);
+  background: var(--red-5);
+}
+
+:host button[data-selected="true"] {
+  opacity: 1;
+  z-index: 9;
+}
+
+:host .wrap:hover {
+  width: calc(var(--mod-width) * 3);
+  height: calc(var(--mod-height) * 6);
+  border-radius: 100%;
+}
+
+:host .wrap:hover button {
+  opacity: 1;
+  z-index: 99;
+  height: var(--height);
+}
+
+:host .wrap:hover button:nth-of-type(1) {
+  transform: translate3d(calc(var(--mod-width) * -1), var(--mod-height), 0);
+}
+
+:host .wrap:hover button:nth-of-type(2) {
+  transform: translate3d(0, var(--mod-height), 0);
+}
+
+:host .wrap:hover button:nth-of-type(3) {
+  transform: translate3d(var(--mod-width), var(--mod-height), 0);
+}
+
+:host .wrap:hover button:nth-of-type(4) {
+  transform: translate3d(calc(var(--mod-width) * -1), calc(var(--mod-height) * 2), 0);
+}
+
+:host .wrap:hover button:nth-of-type(5) {
+  transform: translate3d(0, calc(var(--mod-height) * 2), 0);
+}
+
+:host .wrap:hover button:nth-of-type(6) {
+  transform: translate3d(var(--mod-width), calc(var(--mod-height) * 2), 0);
+}
+
+:host .wrap:hover button:nth-of-type(7) {
+  transform: translate3d(calc(var(--mod-width) * -1), calc(var(--mod-height) * 3), 0);
+}
+
+:host .wrap:hover button:nth-of-type(8) {
+  transform: translate3d(0, calc(var(--mod-height) * 3), 0);
+}
+
+:host .wrap:hover button:nth-of-type(9) {
+  transform: translate3d(var(--mod-width), calc(var(--mod-height) * 3), 0);
+}
+
+:host .wrap:hover button:nth-of-type(10) {
+  transform: translate3d(calc(var(--mod-width) * -1), calc(var(--mod-height) * 4), 0);
+}
+
+:host .wrap:hover button:nth-of-type(11) {
+  transform: translate3d(0, calc(var(--mod-height) * 4), 0);
+}
+
+:host .wrap:hover button:nth-of-type(12) {
+  transform: translate3d(var(--mod-width), calc(var(--mod-height) * 4), 0);
+}
+
+:host .wrap:hover button:nth-of-type(13) {
+  transform: translate3d(calc(var(--mod-width) * -1), calc(var(--mod-height) * 5), 0);
+}
+
+:host .wrap:hover button:nth-of-type(14) {
+  transform: translate3d(var(--mod-width), calc(var(--mod-height) * 5), 0);
+}
+
+:host([dark][val="none"]),
+:host([dark]) button.none {
+  background: var(--black) !important;
+  border: 2px solid var(--white) !important;
+}

@@ -126,64 +126,64 @@
     linear,
     right top,
     left top,
-    from(var(--gray9)),
+    from(var(--gray-9)),
     to(rgba(0, 0, 0, 0))
   );
   background-image: -webkit-linear-gradient(
     right,
-    var(--gray9),
+    var(--gray-9),
     rgba(0, 0, 0, 0)
   );
-  background-image: -o-linear-gradient(right, var(--gray9), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to left, var(--gray9), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(right, var(--gray-9), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to left, var(--gray-9), rgba(0, 0, 0, 0));
 }
 .swiper-container-3d .swiper-slide-shadow-right {
   background-image: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(var(--gray9)),
+    from(var(--gray-9)),
     to(rgba(0, 0, 0, 0))
   );
   background-image: -webkit-linear-gradient(
     left,
-    var(--gray9),
+    var(--gray-9),
     rgba(0, 0, 0, 0)
   );
-  background-image: -o-linear-gradient(left, var(--gray9), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to right, var(--gray9), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, var(--gray-9), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, var(--gray-9), rgba(0, 0, 0, 0));
 }
 .swiper-container-3d .swiper-slide-shadow-top {
   background-image: -webkit-gradient(
     linear,
     left bottom,
     left top,
-    from(var(--gray9)),
+    from(var(--gray-9)),
     to(rgba(0, 0, 0, 0))
   );
   background-image: -webkit-linear-gradient(
     bottom,
-    var(--gray9),
+    var(--gray-9),
     rgba(0, 0, 0, 0)
   );
-  background-image: -o-linear-gradient(bottom, var(--gray9), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to top, var(--gray9), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(bottom, var(--gray-9), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, var(--gray-9), rgba(0, 0, 0, 0));
 }
 .swiper-container-3d .swiper-slide-shadow-bottom {
   background-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    from(var(--gray9)),
+    from(var(--gray-9)),
     to(rgba(0, 0, 0, 0))
   );
   background-image: -webkit-linear-gradient(
     top,
-    var(--gray9),
+    var(--gray-9),
     rgba(0, 0, 0, 0)
   );
-  background-image: -o-linear-gradient(top, var(--gray9), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to bottom, var(--gray9), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(top, var(--gray-9), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, var(--gray-9), rgba(0, 0, 0, 0));
 }
 /* IE10 Windows Phone 8 Fixes */
 .swiper-container-wp8-horizontal,
@@ -532,7 +532,7 @@ button.swiper-pagination-bullet {
   height: 100%;
   width: 100%;
   position: relative;
-  background: var(--gray9);
+  background: var(--gray-9);
   border-radius: 10px;
   left: 0;
   top: 0;

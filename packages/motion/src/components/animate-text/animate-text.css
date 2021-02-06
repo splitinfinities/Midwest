@@ -18,7 +18,7 @@ midwest-animate-text[method="retro"] .letter:not(:first-of-type) {
   top: calc(var(--iteration) * 7vh);
   left: 0;
   right: 0;
-  color: var(--theme-complement-5);
+  color: var(--complement-5);
   z-index: calc(-1 * var(--iteration));
   mix-blend-mode: color;
 }

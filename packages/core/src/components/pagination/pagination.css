@@ -1,0 +1,167 @@
+
+
+:host {
+  display: block;
+  color: var(--color);
+  font-size: 1rem;
+  --color: var(--gray-5);
+  --hover: var(--theme-5);
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+:host .pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+:host .pagination-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+:host a {
+  text-decoration: none;
+  border-radius: 100%;
+}
+
+:host a.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  color: var(--color);
+}
+
+:host a.icon:hover,
+:host a.icon:active,
+:host a.icon:focus,
+:host a.icon:active {
+  color: var(--hover);
+}
+
+:host a.current-number:hover,
+:host a.current-number:active,
+:host a.current-number:focus {
+  color: white;
+}
+
+:host .ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  margin: 0 0.25em;
+}
+
+:host .pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  position: relative;
+  transition: all 200ms var(--ease) 0s;
+}
+
+:host .number {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  font-weight: 700;
+  transition: all 200ms var(--ease) 0ms;
+  margin: 1rem 0;
+  width: 0;
+  height: 0;
+  opacity: 1;
+  z-index: 1;
+  padding: 0;
+  transform: scale(0);
+}
+
+:host .number[data-visible="false"] {
+  transform: scale(0);
+}
+
+:host .number[data-visible] {
+  width: 2rem;
+  height: 2rem;
+  opacity: 1;
+  padding: 0;
+  margin: 0 0.25em;
+  transform: scale(1);
+}
+
+:host .number:hover,
+:host .number:active,
+:host .number:focus,
+:host .number:active {
+  color: var(--hover);
+}
+
+:host .current-number {
+  margin: 1rem;
+  color: white;
+}
+
+:host .number::after {
+  content: "";
+  position: absolute;
+  background: var(--theme-5);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2em;
+  transform: scale(0);
+  transition: all 100ms var(--ease) 0ms;
+  opacity: 0;
+  z-index: -1;
+}
+
+:host .number.current-number::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+:host .skip-button {
+  margin-left: 2rem;
+  line-height: 0;
+}
+
+:host *[data-hidden="yes"] {
+  display: none !important;
+}
+
+:host .compact-pagination-container {
+  display: flex;
+  align-items: center;
+}
+
+:host .compact-pagination-container midwest-input {
+  width: 5rem;
+  --padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+:host([dark]) a.number:hover,
+:host([dark]) a.number:active,
+:host([dark]) a.number:focus {
+  color: white;
+}
+
+:host([dark]) .current-number {
+  color: var(--gray-9) !important;
+}
+
+:host([dark]) a.icon:hover,
+:host([dark]) a.icon:active,
+:host([dark]) a.icon:focus {
+  color: white;
+}

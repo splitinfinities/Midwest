@@ -1,0 +1,56 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.05rem solid var(--background-color);
+  border-radius: 0.2em;
+  background-color: var(--background-color);
+  padding: 0.2em 0.3em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color);
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: var(--font-size);
+
+  --color: var(--color, var(--white));
+  --background-color: var(--background-color, var(--blue-6));
+  --font-size: 1rem;
+}
+
+:host ::slotted(*[slot="icon"]),
+:host ::slotted(*[slot="avatar"]) {
+  margin-right: .5em;
+  margin-left: -.25em;
+}
+
+:host ::slotted([slot="action"]) {
+  margin-left: .5em;
+  margin-right: -.25em;
+}
+
+:host .tag {
+  font-size: var(--font-size);
+}
+
+:host([size="tiny"]) {
+  --font-size: 0.75rem;
+}
+
+:host([size="small"]) {
+  --font-size: 0.875rem;
+}
+
+:host([size="large"]) {
+  --font-size: 1.25rem;
+}
+
+:host([pill]) {
+  border-radius: 500rem;
+}
+
+:host([dark]) {
+  --color: var(--black);
+}

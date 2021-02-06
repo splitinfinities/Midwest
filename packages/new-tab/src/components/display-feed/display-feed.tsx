@@ -123,7 +123,7 @@ export class DisplayFeed {
     return (
       <section class="list bg-white dm:bg-black p-4">
         { !this.data && !this.displayAccessButton && this.renderLoading() }
-        { this.data && <midwest-grid class={this.type} cols={1} noresponsive>
+        { this.data && <midwest-grid class={this.type} cols={1} responsive={false}>
           <animate-presence>
             {this.data.map(item => <animate-presence>{this.renderItem(item)}</animate-presence>)}
           </animate-presence>

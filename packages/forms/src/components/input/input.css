@@ -1,0 +1,531 @@
+:host {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+
+  --font-size: 1rem;
+  --complementing-font-size: 0.875rem;
+  --height: 3em;
+  --padding: 0 1em;
+  --background: var(--white);
+  --color: var(--black);
+  --icon-color: var(--gray-4);
+  --border-color: var(--gray-2);
+  --border: 1px solid var(--border-color);
+  --line-height: 1.4;
+  --border-radius: 0.3rem;
+  --validation-spacing: 0.2em;
+}
+
+:host ::-webkit-input-placeholder {
+  color: var(--gray-5);
+}
+
+:host ::-moz-placeholder {
+  color: var(--gray-5);
+}
+
+:host :-ms-input-placeholder {
+  color: var(--gray-5);
+}
+
+:host :-moz-placeholder {
+  color: var(--gray-5);
+}
+
+:host([type="hidden"]) {
+  display: none;
+}
+
+:host([icon="left"]) {
+  --padding: 0 1em 0 3em;
+}
+
+:host([icon="right"]) {
+  --padding: 0 1em 0 3em;
+}
+
+:host([icon="both"]) {
+  --padding: 0 3em 0 3em;
+}
+
+:host([size="small"]) {
+  --font-size: 0.875rem;
+  --complementing-font-size: 0.75rem;
+  --padding: 0 1em;
+}
+
+:host([size="large"]) {
+  --font-size: 1.125em;
+  --complementing-font-size: 1em;
+  --padding: 0 1.125em;
+}
+
+:host([size="huge"]) {
+  --font-size: 2em;
+  --complementing-font-size: 12em;
+  --padding: 0 0.75em;
+}
+
+:host(:hover),
+:host(:focus) {
+  --border-color: var(--theme-3);
+}
+
+:host([inline]) .input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none !important;
+  --border-radius: 0;
+}
+
+:host ::selection,
+:host *::selection {
+  background: var(--theme-2) !important;
+}
+
+:host([type="textarea"]) .wrapper {
+  max-width: 100%;
+}
+
+:host .content {
+  position: relative;
+}
+
+:host midwest-tooltip {
+  width: calc(100% - 1.5em);
+  pointer-events: none;
+}
+
+:host .star {
+  color: var(--red-5);
+  padding-left: 0.125rem;
+}
+
+:host .caps-lock {
+  position: absolute;
+  height: calc(100% - 4px);
+  border-radius: var(--border-radius);
+  right: 2px;
+  top: 2px;
+  background: var(--background-color);
+  display: inline-grid;
+  grid-gap: calc(var(--font-size) / 2);
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 0 calc(var(--font-size) / 2);
+}
+
+:host .caps-lock ion-icon {
+  font-size: calc(var(--font-size) * 1.25);
+}
+
+:host .caps-lock * {
+  margin: 0;
+  color: var(--red-4);
+}
+
+:host([dark]) .caps-lock * {
+  color: var(--red-6);
+}
+
+:host([type="number"]) input {
+  -moz-appearance: textfield;
+}
+
+:host input,
+:host textarea,
+:host .fake-input {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  outline: 0;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: 100%;
+  color: var(--color);
+  font-weight: 500;
+  -moz-appearance: none;
+  font-family: inherit;
+}
+
+:host .fake-input {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+  background: var(--background);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+  display: flex;
+  align-items: center;
+  padding: var(--padding);
+  color: var(--color);
+  font-weight: 500;
+  border: none;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+:host .fake-input button {
+  
+  font-size: inherit;
+  appearance: none;
+  border: 0;
+  background: 0;
+  padding: 0.25em 0.25em;
+  margin: 0 -0.125em;
+  font-variant-numeric: tabular-nums;
+  border-radius: 0.1em;
+  transition: none;
+  line-height: 1;
+}
+}
+
+:host .fake-input button {
+  
+  font-size: inherit;
+  appearance: none;
+  border: 0;
+  background: 0;
+  padding: 0.25em 0.25em;
+  margin: 0 -0.125em;
+  font-variant-numeric: tabular-nums;
+  border-radius: 0.1em;
+  transition: all 50ms var(--ease) 0s;
+  line-height: 1;
+}
+
+:host .fake-input button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--theme-5);
+  z-index: 1;
+}
+
+:host .fake-input button.hour {
+  margin-left: 0.125em;
+}
+
+:host(.db) input,
+:host(.db) textarea,
+:host(.db) .fake-input,
+:host(.dib) input,
+:host(.dib) textarea,
+:host(.dib) .fake-input,
+:host(.di) input,
+:host(.di) textarea,
+:host(.di) .fake-input {
+  width: auto;
+}
+
+:host input::-moz-focus-inner,
+:host textarea::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+:host input::-webkit-inner-spin-button,
+:host input::-webkit-outer-spin-button,
+:host textarea::-webkit-inner-spin-button,
+:host textarea::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+:host input {
+  box-sizing: inherit;
+  background: var(--background);
+  outline: 0;
+  padding: var(--padding);
+  height: var(--height);
+  overflow: hidden;
+  line-height: var(--line-height);
+  font-size: var(--font-size);
+}
+
+:host input[disabled] {
+  background: var(--gray-0);
+}
+
+:host textarea {
+  resize: vertical;
+  outline: 0;
+  background: var(--background);
+  padding: var(--padding);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  min-height: calc(var(--height) * 2);
+  max-height: 10em;
+  line-height: 1.4;
+  font-size: var(--font-size);
+}
+
+:host label {
+  display: block;
+}
+
+:host([focused]) .input,
+:host(:focus-within) .input,
+:host(.invalid) .input {
+  --border: 1px solid var(--theme-5);
+  box-shadow: inset 0 0 0 1px var(--theme-5);
+}
+
+:host .search {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.25em;
+  font-size: calc(var(--font-size) + var(--complementing-font-size));
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :host .smile {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transition: none;
+    transform: scale(0) translateY(-50%);
+    transform-origin: 50% 0;
+    opacity: 0;
+    color: var(--icon-color);
+    font-size: calc(var(--font-size) * 2);
+    line-height: 0;
+    background: var(--background);
+  }
+}
+
+:host .smile {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transition: color 100ms ease 0s, transform 500ms ease 0s;
+  transform: scale(0) translateY(-50%);
+  transform-origin: 50% 0;
+  opacity: 0;
+  color: var(--icon-color);
+  font-size: calc(var(--font-size) * 2);
+  line-height: 0;
+  background: var(--background);
+}
+
+:host([type="password"]) input {
+  padding-right: 4rem;
+}
+
+:host .icon {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: calc(var(--font-size) * 2);
+  width: calc(var(--font-size) * 2);
+  height: calc(var(--font-size) * 2);
+  margin-left: 0.5rem;
+  color: var(--theme-5);
+  z-index: 3;
+  display: flex;
+}
+
+:host .icon.right {
+  right: 0;
+  margin-right: 0.5rem;
+}
+
+:host .processing {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: calc(var(--font-size) * 2);
+  width: calc(var(--font-size) * 2);
+  height: calc(var(--font-size) * 2);
+  margin-right: 0.5rem;
+  z-index: 3;
+}
+
+:host ::slotted(ion-icon[slot="icon"]) {
+  font-size: calc(var(--font-size) * 2);
+  width: calc(var(--font-size) * 2);
+  height: calc(var(--font-size) * 2);
+}
+
+:host .smile[data-level="0"] {
+  transform: scale(0.7) translateY(-50%);
+  opacity: 1;
+  color: var(--red-5);
+}
+
+:host .smile[data-level="1"] {
+  transform: scale(0.85) translateY(-50%);
+  opacity: 1;
+  color: var(--orange-5);
+}
+
+:host .smile[data-level="2"] {
+  transform: scale(0.9) translateY(-50%);
+  opacity: 1;
+  color: var(--yellow-5);
+}
+
+:host .smile[data-level="3"] {
+  transform: scale(0.95) translateY(-50%);
+  opacity: 1;
+  color: var(--green-5);
+}
+
+:host .smile[data-level="4"] {
+  transform: scale(1) translateY(-50%);
+  opacity: 1;
+  color: var(--blue-5);
+}
+
+:host .incrementing {
+  display: flex;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    var(--background) 50%
+  );
+  width: 1.5em;
+  height: calc(100% - 2px);
+  border-left: 1px solid var(--border-color);
+}
+
+:host([focused]) .incrementing {
+  border-left: 2px solid var(--theme-5);
+}
+
+:host([focused]) .incrementing button {
+  border: 1px solid var(--theme-5);
+  border-width: 1px 1px 1px 0;
+}
+
+:host .incrementing::after {
+  content: "";
+  background: var(--border-color);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: calc(50% - 0.5px);
+}
+
+:host([focused]) .incrementing::after {
+  height: 2px;
+  top: calc(50% - 1px);
+  background: var(--theme-5);
+}
+
+:host .incrementing button {
+  border-radius: 0;
+  appearance: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  color: var(--theme-5);
+  background: var(--background);
+  outline: 0;
+  border: 0;
+}
+
+:host .incrementing button:hover,
+:host .incrementing button:focus {
+  background: var(--theme-5);
+  color: var(--white);
+}
+
+:host([type="search"]) .input {
+  padding-left: calc(var(--font-size) * 2.125) !important;
+}
+
+:host([type="search"]) .input::-webkit-search-cancel-button {
+  display: none;
+}
+
+:host([type="search"]) ion-icon {
+  color: var(--theme-5);
+}
+
+:host([type="search"]) ion-icon.search {
+  position: absolute;
+  top: 50%;
+  left: calc(var(--font-size) * 0.5);
+  transform: translateY(-50%);
+  font-size: var(--font-size);
+  width: calc(var(--font-size) * 1.25);
+  height: calc(var(--font-size) * 1.25);
+}
+
+:host([type="search"]) ion-icon.search:hover,
+:host([type="search"]) ion-icon.search:focus {
+  color: var(--theme-7);
+}
+
+:host([type="search"]) ion-icon.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: calc(var(--font-size) * 0.5);
+  transform: translateY(-50%);
+  outline: 0;
+  color: var(--red-5);
+  font-size: var(--font-size);
+  width: calc(var(--font-size) * 1.25);
+  height: calc(var(--font-size) * 1.25);
+}
+
+:host([type="search"]) ion-icon.close:hover,
+:host([type="search"]) ion-icon.close:focus {
+  color: var(--red-7);
+}
+
+:host([type="search"]) label[focused="true"] ion-icon.search {
+  color: var(--theme-2);
+}
+
+:host .title {
+  margin-top: 10px;
+}
+
+:host([dark]) {
+  --border-color: var(--gray-8);
+  --background: var(--gray-9);
+  --color: var(--white);
+  --icon-color: var(--gray-6);
+}
+
+:host([dark]) input[disabled],
+:host([dark][disabled]) {
+  background: var(--gray-9);
+  --background: var(--gray-9);
+  --color: var(--gray-3)
+}
+
+:host([dark]) .tokenfield.tokenfield-mode-tokens .focused {
+  background: var(--theme-7);
+}
+
+:host([dark]) .tokenfield .tokenfield-set > ul > li {
+  background: var(--theme-9);
+}

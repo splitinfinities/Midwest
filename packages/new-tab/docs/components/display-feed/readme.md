@@ -55,7 +55,6 @@ graph TD;
   midwest-button --> midwest-label
   midwest-button --> stencil-route-link
   midwest-button --> export-to-figma
-  midwest-tag --> ion-icon
   midwest-tag --> midwest-label
   app-home --> display-feed
   style display-feed fill:#f9f,stroke:#333,stroke-width:4px

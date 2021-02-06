@@ -1,0 +1,237 @@
+midwest-switch {
+  /* ; */
+  display: block;
+  --border-radius: 200px;
+  --font-size: 1rem;
+  position: relative;
+  z-index: 0;
+}
+
+midwest-switch:focus {
+  outline: none;
+}
+
+midwest-switch .label {
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  display: block;
+  align-items: center;
+  position: relative;
+}
+
+midwest-switch .flex {
+  width: 100%;
+  display: flex;
+}
+
+midwest-switch .button ::-moz-selection {
+  background: transparent;
+}
+midwest-switch .button ::selection {
+  background: transparent;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  midwest-switch .label .button {
+    font-size: var(--font-size);
+    display: inline-block;
+    position: relative;
+    transition: none;
+    margin-right: 1em;
+    background-color: var(--gray-1);
+    width: calc(var(--font-size) * 4);
+    height: calc(var(--font-size) * 2);
+    vertical-align: text-bottom;
+    border-radius: var(--border-radius);
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+  }
+}
+
+midwest-switch .label .button {
+  font-size: var(--font-size);
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s var(--ease) 0s;
+  margin-right: 1em;
+  background-color: var(--gray-1);
+  width: calc(var(--font-size) * 4);
+  flex: 0 0 calc(var(--font-size) * 4);
+  height: calc(var(--font-size) * 2);
+  vertical-align: text-bottom;
+  border-radius: var(--border-radius);
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+}
+
+midwest-switch .yes,
+midwest-switch .no {
+  width: 100%;
+}
+
+midwest-switch[checked] .yes {
+  display: block;
+}
+
+midwest-switch[checked] .no {
+  display: none;
+}
+
+midwest-switch:not([checked]) .yes {
+  display: none;
+}
+
+midwest-switch:not([checked]) .no {
+  display: block;
+}
+
+midwest-switch .label .button:focus,
+midwest-switch:focus .label .button {
+  background-color: var(--theme-0);
+}
+
+midwest-switch .label .button:focus::after,
+midwest-switch:focus .label .button::after {
+  box-shadow: 0 0 0 0.3em var(--theme-5);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  midwest-switch .label .button span {
+    transition: none;
+  }
+}
+
+midwest-switch .label .button span {
+  transition: all 0.2s var(--ease) 0s;
+  font-size: calc(var(--font-size) * 1.5);
+  font-weight: 700;
+  color: var(--gray-7);
+  position: absolute;
+  left: calc(var(--font-size) * 0.125);
+  top: 0;
+  font-style: normal;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  midwest-switch .label .button::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--font-size) * -0.125);
+    left: calc(var(--font-size) * -0.125);
+    transform: translate3d(
+      calc(var(--font-size) * 0.125),
+      calc(var(--font-size) * 0.125),
+      0
+    );
+    transition: none;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    width: calc(var(--font-size) * 2);
+    height: calc(var(--font-size) * 2);
+  }
+}
+
+midwest-switch .label .button::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--font-size) * -0.125);
+  left: calc(var(--font-size) * -0.125);
+  transform: translate3d(
+    calc(var(--font-size) * 0.125),
+    calc(var(--font-size) * 0.125),
+    0
+  );
+  transition: all 0.2s var(--ease) 0s;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  width: calc(var(--font-size) * 2);
+  height: calc(var(--font-size) * 2);
+}
+
+midwest-switch .label:active .button::after {
+  transform: translate3d(2px, calc(var(--font-size) * 0.125), 0);
+  width: calc(var(--font-size) * 2.2);
+}
+
+midwest-switch .label:active input:checked + .button::after {
+  transform: translate3d(
+    calc(var(--font-size) * 1.95),
+    calc(var(--font-size) * 0.125),
+    0
+  );
+}
+
+midwest-switch .label input {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+}
+
+midwest-switch .label input:checked + .button {
+  background-color: var(--theme-6);
+  color: white;
+}
+
+midwest-switch .label input:checked + .button span {
+  padding: 0 0 0 calc(var(--font-size) * 2.1);
+  color: white;
+}
+
+midwest-switch .label input:checked + .button::after {
+  transform: translate3d(
+    calc(var(--font-size) * 2.125),
+    calc(var(--font-size) * 0.125),
+    0
+  );
+  background: var(--theme-5);
+}
+
+midwest-switch[size="small"] {
+  --font-size: 0.75rem;
+}
+
+midwest-switch .flex {
+  font-size: var(--font-size);
+  align-items: center;
+}
+
+midwest-switch[size="large"] {
+  --font-size: 1.25rem;
+}
+
+midwest-switch[dark] .label input:checked + .button,
+midwest-switch[dark] .label input:checked + .button span {
+  color: var(--white);
+}
+
+midwest-switch[dark] .label .button {
+  border: 1px solid var(--gray-8)
+}
+
+midwest-switch[dark] .label .button {
+  background: var(--gray-9);
+}
+
+midwest-switch[dark] .label .button span {
+  color: var(--white);
+}
+
+midwest-switch[dark] .label .button::after {
+  background: var(--gray-8);
+}
+
+midwest-switch[disabled] * {
+  cursor: not-allowed !important;
+}

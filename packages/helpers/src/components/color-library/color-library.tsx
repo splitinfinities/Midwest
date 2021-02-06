@@ -43,9 +43,9 @@ export class ColorLibrary {
       <midwest-grid cols="6" class="pa4">
         {range.map((code, index) => {
           return (
-            <midwest-card padding="tiny" class={`theme-${color} s-${this.shape}`} style={{ "--background": `var(--theme-base-${index})`, "--border": "none" }}>
+            <midwest-card padding="tiny" class={`theme-${color} s-${this.shape}`} style={{ "--background": `var(--theme-${index})`, "--border": "none" }}>
               <section class="aspect-ratio aspect-ratio--1x1">
-                <h6 class={this.hexStyle(`theme-base${index}`)}>{code}</h6>
+                <h6 class={this.hexStyle(`theme-${index}`)}>{code}</h6>
               </section>
             </midwest-card>
           )

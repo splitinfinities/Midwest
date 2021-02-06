@@ -16,7 +16,7 @@ export const config: Config = {
   globalScript: 'src/global/app.ts',
   devServer: {
     openBrowser: false,
-    port: 3339,
+    port: 3341,
   },
   plugins: [
     postcss({
