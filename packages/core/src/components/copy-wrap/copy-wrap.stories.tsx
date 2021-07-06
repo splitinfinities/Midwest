@@ -17,7 +17,7 @@ export default {
 };
 
 export const basic = ({ ...args }) => html`
-<copy-wrap  ...="${spreadProps(args)}">
+<copy-wrap ...="${spreadProps(args)}">
 <h1>nice</h1>
 <p>siiick</p>
 </copy-wrap>`;
