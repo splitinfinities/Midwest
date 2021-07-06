@@ -3,8 +3,8 @@ const glob = require("glob");
 const packageJson = require("../package.json");
 
 module.exports = {
-  stories: [`${__dirname}/../packages/**/src/**/*.stories.@(tsx|mdx)`],
-  addons: ["@storybook/addon-essentials"],
+  stories: ['../packages/src/**/*.stories.tsx'],
+  addons: ["@storybook/addon-essentials/register", "@storybook/addon-knobs/register"],
   webpackFinal: (config) => {
     const distDir = path.resolve(__dirname, `../dist/${packageJson.name}`);
     const files = glob.sync(`${distDir}/**/*.{js,css}`, {

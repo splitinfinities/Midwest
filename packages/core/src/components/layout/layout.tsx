@@ -16,7 +16,7 @@ export class Layout {
 	@Prop({ reflect: true }) height: "fill";
 	@Prop({ reflect: true }) small: boolean = false;
 
-	@Prop({ reflect: true }) hasNav: boolean;
+	@Prop({ reflect: true, mutable: true }) hasNav: boolean;
 
 	componentWillLoad() {
 		const navs = Array.from(this.element.querySelectorAll('*[slot="nav"]'));

@@ -36,11 +36,11 @@ export class Playlist {
 
   @Event() load_songs: EventEmitter;
 
-  visualizer!: HTMLWebAudioVisualizerElement;
+  visualizer!: any;
   audio!: HTMLAudioElement;
   progress!: HTMLProgressElement;
-  playlistItems!: NodeListOf<HTMLMidwestSongElement>;
-  currentPlaylistItem!: HTMLMidwestSongElement;
+  playlistItems!: NodeListOf<any>;
+  currentPlaylistItem!: any;
 
   componentWillLoad() {
     darkMode(this)

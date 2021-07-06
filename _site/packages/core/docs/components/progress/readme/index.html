@@ -1,0 +1,117 @@
+<h1>midwest-progress</h1>
+<!-- Auto Generated Below -->
+<h2>Usage</h2>
+<h3>Default</h3>
+<p><midwest-progress value="1" max="20" id="awesome" slender></midwest-progress>
+<midwest-button onClick="document.querySelector('#awesome').value = 3">3</midwest-button>
+<midwest-button onClick="document.querySelector('#awesome').value = 9">9</midwest-button>
+<midwest-button onClick="document.querySelector('#awesome').value = 18">18</midwest-button>
+<midwest-button onClick="document.querySelector('#awesome').slender = !document.querySelector('#awesome').slender">Toggle slender</midwest-button></p>
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dark</code></td>
+<td><code>dark</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>ease</code></td>
+<td><code>ease</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>editable</code></td>
+<td><code>editable</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>indeterminate</code></td>
+<td><code>indeterminate</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>max</code></td>
+<td><code>max</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>100</code></td>
+</tr>
+<tr>
+<td><code>rounded</code></td>
+<td><code>rounded</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>secondary</code></td>
+<td><code>secondary</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>slender</code></td>
+<td><code>slender</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>value</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>0</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>update</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../avatar">midwest-avatar</a></li>
+<li><a href="../button">midwest-button</a></li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-avatar --&gt; midwest-progress
+  midwest-button --&gt; midwest-progress
+  style midwest-progress fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

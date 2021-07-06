@@ -1,0 +1,118 @@
+<h1>midwest-calendar</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>backgroundEvents</code></td>
+<td>--</td>
+<td></td>
+<td><code>any[]</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>dark</code></td>
+<td><code>dark</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>events</code></td>
+<td>--</td>
+<td></td>
+<td><code>any[]</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>header</code></td>
+<td><code>header</code></td>
+<td></td>
+<td><code>boolean \| object</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>noToolbar</code></td>
+<td><code>no-toolbar</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>selectRange</code></td>
+<td><code>select-range</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>selectable</code></td>
+<td><code>selectable</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td><code>size</code></td>
+<td></td>
+<td><code>&quot;medium&quot; \| &quot;small&quot;</code></td>
+<td><code>&quot;medium&quot;</code></td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>value</code></td>
+<td></td>
+<td><code>Date \| string</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dateClick</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>addEvent(event: EventDef) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>getCalendar() =&gt; Promise&lt;Calendar&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;Calendar&gt;</code></p>
+<h3><code>select(date: Date) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../../forms/datetime-picker">midwest-datetime-picker</a></li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-datetime-picker --&gt; midwest-calendar
+  style midwest-calendar fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

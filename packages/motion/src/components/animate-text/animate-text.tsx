@@ -44,13 +44,13 @@ export class AnimateText {
 
   @Method()
   async in() {
-    animations[this.method].in(this.letters, this.delay, this.duration)
+    animations[this.method]?.in(this.letters, this.delay, this.duration)
   }
 
   @Method()
   async out() {
     if (!this.onlyIn) {
-      animations[this.method].out(this.letters, this.delay, this.duration)
+      animations[this.method]?.out(this.letters, this.delay, this.duration)
     }
   }
 

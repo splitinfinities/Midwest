@@ -247,7 +247,7 @@ export class Select {
       }
 
       if (this.changeTheme && typeof this.value === "string") {
-        const theme = document.querySelector("midwest-theme");
+        const theme = document.querySelector("midwest-theme") as any;
         if (this.changeTheme === "base") {
           theme.base = (this.value as ThemeableColors)
         } else if (this.changeTheme === "complement") {

@@ -1,0 +1,224 @@
+<h1>midwest-input-file</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>accept</code></td>
+<td><code>accept</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>dark</code></td>
+<td><code>dark</code></td>
+<td>Sets the button to dark.</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td><code>description</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td><code>disabled</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>droppable</code></td>
+<td><code>droppable</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>export</code></td>
+<td><code>export</code></td>
+<td>Hides this element from exporting to figma</td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>files</code></td>
+<td>--</td>
+<td></td>
+<td><code>any[]</code></td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>focused</code></td>
+<td><code>focused</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>hideState</code></td>
+<td><code>hide-state</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>inputTabIndex</code></td>
+<td><code>input-tab-index</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td><code>label</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>multiple</code></td>
+<td><code>multiple</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>multipleFileCaption</code></td>
+<td><code>multiple-file-caption</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>'{count} files'</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>name</code></td>
+<td>The name of the input element</td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>novalidate</code></td>
+<td><code>novalidate</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>placeholder</code></td>
+<td><code>placeholder</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;Enter a value&quot;</code></td>
+</tr>
+<tr>
+<td><code>readonly</code></td>
+<td><code>readonly</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>replacePlaceholder</code></td>
+<td><code>replace-placeholder</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;Replace file&quot;</code></td>
+</tr>
+<tr>
+<td><code>required</code></td>
+<td><code>required</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td><code>size</code></td>
+<td></td>
+<td><code>&quot;default&quot; \| &quot;large&quot; \| &quot;small&quot;</code></td>
+<td><code>&quot;default&quot;</code></td>
+</tr>
+<tr>
+<td><code>tooltip</code></td>
+<td><code>tooltip</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>value</code></td>
+<td></td>
+<td><code>any</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bluring</code></td>
+<td>Public: Blur event</td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>focusing</code></td>
+<td>Public: Focus event</td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>update</code></td>
+<td>Public: Updated event</td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>validate(set?: boolean) =&gt; Promise&lt;FormResult&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;FormResult&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Depends on</h3>
+<ul>
+<li>midwest-unit</li>
+<li>ion-icon</li>
+<li>midwest-label</li>
+<li>midwest-tooltip</li>
+<li><a href="../validate">midwest-validate</a></li>
+<li>export-to-figma</li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-input-file --&gt; midwest-unit
+  midwest-input-file --&gt; ion-icon
+  midwest-input-file --&gt; midwest-label
+  midwest-input-file --&gt; midwest-tooltip
+  midwest-input-file --&gt; midwest-validate
+  midwest-input-file --&gt; export-to-figma
+  midwest-validate --&gt; midwest-label
+  style midwest-input-file fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

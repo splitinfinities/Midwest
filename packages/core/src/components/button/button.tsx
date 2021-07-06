@@ -10,7 +10,7 @@ export class Button {
   @Element() element: HTMLElement;
 
   @Prop() tag: "button" | "submit" | "link" | "span" | "modal" | "onboarding" | "stencil-route" = "link";
-  @Prop() label: string = 'Submit';
+  @Prop({ mutable: true }) label: string = 'Submit';
   @Prop() name: string;
   @Prop() export: boolean;
   @Prop() value: string;
@@ -30,7 +30,7 @@ export class Button {
   @Prop({ reflect: true }) invert: boolean = false;
   @Prop({ reflect: true }) contrast: boolean = false;
   @Prop({ reflect: true }) ghost: boolean = false;
-  @Prop({ reflect: true }) dark: boolean = false;
+  @Prop({ reflect: true, mutable: true }) dark: boolean = false;
   @Prop() processable: boolean = false;
   @Prop({ mutable: true }) processing: boolean = false;
   @Prop() buttonTabIndex: number = 0;

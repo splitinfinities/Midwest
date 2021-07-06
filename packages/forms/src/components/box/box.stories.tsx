@@ -2,7 +2,6 @@ import notes from './readme.md';
 import { text, withKnobs } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
 import { html } from 'lit-html';
-import { spreadProps } from '@open-wc/lit-helpers';
 
 export default {
   title: "Forms/Box",
@@ -30,4 +29,4 @@ export default {
   }
 };
 
-export const basic = ({ content, title, ...args }) => html`<midwest-box ...="${spreadProps(args)}"></midwest-box>`;
+export const basic = ({ content, title, ...args }) => html`<midwest-box></midwest-box>`;

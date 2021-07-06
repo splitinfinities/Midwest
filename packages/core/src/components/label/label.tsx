@@ -12,7 +12,7 @@ export class Label {
   @Prop() for: string;
   @Prop({ reflect: true }) underneath: boolean;
   @Prop({ reflect: true }) size: string;
-  @Prop({ reflect: true }) dark: boolean = false;
+  @Prop({ reflect: true, mutable: true }) dark: boolean = false;
 
   componentWillLoad() {
     darkMode(this)

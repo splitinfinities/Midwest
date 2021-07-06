@@ -16,7 +16,7 @@ export class Docs {
   @State() complement: ThemeableColors = localStorage.getItem("complement") as ThemeableColors || "red";
   @State() dark: "true"|"false" = localStorage.getItem("dark") as "true"|"false" || "false";
 
-  inputEl!: HTMLMidwestInputElement;
+  inputEl!: any;
 
   componentWillLoad() {
     this.fetchDocs()

@@ -32,7 +32,7 @@ export class VideoInterview {
   @State() interviewLines: any;
   @State() visible: boolean = false;
   @State() context: any;
-  @State() visualizer: HTMLWebAudioVisualizerElement;
+  @State() visualizer: any;
 
   async componentDidLoad() {
     if (!this.interviewLines) {

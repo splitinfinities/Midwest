@@ -4,7 +4,7 @@
   display: grid;
   position: relative;
   font-family: inherit;
-  --layout-grid-gap: 2rem;
+  --layout-grid-gap: 1rem;
   --layout-padding: 4rem;
   --layout-width: calc(100% - (var(--layout-grid-gap) * 2));
   --layout: 1fr;

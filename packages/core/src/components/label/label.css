@@ -13,10 +13,9 @@
   color: var(--color);
   display: block;
   font-weight: 700;
-  letter-spacing: 0.125em !important;
+  letter-spacing: 0.025em !important;
   margin-bottom: var(--margin);
   cursor: pointer;
-  contain: content;
 }
 
 :host(.cursor-pointer) {

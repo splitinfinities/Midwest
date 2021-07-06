@@ -24,7 +24,7 @@ export class Comment {
     if (this.element.querySelector('midwest-avatar')) {
       // @ts-ignore
       this.element.querySelector('midwest-avatar').tabIndex = -1;
-      this.name = this.element.querySelector('midwest-avatar').name;
+      this.name = (this.element.querySelector('midwest-avatar') as any).name;
     }
 
     if (this.element.querySelector('[slot="content"]')) {

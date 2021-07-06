@@ -1648,6 +1648,10 @@
           "description": ""
         },
         {
+          "name": "inert",
+          "description": ""
+        },
+        {
           "name": "size",
           "description": ""
         },

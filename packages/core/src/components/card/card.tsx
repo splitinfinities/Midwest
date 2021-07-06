@@ -1,5 +1,4 @@
 import { Component, Prop, State, Element, Event, EventEmitter, Method, h, Watch, Listen, Host } from '@stencil/core';
-import ResizeObserver from 'resize-observer-polyfill';
 import delay from 'async-delay';
 import { darkMode } from '@midwest-design/common';
 
@@ -26,7 +25,7 @@ export class Card {
   @Prop() value: string = "#";
   @Prop() for: string;
   @Prop() flipIcon: string = "create";
-  @Prop({ reflect: true }) dark: boolean = false;
+  @Prop({ reflect: true, mutable: true }) dark: boolean = false;
   @Prop({ reflect: true }) small: boolean = false;
   @Prop({ reflect: true }) smallSize: number = 350;
 

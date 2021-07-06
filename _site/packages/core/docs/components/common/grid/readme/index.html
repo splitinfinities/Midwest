@@ -1,0 +1,71 @@
+<h1>midwest-grid</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cols</code></td>
+<td><code>cols</code></td>
+<td></td>
+<td><code>number \| string</code></td>
+<td><code>&quot;auto&quot;</code></td>
+</tr>
+<tr>
+<td><code>columnGap</code></td>
+<td><code>column-gap</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>columnWidth</code></td>
+<td><code>column-width</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>200</code></td>
+</tr>
+<tr>
+<td><code>noresponsive</code></td>
+<td><code>noresponsive</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>padding</code></td>
+<td><code>padding</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>refresh() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../../forms/password-requirements">midwest-password-requirements</a></li>
+<li><a href="../../forms/repeatable-fields">midwest-repeatable-fields</a></li>
+<li><a href="../../forms/toggle">midwest-toggle</a></li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-password-requirements --&gt; midwest-grid
+  midwest-repeatable-fields --&gt; midwest-grid
+  midwest-toggle --&gt; midwest-grid
+  style midwest-grid fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

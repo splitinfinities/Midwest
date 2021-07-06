@@ -12,6 +12,8 @@ export class LongShadow {
     @Prop({ reflect: true }) direction: "top-left" | "top-right" | "bottom-left" | "bottom-right" = "top-left";
     @Prop({ reflect: true }) length: number = 100;
     @Prop({ reflect: true }) delay: number = 100;
+    @Prop({ reflect: true }) shade: number = 7;
+    @Prop({ reflect: true }) complement: boolean;
     @Prop({ reflect: true }) timing: number = 50;
     @Prop({ reflect: true, mutable: true }) active: boolean = false;
     @State() children;
@@ -35,7 +37,7 @@ export class LongShadow {
             const y = index * (horizontal ? -1 : 1);
             const x = index * (vertical ? -1 : 1);
 
-            return `${y}px ${x}px var(--complement-7)`;
+            return `${y}px ${x}px var(--${this.complement ? "complement" : "theme"}-${this.shade})`;
         });
 
         return css.join()

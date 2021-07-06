@@ -6,7 +6,7 @@ import { html } from 'lit-html';
 import { spreadProps } from '@open-wc/lit-helpers';
 
 export default {
-	title: "Common/Avatar",
+	title: "@midwest-design/core/avatar",
 	component: "midwest-avatar",
 	decorators: [withKnobs, withA11y],
 	notes: {

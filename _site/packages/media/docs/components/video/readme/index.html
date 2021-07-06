@@ -1,0 +1,159 @@
+<h1>midwest-video</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>autoplay</code></td>
+<td><code>autoplay</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>controls</code></td>
+<td><code>controls</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td><code>height</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>muted</code></td>
+<td><code>muted</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>overlay</code></td>
+<td><code>overlay</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>playing</code></td>
+<td><code>playing</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>playsinline</code></td>
+<td><code>playsinline</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>poster</code></td>
+<td><code>poster</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>preload</code></td>
+<td><code>preload</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;auto&quot;</code></td>
+</tr>
+<tr>
+<td><code>trackInView</code></td>
+<td><code>track-in-view</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td><code>width</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>loaded</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>paused</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>played</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>update</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>getDuration() =&gt; Promise&lt;number&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;number&gt;</code></p>
+<h3><code>pause() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>play() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>skipTo(time: any) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>stop() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>toggle() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>videoElement() =&gt; Promise&lt;HTMLVideoElement&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;HTMLVideoElement&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../video-interview">midwest-video-interview</a></li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-video-interview --&gt; midwest-video
+  style midwest-video fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

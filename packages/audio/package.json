@@ -28,7 +28,7 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@midwest-design/common": "^0.0.12",
-    "@stencil/core": "^2.0.0-6",
+    "@stencil/core": "^2.6.0",
     "@stencil/postcss": "^1.0.1",
     "autoprefixer": "^9.8.6",
     "hex-to-hsl": "^1.0.2",

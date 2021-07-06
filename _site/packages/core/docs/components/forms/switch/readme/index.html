@@ -1,0 +1,185 @@
+<h1>midwest-switch</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>base</code></td>
+<td><code>base</code></td>
+<td></td>
+<td><code>&quot;blue&quot; \| &quot;cyan&quot; \| &quot;gold&quot; \| &quot;gray&quot; \| &quot;green&quot; \| &quot;indigo&quot; \| &quot;lime&quot; \| &quot;magenta&quot; \| &quot;orange&quot; \| &quot;pink&quot; \| &quot;red&quot; \| &quot;teal&quot; \| &quot;violet&quot; \| &quot;yellow&quot;</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>changeTheme</code></td>
+<td><code>change-theme</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>checked</code></td>
+<td><code>checked</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>checkedDefault</code></td>
+<td><code>checked-default</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>dark</code></td>
+<td><code>dark</code></td>
+<td>Sets the button or link as an outlined button.</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td><code>description</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td><code>disabled</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>export</code></td>
+<td><code>export</code></td>
+<td>Hides this element from exporting to figma</td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td><code>label</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>name</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>noValue</code></td>
+<td><code>no-value</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;false&quot;</code></td>
+</tr>
+<tr>
+<td><code>novalidate</code></td>
+<td><code>novalidate</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>required</code></td>
+<td><code>required</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td><code>size</code></td>
+<td></td>
+<td><code>&quot;default&quot; \| &quot;large&quot; \| &quot;small&quot;</code></td>
+<td><code>&quot;default&quot;</code></td>
+</tr>
+<tr>
+<td><code>tooltip</code></td>
+<td><code>tooltip</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>value</code></td>
+<td></td>
+<td><code>boolean \| string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>yesValue</code></td>
+<td><code>yes-value</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;true&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>update</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>activate(event?: any) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>validate(set?: boolean) =&gt; Promise&lt;FormResult&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;FormResult&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../datetime-picker">midwest-datetime-picker</a></li>
+</ul>
+<h3>Depends on</h3>
+<ul>
+<li><a href="../../common/label">midwest-label</a></li>
+<li>ion-icon</li>
+<li><a href="../../common/tooltip">midwest-tooltip</a></li>
+<li><a href="../validate">midwest-validate</a></li>
+<li>export-to-figma</li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-switch --&gt; midwest-label
+  midwest-switch --&gt; ion-icon
+  midwest-switch --&gt; midwest-tooltip
+  midwest-switch --&gt; midwest-validate
+  midwest-switch --&gt; export-to-figma
+  midwest-validate --&gt; midwest-label
+  midwest-datetime-picker --&gt; midwest-switch
+  style midwest-switch fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

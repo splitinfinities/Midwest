@@ -1,0 +1,97 @@
+<h1>midwest-video-interview</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>aspectRatio</code></td>
+<td><code>aspect-ratio</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>100</code></td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td><code>color</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;white&quot;</code></td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td><code>height</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>800</code></td>
+</tr>
+<tr>
+<td><code>playing</code></td>
+<td><code>playing</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>src</code></td>
+<td><code>src</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>visualization</code></td>
+<td><code>visualization</code></td>
+<td></td>
+<td><code>&quot;bars&quot; \| &quot;bars2&quot; \| &quot;circle&quot; \| &quot;wave&quot;</code></td>
+<td><code>&quot;bars2&quot;</code></td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td><code>width</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>800</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>pause() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>play() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>skipTo(time: number) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>toggle() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Depends on</h3>
+<ul>
+<li><a href="../skeleton-img">skeleton-img</a></li>
+<li><a href="../video">midwest-video</a></li>
+<li>web-audio-visualizer</li>
+<li>ion-icon</li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-video-interview --&gt; skeleton-img
+  midwest-video-interview --&gt; midwest-video
+  midwest-video-interview --&gt; web-audio-visualizer
+  midwest-video-interview --&gt; ion-icon
+  skeleton-img --&gt; ion-icon
+  style midwest-video-interview fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

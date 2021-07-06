@@ -1,0 +1,173 @@
+<h1>midwest-form</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>acceptCharset</code></td>
+<td><code>accept-charset</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</code></td>
+<td><code>action</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>ajax</code></td>
+<td><code>ajax</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>autocomplete</code></td>
+<td><code>autocomplete</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;on&quot;</code></td>
+</tr>
+<tr>
+<td><code>autosave</code></td>
+<td><code>autosave</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>closeModalOnSuccess</code></td>
+<td><code>close-modal-on-success</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>enctype</code></td>
+<td><code>enctype</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;multipart/form-data&quot;</code></td>
+</tr>
+<tr>
+<td><code>method</code></td>
+<td><code>method</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;get&quot;</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>name</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>novalidate</code></td>
+<td><code>novalidate</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>perform</code></td>
+<td><code>perform</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>target</code></td>
+<td><code>target</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>close-modal</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>fast-updates</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>open-modal</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>submitted</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>updated</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>addElement(el: HTMLElement) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>addFieldGroup(el: any) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>get(name?: string, validate?: boolean) =&gt; Promise&lt;{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string; }; formData: any; valid: boolean; }&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string; }; formData: any; valid: boolean; }&gt;</code></p>
+<h3><code>removeElement(el: HTMLElement) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>removeFieldGroup(el: any) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>state(validate?: boolean) =&gt; Promise&lt;{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string; }; formData: any; valid: boolean; }&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string; }; formData: any; valid: boolean; }&gt;</code></p>
+<h3><code>submitForm(button?: any) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Depends on</h3>
+<ul>
+<li><a href="../../common/callout">midwest-callout</a></li>
+<li><a href="../../common/copy-wrap">copy-wrap</a></li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-form --&gt; midwest-callout
+  midwest-form --&gt; copy-wrap
+  style midwest-form fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

@@ -78,6 +78,10 @@
   height: var(--indicator-size);
 }
 
+:host([block-indicator]) .track {
+  z-index: 0;
+}
+
 :host([flip-indicator]) .indicator {
   top: -0.1em;
   bottom: initial;
@@ -136,7 +140,7 @@
   align-items: center;
   justify-content: var(--justify-content);
   width: 100%;
-  margin: 0 3px;
+  margin: 0;
 }
 
 :host([block]) ::slotted(midwest-tab) {
@@ -149,19 +153,19 @@
 
 @media screen and (prefers-reduced-motion: reduce) {
   :host([block-indicator]) .indicator {
-    height: calc(100% - 6px);
+    height: 100%;
     background: var(--theme-1);
-    top: 3px;
-    bottom: 3px;
+    top: 0;
+    bottom: 0;
     transition: none;
   }
 }
 
 :host([block-indicator]) .indicator {
-  height: calc(100% - 6px);
+  height: 100%;
   background: var(--theme-1);
-  top: 3px;
-  bottom: 3px;
+  top: 0;
+  bottom: 0;
   transition: all 0.35s var(--ease);
 }
 

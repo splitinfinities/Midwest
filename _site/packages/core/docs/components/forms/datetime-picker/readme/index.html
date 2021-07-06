@@ -1,0 +1,172 @@
+<h1>midwest-datetime-picker</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>autoClose</code></td>
+<td><code>auto-close</code></td>
+<td>auto close when minute is selected</td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>dark</code></td>
+<td><code>dark</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>dialRadius</code></td>
+<td><code>dial-radius</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>135</code></td>
+</tr>
+<tr>
+<td><code>duration</code></td>
+<td><code>duration</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>350</code></td>
+</tr>
+<tr>
+<td><code>innerRadius</code></td>
+<td><code>inner-radius</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>70</code></td>
+</tr>
+<tr>
+<td><code>method</code></td>
+<td><code>method</code></td>
+<td></td>
+<td><code>&quot;date&quot; \| &quot;datetime&quot; \| &quot;time&quot;</code></td>
+<td><code>'datetime'</code></td>
+</tr>
+<tr>
+<td><code>outerRadius</code></td>
+<td><code>outer-radius</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>105</code></td>
+</tr>
+<tr>
+<td><code>showClear</code></td>
+<td><code>show-clear</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>tickRadius</code></td>
+<td><code>tick-radius</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>20</code></td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>value</code></td>
+<td></td>
+<td><code>string \| string[]</code></td>
+<td><code>'now'</code></td>
+</tr>
+<tr>
+<td><code>view</code></td>
+<td><code>view</code></td>
+<td></td>
+<td><code>&quot;days&quot; \| &quot;hours&quot; \| &quot;minutes&quot; \| &quot;months&quot; \| &quot;years&quot;</code></td>
+<td><code>&quot;hours&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>blurred</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>cancel</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>close-modal</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>micro-update</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>update</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>decrement() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>increment() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>updateHand(value?: number | string) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Depends on</h3>
+<ul>
+<li><a href="../../common/calendar">midwest-calendar</a></li>
+<li><a href="../../common/button">midwest-button</a></li>
+<li><a href="../../common/card">midwest-card</a></li>
+<li><a href="../switch">midwest-switch</a></li>
+<li><a href="../../common/label">midwest-label</a></li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-datetime-picker --&gt; midwest-calendar
+  midwest-datetime-picker --&gt; midwest-button
+  midwest-datetime-picker --&gt; midwest-card
+  midwest-datetime-picker --&gt; midwest-switch
+  midwest-datetime-picker --&gt; midwest-label
+  midwest-button --&gt; midwest-progress
+  midwest-button --&gt; midwest-label
+  midwest-button --&gt; export-to-figma
+  midwest-card --&gt; midwest-button
+  midwest-card --&gt; ion-icon
+  midwest-card --&gt; export-to-figma
+  midwest-switch --&gt; midwest-label
+  midwest-switch --&gt; ion-icon
+  midwest-switch --&gt; midwest-tooltip
+  midwest-switch --&gt; midwest-validate
+  midwest-switch --&gt; export-to-figma
+  midwest-validate --&gt; midwest-label
+  style midwest-datetime-picker fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

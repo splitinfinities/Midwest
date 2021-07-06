@@ -29,7 +29,7 @@ export class Tab {
   @State() parent: any
   pjaxElement: any = document.querySelector('midwest-pjax');
 
-  @Event() contentChange: EventEmitter;
+  @Event({ bubbles: true, composed: true, eventName: "open:content"}) contentChange: EventEmitter;
 
   componentWillLoad() {
     darkMode(this);
@@ -74,7 +74,7 @@ export class Tab {
       if (this.tag === "button" || this.tag === "stencil-route") {
         this.contentChange.emit({
           parent: this.parent,
-          name: this.name.replace(/[#]/g, "")
+          name: this.href.replace(/[#]/g, "")
         });
 
         if (this.pjaxElement) {

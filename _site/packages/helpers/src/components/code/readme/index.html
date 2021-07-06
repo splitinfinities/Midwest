@@ -1,0 +1,117 @@
+<h1>midwest-code</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>codeString</code></td>
+<td><code>code-string</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>copy</code></td>
+<td><code>copy</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>dark</code></td>
+<td><code>dark</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>expandable</code></td>
+<td><code>expandable</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>expanded</code></td>
+<td><code>expanded</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>feature</code></td>
+<td><code>feature</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td><code>language</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;html&quot;</code></td>
+</tr>
+<tr>
+<td><code>preview</code></td>
+<td><code>preview</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>simple</code></td>
+<td><code>simple</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>clipboard() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>highlight() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h3><code>result() =&gt; Promise&lt;string&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;string&gt;</code></p>
+<h3><code>setCode(code: any) =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../asset-library">midwest-asset-library</a></li>
+</ul>
+<h3>Depends on</h3>
+<ul>
+<li>midwest-card</li>
+<li>midwest-button</li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-code --&gt; midwest-card
+  midwest-code --&gt; midwest-button
+  midwest-card --&gt; midwest-button
+  midwest-card --&gt; ion-icon
+  midwest-card --&gt; export-to-figma
+  midwest-button --&gt; midwest-progress
+  midwest-button --&gt; midwest-label
+  midwest-button --&gt; export-to-figma
+  midwest-asset-library --&gt; midwest-code
+  style midwest-code fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

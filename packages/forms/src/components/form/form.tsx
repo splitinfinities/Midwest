@@ -24,7 +24,7 @@ export class Form {
   @Prop() target: string;
   @Prop() closeModalOnSuccess: boolean;
 
-  @State() clickedButton: HTMLMidwestButtonElement;
+  @State() clickedButton: any;
   @State() error: string;
 
   @Event() submitted: EventEmitter;
@@ -38,7 +38,7 @@ export class Form {
 
   @State() submitting: boolean;
 
-  autosaveEl: HTMLMidwestButtonElement;
+  autosaveEl: any;
   els: HTMLElement[] = []
   fieldGroups: HTMLMidwestFieldGroupElement[] = [];
 
@@ -252,6 +252,7 @@ export class Form {
         name={this.name} 
         novalidate={!!this.validate} 
         target={this.target} 
+        style={{ "margin": "0" }}
         onSubmit={e => { e.preventDefault(); this.submitForm(); }}>
           {this.error && <midwest-callout type="error" class="mb-4">
             <copy-wrap>

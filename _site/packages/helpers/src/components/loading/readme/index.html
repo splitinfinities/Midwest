@@ -1,0 +1,77 @@
+<h1>midwest-loading</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cta</code></td>
+<td><code>cta</code></td>
+<td></td>
+<td><code>any</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td><code>error</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>show</code></td>
+<td><code>show</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>step</code></td>
+<td><code>step</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>steps</code></td>
+<td><code>steps</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><code>stretch</code></td>
+<td><code>stretch</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../modal">midwest-modal</a></li>
+</ul>
+<h3>Depends on</h3>
+<ul>
+<li>copy-wrap</li>
+<li>midwest-progress</li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-loading --&gt; copy-wrap
+  midwest-loading --&gt; midwest-progress
+  midwest-modal --&gt; midwest-loading
+  style midwest-loading fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

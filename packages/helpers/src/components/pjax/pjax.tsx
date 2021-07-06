@@ -20,22 +20,15 @@ export class SaPjax {
     ],
     switches: {
       async "main" (oldEl, newEl, options) {
-        const ie = (document.querySelector('html').getAttribute("mode") === "ie");
-        
-        if (ie) {
-          // @ts-ignore
-          oldEl.innerHTML = newEl.innerHTML
-        } else {
-          await oldEl.querySelector("animate-presence").exit();
-          oldEl.outerHTML = newEl.outerHTML
-        }
-
+        // @ts-ignore
+        await oldEl.querySelector("animate-presence").exit();
+        oldEl.outerHTML = newEl.outerHTML
         this.onSwitch(oldEl, newEl, options)
       },
     }
   });
 
-  loader: HTMLMidwestProgressElement = document.querySelector("midwest-progress");
+  loader: any = document.querySelector("midwest-progress");
   interval: any;
 
   @Method()

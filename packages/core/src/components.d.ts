@@ -281,6 +281,7 @@ export namespace Components {
         "colors": string[];
         "complement": ThemeableColors;
         "dark": boolean;
+        "inert": boolean;
         "size": number;
         "store": any;
         "system": boolean;
@@ -738,7 +739,7 @@ declare namespace LocalJSX {
         "name"?: string;
         "notifications"?: boolean | number;
         "notificationsColor"?: string;
-        "onContentChange"?: (event: CustomEvent<any>) => void;
+        "onOpen:content"?: (event: CustomEvent<any>) => void;
         "open"?: boolean;
         "order"?: number;
         "size"?: "tiny" | "small" | "medium" | "large";
@@ -780,6 +781,7 @@ declare namespace LocalJSX {
         "colors"?: string[];
         "complement"?: ThemeableColors;
         "dark"?: boolean;
+        "inert"?: boolean;
         "size"?: number;
         "store"?: any;
         "system"?: boolean;

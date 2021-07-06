@@ -2,7 +2,6 @@ import notes from './readme.md';
 import { text, withKnobs } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
 import { html } from 'lit-html';
-import { spreadProps } from '@open-wc/lit-helpers';
 
 export default {
 	title: "Common/Calendar/Date",
@@ -15,4 +14,4 @@ export default {
   }
 };
 
-export const basic = ({ content, ...args }) => html`<midwest-calendar-date ...="${spreadProps(args)}"></midwest-calendar-date>`;
+export const basic = ({ content, ...args }) => html`<midwest-calendar-date></midwest-calendar-date>`;

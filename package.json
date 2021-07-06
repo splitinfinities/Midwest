@@ -42,6 +42,7 @@
     "cut": "yarn lerna.version && yarn lerna.publish && yarn git.push",
     "diff": "lerna diff",
     "storybook": "start-storybook -p 6006 -s public",
+    "storybook.upgrade": "npx sb upgrade",
     "build-storybook": "build-storybook -s public"
   },
   "husky": {
@@ -54,10 +55,10 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@storybook/web-components": "^6.0.16",
-    "@storybook/addon-a11y": "^6.0.16",
-    "@storybook/addon-essentials": "^6.0.0-rc.26",
-    "@storybook/addon-knobs": "^6.0.16",
+    "@storybook/web-components": "^6.3.2",
+    "@storybook/addon-a11y": "^6.3.2",
+    "@storybook/addon-essentials": "^6.3.2",
+    "@storybook/addon-knobs": "^6.3.0",
     "bp-smart-commit": "^1.4.1",
     "husky": "^4.2.5",
     "lerna": "^3.13.4",

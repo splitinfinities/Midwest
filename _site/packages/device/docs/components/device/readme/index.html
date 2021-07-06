@@ -1,0 +1,123 @@
+<h1>stellar-device</h1>
+<p>This is a standalone Web Component for rendering arbitrary content inside of a device. The images have been optimized to deliver the best experience on any screen.</p>
+<p>Disclaimer: I do not own any of the underlying product or user interface designs. By accessing these assets, you agree to obtain all necessary permissions from the underlying rights holders and/or adhere to any applicable brand use guidelines before using them. (disclaimer sourced from Facebook Design's devices resource: https://facebook.design/devices)</p>
+<p>Apple devices have been sourced from Apple's official design resources site: https://developer.apple.com/design/resources/, and https://developer.apple.com/app-store/marketing/guidelines/#section-products</p>
+<p>Android Devices sourced from Facebook Design's devices resource: https://facebook.design/devices</p>
+<!-- Auto Generated Below -->
+<h2>Usage</h2>
+<h3>Apple-tv</h3>
+<stellar-device frame="apple-tv">
+    <img src="https://placehold.it/1920x1080/ABC/FFF">
+</stellar-device>
+<h3>Apple-tv-in-app</h3>
+<stellar-device frame="apple-tv-in-app">
+    <img src="https://placehold.it/1920x720/ABC/FFF">
+    <img slot="secondary" src="https://placehold.it/740x444/ABC/FFF">
+</stellar-device>
+<h3>Apple-watch</h3>
+<stellar-device frame="apple-watch-42-black">
+    <img src="https://placehold.it/624x780/ABC/FFF">
+</stellar-device>
+<stellar-device frame="apple-watch-42-white">
+    <img src="https://placehold.it/624x780/ABC/FFF">
+</stellar-device>
+<stellar-device frame="apple-watch-44-black">
+    <img src="https://placehold.it/736x896/ABC/FFF">
+</stellar-device>
+<stellar-device frame="apple-watch-44-white">
+    <img src="https://placehold.it/736x896/ABC/FFF">
+</stellar-device>
+<h3>Default</h3>
+<stellar-device>
+    <div style="background: rebeccapurple;"></div>
+</stellar-device>
+<h3>Imac</h3>
+<stellar-device frame="imac">
+    <img src="https://placehold.it/2560x1440/ABC/FFF">
+  </stellar-device>
+<h3>Imac-pro</h3>
+<stellar-device frame="imac-pro">
+    <img src="https://placehold.it/2560x1440/ABC/FFF">
+  </stellar-device>
+<h3>Ipad-pro</h3>
+<stellar-device frame="ipad-pro-portrait">
+    <img src="https://placehold.it/2048x2732/ABC/FFF">
+  </stellar-device>
+  <stellar-device frame="ipad-pro-landscape">
+    <img src="https://placehold.it/2732x2048/ABC/FFF">
+  </stellar-device>
+<h3>Iphone-8</h3>
+<stellar-device frame="iphone-8-silver">
+    <img src="https://placehold.it/750x1334/ABC/FFF">
+  </stellar-device>
+  <stellar-device frame="iphone-8-spacegray">
+    <img src="https://placehold.it/750x1334/ABC/FFF">
+  </stellar-device>
+  <stellar-device frame="iphone-8-plus-silver">
+    <img src="https://placehold.it/828x1472/ABC/FFF">
+  </stellar-device>
+  <stellar-device frame="iphone-8-plus-spacegray">
+    <img src="https://placehold.it/828x1472/ABC/FFF">
+  </stellar-device>
+<h3>Iphone-xs</h3>
+<stellar-device frame="iphone-xs">
+    <img src="https://placehold.it/750x1624/ABC/FFF">
+  </stellar-device>
+  <stellar-device frame="iphone-xs-max">
+    <img src="https://placehold.it/828x1792/ABC/FFF">
+  </stellar-device>
+<h3>Ipod-touch</h3>
+<stellar-device frame="ipod-touch-portrait-blue">
+    <img src="https://placehold.it/640x1136/ABC/FFF">
+  </stellar-device>
+  <stellar-device frame="ipod-touch-landscape-blue">
+    <img src="https://placehold.it/1136x640/ABC/FFF">
+  </stellar-device>
+  <stellar-device frame="ipod-touch-portrait-silver">
+    <img src="https://placehold.it/640x1136/ABC/FFF">
+  </stellar-device>
+  <stellar-device frame="ipod-touch-landscape-silver">
+    <img src="https://placehold.it/1136x640/ABC/FFF">
+  </stellar-device>
+<h3>Macbook-air</h3>
+<stellar-device frame="macbook-air">
+    <img src="https://placehold.it/2880x1800/ABC/FFF">
+  </stellar-device>
+<h3>Macbook-pro</h3>
+<stellar-device frame="macbook-pro">
+    <div style="width: 100%; height: 100%;overflow: auto;">
+        <img src="https://placehold.it/2880x1800/ABC/FFF" style="display: block; width: 100%;" />
+        <img src="https://placehold.it/2880x1800/999/FFF" style="display: block; width: 100%;" />
+        <img src="https://placehold.it/2880x1800/444/FFF" style="display: block; width: 100%;" />
+    </div>
+</stellar-device>
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>frame</code></td>
+<td><code>frame</code></td>
+<td>The Device Name</td>
+<td><code>&quot;apple-tv&quot; \| &quot;apple-tv-in-app&quot; \| &quot;apple-watch-42-black&quot; \| &quot;apple-watch-42-white&quot; \| &quot;apple-watch-44-black&quot; \| &quot;apple-watch-44-white&quot; \| &quot;imac-pro&quot; \| &quot;imac&quot; \| &quot;ipad-pro-portrait&quot; \| &quot;ipad-pro-landscape&quot; \| &quot;iphone-8-silver&quot; \| &quot;iphone-8-spacegray&quot; \| &quot;iphone-8-plus-silver&quot; \| &quot;iphone-8-plus-spacegray&quot; \| &quot;iphone-xs&quot; \| &quot;iphone-xs-max&quot; \| &quot;ipod-touch-portrait-blue&quot; \| &quot;ipod-touch-landscape-blue&quot; \| &quot;ipod-touch-portrait-silver&quot; \| &quot;ipod-touch-landscape-silver&quot; \| &quot;macbook-air&quot; \| &quot;macbook-pro&quot;</code></td>
+<td><code>&quot;macbook-pro&quot;</code></td>
+</tr>
+<tr>
+<td><code>retina</code></td>
+<td><code>retina</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

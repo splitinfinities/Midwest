@@ -13,7 +13,8 @@ export class Content {
   @Prop({ mutable: true, reflect: true }) scrollWhenActive: boolean;
   @State() parent: any;
 
-  tab!: HTMLMidwestTabElement|HTMLMidwestStepElement
+  tab!: HTMLMidwestTabElement | HTMLMidwestStepElement
+  animationEl!: HTMLAnimatePresenceElement;
 
   componentWillLoad() {
     this.tab = document.querySelector(`midwest-tabs[name="${this.for}"] midwest-tab[href="#${this.element.id}"], midwest-steps[name="${this.for}"] midwest-step[href="#${this.element.id}"]`);
@@ -27,11 +28,18 @@ export class Content {
   @Watch("open")
   handleOpen() {
     if (this.scrollWhenActive) {
-    this.element.scrollIntoView(true)
+      this.element.scrollIntoView(true)
+    }
+    
+    if (this.open) {
+      this.animationEl.enter()
+    } else {
+      
+      
     }
   }
 
-  @Listen("contentChange", { target: 'document' })
+  @Listen("open:content", { target: 'document' })
   async handleActive(event: CustomEvent) {
     this.parent = event.detail.parent;
 
@@ -46,7 +54,7 @@ export class Content {
 
   render() {
     return <Host class={this.open ? "block" : "hidden" } role="tabpanel" aria-hidden={!this.open ? "true" : "false"}>
-      <animate-presence>
+      <animate-presence ref={(el) => { this.animationEl = el }}>
         <slot></slot>
       </animate-presence>
     </Host>

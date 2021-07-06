@@ -104,43 +104,6 @@ module.exports = {
       '2': '2px',
       '4': '4px',
     },
-    animations: {
-      'spin': {
-        from: {
-          transform: 'rotate(0deg)',
-        },
-        to: {
-          transform: 'rotate(360deg)',
-        },
-      },
-      'fade': {
-        '0%': {
-          opacity: '0',
-        },
-        '100%': {
-          opacity: '1',
-        },
-      },
-      'jump': {
-        '0%': {
-          transform: 'translateY(0%)',
-        },
-        '50%': {
-          transform: 'translateY(-100%)',
-        },
-        '100%': {
-          transform: 'translateY(0%)',
-        },
-      },
-    },
-    animationDuration: { 
-      'default': '350ms',
-      '0s': '0s',
-      '350ms': '350ms',
-      '175ms': '175ms',
-      '500ms': '5ms',
-      '1s': '1s',
-    },
     extend: {
       colors: {
         "black": "#000000",

@@ -1,0 +1,88 @@
+<h1>display-feed</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>filter</code></td>
+<td><code>filter</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;latest&quot;</code></td>
+</tr>
+<tr>
+<td><code>icon</code></td>
+<td><code>icon</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;logo-github&quot;</code></td>
+</tr>
+<tr>
+<td><code>iconColor</code></td>
+<td><code>icon-color</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;blue&quot;</code></td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td><code>type</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;midwest&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../app-home">app-home</a></li>
+</ul>
+<h3>Depends on</h3>
+<ul>
+<li>copy-wrap</li>
+<li>midwest-progress</li>
+<li>midwest-grid</li>
+<li>midwest-image</li>
+<li>midwest-card</li>
+<li>midwest-tag</li>
+<li>midwest-time</li>
+<li>animate-presence</li>
+<li>ion-icon</li>
+<li>midwest-button</li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  display-feed --&gt; copy-wrap
+  display-feed --&gt; midwest-progress
+  display-feed --&gt; midwest-grid
+  display-feed --&gt; midwest-image
+  display-feed --&gt; midwest-card
+  display-feed --&gt; midwest-tag
+  display-feed --&gt; midwest-time
+  display-feed --&gt; animate-presence
+  display-feed --&gt; ion-icon
+  display-feed --&gt; midwest-button
+  midwest-image --&gt; midwest-intersection
+  midwest-card --&gt; midwest-button
+  midwest-card --&gt; ion-icon
+  midwest-card --&gt; export-to-figma
+  midwest-button --&gt; midwest-progress
+  midwest-button --&gt; midwest-label
+  midwest-button --&gt; stencil-route-link
+  midwest-button --&gt; export-to-figma
+  midwest-tag --&gt; midwest-label
+  app-home --&gt; display-feed
+  style display-feed fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

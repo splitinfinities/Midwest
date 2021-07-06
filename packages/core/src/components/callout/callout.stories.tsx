@@ -2,7 +2,6 @@ import notes from './readme.md';
 import { withKnobs } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
 import { html } from 'lit-html';
-import { spreadProps } from '@open-wc/lit-helpers';
 
 export default {
 	title: "Common/Callout",
@@ -23,4 +22,4 @@ export default {
   }
 };
 
-export const basic = ({ content, link, ...args }) => html`<midwest-callout ...="${spreadProps(args)}"><p>${content} <a href="#">${link}</a></p></midwest-callout>`;
+export const basic = ({ content, link, ...args }) => html`<midwest-callout><p>${content} <a href="#">${link}</a></p></midwest-callout>`;

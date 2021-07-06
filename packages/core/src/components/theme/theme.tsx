@@ -11,6 +11,7 @@ export class Theme {
     @Prop() body: boolean = false;
     @Prop() size: number = 16;
     @Prop() system: boolean = false;
+    @Prop() inert: boolean = false;
     @Prop() base: ThemeableColors = "red";
     @Prop() complement: ThemeableColors = "indigo";
     @Prop() colors: string[] = Object.keys(colors);
@@ -25,60 +26,72 @@ export class Theme {
     bodyEl: HTMLBodyElement = document.querySelector('body');
 
     componentWillLoad() {
-        if (this.system) {
-            this.dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            this.store.set("dark", this.dark);
-        }
+        if (!this.inert) {
+            if (this.system) {
+                this.dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                this.store.set("dark", this.dark);
+            }
 
-        this.observeSize();
-        this.observeDark();
-        this.observeColors();
+            this.observeSize();
+            this.observeDark();
+            this.observeColors();
+        } else {
+            document.querySelector("midwest-theme").base = this.base;
+            document.querySelector("midwest-theme").complement = this.complement;
+            document.querySelector("midwest-theme").dark = this.dark;
+        }
     }
 
     @Watch('base')
     @Watch('complement')
     observeColors() {
-        this.store.set("base", this.base);
-        this.store.set("complement", this.complement);
+        if (!this.inert) {
+            this.store.set("base", this.base);
+            this.store.set("complement", this.complement);
 
-        if (this.body) {
-            this.colors.forEach((color) => {
-                this.htmlEl.classList.remove(`theme-${color}`)
-                this.htmlEl.classList.remove(`complement-${color}`)
-                this.bodyEl.classList.remove(`theme-${color}`)
-                this.bodyEl.classList.remove(`complement-${color}`)
-            })
+            if (this.body) {
+                this.colors.forEach((color) => {
+                    this.htmlEl.classList.remove(`theme-${color}`)
+                    this.htmlEl.classList.remove(`complement-${color}`)
+                    this.bodyEl.classList.remove(`theme-${color}`)
+                    this.bodyEl.classList.remove(`complement-${color}`)
+                })
 
-            this.bodyEl.classList.add(`theme-${this.base}`)
-            this.bodyEl.classList.add(`complement-${this.complement}`)
+                this.bodyEl.classList.add(`theme-${this.base}`)
+                this.bodyEl.classList.add(`complement-${this.complement}`)
+            }
         }
     }
 
     @Watch('dark')
     observeDark() {
-        this.store.set("dark", this.dark);
+        if (!this.inert) {
+            this.store.set("dark", this.dark);
 
-        if (this.body) {
-            if (this.dark) {
-                this.htmlEl.classList.add('dark-mode');
-                this.bodyEl.classList.add('dark-mode');
-            } else {
-                this.htmlEl.classList.remove('dark-mode');
-                this.bodyEl.classList.remove('dark-mode');
+            if (this.body) {
+                if (this.dark) {
+                    this.htmlEl.classList.add('dark-mode');
+                    this.bodyEl.classList.add('dark-mode');
+                } else {
+                    this.htmlEl.classList.remove('dark-mode');
+                    this.bodyEl.classList.remove('dark-mode');
+                }
             }
         }
     }
 
     @Watch('size')
     observeSize() {
-        const style = document.createElement("style");
-        style.id = "midwest-responsive";
+        if (!this.inert) {
+            const style = document.createElement("style");
+            style.id = "midwest-responsive";
 
-        style.innerHTML = styleContents(this.size);
+            style.innerHTML = styleContents(this.size);
 
-        const head = document.querySelector("head");
-        if (head.querySelector("style#sa-responsive-sizes")) { head.removeChild(head.querySelector("style#sa-responsive-sizes")); }
-        head.appendChild(style);
+            const head = document.querySelector("head");
+            if (head.querySelector("style#sa-responsive-sizes")) { head.removeChild(head.querySelector("style#sa-responsive-sizes")); }
+            head.appendChild(style);
+        }
     }
 
 

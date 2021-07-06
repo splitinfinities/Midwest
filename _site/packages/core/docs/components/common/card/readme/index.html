@@ -1,0 +1,204 @@
+<h1>midwest-card</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>backHeight</code></td>
+<td><code>back-height</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>block</code></td>
+<td><code>block</code></td>
+<td>Renders as a block in certain scenarios</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>compact</code></td>
+<td><code>compact</code></td>
+<td>Sets the minimum height of the card to 0 when true.</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>dark</code></td>
+<td><code>dark</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>export</code></td>
+<td><code>export</code></td>
+<td>disallows this component from exporting to figma</td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>flipIcon</code></td>
+<td><code>flip-icon</code></td>
+<td>Sets the href on the anchor tag if the button is a link.</td>
+<td><code>string</code></td>
+<td><code>&quot;create&quot;</code></td>
+</tr>
+<tr>
+<td><code>flipReady</code></td>
+<td><code>flip-ready</code></td>
+<td>Let's a card be flippable</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>flippable</code></td>
+<td><code>flippable</code></td>
+<td>Let's a card be flippable</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>flipped</code></td>
+<td><code>flipped</code></td>
+<td>Renders a flipped card</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>for</code></td>
+<td><code>for</code></td>
+<td>Sets the href on the anchor tag if the button is a link.</td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>horizontal</code></td>
+<td><code>horizontal</code></td>
+<td>Renders the hard horizontally</td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>href</code></td>
+<td><code>href</code></td>
+<td>Sets the href if the card is a link.</td>
+<td><code>string</code></td>
+<td><code>&quot;#&quot;</code></td>
+</tr>
+<tr>
+<td><code>modalHref</code></td>
+<td><code>modal-href</code></td>
+<td>Sets the href if the card is a link.</td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>name</code></td>
+<td>Sets the name if the card is a button.</td>
+<td><code>string</code></td>
+<td><code>&quot;&quot;</code></td>
+</tr>
+<tr>
+<td><code>originalHeight</code></td>
+<td><code>original-height</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>padding</code></td>
+<td><code>padding</code></td>
+<td>Sets the padding inside of the button. Can be small, medium, or large.</td>
+<td><code>&quot;large&quot; \| &quot;medium&quot; \| &quot;none&quot; \| &quot;small&quot; \| &quot;tiny&quot;</code></td>
+<td><code>&quot;medium&quot;</code></td>
+</tr>
+<tr>
+<td><code>tag</code></td>
+<td><code>tag</code></td>
+<td>Sets the element to render the card as - an anchor tag, a button, or a div.</td>
+<td><code>&quot;a&quot; \| &quot;button&quot; \| &quot;div&quot; \| &quot;modal&quot;</code></td>
+<td><code>&quot;div&quot;</code></td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td><code>type</code></td>
+<td>Sets the type on a button</td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>value</code></td>
+<td>Sets the value if the card is a button.</td>
+<td><code>string</code></td>
+<td><code>&quot;#&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>close-modal</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>flip</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>open-modal</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>flip_card() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../../forms/datetime-picker">midwest-datetime-picker</a></li>
+</ul>
+<h3>Depends on</h3>
+<ul>
+<li><a href="../button">midwest-button</a></li>
+<li>ion-icon</li>
+<li>export-to-figma</li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-card --&gt; midwest-button
+  midwest-card --&gt; ion-icon
+  midwest-card --&gt; export-to-figma
+  midwest-button --&gt; midwest-progress
+  midwest-button --&gt; midwest-label
+  midwest-button --&gt; export-to-figma
+  midwest-datetime-picker --&gt; midwest-card
+  style midwest-card fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

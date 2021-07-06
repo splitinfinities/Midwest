@@ -2,7 +2,6 @@ import notes from './readme.md';
 import { text, withKnobs } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
 import { html } from 'lit-html';
-import { spreadProps } from '@open-wc/lit-helpers';
 
 export default {
 	title: "Common/Card",
@@ -23,12 +22,12 @@ export default {
   }
 };
 
-export const basic = ({ front, back, ...args }) => html`<midwest-card ...="${spreadProps(args)}">
+export const basic = ({ front, back, ...args }) => html`<midwest-card>
   <section .innerHTML=${front}></section>
   <section slot="back" .innerHTML=${back}></section>
 </midwest-card>`;
 
-export const full = ({ front, back, ...args }) => html`<midwest-card ...="${spreadProps(args)}" style="max-width: 30rem;" class="m-auto">
+export const full = ({ front, back, ...args }) => html`<midwest-card style="max-width: 30rem;" class="m-auto">
   <header class="bg-gray-1 p-0">
     <img src="https://source.unsplash.com/random/300x300" class="w-full h-full" />
   </header>
@@ -45,7 +44,7 @@ export const full = ({ front, back, ...args }) => html`<midwest-card ...="${spre
   </footer>
 </midwest-card>`
 
-export const headers_footers = ({ front, back, ...args }) => html`<midwest-card ...="${spreadProps(args)}">
+export const headers_footers = ({ front, back, ...args }) => html`<midwest-card>
   <header>
     <h6>Header</h6>
   </header>

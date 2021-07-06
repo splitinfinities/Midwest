@@ -1,7 +1,3 @@
-:host {
-  contain: content;
-}
-
 :host,
 :host ::slotted(*) {
   text-shadow: var(--text-shadow);

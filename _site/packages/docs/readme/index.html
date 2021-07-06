@@ -1,0 +1,69 @@
+<h1>Ionic PWA Toolkit</h1>
+<p>The PWA Toolkit is a starting point for building Progressive Web Apps using Ionic and Stencil.
+This combination of tools gives you the ability to build a fast, efficient PWA out of the box.</p>
+<p>For more info check out our <a href="https://ionicframework.com/pwa/toolkit">homepage</a>!</p>
+<h2>Features</h2>
+<ul>
+<li><code>@ionic/core</code> for the UI.</li>
+<li>Stencil for the application logic and routing</li>
+<li>Push Notifications setup</li>
+<li>Unit Tests</li>
+<li>Pre-rendering</li>
+<li>Lazy-loading and code splitting</li>
+<li>Intelligent Polyfills</li>
+<li>Modern mode: ES6/ESM for new browser, ES5 for older</li>
+<li>Service Worker, App manifest, iOS meta tags</li>
+<li>Theming using CSS variables</li>
+</ul>
+<h2>Getting Started</h2>
+<p>To start building, clone this repo to a new directory:</p>
+<pre><code class="language-bash">npm init stencil ionic-pwa
+</code></pre>
+<h2>Production</h2>
+<p>To build for production, run:</p>
+<pre><code class="language-bash">npm run build
+</code></pre>
+<p>A production build includes:</p>
+<ul>
+<li>Minified code bundles</li>
+<li>Generated Service workers</li>
+<li>App manifest</li>
+</ul>
+<h2>Hosting</h2>
+<p>Apps should be hosted on through HTTPS, and if possible, through a provider that supports HTTP2.
+One provider that does support this is <a href="https://firebase.google.com/docs/hosting/">Firebase Hosting</a>.</p>
+<h2>H2 Push</h2>
+<p>We recommend setting up HTTP2 Push on Firebase. H2 Push may sound complicated, but it's actually a simple concept. To learn about it, take a look at this <a href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push">article</a>.</p>
+<p>To set this up for <code>my-app</code>:</p>
+<ul>
+<li>Do a production build of the app: <code>npm run build</code></li>
+<li>Serve your WWW folder locally using a local http server and open in your browser.
+<ul>
+<li>https://www.npmjs.com/package/http-server works pretty well for this. You can serve your www folder by running <code>http-server www</code>.</li>
+</ul>
+</li>
+<li>Open the DevTools and look at the network tab.
+<ul>
+<li>Reload the page and you should see all of your files show up in the network tab. Excluding the <code>sw.js</code> file, these are the files you want to H2 push.</li>
+</ul>
+</li>
+<li>List these files in the link headers of your firebase.json file. For a syntax reference, review this <a href="https://w3c.github.io/preload/#server-push-http-2">article</a></li>
+</ul>
+<h2>Service Workers</h2>
+<p>Service workers are generated via the Stencil build tool. For more information on how they can be configured, see the <a href="https://stenciljs.com/docs/service-workers">Service Worker docs</a>.</p>
+<h2>Developing with a Service Worker</h2>
+<p>For most cases, you'll want to develop your app without generating a Service Worker. But if you'd like to test out Web Push Notifications or Background Sync, you'll need to have one generated. To generate a Service Worker during dev builds, we've added the npm script:</p>
+<pre><code>npm run start.sw
+</code></pre>
+<p>This will start a dev build and generate a Service Worker as well.</p>
+<h2>Unit Tests</h2>
+<p>To run the unit tests once, run:</p>
+<pre><code class="language-bash">npm test
+</code></pre>
+<p>To run the unit tests and watch for file changes during development, run:</p>
+<pre><code class="language-bash">npm run test.watch
+</code></pre>
+<h2>Testing your PWA's performance</h2>
+<p>We recommend using https://www.webpagetest.org/easy with the <code>Run Lighthouse Audit</code> option turned on.
+This will give you an in depth look into your app's load performance on the average device connected to the average network.
+For more info on how to use webpagetest check out <a href="https://zoompf.com/blog/2015/07/the-seo-experts-guide-to-web-performance-using-webpagetest-2">this article</a></p>

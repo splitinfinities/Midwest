@@ -7,13 +7,15 @@
 
 ## Properties
 
-| Property    | Attribute   | Description | Type                                                           | Default      |
-| ----------- | ----------- | ----------- | -------------------------------------------------------------- | ------------ |
-| `active`    | `active`    |             | `boolean`                                                      | `false`      |
-| `delay`     | `delay`     |             | `number`                                                       | `100`        |
-| `direction` | `direction` |             | `"bottom-left" \| "bottom-right" \| "top-left" \| "top-right"` | `"top-left"` |
-| `length`    | `length`    |             | `number`                                                       | `100`        |
-| `timing`    | `timing`    |             | `number`                                                       | `50`         |
+| Property     | Attribute    | Description | Type                                                           | Default      |
+| ------------ | ------------ | ----------- | -------------------------------------------------------------- | ------------ |
+| `active`     | `active`     |             | `boolean`                                                      | `false`      |
+| `complement` | `complement` |             | `boolean`                                                      | `undefined`  |
+| `delay`      | `delay`      |             | `number`                                                       | `100`        |
+| `direction`  | `direction`  |             | `"bottom-left" \| "bottom-right" \| "top-left" \| "top-right"` | `"top-left"` |
+| `length`     | `length`     |             | `number`                                                       | `100`        |
+| `shade`      | `shade`      |             | `number`                                                       | `7`          |
+| `timing`     | `timing`     |             | `number`                                                       | `50`         |
 
 
 ## Methods

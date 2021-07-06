@@ -1,0 +1,143 @@
+<h1>midwest-tab</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dark</code></td>
+<td><code>dark</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td><code>disabled</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>href</code></td>
+<td><code>href</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>'#'</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>name</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>notifications</code></td>
+<td><code>notifications</code></td>
+<td></td>
+<td><code>boolean \| number</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>notificationsColor</code></td>
+<td><code>notifications-color</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;cyan&quot;</code></td>
+</tr>
+<tr>
+<td><code>open</code></td>
+<td><code>open</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td><code>order</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td><code>size</code></td>
+<td></td>
+<td><code>&quot;large&quot; \| &quot;medium&quot; \| &quot;small&quot; \| &quot;tiny&quot;</code></td>
+<td><code>&quot;medium&quot;</code></td>
+</tr>
+<tr>
+<td><code>tabCount</code></td>
+<td><code>tab-count</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>tag</code></td>
+<td><code>tag</code></td>
+<td></td>
+<td><code>&quot;button&quot; \| &quot;link&quot; \| &quot;stencil-route&quot;</code></td>
+<td><code>&quot;button&quot;</code></td>
+</tr>
+<tr>
+<td><code>target</code></td>
+<td><code>target</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>'_self'</code></td>
+</tr>
+<tr>
+<td><code>vertical</code></td>
+<td><code>vertical</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>contentChange</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>activate() =&gt; Promise&lt;void&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;void&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Depends on</h3>
+<ul>
+<li><a href="../tag">midwest-tag</a></li>
+<li><a href="../label">midwest-label</a></li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-tab --&gt; midwest-tag
+  midwest-tab --&gt; midwest-label
+  midwest-tag --&gt; midwest-label
+  style midwest-tab fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

@@ -1,0 +1,109 @@
+<h1>midwest-dropdown</h1>
+<!-- Auto Generated Below -->
+<h2>Usage</h2>
+<h3>Default</h3>
+<midwest-dropdown>
+	<midwest-button ghost slot="handle">Account</midwest-button>
+	<midwest-item>
+		<midwest-avatar name="William M. Riley" size="small" notooltip></midwest-avatar>
+		Your Account
+	</midwest-item>
+	<midwest-item>Billing</midwest-item>
+	<midwest-item selectable="false" slot="footer">
+		<midwest-button pill outline block size="tiny" padding="small">Sign out</midwest-button>
+	</midwest-item>
+</midwest-dropdown>
+<h3>Positioning</h3>
+<midwest-dropdown position="left">
+	<midwest-button ghost slot="handle">Account</midwest-button>
+	<midwest-item>
+		<midwest-avatar name="William M. Riley" size="small" notooltip></midwest-avatar>
+		Your Account
+	</midwest-item>
+	<midwest-item>Billing</midwest-item>
+	<midwest-item>Settings</midwest-item>
+	<midwest-item selectable="false" slot="footer">
+		<midwest-button pill outline block size="tiny" padding="small">Sign out</midwest-button>
+	</midwest-item>
+</midwest-dropdown>
+<br />
+<midwest-dropdown position="right">
+	<midwest-button ghost slot="handle">Account</midwest-button>
+	<midwest-item>
+		<midwest-avatar name="William M. Riley" size="small" notooltip></midwest-avatar>
+		Your Account
+	</midwest-item>
+	<midwest-item>Billing</midwest-item>
+	<midwest-item>Settings</midwest-item>
+	<midwest-item selectable="false" slot="footer">
+		<midwest-button pill outline block size="tiny" padding="small">Sign out</midwest-button>
+	</midwest-item>
+</midwest-dropdown>
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dark</code></td>
+<td><code>dark</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>icon</code></td>
+<td><code>icon</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>iconName</code></td>
+<td><code>icon-name</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;arrow-down&quot;</code></td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td><code>label</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>&quot;Dropdown&quot;</code></td>
+</tr>
+<tr>
+<td><code>open</code></td>
+<td><code>open</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>position</code></td>
+<td><code>position</code></td>
+<td></td>
+<td><code>&quot;center&quot; \| &quot;left&quot; \| &quot;right&quot;</code></td>
+<td><code>&quot;center&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Dependencies</h2>
+<h3>Depends on</h3>
+<ul>
+<li>ion-icon</li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-dropdown --&gt; ion-icon
+  style midwest-dropdown fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

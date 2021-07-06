@@ -1,0 +1,126 @@
+<h1>midwest-validate</h1>
+<!-- Auto Generated Below -->
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>check</code></td>
+<td>--</td>
+<td></td>
+<td><code>CustomFunction</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td><code>color</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>customRender</code></td>
+<td>--</td>
+<td></td>
+<td><code>(message: string[]) =&gt; any</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>element</code></td>
+<td><code>element</code></td>
+<td></td>
+<td><code>any</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>name</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>silent</code></td>
+<td><code>silent</code></td>
+<td></td>
+<td><code>boolean</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td><code>size</code></td>
+<td></td>
+<td><code>string</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>correct</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>incorrect</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+<tr>
+<td><code>test</code></td>
+<td></td>
+<td><code>CustomEvent&lt;any&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<h3><code>get() =&gt; Promise&lt;FormResult&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;FormResult&gt;</code></p>
+<h3><code>validate(set?: boolean) =&gt; Promise&lt;FormResult&gt;</code></h3>
+<h4>Returns</h4>
+<p>Type: <code>Promise&lt;FormResult&gt;</code></p>
+<h2>Dependencies</h2>
+<h3>Used by</h3>
+<ul>
+<li><a href="../input">midwest-input</a></li>
+<li><a href="../input-file">midwest-input-file</a></li>
+<li><a href="../input-tags">midwest-input-tags</a></li>
+<li><a href="../select">midwest-select</a></li>
+<li><a href="../switch">midwest-switch</a></li>
+<li><a href="../toggle">midwest-toggle</a></li>
+</ul>
+<h3>Depends on</h3>
+<ul>
+<li>midwest-label</li>
+</ul>
+<h3>Graph</h3>
+<pre><code class="language-mermaid">graph TD;
+  midwest-validate --&gt; midwest-label
+  midwest-input --&gt; midwest-validate
+  midwest-input-file --&gt; midwest-validate
+  midwest-input-tags --&gt; midwest-validate
+  midwest-select --&gt; midwest-validate
+  midwest-switch --&gt; midwest-validate
+  midwest-toggle --&gt; midwest-validate
+  style midwest-validate fill:#f9f,stroke:#333,stroke-width:4px
+</code></pre>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

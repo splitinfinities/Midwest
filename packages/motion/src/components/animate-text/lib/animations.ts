@@ -215,5 +215,31 @@ export const animations = {
                     }
                 })
         }
+    },
+    fade: {
+        in: (targets: NodeListOf<HTMLElement>, delay: number, duration: number) => {
+            anime.timeline({ loop: false })
+                .add({
+                    targets: Array.from(targets),
+                    opacity: [0, 1],
+                    easing: "easeOutExpo",
+                    duration,
+                    delay: function (_, i) {
+                        return delay + (30 * i);
+                    }
+                })
+        },
+        out: (targets: NodeListOf<HTMLElement>, delay: number, duration: number) => {
+            anime.timeline({ loop: false })
+                .add({
+                    targets: Array.from(targets),
+                    opacity: [1, 0],
+                    easing: "easeInExpo",
+                    duration,
+                    delay: function (_, i) {
+                        return delay + (30 * i);
+                    }
+                })
+        }
     }
 }

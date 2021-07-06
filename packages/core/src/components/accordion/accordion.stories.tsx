@@ -2,10 +2,9 @@ import notes from './readme.md';
 import { text, withKnobs } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
 import { html } from 'lit-html';
-import { spreadProps } from '@open-wc/lit-helpers';
 
 export default {
-	title: "Common/Accordion",
+	title: "@midwest-design/core/accordion",
 	component: "midwest-accordion",
 	decorators: [withKnobs, withA11y],
 	notes: {
@@ -24,7 +23,7 @@ export default {
 };
 
 export const basic = ({ content, title, ...args }) => html`
-<midwest-accordion ...="${spreadProps(args)}">
+<midwest-accordion>
 	<p slot="label">${title}</p>
 	${content}
 </midwest-accordion>`;

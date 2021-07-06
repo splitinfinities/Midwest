@@ -90,7 +90,7 @@ export class Switch {
   @Watch('checked')
   handleChecked() {
     if (this.changeTheme) {
-      document.querySelector("midwest-theme").dark = this.checked
+      (document.querySelector("midwest-theme") as any).dark = this.checked
     }
 
     this.update.emit({

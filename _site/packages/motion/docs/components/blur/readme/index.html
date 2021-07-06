@@ -1,0 +1,51 @@
+<h1>midwest-blur</h1>
+<!-- Auto Generated Below -->
+<h2>Usage</h2>
+<h3>Animate-text</h3>
+<copy-wrap align="center">
+	<midwest-animate-text method="lettering">
+		<h1>Stellar!</h1>
+		<h3 alt>A Beautiful, Complete Design System</h3>
+	</midwest-animate-text>
+</copy-wrap>
+<h3>Default</h3>
+<midwest-blur class="example mb4 db">
+	<copy-wrap>
+		<h1>Awesome~</h1>
+		<h2 alt>Change the values below to see the blurring changes.</h2>
+	</copy-wrap>
+</midwest-blur>
+<midwest-grid cols="1" class="theme-gray">
+	<midwest-input type="number" max="50" min="0" placeholder="Vertical" onChange="document.querySelector('midwest-blur.example').vertical = this.value;"></midwest-input>
+	<midwest-input type="number" max="50" min="0" placeholder="Horizontal" onChange="document.querySelector('midwest-blur.example').horizontal = this.value;"></midwest-input>
+</midwest-grid>
+<h2>Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>horizontal</code></td>
+<td><code>horizontal</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>vertical</code></td>
+<td><code>vertical</code></td>
+<td></td>
+<td><code>number</code></td>
+<td><code>0</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>Built with <a href="https://stenciljs.com/">StencilJS</a></em></p>

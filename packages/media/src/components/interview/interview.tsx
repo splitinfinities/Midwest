@@ -24,8 +24,8 @@ export class Interview {
 
   @Prop({ mutable: true }) visualization: "circle" | "bars" | "wave" | "bars2" = "bars2";
 
-  @State() audio: HTMLWebAudioElement;
-  @State() audio_source: HTMLWebAudioSourceElement;
+  @State() audio: any;
+  @State() audio_source: any;
 
   @State() loaded: boolean = false;
   @State() loading: boolean = false;

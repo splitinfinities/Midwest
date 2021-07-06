@@ -26,9 +26,9 @@
 
 ## Events
 
-| Event           | Description | Type               |
-| --------------- | ----------- | ------------------ |
-| `contentChange` |             | `CustomEvent<any>` |
+| Event          | Description | Type               |
+| -------------- | ----------- | ------------------ |
+| `open:content` |             | `CustomEvent<any>` |
 
 
 ## Methods

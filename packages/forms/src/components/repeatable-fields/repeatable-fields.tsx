@@ -22,7 +22,7 @@ export class RepeatableFields {
   templateContent: string;
   latestIndex: number = 0;
   template: HTMLTemplateElement;
-  gridEl: HTMLMidwestGridElement;
+  gridEl: any;
 
   componentWillLoad() {
     this.content = JSON.parse(this.data);

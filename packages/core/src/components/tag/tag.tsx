@@ -13,14 +13,14 @@ export class Tag {
   @Prop({ reflect: true }) pill: boolean = false;
   @Prop({ reflect: true }) outline: boolean = false;
   @Prop({ reflect: true }) color: ThemeableColors = "gray";
-  @Prop({ reflect: true }) dark: boolean = false;
+  @Prop({ reflect: true, mutable: true }) dark: boolean = false;
 
   componentWillLoad() {
     darkMode(this);
   }
 
   render() {
-    return <Host>
+    return <Host class={`theme-${this.color}`}>
       <slot name="icon" />
       <slot name="avatar" />
       <midwest-label class="tag" size={this.size}>

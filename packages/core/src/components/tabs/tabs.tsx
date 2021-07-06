@@ -16,7 +16,7 @@ export class Tabs {
   @Prop({ reflect: true }) size: "tiny" | "small" | "medium" | "large";
   @Prop({ reflect: true }) block: boolean = false;
   @Prop({ reflect: true }) vertical: boolean = false;
-  @Prop({ reflect: true }) dark: boolean = false;
+  @Prop({ reflect: true, mutable: true }) dark: boolean = false;
   @Prop({ reflect: true }) behavior: string;
   @Prop({ reflect: true }) flipIndicator: boolean;
   @Prop({ reflect: true }) blockIndicator: boolean;

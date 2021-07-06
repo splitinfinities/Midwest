@@ -84,11 +84,13 @@ export namespace Components {
     }
     interface MidwestLongShadow {
         "active": boolean;
+        "complement": boolean;
         "delay": number;
         "direction": "top-left" | "top-right" | "bottom-left" | "bottom-right";
         "in": () => Promise<void>;
         "length": number;
         "out": () => Promise<void>;
+        "shade": number;
         "timing": number;
     }
     interface MidwestMap {
@@ -404,9 +406,11 @@ declare namespace LocalJSX {
     }
     interface MidwestLongShadow {
         "active"?: boolean;
+        "complement"?: boolean;
         "delay"?: number;
         "direction"?: "top-left" | "top-right" | "bottom-left" | "bottom-right";
         "length"?: number;
+        "shade"?: number;
         "timing"?: number;
     }
     interface MidwestMap {
