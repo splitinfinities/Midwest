@@ -3,6 +3,7 @@ import { text, withKnobs } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
 import { html } from 'lit-html';
 
+
 export default {
 	title: "@midwest-design/core/accordion",
 	component: "midwest-accordion",
@@ -10,16 +11,16 @@ export default {
 	notes: {
 		markdown: notes,
 	},
-  argTypes: {
-    content: { 
+	argTypes: {
+		content: {
 			defaultValue: "Hey there! Here's the content!",
-			control: { type: 'text' } 
+			control: { type: 'text' }
 		},
-    title: { 
+		title: {
 			defaultValue: "Here's the title!",
-			control: { type: 'text' } 
+			control: { type: 'text' }
 		},
-  }
+	}
 };
 
 export const basic = ({ content, title, ...args }) => html`
