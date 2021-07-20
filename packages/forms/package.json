@@ -31,6 +31,7 @@
     "@midwest-design/core": "^0.0.14",
     "@stencil/core": "^2.6.0",
     "@stencil/postcss": "^1.0.1",
+    "zxcvbn": "latest",
     "animejs": "^3.2.0",
     "autoprefixer": "^9.8.6",
     "basicscroll": "^3.0.3",

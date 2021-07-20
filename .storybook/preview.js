@@ -5,19 +5,18 @@ import {
   addDecorator,
   addParameters,
   setCustomElements,
-} from '@storybook/web-components';
+} from "@storybook/web-components";
 
 import { withKnobs } from "@storybook/addon-knobs";
 
-import audio from '../packages/audio/custom-elements.json';
-import core from '../packages/core/custom-elements.json';
-import device from '../packages/device/custom-elements.json';
-import exportToFigma from '../packages/export-to-figma/custom-elements.json';
-import forms from '../packages/forms/custom-elements.json';
-import helpers from '../packages/helpers/custom-elements.json';
-import media from '../packages/media/custom-elements.json';
-import motion from '../packages/motion/custom-elements.json';
-
+import audio from "../packages/audio/custom-elements.json";
+import core from "../packages/core/custom-elements.json";
+import device from "../packages/device/custom-elements.json";
+import exportToFigma from "../packages/export-to-figma/custom-elements.json";
+import forms from "../packages/forms/custom-elements.json";
+import helpers from "../packages/helpers/custom-elements.json";
+import media from "../packages/media/custom-elements.json";
+import motion from "../packages/motion/custom-elements.json";
 
 const newCore = {
   ...core,
@@ -31,23 +30,21 @@ const newCore = {
       ...helpers?.tags,
       ...media?.tags,
       ...motion?.tags,
-    ]
-  }
-}
-
-console.log(newCore)
+    ],
+  },
+};
 
 setCustomElements(newCore);
 
 export const parameters = {
   a11y: {
-    element: '#root',
+    element: "#root",
     config: {},
     options: {},
     manual: true,
   },
   docs: {
     inlineStories: false,
-    iframeHeight: '200px',
+    iframeHeight: "200px",
   },
 };

@@ -41,9 +41,9 @@
     "git.push": "git push --follow-tags",
     "cut": "yarn lerna.version && yarn lerna.publish && yarn git.push",
     "diff": "lerna diff",
-    "storybook": "start-storybook -p 6006 -s public",
+    "storybook": "start-storybook -p 6006",
     "storybook.upgrade": "npx sb upgrade",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
@@ -55,14 +55,23 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@storybook/web-components": "^6.3.2",
-    "@storybook/addon-a11y": "^6.3.2",
-    "@storybook/addon-essentials": "^6.3.2",
+    "@storybook/addon-a11y": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
     "@storybook/addon-knobs": "^6.3.0",
+    "@storybook/web-components": "^6.3.4",
     "bp-smart-commit": "^1.4.1",
     "husky": "^4.2.5",
     "lerna": "^3.13.4",
     "standard-version": "8.0.0",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@storybook/addon-storysource": "^6.3.4"
+  },
+  "resolutions": {
+    "@midwest-design/common": "0.0.14",
+    "@midwest-design/core": "0.0.14",
+    "@midwest-design/helpers": "0.0.14",
+    "@midwest-design/motion": "0.0.14"
   }
 }
