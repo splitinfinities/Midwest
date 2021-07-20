@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "run-p dev storybook",
+    "start.core": "run-p dev.core storybook",
     "build": "lerna run build --stream",
     "build.common": "lerna run build --stream --scope=@midwest-design/common",
     "build.motion": "lerna run build --stream --scope=@midwest-design/motion",
