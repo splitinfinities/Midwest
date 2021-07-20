@@ -11,9 +11,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
 });
 
-// @ts-ignore
 export const config: Config = {
-  ...typicalStencilConfig,
+  ...typicalStencilConfig as Config,
   namespace: 'core',
   globalStyle: "./src/css/entry.css",
   globalScript: "./src/js/entry.ts",
