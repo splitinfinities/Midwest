@@ -1,5 +1,5 @@
-import { isArray } from '../../core/utils/helpers/is-array';
-import { isNumber } from '../../core/utils/helpers/is-number';
+import { isArray } from "../../core/utils/helpers/is-array";
+import { isNumber } from "../../core/utils/helpers/is-number";
 
 /**
  * Returns a function for detecting array size.

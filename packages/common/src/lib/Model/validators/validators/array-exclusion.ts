@@ -1,4 +1,4 @@
-import { arrayInclusionValidator } from './array-inclusion';
+import { arrayInclusionValidator } from "./array-inclusion";
 
 /**
  * Returns a function for detecting values that do not exist in the array.

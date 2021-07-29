@@ -11,10 +11,9 @@ describe('midwest-group', () => {
     expect(page.root).toEqualHtml(`
        <midwest-group>
         <mock:shadow-root>
-          <context-consumer></context-consumer>
           <slot></slot>
         </mock:shadow-root>
       </midwest-group>
     `);
   });
-})
+});

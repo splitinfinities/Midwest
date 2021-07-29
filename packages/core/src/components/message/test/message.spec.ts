@@ -9,7 +9,7 @@ describe('midwest-message', () => {
       html: `<midwest-message></midwest-message>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-message class=\"db theme-gray\" name=\"midwest-design_\" shown=\"\">
+    expect(page.root).toEqualHtml(`<midwest-message class="theme-blue" closing="" name="midwest-design" type="default" style="--height: 60px;">
       <mock:shadow-root>
         <div class=\"wrap\">
           <slot></slot>

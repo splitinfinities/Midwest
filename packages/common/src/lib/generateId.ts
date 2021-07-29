@@ -9,4 +9,4 @@ function* generateId() {
   return iterationCount;
 }
 
-export const generateID = generateId()
+export const generateID = generateId();

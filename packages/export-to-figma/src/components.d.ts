@@ -12,6 +12,7 @@ export namespace Components {
     }
     interface ExportToFigma {
         "element": HTMLElement;
+        "export": () => Promise<void>;
         "noKey": boolean;
     }
 }

@@ -1,4 +1,4 @@
-import { toFloat } from './to-float';
+import { toFloat } from "./to-float";
 
 /**
  * Converts the provided value to number (alias).

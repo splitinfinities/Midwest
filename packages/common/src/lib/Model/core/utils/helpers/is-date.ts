@@ -1,6 +1,6 @@
-import { isUndefined } from './is-undefined';
-import { isNull } from './is-null';
-import { isInteger } from './is-integer';
+import { isInteger } from "./is-integer";
+import { isNull } from "./is-null";
+import { isUndefined } from "./is-undefined";
 
 /**
  * Returns `true` if the provided value is a Date object.

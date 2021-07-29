@@ -8,8 +8,8 @@ describe('midwest-time', () => {
       html: `<midwest-time unix="1585935974"></midwest-time>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-time unix="1585935974">
-      April 3o 2020, 12:46:14 pm
+    expect(page.root).toEqualHtml(`<midwest-time unix="1585935974" style="all: inherit; display: inline !important;">
+      April 3 2020, 12:46:14 pm
     </midwest-time>`);
   });
 });

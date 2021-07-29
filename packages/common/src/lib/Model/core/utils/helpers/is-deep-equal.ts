@@ -7,7 +7,12 @@ export function isDeepEqual(a, b) {
   if (a === b) {
     return true;
   }
-  if (a == null || typeof a != 'object' || b == null || typeof b != 'object') {
+  if (
+    a === null ||
+    typeof a !== 'object' ||
+    b === null ||
+    typeof b !== 'object'
+  ) {
     return false;
   }
 
@@ -25,5 +30,5 @@ export function isDeepEqual(a, b) {
       return false;
     }
   }
-  return propsInA == propsInB;
+  return propsInA === propsInB;
 }

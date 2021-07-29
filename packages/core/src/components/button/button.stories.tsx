@@ -18,4 +18,4 @@ export default {
   },
 };
 
-export const basic = ({ content, ...args }) => html`<midwest-button>${content}</midwest-button>`;
+export const WebComponent = ({ content, ...args }) => html`<midwest-button>${content}</midwest-button>`;

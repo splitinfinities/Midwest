@@ -14,7 +14,7 @@ export default {
   argTypes: {},
 };
 
-export const basic = ({ ...args }) => html` <copy-wrap ...="${spreadProps(args)}">
+export const WebComponent = ({ ...args }) => html` <copy-wrap ...="${spreadProps(args)}">
   <h1>nice</h1>
   <p>siiick</p>
 </copy-wrap>`;

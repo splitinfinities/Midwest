@@ -1,6 +1,6 @@
-export var shuffle = function (array) {
-  var currentIndex = array.length;
-  var temporaryValue, randomIndex;
+export let shuffle = function(array) {
+  let currentIndex = array.length;
+  let temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {

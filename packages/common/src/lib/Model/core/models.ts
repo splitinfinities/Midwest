@@ -1,7 +1,14 @@
-import { Validator } from './validator';
 import { Handler } from './handler';
-import { Prop, PropConfig, PropRef, PropError } from './props';
-import { normalize, isDeepEqual, isArray, isUndefined, toArray, realize } from './utils';
+import { Prop, PropConfig, PropError, PropRef } from './props';
+import {
+  isArray,
+  isDeepEqual,
+  isUndefined,
+  normalize,
+  realize,
+  toArray
+} from './utils';
+import { Validator } from './validator';
 
 /**
  * Model configuration interface.
@@ -16,9 +23,9 @@ export interface ModelConfig<Context> {
  * Strongly typed javascript object.
  */
 export class Model<Context = any> {
-  readonly $config: ModelConfig<Context>;
-  readonly $props: {[key: string]: Prop};
-  static readonly $props: {[key: string]: PropConfig} = {};
+  public static readonly $props: { [key: string]: PropConfig } = {};
+  public readonly $config: ModelConfig<Context>;
+  public readonly $props: { [key: string]: Prop };
 
   /**
    * Class constructor.
@@ -26,50 +33,17 @@ export class Model<Context = any> {
    * @param config Model configuration.
    */
   public constructor(data?: any, config?: ModelConfig<Context>) {
-
     Object.defineProperty(this, '$config', {
       value: config || {},
-      enumerable: false,
+      enumerable: false
     });
     Object.defineProperty(this, '$props', {
       value: {},
-      enumerable: false,
+      enumerable: false
     });
 
     this.defineProps();
     this.populate(data);
-  }
-
-  /**
-   * Defines all registered class properties. Registered properties are stored
-   * on the static variable using the @prop decorator.
-   */
-  protected defineProps() {
-    const recipes = this.constructor['$props'];
-
-    for (const key in recipes) {
-      this.defineProp(key, recipes[key]);
-    }
-  }
-
-  /**
-   * Defines a new class property.
-   */
-  protected defineProp(key: string, config: PropConfig) {
-
-    this.$props[key] = new Prop({
-      model: this,
-      validator: () => new Validator(config as any), // lazy load
-      handler: () => new Handler(config as any), // lazy load
-      ...config,
-    });
-
-    Object.defineProperty(this, key, {
-      get: () => this.$props[key].getValue(),
-      set: (value) => this.$props[key].setValue(value),
-      enumerable: config.enumerable !== false,
-      configurable: false,
-    });
   }
 
   /**
@@ -95,12 +69,10 @@ export class Model<Context = any> {
       const parent = root.getParent();
       if (parent) {
         root = parent;
-      }
-      else {
+      } else {
         return root;
       }
-    }
-    while (true);
+    } while (true);
   }
 
   /**
@@ -114,7 +86,7 @@ export class Model<Context = any> {
       return this.$props[lastKey];
     }
 
-    const prop = keys.reduce((a, c) => (a[c] || {}), this);
+    const prop = keys.reduce((a, c) => a[c] || {}, this);
     return prop instanceof Model ? prop.getProp(lastKey) : undefined;
   }
 
@@ -129,7 +101,7 @@ export class Model<Context = any> {
    * Deeply assignes data to model props.
    */
   public populate(data: any, strategy?: string): this {
-    Object.keys(data || {}).forEach((key) => {
+    Object.keys(data || {}).forEach(key => {
       const prop = this.$props[key];
       if (prop) {
         prop.setValue(data[key], strategy);
@@ -145,13 +117,12 @@ export class Model<Context = any> {
   public serialize(strategy?: string): { [key: string]: any } {
     const data = {};
 
-    Object.keys(this.$props)
-      .forEach((key) => {
-        const value = this.$props[key].serialize(strategy);
-        if (!isUndefined(value)) {
-          data[key] = value;
-        }
-      });
+    Object.keys(this.$props).forEach(key => {
+      const value = this.$props[key].serialize(strategy);
+      if (!isUndefined(value)) {
+        data[key] = value;
+      }
+    });
 
     return data;
   }
@@ -162,29 +133,28 @@ export class Model<Context = any> {
   public flatten(prefix: string[] = []): PropRef[] {
     let props = [];
 
-    Object.keys(this.$props)
-      .forEach((key) => {
-        const prop = this.$props[key];
-        const path = (prefix || []).concat(key);
+    Object.keys(this.$props).forEach(key => {
+      const prop = this.$props[key];
+      const path = (prefix || []).concat(key);
 
-        props.push({ path, prop });
+      props.push({ path, prop });
 
-        if (!prop.isEmpty() && prop.isModel()) {
-          if (prop.isArray()) {
-            props = props.concat(
-              prop.getValue()
-                .map((f, i) => (f && f instanceof Model ? f.flatten(path.concat([i])) : null))
-                .filter((f) => isArray(f))
-                .reduce((a, b) => a.concat(b), [])
-            );
-          }
-          else {
-            props = props.concat(
-              prop.getValue().flatten(path)
-            );
-          }
+      if (!prop.isEmpty() && prop.isModel()) {
+        if (prop.isArray()) {
+          props = props.concat(
+            prop
+              .getValue()
+              .map((f, i) =>
+                f && f instanceof Model ? f.flatten(path.concat([i])) : null
+              )
+              .filter(f => isArray(f))
+              .reduce((a, b) => a.concat(b), [])
+          );
+        } else {
+          props = props.concat(prop.getValue().flatten(path));
         }
-      });
+      }
+    });
 
     return props;
   }
@@ -207,13 +177,13 @@ export class Model<Context = any> {
    * Converts this class into serialized data object with only the keys that
    * pass the provided `test`.
    */
-  public pluck(test: (prop: PropRef) => boolean): {[key: string]: any} {
+  public pluck(test: (prop: PropRef) => boolean): { [key: string]: any } {
     const data = this.serialize();
 
     this.flatten()
       .sort((a, b) => b.path.length - a.path.length)
-      .filter((prop) => !test(prop))
-      .forEach((prop) => {
+      .filter(prop => !test(prop))
+      .forEach(prop => {
         const names = prop.path.concat();
         const lastName = names.pop();
         delete names.reduce((o, k) => o[k], data)[lastName];
@@ -226,9 +196,7 @@ export class Model<Context = any> {
    * Sets each model prop to its default value.
    */
   public reset(): this {
-
-    Object.keys(this.$props)
-      .forEach((key) => this.$props[key].reset());
+    Object.keys(this.$props).forEach(key => this.$props[key].reset());
 
     return this;
   }
@@ -237,9 +205,7 @@ export class Model<Context = any> {
    * Resets properties then sets properties to their fake values.
    */
   public fake(): this {
-
-    Object.keys(this.$props)
-      .forEach((key) => this.$props[key].fake());
+    Object.keys(this.$props).forEach(key => this.$props[key].fake());
 
     return this;
   }
@@ -248,9 +214,7 @@ export class Model<Context = any> {
    * Sets all fileds to `null`.
    */
   public empty(): this {
-
-    Object.keys(this.$props)
-      .forEach((key) => this.$props[key].empty());
+    Object.keys(this.$props).forEach(key => this.$props[key].empty());
 
     return this;
   }
@@ -259,9 +223,7 @@ export class Model<Context = any> {
    * Resets information about changed props by setting initial value of each prop.
    */
   public commit(): this {
-
-    Object.keys(this.$props)
-      .forEach((key) => this.$props[key].commit());
+    Object.keys(this.$props).forEach(key => this.$props[key].commit());
 
     return this;
   }
@@ -270,9 +232,7 @@ export class Model<Context = any> {
    * Sets each prop to its initial value (value before last commit).
    */
   public rollback(): this {
-
-    Object.keys(this.$props)
-      .forEach((key) => this.$props[key].rollback());
+    Object.keys(this.$props).forEach(key => this.$props[key].rollback());
 
     return this;
   }
@@ -281,9 +241,7 @@ export class Model<Context = any> {
    * Makes all properties not settable.
    */
   public freeze(): this {
-
-    Object.keys(this.$props)
-      .forEach((key) => this.$props[key].freeze());
+    Object.keys(this.$props).forEach(key => this.$props[key].freeze());
 
     return this;
   }
@@ -303,16 +261,14 @@ export class Model<Context = any> {
    * Returns `true` if at least one prop has been changed.
    */
   public isChanged(): boolean {
-    return Object.keys(this.$props)
-      .some((key) => this.$props[key].isChanged());
+    return Object.keys(this.$props).some(key => this.$props[key].isChanged());
   }
 
   /**
    * Returns `true` when no errors exist.
    */
   public isValid(): boolean {
-    return !Object.keys(this.$props)
-      .some((key) => !this.$props[key].isValid());
+    return !Object.keys(this.$props).some(key => !this.$props[key].isValid());
   }
 
   /**
@@ -321,17 +277,16 @@ export class Model<Context = any> {
   public async validate({
     quiet = false
   }: {
-    quiet?: boolean
+    quiet?: boolean;
   } = {}): Promise<this> {
-
     await Promise.all(
-      Object.keys(this.$props)
-        .map((key) => this.$props[key].validate())
+      Object.keys(this.$props).map(key => this.$props[key].validate())
     );
 
     if (!quiet && !this.isValid()) {
       const error = new Error('Validation failed');
-      error['code'] = 422;
+      // @ts-ignore
+      error.code = 422;
       throw error;
     }
 
@@ -341,12 +296,14 @@ export class Model<Context = any> {
   /**
    * Handles the error and throws an error if the error can not be handled.
    */
-  public async handle(error: any, {
-    quiet = true
-  }: {
-    quiet?: boolean
-  } = {}): Promise<this> {
-
+  public async handle(
+    error: any,
+    {
+      quiet = true
+    }: {
+      quiet?: boolean;
+    } = {}
+  ): Promise<this> {
     if (!error) {
       return this; // blank values are valid
     }
@@ -355,16 +312,16 @@ export class Model<Context = any> {
     }
 
     await Promise.all(
-      Object.keys(this.$props)
-        .map((n) => this.$props[n].handle(error))
+      Object.keys(this.$props).map(n => this.$props[n].handle(error))
     );
 
     if (!quiet && !this.isValid()) {
       const error = new Error('Validation failed');
-      error['code'] = 422;
+
+      // @ts-ignore
+      error.code = 422;
       throw error;
-    }
-    else if (!quiet && this.isValid()) {
+    } else if (!quiet && this.isValid()) {
       throw error; // always throw unhandled errors
     }
 
@@ -375,7 +332,7 @@ export class Model<Context = any> {
    * Sets props errors.
    */
   public applyErrors(errors: PropError[] = []): this {
-    toArray(errors).forEach((error) => {
+    toArray(errors).forEach(error => {
       const prop = this.getProp(...error.path);
       if (prop) {
         prop.setErrorCodes(...error.errors);
@@ -398,8 +355,7 @@ export class Model<Context = any> {
    * Removes props errors.
    */
   public invalidate(): this {
-    Object.keys(this.$props)
-      .forEach((key) => this.$props[key].invalidate());
+    Object.keys(this.$props).forEach(key => this.$props[key].invalidate());
 
     return this;
   }
@@ -408,12 +364,46 @@ export class Model<Context = any> {
    * Returns a new Model instance which is the exact copy of the original.
    */
   public clone(data = {}): this {
-    return new (this.constructor as any)({
-      ...this.serialize(),
-      ...data,
-    }, {
-      ...this.$config,
-    });
+    return new (this.constructor as any)(
+      {
+        ...this.serialize(),
+        ...data
+      },
+      {
+        ...this.$config
+      }
+    );
   }
 
+  /**
+   * Defines all registered class properties. Registered properties are stored
+   * on the static variable using the @prop decorator.
+   */
+  protected defineProps() {
+    // @ts-ignore
+    const recipes = this.constructor.$props;
+
+    for (const key in recipes) {
+      this.defineProp(key, recipes[key]);
+    }
+  }
+
+  /**
+   * Defines a new class property.
+   */
+  protected defineProp(key: string, config: PropConfig) {
+    this.$props[key] = new Prop({
+      model: this,
+      validator: () => new Validator(config as any), // lazy load
+      handler: () => new Handler(config as any), // lazy load
+      ...config
+    });
+
+    Object.defineProperty(this, key, {
+      get: () => this.$props[key].getValue(),
+      set: value => this.$props[key].setValue(value),
+      enumerable: config.enumerable !== false,
+      configurable: false
+    });
+  }
 }

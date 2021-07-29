@@ -1,4 +1,4 @@
-import { stringInclusionValidator } from './string-inclusion';
+import { stringInclusionValidator } from "./string-inclusion";
 
 /**
  * Returns a function for detecting words that do not exist in a string.

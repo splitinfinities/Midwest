@@ -3,7 +3,7 @@
   min-width: var(--avatar-size);
   max-height: var(--avatar-size);
   font-size: var(--avatar-font-size);
-  
+
   --avatar-color: var(--theme-5);
   --avatar-color-dark: var(--theme-7);
   --avatar-font-color: var(--white);
@@ -15,47 +15,47 @@
   filter: drop-shadow(var(--drop-shadow));
 }
 
-:host([size="tiny"]) {
+:host([size='tiny']) {
   --avatar-size: 1.5rem;
   --avatar-font-size: 1rem;
   --shadow-size: 1px;
 }
 
-:host([size="small"]) {
+:host([size='small']) {
   --avatar-size: 1.75rem;
   --avatar-font-size: 1.25rem;
   --shadow-size: 2px;
 }
 
-:host([size="small"][shape="rectangle"]) {
+:host([size='small'][shape='rectangle']) {
   --avatar-font-size: 0.875rem;
 }
 
-:host([size="medium-small"]) {
+:host([size='medium-small']) {
   --avatar-size: 2.25rem;
   --avatar-font-size: 1.15rem;
   --shadow-size: 2.5px;
 }
 
-:host([size="medium"]) {
+:host([size='medium']) {
   --avatar-size: 3rem;
   --avatar-font-size: 1.25rem;
   --shadow-size: 3px;
 }
 
-:host([size="large"]) {
+:host([size='large']) {
   --avatar-size: 5rem;
   --avatar-font-size: 2.5rem;
   --shadow-size: 4px;
 }
 
-:host([size="xlarge"]) {
+:host([size='xlarge']) {
   --avatar-size: 7.5rem;
   --avatar-font-size: 3.5rem;
   --shadow-size: 6px;
 }
 
-:host([size="huge"]) {
+:host([size='huge']) {
   --avatar-size: 10rem;
   --avatar-font-size: 5.5rem;
   --shadow-size: 8px;
@@ -91,7 +91,8 @@
 }
 
 :host .spacer {
-  filter: drop-shadow(0px var(--shadow-size) 0 var(--theme-7)) drop-shadow(0px calc(var(--shadow-size) * -1) 0 var(--theme-7)) drop-shadow(var(--shadow-size) 0px 0 var(--theme-7)) drop-shadow(calc(var(--shadow-size) * -1) 0px 0 var(--theme-7));
+  filter: drop-shadow(0px var(--shadow-size) 0 var(--theme-7)) drop-shadow(0px calc(var(--shadow-size) * -1) 0 var(--theme-7)) drop-shadow(var(--shadow-size) 0px 0 var(--theme-7))
+    drop-shadow(calc(var(--shadow-size) * -1) 0px 0 var(--theme-7));
 }
 
 :host([src]) .spacer {
@@ -152,10 +153,9 @@
   padding-top: 60%;
 }
 
-:host([shape="rectangle"]) .letter {
+:host([shape='rectangle']) .letter {
   padding: 0;
 }
-
 
 /* Shapes: Diamond */
 :host([shape='diamond']) .spacer {
@@ -180,7 +180,7 @@
 /* Processing */
 
 /* Processing */
-:host([processing]:not([processing="false"])) midwest-progress {
+:host([processing]:not([processing='false'])) midwest-progress {
   font-size: 1.5em;
   width: 100%;
   height: 100%;
@@ -196,14 +196,14 @@
   color: white;
 }
 
-:host([processing]:not([processing="false"])) .content {
+:host([processing]:not([processing='false'])) .content {
   filter: blur(10px) grayscale(75%);
 }
 
-:host([processing][shape="rectangle"]:not([processing="false"])) midwest-progress,
-:host([processing][shape="star"]:not([processing="false"])) midwest-progress,
-:host([processing][shape="diamond"]:not([processing="false"])) midwest-progress,
-:host([processing][shape="hexagon"]:not([processing="false"])) midwest-progress {
+:host([processing][shape='rectangle']:not([processing='false'])) midwest-progress,
+:host([processing][shape='star']:not([processing='false'])) midwest-progress,
+:host([processing][shape='diamond']:not([processing='false'])) midwest-progress,
+:host([processing][shape='hexagon']:not([processing='false'])) midwest-progress {
   font-size: 1em;
 }
 
@@ -212,9 +212,10 @@
   --avatar-color-dark: var(--theme-6, var(--red-6));
   --avatar-font-color: var(--theme-1);
   --avatar-text-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+  filter: none;
 }
 
-:host([processing][dark]:not([processing="false"])) midwest-progress {
+:host([processing][dark]:not([processing='false'])) midwest-progress {
   --theme-9: white !important;
   --theme-8: white !important;
   --theme-7: white !important;

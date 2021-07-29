@@ -24,5 +24,5 @@ export default {
   },
 };
 
-export const basic = ({ content, start, end, ...args }) =>
-  html`<midwest-calendar-date start="${new Date(start).toISOString()}" end="${new Date(end).toISOString()}"></midwest-calendar-date>`;
+export const WebComponent = ({ content, start, end, ...args }) =>
+  html`<midwest-calendar-date start="${new Date(start).toISOString()}" end="${new Date(end).toISOString()}" ...="${spreadProps(args)}"></midwest-calendar-date>`;

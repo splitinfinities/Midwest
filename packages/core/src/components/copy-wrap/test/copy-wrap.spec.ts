@@ -9,14 +9,14 @@ describe('copy-wrap', () => {
     });
 
     expect(page.root).toEqualHtml(`
-      <copy-wrap align=\"left\">
+      <copy-wrap align=\"left\" style="--clamp: undefined;">
         <mock:shadow-root>
           <slot></slot>
         </mock:shadow-root>
       </copy-wrap>
     `);
 
-    expect(page.root.align).toBe("left");
+    expect(page.root.align).toBe('left');
     expect(page.root.full).toBe(false);
   });
-})
+});

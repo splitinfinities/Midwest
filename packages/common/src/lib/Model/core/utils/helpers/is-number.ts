@@ -3,6 +3,5 @@
  * @param v Arbitrary value.
  */
 export function isNumber(v?: any) {
-  return typeof v === 'number';
+  return typeof v === "number";
 }
-

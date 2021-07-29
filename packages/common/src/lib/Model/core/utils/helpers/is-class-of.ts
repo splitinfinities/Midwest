@@ -1,4 +1,4 @@
-import { isPresent } from './is-present';
+import { isPresent } from "./is-present";
 
 /**
  * Returns `true` if the provided value represents an subclass of a class.
@@ -15,8 +15,7 @@ export function isClassOf(v?: any, k?: any) {
         || v.prototype.constructor === k
       )
     );
-  }
-  catch (e) {
+  } catch (e) {
     return false;
   }
 }

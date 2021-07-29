@@ -14,7 +14,6 @@ describe('midwest-step', () => {
         <div class=\"step-list\" role=\"tablist\">
           <slot></slot>
         </div>
-        <export-to-figma></export-to-figma>
       </mock:shadow-root>
     </midwest-steps>`);
   });

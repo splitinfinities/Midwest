@@ -1,4 +1,4 @@
-import { isNumber } from '../../core/utils/helpers/is-number';
+import { isNumber } from "../../core/utils/helpers/is-number";
 
 /**
  * Returns a function for detecting number size.

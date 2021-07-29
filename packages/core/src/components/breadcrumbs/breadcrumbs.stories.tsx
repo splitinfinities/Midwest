@@ -13,7 +13,7 @@ export default {
   argTypes: {},
 };
 
-export const basic = ({ ...args }) => html`<midwest-breadcrumbs>
+export const WebComponent = ({ ...args }) => html`<midwest-breadcrumbs>
   <midwest-breadcrumb>Home</midwest-breadcrumb>
   <midwest-breadcrumb>Nice</midwest-breadcrumb>
   <midwest-breadcrumb>Cool</midwest-breadcrumb>

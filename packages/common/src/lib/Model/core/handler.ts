@@ -1,4 +1,4 @@
-import { realize, isArray } from './utils';
+import { isArray, realize } from "./utils";
 
 /**
  * Error handler recipe interface.
@@ -22,13 +22,13 @@ export interface HandlerConfig {
  * Error handler class.
  */
 export class Handler {
-  readonly $config: HandlerConfig;
+  public readonly $config: HandlerConfig;
 
   /*
    * Class constructor.
    */
   constructor(config?: HandlerConfig) {
-    Object.defineProperty(this, '$config', {
+    Object.defineProperty(this, "$config", {
       value: { ...config },
       enumerable: false,
     });
@@ -37,7 +37,7 @@ export class Handler {
   /*
    * Handles the error against the recipes.
    */
-  async handle(error: any, recipes: HandlerRecipe[] = []): Promise<number[]> {
+  public async handle(error: any, recipes: HandlerRecipe[] = []): Promise<number[]> {
     const codes = [];
 
     for (const recipe of recipes) {
@@ -53,7 +53,7 @@ export class Handler {
       const context = realize(this.$config.context);
       const isMatch = await Promise.all(
         (isArray(error) ? error : [error])
-          .map((v) => recipe.handler.call(context, v, recipe))
+          .map((v) => recipe.handler.call(context, v, recipe)),
       ).then((r) => r.indexOf(false) === -1);
 
       if (isMatch) {

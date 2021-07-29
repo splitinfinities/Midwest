@@ -22,7 +22,7 @@ export default {
   },
 };
 
-export const basic = ({ content, title, ...args }) => html`<div>
+export const WebComponent = ({ content, title, ...args }) => html`<div>
   <midwest-accordion>
     <p slot="label">${title}</p>
     ${content}

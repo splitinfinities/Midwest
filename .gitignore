@@ -5,3 +5,4 @@ lerna-debug.log
 .DS_Store
 documentation.json
 custom-elements.json
+packages/core/tests

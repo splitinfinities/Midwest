@@ -1,7 +1,7 @@
-import { isDate } from './is-date';
-import { isUndefined } from './is-undefined';
-import { isNull } from './is-null';
-import { isInteger } from './is-integer';
+import { isDate } from "./is-date";
+import { isInteger } from "./is-integer";
+import { isNull } from "./is-null";
+import { isUndefined } from "./is-undefined";
 
 /**
  * Converts the provided value to date.

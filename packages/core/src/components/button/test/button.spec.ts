@@ -12,19 +12,15 @@ describe('midwest-button', () => {
       html: `<midwest-button></midwest-button>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-button class="theme-undefined">
+    expect(page.root).toEqualHtml(`<midwest-button>
       <mock:shadow-root>
-        <context-consumer></context-consumer>
         <a class=\"button\" href=\"#\" tabindex="0" target=\"_self\">
           <slot name=\"icon\"></slot>
           <midwest-label class=\"content\">
-            <slot>
-              Submit
-            </slot>
+            <slot></slot>
           </midwest-label>
         </a>
       </mock:shadow-root>
     </midwest-button>`);
   });
-
 });

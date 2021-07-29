@@ -15,14 +15,14 @@ export const onFocusOutsideOf = (container, callback) => {
      if (!isDescendantOf(container, document.activeElement)) {
        callback();
      }
-   })
+   });
  };
- container.addEventListener('focusout', eventListener);
+ container.addEventListener("focusout", eventListener);
 
  return function unsubscribe() {
-   container.removeEventListener('focusout', eventListener);
- }
-}
+   container.removeEventListener("focusout", eventListener);
+ };
+};
 
 /**
  * Utility function which returns whether a given DOM element
@@ -38,4 +38,4 @@ export const isDescendantOf = (ancestor: Element, potentialDescendant: Element) 
    parent = parent.parentElement;
  }
  return false;
-}
+};

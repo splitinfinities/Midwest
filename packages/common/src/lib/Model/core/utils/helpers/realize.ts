@@ -1,4 +1,4 @@
-import { isFunction } from './is-function';
+import { isFunction } from "./is-function";
 
 /**
  * Executes the value if the value is a function otherwise the value is returned.

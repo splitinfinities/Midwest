@@ -9,9 +9,9 @@ describe('midwest-tabs', () => {
       html: `<midwest-tabs></midwest-tabs>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-tabs class="theme-undefined">
+    expect(page.root)
+      .toEqualHtml(`<midwest-tabs style="--tab-top: undefinedpx; --tab-left: undefinedpx; --tab-width: undefinedpx; --tab-height: undefinedpx; --indicator-opacity: 0;">
     <mock:shadow-root>
-      <context-consumer></context-consumer>
       <div class=\"tab-wrap\">
         <div class=\"tab-list\" role=\"tablist\">
           <slot></slot>

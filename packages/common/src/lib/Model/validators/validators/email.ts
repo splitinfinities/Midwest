@@ -11,18 +11,23 @@ const QUOTED_EMAIL_USER_UTF8_REGEX = /^([\s\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x2
 /**
  * Returns a function for detecting email strings.
  */
-export function emailValidator(recipe: {
-  allowDisplayName?: boolean;
-  allowUtf8LocalPart?: boolean;
-  requireTld?: boolean;
-} = {}) {
+export function emailValidator(
+  recipe: {
+    allowDisplayName?: boolean;
+    allowUtf8LocalPart?: boolean;
+    requireTld?: boolean;
+  } = {}
+) {
   return (value?: any) => {
-
     if (!isString(value)) {
       return false;
     }
 
-    const { allowDisplayName = false, allowUtf8LocalPart = false, requireTld = true } = recipe;
+    const {
+      allowDisplayName = false,
+      allowUtf8LocalPart = false,
+      requireTld = true
+    } = recipe;
     if (allowDisplayName) {
       const displayEmail = value.match(DISPLAY_NAME_REGEX);
       if (displayEmail) {
@@ -38,13 +43,14 @@ export function emailValidator(recipe: {
       user = user.replace(/\./g, '').toLowerCase();
     }
 
-    if (!stringLengthValidator({ bytes: true, max: 64 })(user) || !stringLengthValidator({ bytes: true, max: 256 })(domain)) {
+    if (
+      !stringLengthValidator({ bytes: true, max: 64 })(user) ||
+      !stringLengthValidator({ bytes: true, max: 256 })(domain)
+    ) {
       return false;
-    }
-    else if (!fqdnValidator({ requireTld })(domain)) {
+    } else if (!fqdnValidator({ requireTld })(domain)) {
       return false;
-    }
-    else if (user[0] === '"') {
+    } else if (user[0] === '"') {
       user = user.slice(1, user.length - 1);
       return allowUtf8LocalPart
         ? QUOTED_EMAIL_USER_UTF8_REGEX.test(user)
@@ -54,7 +60,7 @@ export function emailValidator(recipe: {
     const pattern = allowUtf8LocalPart
       ? EMAIL_USER_UTF8_REGEX
       : EMAIL_USER_REGEX;
-      const userParts = user.split('.');
+    const userParts = user.split('.');
     for (let i = 0; i < userParts.length; i++) {
       if (!pattern.test(userParts[i])) {
         return false;

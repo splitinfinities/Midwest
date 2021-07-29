@@ -1,4 +1,4 @@
-import { isNumber } from './is-number';
+import { isNumber } from "./is-number";
 
 /**
  * Returns `true` if the provided value is a number.

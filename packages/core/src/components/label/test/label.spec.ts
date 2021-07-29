@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { Label } from './label';
+import { Label } from '../label';
 
 describe('midwest-label', () => {
   it('renders by default', async () => {

@@ -1,4 +1,4 @@
-import { isString } from '../../core/utils/helpers/is-string';
+import { isString } from "../../core/utils/helpers/is-string";
 
 /**
  * Returns a function for detecting uppercased string.

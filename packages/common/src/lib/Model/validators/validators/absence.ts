@@ -1,4 +1,4 @@
-import { isPresent } from '../../core/utils/helpers/is-present';
+import { isPresent } from "../../core/utils/helpers/is-present";
 
 /**
  * Returns a function for detecting empty values.

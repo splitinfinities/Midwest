@@ -36,4 +36,4 @@ export default {
   },
 };
 
-export const basic = args => html`<midwest-avatar ...="${spreadProps(args)}"></midwest-avatar>`;
+export const WebComponent = args => html`<midwest-avatar ...="${spreadProps(args)}"></midwest-avatar>`;

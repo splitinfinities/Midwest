@@ -8,7 +8,7 @@ describe('midwest-unit', () => {
       html: `<midwest-unit></midwest-unit>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-unit decimals=\"2\" from=\"B\" to=\"KB\" value=\"1000\">
+    expect(page.root).toEqualHtml(`<midwest-unit decimals=\"2\" from=\"B\" to=\"KB\" value=\"1000\" style=\"all: inherit; display: inline !important;\">
     0.98 KB
   </midwest-unit>`);
   });

@@ -1,5 +1,5 @@
-import { toString } from '../../core/utils/helpers/to-string';
-import { hexValidator } from './hex';
+import { toString } from "../../core/utils/helpers/to-string";
+import { hexValidator } from "./hex";
 
 /**
  * Returns a function for detecting BSON ObjectId objects.

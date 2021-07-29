@@ -28,8 +28,8 @@ export namespace Components {
         "name": string;
         "noTooltip": boolean;
         "processing": boolean;
-        "shape": "circle" | "square" | "rectangle" | "diamond" | "hexagon" | "star" | "message";
-        "size": "tiny" | "small" | "medium-small" | "medium" | "large" | "xlarge" | "huge";
+        "shape": 'circle' | 'square' | 'rectangle' | 'diamond' | 'hexagon' | 'star' | 'message';
+        "size": 'tiny' | 'small' | 'medium-small' | 'medium' | 'large' | 'xlarge' | 'huge';
         "src": string;
     }
     interface MidwestBreadcrumb {
@@ -532,8 +532,8 @@ declare namespace LocalJSX {
         "name"?: string;
         "noTooltip"?: boolean;
         "processing"?: boolean;
-        "shape"?: "circle" | "square" | "rectangle" | "diamond" | "hexagon" | "star" | "message";
-        "size"?: "tiny" | "small" | "medium-small" | "medium" | "large" | "xlarge" | "huge";
+        "shape"?: 'circle' | 'square' | 'rectangle' | 'diamond' | 'hexagon' | 'star' | 'message';
+        "size"?: 'tiny' | 'small' | 'medium-small' | 'medium' | 'large' | 'xlarge' | 'huge';
         "src"?: string;
     }
     interface MidwestBreadcrumb {

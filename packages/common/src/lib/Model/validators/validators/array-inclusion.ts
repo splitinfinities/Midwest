@@ -1,4 +1,4 @@
-import { isArray } from '../../core/utils/helpers/is-array';
+import { isArray } from "../../core/utils/helpers/is-array";
 
 /**
  * Returns a function for detecting values that exist in the array.

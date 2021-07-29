@@ -8,11 +8,11 @@ describe('midwest-content', () => {
       html: `<midwest-content></midwest-content>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-content>
+    expect(page.root).toEqualHtml(`<midwest-content aria-hidden="true" class="hidden" role="tabpanel">
     <mock:shadow-root>
-      <div aria-hidden=\"true\" class=\"wrap\" role=\"tabpanel\">
+      <animate-presence>
         <slot></slot>
-      </div>
+      </animate-presence>
     </mock:shadow-root>
   </midwest-content>`);
   });

@@ -1,4 +1,4 @@
-import { isPresent } from './is-present';
+import { isPresent } from "./is-present";
 
 /**
  * Returns `true` if the provided value represents an instance of a class.
@@ -12,8 +12,7 @@ export function isInstanceOf(v?: any, k?: any) {
       && isPresent(k)
       && v instanceof k
     );
-  }
-  catch (e) {
+  } catch (e) {
     return false;
   }
 }

@@ -1,5 +1,5 @@
-import { isString } from '../../core/utils/helpers/is-string';
-import { isNumber } from '../../core/utils/helpers/is-number';
+import { isNumber } from "../../core/utils/helpers/is-number";
+import { isString } from "../../core/utils/helpers/is-string";
 
 /**
  * Returns a function for detecting string length.
@@ -13,7 +13,7 @@ export function stringLengthValidator(recipe: {
 } = {}) {
   return (value?: any) => {
 
-    if (!isString(value)) return false;
+    if (!isString(value)) { return false; }
 
     const { bytes = false, min, minOrEqual, max, maxOrEqual } = recipe;
     const len = bytes

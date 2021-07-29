@@ -1,4 +1,4 @@
-import { isString } from '../../core/utils/helpers/is-string';
+import { isString } from "../../core/utils/helpers/is-string";
 
 /**
  * Returns a function for detecting JSON strings.
@@ -12,9 +12,8 @@ export function jsonStringValidator() {
 
     try {
       const obj = JSON.parse(value);
-      return !!obj && typeof obj === 'object';
-    }
-    catch (e) {}
+      return !!obj && typeof obj === "object";
+    } catch (e) {}
 
     return false;
   };

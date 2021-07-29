@@ -3,5 +3,5 @@
  * @param v Arbitrary value.
  */
 export function isFunction(v?: any) {
-  return typeof v === 'function';
+  return typeof v === "function";
 }

@@ -1,4 +1,4 @@
-import { isString } from '../../core/utils/helpers/is-string';
+import { isString } from "../../core/utils/helpers/is-string";
 
 /**
  * Returns a function for detecting domain names.
@@ -16,11 +16,11 @@ export function fqdnValidator(options: {
 			return false;
 		}
 
-		if (allowTrailingDot && value[value.length - 1] === '.') {
+		if (allowTrailingDot && value[value.length - 1] === ".") {
 			value = value.substring(0, value.length - 1);
 		}
 
-		const parts = value.split('.');
+		const parts = value.split(".");
 
 		if (requireTld) {
 			const tld = parts.pop();
@@ -34,21 +34,18 @@ export function fqdnValidator(options: {
 			part = parts[i];
 
 			if (allowUnderscores) {
-				if (part.indexOf('__') >= 0) {
+				if (part.indexOf("__") >= 0) {
 					return false;
-				}
-				else {
-					part = part.replace(/_/g, '');
+				} else {
+					part = part.replace(/_/g, "");
 				}
 			}
 
 			if (!/^[a-z\u00a1-\uffff0-9-]+$/i.test(part)) {
 				return false;
-			}
-			else if (/[\uff01-\uff5e]/.test(part)) {
+			} else if (/[\uff01-\uff5e]/.test(part)) {
 				return false; // disallow full-width chars
-			}
-			else if (part[0] === '-' || part[part.length - 1] === '-') {
+			} else if (part[0] === "-" || part[part.length - 1] === "-") {
 				return false;
 			}
 		}

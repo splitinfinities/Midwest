@@ -8,13 +8,13 @@ describe('midwest-avatar', () => {
       html: `<midwest-avatar></midwest-avatar>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-avatar class=\"theme-orange\" color=\"orange\" initials=\"MW\" name=\"Midwest Design\" shape=\"square\">
+    expect(page.root).toEqualHtml(`<midwest-avatar class=\"theme-red\" color=\"red\" initials=\"MI\" name=\"Midwest Design\" shape=\"square\">
     <mock:shadow-root>
       <button class=\"wrapper\" title=\"You tabbed on an Avatar for Midwest Design\">
         <div class=\"content\">
           <div class=\"spacer\"></div>
           <div class=\"letter\" title=\"Midwest Design\">
-            MW
+            MI
           </div>
         </div>
         <midwest-tooltip>
@@ -31,13 +31,13 @@ describe('midwest-avatar', () => {
       html: `<midwest-avatar name="William Riley"></midwest-avatar>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-avatar class=\"theme-pink\" color=\"pink\" initials=\"WR\" name=\"William Riley\" shape=\"square\">
+    expect(page.root).toEqualHtml(`<midwest-avatar class=\"theme-gray\" color=\"gray\" initials=\"WI\" name=\"William Riley\" shape=\"square\">
       <mock:shadow-root>
         <button class=\"wrapper\" title=\"You tabbed on an Avatar for William Riley\">
           <div class=\"content\">
             <div class=\"spacer\"></div>
             <div class=\"letter\" title=\"William Riley\">
-              WR
+              WI
             </div>
           </div>
           <midwest-tooltip>

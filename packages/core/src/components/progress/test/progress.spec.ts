@@ -8,10 +8,11 @@ describe('midwest-progress', () => {
       html: `<midwest-progress></midwest-progress>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-progress max=\"100\" secondary=\"0\" value=\"0\">
+    expect(page.root).toEqualHtml(`<midwest-progress ease=\"\" max=\"100\" secondary=\"0\" value=\"0\">
         <mock:shadow-root>
           <div class=\"progress\">
               <div class=\"status\" style=\"transform: translate(0%, 0);\"></div>
+              0
           </div>
         </mock:shadow-root>
     </midwest-progress>`);

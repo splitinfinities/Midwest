@@ -8,6 +8,7 @@ describe('midwest-theme', () => {
       html: `<midwest-theme></midwest-theme>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-theme class=\"complement-indigo theme-red\">\n\n</midwest-theme>`);
+    expect(page.root).toEqualHtml(`<midwest-theme class=\"block complement-indigo light-mode theme-red\">\n\n
+    </midwest-theme>`);
   });
 });

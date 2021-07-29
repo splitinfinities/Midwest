@@ -1,7 +1,7 @@
-import { isUndefined } from './is-undefined';
-import { isNull } from './is-null';
-import { isNumber } from './is-number';
-import { isInfinite } from './is-infinite';
+import { isInfinite } from "./is-infinite";
+import { isNull } from "./is-null";
+import { isNumber } from "./is-number";
+import { isUndefined } from "./is-undefined";
 
 /**
  * Returns `true` if the provided value represents a value.

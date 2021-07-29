@@ -1,16 +1,17 @@
 import notes from './readme.md';
-import { storiesOf } from '@storybook/html';
-import { text } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
+import { withA11y } from '@storybook/addon-a11y';
+import { html } from 'lit-html';
+import { spreadProps } from '@open-wc/lit-helpers';
 
-storiesOf('UI|Tooltips', module)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
+export default {
+  title: '@midwest-design/core/tooltip',
+  component: 'midwest-tooltip',
+  decorators: [withKnobs, withA11y],
+  notes: {
+    markdown: notes,
+  },
+  argTypes: {},
+};
 
-  .add('Default', () => {
-    return `
-      <p class="relative"><midwest-tooltip>${text("Text", "nice")}</midwest-tooltip></p>
-    `;
-  });
+export const WebComponent = ({ ...args }) => html`<p class="relative"><midwest-tooltip ...="${spreadProps(args)}">Sup</midwest-tooltip></p>`;

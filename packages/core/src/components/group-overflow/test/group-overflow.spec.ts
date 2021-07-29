@@ -10,10 +10,10 @@ describe('midwest-group-overflow', () => {
 
     expect(page.root).toEqualHtml(`<midwest-group-overflow>
       <mock:shadow-root>
-        <midwest-label class=\"count\">
+        <midwest-label class=\"count cursor-pointer\">
           + more
         </midwest-label>
       </mock:shadow-root>
     </midwest-group-overflow>`);
   });
-})
+});

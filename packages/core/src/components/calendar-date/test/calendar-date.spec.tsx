@@ -8,14 +8,14 @@ describe('midwest-calendar-date', () => {
       html: `<midwest-calendar-date start="1597602600"></midwest-calendar-date>`,
     });
     expect(page.root).toEqualHtml(`
-      <midwest-calendar-date>
+      <midwest-calendar-date start="1597602600">
         <mock:shadow-root>
           <div class="date-area">
             <p class="day">
-              29
+              26
             </p>
             <p class="month">
-              May
+              Dec
             </p>
           </div>
         </mock:shadow-root>

@@ -1,5 +1,5 @@
-import { isString } from '../../core/utils/helpers/is-string';
-import { toString } from '../../core/utils/helpers/to-string';
+import { isString } from "../../core/utils/helpers/is-string";
+import { toString } from "../../core/utils/helpers/to-string";
 
 /**
  * Returns a function for detecting words that exist in a string.

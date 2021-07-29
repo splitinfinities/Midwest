@@ -9,7 +9,7 @@ describe('midwest-grid', () => {
       html: `<midwest-grid></midwest-grid>`,
     });
 
-    expect(page.root).toEqualHtml(`<midwest-grid align=\"items-start\" class=\"items-start\" cols=\"auto\" data-eq-pts=\"tiny: 320, small: 480, medium: 640, large: 800, massive: 1024\" id="grid-0" kids="0" style=\"--grid-width: 200px; --grid-gap: 2rem;\">
+    expect(page.root).toEqualHtml(`<midwest-grid cols="auto" column-gap="2" column-width="200" responsive="" style="--grid-width: 200px; --grid-gap: 2rem;">
     \n\n
     </midwest-grid>`);
   });

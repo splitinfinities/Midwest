@@ -1,4 +1,4 @@
-import { realize, isArray } from './utils';
+import { isArray, realize } from "./utils";
 
 /**
  * Validation recipe interface.
@@ -22,13 +22,13 @@ export interface ValidatorConfig {
  * Value validator class.
  */
 export class Validator {
-  readonly $config: ValidatorConfig;
+  public readonly $config: ValidatorConfig;
 
   /*
    * Class constructor.
    */
   constructor(config?: ValidatorConfig) {
-    Object.defineProperty(this, '$config', {
+    Object.defineProperty(this, "$config", {
       value: { ...config },
       enumerable: false,
     });
@@ -37,7 +37,7 @@ export class Validator {
   /*
    * Validates the `value` against the recipes.
    */
-  async validate(value: any, recipes: ValidatorRecipe[] = []): Promise<number[]> {
+  public async validate(value: any, recipes: ValidatorRecipe[] = []): Promise<number[]> {
     const codes = [];
 
     for (const recipe of recipes) {
@@ -52,7 +52,7 @@ export class Validator {
       const context = realize(this.$config.context);
       const isValid = await Promise.all([
         recipe.handler.call(context, value, recipe),
-        (isArray(value) ? value : [value]).map((v) => recipe.handler.call(context, v, recipe))
+        (isArray(value) ? value : [value]).map((v) => recipe.handler.call(context, v, recipe)),
       ]).then((r) => r.indexOf(false) === -1);
 
       if (!isValid) {

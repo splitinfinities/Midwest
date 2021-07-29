@@ -3,5 +3,5 @@
  * @param v Arbitrary value.
  */
 export function isBoolean(v?: any) {
-  return typeof v === 'boolean';
+  return typeof v === "boolean";
 }
