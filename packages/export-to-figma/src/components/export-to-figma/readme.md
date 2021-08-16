@@ -13,6 +13,19 @@
 | `noKey`   | `no-key`  |             | `boolean`     | `false`     |
 
 
+## Methods
+
+### `export() => Promise<void>`
+
+
+
+#### Returns
+
+Type: `Promise<void>`
+
+
+
+
 ## Dependencies
 
 ### Used by

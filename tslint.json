@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier",
+    "tslint-immutable",
+    "stencil-tslint/default"
+  ],
+  "rules": {
+    "interface-name": [true, "never-prefix"],
+    "prefer-for-of": false,
+    "no-implicit-any": false,
+    "no-implicit-dependencies": false,
+    "no-var-keyword": true,
+    "no-parameter-reassignment": false,
+    "typedef": false,
+    "readonly-keyword": false,
+    "readonly-array": false,
+    "no-bitwise": false,
+    "no-let": false,
+    "no-object-mutation": false,
+    "no-console": false,
+    "component-member-order": false,
+    "no-delete": false,
+    "no-method-signature": true,
+    "no-this": false,
+    "no-class": false,
+    "no-mixed-interface": false,
+    "no-expression-statement": false,
+    "no-if-statement": false,
+    "only-arrow-functions": false,
+    "no-unused-expression": false,
+    "no-submodule-imports": false
+  }
+}

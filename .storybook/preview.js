@@ -7,8 +7,6 @@ import {
   setCustomElements,
 } from "@storybook/web-components";
 
-import { withKnobs } from "@storybook/addon-knobs";
-
 import audio from "../packages/audio/custom-elements.json";
 import core from "../packages/core/custom-elements.json";
 import device from "../packages/device/custom-elements.json";

@@ -1,6 +1,5 @@
 import { Component, Prop, State, Watch, Element, h, Host } from '@stencil/core';
 import { titleCase, colors, darkMode } from '@midwest-design/common';
-import validate from 'validator';
 
 @Component({
   tag: 'midwest-avatar',
@@ -17,9 +16,9 @@ export class Avatar {
   @Prop({ mutable: true, reflect: true }) color: string = 'auto';
   @Prop({ mutable: true, reflect: true }) name: string = 'Midwest Design';
   @Prop({ mutable: true, reflect: true }) initials: string = 'MW';
-  @Prop({ mutable: true, reflect: true }) shape: 'circle' | 'square' | 'rectangle' | 'diamond' | 'hexagon' | 'star' | 'message' = 'square';
+  @Prop({ mutable: true, reflect: true }) shape: 'circle' | 'square' | 'rectangle' | 'diamond' | 'hexagon' | 'star' | 'message' | 'squircle' = 'square';
   @Prop({ mutable: true, reflect: true }) processing: boolean = false;
-  @Prop({ reflect: true }) dark: boolean = false;
+  @Prop({ mutable: true, reflect: true }) dark: boolean = false;
 
   @State() colorAuto: boolean = false;
   @State() colors: string[];
@@ -78,7 +77,7 @@ export class Avatar {
             <div class="letter" title={this.name}>
               {this.initials}
             </div>
-            {this.src && validate.isURL(this.src) && <img src={this.src} alt={this.name} />}
+            {this.src && <img src={this.src} alt={this.name} />}
             {this.icon && <ion-icon name={this.icon} />}
           </div>
           {!this.noTooltip && <midwest-tooltip focused={this.focus}>{this.name}</midwest-tooltip>}

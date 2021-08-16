@@ -1,10 +1,6 @@
 :host {
-  contain: content;
   height: calc(var(--sectionHeight) * 1px);
   display: block;
-  opacity: calc(var(--cameraZ) + 1);
-  will-change: opacity;
-  transition: opacity 200ms ease 0s;
 }
 
 :host .container {
@@ -32,13 +28,45 @@
 :host ::slotted(midwest-scroll-z-section) {
   position: absolute;
   display: block;
+  height: auto;
   width: 100%;
-  top: 40%;
+  top: 20%;
   z-index: 2;
 }
 
 @media only screen and (min-width: 600px) {
   :host ::slotted(midwest-scroll-z-section) {
-    width: 45%;
+    width: 75%;
+    left: -25%; 
+  }
+}
+
+
+@media (prefers-reduced-motion) {
+  :host {
+    height: auto;
+  }
+
+  :host .container {
+    position: initial;
+    perspective: initial;
+    perspective-origin: initial;
+    will-change: perspective-origin;
+    transform: initial;
+    height: auto;
+  }
+
+  :host .scene {
+    position: initial;
+    transform-style: preserve-3d;
+    transform: initial;
+    height: auto;
+  }
+
+  :host ::slotted(midwest-scroll-z-section) {
+    position: initial;
+    width: auto;
+    transform: initial !important;
+    height: auto;
   }
 }

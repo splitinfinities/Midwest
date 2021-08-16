@@ -3,6 +3,7 @@ import { generateJsonDocs } from './customElementDocGenerator';
 export const typicalStencilConfig = {
   preamble: '(C) Split Infinities https://splitinfinities.com - MIT License',
   taskQueue: 'async',
+  sourceMap: true,
   outputTargets: [
     { type: 'dist', esmLoaderPath: '../loader' },
     { type: 'dist-custom-elements' },

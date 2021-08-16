@@ -85,8 +85,9 @@ export namespace Components {
     interface MidwestLongShadow {
         "active": boolean;
         "complement": boolean;
+        "darkShade": number;
         "delay": number;
-        "direction": "top-left" | "top-right" | "bottom-left" | "bottom-right";
+        "direction": 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
         "in": () => Promise<void>;
         "length": number;
         "out": () => Promise<void>;
@@ -180,6 +181,9 @@ export namespace Components {
         "loadUrl": (url: any) => Promise<any>;
         "pjax": any;
         "replace": (selector: any, url: any) => Promise<void>;
+    }
+    interface ResizeObserver {
+        "element": HTMLElement;
     }
 }
 declare global {
@@ -309,6 +313,12 @@ declare global {
         prototype: HTMLMidwestPjaxElement;
         new (): HTMLMidwestPjaxElement;
     };
+    interface HTMLResizeObserverElement extends Components.ResizeObserver, HTMLStencilElement {
+    }
+    var HTMLResizeObserverElement: {
+        prototype: HTMLResizeObserverElement;
+        new (): HTMLResizeObserverElement;
+    };
     interface HTMLElementTagNameMap {
         "horizontal-scroll": HTMLHorizontalScrollElement;
         "midwest-asset-library": HTMLMidwestAssetLibraryElement;
@@ -331,6 +341,7 @@ declare global {
         "midwest-onboarding": HTMLMidwestOnboardingElement;
         "midwest-onboarding-step": HTMLMidwestOnboardingStepElement;
         "midwest-pjax": HTMLMidwestPjaxElement;
+        "resize-observer": HTMLResizeObserverElement;
     }
 }
 declare namespace LocalJSX {
@@ -407,8 +418,9 @@ declare namespace LocalJSX {
     interface MidwestLongShadow {
         "active"?: boolean;
         "complement"?: boolean;
+        "darkShade"?: number;
         "delay"?: number;
-        "direction"?: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+        "direction"?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
         "length"?: number;
         "shade"?: number;
         "timing"?: number;
@@ -495,6 +507,10 @@ declare namespace LocalJSX {
     interface MidwestPjax {
         "pjax"?: any;
     }
+    interface ResizeObserver {
+        "element"?: HTMLElement;
+        "onResized"?: (event: CustomEvent<any>) => void;
+    }
     interface IntrinsicElements {
         "horizontal-scroll": HorizontalScroll;
         "midwest-asset-library": MidwestAssetLibrary;
@@ -517,6 +533,7 @@ declare namespace LocalJSX {
         "midwest-onboarding": MidwestOnboarding;
         "midwest-onboarding-step": MidwestOnboardingStep;
         "midwest-pjax": MidwestPjax;
+        "resize-observer": ResizeObserver;
     }
 }
 export { LocalJSX as JSX };
@@ -544,6 +561,7 @@ declare module "@stencil/core" {
             "midwest-onboarding": LocalJSX.MidwestOnboarding & JSXBase.HTMLAttributes<HTMLMidwestOnboardingElement>;
             "midwest-onboarding-step": LocalJSX.MidwestOnboardingStep & JSXBase.HTMLAttributes<HTMLMidwestOnboardingStepElement>;
             "midwest-pjax": LocalJSX.MidwestPjax & JSXBase.HTMLAttributes<HTMLMidwestPjaxElement>;
+            "resize-observer": LocalJSX.ResizeObserver & JSXBase.HTMLAttributes<HTMLResizeObserverElement>;
         }
     }
 }

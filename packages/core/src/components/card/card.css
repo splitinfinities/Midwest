@@ -18,6 +18,25 @@
   --card-width: auto;
 }
 
+:host([class*="bg-"]),
+:host([class*="bg-"]) .wrap,
+:host([class*="dark:bg-"]),
+:host([class*="dark:bg-"]) .wrap {
+  background: inherit;
+}
+
+:host([class*="overflow-hidden"]),
+:host([class*="overflow-hidden"]) .wrap {
+  overflow: hidden;
+}
+
+:host([class*="bg-"]),
+:host([class*="bg-"]) .wrap,
+:host([class*="dark:bg-"]),
+:host([class*="dark:bg-"]) .wrap {
+  border-color: inherit;
+}
+
 :host([tag="button"]),
 :host([tag="button"]) *,
 :host([tag="button"]) ::slotted(*),
@@ -191,7 +210,6 @@
   justify-content: space-between;
 }
 
-:host([small]) .wrap ::slotted(header.flex.mobile-wrap),
 :host([small]) .wrap ::slotted(header.flex.sm\:wrap) {
   flex-wrap: wrap;
   flex-direction: column;
@@ -210,7 +228,6 @@
   justify-content: space-between;
 }
 
-:host([small]) .wrap ::slotted(footer.flex.mobile-wrap),
 :host([small]) .wrap ::slotted(footer.flex.sm\:wrap) {
   flex-wrap: wrap;
   flex-direction: column;

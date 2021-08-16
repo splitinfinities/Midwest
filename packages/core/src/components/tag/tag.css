@@ -46,6 +46,10 @@
   border-radius: 500rem;
 }
 
+:host([dark]) {
+  background-color: var(--theme-9);
+}
+
 :host([dark]) .tag {
-  color: var(--theme-2);
+  color: var(--theme-1);
 }

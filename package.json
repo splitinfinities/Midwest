@@ -6,6 +6,7 @@
     "start": "run-p dev storybook",
     "start.core": "run-p dev.core storybook",
     "test": "lerna run test --stream",
+    "test.watch": "lerna run test.watch --stream",
     "build": "lerna run build --stream",
     "build.common": "lerna run build --stream --scope=@midwest-design/common",
     "build.motion": "lerna run build --stream --scope=@midwest-design/motion",
@@ -45,7 +46,8 @@
     "diff": "lerna diff",
     "storybook": "start-storybook -p 6006",
     "storybook.upgrade": "npx sb upgrade",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "coverage": "coverage-parcsser --outdir ./coverage"
   },
   "husky": {
     "hooks": {
@@ -57,16 +59,20 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.3.4",
-    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-a11y": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-knobs": "^6.3.0",
-    "@storybook/web-components": "^6.3.4",
-    "@storybook/addon-storysource": "^6.3.4",
+    "@storybook/web-components": "^6.3.7",
+    "@storybook/addon-storysource": "^6.3.7",
     "bp-smart-commit": "^1.4.1",
     "husky": "^4.2.5",
     "lerna": "^3.13.4",
     "standard-version": "8.0.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-immutable": "^6.0.1",
+    "stencil-tslint": "latest"
   },
   "resolutions": {
     "@midwest-design/common": "0.0.14",

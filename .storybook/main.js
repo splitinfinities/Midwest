@@ -3,7 +3,7 @@ const glob = require("glob");
 const packageJson = require("../package.json");
 
 module.exports = {
-  stories: ["../**/*.stories.tsx"],
+  stories: ["../packages/**/src/**/*.stories.tsx"],
   addons: [
     "@storybook/addon-essentials",
     "@storybook/addon-knobs",

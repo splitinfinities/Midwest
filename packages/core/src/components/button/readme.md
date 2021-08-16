@@ -59,14 +59,12 @@
 
 - [midwest-progress](../progress)
 - [midwest-label](../label)
-- export-to-figma
 
 ### Graph
 ```mermaid
 graph TD;
   midwest-button --> midwest-progress
   midwest-button --> midwest-label
-  midwest-button --> export-to-figma
   midwest-card --> midwest-button
   style midwest-button fill:#f9f,stroke:#333,stroke-width:4px
 ```

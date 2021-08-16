@@ -60,17 +60,14 @@ Type: `Promise<void>`
 
 - [midwest-button](../button)
 - ion-icon
-- export-to-figma
 
 ### Graph
 ```mermaid
 graph TD;
   midwest-card --> midwest-button
   midwest-card --> ion-icon
-  midwest-card --> export-to-figma
   midwest-button --> midwest-progress
   midwest-button --> midwest-label
-  midwest-button --> export-to-figma
   style midwest-card fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

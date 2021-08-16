@@ -285,6 +285,22 @@
   --complement-12: var(--orange-12);
 }
 
+.complement-gold {
+  --complement-0: var(--gold-0);
+  --complement-1: var(--gold-1);
+  --complement-2: var(--gold-2);
+  --complement-3: var(--gold-3);
+  --complement-4: var(--gold-4);
+  --complement-5: var(--gold-5);
+  --complement-6: var(--gold-6);
+  --complement-7: var(--gold-7);
+  --complement-8: var(--gold-8);
+  --complement-9: var(--gold-9);
+  --complement-10: var(--gold-10);
+  --complement-11: var(--gold-11);
+  --complement-12: var(--gold-12);
+}
+
 .complement-yellow {
   --complement-0: var(--yellow-0);
   --complement-1: var(--yellow-1);

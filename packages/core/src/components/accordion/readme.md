@@ -23,9 +23,9 @@
 | ----------- | ------------ | ----------- | --------- | ---------------- |
 | `compact`   | `compact`    |             | `boolean` | `undefined`      |
 | `dark`      | `dark`       |             | `boolean` | `false`          |
-| `label`     | `label`      |             | `string`  | `"More Details"` |
+| `label`     | `label`      |             | `string`  | `'More Details'` |
 | `maxHeight` | `max-height` |             | `number`  | `50`             |
-| `name`      | `name`       |             | `string`  | `"accordion"`    |
+| `name`      | `name`       |             | `string`  | `'accordion'`    |
 | `open`      | `open`       |             | `boolean` | `false`          |
 | `tight`     | `tight`      |             | `boolean` | `undefined`      |
 

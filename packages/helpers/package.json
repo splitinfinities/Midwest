@@ -29,7 +29,7 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@midwest-design/common": "^0.0.14",
     "@midwest-design/core": "^0.0.14",
-    "@stencil/core": "^2.6.0",
+    "@stencil/core": "latest",
     "@stencil/postcss": "^1.0.1",
     "@types/googlemaps": "^3.39.13",
     "ag-grid-community": "^23.2.1",

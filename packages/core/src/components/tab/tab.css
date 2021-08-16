@@ -130,15 +130,15 @@
 
 :host([dark]) .tab-wrap .tab-button .title,
 :host([dark]) .tab-wrap .tab-button .title {
-  color: var(--gray-4);
+  color: var(--gray-2);
 }
 
 :host([dark]) .tab-wrap .tab-button:hover,
 :host([dark]) .tab-wrap .tab-button:focus,
 :host([dark]) .tab-wrap .tab-button:hover .title,
 :host([dark]) .tab-wrap .tab-button:focus .title {
-  color: var(--gray-2) !important;
-  background: var(--black);
+  color: var(--white) !important;
+  background: var(--theme-12);
 }
 
 :host([open][dark]) .tab-wrap .tab-button .title {

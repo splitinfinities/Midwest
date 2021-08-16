@@ -28,7 +28,7 @@ export namespace Components {
         "name": string;
         "noTooltip": boolean;
         "processing": boolean;
-        "shape": 'circle' | 'square' | 'rectangle' | 'diamond' | 'hexagon' | 'star' | 'message';
+        "shape": 'circle' | 'square' | 'rectangle' | 'diamond' | 'hexagon' | 'star' | 'message' | 'squircle';
         "size": 'tiny' | 'small' | 'medium-small' | 'medium' | 'large' | 'xlarge' | 'huge';
         "src": string;
     }
@@ -105,10 +105,10 @@ export namespace Components {
         "modalHref": string;
         "name": string;
         "originalHeight": number;
-        "padding": "none" | "tiny" | "small" | "medium" | "large";
+        "padding": 'none' | 'tiny' | 'small' | 'medium' | 'large';
         "small": boolean;
         "smallSize": number;
-        "tag": "a" | "button" | "div" | "modal";
+        "tag": 'a' | 'button' | 'div' | 'modal';
         "type": string;
         "value": string;
     }
@@ -160,13 +160,14 @@ export namespace Components {
         "underneath": boolean;
     }
     interface MidwestLayout {
-        "align": "baseline" | "center" | "top" | "bottom";
-        "content": "baseline" | "center" | "top" | "bottom";
+        "align": 'baseline' | 'center' | 'top' | 'bottom';
+        "content": 'baseline' | 'center' | 'top' | 'bottom';
         "hasNav": boolean;
-        "height": "fill";
-        "padding": "none" | "tiny" | "small" | "medium" | "large";
-        "size": "tiny" | "small" | "medium" | "large" | "xlarge" | "full" | "flush";
+        "height": 'fill';
+        "padding": 'none' | 'tiny' | 'small' | 'medium' | 'large';
+        "size": 'tiny' | 'small' | 'medium' | 'large' | 'xlarge' | 'full' | 'flush';
         "small": boolean;
+        "smallSize": number;
         "type": string;
     }
     interface MidwestMessage {
@@ -259,7 +260,7 @@ export namespace Components {
         "open": (index: number, overflow?: boolean) => Promise<void>;
         "payAttention": boolean;
         "ready": boolean;
-        "size": "tiny" | "small" | "medium" | "large";
+        "size": 'tiny' | 'small' | 'medium' | 'large';
         "tabHeight": number;
         "tabLeft": number;
         "tabOpacity": number;
@@ -532,7 +533,7 @@ declare namespace LocalJSX {
         "name"?: string;
         "noTooltip"?: boolean;
         "processing"?: boolean;
-        "shape"?: 'circle' | 'square' | 'rectangle' | 'diamond' | 'hexagon' | 'star' | 'message';
+        "shape"?: 'circle' | 'square' | 'rectangle' | 'diamond' | 'hexagon' | 'star' | 'message' | 'squircle';
         "size"?: 'tiny' | 'small' | 'medium-small' | 'medium' | 'large' | 'xlarge' | 'huge';
         "src"?: string;
     }
@@ -615,10 +616,10 @@ declare namespace LocalJSX {
         "onModal:close"?: (event: CustomEvent<any>) => void;
         "onModal:open"?: (event: CustomEvent<any>) => void;
         "originalHeight"?: number;
-        "padding"?: "none" | "tiny" | "small" | "medium" | "large";
+        "padding"?: 'none' | 'tiny' | 'small' | 'medium' | 'large';
         "small"?: boolean;
         "smallSize"?: number;
-        "tag"?: "a" | "button" | "div" | "modal";
+        "tag"?: 'a' | 'button' | 'div' | 'modal';
         "type"?: string;
         "value"?: string;
     }
@@ -669,13 +670,14 @@ declare namespace LocalJSX {
         "underneath"?: boolean;
     }
     interface MidwestLayout {
-        "align"?: "baseline" | "center" | "top" | "bottom";
-        "content"?: "baseline" | "center" | "top" | "bottom";
+        "align"?: 'baseline' | 'center' | 'top' | 'bottom';
+        "content"?: 'baseline' | 'center' | 'top' | 'bottom';
         "hasNav"?: boolean;
-        "height"?: "fill";
-        "padding"?: "none" | "tiny" | "small" | "medium" | "large";
-        "size"?: "tiny" | "small" | "medium" | "large" | "xlarge" | "full" | "flush";
+        "height"?: 'fill';
+        "padding"?: 'none' | 'tiny' | 'small' | 'medium' | 'large';
+        "size"?: 'tiny' | 'small' | 'medium' | 'large' | 'xlarge' | 'full' | 'flush';
         "small"?: boolean;
+        "smallSize"?: number;
         "type"?: string;
     }
     interface MidwestMessage {
@@ -760,7 +762,7 @@ declare namespace LocalJSX {
         "name"?: string;
         "payAttention"?: boolean;
         "ready"?: boolean;
-        "size"?: "tiny" | "small" | "medium" | "large";
+        "size"?: 'tiny' | 'small' | 'medium' | 'large';
         "tabHeight"?: number;
         "tabLeft"?: number;
         "tabOpacity"?: number;

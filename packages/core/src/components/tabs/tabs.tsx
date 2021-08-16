@@ -5,7 +5,7 @@ import delay from 'async-delay';
 @Component({
   tag: 'midwest-tabs',
   styleUrl: 'tabs.css',
-  shadow: true
+  shadow: true,
 })
 export class Tabs {
   @Element() element: HTMLElement;
@@ -13,7 +13,7 @@ export class Tabs {
   @Prop() height: string;
   @Prop({ mutable: true, reflect: true }) name: string;
 
-  @Prop({ reflect: true }) size: "tiny" | "small" | "medium" | "large";
+  @Prop({ reflect: true }) size: 'tiny' | 'small' | 'medium' | 'large';
   @Prop({ reflect: true }) block: boolean = false;
   @Prop({ reflect: true }) vertical: boolean = false;
   @Prop({ reflect: true, mutable: true }) dark: boolean = false;
@@ -24,7 +24,7 @@ export class Tabs {
   @Prop({ reflect: true }) collapse: boolean;
   @Prop({ reflect: true }) hiddenActive: boolean = false;
 
-  @Prop() ready: boolean = false;
+  @Prop({ mutable: true }) ready: boolean = false;
   @Prop() tabTop: number;
   @Prop() tabLeft: number;
   @Prop() tabWidth: number;
@@ -60,7 +60,7 @@ export class Tabs {
     await this.tabs();
     await this.contents();
 
-    this.tabsList.forEach((tab) => {
+    this.tabsList.forEach(tab => {
       if (this.dark) {
         tab.dark = this.dark;
       }
@@ -68,16 +68,16 @@ export class Tabs {
       if (this.vertical) {
         tab.vertical = this.vertical;
       }
-    })
+    });
   }
 
   @Method()
   async open(index: number, overflow: boolean = false) {
     this.activeTabIndex = index;
     if (overflow) {
-      this.overflowedTabs[index].activate()
+      this.overflowedTabs[index].activate();
     } else {
-      this.tabsList[index].activate()
+      this.tabsList[index].activate();
     }
   }
 
@@ -87,9 +87,9 @@ export class Tabs {
       this.tabsList = Array.from(this.element.querySelectorAll('midwest-tab'));
     }
 
-    this.tabsList.forEach((tab) => {
+    this.tabsList.forEach(tab => {
       tab.dark = this.dark;
-    })
+    });
   }
 
   async componentDidLoad() {
@@ -99,16 +99,16 @@ export class Tabs {
 
     await delay(100);
 
-    if (typeof(Event) === 'function') {
+    if (typeof Event === 'function') {
       window.dispatchEvent(new Event('resize'));
     } else {
-      const event = document.createEvent("Event");
-      event.initEvent("resize", false, true); 
+      const event = document.createEvent('Event');
+      event.initEvent('resize', false, true);
       window.dispatchEvent(event);
     }
 
     this.ready = true;
-    const tabs = await this.tabs()
+    const tabs = await this.tabs();
     const tabCount = tabs.length;
 
     tabs.forEach((tab, index) => {
@@ -117,28 +117,28 @@ export class Tabs {
     });
   }
 
-  // Everything for Collapsing on Overflow 
+  // Everything for Collapsing on Overflow
   calculateOverflowedTabs() {
     this.elementWidth = this.wrapperEl.offsetWidth - 120;
 
-    this.tabsList.map((tab) => {
+    this.tabsList.map(tab => {
       tab.hidden = false;
-    })
+    });
 
-    const tabsOOB = this.tabsList.map((tab) => {
+    const tabsOOB = this.tabsList.map(tab => {
       const isOOB = tab.offsetLeft >= this.elementWidth;
 
       if (isOOB) {
         tab.hidden = true;
       }
 
-      return isOOB && tab
-    })
+      return isOOB && tab;
+    });
 
-    this.overflowedTabs = [...tabsOOB.filter(Boolean)]
+    this.overflowedTabs = [...tabsOOB.filter(Boolean)];
   }
 
-  @Watch("overflowedTabs")
+  @Watch('overflowedTabs')
   placeSelect() {
     if (this.overflowedTabs.length !== 0) {
       this.placeOverflowSelectEl();
@@ -146,12 +146,12 @@ export class Tabs {
 
     this.overflowSelectEl.refresh();
 
-    this.overflowSelectEl?.querySelectorAll("midwest-item").forEach((el) => {
+    this.overflowSelectEl?.querySelectorAll('midwest-item').forEach(el => {
       this.overflowSelectEl?.removeChild(el);
-    })
+    });
 
     this.overflowedTabs.forEach((tab, index) => {
-      const item = document.createElement("midwest-item") as any;
+      const item = document.createElement('midwest-item') as any;
       item.value = index.toString();
       item.innerHTML = tab.textContent;
       this.overflowSelectEl.appendChild(item);
@@ -161,16 +161,22 @@ export class Tabs {
   placeOverflowSelectEl() {
     if (this.element.querySelector("midwest-select[slot='more-select']")) {
       this.overflowSelectEl = this.element.querySelector("midwest-select[slot='more-select']");
-      this.overflowSelectEl.removeEventListener("update", (e: any) => { this.updateTabPositionWithSelect(e.detail); });
-      this.overflowSelectEl.addEventListener("update", (e: any) => { this.updateTabPositionWithSelect(e.detail); });
+      this.overflowSelectEl.removeEventListener('update', (e: any) => {
+        this.updateTabPositionWithSelect(e.detail);
+      });
+      this.overflowSelectEl.addEventListener('update', (e: any) => {
+        this.updateTabPositionWithSelect(e.detail);
+      });
     } else {
-      const selectEl = document.createElement("midwest-select") as any;
-      selectEl.slot = "more-select";
-      selectEl.placeholder = "More...";
+      const selectEl = document.createElement('midwest-select') as any;
+      selectEl.slot = 'more-select';
+      selectEl.placeholder = 'More...';
       selectEl.inline = true;
-      selectEl.align = "right";
+      selectEl.align = 'right';
       selectEl.noAvatars = true;
-      selectEl.addEventListener("update", (e: any) => { this.updateTabPositionWithSelect(e.detail); });
+      selectEl.addEventListener('update', (e: any) => {
+        this.updateTabPositionWithSelect(e.detail);
+      });
       this.overflowSelectEl = selectEl;
       this.element.appendChild(this.overflowSelectEl);
     }
@@ -183,31 +189,38 @@ export class Tabs {
         this.tabLeft = this.overflowSelectEl.offsetLeft;
         this.tabWidth = this.overflowSelectEl.offsetWidth;
         this.hiddenActive = true;
-      }, 10)
+      }, 10);
     }
   }
 
   render() {
     const style = {
-      "--tab-top": `${this.tabTop}px`,
-      "--tab-left": `${this.tabLeft}px`,
-      "--tab-width": `${this.tabWidth}px`,
-      "--tab-height": `${this.tabHeight}px`,
-      "--indicator-opacity": `${this.tabOpacity}`
+      '--tab-top': `${this.tabTop}px`,
+      '--tab-left': `${this.tabLeft}px`,
+      '--tab-width': `${this.tabWidth}px`,
+      '--tab-height': `${this.tabHeight}px`,
+      '--indicator-opacity': `${this.tabOpacity}`,
     };
 
-    return <Host style={style}>
-      <div class="tab-wrap" ref={(el) => { this.wrapperEl = el; }}>
-        <div class="tab-list" role="tablist">
-          <slot />
+    return (
+      <Host style={style}>
+        <div
+          class="tab-wrap"
+          ref={el => {
+            this.wrapperEl = el;
+          }}
+        >
+          <div class="tab-list" role="tablist">
+            <slot />
 
-          {this.collapse && <slot name="more-select" />}
+            {this.collapse && <slot name="more-select" />}
 
-          <div class="track">
-            <div class={`indicator ${this.ready ? "ready" : ""}`}></div>
+            <div class="track">
+              <div class={`indicator ${this.ready ? 'ready' : ''}`}></div>
+            </div>
           </div>
         </div>
-      </div>
-    </Host>
+      </Host>
+    );
   }
 }

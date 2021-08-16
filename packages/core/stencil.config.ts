@@ -12,30 +12,28 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 });
 
 export const config: Config = {
-  ...typicalStencilConfig as Config,
+  ...(typicalStencilConfig as Config),
   namespace: 'core',
-  globalStyle: "./src/css/entry.css",
-  globalScript: "./src/js/entry.ts",
+  globalStyle: './src/css/entry.css',
+  globalScript: './src/js/entry.ts',
   devServer: {
     openBrowser: false,
     port: 3333,
   },
   plugins: [
     postcss({
-      injectGlobalPaths: [
-        'src/css/shared.css',
-      ],
+      injectGlobalPaths: ['src/css/shared.css'],
       plugins: [
         postcssImport,
         designTokenFunction({
-          name: "color",
+          name: 'color',
           data: colors,
-          base: 0
+          base: 0,
         }),
-        tailwindcss("tailwind.config.js"),
+        tailwindcss('tailwind.config.js'),
         autoprefixer,
-        require("cssnano")
-      ]
-    })
-  ]
+        require('cssnano'),
+      ],
+    }),
+  ],
 };

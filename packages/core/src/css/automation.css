@@ -91,7 +91,6 @@ html *::-webkit-scrollbar-thumb {
   border: 3px solid var(--black);
 }
 
-
 .debug,
 .debug * {
   outline: 1px solid black;
@@ -151,14 +150,44 @@ p {
   color: var(--gray-10);
 }
 
-.dark-mode p {
-  color: var(--gray-2);
+copy-wrap p + h1,
+copy-wrap p + h2,
+copy-wrap p + h3,
+copy-wrap p + h4,
+copy-wrap p + h5,
+copy-wrap p + h6 {
+  margin-top: 2rem !important;
+}
+
+.dark-mode h1:not([class*="text-"]),
+.dark-mode h2:not([class*="text-"]),
+.dark-mode h3:not([class*="text-"]),
+.dark-mode h4:not([class*="text-"]),
+.dark-mode h5:not([class*="text-"]),
+.dark-mode h6:not([class*="text-"]) {
+  color: var(--white);
+}
+
+.dark-mode p:not([class*="text-"]) {
+  color: var(--gray-0);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--gray1);
+}
+
+.dark-mode hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--gray11);
 }
 
 a {
   @apply underline;
-  color: var(--theme-6, theme("colors.red.6"));
-  text-decoration-color: var(--theme-3, theme("colors.red.3"));
+  color: var(--theme-6, var(--red-6));
+  text-decoration-color: var(--theme-3, var(--red-3));
   text-decoration-thickness: 2px;
 }
 
@@ -166,8 +195,8 @@ a:hover,
 a:active,
 a:focus,
 a:active {
-  color: var(--theme-8, theme("colors.red.8"));
-  text-decoration-color: var(--theme-6, theme("colors.red.6"));
+  color: var(--theme-8, var(--red-8));
+  text-decoration-color: var(--theme-6, var(--red-6));
 }
 
 .clip {
