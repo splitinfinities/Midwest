@@ -70,7 +70,6 @@ Type: `Promise<FormResult>`
 - [midwest-box](../box)
 - midwest-label
 - midwest-tooltip
-- export-to-figma
 
 ### Graph
 ```mermaid
@@ -80,7 +79,6 @@ graph TD;
   midwest-item --> midwest-box
   midwest-item --> midwest-label
   midwest-item --> midwest-tooltip
-  midwest-item --> export-to-figma
   midwest-avatar --> midwest-progress
   midwest-avatar --> ion-icon
   midwest-avatar --> midwest-tooltip

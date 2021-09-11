@@ -64,7 +64,6 @@ Type: `Promise<FormResult>`
 - midwest-label
 - midwest-tooltip
 - [midwest-validate](../validate)
-- export-to-figma
 
 ### Graph
 ```mermaid
@@ -74,7 +73,6 @@ graph TD;
   midwest-input-file --> midwest-label
   midwest-input-file --> midwest-tooltip
   midwest-input-file --> midwest-validate
-  midwest-input-file --> export-to-figma
   midwest-validate --> midwest-label
   style midwest-input-file fill:#f9f,stroke:#333,stroke-width:4px
 ```

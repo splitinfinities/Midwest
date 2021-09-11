@@ -49,18 +49,18 @@
 
 ## Properties
 
-| Property     | Attribute    | Description | Type                                                                                   | Default            |
-| ------------ | ------------ | ----------- | -------------------------------------------------------------------------------------- | ------------------ |
-| `color`      | `color`      |             | `string`                                                                               | `'auto'`           |
-| `dark`       | `dark`       |             | `boolean`                                                                              | `false`            |
-| `icon`       | `icon`       |             | `string`                                                                               | `undefined`        |
-| `initials`   | `initials`   |             | `string`                                                                               | `'MW'`             |
-| `name`       | `name`       |             | `string`                                                                               | `'Midwest Design'` |
-| `noTooltip`  | `no-tooltip` |             | `boolean`                                                                              | `false`            |
-| `processing` | `processing` |             | `boolean`                                                                              | `false`            |
-| `shape`      | `shape`      |             | `"circle" \| "diamond" \| "hexagon" \| "message" \| "rectangle" \| "square" \| "star"` | `'square'`         |
-| `size`       | `size`       |             | `"huge" \| "large" \| "medium" \| "medium-small" \| "small" \| "tiny" \| "xlarge"`     | `undefined`        |
-| `src`        | `src`        |             | `string`                                                                               | `undefined`        |
+| Property     | Attribute    | Description | Type                                                                                                 | Default            |
+| ------------ | ------------ | ----------- | ---------------------------------------------------------------------------------------------------- | ------------------ |
+| `color`      | `color`      |             | `string`                                                                                             | `'auto'`           |
+| `dark`       | `dark`       |             | `boolean`                                                                                            | `false`            |
+| `icon`       | `icon`       |             | `string`                                                                                             | `undefined`        |
+| `initials`   | `initials`   |             | `string`                                                                                             | `'MW'`             |
+| `name`       | `name`       |             | `string`                                                                                             | `'Midwest Design'` |
+| `noTooltip`  | `no-tooltip` |             | `boolean`                                                                                            | `false`            |
+| `processing` | `processing` |             | `boolean`                                                                                            | `false`            |
+| `shape`      | `shape`      |             | `"circle" \| "diamond" \| "hexagon" \| "message" \| "rectangle" \| "square" \| "squircle" \| "star"` | `'square'`         |
+| `size`       | `size`       |             | `"huge" \| "large" \| "medium" \| "medium-small" \| "small" \| "tiny" \| "xlarge"`                   | `undefined`        |
+| `src`        | `src`        |             | `string`                                                                                             | `undefined`        |
 
 
 ## Dependencies

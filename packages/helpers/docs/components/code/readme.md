@@ -15,7 +15,7 @@
 | `expandable` | `expandable`  |             | `boolean` | `false`     |
 | `expanded`   | `expanded`    |             | `boolean` | `false`     |
 | `feature`    | `feature`     |             | `boolean` | `false`     |
-| `language`   | `language`    |             | `string`  | `"html"`    |
+| `language`   | `language`    |             | `string`  | `'html'`    |
 | `preview`    | `preview`     |             | `boolean` | `true`      |
 | `simple`     | `simple`      |             | `boolean` | `false`     |
 
@@ -81,10 +81,9 @@ graph TD;
   midwest-code --> midwest-button
   midwest-card --> midwest-button
   midwest-card --> ion-icon
-  midwest-card --> export-to-figma
+  midwest-card --> resize-observer
   midwest-button --> midwest-progress
   midwest-button --> midwest-label
-  midwest-button --> export-to-figma
   midwest-asset-library --> midwest-code
   style midwest-code fill:#f9f,stroke:#333,stroke-width:4px
 ```

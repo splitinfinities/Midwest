@@ -107,7 +107,6 @@ Type: `Promise<FormResult>`
 - midwest-tooltip
 - [midwest-input](../input)
 - [midwest-validate](../validate)
-- export-to-figma
 
 ### Graph
 ```mermaid
@@ -120,10 +119,8 @@ graph TD;
   midwest-select --> midwest-tooltip
   midwest-select --> midwest-input
   midwest-select --> midwest-validate
-  midwest-select --> export-to-figma
   midwest-button --> midwest-progress
   midwest-button --> midwest-label
-  midwest-button --> export-to-figma
   midwest-form-rollup --> midwest-label
   midwest-form-rollup --> midwest-avatar
   midwest-form-rollup --> midwest-group

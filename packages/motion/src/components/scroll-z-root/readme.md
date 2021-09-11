@@ -13,7 +13,7 @@
 | `cameraZ`          | `camera-z`          |             | `number` | `-1`    |
 | `initialOriginX`   | `initial-origin-x`  |             | `number` | `50`    |
 | `initialOriginY`   | `initial-origin-y`  |             | `number` | `30`    |
-| `itemZ`            | `item-z`            |             | `number` | `10`    |
+| `itemZ`            | `item-z`            |             | `number` | `5`     |
 | `scenePerspective` | `scene-perspective` |             | `number` | `1`     |
 
 

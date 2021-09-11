@@ -50,11 +50,10 @@ graph TD;
   midwest-image --> midwest-intersection
   midwest-card --> midwest-button
   midwest-card --> ion-icon
-  midwest-card --> export-to-figma
+  midwest-card --> resize-observer
   midwest-button --> midwest-progress
   midwest-button --> midwest-label
   midwest-button --> stencil-route-link
-  midwest-button --> export-to-figma
   midwest-tag --> midwest-label
   app-home --> display-feed
   style display-feed fill:#f9f,stroke:#333,stroke-width:4px

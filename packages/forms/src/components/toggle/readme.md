@@ -65,7 +65,6 @@ Type: `Promise<FormResult>`
 - [midwest-validate](../validate)
 - midwest-grid
 - midwest-label
-- export-to-figma
 
 ### Graph
 ```mermaid
@@ -73,7 +72,6 @@ graph TD;
   midwest-toggle --> midwest-validate
   midwest-toggle --> midwest-grid
   midwest-toggle --> midwest-label
-  midwest-toggle --> export-to-figma
   midwest-validate --> midwest-label
   style midwest-toggle fill:#f9f,stroke:#333,stroke-width:4px
 ```

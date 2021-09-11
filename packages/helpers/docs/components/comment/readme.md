@@ -9,9 +9,9 @@
 
 | Property  | Attribute | Description | Type      | Default        |
 | --------- | --------- | ----------- | --------- | -------------- |
-| `content` | `content` |             | `any`     | `"Loading..."` |
+| `content` | `content` |             | `any`     | `'Loading...'` |
 | `dark`    | `dark`    |             | `boolean` | `false`        |
-| `name`    | `name`    |             | `any`     | `"Loading..."` |
+| `name`    | `name`    |             | `any`     | `'Loading...'` |
 
 
 ----------------------------------------------

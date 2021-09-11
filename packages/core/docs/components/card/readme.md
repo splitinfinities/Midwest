@@ -14,22 +14,22 @@
 | `compact`        | `compact`         |             | `boolean`                                            | `false`     |
 | `dark`           | `dark`            |             | `boolean`                                            | `false`     |
 | `export`         | `export`          |             | `boolean`                                            | `undefined` |
-| `flipIcon`       | `flip-icon`       |             | `string`                                             | `"create"`  |
+| `flipIcon`       | `flip-icon`       |             | `string`                                             | `'create'`  |
 | `flipReady`      | `flip-ready`      |             | `boolean`                                            | `false`     |
 | `flippable`      | `flippable`       |             | `boolean`                                            | `false`     |
 | `flipped`        | `flipped`         |             | `boolean`                                            | `false`     |
 | `for`            | `for`             |             | `string`                                             | `undefined` |
 | `horizontal`     | `horizontal`      |             | `boolean`                                            | `undefined` |
-| `href`           | `href`            |             | `string`                                             | `"#"`       |
+| `href`           | `href`            |             | `string`                                             | `'#'`       |
 | `modalHref`      | `modal-href`      |             | `string`                                             | `undefined` |
-| `name`           | `name`            |             | `string`                                             | `""`        |
+| `name`           | `name`            |             | `string`                                             | `''`        |
 | `originalHeight` | `original-height` |             | `number`                                             | `undefined` |
-| `padding`        | `padding`         |             | `"large" \| "medium" \| "none" \| "small" \| "tiny"` | `"medium"`  |
+| `padding`        | `padding`         |             | `"large" \| "medium" \| "none" \| "small" \| "tiny"` | `'medium'`  |
 | `small`          | `small`           |             | `boolean`                                            | `false`     |
 | `smallSize`      | `small-size`      |             | `number`                                             | `350`       |
-| `tag`            | `tag`             |             | `"a" \| "button" \| "div" \| "modal"`                | `"div"`     |
+| `tag`            | `tag`             |             | `"a" \| "button" \| "div" \| "modal"`                | `'div'`     |
 | `type`           | `type`            |             | `string`                                             | `undefined` |
-| `value`          | `value`           |             | `string`                                             | `"#"`       |
+| `value`          | `value`           |             | `string`                                             | `'#'`       |
 
 
 ## Events

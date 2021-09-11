@@ -11,8 +11,9 @@
 | ------------ | ------------ | ----------- | -------------------------------------------------------------- | ------------ |
 | `active`     | `active`     |             | `boolean`                                                      | `false`      |
 | `complement` | `complement` |             | `boolean`                                                      | `undefined`  |
+| `darkShade`  | `dark-shade` |             | `number`                                                       | `9`          |
 | `delay`      | `delay`      |             | `number`                                                       | `100`        |
-| `direction`  | `direction`  |             | `"bottom-left" \| "bottom-right" \| "top-left" \| "top-right"` | `"top-left"` |
+| `direction`  | `direction`  |             | `"bottom-left" \| "bottom-right" \| "top-left" \| "top-right"` | `'top-left'` |
 | `length`     | `length`     |             | `number`                                                       | `100`        |
 | `shade`      | `shade`      |             | `number`                                                       | `7`          |
 | `timing`     | `timing`     |             | `number`                                                       | `50`         |

@@ -75,7 +75,6 @@ graph TD;
   midwest-group-overflow --> midwest-tooltip
   midwest-button --> midwest-progress
   midwest-button --> midwest-label
-  midwest-button --> export-to-figma
   midwest-select --> midwest-form-rollup
   style midwest-form-rollup fill:#f9f,stroke:#333,stroke-width:4px
 ```

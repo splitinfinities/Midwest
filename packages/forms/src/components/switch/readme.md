@@ -66,7 +66,6 @@ Type: `Promise<FormResult>`
 - ion-icon
 - midwest-tooltip
 - [midwest-validate](../validate)
-- export-to-figma
 
 ### Graph
 ```mermaid
@@ -75,7 +74,6 @@ graph TD;
   midwest-switch --> ion-icon
   midwest-switch --> midwest-tooltip
   midwest-switch --> midwest-validate
-  midwest-switch --> export-to-figma
   midwest-validate --> midwest-label
   style midwest-switch fill:#f9f,stroke:#333,stroke-width:4px
 ```

@@ -393,6 +393,10 @@
           "description": ""
         },
         {
+          "name": "dark-shade",
+          "description": ""
+        },
+        {
           "name": "delay",
           "description": ""
         },
@@ -835,6 +839,20 @@
         {
           "name": "Source code",
           "url": "./https:/github.com/splitinfinities/midwest/src/components/pjax/pjax.tsx"
+        }
+      ]
+    },
+    {
+      "name": "resize-observer",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/resize-observer/resized.tsx"
         }
       ]
     }

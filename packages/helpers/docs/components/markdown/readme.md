@@ -53,10 +53,9 @@ graph TD;
   midwest-markdown --> copy-wrap
   midwest-card --> midwest-button
   midwest-card --> ion-icon
-  midwest-card --> export-to-figma
+  midwest-card --> resize-observer
   midwest-button --> midwest-progress
   midwest-button --> midwest-label
-  midwest-button --> export-to-figma
   style midwest-markdown fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

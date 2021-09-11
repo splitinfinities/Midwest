@@ -52,7 +52,6 @@ graph TD;
   midwest-repeatable-fields --> ion-icon
   midwest-button --> midwest-progress
   midwest-button --> midwest-label
-  midwest-button --> export-to-figma
   style midwest-repeatable-fields fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
