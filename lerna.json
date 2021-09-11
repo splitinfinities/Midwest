@@ -1,9 +1,13 @@
 {
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "changelogPreset": {
     "name": "conventionalcommits",
     "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
-    "issuePrefixes": ["#"],
+    "issuePrefixes": [
+      "#"
+    ],
     "types": [
       {
         "type": "feat",
@@ -66,7 +70,7 @@
     "userUrlFormat": "{{host}}/{{user}}"
   },
   "lerna": "^3.22.1",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "npmClient": "yarn",
   "useWorkspaces": true
 }
