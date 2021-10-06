@@ -1,0 +1,885 @@
+{
+  "timestamp": "2021-10-06T16:16:49",
+  "compiler": {
+    "name": "node",
+    "version": "16.9.1"
+  },
+  "app": {
+    "namespace": "ExportToFigma",
+    "fsNamespace": "export-to-figma",
+    "components": 3,
+    "entries": 3,
+    "bundles": 120,
+    "outputs": [
+      {
+        "name": "dist-collection",
+        "files": 62,
+        "generatedFiles": [
+          "./dist/collection/components/export-to-figma/export-to-figma.js",
+          "./dist/collection/components/export-to-figma/export-to-figma.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/addConstraints.js",
+          "./dist/collection/components/export-to-figma/lib/functions/addConstraints.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/buffer-to-base64.js",
+          "./dist/collection/components/export-to-figma/lib/functions/buffer-to-base64.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/capitalize.js",
+          "./dist/collection/components/export-to-figma/lib/functions/capitalize.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/defaults.js",
+          "./dist/collection/components/export-to-figma/lib/functions/defaults.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/getAggregateRectOfElements.js",
+          "./dist/collection/components/export-to-figma/lib/functions/getAggregateRectOfElements.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/getAppliedComputedStyles.js",
+          "./dist/collection/components/export-to-figma/lib/functions/getAppliedComputedStyles.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/getBoundingClientRect.js",
+          "./dist/collection/components/export-to-figma/lib/functions/getBoundingClientRect.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/getDepth.js",
+          "./dist/collection/components/export-to-figma/lib/functions/getDepth.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/getDirectionOfMostElements.js",
+          "./dist/collection/components/export-to-figma/lib/functions/getDirectionOfMostElements.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/getParent.js",
+          "./dist/collection/components/export-to-figma/lib/functions/getParent.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/getParents.js",
+          "./dist/collection/components/export-to-figma/lib/functions/getParents.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/getRgb.js",
+          "./dist/collection/components/export-to-figma/lib/functions/getRgb.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/getUrl.js",
+          "./dist/collection/components/export-to-figma/lib/functions/getUrl.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/hasChildren.js",
+          "./dist/collection/components/export-to-figma/lib/functions/hasChildren.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/isHidden.js",
+          "./dist/collection/components/export-to-figma/lib/functions/isHidden.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/isLength.js",
+          "./dist/collection/components/export-to-figma/lib/functions/isLength.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/makeTree.js",
+          "./dist/collection/components/export-to-figma/lib/functions/makeTree.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/parseUnits.js",
+          "./dist/collection/components/export-to-figma/lib/functions/parseUnits.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/parseValue.js",
+          "./dist/collection/components/export-to-figma/lib/functions/parseValue.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/pick.js",
+          "./dist/collection/components/export-to-figma/lib/functions/pick.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/removeRefs.js",
+          "./dist/collection/components/export-to-figma/lib/functions/removeRefs.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/setData.js",
+          "./dist/collection/components/export-to-figma/lib/functions/setData.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/size.js",
+          "./dist/collection/components/export-to-figma/lib/functions/size.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/textNodesUnder.js",
+          "./dist/collection/components/export-to-figma/lib/functions/textNodesUnder.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/toNum.js",
+          "./dist/collection/components/export-to-figma/lib/functions/toNum.js.map",
+          "./dist/collection/components/export-to-figma/lib/functions/traverse.js",
+          "./dist/collection/components/export-to-figma/lib/functions/traverse.js.map",
+          "./dist/collection/components/export-to-figma/lib/html-to-figma.js",
+          "./dist/collection/components/export-to-figma/lib/html-to-figma.js.map",
+          "./dist/collection/components/no-shadow/no-shadow.js",
+          "./dist/collection/components/no-shadow/no-shadow.js.map",
+          "./dist/collection/components/with-shadow/with-shadow.js",
+          "./dist/collection/components/with-shadow/with-shadow.js.map",
+          "./dist/collection/index.js",
+          "./dist/collection/index.js.map"
+        ]
+      },
+      {
+        "name": "dist-custom-elements",
+        "files": 14,
+        "generatedFiles": [
+          "./dist/components/example-no-shadow.d.ts",
+          "./dist/components/example-no-shadow.js",
+          "./dist/components/example-no-shadow.js.map",
+          "./dist/components/example-with-shadow.d.ts",
+          "./dist/components/example-with-shadow.js",
+          "./dist/components/example-with-shadow.js.map",
+          "./dist/components/export-to-figma.d.ts",
+          "./dist/components/export-to-figma.js",
+          "./dist/components/export-to-figma.js.map",
+          "./dist/components/export-to-figma2.js",
+          "./dist/components/export-to-figma2.js.map",
+          "./dist/components/index.d.ts",
+          "./dist/components/index.js",
+          "./dist/components/index.js.map"
+        ]
+      },
+      {
+        "name": "dist-custom-elements-bundle",
+        "files": 3,
+        "generatedFiles": [
+          "./dist/custom-elements/index.d.ts",
+          "./dist/custom-elements/index.js",
+          "./dist/custom-elements/index.js.map"
+        ]
+      },
+      {
+        "name": "dist-lazy",
+        "files": 38,
+        "generatedFiles": [
+          "./dist/cjs/example-no-shadow_3.cjs.entry.js",
+          "./dist/cjs/example-no-shadow_3.cjs.entry.js.map",
+          "./dist/cjs/export-to-figma.cjs.js",
+          "./dist/cjs/export-to-figma.cjs.js.map",
+          "./dist/cjs/index-396c12a7.js",
+          "./dist/cjs/index-396c12a7.js.map",
+          "./dist/cjs/index.cjs.js",
+          "./dist/cjs/index.cjs.js.map",
+          "./dist/cjs/loader.cjs.js",
+          "./dist/cjs/loader.cjs.js.map",
+          "./dist/esm/example-no-shadow_3.entry.js",
+          "./dist/esm/example-no-shadow_3.entry.js.map",
+          "./dist/esm/export-to-figma.js",
+          "./dist/esm/export-to-figma.js.map",
+          "./dist/esm/index-f7a7f0cb.js",
+          "./dist/esm/index-f7a7f0cb.js.map",
+          "./dist/esm/index.js",
+          "./dist/esm/index.js.map",
+          "./dist/esm/loader.js",
+          "./dist/esm/loader.js.map",
+          "./dist/export-to-figma/export-to-figma.esm.js",
+          "./dist/export-to-figma/export-to-figma.esm.js.map",
+          "./dist/export-to-figma/index.esm.js",
+          "./dist/export-to-figma/index.esm.js.map",
+          "./dist/export-to-figma/p-7bb14b12.js",
+          "./dist/export-to-figma/p-7bb14b12.js.map",
+          "./dist/export-to-figma/p-a4b40df8.entry.js",
+          "./dist/export-to-figma/p-a4b40df8.entry.js.map",
+          "./dist/index.cjs.js",
+          "./dist/index.js",
+          "./www/build/export-to-figma.esm.js",
+          "./www/build/export-to-figma.esm.js.map",
+          "./www/build/index.esm.js",
+          "./www/build/index.esm.js.map",
+          "./www/build/p-7bb14b12.js",
+          "./www/build/p-7bb14b12.js.map",
+          "./www/build/p-a4b40df8.entry.js",
+          "./www/build/p-a4b40df8.entry.js.map"
+        ]
+      },
+      {
+        "name": "dist-types",
+        "files": 1,
+        "generatedFiles": [
+          "./dist/types/stencil-public-runtime.d.ts"
+        ]
+      },
+      {
+        "name": "www",
+        "files": 2,
+        "generatedFiles": [
+          "./www/host.config.json",
+          "./www/index.html"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
+    "hashedFileNameLength": 8,
+    "buildEs5": false
+  },
+  "formats": {
+    "esmBrowser": [
+      {
+        "key": "example-no-shadow.example-with-shadow.export-to-figma.entry",
+        "components": [
+          "example-no-shadow",
+          "example-with-shadow",
+          "export-to-figma"
+        ],
+        "bundleId": "p-a4b40df8",
+        "fileName": "p-a4b40df8.entry.js",
+        "imports": [
+          "p-7bb14b12.js"
+        ],
+        "originalByteSize": 37397
+      }
+    ],
+    "esm": [
+      {
+        "key": "example-no-shadow.example-with-shadow.export-to-figma.entry",
+        "components": [
+          "example-no-shadow",
+          "example-with-shadow",
+          "export-to-figma"
+        ],
+        "bundleId": "example-no-shadow_3",
+        "fileName": "example-no-shadow_3.entry.js",
+        "imports": [
+          "index-f7a7f0cb.js"
+        ],
+        "originalByteSize": 37401
+      }
+    ],
+    "es5": [],
+    "system": [],
+    "commonjs": [
+      {
+        "key": "example-no-shadow.example-with-shadow.export-to-figma.entry",
+        "components": [
+          "example-no-shadow",
+          "example-with-shadow",
+          "export-to-figma"
+        ],
+        "bundleId": "example-no-shadow_3.cjs",
+        "fileName": "example-no-shadow_3.cjs.entry.js",
+        "imports": [
+          "index-396c12a7.js"
+        ],
+        "originalByteSize": 37552
+      }
+    ]
+  },
+  "components": [
+    {
+      "tag": "example-no-shadow",
+      "path": "./src/components/no-shadow/no-shadow.js",
+      "source": "./src/components/no-shadow/no-shadow.tsx",
+      "elementRef": null,
+      "componentClassName": "NoShadow",
+      "assetsDirs": [],
+      "dependencies": [
+        "export-to-figma"
+      ],
+      "dependents": [],
+      "directDependencies": [
+        "export-to-figma"
+      ],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [
+        "export-to-figma"
+      ],
+      "properties": [],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "example-with-shadow",
+      "path": "./src/components/with-shadow/with-shadow.js",
+      "source": "./src/components/with-shadow/with-shadow.tsx",
+      "elementRef": null,
+      "componentClassName": "WithShadow",
+      "assetsDirs": [],
+      "dependencies": [
+        "export-to-figma"
+      ],
+      "dependents": [],
+      "directDependencies": [
+        "export-to-figma"
+      ],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [
+        "export-to-figma"
+      ],
+      "properties": [],
+      "shadowDelegatesFocus": false,
+      "states": []
+    },
+    {
+      "tag": "export-to-figma",
+      "path": "./src/components/export-to-figma/export-to-figma.js",
+      "source": "./src/components/export-to-figma/export-to-figma.tsx",
+      "elementRef": "el",
+      "componentClassName": "ExportToFigma",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [
+        "example-no-shadow",
+        "example-with-shadow"
+      ],
+      "directDependencies": [],
+      "directDependents": [
+        "example-no-shadow",
+        "example-with-shadow"
+      ],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [
+        {
+          "name": "keydown",
+          "method": "handleSaveComponents",
+          "capture": false,
+          "passive": false,
+          "target": "window"
+        }
+      ],
+      "methods": [
+        {
+          "name": "export",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "noKey",
+          "type": "boolean",
+          "attribute": "no-key",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "element",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "HTMLElement",
+            "resolved": "HTMLElement",
+            "references": {
+              "HTMLElement": {
+                "location": "global"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": []
+    }
+  ],
+  "entries": [
+    {
+      "cmps": [
+        {
+          "tagName": "example-no-shadow",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "NoShadow",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "EXAMPLE-NO-SHADOW",
+              "styleStr": null,
+              "styleIdentifier": "exampleNoShadowStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/no-shadow/no-shadow.css",
+                  "relativePath": "no-shadow.css",
+                  "originalComponentPath": "no-shadow.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/no-shadow/no-shadow.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/no-shadow/no-shadow.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/no-shadow/no-shadow.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [
+            "p",
+            "slot",
+            "export-to-figma"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [
+            "export-to-figma"
+          ],
+          "directDependencies": [
+            "export-to-figma"
+          ],
+          "dependencies": [
+            "export-to-figma"
+          ],
+          "dependents": [],
+          "directDependents": []
+        },
+        {
+          "tagName": "example-with-shadow",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "WithShadow",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "EXAMPLE-WITH-SHADOW",
+              "styleStr": null,
+              "styleIdentifier": "exampleWithShadowStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/with-shadow/with-shadow.css",
+                  "relativePath": "with-shadow.css",
+                  "originalComponentPath": "with-shadow.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/with-shadow/with-shadow.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/with-shadow/with-shadow.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/with-shadow/with-shadow.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [
+            "p",
+            "slot",
+            "export-to-figma"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [
+            "export-to-figma"
+          ],
+          "directDependencies": [
+            "export-to-figma"
+          ],
+          "dependencies": [
+            "export-to-figma"
+          ],
+          "dependents": [],
+          "directDependents": []
+        },
+        {
+          "tagName": "export-to-figma",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "ExportToFigma",
+          "elementRef": "el",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "noKey",
+              "type": "boolean",
+              "attribute": "no-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "element",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "HTMLElement",
+                "resolved": "HTMLElement",
+                "references": {
+                  "HTMLElement": {
+                    "location": "global"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [
+            {
+              "name": "export",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [
+            {
+              "name": "keydown",
+              "method": "handleSaveComponents",
+              "capture": false,
+              "passive": false,
+              "target": "window"
+            }
+          ],
+          "events": [],
+          "watchers": [],
+          "styles": [],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/export-to-figma/export-to-figma.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/export-to-figma/export-to-figma.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/export-to-figma/src/components/export-to-figma/export-to-figma.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": true,
+          "hasListenerTarget": true,
+          "hasListenerTargetWindow": true,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": false,
+          "hasPropMutable": true,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": false,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": true,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "style"
+          ],
+          "htmlTagNames": [
+            "a"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "example-no-shadow",
+            "example-with-shadow"
+          ],
+          "directDependents": [
+            "example-no-shadow",
+            "example-with-shadow"
+          ]
+        }
+      ],
+      "entryKey": "example-no-shadow.example-with-shadow.export-to-figma.entry"
+    }
+  ],
+  "componentGraph": {
+    "sc-example-no-shadow": [
+      "p-7bb14b12.js"
+    ],
+    "sc-example-with-shadow": [
+      "p-7bb14b12.js"
+    ],
+    "sc-export-to-figma": [
+      "p-7bb14b12.js"
+    ]
+  },
+  "sourceGraph": {
+    "./src/components/export-to-figma/export-to-figma.tsx": [
+      "./src/components/export-to-figma/lib/html-to-figma"
+    ],
+    "./src/components/export-to-figma/lib/functions/addConstraints.ts": [
+      "./src/components/export-to-figma/lib/functions/setData",
+      "./src/components/export-to-figma/lib/functions/traverse"
+    ],
+    "./src/components/export-to-figma/lib/functions/buffer-to-base64.ts": [],
+    "./src/components/export-to-figma/lib/functions/capitalize.ts": [],
+    "./src/components/export-to-figma/lib/functions/defaults.ts": [],
+    "./src/components/export-to-figma/lib/functions/getAggregateRectOfElements.ts": [
+      "./src/components/export-to-figma/lib/functions/getBoundingClientRect",
+      "./src/components/export-to-figma/lib/functions/getDirectionOfMostElements"
+    ],
+    "./src/components/export-to-figma/lib/functions/getAppliedComputedStyles.ts": [
+      "./src/components/export-to-figma/lib/functions/pick"
+    ],
+    "./src/components/export-to-figma/lib/functions/getBoundingClientRect.ts": [
+      "./src/components/export-to-figma/lib/functions/getAggregateRectOfElements"
+    ],
+    "./src/components/export-to-figma/lib/functions/getDepth.ts": [
+      "./src/components/export-to-figma/lib/functions/getParents"
+    ],
+    "./src/components/export-to-figma/lib/functions/getDirectionOfMostElements.ts": [
+      "./src/components/export-to-figma/lib/functions/getBoundingClientRect"
+    ],
+    "./src/components/export-to-figma/lib/functions/getParent.ts": [
+      "./src/components/export-to-figma/lib/functions/traverse"
+    ],
+    "./src/components/export-to-figma/lib/functions/getParents.ts": [],
+    "./src/components/export-to-figma/lib/functions/getRgb.ts": [],
+    "./src/components/export-to-figma/lib/functions/getUrl.ts": [],
+    "./src/components/export-to-figma/lib/functions/hasChildren.ts": [],
+    "./src/components/export-to-figma/lib/functions/isHidden.ts": [],
+    "./src/components/export-to-figma/lib/functions/isLength.ts": [],
+    "./src/components/export-to-figma/lib/functions/makeTree.ts": [
+      "./src/components/export-to-figma/lib/functions/getBoundingClientRect",
+      "./src/components/export-to-figma/lib/functions/getDepth",
+      "./src/components/export-to-figma/lib/functions/getParent",
+      "./src/components/export-to-figma/lib/functions/getParents",
+      "./src/components/export-to-figma/lib/functions/hasChildren",
+      "./src/components/export-to-figma/lib/functions/traverse"
+    ],
+    "./src/components/export-to-figma/lib/functions/parseUnits.ts": [],
+    "./src/components/export-to-figma/lib/functions/parseValue.ts": [
+      "./src/components/export-to-figma/lib/functions/isLength",
+      "./src/components/export-to-figma/lib/functions/toNum"
+    ],
+    "./src/components/export-to-figma/lib/functions/pick.ts": [
+      "./src/components/export-to-figma/lib/functions/defaults"
+    ],
+    "./src/components/export-to-figma/lib/functions/removeRefs.ts": [
+      "./src/components/export-to-figma/lib/functions/traverse"
+    ],
+    "./src/components/export-to-figma/lib/functions/setData.ts": [],
+    "./src/components/export-to-figma/lib/functions/size.ts": [],
+    "./src/components/export-to-figma/lib/functions/textNodesUnder.ts": [],
+    "./src/components/export-to-figma/lib/functions/toNum.ts": [],
+    "./src/components/export-to-figma/lib/functions/traverse.ts": [
+      "./src/components/export-to-figma/lib/functions/hasChildren"
+    ],
+    "./src/components/export-to-figma/lib/html-to-figma.ts": [
+      "./src/components/export-to-figma/lib/functions/addConstraints",
+      "./src/components/export-to-figma/lib/functions/capitalize",
+      "./src/components/export-to-figma/lib/functions/getAppliedComputedStyles",
+      "./src/components/export-to-figma/lib/functions/getBoundingClientRect",
+      "./src/components/export-to-figma/lib/functions/getRgb",
+      "./src/components/export-to-figma/lib/functions/getUrl",
+      "./src/components/export-to-figma/lib/functions/isHidden",
+      "./src/components/export-to-figma/lib/functions/makeTree",
+      "./src/components/export-to-figma/lib/functions/parseUnits",
+      "./src/components/export-to-figma/lib/functions/parseValue",
+      "./src/components/export-to-figma/lib/functions/removeRefs",
+      "./src/components/export-to-figma/lib/functions/size",
+      "./src/components/export-to-figma/lib/functions/textNodesUnder"
+    ],
+    "./src/components/no-shadow/no-shadow.tsx": [],
+    "./src/components/with-shadow/with-shadow.tsx": [],
+    "./src/index.ts": []
+  },
+  "collections": []
+}

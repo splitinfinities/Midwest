@@ -75,9 +75,9 @@
     "stencil-tslint": "latest"
   },
   "resolutions": {
-    "@midwest-design/common": "0.0.14",
-    "@midwest-design/core": "0.0.14",
-    "@midwest-design/helpers": "0.0.14",
-    "@midwest-design/motion": "0.0.14"
+    "@midwest-design/common": "0.0.15",
+    "@midwest-design/core": "0.0.15",
+    "@midwest-design/helpers": "0.0.15",
+    "@midwest-design/motion": "0.0.15"
   }
 }

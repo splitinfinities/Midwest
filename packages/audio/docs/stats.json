@@ -1,0 +1,4170 @@
+{
+  "timestamp": "2021-10-06T16:16:53",
+  "compiler": {
+    "name": "node",
+    "version": "16.9.1"
+  },
+  "app": {
+    "namespace": "audio",
+    "fsNamespace": "audio",
+    "components": 7,
+    "entries": 7,
+    "bundles": 190,
+    "outputs": [
+      {
+        "name": "dist-collection",
+        "files": 34,
+        "generatedFiles": [
+          "./dist/collection/components/bufferloader.js",
+          "./dist/collection/components/bufferloader.js.map",
+          "./dist/collection/components/effects.js",
+          "./dist/collection/components/effects.js.map",
+          "./dist/collection/components/helpers.js",
+          "./dist/collection/components/helpers.js.map",
+          "./dist/collection/components/web-audio-debugger/web-audio-debugger.js",
+          "./dist/collection/components/web-audio-debugger/web-audio-debugger.js.map",
+          "./dist/collection/components/web-audio-effect/web-audio-effect.js",
+          "./dist/collection/components/web-audio-effect/web-audio-effect.js.map",
+          "./dist/collection/components/web-audio-sequencer/web-audio-sequencer.js",
+          "./dist/collection/components/web-audio-sequencer/web-audio-sequencer.js.map",
+          "./dist/collection/components/web-audio-source/web-audio-source.js",
+          "./dist/collection/components/web-audio-source/web-audio-source.js.map",
+          "./dist/collection/components/web-audio-visualizer-shader/web-audio-visualizer-shader.js",
+          "./dist/collection/components/web-audio-visualizer-shader/web-audio-visualizer-shader.js.map",
+          "./dist/collection/components/web-audio-visualizer/visualizations/bars.js",
+          "./dist/collection/components/web-audio-visualizer/visualizations/bars.js.map",
+          "./dist/collection/components/web-audio-visualizer/visualizations/bars2.js",
+          "./dist/collection/components/web-audio-visualizer/visualizations/bars2.js.map",
+          "./dist/collection/components/web-audio-visualizer/visualizations/circle.js",
+          "./dist/collection/components/web-audio-visualizer/visualizations/circle.js.map",
+          "./dist/collection/components/web-audio-visualizer/visualizations/index.js",
+          "./dist/collection/components/web-audio-visualizer/visualizations/index.js.map",
+          "./dist/collection/components/web-audio-visualizer/visualizations/utils.js",
+          "./dist/collection/components/web-audio-visualizer/visualizations/utils.js.map",
+          "./dist/collection/components/web-audio-visualizer/visualizations/wave.js",
+          "./dist/collection/components/web-audio-visualizer/visualizations/wave.js.map",
+          "./dist/collection/components/web-audio-visualizer/web-audio-visualizer.js",
+          "./dist/collection/components/web-audio-visualizer/web-audio-visualizer.js.map",
+          "./dist/collection/components/web-audio/web-audio.js",
+          "./dist/collection/components/web-audio/web-audio.js.map",
+          "./dist/collection/index.js",
+          "./dist/collection/index.js.map"
+        ]
+      },
+      {
+        "name": "dist-custom-elements",
+        "files": 32,
+        "generatedFiles": [
+          "./dist/components/_commonjsHelpers.js",
+          "./dist/components/_commonjsHelpers.js.map",
+          "./dist/components/colors.js",
+          "./dist/components/colors.js.map",
+          "./dist/components/helpers.js",
+          "./dist/components/helpers.js.map",
+          "./dist/components/index.d.ts",
+          "./dist/components/index.js",
+          "./dist/components/index.js.map",
+          "./dist/components/web-audio-debugger.d.ts",
+          "./dist/components/web-audio-debugger.js",
+          "./dist/components/web-audio-debugger.js.map",
+          "./dist/components/web-audio-debugger2.js",
+          "./dist/components/web-audio-debugger2.js.map",
+          "./dist/components/web-audio-effect.d.ts",
+          "./dist/components/web-audio-effect.js",
+          "./dist/components/web-audio-effect.js.map",
+          "./dist/components/web-audio-sequencer.d.ts",
+          "./dist/components/web-audio-sequencer.js",
+          "./dist/components/web-audio-sequencer.js.map",
+          "./dist/components/web-audio-source.d.ts",
+          "./dist/components/web-audio-source.js",
+          "./dist/components/web-audio-source.js.map",
+          "./dist/components/web-audio-visualizer-shader.d.ts",
+          "./dist/components/web-audio-visualizer-shader.js",
+          "./dist/components/web-audio-visualizer-shader.js.map",
+          "./dist/components/web-audio-visualizer.d.ts",
+          "./dist/components/web-audio-visualizer.js",
+          "./dist/components/web-audio-visualizer.js.map",
+          "./dist/components/web-audio.d.ts",
+          "./dist/components/web-audio.js",
+          "./dist/components/web-audio.js.map"
+        ]
+      },
+      {
+        "name": "dist-custom-elements-bundle",
+        "files": 3,
+        "generatedFiles": [
+          "./dist/custom-elements/index.d.ts",
+          "./dist/custom-elements/index.js",
+          "./dist/custom-elements/index.js.map"
+        ]
+      },
+      {
+        "name": "dist-lazy",
+        "files": 118,
+        "generatedFiles": [
+          "./dist/audio/audio.esm.js",
+          "./dist/audio/audio.esm.js.map",
+          "./dist/audio/index.esm.js",
+          "./dist/audio/index.esm.js.map",
+          "./dist/audio/p-20214f08.js",
+          "./dist/audio/p-20214f08.js.map",
+          "./dist/audio/p-2937528b.js",
+          "./dist/audio/p-2937528b.js.map",
+          "./dist/audio/p-48679b84.entry.js",
+          "./dist/audio/p-48679b84.entry.js.map",
+          "./dist/audio/p-525d5f3f.entry.js",
+          "./dist/audio/p-525d5f3f.entry.js.map",
+          "./dist/audio/p-5545f349.entry.js",
+          "./dist/audio/p-5545f349.entry.js.map",
+          "./dist/audio/p-8dcf2293.entry.js",
+          "./dist/audio/p-8dcf2293.entry.js.map",
+          "./dist/audio/p-b192f5a1.js",
+          "./dist/audio/p-b192f5a1.js.map",
+          "./dist/audio/p-ca53b8f2.entry.js",
+          "./dist/audio/p-ca53b8f2.entry.js.map",
+          "./dist/audio/p-d4382112.js",
+          "./dist/audio/p-d4382112.js.map",
+          "./dist/audio/p-dbd11983.entry.js",
+          "./dist/audio/p-dbd11983.entry.js.map",
+          "./dist/audio/p-ed3e2a5d.js",
+          "./dist/audio/p-ed3e2a5d.js.map",
+          "./dist/audio/p-f7e1ffef.entry.js",
+          "./dist/audio/p-f7e1ffef.entry.js.map",
+          "./dist/cjs/_commonjsHelpers-5d04ef05.js",
+          "./dist/cjs/_commonjsHelpers-5d04ef05.js.map",
+          "./dist/cjs/audio.cjs.js",
+          "./dist/cjs/audio.cjs.js.map",
+          "./dist/cjs/colors-1fa1fe7f.js",
+          "./dist/cjs/colors-1fa1fe7f.js.map",
+          "./dist/cjs/helpers-0c5465f5.js",
+          "./dist/cjs/helpers-0c5465f5.js.map",
+          "./dist/cjs/index-46d0a7d2.js",
+          "./dist/cjs/index-46d0a7d2.js.map",
+          "./dist/cjs/index.cjs.js",
+          "./dist/cjs/index.cjs.js.map",
+          "./dist/cjs/loader.cjs.js",
+          "./dist/cjs/loader.cjs.js.map",
+          "./dist/cjs/web-audio-debugger-35eb0099.js",
+          "./dist/cjs/web-audio-debugger-35eb0099.js.map",
+          "./dist/cjs/web-audio-debugger.cjs.entry.js",
+          "./dist/cjs/web-audio-debugger.cjs.entry.js.map",
+          "./dist/cjs/web-audio-effect.cjs.entry.js",
+          "./dist/cjs/web-audio-effect.cjs.entry.js.map",
+          "./dist/cjs/web-audio-sequencer.cjs.entry.js",
+          "./dist/cjs/web-audio-sequencer.cjs.entry.js.map",
+          "./dist/cjs/web-audio-source.cjs.entry.js",
+          "./dist/cjs/web-audio-source.cjs.entry.js.map",
+          "./dist/cjs/web-audio-visualizer-shader.cjs.entry.js",
+          "./dist/cjs/web-audio-visualizer-shader.cjs.entry.js.map",
+          "./dist/cjs/web-audio-visualizer.cjs.entry.js",
+          "./dist/cjs/web-audio-visualizer.cjs.entry.js.map",
+          "./dist/cjs/web-audio.cjs.entry.js",
+          "./dist/cjs/web-audio.cjs.entry.js.map",
+          "./dist/esm/_commonjsHelpers-f791ee5f.js",
+          "./dist/esm/_commonjsHelpers-f791ee5f.js.map",
+          "./dist/esm/audio.js",
+          "./dist/esm/audio.js.map",
+          "./dist/esm/colors-b60c6a8d.js",
+          "./dist/esm/colors-b60c6a8d.js.map",
+          "./dist/esm/helpers-ae574b08.js",
+          "./dist/esm/helpers-ae574b08.js.map",
+          "./dist/esm/index-b437dc6b.js",
+          "./dist/esm/index-b437dc6b.js.map",
+          "./dist/esm/index.js",
+          "./dist/esm/index.js.map",
+          "./dist/esm/loader.js",
+          "./dist/esm/loader.js.map",
+          "./dist/esm/web-audio-debugger-61bd8702.js",
+          "./dist/esm/web-audio-debugger-61bd8702.js.map",
+          "./dist/esm/web-audio-debugger.entry.js",
+          "./dist/esm/web-audio-debugger.entry.js.map",
+          "./dist/esm/web-audio-effect.entry.js",
+          "./dist/esm/web-audio-effect.entry.js.map",
+          "./dist/esm/web-audio-sequencer.entry.js",
+          "./dist/esm/web-audio-sequencer.entry.js.map",
+          "./dist/esm/web-audio-source.entry.js",
+          "./dist/esm/web-audio-source.entry.js.map",
+          "./dist/esm/web-audio-visualizer-shader.entry.js",
+          "./dist/esm/web-audio-visualizer-shader.entry.js.map",
+          "./dist/esm/web-audio-visualizer.entry.js",
+          "./dist/esm/web-audio-visualizer.entry.js.map",
+          "./dist/esm/web-audio.entry.js",
+          "./dist/esm/web-audio.entry.js.map",
+          "./dist/index.cjs.js",
+          "./dist/index.js",
+          "./www/build/audio.esm.js",
+          "./www/build/audio.esm.js.map",
+          "./www/build/index.esm.js",
+          "./www/build/index.esm.js.map",
+          "./www/build/p-20214f08.js",
+          "./www/build/p-20214f08.js.map",
+          "./www/build/p-2937528b.js",
+          "./www/build/p-2937528b.js.map",
+          "./www/build/p-48679b84.entry.js",
+          "./www/build/p-48679b84.entry.js.map",
+          "./www/build/p-525d5f3f.entry.js",
+          "./www/build/p-525d5f3f.entry.js.map",
+          "./www/build/p-5545f349.entry.js",
+          "./www/build/p-5545f349.entry.js.map",
+          "./www/build/p-8dcf2293.entry.js",
+          "./www/build/p-8dcf2293.entry.js.map",
+          "./www/build/p-b192f5a1.js",
+          "./www/build/p-b192f5a1.js.map",
+          "./www/build/p-ca53b8f2.entry.js",
+          "./www/build/p-ca53b8f2.entry.js.map",
+          "./www/build/p-d4382112.js",
+          "./www/build/p-d4382112.js.map",
+          "./www/build/p-dbd11983.entry.js",
+          "./www/build/p-dbd11983.entry.js.map",
+          "./www/build/p-ed3e2a5d.js",
+          "./www/build/p-ed3e2a5d.js.map",
+          "./www/build/p-f7e1ffef.entry.js",
+          "./www/build/p-f7e1ffef.entry.js.map"
+        ]
+      },
+      {
+        "name": "dist-types",
+        "files": 1,
+        "generatedFiles": [
+          "./dist/types/stencil-public-runtime.d.ts"
+        ]
+      },
+      {
+        "name": "www",
+        "files": 2,
+        "generatedFiles": [
+          "./www/host.config.json",
+          "./www/index.html"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
+    "hashedFileNameLength": 8,
+    "buildEs5": false
+  },
+  "formats": {
+    "esmBrowser": [
+      {
+        "key": "web-audio.entry",
+        "components": [
+          "web-audio"
+        ],
+        "bundleId": "p-ca53b8f2",
+        "fileName": "p-ca53b8f2.entry.js",
+        "imports": [
+          "p-d4382112.js",
+          "p-20214f08.js",
+          "p-ed3e2a5d.js",
+          "p-2937528b.js",
+          "p-b192f5a1.js"
+        ],
+        "originalByteSize": 45757
+      },
+      {
+        "key": "web-audio-debugger.entry",
+        "components": [
+          "web-audio-debugger"
+        ],
+        "bundleId": "p-525d5f3f",
+        "fileName": "p-525d5f3f.entry.js",
+        "imports": [
+          "p-20214f08.js",
+          "p-d4382112.js"
+        ],
+        "originalByteSize": 159
+      },
+      {
+        "key": "web-audio-effect.entry",
+        "components": [
+          "web-audio-effect"
+        ],
+        "bundleId": "p-5545f349",
+        "fileName": "p-5545f349.entry.js",
+        "imports": [
+          "p-d4382112.js",
+          "p-ed3e2a5d.js"
+        ],
+        "originalByteSize": 4990
+      },
+      {
+        "key": "web-audio-sequencer.entry",
+        "components": [
+          "web-audio-sequencer"
+        ],
+        "bundleId": "p-48679b84",
+        "fileName": "p-48679b84.entry.js",
+        "imports": [
+          "p-d4382112.js"
+        ],
+        "originalByteSize": 2070
+      },
+      {
+        "key": "web-audio-source.entry",
+        "components": [
+          "web-audio-source"
+        ],
+        "bundleId": "p-f7e1ffef",
+        "fileName": "p-f7e1ffef.entry.js",
+        "imports": [
+          "p-d4382112.js",
+          "p-2937528b.js"
+        ],
+        "originalByteSize": 7776
+      },
+      {
+        "key": "web-audio-visualizer.entry",
+        "components": [
+          "web-audio-visualizer"
+        ],
+        "bundleId": "p-dbd11983",
+        "fileName": "p-dbd11983.entry.js",
+        "imports": [
+          "p-d4382112.js",
+          "p-b192f5a1.js",
+          "p-2937528b.js"
+        ],
+        "originalByteSize": 8007
+      },
+      {
+        "key": "web-audio-visualizer-shader.entry",
+        "components": [
+          "web-audio-visualizer-shader"
+        ],
+        "bundleId": "p-8dcf2293",
+        "fileName": "p-8dcf2293.entry.js",
+        "imports": [
+          "p-d4382112.js"
+        ],
+        "originalByteSize": 341
+      }
+    ],
+    "esm": [
+      {
+        "key": "web-audio.entry",
+        "components": [
+          "web-audio"
+        ],
+        "bundleId": "web-audio",
+        "fileName": "web-audio.entry.js",
+        "imports": [
+          "index-b437dc6b.js",
+          "web-audio-debugger-61bd8702.js",
+          "helpers-ae574b08.js",
+          "_commonjsHelpers-f791ee5f.js",
+          "colors-b60c6a8d.js"
+        ],
+        "originalByteSize": 45804
+      },
+      {
+        "key": "web-audio-debugger.entry",
+        "components": [
+          "web-audio-debugger"
+        ],
+        "bundleId": "web-audio-debugger",
+        "fileName": "web-audio-debugger.entry.js",
+        "imports": [
+          "web-audio-debugger-61bd8702.js",
+          "index-b437dc6b.js"
+        ],
+        "originalByteSize": 180
+      },
+      {
+        "key": "web-audio-effect.entry",
+        "components": [
+          "web-audio-effect"
+        ],
+        "bundleId": "web-audio-effect",
+        "fileName": "web-audio-effect.entry.js",
+        "imports": [
+          "index-b437dc6b.js",
+          "helpers-ae574b08.js"
+        ],
+        "originalByteSize": 5000
+      },
+      {
+        "key": "web-audio-sequencer.entry",
+        "components": [
+          "web-audio-sequencer"
+        ],
+        "bundleId": "web-audio-sequencer",
+        "fileName": "web-audio-sequencer.entry.js",
+        "imports": [
+          "index-b437dc6b.js"
+        ],
+        "originalByteSize": 2074
+      },
+      {
+        "key": "web-audio-source.entry",
+        "components": [
+          "web-audio-source"
+        ],
+        "bundleId": "web-audio-source",
+        "fileName": "web-audio-source.entry.js",
+        "imports": [
+          "index-b437dc6b.js",
+          "_commonjsHelpers-f791ee5f.js"
+        ],
+        "originalByteSize": 7795
+      },
+      {
+        "key": "web-audio-visualizer.entry",
+        "components": [
+          "web-audio-visualizer"
+        ],
+        "bundleId": "web-audio-visualizer",
+        "fileName": "web-audio-visualizer.entry.js",
+        "imports": [
+          "index-b437dc6b.js",
+          "colors-b60c6a8d.js",
+          "_commonjsHelpers-f791ee5f.js"
+        ],
+        "originalByteSize": 8031
+      },
+      {
+        "key": "web-audio-visualizer-shader.entry",
+        "components": [
+          "web-audio-visualizer-shader"
+        ],
+        "bundleId": "web-audio-visualizer-shader",
+        "fileName": "web-audio-visualizer-shader.entry.js",
+        "imports": [
+          "index-b437dc6b.js"
+        ],
+        "originalByteSize": 345
+      }
+    ],
+    "es5": [],
+    "system": [],
+    "commonjs": [
+      {
+        "key": "web-audio.entry",
+        "components": [
+          "web-audio"
+        ],
+        "bundleId": "web-audio.cjs",
+        "fileName": "web-audio.cjs.entry.js",
+        "imports": [
+          "index-46d0a7d2.js",
+          "web-audio-debugger-35eb0099.js",
+          "helpers-0c5465f5.js",
+          "_commonjsHelpers-5d04ef05.js",
+          "colors-1fa1fe7f.js"
+        ],
+        "originalByteSize": 45882
+      },
+      {
+        "key": "web-audio-debugger.entry",
+        "components": [
+          "web-audio-debugger"
+        ],
+        "bundleId": "web-audio-debugger.cjs",
+        "fileName": "web-audio-debugger.cjs.entry.js",
+        "imports": [
+          "web-audio-debugger-35eb0099.js",
+          "index-46d0a7d2.js"
+        ],
+        "originalByteSize": 322
+      },
+      {
+        "key": "web-audio-effect.entry",
+        "components": [
+          "web-audio-effect"
+        ],
+        "bundleId": "web-audio-effect.cjs",
+        "fileName": "web-audio-effect.cjs.entry.js",
+        "imports": [
+          "index-46d0a7d2.js",
+          "helpers-0c5465f5.js"
+        ],
+        "originalByteSize": 5060
+      },
+      {
+        "key": "web-audio-sequencer.entry",
+        "components": [
+          "web-audio-sequencer"
+        ],
+        "bundleId": "web-audio-sequencer.cjs",
+        "fileName": "web-audio-sequencer.cjs.entry.js",
+        "imports": [
+          "index-46d0a7d2.js"
+        ],
+        "originalByteSize": 2140
+      },
+      {
+        "key": "web-audio-source.entry",
+        "components": [
+          "web-audio-source"
+        ],
+        "bundleId": "web-audio-source.cjs",
+        "fileName": "web-audio-source.cjs.entry.js",
+        "imports": [
+          "index-46d0a7d2.js",
+          "_commonjsHelpers-5d04ef05.js"
+        ],
+        "originalByteSize": 7860
+      },
+      {
+        "key": "web-audio-visualizer.entry",
+        "components": [
+          "web-audio-visualizer"
+        ],
+        "bundleId": "web-audio-visualizer.cjs",
+        "fileName": "web-audio-visualizer.cjs.entry.js",
+        "imports": [
+          "index-46d0a7d2.js",
+          "colors-1fa1fe7f.js",
+          "_commonjsHelpers-5d04ef05.js"
+        ],
+        "originalByteSize": 8104
+      },
+      {
+        "key": "web-audio-visualizer-shader.entry",
+        "components": [
+          "web-audio-visualizer-shader"
+        ],
+        "bundleId": "web-audio-visualizer-shader.cjs",
+        "fileName": "web-audio-visualizer-shader.cjs.entry.js",
+        "imports": [
+          "index-46d0a7d2.js"
+        ],
+        "originalByteSize": 411
+      }
+    ]
+  },
+  "components": [
+    {
+      "tag": "web-audio",
+      "path": "./src/components/web-audio/web-audio.js",
+      "source": "./src/components/web-audio/web-audio.tsx",
+      "elementRef": "element",
+      "componentClassName": "WebAudio",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "source",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(name: any) => Promise<HTMLWebAudioSourceElement>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              },
+              "HTMLWebAudioSourceElement": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<HTMLWebAudioSourceElement>"
+          },
+          "internal": false
+        },
+        {
+          "name": "get_context",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<AudioContext>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              },
+              "AudioContext": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<AudioContext>"
+          },
+          "internal": false
+        },
+        {
+          "name": "is_prepared",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<Boolean>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              },
+              "Boolean": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<Boolean>"
+          },
+          "internal": false
+        },
+        {
+          "name": "stop",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
+        {
+          "name": "connect_the_world",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<boolean>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<boolean>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "attribute": "name",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"web_audio\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "autoplay",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "Boolean",
+            "resolved": "Boolean",
+            "references": {
+              "Boolean": {
+                "location": "global"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "midi",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "Boolean",
+            "resolved": "Boolean",
+            "references": {
+              "Boolean": {
+                "location": "global"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": [
+        {
+          "name": "debugger"
+        },
+        {
+          "name": "prepared"
+        },
+        {
+          "name": "context"
+        },
+        {
+          "name": "gain"
+        },
+        {
+          "name": "sources"
+        },
+        {
+          "name": "_sources"
+        },
+        {
+          "name": "_currentSource"
+        },
+        {
+          "name": "keys"
+        },
+        {
+          "name": "externalFiles"
+        },
+        {
+          "name": "visualizers"
+        },
+        {
+          "name": "previousVisualizer"
+        },
+        {
+          "name": "visualizerNodes"
+        }
+      ]
+    },
+    {
+      "tag": "web-audio-debugger",
+      "path": "./src/components/web-audio-debugger/web-audio-debugger.js",
+      "source": "./src/components/web-audio-debugger/web-audio-debugger.tsx",
+      "elementRef": null,
+      "componentClassName": "WebAudioDebugger",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "addHistory",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(string: History) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              },
+              "History": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "count",
+          "type": "number",
+          "attribute": "count",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "50",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "history"
+        }
+      ]
+    },
+    {
+      "tag": "web-audio-effect",
+      "path": "./src/components/web-audio-effect/web-audio-effect.js",
+      "source": "./src/components/web-audio-effect/web-audio-effect.tsx",
+      "elementRef": "element",
+      "componentClassName": "WebAudioEffect",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "attachEffect",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(context: any, source: any) => Promise<string>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              },
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<string>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "type",
+          "type": "string",
+          "attribute": "type",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "use",
+          "type": "string",
+          "attribute": "use",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "attribute": "method",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"lowshelf\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "attribute": "value",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "1.0",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "responds",
+          "type": "string",
+          "attribute": "responds",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "midicontroller",
+          "type": "number",
+          "attribute": "midicontroller",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "0",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "axis",
+          "type": "string",
+          "attribute": "axis",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"x\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "_use"
+        },
+        {
+          "name": "effect"
+        },
+        {
+          "name": "context"
+        },
+        {
+          "name": "source"
+        },
+        {
+          "name": "parent"
+        }
+      ]
+    },
+    {
+      "tag": "web-audio-sequencer",
+      "path": "./src/components/web-audio-sequencer/web-audio-sequencer.js",
+      "source": "./src/components/web-audio-sequencer/web-audio-sequencer.tsx",
+      "elementRef": null,
+      "componentClassName": "WebAudioSequencer",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "play",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
+        {
+          "name": "stop",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "attribute": "name",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"web_audio_sequencer\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "autoplay",
+          "type": "boolean",
+          "attribute": "autoplay",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "taps",
+          "type": "number",
+          "attribute": "taps",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "4",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "tempo",
+          "type": "number",
+          "attribute": "tempo",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "custom",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "async () => { }",
+          "complexType": {
+            "original": "Function",
+            "resolved": "Function",
+            "references": {
+              "Function": {
+                "location": "global"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "context"
+        },
+        {
+          "name": "iterations"
+        },
+        {
+          "name": "startTime"
+        },
+        {
+          "name": "noteTime"
+        },
+        {
+          "name": "currentTap"
+        },
+        {
+          "name": "totalPlayTime"
+        },
+        {
+          "name": "timer"
+        }
+      ]
+    },
+    {
+      "tag": "web-audio-source",
+      "path": "./src/components/web-audio-source/web-audio-source.js",
+      "source": "./src/components/web-audio-source/web-audio-source.tsx",
+      "elementRef": "element",
+      "componentClassName": "WebAudioSource",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [
+        {
+          "name": "update",
+          "method": "update",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "complexType": {
+            "original": "any",
+            "resolved": "any",
+            "references": {}
+          },
+          "internal": false
+        }
+      ],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "getBuffer",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<AudioBuffer>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              },
+              "AudioBuffer": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<AudioBuffer>"
+          },
+          "internal": false
+        },
+        {
+          "name": "webAudio",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<HTMLElement>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              },
+              "HTMLElement": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<HTMLElement>"
+          },
+          "internal": false
+        },
+        {
+          "name": "gain",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(place?: string) => Promise<GainNode>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              },
+              "GainNode": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<GainNode>"
+          },
+          "internal": false
+        },
+        {
+          "name": "getDuration",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<number>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<number>"
+          },
+          "internal": false
+        },
+        {
+          "name": "prepare",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
+        {
+          "name": "play",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
+        {
+          "name": "skipTo",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(time: any) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
+        {
+          "name": "pause",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
+        {
+          "name": "toggle",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
+        {
+          "name": "stop",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
+        {
+          "name": "assignBuffer",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(webAudio: any, buffer: any) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              },
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "src",
+          "type": "string",
+          "attribute": "src",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "attribute": "name",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "inert",
+          "type": "boolean",
+          "attribute": "inert",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "midikey",
+          "type": "number",
+          "attribute": "midikey",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "0",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "midichannel",
+          "type": "number",
+          "attribute": "midichannel",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "1",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "prepared",
+          "type": "boolean",
+          "attribute": "prepared",
+          "reflect": false,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "effectsvolume",
+          "type": "number",
+          "attribute": "effectsvolume",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "100",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "playing",
+          "type": "boolean",
+          "attribute": "playing",
+          "reflect": false,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "webAudioWrapper"
+        },
+        {
+          "name": "status"
+        },
+        {
+          "name": "context"
+        },
+        {
+          "name": "masterGain"
+        },
+        {
+          "name": "wetGain"
+        },
+        {
+          "name": "dryGain"
+        },
+        {
+          "name": "channelGain"
+        },
+        {
+          "name": "effects"
+        },
+        {
+          "name": "instances"
+        },
+        {
+          "name": "source"
+        },
+        {
+          "name": "buffer"
+        },
+        {
+          "name": "entry"
+        },
+        {
+          "name": "duration"
+        },
+        {
+          "name": "startTime"
+        },
+        {
+          "name": "pausedTime"
+        },
+        {
+          "name": "elapsedTime"
+        }
+      ]
+    },
+    {
+      "tag": "web-audio-visualizer",
+      "path": "./src/components/web-audio-visualizer/web-audio-visualizer.js",
+      "source": "./src/components/web-audio-visualizer/web-audio-visualizer.tsx",
+      "elementRef": "element",
+      "componentClassName": "WebAudioVisualizer",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "connect",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(context: AudioContext, destination?: any) => Promise<this>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              },
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              },
+              "AudioContext": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<this>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "for",
+          "type": "string",
+          "attribute": "for",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"web_audio\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "attribute": "type",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"wave\"",
+          "complexType": {
+            "original": "string | \"wave\" | \"bars\" | \"circle\" | \"bars2\"",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "smoothing",
+          "type": "number",
+          "attribute": "smoothing",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "0.7",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "attribute": "size",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "1024",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "attribute": "color",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"white\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "attribute": "width",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "1024",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "attribute": "height",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "1024",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "analyser",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "AnalyserNode",
+            "resolved": "AnalyserNode",
+            "references": {
+              "AnalyserNode": {
+                "location": "global"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "renderer",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "AnalyserNode",
+            "resolved": "AnalyserNode",
+            "references": {
+              "AnalyserNode": {
+                "location": "global"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "_color",
+          "type": "any",
+          "attribute": "_color",
+          "reflect": false,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "any",
+            "resolved": "any",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "canvasCTX"
+        },
+        {
+          "name": "freqs"
+        },
+        {
+          "name": "times"
+        },
+        {
+          "name": "context"
+        },
+        {
+          "name": "vertex"
+        },
+        {
+          "name": "vertexShader"
+        },
+        {
+          "name": "fragment"
+        },
+        {
+          "name": "fragShader"
+        },
+        {
+          "name": "fragTime"
+        },
+        {
+          "name": "fragSpectrumArray"
+        },
+        {
+          "name": "fragSpectrum"
+        },
+        {
+          "name": "_bufferLength"
+        },
+        {
+          "name": "_dataArray"
+        }
+      ]
+    },
+    {
+      "tag": "web-audio-visualizer-shader",
+      "path": "./src/components/web-audio-visualizer-shader/web-audio-visualizer-shader.js",
+      "source": "./src/components/web-audio-visualizer-shader/web-audio-visualizer-shader.tsx",
+      "elementRef": null,
+      "componentClassName": "WebAudioVisualizerShader",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "type",
+          "type": "string",
+          "attribute": "type",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": []
+    }
+  ],
+  "entries": [
+    {
+      "cmps": [
+        {
+          "tagName": "web-audio",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "WebAudio",
+          "elementRef": "element",
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "name",
+              "type": "string",
+              "attribute": "name",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"web_audio\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "autoplay",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "Boolean",
+                "resolved": "Boolean",
+                "references": {
+                  "Boolean": {
+                    "location": "global"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "midi",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "Boolean",
+                "resolved": "Boolean",
+                "references": {
+                  "Boolean": {
+                    "location": "global"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "debugger"
+            },
+            {
+              "name": "prepared"
+            },
+            {
+              "name": "context"
+            },
+            {
+              "name": "gain"
+            },
+            {
+              "name": "sources"
+            },
+            {
+              "name": "_sources"
+            },
+            {
+              "name": "_currentSource"
+            },
+            {
+              "name": "keys"
+            },
+            {
+              "name": "externalFiles"
+            },
+            {
+              "name": "visualizers"
+            },
+            {
+              "name": "previousVisualizer"
+            },
+            {
+              "name": "visualizerNodes"
+            }
+          ],
+          "methods": [
+            {
+              "name": "source",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(name: any) => Promise<HTMLWebAudioSourceElement>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  },
+                  "HTMLWebAudioSourceElement": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<HTMLWebAudioSourceElement>"
+              },
+              "internal": false
+            },
+            {
+              "name": "get_context",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<AudioContext>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  },
+                  "AudioContext": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<AudioContext>"
+              },
+              "internal": false
+            },
+            {
+              "name": "is_prepared",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<Boolean>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  },
+                  "Boolean": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<Boolean>"
+              },
+              "internal": false
+            },
+            {
+              "name": "stop",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
+            {
+              "name": "connect_the_world",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<boolean>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<boolean>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio/web-audio.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio/web-audio.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio/web-audio.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": true,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": false,
+          "hasState": true,
+          "hasStyle": false,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": false,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "web-audio.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "web-audio-debugger",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "WebAudioDebugger",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "count",
+              "type": "number",
+              "attribute": "count",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "50",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "history"
+            }
+          ],
+          "methods": [
+            {
+              "name": "addHistory",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(string: History) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  },
+                  "History": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "WEB-AUDIO-DEBUGGER",
+              "styleStr": null,
+              "styleIdentifier": "webAudioDebuggerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-debugger/web-audio-debugger.css",
+                  "relativePath": "web-audio-debugger.css",
+                  "originalComponentPath": "web-audio-debugger.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-debugger/web-audio-debugger.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-debugger/web-audio-debugger.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-debugger/web-audio-debugger.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [
+            "div",
+            "p"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "web-audio-debugger.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "web-audio-effect",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "WebAudioEffect",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "type",
+              "type": "string",
+              "attribute": "type",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "use",
+              "type": "string",
+              "attribute": "use",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "method",
+              "type": "string",
+              "attribute": "method",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"lowshelf\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "value",
+              "type": "number",
+              "attribute": "value",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "1.0",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "responds",
+              "type": "string",
+              "attribute": "responds",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "midicontroller",
+              "type": "number",
+              "attribute": "midicontroller",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "0",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "axis",
+              "type": "string",
+              "attribute": "axis",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"x\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "_use"
+            },
+            {
+              "name": "effect"
+            },
+            {
+              "name": "context"
+            },
+            {
+              "name": "source"
+            },
+            {
+              "name": "parent"
+            }
+          ],
+          "methods": [
+            {
+              "name": "attachEffect",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(context: any, source: any) => Promise<string>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  },
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<string>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-effect/web-audio-effect.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-effect/web-audio-effect.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-effect/web-audio-effect.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": false,
+          "hasState": true,
+          "hasStyle": false,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": false,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "web-audio-effect.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "web-audio-sequencer",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "WebAudioSequencer",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "name",
+              "type": "string",
+              "attribute": "name",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"web_audio_sequencer\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "autoplay",
+              "type": "boolean",
+              "attribute": "autoplay",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "taps",
+              "type": "number",
+              "attribute": "taps",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "4",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "tempo",
+              "type": "number",
+              "attribute": "tempo",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "custom",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "async () => { }",
+              "complexType": {
+                "original": "Function",
+                "resolved": "Function",
+                "references": {
+                  "Function": {
+                    "location": "global"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "iterations"
+            },
+            {
+              "name": "startTime"
+            },
+            {
+              "name": "noteTime"
+            },
+            {
+              "name": "currentTap"
+            },
+            {
+              "name": "totalPlayTime"
+            },
+            {
+              "name": "timer"
+            }
+          ],
+          "methods": [
+            {
+              "name": "play",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
+            {
+              "name": "stop",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-sequencer/web-audio-sequencer.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-sequencer/web-audio-sequencer.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-sequencer/web-audio-sequencer.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": true,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": false,
+          "hasState": true,
+          "hasStyle": false,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": false,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "web-audio-sequencer.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "web-audio-source",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "WebAudioSource",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "src",
+              "type": "string",
+              "attribute": "src",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "attribute": "name",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "inert",
+              "type": "boolean",
+              "attribute": "inert",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "midikey",
+              "type": "number",
+              "attribute": "midikey",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "0",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "midichannel",
+              "type": "number",
+              "attribute": "midichannel",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "1",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "prepared",
+              "type": "boolean",
+              "attribute": "prepared",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "effectsvolume",
+              "type": "number",
+              "attribute": "effectsvolume",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "100",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "playing",
+              "type": "boolean",
+              "attribute": "playing",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "webAudioWrapper"
+            },
+            {
+              "name": "status"
+            },
+            {
+              "name": "context"
+            },
+            {
+              "name": "masterGain"
+            },
+            {
+              "name": "wetGain"
+            },
+            {
+              "name": "dryGain"
+            },
+            {
+              "name": "channelGain"
+            },
+            {
+              "name": "effects"
+            },
+            {
+              "name": "instances"
+            },
+            {
+              "name": "source"
+            },
+            {
+              "name": "buffer"
+            },
+            {
+              "name": "entry"
+            },
+            {
+              "name": "duration"
+            },
+            {
+              "name": "startTime"
+            },
+            {
+              "name": "pausedTime"
+            },
+            {
+              "name": "elapsedTime"
+            }
+          ],
+          "methods": [
+            {
+              "name": "getBuffer",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<AudioBuffer>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  },
+                  "AudioBuffer": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<AudioBuffer>"
+              },
+              "internal": false
+            },
+            {
+              "name": "webAudio",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<HTMLElement>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  },
+                  "HTMLElement": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<HTMLElement>"
+              },
+              "internal": false
+            },
+            {
+              "name": "gain",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(place?: string) => Promise<GainNode>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  },
+                  "GainNode": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<GainNode>"
+              },
+              "internal": false
+            },
+            {
+              "name": "getDuration",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<number>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<number>"
+              },
+              "internal": false
+            },
+            {
+              "name": "prepare",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
+            {
+              "name": "play",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
+            {
+              "name": "skipTo",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(time: any) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
+            {
+              "name": "pause",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
+            {
+              "name": "toggle",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
+            {
+              "name": "stop",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
+            {
+              "name": "assignBuffer",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(webAudio: any, buffer: any) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  },
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [
+            {
+              "name": "update",
+              "method": "update",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [],
+          "styles": [],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-source/web-audio-source.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-source/web-audio-source.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-source/web-audio-source.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": true,
+          "hasReflect": true,
+          "hasRenderFn": false,
+          "hasState": true,
+          "hasStyle": false,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": false,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "web-audio-source.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "web-audio-visualizer",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "WebAudioVisualizer",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "for",
+              "type": "string",
+              "attribute": "for",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"web_audio\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "attribute": "type",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"wave\"",
+              "complexType": {
+                "original": "string | \"wave\" | \"bars\" | \"circle\" | \"bars2\"",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "smoothing",
+              "type": "number",
+              "attribute": "smoothing",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "0.7",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "size",
+              "type": "number",
+              "attribute": "size",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "1024",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "color",
+              "type": "string",
+              "attribute": "color",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"white\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "width",
+              "type": "number",
+              "attribute": "width",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "1024",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "height",
+              "type": "number",
+              "attribute": "height",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "1024",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "analyser",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "AnalyserNode",
+                "resolved": "AnalyserNode",
+                "references": {
+                  "AnalyserNode": {
+                    "location": "global"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "renderer",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "AnalyserNode",
+                "resolved": "AnalyserNode",
+                "references": {
+                  "AnalyserNode": {
+                    "location": "global"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "_color",
+              "type": "any",
+              "attribute": "_color",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "canvasCTX"
+            },
+            {
+              "name": "freqs"
+            },
+            {
+              "name": "times"
+            },
+            {
+              "name": "context"
+            },
+            {
+              "name": "vertex"
+            },
+            {
+              "name": "vertexShader"
+            },
+            {
+              "name": "fragment"
+            },
+            {
+              "name": "fragShader"
+            },
+            {
+              "name": "fragTime"
+            },
+            {
+              "name": "fragSpectrumArray"
+            },
+            {
+              "name": "fragSpectrum"
+            },
+            {
+              "name": "_bufferLength"
+            },
+            {
+              "name": "_dataArray"
+            }
+          ],
+          "methods": [
+            {
+              "name": "connect",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(context: AudioContext, destination?: any) => Promise<this>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  },
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  },
+                  "AudioContext": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<this>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [
+            {
+              "propName": "color",
+              "methodName": "handleColorChange"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "WEB-AUDIO-VISUALIZER",
+              "styleStr": null,
+              "styleIdentifier": "webAudioVisualizerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-visualizer/web-audio-visualizer.css",
+                  "relativePath": "web-audio-visualizer.css",
+                  "originalComponentPath": "web-audio-visualizer.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-visualizer/web-audio-visualizer.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-visualizer/web-audio-visualizer.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-visualizer/web-audio-visualizer.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": true,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": true,
+          "hasReflect": true,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "id"
+          ],
+          "htmlTagNames": [
+            "canvas"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "web-audio-visualizer.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "web-audio-visualizer-shader",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "WebAudioVisualizerShader",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "type",
+              "type": "string",
+              "attribute": "type",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-visualizer-shader/web-audio-visualizer-shader.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-visualizer-shader/web-audio-visualizer-shader.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/audio/src/components/web-audio-visualizer-shader/web-audio-visualizer-shader.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": false,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": false,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "web-audio-visualizer-shader.entry"
+    }
+  ],
+  "componentGraph": {
+    "sc-web-audio": [
+      "p-d4382112.js",
+      "p-20214f08.js",
+      "p-ed3e2a5d.js",
+      "p-2937528b.js",
+      "p-b192f5a1.js"
+    ],
+    "sc-web-audio-debugger": [
+      "p-20214f08.js",
+      "p-d4382112.js"
+    ],
+    "sc-web-audio-effect": [
+      "p-d4382112.js",
+      "p-ed3e2a5d.js"
+    ],
+    "sc-web-audio-sequencer": [
+      "p-d4382112.js"
+    ],
+    "sc-web-audio-source": [
+      "p-d4382112.js",
+      "p-2937528b.js"
+    ],
+    "sc-web-audio-visualizer": [
+      "p-d4382112.js",
+      "p-b192f5a1.js",
+      "p-2937528b.js"
+    ],
+    "sc-web-audio-visualizer-shader": [
+      "p-d4382112.js"
+    ]
+  },
+  "sourceGraph": {
+    "./src/components/bufferloader.tsx": [],
+    "./src/components/effects.tsx": [],
+    "./src/components/helpers.tsx": [],
+    "./src/components/web-audio-debugger/web-audio-debugger.tsx": [],
+    "./src/components/web-audio-effect/web-audio-effect.tsx": [
+      "./src/components/effects",
+      "./src/components/helpers"
+    ],
+    "./src/components/web-audio-sequencer/web-audio-sequencer.tsx": [],
+    "./src/components/web-audio-source/web-audio-source.tsx": [],
+    "./src/components/web-audio-visualizer-shader/web-audio-visualizer-shader.tsx": [],
+    "./src/components/web-audio-visualizer/visualizations/bars.ts": [],
+    "./src/components/web-audio-visualizer/visualizations/bars2.ts": [],
+    "./src/components/web-audio-visualizer/visualizations/circle.ts": [
+      "./src/components/web-audio-visualizer/visualizations/utils"
+    ],
+    "./src/components/web-audio-visualizer/visualizations/index.ts": [],
+    "./src/components/web-audio-visualizer/visualizations/utils.ts": [],
+    "./src/components/web-audio-visualizer/visualizations/wave.ts": [],
+    "./src/components/web-audio-visualizer/web-audio-visualizer.tsx": [
+      "./src/components/web-audio-visualizer/visualizations"
+    ],
+    "./src/components/web-audio/web-audio.tsx": [
+      "./src/components/bufferloader",
+      "./src/components/helpers",
+      "./src/components/web-audio-debugger/web-audio-debugger"
+    ],
+    "./src/index.ts": []
+  },
+  "collections": []
+}

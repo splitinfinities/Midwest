@@ -1,0 +1,405 @@
+{
+  "timestamp": "2021-10-06T16:17:02",
+  "compiler": {
+    "name": "node",
+    "version": "16.9.1"
+  },
+  "app": {
+    "namespace": "device",
+    "fsNamespace": "device",
+    "components": 1,
+    "entries": 1,
+    "bundles": 54,
+    "outputs": [
+      {
+        "name": "dist-collection",
+        "files": 4,
+        "generatedFiles": [
+          "./dist/collection/components/device/device.js",
+          "./dist/collection/components/device/device.js.map",
+          "./dist/collection/index.js",
+          "./dist/collection/index.js.map"
+        ]
+      },
+      {
+        "name": "dist-custom-elements",
+        "files": 6,
+        "generatedFiles": [
+          "./dist/components/index.d.ts",
+          "./dist/components/index.js",
+          "./dist/components/index.js.map",
+          "./dist/components/midwest-device.d.ts",
+          "./dist/components/midwest-device.js",
+          "./dist/components/midwest-device.js.map"
+        ]
+      },
+      {
+        "name": "dist-custom-elements-bundle",
+        "files": 3,
+        "generatedFiles": [
+          "./dist/custom-elements/index.d.ts",
+          "./dist/custom-elements/index.js",
+          "./dist/custom-elements/index.js.map"
+        ]
+      },
+      {
+        "name": "dist-lazy",
+        "files": 38,
+        "generatedFiles": [
+          "./dist/cjs/device.cjs.js",
+          "./dist/cjs/device.cjs.js.map",
+          "./dist/cjs/index-6bbc0d7b.js",
+          "./dist/cjs/index-6bbc0d7b.js.map",
+          "./dist/cjs/index.cjs.js",
+          "./dist/cjs/index.cjs.js.map",
+          "./dist/cjs/loader.cjs.js",
+          "./dist/cjs/loader.cjs.js.map",
+          "./dist/cjs/midwest-device.cjs.entry.js",
+          "./dist/cjs/midwest-device.cjs.entry.js.map",
+          "./dist/device/device.esm.js",
+          "./dist/device/device.esm.js.map",
+          "./dist/device/index.esm.js",
+          "./dist/device/index.esm.js.map",
+          "./dist/device/p-c102ba39.js",
+          "./dist/device/p-c102ba39.js.map",
+          "./dist/device/p-cace45b7.entry.js",
+          "./dist/device/p-cace45b7.entry.js.map",
+          "./dist/esm/device.js",
+          "./dist/esm/device.js.map",
+          "./dist/esm/index-62cd2ebc.js",
+          "./dist/esm/index-62cd2ebc.js.map",
+          "./dist/esm/index.js",
+          "./dist/esm/index.js.map",
+          "./dist/esm/loader.js",
+          "./dist/esm/loader.js.map",
+          "./dist/esm/midwest-device.entry.js",
+          "./dist/esm/midwest-device.entry.js.map",
+          "./dist/index.cjs.js",
+          "./dist/index.js",
+          "./www/build/device.esm.js",
+          "./www/build/device.esm.js.map",
+          "./www/build/index.esm.js",
+          "./www/build/index.esm.js.map",
+          "./www/build/p-c102ba39.js",
+          "./www/build/p-c102ba39.js.map",
+          "./www/build/p-cace45b7.entry.js",
+          "./www/build/p-cace45b7.entry.js.map"
+        ]
+      },
+      {
+        "name": "dist-types",
+        "files": 1,
+        "generatedFiles": [
+          "./dist/types/stencil-public-runtime.d.ts"
+        ]
+      },
+      {
+        "name": "www",
+        "files": 2,
+        "generatedFiles": [
+          "./www/host.config.json",
+          "./www/index.html"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
+    "hashedFileNameLength": 8,
+    "buildEs5": false
+  },
+  "formats": {
+    "esmBrowser": [
+      {
+        "key": "midwest-device.entry",
+        "components": [
+          "midwest-device"
+        ],
+        "bundleId": "p-cace45b7",
+        "fileName": "p-cace45b7.entry.js",
+        "imports": [
+          "p-c102ba39.js"
+        ],
+        "originalByteSize": 5257
+      }
+    ],
+    "esm": [
+      {
+        "key": "midwest-device.entry",
+        "components": [
+          "midwest-device"
+        ],
+        "bundleId": "midwest-device",
+        "fileName": "midwest-device.entry.js",
+        "imports": [
+          "index-62cd2ebc.js"
+        ],
+        "originalByteSize": 5261
+      }
+    ],
+    "es5": [],
+    "system": [],
+    "commonjs": [
+      {
+        "key": "midwest-device.entry",
+        "components": [
+          "midwest-device"
+        ],
+        "bundleId": "midwest-device.cjs",
+        "fileName": "midwest-device.cjs.entry.js",
+        "imports": [
+          "index-6bbc0d7b.js"
+        ],
+        "originalByteSize": 5360
+      }
+    ]
+  },
+  "components": [
+    {
+      "tag": "midwest-device",
+      "path": "./src/components/device/device.js",
+      "source": "./src/components/device/device.tsx",
+      "elementRef": null,
+      "componentClassName": "Devices",
+      "assetsDirs": [
+        {
+          "absolutePath": "/Users/will/Sites/midwest/packages/device/src/components/device/vendor",
+          "cmpRelativePath": "vendor",
+          "originalComponentPath": "vendor"
+        }
+      ],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "frame",
+          "type": "string",
+          "attribute": "frame",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"macbook-pro\"",
+          "complexType": {
+            "original": "\"apple-tv\"|\"apple-tv-in-app\"|\"apple-watch-42-black\"|\"apple-watch-42-white\"|\"apple-watch-44-black\"|\"apple-watch-44-white\"|\"imac-pro\"|\"imac\"|\"ipad-pro-portrait\"|\"ipad-pro-landscape\"|\"iphone-8-silver\"|\"iphone-8-spacegray\"|\"iphone-8-plus-silver\"|\"iphone-8-plus-spacegray\"|\"iphone-xs\"|\"iphone-xs-max\"|\"ipod-touch-portrait-blue\"|\"ipod-touch-landscape-blue\"|\"ipod-touch-portrait-silver\"|\"ipod-touch-landscape-silver\"|\"macbook-air\"|\"macbook-pro\"",
+            "resolved": "\"apple-tv\" | \"apple-tv-in-app\" | \"apple-watch-42-black\" | \"apple-watch-42-white\" | \"apple-watch-44-black\" | \"apple-watch-44-white\" | \"imac-pro\" | \"imac\" | \"ipad-pro-portrait\" | \"ipad-pro-landscape\" | \"iphone-8-silver\" | \"iphone-8-spacegray\" | \"iphone-8-plus-silver\" | \"iphone-8-plus-spacegray\" | \"iphone-xs\" | \"iphone-xs-max\" | \"ipod-touch-portrait-blue\" | \"ipod-touch-landscape-blue\" | \"ipod-touch-portrait-silver\" | \"ipod-touch-landscape-silver\" | \"macbook-air\" | \"macbook-pro\"",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "The Device Name"
+          },
+          "internal": false
+        },
+        {
+          "name": "retina",
+          "type": "boolean",
+          "attribute": "retina",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": []
+    }
+  ],
+  "entries": [
+    {
+      "cmps": [
+        {
+          "tagName": "midwest-device",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "Devices",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "frame",
+              "type": "string",
+              "attribute": "frame",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"macbook-pro\"",
+              "complexType": {
+                "original": "\"apple-tv\"|\"apple-tv-in-app\"|\"apple-watch-42-black\"|\"apple-watch-42-white\"|\"apple-watch-44-black\"|\"apple-watch-44-white\"|\"imac-pro\"|\"imac\"|\"ipad-pro-portrait\"|\"ipad-pro-landscape\"|\"iphone-8-silver\"|\"iphone-8-spacegray\"|\"iphone-8-plus-silver\"|\"iphone-8-plus-spacegray\"|\"iphone-xs\"|\"iphone-xs-max\"|\"ipod-touch-portrait-blue\"|\"ipod-touch-landscape-blue\"|\"ipod-touch-portrait-silver\"|\"ipod-touch-landscape-silver\"|\"macbook-air\"|\"macbook-pro\"",
+                "resolved": "\"apple-tv\" | \"apple-tv-in-app\" | \"apple-watch-42-black\" | \"apple-watch-42-white\" | \"apple-watch-44-black\" | \"apple-watch-44-white\" | \"imac-pro\" | \"imac\" | \"ipad-pro-portrait\" | \"ipad-pro-landscape\" | \"iphone-8-silver\" | \"iphone-8-spacegray\" | \"iphone-8-plus-silver\" | \"iphone-8-plus-spacegray\" | \"iphone-xs\" | \"iphone-xs-max\" | \"ipod-touch-portrait-blue\" | \"ipod-touch-landscape-blue\" | \"ipod-touch-portrait-silver\" | \"ipod-touch-landscape-silver\" | \"macbook-air\" | \"macbook-pro\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "The Device Name"
+              },
+              "internal": false
+            },
+            {
+              "name": "retina",
+              "type": "boolean",
+              "attribute": "retina",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MIDWEST-DEVICE",
+              "styleStr": null,
+              "styleIdentifier": "midwestDeviceStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/device/src/components/device/device.css",
+                  "relativePath": "device.css",
+                  "originalComponentPath": "device.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [
+            {
+              "absolutePath": "/Users/will/Sites/midwest/packages/device/src/components/device/vendor",
+              "cmpRelativePath": "vendor",
+              "originalComponentPath": "vendor"
+            }
+          ],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/device/src/components/device/device.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/device/src/components/device/device.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/device/src/components/device/device.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": true,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": true,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "style",
+            "src",
+            "class",
+            "name"
+          ],
+          "htmlTagNames": [
+            "img",
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "midwest-device.entry"
+    }
+  ],
+  "componentGraph": {
+    "sc-midwest-device": [
+      "p-c102ba39.js"
+    ]
+  },
+  "sourceGraph": {
+    "./src/components/device/device.tsx": [],
+    "./src/index.ts": []
+  },
+  "collections": []
+}
