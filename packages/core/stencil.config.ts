@@ -3,12 +3,12 @@ import { postcss } from "@stencil/postcss";
 import tailwindcss from "tailwindcss";
 import autoprefixer from "autoprefixer";
 import designTokenFunction from "postcss-design-token-function";
-import { colors, typicalStencilConfig } from "@midwest-design/common";
-import postcssImport from "postcss-import";
+import { colors, typicalStencilConfig, frameworkBindings } from '@midwest-design/common';
+import postcssImport from 'postcss-import';
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./src/**/*.tsx', './src/index.html', './src/**/*.css', , './src/**/*.scss'],
-  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
+  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
 });
 
 export const config: Config = {
@@ -20,6 +20,7 @@ export const config: Config = {
     openBrowser: false,
     port: 3333,
   },
+  outputTargets: [...typicalStencilConfig.outputTargets, ...frameworkBindings('core')],
   plugins: [
     postcss({
       injectGlobalPaths: ['src/css/shared.css'],

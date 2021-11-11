@@ -1,8 +1,8 @@
 {
-  "timestamp": "2021-10-06T16:18:02",
+  "timestamp": "2021-11-11T15:46:23",
   "compiler": {
     "name": "node",
-    "version": "16.9.1"
+    "version": "17.0.1"
   },
   "app": {
     "namespace": "media",
@@ -51,95 +51,95 @@
         "name": "dist-custom-elements",
         "files": 80,
         "generatedFiles": [
-          "./dist/components/_commonjsHelpers.js",
-          "./dist/components/_commonjsHelpers.js.map",
-          "./dist/components/colors.js",
-          "./dist/components/colors.js.map",
-          "./dist/components/css-custom-properties.min.js",
-          "./dist/components/css-custom-properties.min.js.map",
-          "./dist/components/helpers.js",
-          "./dist/components/helpers.js.map",
-          "./dist/components/helpers2.js",
-          "./dist/components/helpers2.js.map",
-          "./dist/components/icon.js",
-          "./dist/components/icon.js.map",
-          "./dist/components/index.d.ts",
-          "./dist/components/index.js",
-          "./dist/components/index.js.map",
-          "./dist/components/index2.js",
-          "./dist/components/index2.js.map",
-          "./dist/components/ion-icon.js",
-          "./dist/components/ion-icon.js.map",
-          "./dist/components/kaleidoscope.es.js",
-          "./dist/components/kaleidoscope.es.js.map",
-          "./dist/components/midwest-360-image.d.ts",
-          "./dist/components/midwest-360-image.js",
-          "./dist/components/midwest-360-image.js.map",
-          "./dist/components/midwest-360-video.d.ts",
-          "./dist/components/midwest-360-video.js",
-          "./dist/components/midwest-360-video.js.map",
-          "./dist/components/midwest-image.d.ts",
-          "./dist/components/midwest-image.js",
-          "./dist/components/midwest-image.js.map",
-          "./dist/components/midwest-interview-line.d.ts",
-          "./dist/components/midwest-interview-line.js",
-          "./dist/components/midwest-interview-line.js.map",
-          "./dist/components/midwest-interview.d.ts",
-          "./dist/components/midwest-interview.js",
-          "./dist/components/midwest-interview.js.map",
-          "./dist/components/midwest-playlist.d.ts",
-          "./dist/components/midwest-playlist.js",
-          "./dist/components/midwest-playlist.js.map",
-          "./dist/components/midwest-song.d.ts",
-          "./dist/components/midwest-song.js",
-          "./dist/components/midwest-song.js.map",
-          "./dist/components/midwest-video-interview.d.ts",
-          "./dist/components/midwest-video-interview.js",
-          "./dist/components/midwest-video-interview.js.map",
-          "./dist/components/midwest-video.d.ts",
-          "./dist/components/midwest-video.js",
-          "./dist/components/midwest-video.js.map",
-          "./dist/components/skeleton-img.d.ts",
-          "./dist/components/skeleton-img.js",
-          "./dist/components/skeleton-img.js.map",
-          "./dist/components/skeleton-img2.js",
-          "./dist/components/skeleton-img2.js.map",
-          "./dist/components/skeleton-text.d.ts",
-          "./dist/components/skeleton-text.js",
-          "./dist/components/skeleton-text.js.map",
-          "./dist/components/video.js",
-          "./dist/components/video.js.map",
-          "./dist/components/web-audio-debugger.js",
-          "./dist/components/web-audio-debugger.js.map",
-          "./dist/components/web-audio-debugger2.js",
-          "./dist/components/web-audio-debugger2.js.map",
-          "./dist/components/web-audio-effect.js",
-          "./dist/components/web-audio-effect.js.map",
-          "./dist/components/web-audio-sequencer.js",
-          "./dist/components/web-audio-sequencer.js.map",
-          "./dist/components/web-audio-source.js",
-          "./dist/components/web-audio-source.js.map",
-          "./dist/components/web-audio-source2.js",
-          "./dist/components/web-audio-source2.js.map",
-          "./dist/components/web-audio-visualizer-shader.js",
-          "./dist/components/web-audio-visualizer-shader.js.map",
-          "./dist/components/web-audio-visualizer.js",
-          "./dist/components/web-audio-visualizer.js.map",
-          "./dist/components/web-audio-visualizer2.js",
-          "./dist/components/web-audio-visualizer2.js.map",
-          "./dist/components/web-audio.js",
-          "./dist/components/web-audio.js.map",
-          "./dist/components/web-audio2.js",
-          "./dist/components/web-audio2.js.map"
+          "./dist/custom-elements/_commonjsHelpers.js",
+          "./dist/custom-elements/_commonjsHelpers.js.map",
+          "./dist/custom-elements/colors.js",
+          "./dist/custom-elements/colors.js.map",
+          "./dist/custom-elements/css-custom-properties.min.js",
+          "./dist/custom-elements/css-custom-properties.min.js.map",
+          "./dist/custom-elements/helpers.js",
+          "./dist/custom-elements/helpers.js.map",
+          "./dist/custom-elements/helpers2.js",
+          "./dist/custom-elements/helpers2.js.map",
+          "./dist/custom-elements/icon.js",
+          "./dist/custom-elements/icon.js.map",
+          "./dist/custom-elements/index.d.ts",
+          "./dist/custom-elements/index.js",
+          "./dist/custom-elements/index.js.map",
+          "./dist/custom-elements/index2.js",
+          "./dist/custom-elements/index2.js.map",
+          "./dist/custom-elements/ion-icon.js",
+          "./dist/custom-elements/ion-icon.js.map",
+          "./dist/custom-elements/kaleidoscope.es.js",
+          "./dist/custom-elements/kaleidoscope.es.js.map",
+          "./dist/custom-elements/midwest-360-image.d.ts",
+          "./dist/custom-elements/midwest-360-image.js",
+          "./dist/custom-elements/midwest-360-image.js.map",
+          "./dist/custom-elements/midwest-360-video.d.ts",
+          "./dist/custom-elements/midwest-360-video.js",
+          "./dist/custom-elements/midwest-360-video.js.map",
+          "./dist/custom-elements/midwest-image.d.ts",
+          "./dist/custom-elements/midwest-image.js",
+          "./dist/custom-elements/midwest-image.js.map",
+          "./dist/custom-elements/midwest-interview-line.d.ts",
+          "./dist/custom-elements/midwest-interview-line.js",
+          "./dist/custom-elements/midwest-interview-line.js.map",
+          "./dist/custom-elements/midwest-interview.d.ts",
+          "./dist/custom-elements/midwest-interview.js",
+          "./dist/custom-elements/midwest-interview.js.map",
+          "./dist/custom-elements/midwest-playlist.d.ts",
+          "./dist/custom-elements/midwest-playlist.js",
+          "./dist/custom-elements/midwest-playlist.js.map",
+          "./dist/custom-elements/midwest-song.d.ts",
+          "./dist/custom-elements/midwest-song.js",
+          "./dist/custom-elements/midwest-song.js.map",
+          "./dist/custom-elements/midwest-video-interview.d.ts",
+          "./dist/custom-elements/midwest-video-interview.js",
+          "./dist/custom-elements/midwest-video-interview.js.map",
+          "./dist/custom-elements/midwest-video.d.ts",
+          "./dist/custom-elements/midwest-video.js",
+          "./dist/custom-elements/midwest-video.js.map",
+          "./dist/custom-elements/skeleton-img.d.ts",
+          "./dist/custom-elements/skeleton-img.js",
+          "./dist/custom-elements/skeleton-img.js.map",
+          "./dist/custom-elements/skeleton-img2.js",
+          "./dist/custom-elements/skeleton-img2.js.map",
+          "./dist/custom-elements/skeleton-text.d.ts",
+          "./dist/custom-elements/skeleton-text.js",
+          "./dist/custom-elements/skeleton-text.js.map",
+          "./dist/custom-elements/video.js",
+          "./dist/custom-elements/video.js.map",
+          "./dist/custom-elements/web-audio-debugger.js",
+          "./dist/custom-elements/web-audio-debugger.js.map",
+          "./dist/custom-elements/web-audio-debugger2.js",
+          "./dist/custom-elements/web-audio-debugger2.js.map",
+          "./dist/custom-elements/web-audio-effect.js",
+          "./dist/custom-elements/web-audio-effect.js.map",
+          "./dist/custom-elements/web-audio-sequencer.js",
+          "./dist/custom-elements/web-audio-sequencer.js.map",
+          "./dist/custom-elements/web-audio-source.js",
+          "./dist/custom-elements/web-audio-source.js.map",
+          "./dist/custom-elements/web-audio-source2.js",
+          "./dist/custom-elements/web-audio-source2.js.map",
+          "./dist/custom-elements/web-audio-visualizer-shader.js",
+          "./dist/custom-elements/web-audio-visualizer-shader.js.map",
+          "./dist/custom-elements/web-audio-visualizer.js",
+          "./dist/custom-elements/web-audio-visualizer.js.map",
+          "./dist/custom-elements/web-audio-visualizer2.js",
+          "./dist/custom-elements/web-audio-visualizer2.js.map",
+          "./dist/custom-elements/web-audio.js",
+          "./dist/custom-elements/web-audio.js.map",
+          "./dist/custom-elements/web-audio2.js",
+          "./dist/custom-elements/web-audio2.js.map"
         ]
       },
       {
         "name": "dist-custom-elements-bundle",
         "files": 3,
         "generatedFiles": [
-          "./dist/custom-elements/index.d.ts",
-          "./dist/custom-elements/index.js",
-          "./dist/custom-elements/index.js.map"
+          "./dist/dist-custom-elements-bundle/index.d.ts",
+          "./dist/dist-custom-elements-bundle/index.js",
+          "./dist/dist-custom-elements-bundle/index.js.map"
         ]
       },
       {
@@ -158,8 +158,8 @@
           "./dist/cjs/helpers-8a5bcc29.js.map",
           "./dist/cjs/index-b3ec0b83.js",
           "./dist/cjs/index-b3ec0b83.js.map",
-          "./dist/cjs/index-bef213f8.js",
-          "./dist/cjs/index-bef213f8.js.map",
+          "./dist/cjs/index-c31ba577.js",
+          "./dist/cjs/index-c31ba577.js.map",
           "./dist/cjs/index.cjs.js",
           "./dist/cjs/index.cjs.js.map",
           "./dist/cjs/ion-icon.cjs.entry.js",
@@ -192,8 +192,8 @@
           "./dist/cjs/skeleton-img_2.cjs.entry.js.map",
           "./dist/cjs/skeleton-text.cjs.entry.js",
           "./dist/cjs/skeleton-text.cjs.entry.js.map",
-          "./dist/cjs/web-audio-debugger-432a9c53.js",
-          "./dist/cjs/web-audio-debugger-432a9c53.js.map",
+          "./dist/cjs/web-audio-debugger-868e9e73.js",
+          "./dist/cjs/web-audio-debugger-868e9e73.js.map",
           "./dist/cjs/web-audio-debugger.cjs.entry.js",
           "./dist/cjs/web-audio-debugger.cjs.entry.js.map",
           "./dist/cjs/web-audio-effect.cjs.entry.js",
@@ -216,8 +216,8 @@
           "./dist/esm/helpers-fb5372c9.js.map",
           "./dist/esm/index-ce34695c.js",
           "./dist/esm/index-ce34695c.js.map",
-          "./dist/esm/index-fed78b95.js",
-          "./dist/esm/index-fed78b95.js.map",
+          "./dist/esm/index-eb5239e3.js",
+          "./dist/esm/index-eb5239e3.js.map",
           "./dist/esm/index.js",
           "./dist/esm/index.js.map",
           "./dist/esm/ion-icon.entry.js",
@@ -250,8 +250,8 @@
           "./dist/esm/skeleton-img_2.entry.js.map",
           "./dist/esm/skeleton-text.entry.js",
           "./dist/esm/skeleton-text.entry.js.map",
-          "./dist/esm/web-audio-debugger-9b29a1f3.js",
-          "./dist/esm/web-audio-debugger-9b29a1f3.js.map",
+          "./dist/esm/web-audio-debugger-e05c6353.js",
+          "./dist/esm/web-audio-debugger-e05c6353.js.map",
           "./dist/esm/web-audio-debugger.entry.js",
           "./dist/esm/web-audio-debugger.entry.js.map",
           "./dist/esm/web-audio-effect.entry.js",
@@ -268,114 +268,114 @@
           "./dist/media/index.esm.js.map",
           "./dist/media/media.esm.js",
           "./dist/media/media.esm.js.map",
-          "./dist/media/p-293d3417.entry.js",
-          "./dist/media/p-293d3417.entry.js.map",
-          "./dist/media/p-4159d14a.entry.js",
-          "./dist/media/p-4159d14a.entry.js.map",
-          "./dist/media/p-4285504d.entry.js",
-          "./dist/media/p-4285504d.entry.js.map",
-          "./dist/media/p-42cc5dcd.entry.js",
-          "./dist/media/p-42cc5dcd.entry.js.map",
-          "./dist/media/p-47207817.entry.js",
-          "./dist/media/p-47207817.entry.js.map",
-          "./dist/media/p-49c01089.entry.js",
-          "./dist/media/p-49c01089.entry.js.map",
-          "./dist/media/p-55c3e305.entry.js",
-          "./dist/media/p-55c3e305.entry.js.map",
+          "./dist/media/p-05d2fbd0.entry.js",
+          "./dist/media/p-05d2fbd0.entry.js.map",
+          "./dist/media/p-14f0afe1.entry.js",
+          "./dist/media/p-14f0afe1.entry.js.map",
+          "./dist/media/p-16903adf.entry.js",
+          "./dist/media/p-16903adf.entry.js.map",
+          "./dist/media/p-1f037712.entry.js",
+          "./dist/media/p-1f037712.entry.js.map",
+          "./dist/media/p-4b963aec.entry.js",
+          "./dist/media/p-4b963aec.entry.js.map",
           "./dist/media/p-5903483d.js",
           "./dist/media/p-5903483d.js.map",
-          "./dist/media/p-7120e366.entry.js",
-          "./dist/media/p-7120e366.entry.js.map",
+          "./dist/media/p-6f4f772f.entry.js",
+          "./dist/media/p-6f4f772f.entry.js.map",
           "./dist/media/p-73c11cad.js",
           "./dist/media/p-73c11cad.js.map",
-          "./dist/media/p-766ad5fa.entry.js",
-          "./dist/media/p-766ad5fa.entry.js.map",
-          "./dist/media/p-77e1d625.entry.js",
-          "./dist/media/p-77e1d625.entry.js.map",
-          "./dist/media/p-7bee87c3.entry.js",
-          "./dist/media/p-7bee87c3.entry.js.map",
-          "./dist/media/p-8c109997.entry.js",
-          "./dist/media/p-8c109997.entry.js.map",
-          "./dist/media/p-8d15415b.entry.js",
-          "./dist/media/p-8d15415b.entry.js.map",
+          "./dist/media/p-7acdf3c2.entry.js",
+          "./dist/media/p-7acdf3c2.entry.js.map",
+          "./dist/media/p-8796c3c8.entry.js",
+          "./dist/media/p-8796c3c8.entry.js.map",
           "./dist/media/p-98a4926c.js",
           "./dist/media/p-98a4926c.js.map",
+          "./dist/media/p-9a52c210.js",
+          "./dist/media/p-9a52c210.js.map",
           "./dist/media/p-9f7e214d.js",
           "./dist/media/p-9f7e214d.js.map",
+          "./dist/media/p-a4f9db0d.entry.js",
+          "./dist/media/p-a4f9db0d.entry.js.map",
           "./dist/media/p-a577e61e.js",
           "./dist/media/p-a577e61e.js.map",
-          "./dist/media/p-a75b338e.entry.js",
-          "./dist/media/p-a75b338e.entry.js.map",
-          "./dist/media/p-acd42121.js",
-          "./dist/media/p-acd42121.js.map",
-          "./dist/media/p-add335f0.entry.js",
-          "./dist/media/p-add335f0.entry.js.map",
+          "./dist/media/p-b167a6ef.entry.js",
+          "./dist/media/p-b167a6ef.entry.js.map",
           "./dist/media/p-b46e1302.js",
           "./dist/media/p-b46e1302.js.map",
-          "./dist/media/p-bb790006.entry.js",
-          "./dist/media/p-bb790006.entry.js.map",
-          "./dist/media/p-c73abe91.js",
-          "./dist/media/p-c73abe91.js.map",
-          "./dist/media/p-c7fcaf2a.entry.js",
-          "./dist/media/p-c7fcaf2a.entry.js.map",
+          "./dist/media/p-c49c1a5f.entry.js",
+          "./dist/media/p-c49c1a5f.entry.js.map",
+          "./dist/media/p-caa225ae.entry.js",
+          "./dist/media/p-caa225ae.entry.js.map",
+          "./dist/media/p-cf3dd4c8.entry.js",
+          "./dist/media/p-cf3dd4c8.entry.js.map",
+          "./dist/media/p-d5d2efae.js",
+          "./dist/media/p-d5d2efae.js.map",
+          "./dist/media/p-deced9e5.entry.js",
+          "./dist/media/p-deced9e5.entry.js.map",
+          "./dist/media/p-e2412bdc.entry.js",
+          "./dist/media/p-e2412bdc.entry.js.map",
           "./dist/media/p-e2c6ae7b.js",
           "./dist/media/p-e2c6ae7b.js.map",
+          "./dist/media/p-e70df386.entry.js",
+          "./dist/media/p-e70df386.entry.js.map",
+          "./dist/media/p-ecd906e5.entry.js",
+          "./dist/media/p-ecd906e5.entry.js.map",
           "./www/build/index.esm.js",
           "./www/build/index.esm.js.map",
           "./www/build/media.esm.js",
           "./www/build/media.esm.js.map",
-          "./www/build/p-293d3417.entry.js",
-          "./www/build/p-293d3417.entry.js.map",
-          "./www/build/p-4159d14a.entry.js",
-          "./www/build/p-4159d14a.entry.js.map",
-          "./www/build/p-4285504d.entry.js",
-          "./www/build/p-4285504d.entry.js.map",
-          "./www/build/p-42cc5dcd.entry.js",
-          "./www/build/p-42cc5dcd.entry.js.map",
-          "./www/build/p-47207817.entry.js",
-          "./www/build/p-47207817.entry.js.map",
-          "./www/build/p-49c01089.entry.js",
-          "./www/build/p-49c01089.entry.js.map",
-          "./www/build/p-55c3e305.entry.js",
-          "./www/build/p-55c3e305.entry.js.map",
+          "./www/build/p-05d2fbd0.entry.js",
+          "./www/build/p-05d2fbd0.entry.js.map",
+          "./www/build/p-14f0afe1.entry.js",
+          "./www/build/p-14f0afe1.entry.js.map",
+          "./www/build/p-16903adf.entry.js",
+          "./www/build/p-16903adf.entry.js.map",
+          "./www/build/p-1f037712.entry.js",
+          "./www/build/p-1f037712.entry.js.map",
+          "./www/build/p-4b963aec.entry.js",
+          "./www/build/p-4b963aec.entry.js.map",
           "./www/build/p-5903483d.js",
           "./www/build/p-5903483d.js.map",
-          "./www/build/p-7120e366.entry.js",
-          "./www/build/p-7120e366.entry.js.map",
+          "./www/build/p-6f4f772f.entry.js",
+          "./www/build/p-6f4f772f.entry.js.map",
           "./www/build/p-73c11cad.js",
           "./www/build/p-73c11cad.js.map",
-          "./www/build/p-766ad5fa.entry.js",
-          "./www/build/p-766ad5fa.entry.js.map",
-          "./www/build/p-77e1d625.entry.js",
-          "./www/build/p-77e1d625.entry.js.map",
-          "./www/build/p-7bee87c3.entry.js",
-          "./www/build/p-7bee87c3.entry.js.map",
-          "./www/build/p-8c109997.entry.js",
-          "./www/build/p-8c109997.entry.js.map",
-          "./www/build/p-8d15415b.entry.js",
-          "./www/build/p-8d15415b.entry.js.map",
+          "./www/build/p-7acdf3c2.entry.js",
+          "./www/build/p-7acdf3c2.entry.js.map",
+          "./www/build/p-8796c3c8.entry.js",
+          "./www/build/p-8796c3c8.entry.js.map",
           "./www/build/p-98a4926c.js",
           "./www/build/p-98a4926c.js.map",
+          "./www/build/p-9a52c210.js",
+          "./www/build/p-9a52c210.js.map",
           "./www/build/p-9f7e214d.js",
           "./www/build/p-9f7e214d.js.map",
+          "./www/build/p-a4f9db0d.entry.js",
+          "./www/build/p-a4f9db0d.entry.js.map",
           "./www/build/p-a577e61e.js",
           "./www/build/p-a577e61e.js.map",
-          "./www/build/p-a75b338e.entry.js",
-          "./www/build/p-a75b338e.entry.js.map",
-          "./www/build/p-acd42121.js",
-          "./www/build/p-acd42121.js.map",
-          "./www/build/p-add335f0.entry.js",
-          "./www/build/p-add335f0.entry.js.map",
+          "./www/build/p-b167a6ef.entry.js",
+          "./www/build/p-b167a6ef.entry.js.map",
           "./www/build/p-b46e1302.js",
           "./www/build/p-b46e1302.js.map",
-          "./www/build/p-bb790006.entry.js",
-          "./www/build/p-bb790006.entry.js.map",
-          "./www/build/p-c73abe91.js",
-          "./www/build/p-c73abe91.js.map",
-          "./www/build/p-c7fcaf2a.entry.js",
-          "./www/build/p-c7fcaf2a.entry.js.map",
+          "./www/build/p-c49c1a5f.entry.js",
+          "./www/build/p-c49c1a5f.entry.js.map",
+          "./www/build/p-caa225ae.entry.js",
+          "./www/build/p-caa225ae.entry.js.map",
+          "./www/build/p-cf3dd4c8.entry.js",
+          "./www/build/p-cf3dd4c8.entry.js.map",
+          "./www/build/p-d5d2efae.js",
+          "./www/build/p-d5d2efae.js.map",
+          "./www/build/p-deced9e5.entry.js",
+          "./www/build/p-deced9e5.entry.js.map",
+          "./www/build/p-e2412bdc.entry.js",
+          "./www/build/p-e2412bdc.entry.js.map",
           "./www/build/p-e2c6ae7b.js",
-          "./www/build/p-e2c6ae7b.js.map"
+          "./www/build/p-e2c6ae7b.js.map",
+          "./www/build/p-e70df386.entry.js",
+          "./www/build/p-e70df386.entry.js.map",
+          "./www/build/p-ecd906e5.entry.js",
+          "./www/build/p-ecd906e5.entry.js.map"
         ]
       },
       {
@@ -409,10 +409,10 @@
         "components": [
           "midwest-360-image"
         ],
-        "bundleId": "p-766ad5fa",
-        "fileName": "p-766ad5fa.entry.js",
+        "bundleId": "p-e70df386",
+        "fileName": "p-e70df386.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-e2c6ae7b.js"
         ],
         "originalByteSize": 1260
@@ -422,10 +422,10 @@
         "components": [
           "midwest-360-video"
         ],
-        "bundleId": "p-8d15415b",
-        "fileName": "p-8d15415b.entry.js",
+        "bundleId": "p-6f4f772f",
+        "fileName": "p-6f4f772f.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-e2c6ae7b.js"
         ],
         "originalByteSize": 935
@@ -435,10 +435,10 @@
         "components": [
           "midwest-image"
         ],
-        "bundleId": "p-8c109997",
-        "fileName": "p-8c109997.entry.js",
+        "bundleId": "p-deced9e5",
+        "fileName": "p-deced9e5.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-b46e1302.js",
           "p-a577e61e.js"
         ],
@@ -449,10 +449,10 @@
         "components": [
           "midwest-interview"
         ],
-        "bundleId": "p-293d3417",
-        "fileName": "p-293d3417.entry.js",
+        "bundleId": "p-8796c3c8",
+        "fileName": "p-8796c3c8.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-9f7e214d.js",
           "p-5903483d.js",
           "p-b46e1302.js",
@@ -465,10 +465,10 @@
         "components": [
           "midwest-interview-line"
         ],
-        "bundleId": "p-49c01089",
-        "fileName": "p-49c01089.entry.js",
+        "bundleId": "p-7acdf3c2",
+        "fileName": "p-7acdf3c2.entry.js",
         "imports": [
-          "p-acd42121.js"
+          "p-d5d2efae.js"
         ],
         "originalByteSize": 1175
       },
@@ -477,10 +477,10 @@
         "components": [
           "midwest-playlist"
         ],
-        "bundleId": "p-4159d14a",
-        "fileName": "p-4159d14a.entry.js",
+        "bundleId": "p-16903adf",
+        "fileName": "p-16903adf.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-73c11cad.js",
           "p-a577e61e.js"
         ],
@@ -491,10 +491,10 @@
         "components": [
           "midwest-song"
         ],
-        "bundleId": "p-4285504d",
-        "fileName": "p-4285504d.entry.js",
+        "bundleId": "p-4b963aec",
+        "fileName": "p-4b963aec.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-73c11cad.js",
           "p-a577e61e.js"
         ],
@@ -505,10 +505,10 @@
         "components": [
           "midwest-video-interview"
         ],
-        "bundleId": "p-add335f0",
-        "fileName": "p-add335f0.entry.js",
+        "bundleId": "p-b167a6ef",
+        "fileName": "p-b167a6ef.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-9f7e214d.js",
           "p-b46e1302.js",
           "p-a577e61e.js"
@@ -520,10 +520,10 @@
         "components": [
           "skeleton-text"
         ],
-        "bundleId": "p-bb790006",
-        "fileName": "p-bb790006.entry.js",
+        "bundleId": "p-cf3dd4c8",
+        "fileName": "p-cf3dd4c8.entry.js",
         "imports": [
-          "p-acd42121.js"
+          "p-d5d2efae.js"
         ],
         "originalByteSize": 2581
       },
@@ -532,11 +532,11 @@
         "components": [
           "web-audio-debugger"
         ],
-        "bundleId": "p-a75b338e",
-        "fileName": "p-a75b338e.entry.js",
+        "bundleId": "p-c49c1a5f",
+        "fileName": "p-c49c1a5f.entry.js",
         "imports": [
-          "p-c73abe91.js",
-          "p-acd42121.js"
+          "p-9a52c210.js",
+          "p-d5d2efae.js"
         ],
         "originalByteSize": 159
       },
@@ -545,10 +545,10 @@
         "components": [
           "web-audio-effect"
         ],
-        "bundleId": "p-c7fcaf2a",
-        "fileName": "p-c7fcaf2a.entry.js",
+        "bundleId": "p-05d2fbd0",
+        "fileName": "p-05d2fbd0.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-98a4926c.js"
         ],
         "originalByteSize": 5064
@@ -558,10 +558,10 @@
         "components": [
           "web-audio-sequencer"
         ],
-        "bundleId": "p-55c3e305",
-        "fileName": "p-55c3e305.entry.js",
+        "bundleId": "p-e2412bdc",
+        "fileName": "p-e2412bdc.entry.js",
         "imports": [
-          "p-acd42121.js"
+          "p-d5d2efae.js"
         ],
         "originalByteSize": 2070
       },
@@ -570,10 +570,10 @@
         "components": [
           "web-audio-visualizer-shader"
         ],
-        "bundleId": "p-7120e366",
-        "fileName": "p-7120e366.entry.js",
+        "bundleId": "p-14f0afe1",
+        "fileName": "p-14f0afe1.entry.js",
         "imports": [
-          "p-acd42121.js"
+          "p-d5d2efae.js"
         ],
         "originalByteSize": 341
       },
@@ -582,10 +582,10 @@
         "components": [
           "midwest-video"
         ],
-        "bundleId": "p-47207817",
-        "fileName": "p-47207817.entry.js",
+        "bundleId": "p-1f037712",
+        "fileName": "p-1f037712.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-5903483d.js",
           "p-a577e61e.js"
         ],
@@ -597,11 +597,11 @@
           "web-audio",
           "web-audio-source"
         ],
-        "bundleId": "p-77e1d625",
-        "fileName": "p-77e1d625.entry.js",
+        "bundleId": "p-ecd906e5",
+        "fileName": "p-ecd906e5.entry.js",
         "imports": [
-          "p-acd42121.js",
-          "p-c73abe91.js",
+          "p-d5d2efae.js",
+          "p-9a52c210.js",
           "p-98a4926c.js",
           "p-a577e61e.js",
           "p-73c11cad.js"
@@ -614,10 +614,10 @@
           "skeleton-img",
           "web-audio-visualizer"
         ],
-        "bundleId": "p-7bee87c3",
-        "fileName": "p-7bee87c3.entry.js",
+        "bundleId": "p-a4f9db0d",
+        "fileName": "p-a4f9db0d.entry.js",
         "imports": [
-          "p-acd42121.js",
+          "p-d5d2efae.js",
           "p-73c11cad.js",
           "p-a577e61e.js"
         ],
@@ -628,10 +628,10 @@
         "components": [
           "ion-icon"
         ],
-        "bundleId": "p-42cc5dcd",
-        "fileName": "p-42cc5dcd.entry.js",
+        "bundleId": "p-caa225ae",
+        "fileName": "p-caa225ae.entry.js",
         "imports": [
-          "p-acd42121.js"
+          "p-d5d2efae.js"
         ],
         "originalByteSize": 9088
       }
@@ -645,7 +645,7 @@
         "bundleId": "midwest-360-image",
         "fileName": "midwest-360-image.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "kaleidoscope.es-6388c93b.js"
         ],
         "originalByteSize": 1278
@@ -658,7 +658,7 @@
         "bundleId": "midwest-360-video",
         "fileName": "midwest-360-video.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "kaleidoscope.es-6388c93b.js"
         ],
         "originalByteSize": 953
@@ -671,7 +671,7 @@
         "bundleId": "midwest-image",
         "fileName": "midwest-image.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "index-ce34695c.js",
           "_commonjsHelpers-26a50a15.js"
         ],
@@ -685,7 +685,7 @@
         "bundleId": "midwest-interview",
         "fileName": "midwest-interview.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "helpers-f689eca3.js",
           "css-custom-properties.min-8ef2b0ba.js",
           "index-ce34695c.js",
@@ -701,7 +701,7 @@
         "bundleId": "midwest-interview-line",
         "fileName": "midwest-interview-line.entry.js",
         "imports": [
-          "index-fed78b95.js"
+          "index-eb5239e3.js"
         ],
         "originalByteSize": 1179
       },
@@ -713,7 +713,7 @@
         "bundleId": "midwest-playlist",
         "fileName": "midwest-playlist.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "colors-617abcaf.js",
           "_commonjsHelpers-26a50a15.js"
         ],
@@ -727,7 +727,7 @@
         "bundleId": "midwest-song",
         "fileName": "midwest-song.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "colors-617abcaf.js",
           "_commonjsHelpers-26a50a15.js"
         ],
@@ -741,7 +741,7 @@
         "bundleId": "midwest-video-interview",
         "fileName": "midwest-video-interview.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "helpers-f689eca3.js",
           "index-ce34695c.js",
           "_commonjsHelpers-26a50a15.js"
@@ -756,7 +756,7 @@
         "bundleId": "skeleton-text",
         "fileName": "skeleton-text.entry.js",
         "imports": [
-          "index-fed78b95.js"
+          "index-eb5239e3.js"
         ],
         "originalByteSize": 2585
       },
@@ -768,8 +768,8 @@
         "bundleId": "web-audio-debugger",
         "fileName": "web-audio-debugger.entry.js",
         "imports": [
-          "web-audio-debugger-9b29a1f3.js",
-          "index-fed78b95.js"
+          "web-audio-debugger-e05c6353.js",
+          "index-eb5239e3.js"
         ],
         "originalByteSize": 180
       },
@@ -781,7 +781,7 @@
         "bundleId": "web-audio-effect",
         "fileName": "web-audio-effect.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "helpers-fb5372c9.js"
         ],
         "originalByteSize": 5074
@@ -794,7 +794,7 @@
         "bundleId": "web-audio-sequencer",
         "fileName": "web-audio-sequencer.entry.js",
         "imports": [
-          "index-fed78b95.js"
+          "index-eb5239e3.js"
         ],
         "originalByteSize": 2074
       },
@@ -806,7 +806,7 @@
         "bundleId": "web-audio-visualizer-shader",
         "fileName": "web-audio-visualizer-shader.entry.js",
         "imports": [
-          "index-fed78b95.js"
+          "index-eb5239e3.js"
         ],
         "originalByteSize": 345
       },
@@ -818,7 +818,7 @@
         "bundleId": "midwest-video",
         "fileName": "midwest-video.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "css-custom-properties.min-8ef2b0ba.js",
           "_commonjsHelpers-26a50a15.js"
         ],
@@ -833,8 +833,8 @@
         "bundleId": "web-audio_2",
         "fileName": "web-audio_2.entry.js",
         "imports": [
-          "index-fed78b95.js",
-          "web-audio-debugger-9b29a1f3.js",
+          "index-eb5239e3.js",
+          "web-audio-debugger-e05c6353.js",
           "helpers-fb5372c9.js",
           "_commonjsHelpers-26a50a15.js",
           "colors-617abcaf.js"
@@ -850,7 +850,7 @@
         "bundleId": "skeleton-img_2",
         "fileName": "skeleton-img_2.entry.js",
         "imports": [
-          "index-fed78b95.js",
+          "index-eb5239e3.js",
           "colors-617abcaf.js",
           "_commonjsHelpers-26a50a15.js"
         ],
@@ -864,7 +864,7 @@
         "bundleId": "ion-icon",
         "fileName": "ion-icon.entry.js",
         "imports": [
-          "index-fed78b95.js"
+          "index-eb5239e3.js"
         ],
         "originalByteSize": 9092
       }
@@ -880,7 +880,7 @@
         "bundleId": "midwest-360-image.cjs",
         "fileName": "midwest-360-image.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "kaleidoscope.es-78649ee3.js"
         ],
         "originalByteSize": 1382
@@ -893,7 +893,7 @@
         "bundleId": "midwest-360-video.cjs",
         "fileName": "midwest-360-video.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "kaleidoscope.es-78649ee3.js"
         ],
         "originalByteSize": 1040
@@ -906,7 +906,7 @@
         "bundleId": "midwest-image.cjs",
         "fileName": "midwest-image.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "index-b3ec0b83.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
@@ -920,7 +920,7 @@
         "bundleId": "midwest-interview.cjs",
         "fileName": "midwest-interview.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "helpers-8a5bcc29.js",
           "css-custom-properties.min-36ba1d6c.js",
           "index-b3ec0b83.js",
@@ -936,7 +936,7 @@
         "bundleId": "midwest-interview-line.cjs",
         "fileName": "midwest-interview-line.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js"
+          "index-c31ba577.js"
         ],
         "originalByteSize": 1249
       },
@@ -948,7 +948,7 @@
         "bundleId": "midwest-playlist.cjs",
         "fileName": "midwest-playlist.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "colors-d71cfd71.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
@@ -962,7 +962,7 @@
         "bundleId": "midwest-song.cjs",
         "fileName": "midwest-song.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "colors-d71cfd71.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
@@ -976,7 +976,7 @@
         "bundleId": "midwest-video-interview.cjs",
         "fileName": "midwest-video-interview.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "helpers-8a5bcc29.js",
           "index-b3ec0b83.js",
           "_commonjsHelpers-b2f405b5.js"
@@ -991,7 +991,7 @@
         "bundleId": "skeleton-text.cjs",
         "fileName": "skeleton-text.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js"
+          "index-c31ba577.js"
         ],
         "originalByteSize": 2650
       },
@@ -1003,8 +1003,8 @@
         "bundleId": "web-audio-debugger.cjs",
         "fileName": "web-audio-debugger.cjs.entry.js",
         "imports": [
-          "web-audio-debugger-432a9c53.js",
-          "index-bef213f8.js"
+          "web-audio-debugger-868e9e73.js",
+          "index-c31ba577.js"
         ],
         "originalByteSize": 322
       },
@@ -1016,7 +1016,7 @@
         "bundleId": "web-audio-effect.cjs",
         "fileName": "web-audio-effect.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "helpers-29f42b79.js"
         ],
         "originalByteSize": 5134
@@ -1029,7 +1029,7 @@
         "bundleId": "web-audio-sequencer.cjs",
         "fileName": "web-audio-sequencer.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js"
+          "index-c31ba577.js"
         ],
         "originalByteSize": 2140
       },
@@ -1041,7 +1041,7 @@
         "bundleId": "web-audio-visualizer-shader.cjs",
         "fileName": "web-audio-visualizer-shader.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js"
+          "index-c31ba577.js"
         ],
         "originalByteSize": 411
       },
@@ -1053,7 +1053,7 @@
         "bundleId": "midwest-video.cjs",
         "fileName": "midwest-video.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "css-custom-properties.min-36ba1d6c.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
@@ -1068,8 +1068,8 @@
         "bundleId": "web-audio_2.cjs",
         "fileName": "web-audio_2.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
-          "web-audio-debugger-432a9c53.js",
+          "index-c31ba577.js",
+          "web-audio-debugger-868e9e73.js",
           "helpers-29f42b79.js",
           "_commonjsHelpers-b2f405b5.js",
           "colors-d71cfd71.js"
@@ -1085,7 +1085,7 @@
         "bundleId": "skeleton-img_2.cjs",
         "fileName": "skeleton-img_2.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js",
+          "index-c31ba577.js",
           "colors-d71cfd71.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
@@ -1099,7 +1099,7 @@
         "bundleId": "ion-icon.cjs",
         "fileName": "ion-icon.cjs.entry.js",
         "imports": [
-          "index-bef213f8.js"
+          "index-c31ba577.js"
         ],
         "originalByteSize": 9144
       }
@@ -1397,8 +1397,8 @@
           "docs": {
             "tags": [
               {
-                "text": "true",
-                "name": "default"
+                "name": "default",
+                "text": "true"
               }
             ],
             "text": "When set to `false`, SVG content that is HTTP fetched will not be checked\nif the response SVG content has any `<script>` elements, or any attributes\nthat start with `on`, such as `onclick`."
@@ -11560,8 +11560,8 @@
               "docs": {
                 "tags": [
                   {
-                    "text": "true",
-                    "name": "default"
+                    "name": "default",
+                    "text": "true"
                   }
                 ],
                 "text": "When set to `false`, SVG content that is HTTP fetched will not be checked\nif the response SVG content has any `<script>` elements, or any attributes\nthat start with `on`, such as `onclick`."
@@ -11709,92 +11709,92 @@
   ],
   "componentGraph": {
     "sc-ion-icon": [
-      "p-acd42121.js"
+      "p-d5d2efae.js"
     ],
     "sc-midwest-360-image": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-e2c6ae7b.js"
     ],
     "sc-midwest-360-video": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-e2c6ae7b.js"
     ],
     "sc-midwest-image": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-b46e1302.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-interview": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-9f7e214d.js",
       "p-5903483d.js",
       "p-b46e1302.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-interview-line": [
-      "p-acd42121.js"
+      "p-d5d2efae.js"
     ],
     "sc-midwest-playlist": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-73c11cad.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-song": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-73c11cad.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-video": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-5903483d.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-video-interview": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-9f7e214d.js",
       "p-b46e1302.js",
       "p-a577e61e.js"
     ],
     "sc-skeleton-img": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-73c11cad.js",
       "p-a577e61e.js"
     ],
     "sc-skeleton-text": [
-      "p-acd42121.js"
+      "p-d5d2efae.js"
     ],
     "sc-web-audio": [
-      "p-acd42121.js",
-      "p-c73abe91.js",
+      "p-d5d2efae.js",
+      "p-9a52c210.js",
       "p-98a4926c.js",
       "p-a577e61e.js",
       "p-73c11cad.js"
     ],
     "sc-web-audio-debugger": [
-      "p-c73abe91.js",
-      "p-acd42121.js"
+      "p-9a52c210.js",
+      "p-d5d2efae.js"
     ],
     "sc-web-audio-effect": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-98a4926c.js"
     ],
     "sc-web-audio-sequencer": [
-      "p-acd42121.js"
+      "p-d5d2efae.js"
     ],
     "sc-web-audio-source": [
-      "p-acd42121.js",
-      "p-c73abe91.js",
+      "p-d5d2efae.js",
+      "p-9a52c210.js",
       "p-98a4926c.js",
       "p-a577e61e.js",
       "p-73c11cad.js"
     ],
     "sc-web-audio-visualizer": [
-      "p-acd42121.js",
+      "p-d5d2efae.js",
       "p-73c11cad.js",
       "p-a577e61e.js"
     ],
     "sc-web-audio-visualizer-shader": [
-      "p-acd42121.js"
+      "p-d5d2efae.js"
     ]
   },
   "sourceGraph": {

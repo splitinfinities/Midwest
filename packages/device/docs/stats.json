@@ -1,8 +1,8 @@
 {
-  "timestamp": "2021-10-06T16:17:02",
+  "timestamp": "2021-11-11T15:45:28",
   "compiler": {
     "name": "node",
-    "version": "16.9.1"
+    "version": "17.0.1"
   },
   "app": {
     "namespace": "device",
@@ -25,21 +25,21 @@
         "name": "dist-custom-elements",
         "files": 6,
         "generatedFiles": [
-          "./dist/components/index.d.ts",
-          "./dist/components/index.js",
-          "./dist/components/index.js.map",
-          "./dist/components/midwest-device.d.ts",
-          "./dist/components/midwest-device.js",
-          "./dist/components/midwest-device.js.map"
+          "./dist/custom-elements/index.d.ts",
+          "./dist/custom-elements/index.js",
+          "./dist/custom-elements/index.js.map",
+          "./dist/custom-elements/midwest-device.d.ts",
+          "./dist/custom-elements/midwest-device.js",
+          "./dist/custom-elements/midwest-device.js.map"
         ]
       },
       {
         "name": "dist-custom-elements-bundle",
         "files": 3,
         "generatedFiles": [
-          "./dist/custom-elements/index.d.ts",
-          "./dist/custom-elements/index.js",
-          "./dist/custom-elements/index.js.map"
+          "./dist/dist-custom-elements-bundle/index.d.ts",
+          "./dist/dist-custom-elements-bundle/index.js",
+          "./dist/dist-custom-elements-bundle/index.js.map"
         ]
       },
       {
@@ -48,8 +48,8 @@
         "generatedFiles": [
           "./dist/cjs/device.cjs.js",
           "./dist/cjs/device.cjs.js.map",
-          "./dist/cjs/index-6bbc0d7b.js",
-          "./dist/cjs/index-6bbc0d7b.js.map",
+          "./dist/cjs/index-c7b7d1c8.js",
+          "./dist/cjs/index-c7b7d1c8.js.map",
           "./dist/cjs/index.cjs.js",
           "./dist/cjs/index.cjs.js.map",
           "./dist/cjs/loader.cjs.js",
@@ -60,14 +60,14 @@
           "./dist/device/device.esm.js.map",
           "./dist/device/index.esm.js",
           "./dist/device/index.esm.js.map",
-          "./dist/device/p-c102ba39.js",
-          "./dist/device/p-c102ba39.js.map",
-          "./dist/device/p-cace45b7.entry.js",
-          "./dist/device/p-cace45b7.entry.js.map",
+          "./dist/device/p-6977ce65.js",
+          "./dist/device/p-6977ce65.js.map",
+          "./dist/device/p-fc372f01.entry.js",
+          "./dist/device/p-fc372f01.entry.js.map",
           "./dist/esm/device.js",
           "./dist/esm/device.js.map",
-          "./dist/esm/index-62cd2ebc.js",
-          "./dist/esm/index-62cd2ebc.js.map",
+          "./dist/esm/index-38c1b0a8.js",
+          "./dist/esm/index-38c1b0a8.js.map",
           "./dist/esm/index.js",
           "./dist/esm/index.js.map",
           "./dist/esm/loader.js",
@@ -80,10 +80,10 @@
           "./www/build/device.esm.js.map",
           "./www/build/index.esm.js",
           "./www/build/index.esm.js.map",
-          "./www/build/p-c102ba39.js",
-          "./www/build/p-c102ba39.js.map",
-          "./www/build/p-cace45b7.entry.js",
-          "./www/build/p-cace45b7.entry.js.map"
+          "./www/build/p-6977ce65.js",
+          "./www/build/p-6977ce65.js.map",
+          "./www/build/p-fc372f01.entry.js",
+          "./www/build/p-fc372f01.entry.js.map"
         ]
       },
       {
@@ -117,10 +117,10 @@
         "components": [
           "midwest-device"
         ],
-        "bundleId": "p-cace45b7",
-        "fileName": "p-cace45b7.entry.js",
+        "bundleId": "p-fc372f01",
+        "fileName": "p-fc372f01.entry.js",
         "imports": [
-          "p-c102ba39.js"
+          "p-6977ce65.js"
         ],
         "originalByteSize": 5257
       }
@@ -134,7 +134,7 @@
         "bundleId": "midwest-device",
         "fileName": "midwest-device.entry.js",
         "imports": [
-          "index-62cd2ebc.js"
+          "index-38c1b0a8.js"
         ],
         "originalByteSize": 5261
       }
@@ -150,7 +150,7 @@
         "bundleId": "midwest-device.cjs",
         "fileName": "midwest-device.cjs.entry.js",
         "imports": [
-          "index-6bbc0d7b.js"
+          "index-c7b7d1c8.js"
         ],
         "originalByteSize": 5360
       }
@@ -394,7 +394,7 @@
   ],
   "componentGraph": {
     "sc-midwest-device": [
-      "p-c102ba39.js"
+      "p-6977ce65.js"
     ]
   },
   "sourceGraph": {

@@ -8,6 +8,7 @@
     "test": "lerna run test --stream",
     "test.watch": "lerna run test.watch --stream",
     "build": "lerna run build --stream",
+    "build.angular": "lerna run build --stream --scope=@midwest-design/angular",
     "build.common": "lerna run build --stream --scope=@midwest-design/common",
     "build.motion": "lerna run build --stream --scope=@midwest-design/motion",
     "build.audio": "lerna run build --stream --scope=@midwest-design/audio",
@@ -59,11 +60,11 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.3.7",
-    "@storybook/addon-essentials": "^6.3.7",
-    "@storybook/addon-knobs": "^6.3.0",
-    "@storybook/web-components": "^6.3.7",
-    "@storybook/addon-storysource": "^6.3.7",
+    "@storybook/addon-a11y": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-knobs": "^6.3.1",
+    "@storybook/web-components": "^6.3.12",
+    "@storybook/addon-storysource": "^6.3.12",
     "bp-smart-commit": "^1.4.1",
     "husky": "^4.2.5",
     "lerna": "^3.13.4",
@@ -75,9 +76,9 @@
     "stencil-tslint": "latest"
   },
   "resolutions": {
-    "@midwest-design/common": "0.0.15",
-    "@midwest-design/core": "0.0.15",
-    "@midwest-design/helpers": "0.0.15",
-    "@midwest-design/motion": "0.0.15"
+    "@midwest-design/common": "0.0.16",
+    "@midwest-design/core": "0.0.16",
+    "@midwest-design/helpers": "0.0.16",
+    "@midwest-design/motion": "0.0.16"
   }
 }

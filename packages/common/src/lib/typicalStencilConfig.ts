@@ -1,13 +1,27 @@
 import { generateJsonDocs } from './customElementDocGenerator';
+import type { Config } from '@stencil/core';
+import { angularOutputTarget } from '@stencil/angular-output-target';
 
-export const typicalStencilConfig = {
+export const frameworkBindings = (name: string): any[] => {
+  return [
+    angularOutputTarget({
+      componentCorePackage: `@midwest-design/${name}`,
+      directivesProxyFile: `../angular/projects/midwest/src/lib/stencil-bindings/midwest-${name}-components.ts`,
+    }),
+  ]
+} 
+
+export const typicalStencilConfig: Config = {
   preamble: '(C) Split Infinities https://splitinfinities.com - MIT License',
   taskQueue: 'async',
   sourceMap: true,
   outputTargets: [
     { type: 'dist', esmLoaderPath: '../loader' },
-    { type: 'dist-custom-elements' },
-    { type: 'dist-custom-elements-bundle' },
+    { type: 'dist-custom-elements', autoDefineCustomElements: true, dir: "./dist/custom-elements" },
+    {
+      type: 'dist-custom-elements-bundle',
+      dir: "./dist/dist-custom-elements-bundle"
+    },
     {
       type: 'docs-vscode',
       file: './docs/vscode/html.html-data.json',

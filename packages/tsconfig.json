@@ -12,5 +12,6 @@
     { "path": "docs" },
     { "path": "export-to-figma" },
     { "path": "new-tab" },
+    { "path": "angular" },
   ]
 }
