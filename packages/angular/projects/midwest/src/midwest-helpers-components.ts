@@ -3,7 +3,69 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, NgZone } from '@angular/core';
 import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
-import { Components } from '@midwest-design/core';
+import { Components } from '@midwest-design/helpers';
+
+
+export declare interface AnimatePresence extends Components.AnimatePresence {
+  /**
+   * Fires when all exiting nodes have completed animating out.
+
+To simplify listener behavior, this event bubbles, but never beyond the closest `<animate-presence>` parent. 
+   */
+  animatePresenceExitComplete: EventEmitter<CustomEvent<void>>;
+  /**
+   * Dispatched on a child when it enters. `event.target` is the entering child element.
+
+It is recommended to use an animation handler created with `createPresenceHandler` for this event. 
+   */
+  animatePresenceEnter: EventEmitter<CustomEvent<{ i: number }>>;
+  /**
+   * Dispatched on a child when it exits. `event.target` is the exiting child element.
+
+It is recommended to use an animation handler created with `createPresenceHandler` for this event. 
+   */
+  animatePresenceExit: EventEmitter<CustomEvent<{ i: number }>>;
+
+}
+
+@ProxyCmp({
+  inputs: ['observe'],
+  methods: ['exit', 'enter']
+})
+@Component({
+  selector: 'animate-presence',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['observe']
+})
+export class AnimatePresence {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+    proxyOutputs(this, this.el, ['animatePresenceExitComplete', 'animatePresenceEnter', 'animatePresenceExit']);
+  }
+}
+
+
+export declare interface AnimatedRouteSwitch extends Components.AnimatedRouteSwitch {}
+
+@ProxyCmp({
+  inputs: ['location', 'scrollTopOffset']
+})
+@Component({
+  selector: 'animated-route-switch',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['location', 'scrollTopOffset']
+})
+export class AnimatedRouteSwitch {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
 
 
 export declare interface CopyWrap extends Components.CopyWrap {}
@@ -18,6 +80,43 @@ export declare interface CopyWrap extends Components.CopyWrap {}
   inputs: ['align', 'clamp', 'full']
 })
 export class CopyWrap {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface HorizontalScroll extends Components.HorizontalScroll {}
+
+
+@Component({
+  selector: 'horizontal-scroll',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>'
+})
+export class HorizontalScroll {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface IonIcon extends Components.IonIcon {}
+
+@ProxyCmp({
+  inputs: ['ariaHidden', 'ariaLabel', 'color', 'flipRtl', 'icon', 'ios', 'lazy', 'md', 'mode', 'name', 'sanitize', 'size', 'src']
+})
+@Component({
+  selector: 'ion-icon',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['ariaHidden', 'ariaLabel', 'color', 'flipRtl', 'icon', 'ios', 'lazy', 'md', 'mode', 'name', 'sanitize', 'size', 'src']
+})
+export class IonIcon {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -53,6 +152,23 @@ export class MidwestAccordion {
     c.detach();
     this.el = r.nativeElement;
     proxyOutputs(this, this.el, ['opened', 'closed']);
+  }
+}
+
+
+export declare interface MidwestAssetLibrary extends Components.MidwestAssetLibrary {}
+
+
+@Component({
+  selector: 'midwest-asset-library',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>'
+})
+export class MidwestAssetLibrary {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
   }
 }
 
@@ -121,19 +237,19 @@ export declare interface MidwestButton extends Components.MidwestButton {
   /**
    *  
    */
-  modalOpen: EventEmitter<CustomEvent<any>>;
+  modal:open: EventEmitter<CustomEvent<any>>;
   /**
    *  
    */
-  modalClose: EventEmitter<CustomEvent<any>>;
+  modal:close: EventEmitter<CustomEvent<any>>;
   /**
    *  
    */
-  onboardingOpen: EventEmitter<CustomEvent<any>>;
+  onboarding:open: EventEmitter<CustomEvent<any>>;
   /**
    *  
    */
-  onboardingClose: EventEmitter<CustomEvent<any>>;
+  onboarding:close: EventEmitter<CustomEvent<any>>;
 
 }
 
@@ -151,7 +267,7 @@ export class MidwestButton {
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs(this, this.el, ['modalOpen', 'modalClose', 'onboardingOpen', 'onboardingClose']);
+    proxyOutputs(this, this.el, ['modal:open', 'modal:close', 'onboarding:open', 'onboarding:close']);
   }
 }
 
@@ -204,11 +320,11 @@ export declare interface MidwestCard extends Components.MidwestCard {
   /**
    *  
    */
-  modalOpen: EventEmitter<CustomEvent<any>>;
+  modal:open: EventEmitter<CustomEvent<any>>;
   /**
    *  
    */
-  modalClose: EventEmitter<CustomEvent<any>>;
+  modal:close: EventEmitter<CustomEvent<any>>;
 
 }
 
@@ -227,7 +343,126 @@ export class MidwestCard {
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs(this, this.el, ['flip', 'modalOpen', 'modalClose']);
+    proxyOutputs(this, this.el, ['flip', 'modal:open', 'modal:close']);
+  }
+}
+
+
+export declare interface MidwestChart extends Components.MidwestChart {}
+
+@ProxyCmp({
+  inputs: ['chartTitle', 'config', 'dark', 'data', 'enableCredits', 'exporting', 'for', 'src', 'type'],
+  methods: ['options', 'get_options', 'refresh']
+})
+@Component({
+  selector: 'midwest-chart',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['chartTitle', 'config', 'dark', 'data', 'enableCredits', 'exporting', 'for', 'src', 'type']
+})
+export class MidwestChart {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestClock extends Components.MidwestClock {}
+
+@ProxyCmp({
+  inputs: ['animated', 'between', 'size', 'time']
+})
+@Component({
+  selector: 'midwest-clock',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['animated', 'between', 'size', 'time']
+})
+export class MidwestClock {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestCode extends Components.MidwestCode {}
+
+@ProxyCmp({
+  inputs: ['codeString', 'copy', 'dark', 'expandable', 'expanded', 'feature', 'language', 'preview', 'simple'],
+  methods: ['highlight', 'result', 'clipboard', 'setCode']
+})
+@Component({
+  selector: 'midwest-code',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['codeString', 'copy', 'dark', 'expandable', 'expanded', 'feature', 'language', 'preview', 'simple']
+})
+export class MidwestCode {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestColorLibrary extends Components.MidwestColorLibrary {}
+
+@ProxyCmp({
+  inputs: ['colors', 'shape']
+})
+@Component({
+  selector: 'midwest-color-library',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['colors', 'shape']
+})
+export class MidwestColorLibrary {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestComment extends Components.MidwestComment {}
+
+@ProxyCmp({
+  inputs: ['content', 'dark', 'name']
+})
+@Component({
+  selector: 'midwest-comment',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['content', 'dark', 'name']
+})
+export class MidwestComment {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestComments extends Components.MidwestComments {}
+
+
+@Component({
+  selector: 'midwest-comments',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>'
+})
+export class MidwestComments {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
   }
 }
 
@@ -248,6 +483,37 @@ export class MidwestContent {
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
     this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestContext extends Components.MidwestContext {
+  /**
+   *  
+   */
+  timeChange: EventEmitter<CustomEvent<any>>;
+  /**
+   *  
+   */
+  weatherChange: EventEmitter<CustomEvent<any>>;
+
+}
+
+@ProxyCmp({
+  inputs: ['apikey', 'time', 'weather']
+})
+@Component({
+  selector: 'midwest-context',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['apikey', 'time', 'weather']
+})
+export class MidwestContext {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+    proxyOutputs(this, this.el, ['timeChange', 'weatherChange']);
   }
 }
 
@@ -333,6 +599,46 @@ export class MidwestGroupOverflow {
 }
 
 
+export declare interface MidwestIntersection extends Components.MidwestIntersection {}
+
+@ProxyCmp({
+  inputs: ['element', 'in', 'margin', 'multiple', 'out']
+})
+@Component({
+  selector: 'midwest-intersection',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['element', 'in', 'margin', 'multiple', 'out']
+})
+export class MidwestIntersection {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestInterstitial extends Components.MidwestInterstitial {}
+
+@ProxyCmp({
+  inputs: ['fullscreen', 'remember', 'shown']
+})
+@Component({
+  selector: 'midwest-interstitial',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['fullscreen', 'remember', 'shown']
+})
+export class MidwestInterstitial {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
 export declare interface MidwestLabel extends Components.MidwestLabel {}
 
 @ProxyCmp({
@@ -373,6 +679,109 @@ export class MidwestLayout {
 }
 
 
+export declare interface MidwestLoading extends Components.MidwestLoading {}
+
+@ProxyCmp({
+  inputs: ['cta', 'error', 'show', 'step', 'steps', 'stretch']
+})
+@Component({
+  selector: 'midwest-loading',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['cta', 'error', 'show', 'step', 'steps', 'stretch']
+})
+export class MidwestLoading {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestLongShadow extends Components.MidwestLongShadow {}
+
+@ProxyCmp({
+  inputs: ['active', 'complement', 'darkShade', 'delay', 'direction', 'length', 'shade', 'timing'],
+  methods: ['out', 'in']
+})
+@Component({
+  selector: 'midwest-long-shadow',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['active', 'complement', 'darkShade', 'delay', 'direction', 'length', 'shade', 'timing']
+})
+export class MidwestLongShadow {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestMap extends Components.MidwestMap {}
+
+@ProxyCmp({
+  inputs: ['apiKey', 'block', 'fullscreenControl', 'gestureHandling', 'height', 'lat', 'lng', 'mapType', 'noUi', 'streetView', 'theme', 'width', 'zoom', 'zoomControls'],
+  methods: ['geocodeAddress']
+})
+@Component({
+  selector: 'midwest-map',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['apiKey', 'block', 'fullscreenControl', 'gestureHandling', 'height', 'lat', 'lng', 'mapType', 'noUi', 'streetView', 'theme', 'width', 'zoom', 'zoomControls']
+})
+export class MidwestMap {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestMapMarker extends Components.MidwestMapMarker {}
+
+@ProxyCmp({
+  inputs: ['address', 'icon', 'iconHeight', 'iconWidth', 'lat', 'lng', 'markerTitle'],
+  methods: ['geocodeAddress', 'configuration']
+})
+@Component({
+  selector: 'midwest-map-marker',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['address', 'icon', 'iconHeight', 'iconWidth', 'lat', 'lng', 'markerTitle']
+})
+export class MidwestMapMarker {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestMarkdown extends Components.MidwestMarkdown {}
+
+@ProxyCmp({
+  inputs: ['codeString', 'editable', 'flavor', 'loading', 'src']
+})
+@Component({
+  selector: 'midwest-markdown',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['codeString', 'editable', 'flavor', 'loading', 'src']
+})
+export class MidwestMarkdown {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
 export declare interface MidwestMessage extends Components.MidwestMessage {}
 
 @ProxyCmp({
@@ -389,6 +798,106 @@ export class MidwestMessage {
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
     this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestModal extends Components.MidwestModal {
+  /**
+   *  
+   */
+  modal:opened: EventEmitter<CustomEvent<any>>;
+  /**
+   *  
+   */
+  modal:closed: EventEmitter<CustomEvent<any>>;
+
+}
+
+@ProxyCmp({
+  inputs: ['closing', 'loading', 'open', 'opening', 'remote']
+})
+@Component({
+  selector: 'midwest-modal',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['closing', 'loading', 'open', 'opening', 'remote']
+})
+export class MidwestModal {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+    proxyOutputs(this, this.el, ['modal:opened', 'modal:closed']);
+  }
+}
+
+
+export declare interface MidwestMouseTrail extends Components.MidwestMouseTrail {}
+
+@ProxyCmp({
+  inputs: ['count', 'speed', 'threedee']
+})
+@Component({
+  selector: 'midwest-mouse-trail',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['count', 'speed', 'threedee']
+})
+export class MidwestMouseTrail {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestOnboarding extends Components.MidwestOnboarding {}
+
+@ProxyCmp({
+  inputs: ['autoOpen', 'returnsTo', 'returnsToStep'],
+  methods: ['show', 'start']
+})
+@Component({
+  selector: 'midwest-onboarding',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['autoOpen', 'returnsTo', 'returnsToStep']
+})
+export class MidwestOnboarding {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface MidwestOnboardingStep extends Components.MidwestOnboardingStep {
+  /**
+   *  
+   */
+  close-modal: EventEmitter<CustomEvent<any>>;
+
+}
+
+@ProxyCmp({
+  inputs: ['awaitModal', 'back', 'canClickTarget', 'chainTo', 'closeModalAfterward', 'completeText', 'delay', 'forceAction', 'name', 'navigateTo', 'next', 'nextText', 'position', 'selector', 'stepTitle'],
+  methods: ['details']
+})
+@Component({
+  selector: 'midwest-onboarding-step',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['awaitModal', 'back', 'canClickTarget', 'chainTo', 'closeModalAfterward', 'completeText', 'delay', 'forceAction', 'name', 'navigateTo', 'next', 'nextText', 'position', 'selector', 'stepTitle']
+})
+export class MidwestOnboardingStep {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+    proxyOutputs(this, this.el, ['close-modal']);
   }
 }
 
@@ -417,6 +926,27 @@ export class MidwestPagination {
     c.detach();
     this.el = r.nativeElement;
     proxyOutputs(this, this.el, ['changed']);
+  }
+}
+
+
+export declare interface MidwestPjax extends Components.MidwestPjax {}
+
+@ProxyCmp({
+  inputs: ['pjax'],
+  methods: ['replace', 'loadUrl', 'loadContent']
+})
+@Component({
+  selector: 'midwest-pjax',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['pjax']
+})
+export class MidwestPjax {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
   }
 }
 
@@ -501,7 +1031,7 @@ export declare interface MidwestTab extends Components.MidwestTab {
   /**
    *  
    */
-  contentOpen: EventEmitter<CustomEvent<any>>;
+  open:content: EventEmitter<CustomEvent<any>>;
 
 }
 
@@ -520,7 +1050,7 @@ export class MidwestTab {
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs(this, this.el, ['contentOpen']);
+    proxyOutputs(this, this.el, ['open:content']);
   }
 }
 
@@ -642,5 +1172,32 @@ export class MidwestUnit {
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
     this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface ResizeObserver extends Components.ResizeObserver {
+  /**
+   *  
+   */
+  resized: EventEmitter<CustomEvent<any>>;
+
+}
+
+@ProxyCmp({
+  inputs: ['element']
+})
+@Component({
+  selector: 'resize-observer',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['element']
+})
+export class ResizeObserver {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+    proxyOutputs(this, this.el, ['resized']);
   }
 }

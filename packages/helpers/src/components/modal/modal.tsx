@@ -3,7 +3,7 @@ import delay from 'async-delay';
 
 @Component({
   tag: 'midwest-modal',
-  styleUrl: 'modal.css'
+  styleUrl: 'modal.css',
 })
 export class Modal {
   @Element() element: HTMLElement;
@@ -18,15 +18,15 @@ export class Modal {
   @State() content: string;
   @State() progress: number = 0;
 
-  @Event({ eventName: "modal:opened", bubbles: true }) opened: EventEmitter;
-  @Event({ eventName: "modal:closed", bubbles: true }) closed: EventEmitter;
+  @Event({ eventName: 'modalOpened', bubbles: true }) opened: EventEmitter;
+  @Event({ eventName: 'modalClosed', bubbles: true }) closed: EventEmitter;
 
   private originalUrl!: string;
   private modalUrl!: string;
 
   componentWillLoad() {
     if (!this.remote) {
-      const content = this.element.querySelector("template");
+      const content = this.element.querySelector('template');
       this.content = content.innerHTML;
     }
 
@@ -34,17 +34,17 @@ export class Modal {
       if (document.location.href === this.originalUrl) {
         this.open = false;
       }
-    }
+    };
   }
 
-  @Listen("close-modal", {target: "window"}) 
+  @Listen('modalClose', { target: 'window' })
   handleClose(e: CustomEvent) {
-    if (!e.detail.el || e.detail.el && e.detail.el === this.element) {
+    if (!e.detail.el || (e.detail.el && e.detail.el === this.element)) {
       this.open = false;
     }
   }
 
-  @Listen("open-modal", {target: "window"}) 
+  @Listen('open-modal', { target: 'window' })
   async handleOpen(e: CustomEvent) {
     if (this.remote && !e.detail.for) {
       this.content = undefined;
@@ -74,24 +74,24 @@ export class Modal {
   async observeOpen() {
     if (this.open) {
       this.opening = true;
-      document.querySelectorAll("html,body").forEach((el) => {
-        el.classList.add("overflow-hidden");
-      })
+      document.querySelectorAll('html,body').forEach(el => {
+        el.classList.add('overflow-hidden');
+      });
     } else {
       this.closing = true;
-      document.querySelectorAll("html,body").forEach((el) => {
-        el.classList.remove("overflow-hidden");
-      })
+      document.querySelectorAll('html,body').forEach(el => {
+        el.classList.remove('overflow-hidden');
+      });
     }
 
     if (this.modalUrl && this.open) {
       this.originalUrl = window.location.href;
-      window.history.pushState({}, "", this.modalUrl);
+      window.history.pushState({}, '', this.modalUrl);
     } else if (this.modalUrl && !this.open) {
-      window.history.pushState({}, "", this.originalUrl);
+      window.history.pushState({}, '', this.originalUrl);
       this.originalUrl = undefined;
     }
-    
+
     await delay(350);
 
     this.opening = false;
@@ -104,7 +104,7 @@ export class Modal {
     }
   }
 
-  @Listen("keydown", {target: "window"}) 
+  @Listen('keydown', { target: 'window' })
   handleEscape(ev: KeyboardEvent) {
     if (ev.key === 'Escape' && this.open) {
       this.open = false;
@@ -113,10 +113,12 @@ export class Modal {
   }
 
   render() {
-    return <Host>
-      <midwest-overlay />
-      {this.loading && <midwest-loading step={this.progress} steps={3} />}
-      {this.content && <div innerHTML={this.content} />}
-    </Host>
+    return (
+      <Host>
+        <midwest-overlay />
+        {this.loading && <midwest-loading step={this.progress} steps={3} />}
+        {this.content && <div innerHTML={this.content} />}
+      </Host>
+    );
   }
 }

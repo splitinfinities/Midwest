@@ -469,7 +469,7 @@ declare namespace LocalJSX {
         "val"?: string;
     }
     interface MidwestFieldGroup {
-        "onFast-updates"?: (event: CustomEvent<any>) => void;
+        "onFastUpdates"?: (event: CustomEvent<any>) => void;
         "onSubmitted"?: (event: CustomEvent<any>) => void;
         "onUpdated"?: (event: CustomEvent<any>) => void;
     }
@@ -483,8 +483,8 @@ declare namespace LocalJSX {
         "enctype"?: string;
         "method"?: string;
         "name"?: string;
-        "onClose-modal"?: (event: CustomEvent<any>) => void;
-        "onFast-updates"?: (event: CustomEvent<any>) => void;
+        "onFastUpdates"?: (event: CustomEvent<any>) => void;
+        "onModalClose"?: (event: CustomEvent<any>) => void;
         "onOpen-modal"?: (event: CustomEvent<any>) => void;
         "onSubmitted"?: (event: CustomEvent<any>) => void;
         "onUpdated"?: (event: CustomEvent<any>) => void;

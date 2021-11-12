@@ -5,7 +5,7 @@ import delay from 'async-delay';
 
 @Component({
   tag: 'midwest-form',
-  shadow: true
+  shadow: true,
 })
 export class Form {
   @Element() element: HTMLElement;
@@ -15,10 +15,10 @@ export class Form {
   @Prop() autosave: boolean = false;
 
   @Prop() action: string;
-  @Prop() method: string = "get";
+  @Prop() method: string = 'get';
   @Prop() acceptCharset: string;
-  @Prop() autocomplete: string = "on";
-  @Prop() enctype: string = "multipart/form-data";
+  @Prop() autocomplete: string = 'on';
+  @Prop() enctype: string = 'multipart/form-data';
   @Prop() name: string;
   @Prop() validate: boolean = true;
   @Prop() target: string;
@@ -29,17 +29,17 @@ export class Form {
 
   @Event() submitted: EventEmitter;
   @Event() updated: EventEmitter;
-  @Event({ eventName: "fast-updates" }) updatedFast: EventEmitter;
-  
-  @Event({ bubbles: true, composed: true, eventName: "open-modal" }) openModal: EventEmitter;
-  @Event({ bubbles: true, composed: true, eventName: "close-modal" }) closeModal: EventEmitter;
+  @Event({ eventName: 'fastUpdates' }) updatedFast: EventEmitter;
+
+  @Event({ bubbles: true, composed: true, eventName: 'open-modal' }) openModal: EventEmitter;
+  @Event({ bubbles: true, composed: true, eventName: 'modalClose' }) closeModal: EventEmitter;
 
   @State() pjax: any = document.querySelector('midwest-pjax');
 
   @State() submitting: boolean;
 
   autosaveEl: any;
-  els: HTMLElement[] = []
+  els: HTMLElement[] = [];
   fieldGroups: HTMLMidwestFieldGroupElement[] = [];
 
   componentWillLoad() {
@@ -51,23 +51,23 @@ export class Form {
 
   @Method()
   async addFieldGroup(el: any) {
-    this.fieldGroups = [...this.fieldGroups, el]
+    this.fieldGroups = [...this.fieldGroups, el];
 
-    el.addEventListener("fast-updates", this.handleFastUpdates.bind(this))
-    el.addEventListener("updated", this.handleChildUpdates.bind(this))
+    el.addEventListener('fastUpdates', this.handleFastUpdates.bind(this));
+    el.addEventListener('updated', this.handleChildUpdates.bind(this));
   }
 
   @Method()
   async removeFieldGroup(el: any) {
     this.fieldGroups = this.fieldGroups.filter(x => x !== el);
 
-    el.removeEventListener("fast-updates", this.handleFastUpdates.bind(this))
-    el.removeEventListener("updated", this.handleChildUpdates.bind(this))
+    el.removeEventListener('fastUpdates', this.handleFastUpdates.bind(this));
+    el.removeEventListener('updated', this.handleChildUpdates.bind(this));
   }
-  
+
   @Method()
   async addElement(el: HTMLElement) {
-    this.els = [...this.els, el]
+    this.els = [...this.els, el];
   }
 
   @Method()
@@ -76,14 +76,14 @@ export class Form {
   }
 
   get allElementsHydrated() {
-    return this.els.every((el) => el.classList.contains("hydrated"));
+    return this.els.every(el => el.classList.contains('hydrated'));
   }
 
   @Listen('update')
   @Debounce(10)
   async handleFastUpdates() {
     if ((this.els.length > 0 || this.fieldGroups.length > 0) && this.allElementsHydrated) {
-      const state = await this.state(false)
+      const state = await this.state(false);
       this.updatedFast.emit({ ...state });
     }
   }
@@ -92,11 +92,11 @@ export class Form {
   @Debounce(400)
   async handleChildUpdates() {
     if ((this.els.length > 0 || this.fieldGroups.length > 0) && this.allElementsHydrated) {
-      const state = await this.state(false)
-      this.updated.emit({...state});
+      const state = await this.state(false);
+      this.updated.emit({ ...state });
 
       if (this.autosave) {
-        this.autosaveChanges()
+        this.autosaveChanges();
       }
     }
   }
@@ -109,21 +109,29 @@ export class Form {
   }
 
   @Method()
-  async get(name?: string, validate: boolean = false): Promise<{ els: any, json: any, results: FormResult[], namedResults: {[name: string]: string}, formData: any, valid: boolean }> {
-    return this.returnValue(validate, this.els.filter((el) => { return (el as HTMLInputElement).name === name }));
+  async get(
+    name?: string,
+    validate: boolean = false,
+  ): Promise<{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string }; formData: any; valid: boolean }> {
+    return this.returnValue(
+      validate,
+      this.els.filter(el => {
+        return (el as HTMLInputElement).name === name;
+      }),
+    );
   }
 
   @Method()
-  async state(validate = true): Promise<{ els: any, json: any, results: FormResult[], namedResults: {[name: string]: string}, formData: any, valid: boolean }> {
-    return this.returnValue(validate)
+  async state(validate = true): Promise<{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string }; formData: any; valid: boolean }> {
+    return this.returnValue(validate);
   }
 
-  async autosaveChanges () {
+  async autosaveChanges() {
     const originalLabel = this.autosaveEl.label;
-    this.autosaveEl.label = "One moment...";
+    this.autosaveEl.label = 'One moment...';
     this.autosaveEl.processing = true;
     await this.submitForm();
-    this.autosaveEl.label = "Done!";
+    this.autosaveEl.label = 'Done!';
     this.autosaveEl.processing = false;
     await delay(2000);
     this.autosaveEl.label = originalLabel;
@@ -131,14 +139,14 @@ export class Form {
 
   async returnValue(validate: boolean, els?: HTMLElement[]) {
     const formData = new FormData();
-    let namedResults: {[name: string]: string} = {};
+    let namedResults: { [name: string]: string } = {};
     let results: any[] = [];
     let valid = true;
 
     await asyncForEach(els ? els : this.els, async (element: any) => {
       try {
         const result = await element.validate(validate);
-        namedResults[result.name] = result.value
+        namedResults[result.name] = result.value;
         results.push(result);
       } catch (e) {
         namedResults[`${element.name}`] = undefined;
@@ -147,22 +155,22 @@ export class Form {
           value: undefined,
           valid: false,
           errors: [e.message],
-        })
+        });
       }
     });
 
     const extraHidden = this.element.querySelectorAll("form > input[type='hidden']") as NodeListOf<HTMLInputElement>;
 
     if (extraHidden.length !== 0) {
-      extraHidden.forEach((el) => {
+      extraHidden.forEach(el => {
         namedResults[`${el.name}`] = `${el.value}`;
         results.push({
           name: `${el.name}`,
           value: `${el.value}`,
           valid: true,
           errors: [],
-        })
-      })
+        });
+      });
     }
 
     if (this.clickedButton) {
@@ -170,25 +178,25 @@ export class Form {
       results.push({
         name: this.clickedButton.name,
         value: this.clickedButton.value,
-        valid: true
+        valid: true,
       });
     }
 
     await asyncForEach(this.fieldGroups, async (group: any) => {
-      const groupState = await group.state(validate)
-      results = [...results, ...groupState.results]
-      namedResults = {...namedResults, ...groupState.namedResults}
+      const groupState = await group.state(validate);
+      results = [...results, ...groupState.results];
+      namedResults = { ...namedResults, ...groupState.namedResults };
     });
 
-    results.forEach((result) => {
+    results.forEach(result => {
       if (result?.name) {
-        formData.append(result.name.toString(), result.value)
+        formData.append(result.name.toString(), result.value);
       }
 
       if (!result?.valid) {
         valid = false;
       }
-    })
+    });
 
     const json = form2js(results.filter(i => i && i.name));
 
@@ -199,7 +207,7 @@ export class Form {
       results,
       formData,
       valid,
-    }
+    };
   }
 
   @Method()
@@ -212,22 +220,22 @@ export class Form {
       if (button) {
         button.disabled = true;
         button.processing = true;
-        this.clickedButton = (button.name && button.value) ? button : undefined;
+        this.clickedButton = button.name && button.value ? button : undefined;
       }
 
-      const state = await this.state()
+      const state = await this.state();
 
       if (state.valid) {
         if (this.ajax) {
-          this.submitted.emit(state)
+          this.submitted.emit(state);
         } else {
           const form = this.element.querySelector('form');
-          addDataToForm(form, state.namedResults)
-          form.submit()
+          addDataToForm(form, state.namedResults);
+          form.submit();
         }
 
         if (this.closeModalOnSuccess && !this.error) {
-          this.closeModal.emit({})
+          this.closeModal.emit({});
         }
       }
 
@@ -236,32 +244,40 @@ export class Form {
           button.disabled = false;
           button.processing = false;
           this.submitting = false;
-        }, 350)
+        }, 350);
       }
     }
   }
 
   render() {
-    return <Host style={{ "display": "block" }}>
-      <form 
-        action={this.action} 
-        method={this.method} 
-        accept-charset={this.acceptCharset} 
-        autocomplete={this.autocomplete} 
-        enctype={this.enctype} 
-        name={this.name} 
-        novalidate={!!this.validate} 
-        target={this.target} 
-        style={{ "margin": "0" }}
-        onSubmit={e => { e.preventDefault(); this.submitForm(); }}>
-          {this.error && <midwest-callout type="error" class="mb-4">
-            <copy-wrap>
-              <h3 class="text-white">{this.error}</h3>
-              <p class="text-white">Please try again later.</p>
+    return (
+      <Host style={{ display: 'block' }}>
+        <form
+          action={this.action}
+          method={this.method}
+          accept-charset={this.acceptCharset}
+          autocomplete={this.autocomplete}
+          enctype={this.enctype}
+          name={this.name}
+          novalidate={!!this.validate}
+          target={this.target}
+          style={{ margin: '0' }}
+          onSubmit={e => {
+            e.preventDefault();
+            this.submitForm();
+          }}
+        >
+          {this.error && (
+            <midwest-callout type="error" class="mb-4">
+              <copy-wrap>
+                <h3 class="text-white">{this.error}</h3>
+                <p class="text-white">Please try again later.</p>
               </copy-wrap>
-          </midwest-callout>}
+            </midwest-callout>
+          )}
           <slot />
-      </form>
-    </Host>
+        </form>
+      </Host>
+    );
   }
 }

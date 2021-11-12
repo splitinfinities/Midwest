@@ -7,11 +7,11 @@
 
 ## Events
 
-| Event          | Description | Type               |
-| -------------- | ----------- | ------------------ |
-| `fast-updates` |             | `CustomEvent<any>` |
-| `submitted`    |             | `CustomEvent<any>` |
-| `updated`      |             | `CustomEvent<any>` |
+| Event         | Description | Type               |
+| ------------- | ----------- | ------------------ |
+| `fastUpdates` |             | `CustomEvent<any>` |
+| `submitted`   |             | `CustomEvent<any>` |
+| `updated`     |             | `CustomEvent<any>` |
 
 
 ## Methods

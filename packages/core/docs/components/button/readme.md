@@ -33,7 +33,7 @@
 | `processable`    | `processable`      |             | `boolean`                                                                                | `false`     |
 | `processing`     | `processing`       |             | `boolean`                                                                                | `false`     |
 | `size`           | `size`             |             | `"large" \| "small" \| "tiny"`                                                           | `undefined` |
-| `tag`            | `tag`              |             | `"button" \| "link" \| "modal" \| "onboarding" \| "span" \| "stencil-route" \| "submit"` | `"link"`    |
+| `tag`            | `tag`              |             | `"button" \| "link" \| "modal" \| "onboarding" \| "span" \| "stencil-route" \| "submit"` | `'link'`    |
 | `target`         | `target`           |             | `string`                                                                                 | `'_self'`   |
 | `usePjax`        | `use-pjax`         |             | `boolean`                                                                                | `true`      |
 | `value`          | `value`            |             | `string`                                                                                 | `undefined` |
@@ -41,12 +41,12 @@
 
 ## Events
 
-| Event              | Description | Type               |
-| ------------------ | ----------- | ------------------ |
-| `modal:close`      |             | `CustomEvent<any>` |
-| `modal:open`       |             | `CustomEvent<any>` |
-| `onboarding:close` |             | `CustomEvent<any>` |
-| `onboarding:open`  |             | `CustomEvent<any>` |
+| Event             | Description | Type               |
+| ----------------- | ----------- | ------------------ |
+| `modalClose`      |             | `CustomEvent<any>` |
+| `modalOpen`       |             | `CustomEvent<any>` |
+| `onboardingClose` |             | `CustomEvent<any>` |
+| `onboardingOpen`  |             | `CustomEvent<any>` |
 
 
 ## Dependencies

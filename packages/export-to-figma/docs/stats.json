@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-11T15:45:12",
+  "timestamp": "2021-11-11T18:34:12",
   "compiler": {
     "name": "node",
     "version": "17.0.1"
@@ -136,8 +136,8 @@
           "./dist/export-to-figma/export-to-figma.esm.js.map",
           "./dist/export-to-figma/index.esm.js",
           "./dist/export-to-figma/index.esm.js.map",
-          "./dist/export-to-figma/p-cce68048.entry.js",
-          "./dist/export-to-figma/p-cce68048.entry.js.map",
+          "./dist/export-to-figma/p-caf86a40.entry.js",
+          "./dist/export-to-figma/p-caf86a40.entry.js.map",
           "./dist/export-to-figma/p-d87442d2.js",
           "./dist/export-to-figma/p-d87442d2.js.map",
           "./dist/index.cjs.js",
@@ -146,8 +146,8 @@
           "./www/build/export-to-figma.esm.js.map",
           "./www/build/index.esm.js",
           "./www/build/index.esm.js.map",
-          "./www/build/p-cce68048.entry.js",
-          "./www/build/p-cce68048.entry.js.map",
+          "./www/build/p-caf86a40.entry.js",
+          "./www/build/p-caf86a40.entry.js.map",
           "./www/build/p-d87442d2.js",
           "./www/build/p-d87442d2.js.map"
         ]
@@ -185,12 +185,12 @@
           "example-with-shadow",
           "export-to-figma"
         ],
-        "bundleId": "p-cce68048",
-        "fileName": "p-cce68048.entry.js",
+        "bundleId": "p-caf86a40",
+        "fileName": "p-caf86a40.entry.js",
         "imports": [
           "p-d87442d2.js"
         ],
-        "originalByteSize": 37397
+        "originalByteSize": 37381
       }
     ],
     "esm": [
@@ -206,7 +206,7 @@
         "imports": [
           "index-687774ae.js"
         ],
-        "originalByteSize": 37401
+        "originalByteSize": 37385
       }
     ],
     "es5": [],
@@ -224,7 +224,7 @@
         "imports": [
           "index-39f33318.js"
         ],
-        "originalByteSize": 37552
+        "originalByteSize": 37536
       }
     ]
   },

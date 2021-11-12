@@ -28,7 +28,7 @@ export class ShowIf {
     this.closestForm = this.element.closest("midwest-form");
 
     if (this.equals || this.notEquals || this.present) {
-      this.closestForm.addEventListener("fast-updates", (e: any) => this.check(e.detail))
+      this.closestForm.addEventListener('fastUpdates', (e: any) => this.check(e.detail));
     } else if (this.triggered) {
       this.triggerElement = this.closestForm.querySelector(this.selector)
       this.triggerElement.addEventListener("updated", this.check.bind(this));

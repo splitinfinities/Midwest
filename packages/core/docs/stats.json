@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-11T15:45:43",
+  "timestamp": "2021-11-11T18:34:43",
   "compiler": {
     "name": "node",
     "version": "17.0.1"
@@ -313,10 +313,8 @@
           "./dist/core/p-26ff88fc.js.map",
           "./dist/core/p-2f9ac818.entry.js",
           "./dist/core/p-2f9ac818.entry.js.map",
-          "./dist/core/p-367ef39a.entry.js",
-          "./dist/core/p-367ef39a.entry.js.map",
-          "./dist/core/p-41879ece.entry.js",
-          "./dist/core/p-41879ece.entry.js.map",
+          "./dist/core/p-474fdfdf.entry.js",
+          "./dist/core/p-474fdfdf.entry.js.map",
           "./dist/core/p-4af0a0ee.js",
           "./dist/core/p-4af0a0ee.js.map",
           "./dist/core/p-5866cdea.js",
@@ -325,6 +323,8 @@
           "./dist/core/p-676af339.js.map",
           "./dist/core/p-6837d5ed.entry.js",
           "./dist/core/p-6837d5ed.entry.js.map",
+          "./dist/core/p-723d3416.entry.js",
+          "./dist/core/p-723d3416.entry.js.map",
           "./dist/core/p-748b74a3.entry.js",
           "./dist/core/p-748b74a3.entry.js.map",
           "./dist/core/p-7cb12bb0.entry.js",
@@ -337,24 +337,24 @@
           "./dist/core/p-a2e0b557.entry.js.map",
           "./dist/core/p-a76d98e6.entry.js",
           "./dist/core/p-a76d98e6.entry.js.map",
+          "./dist/core/p-abe1a230.entry.js",
+          "./dist/core/p-abe1a230.entry.js.map",
           "./dist/core/p-ae54dd2e.entry.js",
           "./dist/core/p-ae54dd2e.entry.js.map",
           "./dist/core/p-af893fa3.entry.js",
           "./dist/core/p-af893fa3.entry.js.map",
+          "./dist/core/p-b2f07c90.entry.js",
+          "./dist/core/p-b2f07c90.entry.js.map",
           "./dist/core/p-c197a4ad.entry.js",
           "./dist/core/p-c197a4ad.entry.js.map",
           "./dist/core/p-c46053aa.entry.js",
           "./dist/core/p-c46053aa.entry.js.map",
           "./dist/core/p-dde084c5.entry.js",
           "./dist/core/p-dde084c5.entry.js.map",
-          "./dist/core/p-e22ef09c.entry.js",
-          "./dist/core/p-e22ef09c.entry.js.map",
           "./dist/core/p-e3d53e2b.entry.js",
           "./dist/core/p-e3d53e2b.entry.js.map",
           "./dist/core/p-e71b4964.entry.js",
           "./dist/core/p-e71b4964.entry.js.map",
-          "./dist/core/p-ed871cc9.entry.js",
-          "./dist/core/p-ed871cc9.entry.js.map",
           "./dist/core/p-f053c58d.entry.js",
           "./dist/core/p-f053c58d.entry.js.map",
           "./dist/core/p-f6c733ff.js",
@@ -461,10 +461,8 @@
           "./www/build/p-26ff88fc.js.map",
           "./www/build/p-2f9ac818.entry.js",
           "./www/build/p-2f9ac818.entry.js.map",
-          "./www/build/p-367ef39a.entry.js",
-          "./www/build/p-367ef39a.entry.js.map",
-          "./www/build/p-41879ece.entry.js",
-          "./www/build/p-41879ece.entry.js.map",
+          "./www/build/p-474fdfdf.entry.js",
+          "./www/build/p-474fdfdf.entry.js.map",
           "./www/build/p-4af0a0ee.js",
           "./www/build/p-4af0a0ee.js.map",
           "./www/build/p-5866cdea.js",
@@ -473,6 +471,8 @@
           "./www/build/p-676af339.js.map",
           "./www/build/p-6837d5ed.entry.js",
           "./www/build/p-6837d5ed.entry.js.map",
+          "./www/build/p-723d3416.entry.js",
+          "./www/build/p-723d3416.entry.js.map",
           "./www/build/p-748b74a3.entry.js",
           "./www/build/p-748b74a3.entry.js.map",
           "./www/build/p-7cb12bb0.entry.js",
@@ -485,24 +485,24 @@
           "./www/build/p-a2e0b557.entry.js.map",
           "./www/build/p-a76d98e6.entry.js",
           "./www/build/p-a76d98e6.entry.js.map",
+          "./www/build/p-abe1a230.entry.js",
+          "./www/build/p-abe1a230.entry.js.map",
           "./www/build/p-ae54dd2e.entry.js",
           "./www/build/p-ae54dd2e.entry.js.map",
           "./www/build/p-af893fa3.entry.js",
           "./www/build/p-af893fa3.entry.js.map",
+          "./www/build/p-b2f07c90.entry.js",
+          "./www/build/p-b2f07c90.entry.js.map",
           "./www/build/p-c197a4ad.entry.js",
           "./www/build/p-c197a4ad.entry.js.map",
           "./www/build/p-c46053aa.entry.js",
           "./www/build/p-c46053aa.entry.js.map",
           "./www/build/p-dde084c5.entry.js",
           "./www/build/p-dde084c5.entry.js.map",
-          "./www/build/p-e22ef09c.entry.js",
-          "./www/build/p-e22ef09c.entry.js.map",
           "./www/build/p-e3d53e2b.entry.js",
           "./www/build/p-e3d53e2b.entry.js.map",
           "./www/build/p-e71b4964.entry.js",
           "./www/build/p-e71b4964.entry.js.map",
-          "./www/build/p-ed871cc9.entry.js",
-          "./www/build/p-ed871cc9.entry.js.map",
           "./www/build/p-f053c58d.entry.js",
           "./www/build/p-f053c58d.entry.js.map",
           "./www/build/p-f6c733ff.js",
@@ -671,8 +671,8 @@
         "components": [
           "midwest-card"
         ],
-        "bundleId": "p-ed871cc9",
-        "fileName": "p-ed871cc9.entry.js",
+        "bundleId": "p-abe1a230",
+        "fileName": "p-abe1a230.entry.js",
         "imports": [
           "p-26ff88fc.js",
           "p-16f1b7c0.js",
@@ -681,7 +681,7 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 12431
+        "originalByteSize": 12387
       },
       {
         "key": "midwest-content.entry",
@@ -693,7 +693,7 @@
         "imports": [
           "p-26ff88fc.js"
         ],
-        "originalByteSize": 1462
+        "originalByteSize": 1476
       },
       {
         "key": "midwest-dropdown.entry",
@@ -820,8 +820,8 @@
         "components": [
           "midwest-tab"
         ],
-        "bundleId": "p-41879ece",
-        "fileName": "p-41879ece.entry.js",
+        "bundleId": "p-474fdfdf",
+        "fileName": "p-474fdfdf.entry.js",
         "imports": [
           "p-26ff88fc.js",
           "p-16f1b7c0.js",
@@ -830,15 +830,15 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 7602
+        "originalByteSize": 7576
       },
       {
         "key": "midwest-tabs.entry",
         "components": [
           "midwest-tabs"
         ],
-        "bundleId": "p-e22ef09c",
-        "fileName": "p-e22ef09c.entry.js",
+        "bundleId": "p-723d3416",
+        "fileName": "p-723d3416.entry.js",
         "imports": [
           "p-26ff88fc.js",
           "p-4af0a0ee.js",
@@ -847,7 +847,7 @@
           "p-16f1b7c0.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 8587
+        "originalByteSize": 8469
       },
       {
         "key": "midwest-time.entry",
@@ -894,8 +894,8 @@
         "components": [
           "midwest-button"
         ],
-        "bundleId": "p-367ef39a",
-        "fileName": "p-367ef39a.entry.js",
+        "bundleId": "p-b2f07c90",
+        "fileName": "p-b2f07c90.entry.js",
         "imports": [
           "p-26ff88fc.js",
           "p-4af0a0ee.js",
@@ -903,7 +903,7 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 12887
+        "originalByteSize": 12893
       },
       {
         "key": "midwest-group-overflow.entry",
@@ -1091,7 +1091,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 12474
+        "originalByteSize": 12430
       },
       {
         "key": "midwest-content.entry",
@@ -1103,7 +1103,7 @@
         "imports": [
           "index-2629be3a.js"
         ],
-        "originalByteSize": 1466
+        "originalByteSize": 1480
       },
       {
         "key": "midwest-dropdown.entry",
@@ -1240,7 +1240,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 7645
+        "originalByteSize": 7619
       },
       {
         "key": "midwest-tabs.entry",
@@ -1257,7 +1257,7 @@
           "index-216e665c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 8630
+        "originalByteSize": 8512
       },
       {
         "key": "midwest-time.entry",
@@ -1313,7 +1313,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 12926
+        "originalByteSize": 12932
       },
       {
         "key": "midwest-group-overflow.entry",
@@ -1503,7 +1503,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 12612
+        "originalByteSize": 12568
       },
       {
         "key": "midwest-content.entry",
@@ -1515,7 +1515,7 @@
         "imports": [
           "index-ca3ff682.js"
         ],
-        "originalByteSize": 1531
+        "originalByteSize": 1545
       },
       {
         "key": "midwest-dropdown.entry",
@@ -1652,7 +1652,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 7751
+        "originalByteSize": 7725
       },
       {
         "key": "midwest-tabs.entry",
@@ -1669,7 +1669,7 @@
           "index-73a2de1e.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 8736
+        "originalByteSize": 8618
       },
       {
         "key": "midwest-time.entry",
@@ -1725,7 +1725,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 13134
+        "originalByteSize": 13140
       },
       {
         "key": "midwest-group-overflow.entry",
@@ -3342,7 +3342,7 @@
       "excludeFromCollection": false,
       "events": [
         {
-          "name": "modal:open",
+          "name": "modalOpen",
           "method": "openModal",
           "bubbles": true,
           "cancelable": true,
@@ -3359,7 +3359,7 @@
           "internal": false
         },
         {
-          "name": "modal:close",
+          "name": "modalClose",
           "method": "closeModal",
           "bubbles": true,
           "cancelable": true,
@@ -3376,7 +3376,7 @@
           "internal": false
         },
         {
-          "name": "onboarding:open",
+          "name": "onboardingOpen",
           "method": "openOnboarding",
           "bubbles": true,
           "cancelable": true,
@@ -3393,7 +3393,7 @@
           "internal": false
         },
         {
-          "name": "onboarding:close",
+          "name": "onboardingClose",
           "method": "closeOnboarding",
           "bubbles": true,
           "cancelable": true,
@@ -3430,9 +3430,9 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"link\"",
+          "defaultValue": "'link'",
           "complexType": {
-            "original": "\"button\" | \"submit\" | \"link\" | \"span\" | \"modal\" | \"onboarding\" | \"stencil-route\"",
+            "original": "'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route'",
             "resolved": "\"button\" | \"link\" | \"modal\" | \"onboarding\" | \"span\" | \"stencil-route\" | \"submit\"",
             "references": {}
           },
@@ -3606,7 +3606,7 @@
           "required": false,
           "optional": false,
           "complexType": {
-            "original": "\"tiny\" | \"small\" | \"large\"",
+            "original": "'tiny' | 'small' | 'large'",
             "resolved": "\"large\" | \"small\" | \"tiny\"",
             "references": {}
           },
@@ -3625,7 +3625,7 @@
           "required": false,
           "optional": false,
           "complexType": {
-            "original": "\"tiny\" | \"small\" | \"large\"",
+            "original": "'tiny' | 'small' | 'large'",
             "resolved": "\"large\" | \"small\" | \"tiny\"",
             "references": {}
           },
@@ -4232,7 +4232,7 @@
           "internal": false
         },
         {
-          "name": "modal:open",
+          "name": "modalOpen",
           "method": "openModal",
           "bubbles": true,
           "cancelable": true,
@@ -4249,7 +4249,7 @@
           "internal": false
         },
         {
-          "name": "modal:close",
+          "name": "modalClose",
           "method": "closeModal",
           "bubbles": true,
           "cancelable": true,
@@ -4765,7 +4765,7 @@
       "legacyContext": [],
       "listeners": [
         {
-          "name": "open:content",
+          "name": "contentOpen",
           "method": "handleActive",
           "capture": false,
           "passive": false,
@@ -7047,7 +7047,7 @@
       "excludeFromCollection": false,
       "events": [
         {
-          "name": "open:content",
+          "name": "contentOpen",
           "method": "contentChange",
           "bubbles": true,
           "cancelable": true,
@@ -7130,9 +7130,9 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"medium\"",
+          "defaultValue": "'medium'",
           "complexType": {
-            "original": "\"tiny\" | \"small\" | \"medium\" | \"large\"",
+            "original": "'tiny' | 'small' | 'medium' | 'large'",
             "resolved": "\"large\" | \"medium\" | \"small\" | \"tiny\"",
             "references": {}
           },
@@ -7230,7 +7230,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"cyan\"",
+          "defaultValue": "'cyan'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -7250,9 +7250,9 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"button\"",
+          "defaultValue": "'button'",
           "complexType": {
-            "original": "\"button\" | \"link\" | \"stencil-route\"",
+            "original": "'button' | 'link' | 'stencil-route'",
             "resolved": "\"button\" | \"link\" | \"stencil-route\"",
             "references": {}
           },
@@ -12129,7 +12129,7 @@
               "internal": false
             },
             {
-              "name": "modal:open",
+              "name": "modalOpen",
               "method": "openModal",
               "bubbles": true,
               "cancelable": true,
@@ -12146,7 +12146,7 @@
               "internal": false
             },
             {
-              "name": "modal:close",
+              "name": "modalClose",
               "method": "closeModal",
               "bubbles": true,
               "cancelable": true,
@@ -12248,11 +12248,11 @@
           "isPlain": false,
           "htmlAttrNames": [
             "style",
+            "class",
+            "onClick",
             "tag",
             "ghost",
             "iconOnly",
-            "class",
-            "onClick",
             "name",
             "ref",
             "element",
@@ -12388,7 +12388,7 @@
           "methods": [],
           "listeners": [
             {
-              "name": "open:content",
+              "name": "contentOpen",
               "method": "handleActive",
               "capture": false,
               "passive": false,
@@ -14937,9 +14937,9 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"medium\"",
+              "defaultValue": "'medium'",
               "complexType": {
-                "original": "\"tiny\" | \"small\" | \"medium\" | \"large\"",
+                "original": "'tiny' | 'small' | 'medium' | 'large'",
                 "resolved": "\"large\" | \"medium\" | \"small\" | \"tiny\"",
                 "references": {}
               },
@@ -15037,7 +15037,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"cyan\"",
+              "defaultValue": "'cyan'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -15057,9 +15057,9 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"button\"",
+              "defaultValue": "'button'",
               "complexType": {
-                "original": "\"button\" | \"link\" | \"stencil-route\"",
+                "original": "'button' | 'link' | 'stencil-route'",
                 "resolved": "\"button\" | \"link\" | \"stencil-route\"",
                 "references": {}
               },
@@ -15205,7 +15205,7 @@
           ],
           "events": [
             {
-              "name": "open:content",
+              "name": "contentOpen",
               "method": "contentChange",
               "bubbles": true,
               "cancelable": true,
@@ -16652,9 +16652,9 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"link\"",
+              "defaultValue": "'link'",
               "complexType": {
-                "original": "\"button\" | \"submit\" | \"link\" | \"span\" | \"modal\" | \"onboarding\" | \"stencil-route\"",
+                "original": "'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route'",
                 "resolved": "\"button\" | \"link\" | \"modal\" | \"onboarding\" | \"span\" | \"stencil-route\" | \"submit\"",
                 "references": {}
               },
@@ -16828,7 +16828,7 @@
               "required": false,
               "optional": false,
               "complexType": {
-                "original": "\"tiny\" | \"small\" | \"large\"",
+                "original": "'tiny' | 'small' | 'large'",
                 "resolved": "\"large\" | \"small\" | \"tiny\"",
                 "references": {}
               },
@@ -16847,7 +16847,7 @@
               "required": false,
               "optional": false,
               "complexType": {
-                "original": "\"tiny\" | \"small\" | \"large\"",
+                "original": "'tiny' | 'small' | 'large'",
                 "resolved": "\"large\" | \"small\" | \"tiny\"",
                 "references": {}
               },
@@ -17202,7 +17202,7 @@
           "listeners": [],
           "events": [
             {
-              "name": "modal:open",
+              "name": "modalOpen",
               "method": "openModal",
               "bubbles": true,
               "cancelable": true,
@@ -17219,7 +17219,7 @@
               "internal": false
             },
             {
-              "name": "modal:close",
+              "name": "modalClose",
               "method": "closeModal",
               "bubbles": true,
               "cancelable": true,
@@ -17236,7 +17236,7 @@
               "internal": false
             },
             {
-              "name": "onboarding:open",
+              "name": "onboardingOpen",
               "method": "openOnboarding",
               "bubbles": true,
               "cancelable": true,
@@ -17253,7 +17253,7 @@
               "internal": false
             },
             {
-              "name": "onboarding:close",
+              "name": "onboardingClose",
               "method": "closeOnboarding",
               "bubbles": true,
               "cancelable": true,

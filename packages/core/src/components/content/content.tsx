@@ -2,9 +2,8 @@ import { Component, Prop, State, Element, Listen, h, Watch, Host } from '@stenci
 
 @Component({
   tag: 'midwest-content',
-  shadow: true
+  shadow: true,
 })
-
 export class Content {
   @Element() element: HTMLElement;
   @Prop({ mutable: true, reflect: true }) open: boolean = false;
@@ -13,11 +12,13 @@ export class Content {
   @Prop({ mutable: true, reflect: true }) scrollWhenActive: boolean;
   @State() parent: any;
 
-  tab!: HTMLMidwestTabElement | HTMLMidwestStepElement
+  tab!: HTMLMidwestTabElement | HTMLMidwestStepElement;
   animationEl!: HTMLAnimatePresenceElement;
 
   componentWillLoad() {
-    this.tab = document.querySelector(`midwest-tabs[name="${this.for}"] midwest-tab[href="#${this.element.id}"], midwest-steps[name="${this.for}"] midwest-step[href="#${this.element.id}"]`);
+    this.tab = document.querySelector(
+      `midwest-tabs[name="${this.for}"] midwest-tab[href="#${this.element.id}"], midwest-steps[name="${this.for}"] midwest-step[href="#${this.element.id}"]`,
+    );
 
     if (window.location.hash && this.element.id.includes(window.location.hash)) {
       this.open = true;
@@ -25,25 +26,23 @@ export class Content {
     }
   }
 
-  @Watch("open")
+  @Watch('open')
   handleOpen() {
     if (this.scrollWhenActive) {
-      this.element.scrollIntoView(true)
+      this.element.scrollIntoView(true);
     }
-    
+
     if (this.open) {
-      this.animationEl.enter()
+      this.animationEl.enter();
     } else {
-      
-      
     }
   }
 
-  @Listen("open:content", { target: 'document' })
+  @Listen('contentOpen', { target: 'document' })
   async handleActive(event: CustomEvent) {
     this.parent = event.detail.parent;
 
-    const contents = await this.parent.contents()
+    const contents = await this.parent.contents();
 
     if (event.detail.name !== this.element.id) {
       contents.forEach((element: HTMLMidwestContentElement) => {
@@ -53,10 +52,16 @@ export class Content {
   }
 
   render() {
-    return <Host class={this.open ? "block" : "hidden" } role="tabpanel" aria-hidden={!this.open ? "true" : "false"}>
-      <animate-presence ref={(el) => { this.animationEl = el }}>
-        <slot></slot>
-      </animate-presence>
-    </Host>
+    return (
+      <Host class={this.open ? 'block' : 'hidden'} role="tabpanel" aria-hidden={!this.open ? 'true' : 'false'}>
+        <animate-presence
+          ref={el => {
+            this.animationEl = el;
+          }}
+        >
+          <slot></slot>
+        </animate-presence>
+      </Host>
+    );
   }
 }

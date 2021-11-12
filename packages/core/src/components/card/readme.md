@@ -34,11 +34,11 @@
 
 ## Events
 
-| Event         | Description | Type               |
-| ------------- | ----------- | ------------------ |
-| `flip`        |             | `CustomEvent<any>` |
-| `modal:close` |             | `CustomEvent<any>` |
-| `modal:open`  |             | `CustomEvent<any>` |
+| Event        | Description | Type               |
+| ------------ | ----------- | ------------------ |
+| `flip`       |             | `CustomEvent<any>` |
+| `modalClose` |             | `CustomEvent<any>` |
+| `modalOpen`  |             | `CustomEvent<any>` |
 
 
 ## Methods

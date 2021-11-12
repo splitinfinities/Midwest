@@ -2,11 +2,12 @@ import { generateJsonDocs } from './customElementDocGenerator';
 import type { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
 
-export const frameworkBindings = (name: string): any[] => {
+export const frameworkBindings = (name: string, excludeComponents: string[]): any[] => {
   return [
     angularOutputTarget({
       componentCorePackage: `@midwest-design/${name}`,
       directivesProxyFile: `../angular/projects/midwest/src/lib/stencil-bindings/midwest-${name}-components.ts`,
+      excludeComponents
     }),
   ]
 } 

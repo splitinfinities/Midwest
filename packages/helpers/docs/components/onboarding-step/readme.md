@@ -20,17 +20,17 @@
 | `name`                | `name`                  |             | `string`                                                                                                                                                                                                     | `undefined` |
 | `navigateTo`          | `navigate-to`           |             | `string`                                                                                                                                                                                                     | `undefined` |
 | `next`                | `next`                  |             | `string`                                                                                                                                                                                                     | `undefined` |
-| `nextText`            | `next-text`             |             | `string`                                                                                                                                                                                                     | `"next"`    |
-| `position`            | `position`              |             | `"auto" \| "auto-end" \| "auto-start" \| "bottom" \| "bottom-end" \| "bottom-start" \| "left" \| "left-end" \| "left-start" \| "right" \| "right-end" \| "right-start" \| "top" \| "top-end" \| "top-start"` | `"auto"`    |
+| `nextText`            | `next-text`             |             | `string`                                                                                                                                                                                                     | `'next'`    |
+| `position`            | `position`              |             | `"auto" \| "auto-end" \| "auto-start" \| "bottom" \| "bottom-end" \| "bottom-start" \| "left" \| "left-end" \| "left-start" \| "right" \| "right-end" \| "right-start" \| "top" \| "top-end" \| "top-start"` | `'auto'`    |
 | `selector`            | `selector`              |             | `string`                                                                                                                                                                                                     | `undefined` |
 | `stepTitle`           | `step-title`            |             | `string`                                                                                                                                                                                                     | `undefined` |
 
 
 ## Events
 
-| Event         | Description | Type               |
-| ------------- | ----------- | ------------------ |
-| `close-modal` |             | `CustomEvent<any>` |
+| Event        | Description | Type               |
+| ------------ | ----------- | ------------------ |
+| `modalClose` |             | `CustomEvent<any>` |
 
 
 ## Methods

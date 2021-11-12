@@ -5,43 +5,42 @@ import { darkMode } from '@midwest-design/common';
 @Component({
   tag: 'midwest-tab',
   styleUrl: 'tab.css',
-  shadow: true
+  shadow: true,
 })
-
 export class Tab {
-  @Element() element: HTMLElement
+  @Element() element: HTMLElement;
 
   @Prop({ mutable: true, reflect: true }) name: string;
-  @Prop({ reflect: true }) size: "tiny" | "small" | "medium" | "large" = "medium";
-  @Prop() disabled: boolean = false
-  @Prop({ mutable: true, reflect: true }) open: boolean = false
-  @Prop({ mutable: true, reflect: true }) dark: boolean = false
-  @Prop() notifications: boolean | number = false
-  @Prop() notificationsColor: string = "cyan";
-  @Prop() tag: "button" | "link" | "stencil-route" = "button";
+  @Prop({ reflect: true }) size: 'tiny' | 'small' | 'medium' | 'large' = 'medium';
+  @Prop() disabled: boolean = false;
+  @Prop({ mutable: true, reflect: true }) open: boolean = false;
+  @Prop({ mutable: true, reflect: true }) dark: boolean = false;
+  @Prop() notifications: boolean | number = false;
+  @Prop() notificationsColor: string = 'cyan';
+  @Prop() tag: 'button' | 'link' | 'stencil-route' = 'button';
   @Prop() href: string = '#';
   @Prop() target: string = '_self';
 
-  @Prop({ reflect: true }) order: number
-  @Prop({ reflect: true }) tabCount: number
-  @Prop({ reflect: true }) vertical: boolean = false
+  @Prop({ reflect: true }) order: number;
+  @Prop({ reflect: true }) tabCount: number;
+  @Prop({ reflect: true }) vertical: boolean = false;
 
-  @State() parent: any
+  @State() parent: any;
   pjaxElement: any = document.querySelector('midwest-pjax');
 
-  @Event({ bubbles: true, composed: true, eventName: "open:content"}) contentChange: EventEmitter;
+  @Event({ bubbles: true, composed: true, eventName: 'contentOpen' }) contentChange: EventEmitter;
 
   componentWillLoad() {
     darkMode(this);
     this.parent = this.element.closest('midwest-tabs');
     if (window.location.hash && this.href.includes(window.location.hash)) {
-      this.handleClick()
+      this.handleClick();
     }
   }
 
-  @Listen("resize", { target: 'window' })
+  @Listen('resize', { target: 'window' })
   handleResize() {
-    this.handleIndicatorPosition()
+    this.handleIndicatorPosition();
   }
 
   componentDidLoad() {
@@ -49,7 +48,7 @@ export class Tab {
 
     setTimeout(() => {
       this.handleIndicatorPosition();
-    }, 1000)
+    }, 1000);
   }
 
   @Method()
@@ -58,33 +57,33 @@ export class Tab {
   }
 
   async handleClick(e?: Event) {
-    const tabs = await this.parent.tabs() as HTMLMidwestTabElement[]
+    const tabs = (await this.parent.tabs()) as HTMLMidwestTabElement[];
 
-    tabs.forEach((element) => {
-      element.open = false
-    })
+    tabs.forEach(element => {
+      element.open = false;
+    });
 
     this.open = true;
 
-    this.handleIndicatorPosition()
+    this.handleIndicatorPosition();
 
     if (!this.disabled) {
       e && e.preventDefault();
 
-      if (this.tag === "button" || this.tag === "stencil-route") {
+      if (this.tag === 'button' || this.tag === 'stencil-route') {
         this.contentChange.emit({
           parent: this.parent,
-          name: this.href.replace(/[#]/g, "")
+          name: this.href.replace(/[#]/g, ''),
         });
 
         if (this.pjaxElement) {
-          window.history.pushState({}, "", this.href);
+          window.history.pushState({}, '', this.href);
         }
-      } else if (this.tag === "link") {
+      } else if (this.tag === 'link') {
         if (this.pjaxElement) {
-          await this.pjaxElement.loadUrl(this.href)
+          await this.pjaxElement.loadUrl(this.href);
         } else {
-          await delay(350)
+          await delay(350);
           window.location.href = this.href;
         }
       }
@@ -100,8 +99,8 @@ export class Tab {
   }
 
   handleIndicatorPosition() {
-    if (this.open && this.parent && this.parent.nodeName === "MIDWEST-TABS" && !this.element.hidden) {
-      this.element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
+    if (this.open && this.parent && this.parent.nodeName === 'MIDWEST-TABS' && !this.element.hidden) {
+      this.element.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
       this.parent.hiddenTabActive = false;
       if (this.parent.vertical) {
         this.parent.tabTop = this.element.offsetTop;
@@ -116,7 +115,7 @@ export class Tab {
   }
 
   removeIndicator() {
-    if (this.parent && this.parent.nodeName === "SA-TABS") {
+    if (this.parent && this.parent.nodeName === 'SA-TABS') {
       if (this.parent.vertical) {
         this.parent.tabHeight = 0;
         this.parent.tabOpacity = 0;
@@ -128,80 +127,87 @@ export class Tab {
   }
 
   renderNotifications() {
-    const style = { "--background-color": "var(--red--6)", "--color": "var(--white)" };
+    const style = { '--background-color': 'var(--red--6)', '--color': 'var(--white)' };
 
-    return <midwest-tag
-      pill
-      class="notifications"
-      size="tiny"
-      style={style}>
-      {this.notifications}
-    </midwest-tag>
+    return (
+      <midwest-tag pill class="notifications" size="tiny" style={style}>
+        {this.notifications}
+      </midwest-tag>
+    );
   }
 
   renderTitle() {
-    return <midwest-label size={this.size} class="title cursor-pointer">
-      <slot></slot>
-    </midwest-label>
+    return (
+      <midwest-label size={this.size} class="title cursor-pointer">
+        <slot></slot>
+      </midwest-label>
+    );
   }
 
   renderButton() {
-    return <button 
-        role="tab" 
-        type="button" 
-        disabled={this.disabled} 
-        aria-selected={this.open ? "true" : "false"}
+    return (
+      <button
+        role="tab"
+        type="button"
+        disabled={this.disabled}
+        aria-selected={this.open ? 'true' : 'false'}
         aria-setsize={this.tabCount}
         aria-posinset={this.order}
         tabindex="0"
         class="tab-button"
-        onClick={(e) => this.handleClick(e)}
+        onClick={e => this.handleClick(e)}
       >
-      {this.notifications && this.renderNotifications()}
-      {this.renderTitle()}
-    </button>
+        {this.notifications && this.renderNotifications()}
+        {this.renderTitle()}
+      </button>
+    );
   }
 
   renderLink() {
-    return <a 
-        role="tab" 
-        href={this.href} 
-        target={this.target} 
-        class="tab-button" 
-        data-disabled={this.disabled} 
-        onClick={(e) => { this.handleClick(e) }}
+    return (
+      <a
+        role="tab"
+        href={this.href}
+        target={this.target}
+        class="tab-button"
+        data-disabled={this.disabled}
+        onClick={e => {
+          this.handleClick(e);
+        }}
       >
-      {this.notifications && this.renderNotifications()}
-      {this.renderTitle()}
-    </a>
-  }  
-  
+        {this.notifications && this.renderNotifications()}
+        {this.renderTitle()}
+      </a>
+    );
+  }
+
   renderStencilRoute() {
-    return <stencil-route-link
-      role="tab"
-      url={this.href}
-      anchorClass="tab-button"
-      data-disabled={this.disabled}
-      onClick={(e) => { this.handleClick(e) }}
-    >
-      {this.notifications && this.renderNotifications()}
-      {this.renderTitle()}
-    </stencil-route-link>
+    return (
+      <stencil-route-link
+        role="tab"
+        url={this.href}
+        anchorClass="tab-button"
+        data-disabled={this.disabled}
+        onClick={e => {
+          this.handleClick(e);
+        }}
+      >
+        {this.notifications && this.renderNotifications()}
+        {this.renderTitle()}
+      </stencil-route-link>
+    );
   }
 
   render() {
-    return <Host>
-      <div class="tab-wrap">
-        {this.tag === "button" && this.renderButton()}
-        {this.tag === "link" && this.renderLink()}
-        {this.tag === "stencil-route" && this.renderStencilRoute()}
-      </div>
-      {this.parent?.payAttention && <intersection-observer
-        in={this.sectionIsOnScreen.bind(this)}
-        element={this.href}
-        multiple
-        margin="-50%"
-      />}
-    </Host>
+    return (
+      <Host>
+        <div class="tab-wrap">
+          {this.tag === 'button' && this.renderButton()}
+          {this.tag === 'link' && this.renderLink()}
+          {this.tag === 'stencil-route' && this.renderStencilRoute()}
+        </div>
+        {this.parent?.payAttention && <intersection-observer in={this.sectionIsOnScreen.bind(this)} element={this.href} multiple margin="-50%" />}
+      </Host>
+    );
   }
 }

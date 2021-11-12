@@ -11,7 +11,7 @@ export class OnboardingStep {
   @Prop() name: string;
   @Prop() stepTitle: string;
   @Prop() back: string;
-  @Prop() awaitModal : boolean;
+  @Prop() awaitModal: boolean;
   @Prop() forceAction: boolean;
   @Prop() canClickTarget: boolean;
   @Prop() closeModalAfterward: boolean;
@@ -19,33 +19,50 @@ export class OnboardingStep {
   @Prop() next: string;
   @Prop() navigateTo: string;
   @Prop() chainTo: string;
-  @Prop() nextText: string = "next";
+  @Prop() nextText: string = 'next';
   @Prop() completeText: string;
   @Prop() selector: string;
-  @Prop() position: 'auto'|'auto-start'|'auto-end'|'top'|'top-start'|'top-end'|'bottom'|'bottom-start'|'bottom-end'|'right'|'right-start'|'right-end'|'left'|'left-start'|'left-end' = "auto";
+  @Prop() position:
+    | 'auto'
+    | 'auto-start'
+    | 'auto-end'
+    | 'top'
+    | 'top-start'
+    | 'top-end'
+    | 'bottom'
+    | 'bottom-start'
+    | 'bottom-end'
+    | 'right'
+    | 'right-start'
+    | 'right-end'
+    | 'left'
+    | 'left-start'
+    | 'left-end' = 'auto';
   text: string;
-  pjax: any = document.querySelector("midwest-pjax").pjax
+  pjax: any = document.querySelector('midwest-pjax').pjax;
   tour: Shepherd.Tour;
 
-  tourName: string
+  tourName: string;
 
-  @Event({ bubbles: true, composed: true, eventName: "close-modal" }) closeModal: EventEmitter;
+  @Event({ bubbles: true, composed: true, eventName: 'modalClose' }) closeModal: EventEmitter;
 
   componentWillLoad() {
-    let code: any = this.element.querySelector("template");
+    let code: any = this.element.querySelector('template');
 
     if (!code.innerHTML) {
-      code = Array.from(code.children).map((node: any) => {
-        return node.outerHTML
-      }).join()
+      code = Array.from(code.children)
+        .map((node: any) => {
+          return node.outerHTML;
+        })
+        .join();
     } else {
-      code = code.innerHTML
+      code = code.innerHTML;
     }
 
     this.text = code;
   }
 
-  @Method() 
+  @Method()
   async details(tour, id) {
     this.tourName = id;
 
@@ -59,30 +76,36 @@ export class OnboardingStep {
       when: {
         hide: () => {
           if (this.closeModalAfterward) {
-            this.closeModal.emit({})
+            this.closeModal.emit({});
           }
-        }
+        },
       },
       attachTo: {
         element: this.selector,
         on: this.position,
       },
-      
+
       buttons: [
-        ...[ this.back && {
-            text: "Back",
-            action: () => { tour.back() }
+        ...[
+          this.back && {
+            text: 'Back',
+            action: () => {
+              tour.back();
+            },
           },
           this.completeText && {
             text: this.completeText,
-            action: () => { tour.complete() }
+            action: () => {
+              tour.complete();
+            },
           },
-          (this.next && !this.chainTo) && {
-            text: this.nextText,
-            action: () => { 
-              tour.show(this.next)
-            }
-          },
+          this.next &&
+            !this.chainTo && {
+              text: this.nextText,
+              action: () => {
+                tour.show(this.next);
+              },
+            },
           this.chainTo && {
             text: this.nextText,
             action: () => {
@@ -91,24 +114,24 @@ export class OnboardingStep {
               chainedTour.returnsToStep = this.next;
               chainedTour.start();
               tour.cancel();
-            }
-          }
-        ].filter(Boolean)
-      ]
-    }
+            },
+          },
+        ].filter(Boolean),
+      ],
+    };
 
     if (this.forceAction) {
       details.buttons = [];
     }
 
     if (this.awaitModal) {
-      details.beforeShowPromise = async () => { 
-        await new Promise((resolve) => {
-          document.addEventListener("modal:opened", () => {
+      details.beforeShowPromise = async () => {
+        await new Promise(resolve => {
+          document.addEventListener('modalOpened', () => {
             resolve(false);
           });
-          
-          document.addEventListener("modal:closed", () => {
+
+          document.addEventListener('modalClosed', () => {
             resolve(false);
           });
         });
@@ -118,30 +141,29 @@ export class OnboardingStep {
         }
 
         return true;
-      }
+      };
     }
 
     if (this.delay || this.navigateTo) {
-      details.beforeShowPromise = async () => { 
+      details.beforeShowPromise = async () => {
         if (this.navigateTo && this.pjax) {
-          await new Promise((resolve) => {
-            document.addEventListener("pjax:complete", () => {
+          await new Promise(resolve => {
+            document.addEventListener('pjax:complete', () => {
               resolve(false);
             });
 
-            this.pjax.loadUrl(this.navigateTo)
-          })
+            this.pjax.loadUrl(this.navigateTo);
+          });
         }
 
         if (this.delay) {
-          await delay(this.delay) 
+          await delay(this.delay);
         }
 
         return true;
-      }
-    }; 
+      };
+    }
 
     return details;
   }
-
 }

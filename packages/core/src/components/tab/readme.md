@@ -14,21 +14,21 @@
 | `href`               | `href`                |             | `string`                                   | `'#'`       |
 | `name`               | `name`                |             | `string`                                   | `undefined` |
 | `notifications`      | `notifications`       |             | `boolean \| number`                        | `false`     |
-| `notificationsColor` | `notifications-color` |             | `string`                                   | `"cyan"`    |
+| `notificationsColor` | `notifications-color` |             | `string`                                   | `'cyan'`    |
 | `open`               | `open`                |             | `boolean`                                  | `false`     |
 | `order`              | `order`               |             | `number`                                   | `undefined` |
-| `size`               | `size`                |             | `"large" \| "medium" \| "small" \| "tiny"` | `"medium"`  |
+| `size`               | `size`                |             | `"large" \| "medium" \| "small" \| "tiny"` | `'medium'`  |
 | `tabCount`           | `tab-count`           |             | `number`                                   | `undefined` |
-| `tag`                | `tag`                 |             | `"button" \| "link" \| "stencil-route"`    | `"button"`  |
+| `tag`                | `tag`                 |             | `"button" \| "link" \| "stencil-route"`    | `'button'`  |
 | `target`             | `target`              |             | `string`                                   | `'_self'`   |
 | `vertical`           | `vertical`            |             | `boolean`                                  | `false`     |
 
 
 ## Events
 
-| Event          | Description | Type               |
-| -------------- | ----------- | ------------------ |
-| `open:content` |             | `CustomEvent<any>` |
+| Event         | Description | Type               |
+| ------------- | ----------- | ------------------ |
+| `contentOpen` |             | `CustomEvent<any>` |
 
 
 ## Methods

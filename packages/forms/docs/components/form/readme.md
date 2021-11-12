@@ -12,11 +12,11 @@
 | `acceptCharset`       | `accept-charset`         |             | `string`  | `undefined`             |
 | `action`              | `action`                 |             | `string`  | `undefined`             |
 | `ajax`                | `ajax`                   |             | `boolean` | `false`                 |
-| `autocomplete`        | `autocomplete`           |             | `string`  | `"on"`                  |
+| `autocomplete`        | `autocomplete`           |             | `string`  | `'on'`                  |
 | `autosave`            | `autosave`               |             | `boolean` | `false`                 |
 | `closeModalOnSuccess` | `close-modal-on-success` |             | `boolean` | `undefined`             |
-| `enctype`             | `enctype`                |             | `string`  | `"multipart/form-data"` |
-| `method`              | `method`                 |             | `string`  | `"get"`                 |
+| `enctype`             | `enctype`                |             | `string`  | `'multipart/form-data'` |
+| `method`              | `method`                 |             | `string`  | `'get'`                 |
 | `name`                | `name`                   |             | `string`  | `undefined`             |
 | `perform`             | `perform`                |             | `boolean` | `false`                 |
 | `target`              | `target`                 |             | `string`  | `undefined`             |
@@ -25,13 +25,13 @@
 
 ## Events
 
-| Event          | Description | Type               |
-| -------------- | ----------- | ------------------ |
-| `close-modal`  |             | `CustomEvent<any>` |
-| `fast-updates` |             | `CustomEvent<any>` |
-| `open-modal`   |             | `CustomEvent<any>` |
-| `submitted`    |             | `CustomEvent<any>` |
-| `updated`      |             | `CustomEvent<any>` |
+| Event         | Description | Type               |
+| ------------- | ----------- | ------------------ |
+| `fastUpdates` |             | `CustomEvent<any>` |
+| `modalClose`  |             | `CustomEvent<any>` |
+| `open-modal`  |             | `CustomEvent<any>` |
+| `submitted`   |             | `CustomEvent<any>` |
+| `updated`     |             | `CustomEvent<any>` |
 
 
 ## Methods

@@ -6,6 +6,68 @@ import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 import { Components } from '@midwest-design/core';
 
 
+export declare interface AnimatePresence extends Components.AnimatePresence {
+  /**
+   * Fires when all exiting nodes have completed animating out.
+
+To simplify listener behavior, this event bubbles, but never beyond the closest `<animate-presence>` parent. 
+   */
+  animatePresenceExitComplete: EventEmitter<CustomEvent<void>>;
+  /**
+   * Dispatched on a child when it enters. `event.target` is the entering child element.
+
+It is recommended to use an animation handler created with `createPresenceHandler` for this event. 
+   */
+  animatePresenceEnter: EventEmitter<CustomEvent<{ i: number }>>;
+  /**
+   * Dispatched on a child when it exits. `event.target` is the exiting child element.
+
+It is recommended to use an animation handler created with `createPresenceHandler` for this event. 
+   */
+  animatePresenceExit: EventEmitter<CustomEvent<{ i: number }>>;
+
+}
+
+@ProxyCmp({
+  inputs: ['observe'],
+  methods: ['exit', 'enter']
+})
+@Component({
+  selector: 'animate-presence',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['observe']
+})
+export class AnimatePresence {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+    proxyOutputs(this, this.el, ['animatePresenceExitComplete', 'animatePresenceEnter', 'animatePresenceExit']);
+  }
+}
+
+
+export declare interface AnimatedRouteSwitch extends Components.AnimatedRouteSwitch {}
+
+@ProxyCmp({
+  inputs: ['location', 'scrollTopOffset']
+})
+@Component({
+  selector: 'animated-route-switch',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['location', 'scrollTopOffset']
+})
+export class AnimatedRouteSwitch {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
 export declare interface CopyWrap extends Components.CopyWrap {}
 
 @ProxyCmp({
@@ -18,6 +80,26 @@ export declare interface CopyWrap extends Components.CopyWrap {}
   inputs: ['align', 'clamp', 'full']
 })
 export class CopyWrap {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface IonIcon extends Components.IonIcon {}
+
+@ProxyCmp({
+  inputs: ['ariaHidden', 'ariaLabel', 'color', 'flipRtl', 'icon', 'ios', 'lazy', 'md', 'mode', 'name', 'sanitize', 'size', 'src']
+})
+@Component({
+  selector: 'ion-icon',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['ariaHidden', 'ariaLabel', 'color', 'flipRtl', 'icon', 'ios', 'lazy', 'md', 'mode', 'name', 'sanitize', 'size', 'src']
+})
+export class IonIcon {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -121,19 +203,19 @@ export declare interface MidwestButton extends Components.MidwestButton {
   /**
    *  
    */
-  modalOpen: EventEmitter<CustomEvent<any>>;
+  modal:open: EventEmitter<CustomEvent<any>>;
   /**
    *  
    */
-  modalClose: EventEmitter<CustomEvent<any>>;
+  modal:close: EventEmitter<CustomEvent<any>>;
   /**
    *  
    */
-  onboardingOpen: EventEmitter<CustomEvent<any>>;
+  onboarding:open: EventEmitter<CustomEvent<any>>;
   /**
    *  
    */
-  onboardingClose: EventEmitter<CustomEvent<any>>;
+  onboarding:close: EventEmitter<CustomEvent<any>>;
 
 }
 
@@ -151,7 +233,7 @@ export class MidwestButton {
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs(this, this.el, ['modalOpen', 'modalClose', 'onboardingOpen', 'onboardingClose']);
+    proxyOutputs(this, this.el, ['modal:open', 'modal:close', 'onboarding:open', 'onboarding:close']);
   }
 }
 
@@ -204,11 +286,11 @@ export declare interface MidwestCard extends Components.MidwestCard {
   /**
    *  
    */
-  modalOpen: EventEmitter<CustomEvent<any>>;
+  modal:open: EventEmitter<CustomEvent<any>>;
   /**
    *  
    */
-  modalClose: EventEmitter<CustomEvent<any>>;
+  modal:close: EventEmitter<CustomEvent<any>>;
 
 }
 
@@ -227,7 +309,7 @@ export class MidwestCard {
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs(this, this.el, ['flip', 'modalOpen', 'modalClose']);
+    proxyOutputs(this, this.el, ['flip', 'modal:open', 'modal:close']);
   }
 }
 
@@ -501,7 +583,7 @@ export declare interface MidwestTab extends Components.MidwestTab {
   /**
    *  
    */
-  contentOpen: EventEmitter<CustomEvent<any>>;
+  open:content: EventEmitter<CustomEvent<any>>;
 
 }
 
@@ -520,7 +602,7 @@ export class MidwestTab {
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs(this, this.el, ['contentOpen']);
+    proxyOutputs(this, this.el, ['open:content']);
   }
 }
 

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-11T15:47:23",
+  "timestamp": "2021-11-11T18:36:10",
   "compiler": {
     "name": "node",
     "version": "17.0.1"
@@ -752,10 +752,10 @@
           "./dist/new-tab/index.esm.js.map",
           "./dist/new-tab/new-tab.esm.js",
           "./dist/new-tab/new-tab.esm.js.map",
-          "./dist/new-tab/p-02ea2c59.entry.js",
-          "./dist/new-tab/p-02ea2c59.entry.js.map",
           "./dist/new-tab/p-06ddeba8.entry.js",
           "./dist/new-tab/p-06ddeba8.entry.js.map",
+          "./dist/new-tab/p-0c4450e4.entry.js",
+          "./dist/new-tab/p-0c4450e4.entry.js.map",
           "./dist/new-tab/p-0c502921.js",
           "./dist/new-tab/p-0c502921.js.map",
           "./dist/new-tab/p-0c6ec147.entry.js",
@@ -764,16 +764,20 @@
           "./dist/new-tab/p-0d4c2a44.entry.js.map",
           "./dist/new-tab/p-0fe8118a.js",
           "./dist/new-tab/p-0fe8118a.js.map",
+          "./dist/new-tab/p-12f6f100.entry.js",
+          "./dist/new-tab/p-12f6f100.entry.js.map",
           "./dist/new-tab/p-136998a2.js",
           "./dist/new-tab/p-136998a2.js.map",
+          "./dist/new-tab/p-172b8f9a.entry.js",
+          "./dist/new-tab/p-172b8f9a.entry.js.map",
           "./dist/new-tab/p-175c4734.entry.js",
           "./dist/new-tab/p-175c4734.entry.js.map",
-          "./dist/new-tab/p-1c97d018.entry.js",
-          "./dist/new-tab/p-1c97d018.entry.js.map",
           "./dist/new-tab/p-1fca4d8b.js",
           "./dist/new-tab/p-1fca4d8b.js.map",
           "./dist/new-tab/p-225d9e73.entry.js",
           "./dist/new-tab/p-225d9e73.entry.js.map",
+          "./dist/new-tab/p-2344ac45.entry.js",
+          "./dist/new-tab/p-2344ac45.entry.js.map",
           "./dist/new-tab/p-27c1221f.entry.js",
           "./dist/new-tab/p-27c1221f.entry.js.map",
           "./dist/new-tab/p-2c30e259.entry.js",
@@ -784,8 +788,6 @@
           "./dist/new-tab/p-2e8e2ad5.entry.js.map",
           "./dist/new-tab/p-31afc524.entry.js",
           "./dist/new-tab/p-31afc524.entry.js.map",
-          "./dist/new-tab/p-3c60fcbf.entry.js",
-          "./dist/new-tab/p-3c60fcbf.entry.js.map",
           "./dist/new-tab/p-3f6fd223.entry.js",
           "./dist/new-tab/p-3f6fd223.entry.js.map",
           "./dist/new-tab/p-44e442a4.entry.js",
@@ -800,6 +802,8 @@
           "./dist/new-tab/p-4d23a23e.js.map",
           "./dist/new-tab/p-4eb2f24f.entry.js",
           "./dist/new-tab/p-4eb2f24f.entry.js.map",
+          "./dist/new-tab/p-4f92b60c.entry.js",
+          "./dist/new-tab/p-4f92b60c.entry.js.map",
           "./dist/new-tab/p-507406b6.entry.js",
           "./dist/new-tab/p-507406b6.entry.js.map",
           "./dist/new-tab/p-50cb363c.entry.js",
@@ -810,16 +814,14 @@
           "./dist/new-tab/p-5704e2d1.js.map",
           "./dist/new-tab/p-5866cdea.js",
           "./dist/new-tab/p-5866cdea.js.map",
+          "./dist/new-tab/p-5c8db3a6.entry.js",
+          "./dist/new-tab/p-5c8db3a6.entry.js.map",
           "./dist/new-tab/p-5c9c3281.entry.js",
           "./dist/new-tab/p-5c9c3281.entry.js.map",
-          "./dist/new-tab/p-5fffb33e.entry.js",
-          "./dist/new-tab/p-5fffb33e.entry.js.map",
           "./dist/new-tab/p-6147bd90.entry.js",
           "./dist/new-tab/p-6147bd90.entry.js.map",
           "./dist/new-tab/p-61c50611.entry.js",
           "./dist/new-tab/p-61c50611.entry.js.map",
-          "./dist/new-tab/p-6818b64c.entry.js",
-          "./dist/new-tab/p-6818b64c.entry.js.map",
           "./dist/new-tab/p-6c0f81c1.entry.js",
           "./dist/new-tab/p-6c0f81c1.entry.js.map",
           "./dist/new-tab/p-717df847.entry.js",
@@ -834,8 +836,8 @@
           "./dist/new-tab/p-72e37a6a.js.map",
           "./dist/new-tab/p-73c983c8.entry.js",
           "./dist/new-tab/p-73c983c8.entry.js.map",
-          "./dist/new-tab/p-76b8c4e3.entry.js",
-          "./dist/new-tab/p-76b8c4e3.entry.js.map",
+          "./dist/new-tab/p-749aae86.entry.js",
+          "./dist/new-tab/p-749aae86.entry.js.map",
           "./dist/new-tab/p-777d6147.entry.js",
           "./dist/new-tab/p-777d6147.entry.js.map",
           "./dist/new-tab/p-77910df3.entry.js",
@@ -866,6 +868,8 @@
           "./dist/new-tab/p-9cbfedf0.js.map",
           "./dist/new-tab/p-a054de92.entry.js",
           "./dist/new-tab/p-a054de92.entry.js.map",
+          "./dist/new-tab/p-a50abd43.entry.js",
+          "./dist/new-tab/p-a50abd43.entry.js.map",
           "./dist/new-tab/p-a6e4f747.entry.js",
           "./dist/new-tab/p-a6e4f747.entry.js.map",
           "./dist/new-tab/p-a7894fcc.entry.js",
@@ -876,28 +880,28 @@
           "./dist/new-tab/p-aa76b0fd.entry.js.map",
           "./dist/new-tab/p-ababc6be.entry.js",
           "./dist/new-tab/p-ababc6be.entry.js.map",
+          "./dist/new-tab/p-abae5b22.entry.js",
+          "./dist/new-tab/p-abae5b22.entry.js.map",
+          "./dist/new-tab/p-b4ee71ca.entry.js",
+          "./dist/new-tab/p-b4ee71ca.entry.js.map",
           "./dist/new-tab/p-b4f5ea3e.entry.js",
           "./dist/new-tab/p-b4f5ea3e.entry.js.map",
           "./dist/new-tab/p-b6ccd784.entry.js",
           "./dist/new-tab/p-b6ccd784.entry.js.map",
-          "./dist/new-tab/p-b8070f7d.entry.js",
-          "./dist/new-tab/p-b8070f7d.entry.js.map",
           "./dist/new-tab/p-bc8de25e.entry.js",
           "./dist/new-tab/p-bc8de25e.entry.js.map",
           "./dist/new-tab/p-c1faf015.entry.js",
           "./dist/new-tab/p-c1faf015.entry.js.map",
+          "./dist/new-tab/p-c91a1726.entry.js",
+          "./dist/new-tab/p-c91a1726.entry.js.map",
           "./dist/new-tab/p-cb042306.js",
           "./dist/new-tab/p-cb042306.js.map",
-          "./dist/new-tab/p-cf178aa4.entry.js",
-          "./dist/new-tab/p-cf178aa4.entry.js.map",
           "./dist/new-tab/p-d4003f8e.entry.js",
           "./dist/new-tab/p-d4003f8e.entry.js.map",
           "./dist/new-tab/p-d5619b4e.entry.js",
           "./dist/new-tab/p-d5619b4e.entry.js.map",
           "./dist/new-tab/p-d5dc02f6.entry.js",
           "./dist/new-tab/p-d5dc02f6.entry.js.map",
-          "./dist/new-tab/p-d6fdc403.entry.js",
-          "./dist/new-tab/p-d6fdc403.entry.js.map",
           "./dist/new-tab/p-d782742e.entry.js",
           "./dist/new-tab/p-d782742e.entry.js.map",
           "./dist/new-tab/p-dc4a8c48.entry.js",
@@ -906,14 +910,10 @@
           "./dist/new-tab/p-dc841a3a.entry.js.map",
           "./dist/new-tab/p-dcf49700.entry.js",
           "./dist/new-tab/p-dcf49700.entry.js.map",
-          "./dist/new-tab/p-e14999f0.entry.js",
-          "./dist/new-tab/p-e14999f0.entry.js.map",
           "./dist/new-tab/p-e2175df6.js",
           "./dist/new-tab/p-e2175df6.js.map",
           "./dist/new-tab/p-e2c6ae7b.js",
           "./dist/new-tab/p-e2c6ae7b.js.map",
-          "./dist/new-tab/p-e5ccd63c.entry.js",
-          "./dist/new-tab/p-e5ccd63c.entry.js.map",
           "./dist/new-tab/p-e71e9bb4.js",
           "./dist/new-tab/p-e71e9bb4.js.map",
           "./dist/new-tab/p-ed163ee5.js",
@@ -928,10 +928,10 @@
           "./www/build/index.esm.js.map",
           "./www/build/new-tab.esm.js",
           "./www/build/new-tab.esm.js.map",
-          "./www/build/p-02ea2c59.entry.js",
-          "./www/build/p-02ea2c59.entry.js.map",
           "./www/build/p-06ddeba8.entry.js",
           "./www/build/p-06ddeba8.entry.js.map",
+          "./www/build/p-0c4450e4.entry.js",
+          "./www/build/p-0c4450e4.entry.js.map",
           "./www/build/p-0c502921.js",
           "./www/build/p-0c502921.js.map",
           "./www/build/p-0c6ec147.entry.js",
@@ -940,16 +940,20 @@
           "./www/build/p-0d4c2a44.entry.js.map",
           "./www/build/p-0fe8118a.js",
           "./www/build/p-0fe8118a.js.map",
+          "./www/build/p-12f6f100.entry.js",
+          "./www/build/p-12f6f100.entry.js.map",
           "./www/build/p-136998a2.js",
           "./www/build/p-136998a2.js.map",
+          "./www/build/p-172b8f9a.entry.js",
+          "./www/build/p-172b8f9a.entry.js.map",
           "./www/build/p-175c4734.entry.js",
           "./www/build/p-175c4734.entry.js.map",
-          "./www/build/p-1c97d018.entry.js",
-          "./www/build/p-1c97d018.entry.js.map",
           "./www/build/p-1fca4d8b.js",
           "./www/build/p-1fca4d8b.js.map",
           "./www/build/p-225d9e73.entry.js",
           "./www/build/p-225d9e73.entry.js.map",
+          "./www/build/p-2344ac45.entry.js",
+          "./www/build/p-2344ac45.entry.js.map",
           "./www/build/p-27c1221f.entry.js",
           "./www/build/p-27c1221f.entry.js.map",
           "./www/build/p-2c30e259.entry.js",
@@ -960,8 +964,6 @@
           "./www/build/p-2e8e2ad5.entry.js.map",
           "./www/build/p-31afc524.entry.js",
           "./www/build/p-31afc524.entry.js.map",
-          "./www/build/p-3c60fcbf.entry.js",
-          "./www/build/p-3c60fcbf.entry.js.map",
           "./www/build/p-3f6fd223.entry.js",
           "./www/build/p-3f6fd223.entry.js.map",
           "./www/build/p-44e442a4.entry.js",
@@ -976,6 +978,8 @@
           "./www/build/p-4d23a23e.js.map",
           "./www/build/p-4eb2f24f.entry.js",
           "./www/build/p-4eb2f24f.entry.js.map",
+          "./www/build/p-4f92b60c.entry.js",
+          "./www/build/p-4f92b60c.entry.js.map",
           "./www/build/p-507406b6.entry.js",
           "./www/build/p-507406b6.entry.js.map",
           "./www/build/p-50cb363c.entry.js",
@@ -986,16 +990,14 @@
           "./www/build/p-5704e2d1.js.map",
           "./www/build/p-5866cdea.js",
           "./www/build/p-5866cdea.js.map",
+          "./www/build/p-5c8db3a6.entry.js",
+          "./www/build/p-5c8db3a6.entry.js.map",
           "./www/build/p-5c9c3281.entry.js",
           "./www/build/p-5c9c3281.entry.js.map",
-          "./www/build/p-5fffb33e.entry.js",
-          "./www/build/p-5fffb33e.entry.js.map",
           "./www/build/p-6147bd90.entry.js",
           "./www/build/p-6147bd90.entry.js.map",
           "./www/build/p-61c50611.entry.js",
           "./www/build/p-61c50611.entry.js.map",
-          "./www/build/p-6818b64c.entry.js",
-          "./www/build/p-6818b64c.entry.js.map",
           "./www/build/p-6c0f81c1.entry.js",
           "./www/build/p-6c0f81c1.entry.js.map",
           "./www/build/p-717df847.entry.js",
@@ -1010,8 +1012,8 @@
           "./www/build/p-72e37a6a.js.map",
           "./www/build/p-73c983c8.entry.js",
           "./www/build/p-73c983c8.entry.js.map",
-          "./www/build/p-76b8c4e3.entry.js",
-          "./www/build/p-76b8c4e3.entry.js.map",
+          "./www/build/p-749aae86.entry.js",
+          "./www/build/p-749aae86.entry.js.map",
           "./www/build/p-777d6147.entry.js",
           "./www/build/p-777d6147.entry.js.map",
           "./www/build/p-77910df3.entry.js",
@@ -1042,6 +1044,8 @@
           "./www/build/p-9cbfedf0.js.map",
           "./www/build/p-a054de92.entry.js",
           "./www/build/p-a054de92.entry.js.map",
+          "./www/build/p-a50abd43.entry.js",
+          "./www/build/p-a50abd43.entry.js.map",
           "./www/build/p-a6e4f747.entry.js",
           "./www/build/p-a6e4f747.entry.js.map",
           "./www/build/p-a7894fcc.entry.js",
@@ -1052,28 +1056,28 @@
           "./www/build/p-aa76b0fd.entry.js.map",
           "./www/build/p-ababc6be.entry.js",
           "./www/build/p-ababc6be.entry.js.map",
+          "./www/build/p-abae5b22.entry.js",
+          "./www/build/p-abae5b22.entry.js.map",
+          "./www/build/p-b4ee71ca.entry.js",
+          "./www/build/p-b4ee71ca.entry.js.map",
           "./www/build/p-b4f5ea3e.entry.js",
           "./www/build/p-b4f5ea3e.entry.js.map",
           "./www/build/p-b6ccd784.entry.js",
           "./www/build/p-b6ccd784.entry.js.map",
-          "./www/build/p-b8070f7d.entry.js",
-          "./www/build/p-b8070f7d.entry.js.map",
           "./www/build/p-bc8de25e.entry.js",
           "./www/build/p-bc8de25e.entry.js.map",
           "./www/build/p-c1faf015.entry.js",
           "./www/build/p-c1faf015.entry.js.map",
+          "./www/build/p-c91a1726.entry.js",
+          "./www/build/p-c91a1726.entry.js.map",
           "./www/build/p-cb042306.js",
           "./www/build/p-cb042306.js.map",
-          "./www/build/p-cf178aa4.entry.js",
-          "./www/build/p-cf178aa4.entry.js.map",
           "./www/build/p-d4003f8e.entry.js",
           "./www/build/p-d4003f8e.entry.js.map",
           "./www/build/p-d5619b4e.entry.js",
           "./www/build/p-d5619b4e.entry.js.map",
           "./www/build/p-d5dc02f6.entry.js",
           "./www/build/p-d5dc02f6.entry.js.map",
-          "./www/build/p-d6fdc403.entry.js",
-          "./www/build/p-d6fdc403.entry.js.map",
           "./www/build/p-d782742e.entry.js",
           "./www/build/p-d782742e.entry.js.map",
           "./www/build/p-dc4a8c48.entry.js",
@@ -1082,14 +1086,10 @@
           "./www/build/p-dc841a3a.entry.js.map",
           "./www/build/p-dcf49700.entry.js",
           "./www/build/p-dcf49700.entry.js.map",
-          "./www/build/p-e14999f0.entry.js",
-          "./www/build/p-e14999f0.entry.js.map",
           "./www/build/p-e2175df6.js",
           "./www/build/p-e2175df6.js.map",
           "./www/build/p-e2c6ae7b.js",
           "./www/build/p-e2c6ae7b.js.map",
-          "./www/build/p-e5ccd63c.entry.js",
-          "./www/build/p-e5ccd63c.entry.js.map",
           "./www/build/p-e71e9bb4.js",
           "./www/build/p-e71e9bb4.js.map",
           "./www/build/p-ed163ee5.js",
@@ -1165,8 +1165,8 @@
           "resize-observer",
           "stencil-route-link"
         ],
-        "bundleId": "p-5fffb33e",
-        "fileName": "p-5fffb33e.entry.js",
+        "bundleId": "p-b4ee71ca",
+        "fileName": "p-b4ee71ca.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-72e37a6a.js",
@@ -1181,7 +1181,7 @@
           "p-e71e9bb4.js",
           "p-1fca4d8b.js"
         ],
-        "originalByteSize": 617697
+        "originalByteSize": 617162
       },
       {
         "key": "animated-route-switch.entry",
@@ -1370,7 +1370,7 @@
         "imports": [
           "p-71be04f7.js"
         ],
-        "originalByteSize": 1462
+        "originalByteSize": 1476
       },
       {
         "key": "midwest-context.entry",
@@ -1416,8 +1416,8 @@
         "components": [
           "midwest-field-group"
         ],
-        "bundleId": "p-6818b64c",
-        "fileName": "p-6818b64c.entry.js",
+        "bundleId": "p-0c4450e4",
+        "fileName": "p-0c4450e4.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-9cbfedf0.js",
@@ -1426,15 +1426,15 @@
           "p-4d23a23e.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 4116
+        "originalByteSize": 4075
       },
       {
         "key": "midwest-form.entry",
         "components": [
           "midwest-form"
         ],
-        "bundleId": "p-cf178aa4",
-        "fileName": "p-cf178aa4.entry.js",
+        "bundleId": "p-5c8db3a6",
+        "fileName": "p-5c8db3a6.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-9cbfedf0.js",
@@ -1444,22 +1444,22 @@
           "p-e2175df6.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 8520
+        "originalByteSize": 8395
       },
       {
         "key": "midwest-input-file.entry",
         "components": [
           "midwest-input-file"
         ],
-        "bundleId": "p-b8070f7d",
-        "fileName": "p-b8070f7d.entry.js",
+        "bundleId": "p-a50abd43",
+        "fileName": "p-a50abd43.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-9cbfedf0.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 9281
+        "originalByteSize": 9239
       },
       {
         "key": "midwest-input-tags.entry",
@@ -1563,14 +1563,14 @@
         "components": [
           "midwest-modal"
         ],
-        "bundleId": "p-1c97d018",
-        "fileName": "p-1c97d018.entry.js",
+        "bundleId": "p-749aae86",
+        "fileName": "p-749aae86.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-e2175df6.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 5189
+        "originalByteSize": 5187
       },
       {
         "key": "midwest-mouse-trail.entry",
@@ -1604,14 +1604,14 @@
         "components": [
           "midwest-onboarding-step"
         ],
-        "bundleId": "p-e14999f0",
-        "fileName": "p-e14999f0.entry.js",
+        "bundleId": "p-2344ac45",
+        "fileName": "p-2344ac45.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-e2175df6.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 3256
+        "originalByteSize": 3348
       },
       {
         "key": "midwest-pagination.entry",
@@ -1678,28 +1678,28 @@
         "components": [
           "midwest-repeatable-fields"
         ],
-        "bundleId": "p-e5ccd63c",
-        "fileName": "p-e5ccd63c.entry.js",
+        "bundleId": "p-abae5b22",
+        "fileName": "p-abae5b22.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-e2175df6.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 5082
+        "originalByteSize": 4951
       },
       {
         "key": "midwest-show-if.entry",
         "components": [
           "midwest-show-if"
         ],
-        "bundleId": "p-d6fdc403",
-        "fileName": "p-d6fdc403.entry.js",
+        "bundleId": "p-12f6f100",
+        "fileName": "p-12f6f100.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-e2175df6.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 3276
+        "originalByteSize": 3275
       },
       {
         "key": "midwest-song.entry",
@@ -1750,8 +1750,8 @@
         "components": [
           "midwest-tab"
         ],
-        "bundleId": "p-3c60fcbf",
-        "fileName": "p-3c60fcbf.entry.js",
+        "bundleId": "p-c91a1726",
+        "fileName": "p-c91a1726.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-e2175df6.js",
@@ -1759,15 +1759,15 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 7670
+        "originalByteSize": 7644
       },
       {
         "key": "midwest-tabs.entry",
         "components": [
           "midwest-tabs"
         ],
-        "bundleId": "p-02ea2c59",
-        "fileName": "p-02ea2c59.entry.js",
+        "bundleId": "p-4f92b60c",
+        "fileName": "p-4f92b60c.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-9cbfedf0.js",
@@ -1775,7 +1775,7 @@
           "p-e2175df6.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 8655
+        "originalByteSize": 8537
       },
       {
         "key": "midwest-toggle.entry",
@@ -2073,15 +2073,15 @@
         "components": [
           "midwest-chart"
         ],
-        "bundleId": "p-76b8c4e3",
-        "fileName": "p-76b8c4e3.entry.js",
+        "bundleId": "p-172b8f9a",
+        "fileName": "p-172b8f9a.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-f6c733ff.js",
           "p-9cbfedf0.js",
           "p-5866cdea.js"
         ],
-        "originalByteSize": 320607
+        "originalByteSize": 320463
       },
       {
         "key": "midwest-unit.entry",
@@ -2166,7 +2166,7 @@
           "active-router-36ff36cf.js",
           "location-utils-d5258d15.js"
         ],
-        "originalByteSize": 617805
+        "originalByteSize": 617270
       },
       {
         "key": "animated-route-switch.entry",
@@ -2355,7 +2355,7 @@
         "imports": [
           "index-33369d46.js"
         ],
-        "originalByteSize": 1466
+        "originalByteSize": 1480
       },
       {
         "key": "midwest-context.entry",
@@ -2411,7 +2411,7 @@
           "index-292b16f1.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 4161
+        "originalByteSize": 4120
       },
       {
         "key": "midwest-form.entry",
@@ -2429,7 +2429,7 @@
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 8569
+        "originalByteSize": 8444
       },
       {
         "key": "midwest-input-file.entry",
@@ -2444,7 +2444,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 9312
+        "originalByteSize": 9270
       },
       {
         "key": "midwest-input-tags.entry",
@@ -2555,7 +2555,7 @@
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 5212
+        "originalByteSize": 5210
       },
       {
         "key": "midwest-mouse-trail.entry",
@@ -2596,7 +2596,7 @@
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 3279
+        "originalByteSize": 3371
       },
       {
         "key": "midwest-pagination.entry",
@@ -2670,7 +2670,7 @@
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 5105
+        "originalByteSize": 4974
       },
       {
         "key": "midwest-show-if.entry",
@@ -2684,7 +2684,7 @@
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 3299
+        "originalByteSize": 3298
       },
       {
         "key": "midwest-song.entry",
@@ -2744,7 +2744,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 7705
+        "originalByteSize": 7679
       },
       {
         "key": "midwest-tabs.entry",
@@ -2760,7 +2760,7 @@
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 8690
+        "originalByteSize": 8572
       },
       {
         "key": "midwest-toggle.entry",
@@ -3066,7 +3066,7 @@
           "colors-8d240a34.js",
           "darkMode-76deeecd.js"
         ],
-        "originalByteSize": 320638
+        "originalByteSize": 320494
       },
       {
         "key": "midwest-unit.entry",
@@ -3153,7 +3153,7 @@
           "active-router-9d07c16c.js",
           "location-utils-7c54d0c6.js"
         ],
-        "originalByteSize": 622819
+        "originalByteSize": 622284
       },
       {
         "key": "animated-route-switch.entry",
@@ -3342,7 +3342,7 @@
         "imports": [
           "index-aa74354c.js"
         ],
-        "originalByteSize": 1531
+        "originalByteSize": 1545
       },
       {
         "key": "midwest-context.entry",
@@ -3398,7 +3398,7 @@
           "index-70fb2f40.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 4248
+        "originalByteSize": 4207
       },
       {
         "key": "midwest-form.entry",
@@ -3416,7 +3416,7 @@
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 8725
+        "originalByteSize": 8600
       },
       {
         "key": "midwest-input-file.entry",
@@ -3431,7 +3431,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 9494
+        "originalByteSize": 9452
       },
       {
         "key": "midwest-input-tags.entry",
@@ -3542,7 +3542,7 @@
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 5293
+        "originalByteSize": 5291
       },
       {
         "key": "midwest-mouse-trail.entry",
@@ -3583,7 +3583,7 @@
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 3338
+        "originalByteSize": 3430
       },
       {
         "key": "midwest-pagination.entry",
@@ -3657,7 +3657,7 @@
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 5184
+        "originalByteSize": 5053
       },
       {
         "key": "midwest-show-if.entry",
@@ -3671,7 +3671,7 @@
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 3354
+        "originalByteSize": 3353
       },
       {
         "key": "midwest-song.entry",
@@ -3731,7 +3731,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 7809
+        "originalByteSize": 7783
       },
       {
         "key": "midwest-tabs.entry",
@@ -3747,7 +3747,7 @@
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 8794
+        "originalByteSize": 8676
       },
       {
         "key": "midwest-toggle.entry",
@@ -4053,7 +4053,7 @@
           "colors-cf1321db.js",
           "darkMode-ee75726a.js"
         ],
-        "originalByteSize": 320752
+        "originalByteSize": 320608
       },
       {
         "key": "midwest-unit.entry",
@@ -6561,7 +6561,7 @@
       "excludeFromCollection": false,
       "events": [
         {
-          "name": "modal:open",
+          "name": "modalOpen",
           "method": "openModal",
           "bubbles": true,
           "cancelable": true,
@@ -6578,7 +6578,7 @@
           "internal": false
         },
         {
-          "name": "modal:close",
+          "name": "modalClose",
           "method": "closeModal",
           "bubbles": true,
           "cancelable": true,
@@ -6595,7 +6595,7 @@
           "internal": false
         },
         {
-          "name": "onboarding:open",
+          "name": "onboardingOpen",
           "method": "openOnboarding",
           "bubbles": true,
           "cancelable": true,
@@ -6612,7 +6612,7 @@
           "internal": false
         },
         {
-          "name": "onboarding:close",
+          "name": "onboardingClose",
           "method": "closeOnboarding",
           "bubbles": true,
           "cancelable": true,
@@ -6649,9 +6649,9 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"link\"",
+          "defaultValue": "'link'",
           "complexType": {
-            "original": "\"button\" | \"submit\" | \"link\" | \"span\" | \"modal\" | \"onboarding\" | \"stencil-route\"",
+            "original": "'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route'",
             "resolved": "\"button\" | \"link\" | \"modal\" | \"onboarding\" | \"span\" | \"stencil-route\" | \"submit\"",
             "references": {}
           },
@@ -6825,7 +6825,7 @@
           "required": false,
           "optional": false,
           "complexType": {
-            "original": "\"tiny\" | \"small\" | \"large\"",
+            "original": "'tiny' | 'small' | 'large'",
             "resolved": "\"large\" | \"small\" | \"tiny\"",
             "references": {}
           },
@@ -6844,7 +6844,7 @@
           "required": false,
           "optional": false,
           "complexType": {
-            "original": "\"tiny\" | \"small\" | \"large\"",
+            "original": "'tiny' | 'small' | 'large'",
             "resolved": "\"large\" | \"small\" | \"tiny\"",
             "references": {}
           },
@@ -7476,7 +7476,7 @@
           "internal": false
         },
         {
-          "name": "modal:open",
+          "name": "modalOpen",
           "method": "openModal",
           "bubbles": true,
           "cancelable": true,
@@ -7493,7 +7493,7 @@
           "internal": false
         },
         {
-          "name": "modal:close",
+          "name": "modalClose",
           "method": "closeModal",
           "bubbles": true,
           "cancelable": true,
@@ -9099,7 +9099,7 @@
       "legacyContext": [],
       "listeners": [
         {
-          "name": "open:content",
+          "name": "contentOpen",
           "method": "handleActive",
           "capture": false,
           "passive": false,
@@ -9686,7 +9686,7 @@
       "excludeFromCollection": false,
       "events": [
         {
-          "name": "fast-updates",
+          "name": "fastUpdates",
           "method": "updatedFast",
           "bubbles": true,
           "cancelable": true,
@@ -9916,7 +9916,7 @@
           "internal": false
         },
         {
-          "name": "fast-updates",
+          "name": "fastUpdates",
           "method": "updatedFast",
           "bubbles": true,
           "cancelable": true,
@@ -9950,7 +9950,7 @@
           "internal": false
         },
         {
-          "name": "close-modal",
+          "name": "modalClose",
           "method": "closeModal",
           "bubbles": true,
           "cancelable": true,
@@ -10264,7 +10264,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"get\"",
+          "defaultValue": "'get'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -10303,7 +10303,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"on\"",
+          "defaultValue": "'on'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -10323,7 +10323,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"multipart/form-data\"",
+          "defaultValue": "'multipart/form-data'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -16866,7 +16866,7 @@
       "excludeFromCollection": false,
       "events": [
         {
-          "name": "modal:opened",
+          "name": "modalOpened",
           "method": "opened",
           "bubbles": true,
           "cancelable": true,
@@ -16883,7 +16883,7 @@
           "internal": false
         },
         {
-          "name": "modal:closed",
+          "name": "modalClosed",
           "method": "closed",
           "bubbles": true,
           "cancelable": true,
@@ -16905,7 +16905,7 @@
       "legacyContext": [],
       "listeners": [
         {
-          "name": "close-modal",
+          "name": "modalClose",
           "method": "handleClose",
           "capture": false,
           "passive": false,
@@ -17305,7 +17305,7 @@
       "excludeFromCollection": false,
       "events": [
         {
-          "name": "close-modal",
+          "name": "modalClose",
           "method": "closeModal",
           "bubbles": true,
           "cancelable": true,
@@ -17577,7 +17577,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"next\"",
+          "defaultValue": "'next'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -17635,9 +17635,9 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"auto\"",
+          "defaultValue": "'auto'",
           "complexType": {
-            "original": "'auto'|'auto-start'|'auto-end'|'top'|'top-start'|'top-end'|'bottom'|'bottom-start'|'bottom-end'|'right'|'right-start'|'right-end'|'left'|'left-start'|'left-end'",
+            "original": "| 'auto'\n    | 'auto-start'\n    | 'auto-end'\n    | 'top'\n    | 'top-start'\n    | 'top-end'\n    | 'bottom'\n    | 'bottom-start'\n    | 'bottom-end'\n    | 'right'\n    | 'right-start'\n    | 'right-end'\n    | 'left'\n    | 'left-start'\n    | 'left-end'",
             "resolved": "\"auto\" | \"auto-end\" | \"auto-start\" | \"bottom\" | \"bottom-end\" | \"bottom-start\" | \"left\" | \"left-end\" | \"left-start\" | \"right\" | \"right-end\" | \"right-start\" | \"top\" | \"top-end\" | \"top-start\"",
             "references": {}
           },
@@ -21250,7 +21250,7 @@
       "excludeFromCollection": false,
       "events": [
         {
-          "name": "open:content",
+          "name": "contentOpen",
           "method": "contentChange",
           "bubbles": true,
           "cancelable": true,
@@ -21333,9 +21333,9 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"medium\"",
+          "defaultValue": "'medium'",
           "complexType": {
-            "original": "\"tiny\" | \"small\" | \"medium\" | \"large\"",
+            "original": "'tiny' | 'small' | 'medium' | 'large'",
             "resolved": "\"large\" | \"medium\" | \"small\" | \"tiny\"",
             "references": {}
           },
@@ -21433,7 +21433,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"cyan\"",
+          "defaultValue": "'cyan'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -21453,9 +21453,9 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"button\"",
+          "defaultValue": "'button'",
           "complexType": {
-            "original": "\"button\" | \"link\" | \"stencil-route\"",
+            "original": "'button' | 'link' | 'stencil-route'",
             "resolved": "\"button\" | \"link\" | \"stencil-route\"",
             "references": {}
           },
@@ -29539,9 +29539,9 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"link\"",
+              "defaultValue": "'link'",
               "complexType": {
-                "original": "\"button\" | \"submit\" | \"link\" | \"span\" | \"modal\" | \"onboarding\" | \"stencil-route\"",
+                "original": "'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route'",
                 "resolved": "\"button\" | \"link\" | \"modal\" | \"onboarding\" | \"span\" | \"stencil-route\" | \"submit\"",
                 "references": {}
               },
@@ -29715,7 +29715,7 @@
               "required": false,
               "optional": false,
               "complexType": {
-                "original": "\"tiny\" | \"small\" | \"large\"",
+                "original": "'tiny' | 'small' | 'large'",
                 "resolved": "\"large\" | \"small\" | \"tiny\"",
                 "references": {}
               },
@@ -29734,7 +29734,7 @@
               "required": false,
               "optional": false,
               "complexType": {
-                "original": "\"tiny\" | \"small\" | \"large\"",
+                "original": "'tiny' | 'small' | 'large'",
                 "resolved": "\"large\" | \"small\" | \"tiny\"",
                 "references": {}
               },
@@ -30089,7 +30089,7 @@
           "listeners": [],
           "events": [
             {
-              "name": "modal:open",
+              "name": "modalOpen",
               "method": "openModal",
               "bubbles": true,
               "cancelable": true,
@@ -30106,7 +30106,7 @@
               "internal": false
             },
             {
-              "name": "modal:close",
+              "name": "modalClose",
               "method": "closeModal",
               "bubbles": true,
               "cancelable": true,
@@ -30123,7 +30123,7 @@
               "internal": false
             },
             {
-              "name": "onboarding:open",
+              "name": "onboardingOpen",
               "method": "openOnboarding",
               "bubbles": true,
               "cancelable": true,
@@ -30140,7 +30140,7 @@
               "internal": false
             },
             {
-              "name": "onboarding:close",
+              "name": "onboardingClose",
               "method": "closeOnboarding",
               "bubbles": true,
               "cancelable": true,
@@ -30794,7 +30794,7 @@
               "internal": false
             },
             {
-              "name": "modal:open",
+              "name": "modalOpen",
               "method": "openModal",
               "bubbles": true,
               "cancelable": true,
@@ -30811,7 +30811,7 @@
               "internal": false
             },
             {
-              "name": "modal:close",
+              "name": "modalClose",
               "method": "closeModal",
               "bubbles": true,
               "cancelable": true,
@@ -30913,11 +30913,11 @@
           "isPlain": false,
           "htmlAttrNames": [
             "style",
+            "class",
+            "onClick",
             "tag",
             "ghost",
             "iconOnly",
-            "class",
-            "onClick",
             "name",
             "ref",
             "element",
@@ -42387,7 +42387,7 @@
           "methods": [],
           "listeners": [
             {
-              "name": "open:content",
+              "name": "contentOpen",
               "method": "handleActive",
               "capture": false,
               "passive": false,
@@ -43223,7 +43223,7 @@
           ],
           "events": [
             {
-              "name": "fast-updates",
+              "name": "fastUpdates",
               "method": "updatedFast",
               "bubbles": true,
               "cancelable": true,
@@ -43449,7 +43449,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"get\"",
+              "defaultValue": "'get'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -43488,7 +43488,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"on\"",
+              "defaultValue": "'on'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -43508,7 +43508,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"multipart/form-data\"",
+              "defaultValue": "'multipart/form-data'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -43851,7 +43851,7 @@
               "internal": false
             },
             {
-              "name": "fast-updates",
+              "name": "fastUpdates",
               "method": "updatedFast",
               "bubbles": true,
               "cancelable": true,
@@ -43885,7 +43885,7 @@
               "internal": false
             },
             {
-              "name": "close-modal",
+              "name": "modalClose",
               "method": "closeModal",
               "bubbles": true,
               "cancelable": true,
@@ -47366,7 +47366,7 @@
           "methods": [],
           "listeners": [
             {
-              "name": "close-modal",
+              "name": "modalClose",
               "method": "handleClose",
               "capture": false,
               "passive": false,
@@ -47389,7 +47389,7 @@
           ],
           "events": [
             {
-              "name": "modal:opened",
+              "name": "modalOpened",
               "method": "opened",
               "bubbles": true,
               "cancelable": true,
@@ -47406,7 +47406,7 @@
               "internal": false
             },
             {
-              "name": "modal:closed",
+              "name": "modalClosed",
               "method": "closed",
               "bubbles": true,
               "cancelable": true,
@@ -48153,7 +48153,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"next\"",
+              "defaultValue": "'next'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -48211,9 +48211,9 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"auto\"",
+              "defaultValue": "'auto'",
               "complexType": {
-                "original": "'auto'|'auto-start'|'auto-end'|'top'|'top-start'|'top-end'|'bottom'|'bottom-start'|'bottom-end'|'right'|'right-start'|'right-end'|'left'|'left-start'|'left-end'",
+                "original": "| 'auto'\n    | 'auto-start'\n    | 'auto-end'\n    | 'top'\n    | 'top-start'\n    | 'top-end'\n    | 'bottom'\n    | 'bottom-start'\n    | 'bottom-end'\n    | 'right'\n    | 'right-start'\n    | 'right-end'\n    | 'left'\n    | 'left-start'\n    | 'left-end'",
                 "resolved": "\"auto\" | \"auto-end\" | \"auto-start\" | \"bottom\" | \"bottom-end\" | \"bottom-start\" | \"left\" | \"left-end\" | \"left-start\" | \"right\" | \"right-end\" | \"right-start\" | \"top\" | \"top-end\" | \"top-start\"",
                 "references": {}
               },
@@ -48261,7 +48261,7 @@
           "listeners": [],
           "events": [
             {
-              "name": "close-modal",
+              "name": "modalClose",
               "method": "closeModal",
               "bubbles": true,
               "cancelable": true,
@@ -51224,9 +51224,9 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"medium\"",
+              "defaultValue": "'medium'",
               "complexType": {
-                "original": "\"tiny\" | \"small\" | \"medium\" | \"large\"",
+                "original": "'tiny' | 'small' | 'medium' | 'large'",
                 "resolved": "\"large\" | \"medium\" | \"small\" | \"tiny\"",
                 "references": {}
               },
@@ -51324,7 +51324,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"cyan\"",
+              "defaultValue": "'cyan'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -51344,9 +51344,9 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"button\"",
+              "defaultValue": "'button'",
               "complexType": {
-                "original": "\"button\" | \"link\" | \"stencil-route\"",
+                "original": "'button' | 'link' | 'stencil-route'",
                 "resolved": "\"button\" | \"link\" | \"stencil-route\"",
                 "references": {}
               },
@@ -51492,7 +51492,7 @@
           ],
           "events": [
             {
-              "name": "open:content",
+              "name": "contentOpen",
               "method": "contentChange",
               "bubbles": true,
               "cancelable": true,

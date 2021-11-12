@@ -172,7 +172,21 @@ export namespace Components {
         "navigateTo": string;
         "next": string;
         "nextText": string;
-        "position": 'auto'|'auto-start'|'auto-end'|'top'|'top-start'|'top-end'|'bottom'|'bottom-start'|'bottom-end'|'right'|'right-start'|'right-end'|'left'|'left-start'|'left-end';
+        "position": | 'auto'
+    | 'auto-start'
+    | 'auto-end'
+    | 'top'
+    | 'top-start'
+    | 'top-end'
+    | 'bottom'
+    | 'bottom-start'
+    | 'bottom-end'
+    | 'right'
+    | 'right-start'
+    | 'right-end'
+    | 'left'
+    | 'left-start'
+    | 'left-end';
         "selector": string;
         "stepTitle": string;
     }
@@ -470,8 +484,8 @@ declare namespace LocalJSX {
     interface MidwestModal {
         "closing"?: boolean;
         "loading"?: boolean;
-        "onModal:closed"?: (event: CustomEvent<any>) => void;
-        "onModal:opened"?: (event: CustomEvent<any>) => void;
+        "onModalClosed"?: (event: CustomEvent<any>) => void;
+        "onModalOpened"?: (event: CustomEvent<any>) => void;
         "open"?: boolean;
         "opening"?: boolean;
         "remote"?: boolean;
@@ -499,8 +513,22 @@ declare namespace LocalJSX {
         "navigateTo"?: string;
         "next"?: string;
         "nextText"?: string;
-        "onClose-modal"?: (event: CustomEvent<any>) => void;
-        "position"?: 'auto'|'auto-start'|'auto-end'|'top'|'top-start'|'top-end'|'bottom'|'bottom-start'|'bottom-end'|'right'|'right-start'|'right-end'|'left'|'left-start'|'left-end';
+        "onModalClose"?: (event: CustomEvent<any>) => void;
+        "position"?: | 'auto'
+    | 'auto-start'
+    | 'auto-end'
+    | 'top'
+    | 'top-start'
+    | 'top-end'
+    | 'bottom'
+    | 'bottom-start'
+    | 'bottom-end'
+    | 'right'
+    | 'right-start'
+    | 'right-end'
+    | 'left'
+    | 'left-start'
+    | 'left-end';
         "selector"?: string;
         "stepTitle"?: string;
     }

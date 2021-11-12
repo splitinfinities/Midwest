@@ -35,8 +35,8 @@ export class Card {
 
   @Event() flip: EventEmitter;
 
-  @Event({ eventName: 'modal:open' }) openModal: EventEmitter;
-  @Event({ eventName: 'modal:close' }) closeModal: EventEmitter;
+  @Event({ eventName: 'modalOpen' }) openModal: EventEmitter;
+  @Event({ eventName: 'modalClose' }) closeModal: EventEmitter;
 
   @Prop({ mutable: true }) originalHeight: number;
   @Prop({ mutable: true }) backHeight: number;
@@ -114,9 +114,9 @@ export class Card {
 
     if (this.tag === 'modal') {
       if (this.for) {
-        if (this.for === 'modal:close') {
+        if (this.for === 'modalClose') {
           this.closeModal.emit({});
-        } else if (this.for.startsWith('modal:open:')) {
+        } else if (this.for.startsWith('modalOpen:')) {
           const target = this.for.split(':');
           this.openModal.emit({
             href: this.href,

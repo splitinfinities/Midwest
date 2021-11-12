@@ -18,10 +18,10 @@
 
 ## Events
 
-| Event          | Description | Type               |
-| -------------- | ----------- | ------------------ |
-| `modal:closed` |             | `CustomEvent<any>` |
-| `modal:opened` |             | `CustomEvent<any>` |
+| Event         | Description | Type               |
+| ------------- | ----------- | ------------------ |
+| `modalClosed` |             | `CustomEvent<any>` |
+| `modalOpened` |             | `CustomEvent<any>` |
 
 
 ## Dependencies

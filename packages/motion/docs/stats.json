@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-11T15:46:17",
+  "timestamp": "2021-11-11T18:35:14",
   "compiler": {
     "name": "node",
     "version": "17.0.1"
@@ -230,6 +230,8 @@
           "./dist/motion/p-055c1a4d.entry.js.map",
           "./dist/motion/p-2c12d47d.entry.js",
           "./dist/motion/p-2c12d47d.entry.js.map",
+          "./dist/motion/p-35557189.entry.js",
+          "./dist/motion/p-35557189.entry.js.map",
           "./dist/motion/p-55609044.entry.js",
           "./dist/motion/p-55609044.entry.js.map",
           "./dist/motion/p-60462514.entry.js",
@@ -238,16 +240,14 @@
           "./dist/motion/p-62676a17.js.map",
           "./dist/motion/p-69dfbaee.entry.js",
           "./dist/motion/p-69dfbaee.entry.js.map",
-          "./dist/motion/p-784bb28a.entry.js",
-          "./dist/motion/p-784bb28a.entry.js.map",
-          "./dist/motion/p-7d2283fe.entry.js",
-          "./dist/motion/p-7d2283fe.entry.js.map",
           "./dist/motion/p-91bd22e1.entry.js",
           "./dist/motion/p-91bd22e1.entry.js.map",
           "./dist/motion/p-a13a5f04.entry.js",
           "./dist/motion/p-a13a5f04.entry.js.map",
           "./dist/motion/p-abc0e0c9.entry.js",
           "./dist/motion/p-abc0e0c9.entry.js.map",
+          "./dist/motion/p-b693900c.entry.js",
+          "./dist/motion/p-b693900c.entry.js.map",
           "./dist/motion/p-bdda29a2.entry.js",
           "./dist/motion/p-bdda29a2.entry.js.map",
           "./dist/motion/p-d8d0368d.entry.js",
@@ -270,6 +270,8 @@
           "./www/build/p-055c1a4d.entry.js.map",
           "./www/build/p-2c12d47d.entry.js",
           "./www/build/p-2c12d47d.entry.js.map",
+          "./www/build/p-35557189.entry.js",
+          "./www/build/p-35557189.entry.js.map",
           "./www/build/p-55609044.entry.js",
           "./www/build/p-55609044.entry.js.map",
           "./www/build/p-60462514.entry.js",
@@ -278,16 +280,14 @@
           "./www/build/p-62676a17.js.map",
           "./www/build/p-69dfbaee.entry.js",
           "./www/build/p-69dfbaee.entry.js.map",
-          "./www/build/p-784bb28a.entry.js",
-          "./www/build/p-784bb28a.entry.js.map",
-          "./www/build/p-7d2283fe.entry.js",
-          "./www/build/p-7d2283fe.entry.js.map",
           "./www/build/p-91bd22e1.entry.js",
           "./www/build/p-91bd22e1.entry.js.map",
           "./www/build/p-a13a5f04.entry.js",
           "./www/build/p-a13a5f04.entry.js.map",
           "./www/build/p-abc0e0c9.entry.js",
           "./www/build/p-abc0e0c9.entry.js.map",
+          "./www/build/p-b693900c.entry.js",
+          "./www/build/p-b693900c.entry.js.map",
           "./www/build/p-bdda29a2.entry.js",
           "./www/build/p-bdda29a2.entry.js.map",
           "./www/build/p-d8d0368d.entry.js",
@@ -333,14 +333,14 @@
         "components": [
           "midwest-animate-text"
         ],
-        "bundleId": "p-7d2283fe",
-        "fileName": "p-7d2283fe.entry.js",
+        "bundleId": "p-b693900c",
+        "fileName": "p-b693900c.entry.js",
         "imports": [
           "p-62676a17.js",
           "p-f8c7a9b3.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 50581
+        "originalByteSize": 50465
       },
       {
         "key": "midwest-auto-scroll.entry",
@@ -435,12 +435,12 @@
         "components": [
           "midwest-slick-slides"
         ],
-        "bundleId": "p-784bb28a",
-        "fileName": "p-784bb28a.entry.js",
+        "bundleId": "p-35557189",
+        "fileName": "p-35557189.entry.js",
         "imports": [
           "p-62676a17.js"
         ],
-        "originalByteSize": 296587
+        "originalByteSize": 296527
       },
       {
         "key": "midwest-slide.entry",
@@ -531,7 +531,7 @@
           "css-custom-properties.min-0a9e262e.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 50624
+        "originalByteSize": 50508
       },
       {
         "key": "midwest-auto-scroll.entry",
@@ -631,7 +631,7 @@
         "imports": [
           "index-fab8151a.js"
         ],
-        "originalByteSize": 296591
+        "originalByteSize": 296531
       },
       {
         "key": "midwest-slide.entry",
@@ -724,7 +724,7 @@
           "css-custom-properties.min-5507c24f.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 50718
+        "originalByteSize": 50602
       },
       {
         "key": "midwest-auto-scroll.entry",
@@ -824,7 +824,7 @@
         "imports": [
           "index-f0c0f040.js"
         ],
-        "originalByteSize": 296728
+        "originalByteSize": 296668
       },
       {
         "key": "midwest-slide.entry",

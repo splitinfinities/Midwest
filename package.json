@@ -9,6 +9,7 @@
     "test.watch": "lerna run test.watch --stream",
     "build": "lerna run build --stream",
     "build.angular": "lerna run build --stream --scope=@midwest-design/angular",
+    "build.stencil": "lerna run build --stream --scope={@midwest-design/common,@midwest-design/motion,@midwest-design/audio,@midwest-design/core,@midwest-design/forms,@midwest-design/media,@midwest-design/helpers,@midwest-design/new-tab,@midwest-design/export-to-figma,@midwest-design/device}",
     "build.common": "lerna run build --stream --scope=@midwest-design/common",
     "build.motion": "lerna run build --stream --scope=@midwest-design/motion",
     "build.audio": "lerna run build --stream --scope=@midwest-design/audio",
