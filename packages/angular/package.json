@@ -1,6 +1,6 @@
 {
   "name": "@midwest-design/angular",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "public": true,
   "scripts": {
     "ng": "ng",
