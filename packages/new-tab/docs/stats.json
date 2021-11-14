@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-11T18:36:10",
+  "timestamp": "2021-11-14T03:42:40",
   "compiler": {
     "name": "node",
     "version": "17.0.1"
@@ -7,9 +7,9 @@
   "app": {
     "namespace": "NewTab",
     "fsNamespace": "new-tab",
-    "components": 101,
-    "entries": 101,
-    "bundles": 1070,
+    "components": 100,
+    "entries": 100,
+    "bundles": 1058,
     "outputs": [
       {
         "name": "dist-collection",
@@ -39,7 +39,7 @@
       },
       {
         "name": "dist-custom-elements",
-        "files": 334,
+        "files": 330,
         "generatedFiles": [
           "./dist/custom-elements/_commonjsHelpers.js",
           "./dist/custom-elements/_commonjsHelpers.js.map",
@@ -66,8 +66,6 @@
           "./dist/custom-elements/callout.js.map",
           "./dist/custom-elements/card.js",
           "./dist/custom-elements/card.js.map",
-          "./dist/custom-elements/chart.js",
-          "./dist/custom-elements/chart.js.map",
           "./dist/custom-elements/clock.js",
           "./dist/custom-elements/clock.js.map",
           "./dist/custom-elements/code.js",
@@ -178,8 +176,6 @@
           "./dist/custom-elements/midwest-callout.js.map",
           "./dist/custom-elements/midwest-card.js",
           "./dist/custom-elements/midwest-card.js.map",
-          "./dist/custom-elements/midwest-chart.js",
-          "./dist/custom-elements/midwest-chart.js.map",
           "./dist/custom-elements/midwest-clock.js",
           "./dist/custom-elements/midwest-clock.js.map",
           "./dist/custom-elements/midwest-code.js",
@@ -388,7 +384,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 710,
+        "files": 702,
         "generatedFiles": [
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js",
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js.map",
@@ -400,8 +396,8 @@
           "./dist/cjs/animated-route-switch.cjs.entry.js.map",
           "./dist/cjs/asyncForEach-d424f614.js",
           "./dist/cjs/asyncForEach-d424f614.js.map",
-          "./dist/cjs/colors-cf1321db.js",
-          "./dist/cjs/colors-cf1321db.js.map",
+          "./dist/cjs/colors-e09da04b.js",
+          "./dist/cjs/colors-e09da04b.js.map",
           "./dist/cjs/context-consumer.cjs.entry.js",
           "./dist/cjs/context-consumer.cjs.entry.js.map",
           "./dist/cjs/css-custom-properties.min-290c0886.js",
@@ -410,8 +406,8 @@
           "./dist/cjs/darkMode-ee75726a.js.map",
           "./dist/cjs/dom-utils-116761e1.js",
           "./dist/cjs/dom-utils-116761e1.js.map",
-          "./dist/cjs/form2js-d941631e.js",
-          "./dist/cjs/form2js-d941631e.js.map",
+          "./dist/cjs/form2js-0eae10db.js",
+          "./dist/cjs/form2js-0eae10db.js.map",
           "./dist/cjs/helpers-298bb88c.js",
           "./dist/cjs/helpers-298bb88c.js.map",
           "./dist/cjs/helpers-29f42b79.js",
@@ -454,8 +450,6 @@
           "./dist/cjs/midwest-calendar-date.cjs.entry.js.map",
           "./dist/cjs/midwest-callout.cjs.entry.js",
           "./dist/cjs/midwest-callout.cjs.entry.js.map",
-          "./dist/cjs/midwest-chart.cjs.entry.js",
-          "./dist/cjs/midwest-chart.cjs.entry.js.map",
           "./dist/cjs/midwest-clock.cjs.entry.js",
           "./dist/cjs/midwest-clock.cjs.entry.js.map",
           "./dist/cjs/midwest-code.cjs.entry.js",
@@ -578,8 +572,8 @@
           "./dist/esm/animated-route-switch.entry.js.map",
           "./dist/esm/asyncForEach-c7d78bc5.js",
           "./dist/esm/asyncForEach-c7d78bc5.js.map",
-          "./dist/esm/colors-8d240a34.js",
-          "./dist/esm/colors-8d240a34.js.map",
+          "./dist/esm/colors-464e0d9d.js",
+          "./dist/esm/colors-464e0d9d.js.map",
           "./dist/esm/context-consumer.entry.js",
           "./dist/esm/context-consumer.entry.js.map",
           "./dist/esm/css-custom-properties.min-bfc58fad.js",
@@ -588,8 +582,8 @@
           "./dist/esm/darkMode-76deeecd.js.map",
           "./dist/esm/dom-utils-d78a4b0e.js",
           "./dist/esm/dom-utils-d78a4b0e.js.map",
-          "./dist/esm/form2js-9f16e588.js",
-          "./dist/esm/form2js-9f16e588.js.map",
+          "./dist/esm/form2js-157ee0f9.js",
+          "./dist/esm/form2js-157ee0f9.js.map",
           "./dist/esm/helpers-53f01642.js",
           "./dist/esm/helpers-53f01642.js.map",
           "./dist/esm/helpers-fb5372c9.js",
@@ -632,8 +626,6 @@
           "./dist/esm/midwest-calendar-date.entry.js.map",
           "./dist/esm/midwest-callout.entry.js",
           "./dist/esm/midwest-callout.entry.js.map",
-          "./dist/esm/midwest-chart.entry.js",
-          "./dist/esm/midwest-chart.entry.js.map",
           "./dist/esm/midwest-clock.entry.js",
           "./dist/esm/midwest-clock.entry.js.map",
           "./dist/esm/midwest-code.entry.js",
@@ -752,14 +744,12 @@
           "./dist/new-tab/index.esm.js.map",
           "./dist/new-tab/new-tab.esm.js",
           "./dist/new-tab/new-tab.esm.js.map",
-          "./dist/new-tab/p-06ddeba8.entry.js",
-          "./dist/new-tab/p-06ddeba8.entry.js.map",
-          "./dist/new-tab/p-0c4450e4.entry.js",
-          "./dist/new-tab/p-0c4450e4.entry.js.map",
+          "./dist/new-tab/p-0277c2bf.entry.js",
+          "./dist/new-tab/p-0277c2bf.entry.js.map",
+          "./dist/new-tab/p-09762d9c.entry.js",
+          "./dist/new-tab/p-09762d9c.entry.js.map",
           "./dist/new-tab/p-0c502921.js",
           "./dist/new-tab/p-0c502921.js.map",
-          "./dist/new-tab/p-0c6ec147.entry.js",
-          "./dist/new-tab/p-0c6ec147.entry.js.map",
           "./dist/new-tab/p-0d4c2a44.entry.js",
           "./dist/new-tab/p-0d4c2a44.entry.js.map",
           "./dist/new-tab/p-0fe8118a.js",
@@ -768,60 +758,54 @@
           "./dist/new-tab/p-12f6f100.entry.js.map",
           "./dist/new-tab/p-136998a2.js",
           "./dist/new-tab/p-136998a2.js.map",
-          "./dist/new-tab/p-172b8f9a.entry.js",
-          "./dist/new-tab/p-172b8f9a.entry.js.map",
           "./dist/new-tab/p-175c4734.entry.js",
           "./dist/new-tab/p-175c4734.entry.js.map",
+          "./dist/new-tab/p-17913256.entry.js",
+          "./dist/new-tab/p-17913256.entry.js.map",
+          "./dist/new-tab/p-1b7c002f.entry.js",
+          "./dist/new-tab/p-1b7c002f.entry.js.map",
+          "./dist/new-tab/p-1c59f7e5.entry.js",
+          "./dist/new-tab/p-1c59f7e5.entry.js.map",
+          "./dist/new-tab/p-1f94d7be.entry.js",
+          "./dist/new-tab/p-1f94d7be.entry.js.map",
           "./dist/new-tab/p-1fca4d8b.js",
           "./dist/new-tab/p-1fca4d8b.js.map",
-          "./dist/new-tab/p-225d9e73.entry.js",
-          "./dist/new-tab/p-225d9e73.entry.js.map",
           "./dist/new-tab/p-2344ac45.entry.js",
           "./dist/new-tab/p-2344ac45.entry.js.map",
-          "./dist/new-tab/p-27c1221f.entry.js",
-          "./dist/new-tab/p-27c1221f.entry.js.map",
           "./dist/new-tab/p-2c30e259.entry.js",
           "./dist/new-tab/p-2c30e259.entry.js.map",
-          "./dist/new-tab/p-2e1e359c.entry.js",
-          "./dist/new-tab/p-2e1e359c.entry.js.map",
-          "./dist/new-tab/p-2e8e2ad5.entry.js",
-          "./dist/new-tab/p-2e8e2ad5.entry.js.map",
-          "./dist/new-tab/p-31afc524.entry.js",
-          "./dist/new-tab/p-31afc524.entry.js.map",
           "./dist/new-tab/p-3f6fd223.entry.js",
           "./dist/new-tab/p-3f6fd223.entry.js.map",
           "./dist/new-tab/p-44e442a4.entry.js",
           "./dist/new-tab/p-44e442a4.entry.js.map",
-          "./dist/new-tab/p-480ea342.js",
-          "./dist/new-tab/p-480ea342.js.map",
-          "./dist/new-tab/p-4b80428c.entry.js",
-          "./dist/new-tab/p-4b80428c.entry.js.map",
           "./dist/new-tab/p-4ca82a59.entry.js",
           "./dist/new-tab/p-4ca82a59.entry.js.map",
           "./dist/new-tab/p-4d23a23e.js",
           "./dist/new-tab/p-4d23a23e.js.map",
           "./dist/new-tab/p-4eb2f24f.entry.js",
           "./dist/new-tab/p-4eb2f24f.entry.js.map",
-          "./dist/new-tab/p-4f92b60c.entry.js",
-          "./dist/new-tab/p-4f92b60c.entry.js.map",
           "./dist/new-tab/p-507406b6.entry.js",
           "./dist/new-tab/p-507406b6.entry.js.map",
-          "./dist/new-tab/p-50cb363c.entry.js",
-          "./dist/new-tab/p-50cb363c.entry.js.map",
+          "./dist/new-tab/p-51e2be26.entry.js",
+          "./dist/new-tab/p-51e2be26.entry.js.map",
+          "./dist/new-tab/p-546bcc63.entry.js",
+          "./dist/new-tab/p-546bcc63.entry.js.map",
           "./dist/new-tab/p-56a7625f.entry.js",
           "./dist/new-tab/p-56a7625f.entry.js.map",
+          "./dist/new-tab/p-56fc94a5.entry.js",
+          "./dist/new-tab/p-56fc94a5.entry.js.map",
           "./dist/new-tab/p-5704e2d1.js",
           "./dist/new-tab/p-5704e2d1.js.map",
+          "./dist/new-tab/p-58543c70.entry.js",
+          "./dist/new-tab/p-58543c70.entry.js.map",
           "./dist/new-tab/p-5866cdea.js",
           "./dist/new-tab/p-5866cdea.js.map",
-          "./dist/new-tab/p-5c8db3a6.entry.js",
-          "./dist/new-tab/p-5c8db3a6.entry.js.map",
-          "./dist/new-tab/p-5c9c3281.entry.js",
-          "./dist/new-tab/p-5c9c3281.entry.js.map",
+          "./dist/new-tab/p-59e8b8b0.entry.js",
+          "./dist/new-tab/p-59e8b8b0.entry.js.map",
           "./dist/new-tab/p-6147bd90.entry.js",
           "./dist/new-tab/p-6147bd90.entry.js.map",
-          "./dist/new-tab/p-61c50611.entry.js",
-          "./dist/new-tab/p-61c50611.entry.js.map",
+          "./dist/new-tab/p-66e8d205.entry.js",
+          "./dist/new-tab/p-66e8d205.entry.js.map",
           "./dist/new-tab/p-6c0f81c1.entry.js",
           "./dist/new-tab/p-6c0f81c1.entry.js.map",
           "./dist/new-tab/p-717df847.entry.js",
@@ -838,88 +822,94 @@
           "./dist/new-tab/p-73c983c8.entry.js.map",
           "./dist/new-tab/p-749aae86.entry.js",
           "./dist/new-tab/p-749aae86.entry.js.map",
+          "./dist/new-tab/p-754a2f02.entry.js",
+          "./dist/new-tab/p-754a2f02.entry.js.map",
           "./dist/new-tab/p-777d6147.entry.js",
           "./dist/new-tab/p-777d6147.entry.js.map",
           "./dist/new-tab/p-77910df3.entry.js",
           "./dist/new-tab/p-77910df3.entry.js.map",
           "./dist/new-tab/p-7796f82b.entry.js",
           "./dist/new-tab/p-7796f82b.entry.js.map",
-          "./dist/new-tab/p-7b52510d.entry.js",
-          "./dist/new-tab/p-7b52510d.entry.js.map",
-          "./dist/new-tab/p-80061851.entry.js",
-          "./dist/new-tab/p-80061851.entry.js.map",
+          "./dist/new-tab/p-7b284e62.entry.js",
+          "./dist/new-tab/p-7b284e62.entry.js.map",
+          "./dist/new-tab/p-7cb5547f.entry.js",
+          "./dist/new-tab/p-7cb5547f.entry.js.map",
           "./dist/new-tab/p-8240377e.entry.js",
           "./dist/new-tab/p-8240377e.entry.js.map",
+          "./dist/new-tab/p-83c161cc.entry.js",
+          "./dist/new-tab/p-83c161cc.entry.js.map",
           "./dist/new-tab/p-846adde2.entry.js",
           "./dist/new-tab/p-846adde2.entry.js.map",
           "./dist/new-tab/p-8a85ccdf.entry.js",
           "./dist/new-tab/p-8a85ccdf.entry.js.map",
-          "./dist/new-tab/p-8bc60597.entry.js",
-          "./dist/new-tab/p-8bc60597.entry.js.map",
           "./dist/new-tab/p-8eb1ad5c.entry.js",
           "./dist/new-tab/p-8eb1ad5c.entry.js.map",
-          "./dist/new-tab/p-925912e6.entry.js",
-          "./dist/new-tab/p-925912e6.entry.js.map",
+          "./dist/new-tab/p-91cdb1e8.entry.js",
+          "./dist/new-tab/p-91cdb1e8.entry.js.map",
           "./dist/new-tab/p-98a4926c.js",
           "./dist/new-tab/p-98a4926c.js.map",
+          "./dist/new-tab/p-99e616ed.entry.js",
+          "./dist/new-tab/p-99e616ed.entry.js.map",
           "./dist/new-tab/p-9a78b696.entry.js",
           "./dist/new-tab/p-9a78b696.entry.js.map",
-          "./dist/new-tab/p-9cbfedf0.js",
-          "./dist/new-tab/p-9cbfedf0.js.map",
           "./dist/new-tab/p-a054de92.entry.js",
           "./dist/new-tab/p-a054de92.entry.js.map",
-          "./dist/new-tab/p-a50abd43.entry.js",
-          "./dist/new-tab/p-a50abd43.entry.js.map",
+          "./dist/new-tab/p-a06d8895.entry.js",
+          "./dist/new-tab/p-a06d8895.entry.js.map",
+          "./dist/new-tab/p-a5fad47e.entry.js",
+          "./dist/new-tab/p-a5fad47e.entry.js.map",
           "./dist/new-tab/p-a6e4f747.entry.js",
           "./dist/new-tab/p-a6e4f747.entry.js.map",
           "./dist/new-tab/p-a7894fcc.entry.js",
           "./dist/new-tab/p-a7894fcc.entry.js.map",
-          "./dist/new-tab/p-a7c67ab9.entry.js",
-          "./dist/new-tab/p-a7c67ab9.entry.js.map",
+          "./dist/new-tab/p-a9f3cf8d.js",
+          "./dist/new-tab/p-a9f3cf8d.js.map",
           "./dist/new-tab/p-aa76b0fd.entry.js",
           "./dist/new-tab/p-aa76b0fd.entry.js.map",
           "./dist/new-tab/p-ababc6be.entry.js",
           "./dist/new-tab/p-ababc6be.entry.js.map",
-          "./dist/new-tab/p-abae5b22.entry.js",
-          "./dist/new-tab/p-abae5b22.entry.js.map",
-          "./dist/new-tab/p-b4ee71ca.entry.js",
-          "./dist/new-tab/p-b4ee71ca.entry.js.map",
-          "./dist/new-tab/p-b4f5ea3e.entry.js",
-          "./dist/new-tab/p-b4f5ea3e.entry.js.map",
-          "./dist/new-tab/p-b6ccd784.entry.js",
-          "./dist/new-tab/p-b6ccd784.entry.js.map",
-          "./dist/new-tab/p-bc8de25e.entry.js",
-          "./dist/new-tab/p-bc8de25e.entry.js.map",
+          "./dist/new-tab/p-b98f7f9b.entry.js",
+          "./dist/new-tab/p-b98f7f9b.entry.js.map",
+          "./dist/new-tab/p-bc03e3ee.entry.js",
+          "./dist/new-tab/p-bc03e3ee.entry.js.map",
           "./dist/new-tab/p-c1faf015.entry.js",
           "./dist/new-tab/p-c1faf015.entry.js.map",
-          "./dist/new-tab/p-c91a1726.entry.js",
-          "./dist/new-tab/p-c91a1726.entry.js.map",
+          "./dist/new-tab/p-c480ebc7.entry.js",
+          "./dist/new-tab/p-c480ebc7.entry.js.map",
+          "./dist/new-tab/p-c4dd789d.entry.js",
+          "./dist/new-tab/p-c4dd789d.entry.js.map",
           "./dist/new-tab/p-cb042306.js",
           "./dist/new-tab/p-cb042306.js.map",
+          "./dist/new-tab/p-cbc8744d.entry.js",
+          "./dist/new-tab/p-cbc8744d.entry.js.map",
           "./dist/new-tab/p-d4003f8e.entry.js",
           "./dist/new-tab/p-d4003f8e.entry.js.map",
+          "./dist/new-tab/p-d4b3dfb4.entry.js",
+          "./dist/new-tab/p-d4b3dfb4.entry.js.map",
+          "./dist/new-tab/p-d52a7b85.entry.js",
+          "./dist/new-tab/p-d52a7b85.entry.js.map",
           "./dist/new-tab/p-d5619b4e.entry.js",
           "./dist/new-tab/p-d5619b4e.entry.js.map",
-          "./dist/new-tab/p-d5dc02f6.entry.js",
-          "./dist/new-tab/p-d5dc02f6.entry.js.map",
-          "./dist/new-tab/p-d782742e.entry.js",
-          "./dist/new-tab/p-d782742e.entry.js.map",
-          "./dist/new-tab/p-dc4a8c48.entry.js",
-          "./dist/new-tab/p-dc4a8c48.entry.js.map",
           "./dist/new-tab/p-dc841a3a.entry.js",
           "./dist/new-tab/p-dc841a3a.entry.js.map",
-          "./dist/new-tab/p-dcf49700.entry.js",
-          "./dist/new-tab/p-dcf49700.entry.js.map",
           "./dist/new-tab/p-e2175df6.js",
           "./dist/new-tab/p-e2175df6.js.map",
           "./dist/new-tab/p-e2c6ae7b.js",
           "./dist/new-tab/p-e2c6ae7b.js.map",
+          "./dist/new-tab/p-e5ccd63c.entry.js",
+          "./dist/new-tab/p-e5ccd63c.entry.js.map",
           "./dist/new-tab/p-e71e9bb4.js",
           "./dist/new-tab/p-e71e9bb4.js.map",
           "./dist/new-tab/p-ed163ee5.js",
           "./dist/new-tab/p-ed163ee5.js.map",
           "./dist/new-tab/p-edaa99bc.entry.js",
           "./dist/new-tab/p-edaa99bc.entry.js.map",
+          "./dist/new-tab/p-f0a60495.js",
+          "./dist/new-tab/p-f0a60495.js.map",
+          "./dist/new-tab/p-f0dd0997.entry.js",
+          "./dist/new-tab/p-f0dd0997.entry.js.map",
+          "./dist/new-tab/p-f5883bd9.entry.js",
+          "./dist/new-tab/p-f5883bd9.entry.js.map",
           "./dist/new-tab/p-f6c733ff.js",
           "./dist/new-tab/p-f6c733ff.js.map",
           "./dist/new-tab/p-fe1a7095.js",
@@ -928,14 +918,12 @@
           "./www/build/index.esm.js.map",
           "./www/build/new-tab.esm.js",
           "./www/build/new-tab.esm.js.map",
-          "./www/build/p-06ddeba8.entry.js",
-          "./www/build/p-06ddeba8.entry.js.map",
-          "./www/build/p-0c4450e4.entry.js",
-          "./www/build/p-0c4450e4.entry.js.map",
+          "./www/build/p-0277c2bf.entry.js",
+          "./www/build/p-0277c2bf.entry.js.map",
+          "./www/build/p-09762d9c.entry.js",
+          "./www/build/p-09762d9c.entry.js.map",
           "./www/build/p-0c502921.js",
           "./www/build/p-0c502921.js.map",
-          "./www/build/p-0c6ec147.entry.js",
-          "./www/build/p-0c6ec147.entry.js.map",
           "./www/build/p-0d4c2a44.entry.js",
           "./www/build/p-0d4c2a44.entry.js.map",
           "./www/build/p-0fe8118a.js",
@@ -944,60 +932,54 @@
           "./www/build/p-12f6f100.entry.js.map",
           "./www/build/p-136998a2.js",
           "./www/build/p-136998a2.js.map",
-          "./www/build/p-172b8f9a.entry.js",
-          "./www/build/p-172b8f9a.entry.js.map",
           "./www/build/p-175c4734.entry.js",
           "./www/build/p-175c4734.entry.js.map",
+          "./www/build/p-17913256.entry.js",
+          "./www/build/p-17913256.entry.js.map",
+          "./www/build/p-1b7c002f.entry.js",
+          "./www/build/p-1b7c002f.entry.js.map",
+          "./www/build/p-1c59f7e5.entry.js",
+          "./www/build/p-1c59f7e5.entry.js.map",
+          "./www/build/p-1f94d7be.entry.js",
+          "./www/build/p-1f94d7be.entry.js.map",
           "./www/build/p-1fca4d8b.js",
           "./www/build/p-1fca4d8b.js.map",
-          "./www/build/p-225d9e73.entry.js",
-          "./www/build/p-225d9e73.entry.js.map",
           "./www/build/p-2344ac45.entry.js",
           "./www/build/p-2344ac45.entry.js.map",
-          "./www/build/p-27c1221f.entry.js",
-          "./www/build/p-27c1221f.entry.js.map",
           "./www/build/p-2c30e259.entry.js",
           "./www/build/p-2c30e259.entry.js.map",
-          "./www/build/p-2e1e359c.entry.js",
-          "./www/build/p-2e1e359c.entry.js.map",
-          "./www/build/p-2e8e2ad5.entry.js",
-          "./www/build/p-2e8e2ad5.entry.js.map",
-          "./www/build/p-31afc524.entry.js",
-          "./www/build/p-31afc524.entry.js.map",
           "./www/build/p-3f6fd223.entry.js",
           "./www/build/p-3f6fd223.entry.js.map",
           "./www/build/p-44e442a4.entry.js",
           "./www/build/p-44e442a4.entry.js.map",
-          "./www/build/p-480ea342.js",
-          "./www/build/p-480ea342.js.map",
-          "./www/build/p-4b80428c.entry.js",
-          "./www/build/p-4b80428c.entry.js.map",
           "./www/build/p-4ca82a59.entry.js",
           "./www/build/p-4ca82a59.entry.js.map",
           "./www/build/p-4d23a23e.js",
           "./www/build/p-4d23a23e.js.map",
           "./www/build/p-4eb2f24f.entry.js",
           "./www/build/p-4eb2f24f.entry.js.map",
-          "./www/build/p-4f92b60c.entry.js",
-          "./www/build/p-4f92b60c.entry.js.map",
           "./www/build/p-507406b6.entry.js",
           "./www/build/p-507406b6.entry.js.map",
-          "./www/build/p-50cb363c.entry.js",
-          "./www/build/p-50cb363c.entry.js.map",
+          "./www/build/p-51e2be26.entry.js",
+          "./www/build/p-51e2be26.entry.js.map",
+          "./www/build/p-546bcc63.entry.js",
+          "./www/build/p-546bcc63.entry.js.map",
           "./www/build/p-56a7625f.entry.js",
           "./www/build/p-56a7625f.entry.js.map",
+          "./www/build/p-56fc94a5.entry.js",
+          "./www/build/p-56fc94a5.entry.js.map",
           "./www/build/p-5704e2d1.js",
           "./www/build/p-5704e2d1.js.map",
+          "./www/build/p-58543c70.entry.js",
+          "./www/build/p-58543c70.entry.js.map",
           "./www/build/p-5866cdea.js",
           "./www/build/p-5866cdea.js.map",
-          "./www/build/p-5c8db3a6.entry.js",
-          "./www/build/p-5c8db3a6.entry.js.map",
-          "./www/build/p-5c9c3281.entry.js",
-          "./www/build/p-5c9c3281.entry.js.map",
+          "./www/build/p-59e8b8b0.entry.js",
+          "./www/build/p-59e8b8b0.entry.js.map",
           "./www/build/p-6147bd90.entry.js",
           "./www/build/p-6147bd90.entry.js.map",
-          "./www/build/p-61c50611.entry.js",
-          "./www/build/p-61c50611.entry.js.map",
+          "./www/build/p-66e8d205.entry.js",
+          "./www/build/p-66e8d205.entry.js.map",
           "./www/build/p-6c0f81c1.entry.js",
           "./www/build/p-6c0f81c1.entry.js.map",
           "./www/build/p-717df847.entry.js",
@@ -1014,88 +996,94 @@
           "./www/build/p-73c983c8.entry.js.map",
           "./www/build/p-749aae86.entry.js",
           "./www/build/p-749aae86.entry.js.map",
+          "./www/build/p-754a2f02.entry.js",
+          "./www/build/p-754a2f02.entry.js.map",
           "./www/build/p-777d6147.entry.js",
           "./www/build/p-777d6147.entry.js.map",
           "./www/build/p-77910df3.entry.js",
           "./www/build/p-77910df3.entry.js.map",
           "./www/build/p-7796f82b.entry.js",
           "./www/build/p-7796f82b.entry.js.map",
-          "./www/build/p-7b52510d.entry.js",
-          "./www/build/p-7b52510d.entry.js.map",
-          "./www/build/p-80061851.entry.js",
-          "./www/build/p-80061851.entry.js.map",
+          "./www/build/p-7b284e62.entry.js",
+          "./www/build/p-7b284e62.entry.js.map",
+          "./www/build/p-7cb5547f.entry.js",
+          "./www/build/p-7cb5547f.entry.js.map",
           "./www/build/p-8240377e.entry.js",
           "./www/build/p-8240377e.entry.js.map",
+          "./www/build/p-83c161cc.entry.js",
+          "./www/build/p-83c161cc.entry.js.map",
           "./www/build/p-846adde2.entry.js",
           "./www/build/p-846adde2.entry.js.map",
           "./www/build/p-8a85ccdf.entry.js",
           "./www/build/p-8a85ccdf.entry.js.map",
-          "./www/build/p-8bc60597.entry.js",
-          "./www/build/p-8bc60597.entry.js.map",
           "./www/build/p-8eb1ad5c.entry.js",
           "./www/build/p-8eb1ad5c.entry.js.map",
-          "./www/build/p-925912e6.entry.js",
-          "./www/build/p-925912e6.entry.js.map",
+          "./www/build/p-91cdb1e8.entry.js",
+          "./www/build/p-91cdb1e8.entry.js.map",
           "./www/build/p-98a4926c.js",
           "./www/build/p-98a4926c.js.map",
+          "./www/build/p-99e616ed.entry.js",
+          "./www/build/p-99e616ed.entry.js.map",
           "./www/build/p-9a78b696.entry.js",
           "./www/build/p-9a78b696.entry.js.map",
-          "./www/build/p-9cbfedf0.js",
-          "./www/build/p-9cbfedf0.js.map",
           "./www/build/p-a054de92.entry.js",
           "./www/build/p-a054de92.entry.js.map",
-          "./www/build/p-a50abd43.entry.js",
-          "./www/build/p-a50abd43.entry.js.map",
+          "./www/build/p-a06d8895.entry.js",
+          "./www/build/p-a06d8895.entry.js.map",
+          "./www/build/p-a5fad47e.entry.js",
+          "./www/build/p-a5fad47e.entry.js.map",
           "./www/build/p-a6e4f747.entry.js",
           "./www/build/p-a6e4f747.entry.js.map",
           "./www/build/p-a7894fcc.entry.js",
           "./www/build/p-a7894fcc.entry.js.map",
-          "./www/build/p-a7c67ab9.entry.js",
-          "./www/build/p-a7c67ab9.entry.js.map",
+          "./www/build/p-a9f3cf8d.js",
+          "./www/build/p-a9f3cf8d.js.map",
           "./www/build/p-aa76b0fd.entry.js",
           "./www/build/p-aa76b0fd.entry.js.map",
           "./www/build/p-ababc6be.entry.js",
           "./www/build/p-ababc6be.entry.js.map",
-          "./www/build/p-abae5b22.entry.js",
-          "./www/build/p-abae5b22.entry.js.map",
-          "./www/build/p-b4ee71ca.entry.js",
-          "./www/build/p-b4ee71ca.entry.js.map",
-          "./www/build/p-b4f5ea3e.entry.js",
-          "./www/build/p-b4f5ea3e.entry.js.map",
-          "./www/build/p-b6ccd784.entry.js",
-          "./www/build/p-b6ccd784.entry.js.map",
-          "./www/build/p-bc8de25e.entry.js",
-          "./www/build/p-bc8de25e.entry.js.map",
+          "./www/build/p-b98f7f9b.entry.js",
+          "./www/build/p-b98f7f9b.entry.js.map",
+          "./www/build/p-bc03e3ee.entry.js",
+          "./www/build/p-bc03e3ee.entry.js.map",
           "./www/build/p-c1faf015.entry.js",
           "./www/build/p-c1faf015.entry.js.map",
-          "./www/build/p-c91a1726.entry.js",
-          "./www/build/p-c91a1726.entry.js.map",
+          "./www/build/p-c480ebc7.entry.js",
+          "./www/build/p-c480ebc7.entry.js.map",
+          "./www/build/p-c4dd789d.entry.js",
+          "./www/build/p-c4dd789d.entry.js.map",
           "./www/build/p-cb042306.js",
           "./www/build/p-cb042306.js.map",
+          "./www/build/p-cbc8744d.entry.js",
+          "./www/build/p-cbc8744d.entry.js.map",
           "./www/build/p-d4003f8e.entry.js",
           "./www/build/p-d4003f8e.entry.js.map",
+          "./www/build/p-d4b3dfb4.entry.js",
+          "./www/build/p-d4b3dfb4.entry.js.map",
+          "./www/build/p-d52a7b85.entry.js",
+          "./www/build/p-d52a7b85.entry.js.map",
           "./www/build/p-d5619b4e.entry.js",
           "./www/build/p-d5619b4e.entry.js.map",
-          "./www/build/p-d5dc02f6.entry.js",
-          "./www/build/p-d5dc02f6.entry.js.map",
-          "./www/build/p-d782742e.entry.js",
-          "./www/build/p-d782742e.entry.js.map",
-          "./www/build/p-dc4a8c48.entry.js",
-          "./www/build/p-dc4a8c48.entry.js.map",
           "./www/build/p-dc841a3a.entry.js",
           "./www/build/p-dc841a3a.entry.js.map",
-          "./www/build/p-dcf49700.entry.js",
-          "./www/build/p-dcf49700.entry.js.map",
           "./www/build/p-e2175df6.js",
           "./www/build/p-e2175df6.js.map",
           "./www/build/p-e2c6ae7b.js",
           "./www/build/p-e2c6ae7b.js.map",
+          "./www/build/p-e5ccd63c.entry.js",
+          "./www/build/p-e5ccd63c.entry.js.map",
           "./www/build/p-e71e9bb4.js",
           "./www/build/p-e71e9bb4.js.map",
           "./www/build/p-ed163ee5.js",
           "./www/build/p-ed163ee5.js.map",
           "./www/build/p-edaa99bc.entry.js",
           "./www/build/p-edaa99bc.entry.js.map",
+          "./www/build/p-f0a60495.js",
+          "./www/build/p-f0a60495.js.map",
+          "./www/build/p-f0dd0997.entry.js",
+          "./www/build/p-f0dd0997.entry.js.map",
+          "./www/build/p-f5883bd9.entry.js",
+          "./www/build/p-f5883bd9.entry.js.map",
           "./www/build/p-f6c733ff.js",
           "./www/build/p-f6c733ff.js.map",
           "./www/build/p-fe1a7095.js",
@@ -1165,12 +1153,12 @@
           "resize-observer",
           "stencil-route-link"
         ],
-        "bundleId": "p-b4ee71ca",
-        "fileName": "p-b4ee71ca.entry.js",
+        "bundleId": "p-cbc8744d",
+        "fileName": "p-cbc8744d.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-72e37a6a.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-e2175df6.js",
           "p-f6c733ff.js",
@@ -1181,7 +1169,7 @@
           "p-e71e9bb4.js",
           "p-1fca4d8b.js"
         ],
-        "originalByteSize": 617162
+        "originalByteSize": 617699
       },
       {
         "key": "animated-route-switch.entry",
@@ -1251,12 +1239,12 @@
         "components": [
           "midwest-accordion"
         ],
-        "bundleId": "p-d782742e",
-        "fileName": "p-d782742e.entry.js",
+        "bundleId": "p-d4b3dfb4",
+        "fileName": "p-d4b3dfb4.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-4d23a23e.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1279,11 +1267,11 @@
         "components": [
           "midwest-breadcrumb"
         ],
-        "bundleId": "p-4b80428c",
-        "fileName": "p-4b80428c.entry.js",
+        "bundleId": "p-56fc94a5",
+        "fileName": "p-56fc94a5.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1294,11 +1282,11 @@
         "components": [
           "midwest-breadcrumbs"
         ],
-        "bundleId": "p-7b52510d",
-        "fileName": "p-7b52510d.entry.js",
+        "bundleId": "p-f0dd0997",
+        "fileName": "p-f0dd0997.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1309,11 +1297,11 @@
         "components": [
           "midwest-calendar-date"
         ],
-        "bundleId": "p-bc8de25e",
-        "fileName": "p-bc8de25e.entry.js",
+        "bundleId": "p-91cdb1e8",
+        "fileName": "p-91cdb1e8.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1324,11 +1312,11 @@
         "components": [
           "midwest-color-library"
         ],
-        "bundleId": "p-27c1221f",
-        "fileName": "p-27c1221f.entry.js",
+        "bundleId": "p-1f94d7be",
+        "fileName": "p-1f94d7be.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-f6c733ff.js"
         ],
         "originalByteSize": 2867
@@ -1338,11 +1326,11 @@
         "components": [
           "midwest-comment"
         ],
-        "bundleId": "p-61c50611",
-        "fileName": "p-61c50611.entry.js",
+        "bundleId": "p-1b7c002f",
+        "fileName": "p-1b7c002f.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1401,11 +1389,11 @@
         "components": [
           "midwest-dropdown"
         ],
-        "bundleId": "p-2e8e2ad5",
-        "fileName": "p-2e8e2ad5.entry.js",
+        "bundleId": "p-83c161cc",
+        "fileName": "p-83c161cc.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1416,61 +1404,61 @@
         "components": [
           "midwest-field-group"
         ],
-        "bundleId": "p-0c4450e4",
-        "fileName": "p-0c4450e4.entry.js",
+        "bundleId": "p-a06d8895",
+        "fileName": "p-a06d8895.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-ed163ee5.js",
-          "p-480ea342.js",
+          "p-f0a60495.js",
           "p-4d23a23e.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 4075
+        "originalByteSize": 4111
       },
       {
         "key": "midwest-form.entry",
         "components": [
           "midwest-form"
         ],
-        "bundleId": "p-5c8db3a6",
-        "fileName": "p-5c8db3a6.entry.js",
+        "bundleId": "p-51e2be26",
+        "fileName": "p-51e2be26.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-ed163ee5.js",
-          "p-480ea342.js",
+          "p-f0a60495.js",
           "p-4d23a23e.js",
           "p-e2175df6.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 8395
+        "originalByteSize": 8538
       },
       {
         "key": "midwest-input-file.entry",
         "components": [
           "midwest-input-file"
         ],
-        "bundleId": "p-a50abd43",
-        "fileName": "p-a50abd43.entry.js",
+        "bundleId": "p-17913256",
+        "fileName": "p-17913256.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 9239
+        "originalByteSize": 9281
       },
       {
         "key": "midwest-input-tags.entry",
         "components": [
           "midwest-input-tags"
         ],
-        "bundleId": "p-d5dc02f6",
-        "fileName": "p-d5dc02f6.entry.js",
+        "bundleId": "p-7b284e62",
+        "fileName": "p-7b284e62.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1521,11 +1509,11 @@
         "components": [
           "midwest-map"
         ],
-        "bundleId": "p-dcf49700",
-        "fileName": "p-dcf49700.entry.js",
+        "bundleId": "p-c480ebc7",
+        "fileName": "p-c480ebc7.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-ed163ee5.js",
           "p-f6c733ff.js"
         ],
@@ -1548,12 +1536,12 @@
         "components": [
           "midwest-message"
         ],
-        "bundleId": "p-925912e6",
-        "fileName": "p-925912e6.entry.js",
+        "bundleId": "p-f5883bd9",
+        "fileName": "p-f5883bd9.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-f6c733ff.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js"
         ],
         "originalByteSize": 10163
@@ -1589,11 +1577,11 @@
         "components": [
           "midwest-onboarding"
         ],
-        "bundleId": "p-80061851",
-        "fileName": "p-80061851.entry.js",
+        "bundleId": "p-09762d9c",
+        "fileName": "p-09762d9c.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-ed163ee5.js",
           "p-f6c733ff.js"
         ],
@@ -1618,11 +1606,11 @@
         "components": [
           "midwest-pagination"
         ],
-        "bundleId": "p-06ddeba8",
-        "fileName": "p-06ddeba8.entry.js",
+        "bundleId": "p-bc03e3ee",
+        "fileName": "p-bc03e3ee.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1633,12 +1621,12 @@
         "components": [
           "midwest-password-requirements"
         ],
-        "bundleId": "p-b6ccd784",
-        "fileName": "p-b6ccd784.entry.js",
+        "bundleId": "p-58543c70",
+        "fileName": "p-58543c70.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-0c502921.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1663,11 +1651,11 @@
         "components": [
           "midwest-playlist"
         ],
-        "bundleId": "p-dc4a8c48",
-        "fileName": "p-dc4a8c48.entry.js",
+        "bundleId": "p-d52a7b85",
+        "fileName": "p-d52a7b85.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1678,14 +1666,14 @@
         "components": [
           "midwest-repeatable-fields"
         ],
-        "bundleId": "p-abae5b22",
-        "fileName": "p-abae5b22.entry.js",
+        "bundleId": "p-e5ccd63c",
+        "fileName": "p-e5ccd63c.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-e2175df6.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 4951
+        "originalByteSize": 5082
       },
       {
         "key": "midwest-show-if.entry",
@@ -1706,11 +1694,11 @@
         "components": [
           "midwest-song"
         ],
-        "bundleId": "p-225d9e73",
-        "fileName": "p-225d9e73.entry.js",
+        "bundleId": "p-b98f7f9b",
+        "fileName": "p-b98f7f9b.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-f6c733ff.js"
         ],
         "originalByteSize": 62660
@@ -1720,11 +1708,11 @@
         "components": [
           "midwest-step"
         ],
-        "bundleId": "p-a7c67ab9",
-        "fileName": "p-a7c67ab9.entry.js",
+        "bundleId": "p-a5fad47e",
+        "fileName": "p-a5fad47e.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1735,11 +1723,11 @@
         "components": [
           "midwest-steps"
         ],
-        "bundleId": "p-31afc524",
-        "fileName": "p-31afc524.entry.js",
+        "bundleId": "p-546bcc63",
+        "fileName": "p-546bcc63.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1750,43 +1738,43 @@
         "components": [
           "midwest-tab"
         ],
-        "bundleId": "p-c91a1726",
-        "fileName": "p-c91a1726.entry.js",
+        "bundleId": "p-754a2f02",
+        "fileName": "p-754a2f02.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-e2175df6.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 7644
+        "originalByteSize": 7704
       },
       {
         "key": "midwest-tabs.entry",
         "components": [
           "midwest-tabs"
         ],
-        "bundleId": "p-4f92b60c",
-        "fileName": "p-4f92b60c.entry.js",
+        "bundleId": "p-99e616ed",
+        "fileName": "p-99e616ed.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-e2175df6.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 8537
+        "originalByteSize": 8655
       },
       {
         "key": "midwest-toggle.entry",
         "components": [
           "midwest-toggle"
         ],
-        "bundleId": "p-b4f5ea3e",
-        "fileName": "p-b4f5ea3e.entry.js",
+        "bundleId": "p-7cb5547f",
+        "fileName": "p-7cb5547f.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1970,11 +1958,11 @@
         "components": [
           "midwest-callout"
         ],
-        "bundleId": "p-8bc60597",
-        "fileName": "p-8bc60597.entry.js",
+        "bundleId": "p-0277c2bf",
+        "fileName": "p-0277c2bf.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
@@ -1997,12 +1985,12 @@
         "components": [
           "midwest-code"
         ],
-        "bundleId": "p-0c6ec147",
-        "fileName": "p-0c6ec147.entry.js",
+        "bundleId": "p-66e8d205",
+        "fileName": "p-66e8d205.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-f6c733ff.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-e2175df6.js"
         ],
@@ -2013,11 +2001,11 @@
         "components": [
           "midwest-color-picker"
         ],
-        "bundleId": "p-5c9c3281",
-        "fileName": "p-5c9c3281.entry.js",
+        "bundleId": "p-59e8b8b0",
+        "fileName": "p-59e8b8b0.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-5866cdea.js",
           "p-5704e2d1.js",
           "p-f6c733ff.js"
@@ -2056,32 +2044,17 @@
           "web-audio",
           "web-audio-source"
         ],
-        "bundleId": "p-2e1e359c",
-        "fileName": "p-2e1e359c.entry.js",
+        "bundleId": "p-1c59f7e5",
+        "fileName": "p-1c59f7e5.entry.js",
         "imports": [
           "p-71be04f7.js",
           "p-cb042306.js",
           "p-98a4926c.js",
           "p-f6c733ff.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-ed163ee5.js"
         ],
         "originalByteSize": 53243
-      },
-      {
-        "key": "midwest-chart.entry",
-        "components": [
-          "midwest-chart"
-        ],
-        "bundleId": "p-172b8f9a",
-        "fileName": "p-172b8f9a.entry.js",
-        "imports": [
-          "p-71be04f7.js",
-          "p-f6c733ff.js",
-          "p-9cbfedf0.js",
-          "p-5866cdea.js"
-        ],
-        "originalByteSize": 320463
       },
       {
         "key": "midwest-unit.entry",
@@ -2102,11 +2075,11 @@
           "skeleton-img",
           "web-audio-visualizer"
         ],
-        "bundleId": "p-50cb363c",
-        "fileName": "p-50cb363c.entry.js",
+        "bundleId": "p-c4dd789d",
+        "fileName": "p-c4dd789d.entry.js",
         "imports": [
           "p-71be04f7.js",
-          "p-9cbfedf0.js",
+          "p-a9f3cf8d.js",
           "p-f6c733ff.js"
         ],
         "originalByteSize": 10940
@@ -2155,7 +2128,7 @@
         "imports": [
           "index-33369d46.js",
           "index-a98dbe0e.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js",
@@ -2166,7 +2139,7 @@
           "active-router-36ff36cf.js",
           "location-utils-d5258d15.js"
         ],
-        "originalByteSize": 617270
+        "originalByteSize": 617807
       },
       {
         "key": "animated-route-switch.entry",
@@ -2241,7 +2214,7 @@
         "imports": [
           "index-33369d46.js",
           "index-292b16f1.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2268,7 +2241,7 @@
         "fileName": "midwest-breadcrumb.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2283,7 +2256,7 @@
         "fileName": "midwest-breadcrumbs.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2298,7 +2271,7 @@
         "fileName": "midwest-calendar-date.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2313,7 +2286,7 @@
         "fileName": "midwest-color-library.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "_commonjsHelpers-856c13bf.js"
         ],
         "originalByteSize": 2891
@@ -2327,7 +2300,7 @@
         "fileName": "midwest-comment.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2390,7 +2363,7 @@
         "fileName": "midwest-dropdown.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2405,13 +2378,13 @@
         "fileName": "midwest-field-group.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "asyncForEach-c7d78bc5.js",
-          "form2js-9f16e588.js",
+          "form2js-157ee0f9.js",
           "index-292b16f1.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 4120
+        "originalByteSize": 4156
       },
       {
         "key": "midwest-form.entry",
@@ -2422,14 +2395,14 @@
         "fileName": "midwest-form.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "asyncForEach-c7d78bc5.js",
-          "form2js-9f16e588.js",
+          "form2js-157ee0f9.js",
           "index-292b16f1.js",
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 8444
+        "originalByteSize": 8587
       },
       {
         "key": "midwest-input-file.entry",
@@ -2440,11 +2413,11 @@
         "fileName": "midwest-input-file.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 9270
+        "originalByteSize": 9312
       },
       {
         "key": "midwest-input-tags.entry",
@@ -2455,7 +2428,7 @@
         "fileName": "midwest-input-tags.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2510,7 +2483,7 @@
         "fileName": "midwest-map.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "asyncForEach-c7d78bc5.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2538,7 +2511,7 @@
         "imports": [
           "index-33369d46.js",
           "_commonjsHelpers-856c13bf.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js"
         ],
         "originalByteSize": 10194
@@ -2578,7 +2551,7 @@
         "fileName": "midwest-onboarding.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "asyncForEach-c7d78bc5.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2607,7 +2580,7 @@
         "fileName": "midwest-pagination.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2623,7 +2596,7 @@
         "imports": [
           "index-33369d46.js",
           "main-3ef50fdf.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2652,7 +2625,7 @@
         "fileName": "midwest-playlist.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2670,7 +2643,7 @@
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 4974
+        "originalByteSize": 5105
       },
       {
         "key": "midwest-show-if.entry",
@@ -2695,7 +2668,7 @@
         "fileName": "midwest-song.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "_commonjsHelpers-856c13bf.js"
         ],
         "originalByteSize": 62684
@@ -2709,7 +2682,7 @@
         "fileName": "midwest-step.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2724,7 +2697,7 @@
         "fileName": "midwest-steps.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2740,11 +2713,11 @@
         "imports": [
           "index-33369d46.js",
           "index-5b1de64c.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 7679
+        "originalByteSize": 7739
       },
       {
         "key": "midwest-tabs.entry",
@@ -2755,12 +2728,12 @@
         "fileName": "midwest-tabs.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "index-5b1de64c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 8572
+        "originalByteSize": 8690
       },
       {
         "key": "midwest-toggle.entry",
@@ -2771,7 +2744,7 @@
         "fileName": "midwest-toggle.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2959,7 +2932,7 @@
         "fileName": "midwest-callout.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -2987,7 +2960,7 @@
         "imports": [
           "index-33369d46.js",
           "_commonjsHelpers-856c13bf.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "index-5b1de64c.js"
         ],
@@ -3002,7 +2975,7 @@
         "fileName": "midwest-color-picker.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "darkMode-76deeecd.js",
           "css-custom-properties.min-bfc58fad.js",
           "_commonjsHelpers-856c13bf.js"
@@ -3048,25 +3021,10 @@
           "web-audio-debugger-3693bb2a.js",
           "helpers-fb5372c9.js",
           "_commonjsHelpers-856c13bf.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "asyncForEach-c7d78bc5.js"
         ],
         "originalByteSize": 53301
-      },
-      {
-        "key": "midwest-chart.entry",
-        "components": [
-          "midwest-chart"
-        ],
-        "bundleId": "midwest-chart",
-        "fileName": "midwest-chart.entry.js",
-        "imports": [
-          "index-33369d46.js",
-          "_commonjsHelpers-856c13bf.js",
-          "colors-8d240a34.js",
-          "darkMode-76deeecd.js"
-        ],
-        "originalByteSize": 320494
       },
       {
         "key": "midwest-unit.entry",
@@ -3091,7 +3049,7 @@
         "fileName": "skeleton-img_2.entry.js",
         "imports": [
           "index-33369d46.js",
-          "colors-8d240a34.js",
+          "colors-464e0d9d.js",
           "_commonjsHelpers-856c13bf.js"
         ],
         "originalByteSize": 10964
@@ -3142,7 +3100,7 @@
         "imports": [
           "index-aa74354c.js",
           "index-ac033160.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js",
@@ -3153,7 +3111,7 @@
           "active-router-9d07c16c.js",
           "location-utils-7c54d0c6.js"
         ],
-        "originalByteSize": 622284
+        "originalByteSize": 622821
       },
       {
         "key": "animated-route-switch.entry",
@@ -3228,7 +3186,7 @@
         "imports": [
           "index-aa74354c.js",
           "index-70fb2f40.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3255,7 +3213,7 @@
         "fileName": "midwest-breadcrumb.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3270,7 +3228,7 @@
         "fileName": "midwest-breadcrumbs.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3285,7 +3243,7 @@
         "fileName": "midwest-calendar-date.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3300,7 +3258,7 @@
         "fileName": "midwest-color-library.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
         "originalByteSize": 3032
@@ -3314,7 +3272,7 @@
         "fileName": "midwest-comment.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3377,7 +3335,7 @@
         "fileName": "midwest-dropdown.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3392,13 +3350,13 @@
         "fileName": "midwest-field-group.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "asyncForEach-d424f614.js",
-          "form2js-d941631e.js",
+          "form2js-0eae10db.js",
           "index-70fb2f40.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 4207
+        "originalByteSize": 4243
       },
       {
         "key": "midwest-form.entry",
@@ -3409,14 +3367,14 @@
         "fileName": "midwest-form.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "asyncForEach-d424f614.js",
-          "form2js-d941631e.js",
+          "form2js-0eae10db.js",
           "index-70fb2f40.js",
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 8600
+        "originalByteSize": 8743
       },
       {
         "key": "midwest-input-file.entry",
@@ -3427,11 +3385,11 @@
         "fileName": "midwest-input-file.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 9452
+        "originalByteSize": 9494
       },
       {
         "key": "midwest-input-tags.entry",
@@ -3442,7 +3400,7 @@
         "fileName": "midwest-input-tags.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3497,7 +3455,7 @@
         "fileName": "midwest-map.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "asyncForEach-d424f614.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3525,7 +3483,7 @@
         "imports": [
           "index-aa74354c.js",
           "_commonjsHelpers-cb2db9e6.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js"
         ],
         "originalByteSize": 10317
@@ -3565,7 +3523,7 @@
         "fileName": "midwest-onboarding.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "asyncForEach-d424f614.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3594,7 +3552,7 @@
         "fileName": "midwest-pagination.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3610,7 +3568,7 @@
         "imports": [
           "index-aa74354c.js",
           "main-8e97029e.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3639,7 +3597,7 @@
         "fileName": "midwest-playlist.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3657,7 +3615,7 @@
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 5053
+        "originalByteSize": 5184
       },
       {
         "key": "midwest-show-if.entry",
@@ -3682,7 +3640,7 @@
         "fileName": "midwest-song.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
         "originalByteSize": 62782
@@ -3696,7 +3654,7 @@
         "fileName": "midwest-step.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3711,7 +3669,7 @@
         "fileName": "midwest-steps.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3727,11 +3685,11 @@
         "imports": [
           "index-aa74354c.js",
           "index-06f6ab39.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 7783
+        "originalByteSize": 7843
       },
       {
         "key": "midwest-tabs.entry",
@@ -3742,12 +3700,12 @@
         "fileName": "midwest-tabs.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "index-06f6ab39.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 8676
+        "originalByteSize": 8794
       },
       {
         "key": "midwest-toggle.entry",
@@ -3758,7 +3716,7 @@
         "fileName": "midwest-toggle.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3946,7 +3904,7 @@
         "fileName": "midwest-callout.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -3974,7 +3932,7 @@
         "imports": [
           "index-aa74354c.js",
           "_commonjsHelpers-cb2db9e6.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "index-06f6ab39.js"
         ],
@@ -3989,7 +3947,7 @@
         "fileName": "midwest-color-picker.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "darkMode-ee75726a.js",
           "css-custom-properties.min-290c0886.js",
           "_commonjsHelpers-cb2db9e6.js"
@@ -4035,25 +3993,10 @@
           "web-audio-debugger-7a3f3b11.js",
           "helpers-29f42b79.js",
           "_commonjsHelpers-cb2db9e6.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "asyncForEach-d424f614.js"
         ],
         "originalByteSize": 53485
-      },
-      {
-        "key": "midwest-chart.entry",
-        "components": [
-          "midwest-chart"
-        ],
-        "bundleId": "midwest-chart.cjs",
-        "fileName": "midwest-chart.cjs.entry.js",
-        "imports": [
-          "index-aa74354c.js",
-          "_commonjsHelpers-cb2db9e6.js",
-          "colors-cf1321db.js",
-          "darkMode-ee75726a.js"
-        ],
-        "originalByteSize": 320608
       },
       {
         "key": "midwest-unit.entry",
@@ -4078,7 +4021,7 @@
         "fileName": "skeleton-img_2.cjs.entry.js",
         "imports": [
           "index-aa74354c.js",
-          "colors-cf1321db.js",
+          "colors-e09da04b.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
         "originalByteSize": 11081
@@ -7204,7 +7147,6 @@
       "componentClassName": "CalendarDate",
       "assetsDirs": [],
       "dependencies": [
-        "midwest-chart",
         "midwest-clock",
         "midwest-label",
         "midwest-tooltip"
@@ -7983,317 +7925,6 @@
       ]
     },
     {
-      "tag": "midwest-chart",
-      "path": "../helpers/dist/collection/components/chart/chart.js",
-      "source": "../helpers/dist/collection/components/chart/chart.js",
-      "elementRef": "element",
-      "componentClassName": "Chart",
-      "assetsDirs": [],
-      "dependencies": [],
-      "dependents": [
-        "midwest-calendar-date",
-        "midwest-clock"
-      ],
-      "directDependencies": [],
-      "directDependents": [
-        "midwest-clock"
-      ],
-      "docs": {
-        "tags": [],
-        "text": ""
-      },
-      "encapsulation": "shadow",
-      "excludeFromCollection": false,
-      "events": [],
-      "internal": false,
-      "legacyConnect": [],
-      "legacyContext": [],
-      "listeners": [
-        {
-          "name": "resize",
-          "method": "handResize",
-          "capture": false,
-          "passive": true,
-          "target": "window"
-        },
-        {
-          "name": "fullscreenchange",
-          "method": "handResize",
-          "capture": false,
-          "passive": false,
-          "target": "document"
-        },
-        {
-          "name": "keyup",
-          "method": "handleEscape",
-          "capture": false,
-          "passive": false,
-          "target": "document"
-        }
-      ],
-      "methods": [
-        {
-          "name": "options",
-          "docs": {
-            "text": "",
-            "tags": []
-          },
-          "complexType": {
-            "signature": "(newOptions: any) => Promise<void>",
-            "parameters": [
-              {
-                "tags": [],
-                "text": ""
-              }
-            ],
-            "references": {
-              "Promise": {
-                "location": "global"
-              }
-            },
-            "return": "Promise<void>"
-          },
-          "internal": false
-        },
-        {
-          "name": "get_options",
-          "docs": {
-            "text": "",
-            "tags": []
-          },
-          "complexType": {
-            "signature": "() => Promise<any>",
-            "parameters": [],
-            "references": {
-              "Promise": {
-                "location": "global"
-              }
-            },
-            "return": "Promise<any>"
-          },
-          "internal": false
-        },
-        {
-          "name": "refresh",
-          "docs": {
-            "text": "",
-            "tags": []
-          },
-          "complexType": {
-            "signature": "() => Promise<void>",
-            "parameters": [],
-            "references": {
-              "Promise": {
-                "location": "global"
-              }
-            },
-            "return": "Promise<void>"
-          },
-          "internal": false
-        }
-      ],
-      "potentialCmpRefs": [],
-      "properties": [
-        {
-          "name": "type",
-          "type": "string",
-          "attribute": "type",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "\"area\" | \"areaspline\" | \"bar\" | \"bubble\" | \"column\" | \"line\" | \"pie\" | \"polygon\" | \"scatter\" | \"spline\" | \"waterfall\"",
-            "resolved": "\"area\" | \"areaspline\" | \"bar\" | \"bubble\" | \"column\" | \"line\" | \"pie\" | \"polygon\" | \"scatter\" | \"spline\" | \"waterfall\"",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "data",
-          "type": "string",
-          "attribute": "data",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "src",
-          "type": "string",
-          "attribute": "src",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "for",
-          "type": "string",
-          "attribute": "for",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "enableCredits",
-          "type": "boolean",
-          "attribute": "enable-credits",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "false",
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "chartTitle",
-          "type": "string",
-          "attribute": "chart-title",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "config",
-          "type": "unknown",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "new HighchartsModel",
-          "complexType": {
-            "original": "HighchartsModel",
-            "resolved": "HighchartsModel",
-            "references": {
-              "HighchartsModel": {
-                "location": "import",
-                "path": "./lib/options"
-              }
-            }
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "dark",
-          "type": "boolean",
-          "attribute": "dark",
-          "reflect": true,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "false",
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "exporting",
-          "type": "boolean",
-          "attribute": "exporting",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "false",
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        }
-      ],
-      "shadowDelegatesFocus": false,
-      "states": [
-        {
-          "name": "chart"
-        },
-        {
-          "name": "optionsObject"
-        },
-        {
-          "name": "dataObject"
-        },
-        {
-          "name": "highchart"
-        },
-        {
-          "name": "informant"
-        }
-      ]
-    },
-    {
       "tag": "midwest-clock",
       "path": "../helpers/dist/collection/components/clock/clock.js",
       "source": "../helpers/dist/collection/components/clock/clock.js",
@@ -8301,14 +7932,12 @@
       "componentClassName": "Clock",
       "assetsDirs": [],
       "dependencies": [
-        "midwest-chart",
         "midwest-tooltip"
       ],
       "dependents": [
         "midwest-calendar-date"
       ],
       "directDependencies": [
-        "midwest-chart",
         "midwest-tooltip"
       ],
       "directDependents": [
@@ -9933,7 +9562,7 @@
           "internal": false
         },
         {
-          "name": "open-modal",
+          "name": "modalOpen",
           "method": "openModal",
           "bubbles": true,
           "cancelable": true,
@@ -16912,7 +16541,7 @@
           "target": "window"
         },
         {
-          "name": "open-modal",
+          "name": "modalOpen",
           "method": "handleOpen",
           "capture": false,
           "passive": false,
@@ -30913,11 +30542,11 @@
           "isPlain": false,
           "htmlAttrNames": [
             "style",
-            "class",
-            "onClick",
             "tag",
             "ghost",
             "iconOnly",
+            "class",
+            "onClick",
             "name",
             "ref",
             "element",
@@ -41825,7 +41454,6 @@
             "midwest-clock"
           ],
           "dependencies": [
-            "midwest-chart",
             "midwest-clock",
             "midwest-label",
             "midwest-tooltip"
@@ -43868,7 +43496,7 @@
               "internal": false
             },
             {
-              "name": "open-modal",
+              "name": "modalOpen",
               "method": "openModal",
               "bubbles": true,
               "cancelable": true,
@@ -47373,7 +47001,7 @@
               "target": "window"
             },
             {
-              "name": "open-modal",
+              "name": "modalOpen",
               "method": "handleOpen",
               "capture": false,
               "passive": false,
@@ -55918,11 +55546,9 @@
             "midwest-tooltip"
           ],
           "directDependencies": [
-            "midwest-chart",
             "midwest-tooltip"
           ],
           "dependencies": [
-            "midwest-chart",
             "midwest-tooltip"
           ],
           "dependents": [
@@ -58212,409 +57838,6 @@
     {
       "cmps": [
         {
-          "tagName": "midwest-chart",
-          "excludeFromCollection": false,
-          "isCollectionDependency": true,
-          "componentClassName": "Chart",
-          "elementRef": "element",
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
-          "properties": [
-            {
-              "name": "type",
-              "type": "string",
-              "attribute": "type",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "\"area\" | \"areaspline\" | \"bar\" | \"bubble\" | \"column\" | \"line\" | \"pie\" | \"polygon\" | \"scatter\" | \"spline\" | \"waterfall\"",
-                "resolved": "\"area\" | \"areaspline\" | \"bar\" | \"bubble\" | \"column\" | \"line\" | \"pie\" | \"polygon\" | \"scatter\" | \"spline\" | \"waterfall\"",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "data",
-              "type": "string",
-              "attribute": "data",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "src",
-              "type": "string",
-              "attribute": "src",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "for",
-              "type": "string",
-              "attribute": "for",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "enableCredits",
-              "type": "boolean",
-              "attribute": "enable-credits",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "chartTitle",
-              "type": "string",
-              "attribute": "chart-title",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "config",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "new HighchartsModel",
-              "complexType": {
-                "original": "HighchartsModel",
-                "resolved": "HighchartsModel",
-                "references": {
-                  "HighchartsModel": {
-                    "location": "import",
-                    "path": "./lib/options"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "dark",
-              "type": "boolean",
-              "attribute": "dark",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "exporting",
-              "type": "boolean",
-              "attribute": "exporting",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "chart"
-            },
-            {
-              "name": "optionsObject"
-            },
-            {
-              "name": "dataObject"
-            },
-            {
-              "name": "highchart"
-            },
-            {
-              "name": "informant"
-            }
-          ],
-          "methods": [
-            {
-              "name": "options",
-              "docs": {
-                "text": "",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(newOptions: any) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            },
-            {
-              "name": "get_options",
-              "docs": {
-                "text": "",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "() => Promise<any>",
-                "parameters": [],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<any>"
-              },
-              "internal": false
-            },
-            {
-              "name": "refresh",
-              "docs": {
-                "text": "",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "() => Promise<void>",
-                "parameters": [],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [
-            {
-              "name": "resize",
-              "method": "handResize",
-              "capture": false,
-              "passive": true,
-              "target": "window"
-            },
-            {
-              "name": "fullscreenchange",
-              "method": "handResize",
-              "capture": false,
-              "passive": false,
-              "target": "document"
-            },
-            {
-              "name": "keyup",
-              "method": "handleEscape",
-              "capture": false,
-              "passive": false,
-              "target": "document"
-            }
-          ],
-          "events": [],
-          "watchers": [
-            {
-              "propName": "config",
-              "methodName": "handleConfig"
-            },
-            {
-              "propName": "type",
-              "methodName": "handleAttrs"
-            },
-            {
-              "propName": "for",
-              "methodName": "handleAttrs"
-            }
-          ],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MIDWEST-CHART",
-              "styleStr": null,
-              "styleIdentifier": "midwestChartStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/will/Sites/midwest/packages/helpers/dist/collection/components/chart/chart.css",
-                  "relativePath": "chart.css",
-                  "originalComponentPath": "chart.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/will/Sites/midwest/packages/helpers/dist/collection/components/chart/chart.js",
-          "sourceFilePath": "/Users/will/Sites/midwest/packages/helpers/dist/collection/components/chart/chart.js",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": true,
-          "hasComponentDidLoadFn": true,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": true,
-          "hasListener": true,
-          "hasListenerTarget": true,
-          "hasListenerTargetWindow": true,
-          "hasListenerTargetDocument": true,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": true,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": false,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": false,
-          "hasWatchCallback": true,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class"
-          ],
-          "htmlTagNames": [
-            "div"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [
-            "midwest-calendar-date",
-            "midwest-clock"
-          ],
-          "directDependents": [
-            "midwest-clock"
-          ]
-        }
-      ],
-      "entryKey": "midwest-chart.entry"
-    },
-    {
-      "cmps": [
-        {
           "tagName": "midwest-unit",
           "excludeFromCollection": false,
           "isCollectionDependency": true,
@@ -59467,7 +58690,7 @@
     "sc-animate-presence": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59485,7 +58708,7 @@
     "sc-app-home": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59502,7 +58725,7 @@
     "sc-copy-wrap": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59516,7 +58739,7 @@
     "sc-display-feed": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59533,7 +58756,7 @@
     "sc-ion-icon": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59555,7 +58778,7 @@
     "sc-midwest-accordion": [
       "p-71be04f7.js",
       "p-4d23a23e.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
@@ -59565,7 +58788,7 @@
     "sc-midwest-avatar": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59579,7 +58802,7 @@
     "sc-midwest-box": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59592,20 +58815,20 @@
     ],
     "sc-midwest-breadcrumb": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-breadcrumbs": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-button": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59618,20 +58841,20 @@
     ],
     "sc-midwest-calendar-date": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-callout": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-card": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59642,37 +58865,31 @@
       "p-e71e9bb4.js",
       "p-1fca4d8b.js"
     ],
-    "sc-midwest-chart": [
-      "p-71be04f7.js",
-      "p-f6c733ff.js",
-      "p-9cbfedf0.js",
-      "p-5866cdea.js"
-    ],
     "sc-midwest-clock": [
       "p-71be04f7.js"
     ],
     "sc-midwest-code": [
       "p-71be04f7.js",
       "p-f6c733ff.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js"
     ],
     "sc-midwest-color-library": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-color-picker": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-5704e2d1.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-comment": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
@@ -59691,7 +58908,7 @@
     "sc-midwest-docs": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59704,23 +58921,23 @@
     ],
     "sc-midwest-dropdown": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-field-group": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-ed163ee5.js",
-      "p-480ea342.js",
+      "p-f0a60495.js",
       "p-4d23a23e.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-form": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-ed163ee5.js",
-      "p-480ea342.js",
+      "p-f0a60495.js",
       "p-4d23a23e.js",
       "p-e2175df6.js",
       "p-f6c733ff.js"
@@ -59728,7 +58945,7 @@
     "sc-midwest-form-rollup": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59742,7 +58959,7 @@
     "sc-midwest-grid": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59756,7 +58973,7 @@
     "sc-midwest-group": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59770,7 +58987,7 @@
     "sc-midwest-group-overflow": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59784,7 +59001,7 @@
     "sc-midwest-image": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59798,7 +59015,7 @@
     "sc-midwest-input": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59811,20 +59028,20 @@
     ],
     "sc-midwest-input-file": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-input-tags": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-intersection": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59851,7 +59068,7 @@
     "sc-midwest-item": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59865,7 +59082,7 @@
     "sc-midwest-item-group": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59879,7 +59096,7 @@
     "sc-midwest-label": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59893,7 +59110,7 @@
     "sc-midwest-layout": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59910,7 +59127,7 @@
     "sc-midwest-long-shadow": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59923,7 +59140,7 @@
     ],
     "sc-midwest-map": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-ed163ee5.js",
       "p-f6c733ff.js"
     ],
@@ -59933,7 +59150,7 @@
     "sc-midwest-markdown": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -59947,7 +59164,7 @@
     "sc-midwest-message": [
       "p-71be04f7.js",
       "p-f6c733ff.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js"
     ],
     "sc-midwest-modal": [
@@ -59960,7 +59177,7 @@
     ],
     "sc-midwest-onboarding": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-ed163ee5.js",
       "p-f6c733ff.js"
     ],
@@ -59971,14 +59188,14 @@
     ],
     "sc-midwest-pagination": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-password-requirements": [
       "p-71be04f7.js",
       "p-0c502921.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
@@ -59989,14 +59206,14 @@
     ],
     "sc-midwest-playlist": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-progress": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60015,7 +59232,7 @@
     "sc-midwest-select": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60033,25 +59250,25 @@
     ],
     "sc-midwest-song": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-step": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-steps": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-switch": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60065,13 +59282,13 @@
     "sc-midwest-tab": [
       "p-71be04f7.js",
       "p-e2175df6.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-tabs": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js"
@@ -60079,7 +59296,7 @@
     "sc-midwest-tag": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60093,7 +59310,7 @@
     "sc-midwest-theme": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60107,7 +59324,7 @@
     "sc-midwest-time": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60120,14 +59337,14 @@
     ],
     "sc-midwest-toggle": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-tooltip": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60145,7 +59362,7 @@
     "sc-midwest-validate": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60170,7 +59387,7 @@
     "sc-resize-observer": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60183,7 +59400,7 @@
     ],
     "sc-skeleton-img": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-f6c733ff.js"
     ],
     "sc-skeleton-text": [
@@ -60201,7 +59418,7 @@
     "sc-stencil-route-link": [
       "p-71be04f7.js",
       "p-72e37a6a.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-5866cdea.js",
       "p-e2175df6.js",
       "p-f6c733ff.js",
@@ -60241,7 +59458,7 @@
       "p-cb042306.js",
       "p-98a4926c.js",
       "p-f6c733ff.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-ed163ee5.js"
     ],
     "sc-web-audio-debugger": [
@@ -60260,12 +59477,12 @@
       "p-cb042306.js",
       "p-98a4926c.js",
       "p-f6c733ff.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-ed163ee5.js"
     ],
     "sc-web-audio-visualizer": [
       "p-71be04f7.js",
-      "p-9cbfedf0.js",
+      "p-a9f3cf8d.js",
       "p-f6c733ff.js"
     ],
     "sc-web-audio-visualizer-shader": [
@@ -60385,9 +59602,6 @@
       "../forms/dist/collection/components/validate/lib/validator"
     ],
     "../helpers/dist/collection/components/asset-library/asset-library.js": [],
-    "../helpers/dist/collection/components/chart/chart.js": [
-      "../helpers/dist/collection/components/chart/lib/options"
-    ],
     "../helpers/dist/collection/components/clock/clock.js": [],
     "../helpers/dist/collection/components/code/code.js": [],
     "../helpers/dist/collection/components/color-library/color-library.js": [],
@@ -60634,9 +59848,6 @@
         ],
         [
           "midwest-asset-library"
-        ],
-        [
-          "midwest-chart"
         ],
         [
           "midwest-clock"

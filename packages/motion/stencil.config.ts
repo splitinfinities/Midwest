@@ -16,7 +16,7 @@ export const config: Config = {
     openBrowser: false,
     port: 3340,
   },
-  outputTargets: [...typicalStencilConfig.outputTargets, ...frameworkBindings('motion')],
+  outputTargets: [...typicalStencilConfig.outputTargets, ...frameworkBindings('motion', ['ion-icon'])],
 
   plugins: [
     postcss({

@@ -44,7 +44,7 @@ export class Modal {
     }
   }
 
-  @Listen('open-modal', { target: 'window' })
+  @Listen('modalOpen', { target: 'window' })
   async handleOpen(e: CustomEvent) {
     if (this.remote && !e.detail.for) {
       this.content = undefined;

@@ -5,25 +5,10 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { HighchartsModel } from "./components/chart/lib/options";
 export namespace Components {
     interface HorizontalScroll {
     }
     interface MidwestAssetLibrary {
-    }
-    interface MidwestChart {
-        "chartTitle": string;
-        "config": HighchartsModel;
-        "dark": boolean;
-        "data": string;
-        "enableCredits": boolean;
-        "exporting": boolean;
-        "for": string;
-        "get_options": () => Promise<any>;
-        "options": (newOptions: any) => Promise<void>;
-        "refresh": () => Promise<void>;
-        "src": string;
-        "type": "area" | "areaspline" | "bar" | "bubble" | "column" | "line" | "pie" | "polygon" | "scatter" | "spline" | "waterfall";
     }
     interface MidwestClock {
         "animated": boolean;
@@ -213,12 +198,6 @@ declare global {
         prototype: HTMLMidwestAssetLibraryElement;
         new (): HTMLMidwestAssetLibraryElement;
     };
-    interface HTMLMidwestChartElement extends Components.MidwestChart, HTMLStencilElement {
-    }
-    var HTMLMidwestChartElement: {
-        prototype: HTMLMidwestChartElement;
-        new (): HTMLMidwestChartElement;
-    };
     interface HTMLMidwestClockElement extends Components.MidwestClock, HTMLStencilElement {
     }
     var HTMLMidwestClockElement: {
@@ -336,7 +315,6 @@ declare global {
     interface HTMLElementTagNameMap {
         "horizontal-scroll": HTMLHorizontalScrollElement;
         "midwest-asset-library": HTMLMidwestAssetLibraryElement;
-        "midwest-chart": HTMLMidwestChartElement;
         "midwest-clock": HTMLMidwestClockElement;
         "midwest-code": HTMLMidwestCodeElement;
         "midwest-color-library": HTMLMidwestColorLibraryElement;
@@ -362,17 +340,6 @@ declare namespace LocalJSX {
     interface HorizontalScroll {
     }
     interface MidwestAssetLibrary {
-    }
-    interface MidwestChart {
-        "chartTitle"?: string;
-        "config"?: HighchartsModel;
-        "dark"?: boolean;
-        "data"?: string;
-        "enableCredits"?: boolean;
-        "exporting"?: boolean;
-        "for"?: string;
-        "src"?: string;
-        "type"?: "area" | "areaspline" | "bar" | "bubble" | "column" | "line" | "pie" | "polygon" | "scatter" | "spline" | "waterfall";
     }
     interface MidwestClock {
         "animated"?: boolean;
@@ -542,7 +509,6 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "horizontal-scroll": HorizontalScroll;
         "midwest-asset-library": MidwestAssetLibrary;
-        "midwest-chart": MidwestChart;
         "midwest-clock": MidwestClock;
         "midwest-code": MidwestCode;
         "midwest-color-library": MidwestColorLibrary;
@@ -570,7 +536,6 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "horizontal-scroll": LocalJSX.HorizontalScroll & JSXBase.HTMLAttributes<HTMLHorizontalScrollElement>;
             "midwest-asset-library": LocalJSX.MidwestAssetLibrary & JSXBase.HTMLAttributes<HTMLMidwestAssetLibraryElement>;
-            "midwest-chart": LocalJSX.MidwestChart & JSXBase.HTMLAttributes<HTMLMidwestChartElement>;
             "midwest-clock": LocalJSX.MidwestClock & JSXBase.HTMLAttributes<HTMLMidwestClockElement>;
             "midwest-code": LocalJSX.MidwestCode & JSXBase.HTMLAttributes<HTMLMidwestCodeElement>;
             "midwest-color-library": LocalJSX.MidwestColorLibrary & JSXBase.HTMLAttributes<HTMLMidwestColorLibraryElement>;

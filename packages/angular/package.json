@@ -4,7 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "run-p build.core build.audio build.device build.export-to-figma build.forms build.helpers build.media build.motion",
+    "build.core": "ng build core",
+    "build.audio": "ng build audio",
+    "build.device": "ng build device",
+    "build.export-to-figma": "ng build export-to-figma",
+    "build.forms": "ng build forms",
+    "build.helpers": "ng build helpers",
+    "build.media": "ng build media",
+    "build.motion": "ng build motion",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -18,6 +26,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@midwest-design/common": "latest",
     "@midwest-design/core": "latest",
     "@midwest-design/audio": "latest",
     "@midwest-design/forms": "latest",
@@ -27,6 +36,7 @@
     "@midwest-design/media": "latest",
     "@midwest-design/motion": "latest",
     "rxjs": "~7.4.0",
+    "highcharts": "~8.2.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

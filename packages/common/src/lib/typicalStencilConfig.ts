@@ -6,7 +6,7 @@ export const frameworkBindings = (name: string, excludeComponents: string[]): an
   return [
     angularOutputTarget({
       componentCorePackage: `@midwest-design/${name}`,
-      directivesProxyFile: `../angular/projects/midwest/src/lib/stencil-bindings/midwest-${name}-components.ts`,
+      directivesProxyFile: `../angular/projects/${name}/src/lib/stencil-bindings/midwest-${name}-components.ts`,
       excludeComponents
     }),
   ]

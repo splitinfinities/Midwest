@@ -485,7 +485,7 @@ declare namespace LocalJSX {
         "name"?: string;
         "onFastUpdates"?: (event: CustomEvent<any>) => void;
         "onModalClose"?: (event: CustomEvent<any>) => void;
-        "onOpen-modal"?: (event: CustomEvent<any>) => void;
+        "onModalOpen"?: (event: CustomEvent<any>) => void;
         "onSubmitted"?: (event: CustomEvent<any>) => void;
         "onUpdated"?: (event: CustomEvent<any>) => void;
         "perform"?: boolean;

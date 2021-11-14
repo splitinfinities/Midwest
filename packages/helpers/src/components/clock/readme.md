@@ -23,13 +23,11 @@
 
 ### Depends on
 
-- [midwest-chart](../chart)
 - midwest-tooltip
 
 ### Graph
 ```mermaid
 graph TD;
-  midwest-clock --> midwest-chart
   midwest-clock --> midwest-tooltip
   midwest-calendar-date --> midwest-clock
   style midwest-clock fill:#f9f,stroke:#333,stroke-width:4px

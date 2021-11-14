@@ -10,9 +10,37 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "midwest": [
-        "dist/midwest/midwest",
-        "dist/midwest"
+      "audio": [
+        "dist/audio/audio",
+        "dist/audio"
+      ],
+      "core": [
+        "dist/core/core",
+        "dist/core"
+      ],
+      "device": [
+        "dist/device/device",
+        "dist/device"
+      ],
+      "export-to-figma": [
+        "dist/export-to-figma/export-to-figma",
+        "dist/export-to-figma"
+      ],
+      "forms": [
+        "dist/forms/forms",
+        "dist/forms"
+      ],
+      "helpers": [
+        "dist/helpers/helpers",
+        "dist/helpers"
+      ],
+      "media": [
+        "dist/media/media",
+        "dist/media"
+      ],
+      "motion": [
+        "dist/motion/motion",
+        "dist/motion"
       ]
     },
     "noFallthroughCasesInSwitch": true,

@@ -29,7 +29,7 @@
 | ------------- | ----------- | ------------------ |
 | `fastUpdates` |             | `CustomEvent<any>` |
 | `modalClose`  |             | `CustomEvent<any>` |
-| `open-modal`  |             | `CustomEvent<any>` |
+| `modalOpen`   |             | `CustomEvent<any>` |
 | `submitted`   |             | `CustomEvent<any>` |
 | `updated`     |             | `CustomEvent<any>` |
 

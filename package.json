@@ -7,7 +7,7 @@
     "start.core": "run-p dev.core storybook",
     "test": "lerna run test --stream",
     "test.watch": "lerna run test.watch --stream",
-    "build": "lerna run build --stream",
+    "build": "yarn build.stencil && yarn build.angular",
     "build.angular": "lerna run build --stream --scope=@midwest-design/angular",
     "build.stencil": "lerna run build --stream --scope={@midwest-design/common,@midwest-design/motion,@midwest-design/audio,@midwest-design/core,@midwest-design/forms,@midwest-design/media,@midwest-design/helpers,@midwest-design/new-tab,@midwest-design/export-to-figma,@midwest-design/device}",
     "build.common": "lerna run build --stream --scope=@midwest-design/common",

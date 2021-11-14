@@ -31,7 +31,7 @@ export class Form {
   @Event() updated: EventEmitter;
   @Event({ eventName: 'fastUpdates' }) updatedFast: EventEmitter;
 
-  @Event({ bubbles: true, composed: true, eventName: 'open-modal' }) openModal: EventEmitter;
+  @Event({ bubbles: true, composed: true, eventName: 'modalOpen' }) openModal: EventEmitter;
   @Event({ bubbles: true, composed: true, eventName: 'modalClose' }) closeModal: EventEmitter;
 
   @State() pjax: any = document.querySelector('midwest-pjax');

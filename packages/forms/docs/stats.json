@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-11T18:35:25",
+  "timestamp": "2021-11-14T03:42:03",
   "compiler": {
     "name": "node",
     "version": "17.0.1"
@@ -488,8 +488,6 @@
           "./dist/forms/forms.esm.js.map",
           "./dist/forms/index.esm.js",
           "./dist/forms/index.esm.js.map",
-          "./dist/forms/p-002495b6.entry.js",
-          "./dist/forms/p-002495b6.entry.js.map",
           "./dist/forms/p-00c6b28f.entry.js",
           "./dist/forms/p-00c6b28f.entry.js.map",
           "./dist/forms/p-09396ade.js",
@@ -508,16 +506,12 @@
           "./dist/forms/p-2e3753e2.entry.js.map",
           "./dist/forms/p-2e984a31.entry.js",
           "./dist/forms/p-2e984a31.entry.js.map",
-          "./dist/forms/p-2ee7dbee.entry.js",
-          "./dist/forms/p-2ee7dbee.entry.js.map",
           "./dist/forms/p-38dbc9ff.entry.js",
           "./dist/forms/p-38dbc9ff.entry.js.map",
-          "./dist/forms/p-397e10d1.entry.js",
-          "./dist/forms/p-397e10d1.entry.js.map",
           "./dist/forms/p-3e9e7936.entry.js",
           "./dist/forms/p-3e9e7936.entry.js.map",
-          "./dist/forms/p-43f916a8.entry.js",
-          "./dist/forms/p-43f916a8.entry.js.map",
+          "./dist/forms/p-424d304d.entry.js",
+          "./dist/forms/p-424d304d.entry.js.map",
           "./dist/forms/p-4ab2c4e8.js",
           "./dist/forms/p-4ab2c4e8.js.map",
           "./dist/forms/p-4af0a0ee.js",
@@ -546,48 +540,54 @@
           "./dist/forms/p-798cbc4f.entry.js.map",
           "./dist/forms/p-7a880126.entry.js",
           "./dist/forms/p-7a880126.entry.js.map",
+          "./dist/forms/p-7f4922b6.entry.js",
+          "./dist/forms/p-7f4922b6.entry.js.map",
           "./dist/forms/p-7f671795.entry.js",
           "./dist/forms/p-7f671795.entry.js.map",
           "./dist/forms/p-8405bbf0.entry.js",
           "./dist/forms/p-8405bbf0.entry.js.map",
-          "./dist/forms/p-89a3e771.entry.js",
-          "./dist/forms/p-89a3e771.entry.js.map",
+          "./dist/forms/p-8da623a2.entry.js",
+          "./dist/forms/p-8da623a2.entry.js.map",
           "./dist/forms/p-8f93de41.entry.js",
           "./dist/forms/p-8f93de41.entry.js.map",
+          "./dist/forms/p-946c9754.entry.js",
+          "./dist/forms/p-946c9754.entry.js.map",
+          "./dist/forms/p-95882992.entry.js",
+          "./dist/forms/p-95882992.entry.js.map",
           "./dist/forms/p-9e3c6016.entry.js",
           "./dist/forms/p-9e3c6016.entry.js.map",
+          "./dist/forms/p-a49104f9.entry.js",
+          "./dist/forms/p-a49104f9.entry.js.map",
           "./dist/forms/p-a58d2d81.js",
           "./dist/forms/p-a58d2d81.js.map",
-          "./dist/forms/p-a6e8239d.entry.js",
-          "./dist/forms/p-a6e8239d.entry.js.map",
           "./dist/forms/p-aa8f46f7.entry.js",
           "./dist/forms/p-aa8f46f7.entry.js.map",
           "./dist/forms/p-acf993cc.js",
           "./dist/forms/p-acf993cc.js.map",
           "./dist/forms/p-b46c59b8.entry.js",
           "./dist/forms/p-b46c59b8.entry.js.map",
+          "./dist/forms/p-b8261822.entry.js",
+          "./dist/forms/p-b8261822.entry.js.map",
           "./dist/forms/p-c289e621.entry.js",
           "./dist/forms/p-c289e621.entry.js.map",
           "./dist/forms/p-c2c28110.entry.js",
           "./dist/forms/p-c2c28110.entry.js.map",
           "./dist/forms/p-cb00b0d8.entry.js",
           "./dist/forms/p-cb00b0d8.entry.js.map",
+          "./dist/forms/p-cd1bdd0d.entry.js",
+          "./dist/forms/p-cd1bdd0d.entry.js.map",
           "./dist/forms/p-cf2eba24.entry.js",
           "./dist/forms/p-cf2eba24.entry.js.map",
           "./dist/forms/p-d435f5dd.entry.js",
           "./dist/forms/p-d435f5dd.entry.js.map",
-          "./dist/forms/p-d900eec3.entry.js",
-          "./dist/forms/p-d900eec3.entry.js.map",
           "./dist/forms/p-dd7d7587.entry.js",
           "./dist/forms/p-dd7d7587.entry.js.map",
           "./dist/forms/p-e02607fc.entry.js",
           "./dist/forms/p-e02607fc.entry.js.map",
           "./dist/forms/p-e0467d09.entry.js",
           "./dist/forms/p-e0467d09.entry.js.map",
-          "./dist/forms/p-e0e44633.entry.js",
-          "./dist/forms/p-e0e44633.entry.js.map",
-          "./dist/forms/p-e69b086e.entry.js",
-          "./dist/forms/p-e69b086e.entry.js.map",
+          "./dist/forms/p-e1216505.entry.js",
+          "./dist/forms/p-e1216505.entry.js.map",
           "./dist/forms/p-f26f5f25.entry.js",
           "./dist/forms/p-f26f5f25.entry.js.map",
           "./dist/forms/p-f4cfaf11.entry.js",
@@ -602,8 +602,6 @@
           "./www/build/forms.esm.js.map",
           "./www/build/index.esm.js",
           "./www/build/index.esm.js.map",
-          "./www/build/p-002495b6.entry.js",
-          "./www/build/p-002495b6.entry.js.map",
           "./www/build/p-00c6b28f.entry.js",
           "./www/build/p-00c6b28f.entry.js.map",
           "./www/build/p-09396ade.js",
@@ -622,16 +620,12 @@
           "./www/build/p-2e3753e2.entry.js.map",
           "./www/build/p-2e984a31.entry.js",
           "./www/build/p-2e984a31.entry.js.map",
-          "./www/build/p-2ee7dbee.entry.js",
-          "./www/build/p-2ee7dbee.entry.js.map",
           "./www/build/p-38dbc9ff.entry.js",
           "./www/build/p-38dbc9ff.entry.js.map",
-          "./www/build/p-397e10d1.entry.js",
-          "./www/build/p-397e10d1.entry.js.map",
           "./www/build/p-3e9e7936.entry.js",
           "./www/build/p-3e9e7936.entry.js.map",
-          "./www/build/p-43f916a8.entry.js",
-          "./www/build/p-43f916a8.entry.js.map",
+          "./www/build/p-424d304d.entry.js",
+          "./www/build/p-424d304d.entry.js.map",
           "./www/build/p-4ab2c4e8.js",
           "./www/build/p-4ab2c4e8.js.map",
           "./www/build/p-4af0a0ee.js",
@@ -660,48 +654,54 @@
           "./www/build/p-798cbc4f.entry.js.map",
           "./www/build/p-7a880126.entry.js",
           "./www/build/p-7a880126.entry.js.map",
+          "./www/build/p-7f4922b6.entry.js",
+          "./www/build/p-7f4922b6.entry.js.map",
           "./www/build/p-7f671795.entry.js",
           "./www/build/p-7f671795.entry.js.map",
           "./www/build/p-8405bbf0.entry.js",
           "./www/build/p-8405bbf0.entry.js.map",
-          "./www/build/p-89a3e771.entry.js",
-          "./www/build/p-89a3e771.entry.js.map",
+          "./www/build/p-8da623a2.entry.js",
+          "./www/build/p-8da623a2.entry.js.map",
           "./www/build/p-8f93de41.entry.js",
           "./www/build/p-8f93de41.entry.js.map",
+          "./www/build/p-946c9754.entry.js",
+          "./www/build/p-946c9754.entry.js.map",
+          "./www/build/p-95882992.entry.js",
+          "./www/build/p-95882992.entry.js.map",
           "./www/build/p-9e3c6016.entry.js",
           "./www/build/p-9e3c6016.entry.js.map",
+          "./www/build/p-a49104f9.entry.js",
+          "./www/build/p-a49104f9.entry.js.map",
           "./www/build/p-a58d2d81.js",
           "./www/build/p-a58d2d81.js.map",
-          "./www/build/p-a6e8239d.entry.js",
-          "./www/build/p-a6e8239d.entry.js.map",
           "./www/build/p-aa8f46f7.entry.js",
           "./www/build/p-aa8f46f7.entry.js.map",
           "./www/build/p-acf993cc.js",
           "./www/build/p-acf993cc.js.map",
           "./www/build/p-b46c59b8.entry.js",
           "./www/build/p-b46c59b8.entry.js.map",
+          "./www/build/p-b8261822.entry.js",
+          "./www/build/p-b8261822.entry.js.map",
           "./www/build/p-c289e621.entry.js",
           "./www/build/p-c289e621.entry.js.map",
           "./www/build/p-c2c28110.entry.js",
           "./www/build/p-c2c28110.entry.js.map",
           "./www/build/p-cb00b0d8.entry.js",
           "./www/build/p-cb00b0d8.entry.js.map",
+          "./www/build/p-cd1bdd0d.entry.js",
+          "./www/build/p-cd1bdd0d.entry.js.map",
           "./www/build/p-cf2eba24.entry.js",
           "./www/build/p-cf2eba24.entry.js.map",
           "./www/build/p-d435f5dd.entry.js",
           "./www/build/p-d435f5dd.entry.js.map",
-          "./www/build/p-d900eec3.entry.js",
-          "./www/build/p-d900eec3.entry.js.map",
           "./www/build/p-dd7d7587.entry.js",
           "./www/build/p-dd7d7587.entry.js.map",
           "./www/build/p-e02607fc.entry.js",
           "./www/build/p-e02607fc.entry.js.map",
           "./www/build/p-e0467d09.entry.js",
           "./www/build/p-e0467d09.entry.js.map",
-          "./www/build/p-e0e44633.entry.js",
-          "./www/build/p-e0e44633.entry.js.map",
-          "./www/build/p-e69b086e.entry.js",
-          "./www/build/p-e69b086e.entry.js.map",
+          "./www/build/p-e1216505.entry.js",
+          "./www/build/p-e1216505.entry.js.map",
           "./www/build/p-f26f5f25.entry.js",
           "./www/build/p-f26f5f25.entry.js.map",
           "./www/build/p-f4cfaf11.entry.js",
@@ -821,8 +821,8 @@
         "components": [
           "midwest-card"
         ],
-        "bundleId": "p-e0e44633",
-        "fileName": "p-e0e44633.entry.js",
+        "bundleId": "p-946c9754",
+        "fileName": "p-946c9754.entry.js",
         "imports": [
           "p-acf993cc.js",
           "p-16f1b7c0.js",
@@ -831,7 +831,7 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 12481
+        "originalByteSize": 12521
       },
       {
         "key": "midwest-color-picker.entry",
@@ -882,8 +882,8 @@
         "components": [
           "midwest-field-group"
         ],
-        "bundleId": "p-002495b6",
-        "fileName": "p-002495b6.entry.js",
+        "bundleId": "p-cd1bdd0d",
+        "fileName": "p-cd1bdd0d.entry.js",
         "imports": [
           "p-acf993cc.js",
           "p-4af0a0ee.js",
@@ -892,15 +892,15 @@
           "p-4d23a23e.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 3993
+        "originalByteSize": 4029
       },
       {
         "key": "midwest-form.entry",
         "components": [
           "midwest-form"
         ],
-        "bundleId": "p-397e10d1",
-        "fileName": "p-397e10d1.entry.js",
+        "bundleId": "p-424d304d",
+        "fileName": "p-424d304d.entry.js",
         "imports": [
           "p-acf993cc.js",
           "p-4af0a0ee.js",
@@ -910,15 +910,15 @@
           "p-16f1b7c0.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 8313
+        "originalByteSize": 8456
       },
       {
         "key": "midwest-input-file.entry",
         "components": [
           "midwest-input-file"
         ],
-        "bundleId": "p-a6e8239d",
-        "fileName": "p-a6e8239d.entry.js",
+        "bundleId": "p-95882992",
+        "fileName": "p-95882992.entry.js",
         "imports": [
           "p-acf993cc.js",
           "p-4af0a0ee.js",
@@ -926,7 +926,7 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 9171
+        "originalByteSize": 9213
       },
       {
         "key": "midwest-input-tags.entry",
@@ -1026,14 +1026,14 @@
         "components": [
           "midwest-repeatable-fields"
         ],
-        "bundleId": "p-2ee7dbee",
-        "fileName": "p-2ee7dbee.entry.js",
+        "bundleId": "p-8da623a2",
+        "fileName": "p-8da623a2.entry.js",
         "imports": [
           "p-acf993cc.js",
           "p-16f1b7c0.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 4857
+        "originalByteSize": 4988
       },
       {
         "key": "midwest-show-if.entry",
@@ -1102,8 +1102,8 @@
         "components": [
           "midwest-tab"
         ],
-        "bundleId": "p-e69b086e",
-        "fileName": "p-e69b086e.entry.js",
+        "bundleId": "p-e1216505",
+        "fileName": "p-e1216505.entry.js",
         "imports": [
           "p-acf993cc.js",
           "p-16f1b7c0.js",
@@ -1112,15 +1112,15 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 7670
+        "originalByteSize": 7730
       },
       {
         "key": "midwest-tabs.entry",
         "components": [
           "midwest-tabs"
         ],
-        "bundleId": "p-89a3e771",
-        "fileName": "p-89a3e771.entry.js",
+        "bundleId": "p-b8261822",
+        "fileName": "p-b8261822.entry.js",
         "imports": [
           "p-acf993cc.js",
           "p-4af0a0ee.js",
@@ -1129,7 +1129,7 @@
           "p-16f1b7c0.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 8563
+        "originalByteSize": 8681
       },
       {
         "key": "midwest-theme.entry",
@@ -1261,8 +1261,8 @@
           "midwest-group",
           "midwest-input"
         ],
-        "bundleId": "p-d900eec3",
-        "fileName": "p-d900eec3.entry.js",
+        "bundleId": "p-7f4922b6",
+        "fileName": "p-7f4922b6.entry.js",
         "imports": [
           "p-acf993cc.js",
           "p-4ab2c4e8.js",
@@ -1271,7 +1271,7 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 31181
+        "originalByteSize": 31301
       },
       {
         "key": "midwest-grid.entry",
@@ -1339,14 +1339,14 @@
         "components": [
           "midwest-validate"
         ],
-        "bundleId": "p-43f916a8",
-        "fileName": "p-43f916a8.entry.js",
+        "bundleId": "p-a49104f9",
+        "fileName": "p-a49104f9.entry.js",
         "imports": [
           "p-acf993cc.js",
           "p-f6c733ff.js",
           "p-0c502921.js"
         ],
-        "originalByteSize": 221885
+        "originalByteSize": 222231
       },
       {
         "key": "midwest-progress.entry",
@@ -1503,7 +1503,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 12524
+        "originalByteSize": 12564
       },
       {
         "key": "midwest-color-picker.entry",
@@ -1564,7 +1564,7 @@
           "index-292b16f1.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 4035
+        "originalByteSize": 4071
       },
       {
         "key": "midwest-form.entry",
@@ -1582,7 +1582,7 @@
           "index-216e665c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 8359
+        "originalByteSize": 8502
       },
       {
         "key": "midwest-input-file.entry",
@@ -1598,7 +1598,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 9210
+        "originalByteSize": 9252
       },
       {
         "key": "midwest-input-tags.entry",
@@ -1705,7 +1705,7 @@
           "index-216e665c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 4880
+        "originalByteSize": 5011
       },
       {
         "key": "midwest-show-if.entry",
@@ -1784,7 +1784,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 7713
+        "originalByteSize": 7773
       },
       {
         "key": "midwest-tabs.entry",
@@ -1801,7 +1801,7 @@
           "index-216e665c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 8606
+        "originalByteSize": 8724
       },
       {
         "key": "midwest-theme.entry",
@@ -1943,7 +1943,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 31228
+        "originalByteSize": 31348
       },
       {
         "key": "midwest-grid.entry",
@@ -2018,7 +2018,7 @@
           "_commonjsHelpers-856c13bf.js",
           "main-3ef50fdf.js"
         ],
-        "originalByteSize": 221907
+        "originalByteSize": 222253
       },
       {
         "key": "midwest-progress.entry",
@@ -2177,7 +2177,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 12662
+        "originalByteSize": 12702
       },
       {
         "key": "midwest-color-picker.entry",
@@ -2238,7 +2238,7 @@
           "index-70fb2f40.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 4104
+        "originalByteSize": 4140
       },
       {
         "key": "midwest-form.entry",
@@ -2256,7 +2256,7 @@
           "index-73a2de1e.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 8492
+        "originalByteSize": 8635
       },
       {
         "key": "midwest-input-file.entry",
@@ -2272,7 +2272,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 9394
+        "originalByteSize": 9436
       },
       {
         "key": "midwest-input-tags.entry",
@@ -2379,7 +2379,7 @@
           "index-73a2de1e.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 4959
+        "originalByteSize": 5090
       },
       {
         "key": "midwest-show-if.entry",
@@ -2458,7 +2458,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 7819
+        "originalByteSize": 7879
       },
       {
         "key": "midwest-tabs.entry",
@@ -2475,7 +2475,7 @@
           "index-73a2de1e.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 8712
+        "originalByteSize": 8830
       },
       {
         "key": "midwest-theme.entry",
@@ -2617,7 +2617,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 31662
+        "originalByteSize": 31782
       },
       {
         "key": "midwest-grid.entry",
@@ -2692,7 +2692,7 @@
           "_commonjsHelpers-cb2db9e6.js",
           "main-8e97029e.js"
         ],
-        "originalByteSize": 223669
+        "originalByteSize": 224015
       },
       {
         "key": "midwest-progress.entry",
@@ -6563,7 +6563,7 @@
           "internal": false
         },
         {
-          "name": "open-modal",
+          "name": "modalOpen",
           "method": "openModal",
           "bubbles": true,
           "cancelable": true,
@@ -18200,11 +18200,11 @@
           "isPlain": false,
           "htmlAttrNames": [
             "style",
-            "class",
-            "onClick",
             "tag",
             "ghost",
             "iconOnly",
+            "class",
+            "onClick",
             "name",
             "ref",
             "element",
@@ -19656,7 +19656,7 @@
               "internal": false
             },
             {
-              "name": "open-modal",
+              "name": "modalOpen",
               "method": "openModal",
               "bubbles": true,
               "cancelable": true,
