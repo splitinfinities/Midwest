@@ -40,26 +40,6 @@ export class MidwestAssetLibrary {
 }
 
 
-export declare interface MidwestClock extends Components.MidwestClock {}
-
-@ProxyCmp({
-  inputs: ['animated', 'between', 'size', 'time']
-})
-@Component({
-  selector: 'midwest-clock',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: '<ng-content></ng-content>',
-  inputs: ['animated', 'between', 'size', 'time']
-})
-export class MidwestClock {
-  protected el: HTMLElement;
-  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
-    c.detach();
-    this.el = r.nativeElement;
-  }
-}
-
-
 export declare interface MidwestCode extends Components.MidwestCode {}
 
 @ProxyCmp({

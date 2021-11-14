@@ -30,37 +30,6 @@
       ]
     },
     {
-      "name": "midwest-clock",
-      "description": {
-        "kind": "markdown",
-        "value": ""
-      },
-      "attributes": [
-        {
-          "name": "animated",
-          "description": ""
-        },
-        {
-          "name": "between",
-          "description": ""
-        },
-        {
-          "name": "size",
-          "description": ""
-        },
-        {
-          "name": "time",
-          "description": ""
-        }
-      ],
-      "references": [
-        {
-          "name": "Source code",
-          "url": "./https:/github.com/splitinfinities/midwest/src/components/clock/clock.tsx"
-        }
-      ]
-    },
-    {
       "name": "midwest-code",
       "description": {
         "kind": "markdown",

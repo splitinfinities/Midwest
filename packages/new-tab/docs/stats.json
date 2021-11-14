@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-14T03:42:40",
+  "timestamp": "2021-11-14T04:36:32",
   "compiler": {
     "name": "node",
     "version": "17.0.1"
@@ -7,9 +7,9 @@
   "app": {
     "namespace": "NewTab",
     "fsNamespace": "new-tab",
-    "components": 100,
-    "entries": 100,
-    "bundles": 1058,
+    "components": 99,
+    "entries": 99,
+    "bundles": 1046,
     "outputs": [
       {
         "name": "dist-collection",
@@ -39,7 +39,7 @@
       },
       {
         "name": "dist-custom-elements",
-        "files": 330,
+        "files": 326,
         "generatedFiles": [
           "./dist/custom-elements/_commonjsHelpers.js",
           "./dist/custom-elements/_commonjsHelpers.js.map",
@@ -66,8 +66,6 @@
           "./dist/custom-elements/callout.js.map",
           "./dist/custom-elements/card.js",
           "./dist/custom-elements/card.js.map",
-          "./dist/custom-elements/clock.js",
-          "./dist/custom-elements/clock.js.map",
           "./dist/custom-elements/code.js",
           "./dist/custom-elements/code.js.map",
           "./dist/custom-elements/color-picker.js",
@@ -176,8 +174,6 @@
           "./dist/custom-elements/midwest-callout.js.map",
           "./dist/custom-elements/midwest-card.js",
           "./dist/custom-elements/midwest-card.js.map",
-          "./dist/custom-elements/midwest-clock.js",
-          "./dist/custom-elements/midwest-clock.js.map",
           "./dist/custom-elements/midwest-code.js",
           "./dist/custom-elements/midwest-code.js.map",
           "./dist/custom-elements/midwest-color-library.js",
@@ -384,7 +380,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 702,
+        "files": 694,
         "generatedFiles": [
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js",
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js.map",
@@ -450,8 +446,6 @@
           "./dist/cjs/midwest-calendar-date.cjs.entry.js.map",
           "./dist/cjs/midwest-callout.cjs.entry.js",
           "./dist/cjs/midwest-callout.cjs.entry.js.map",
-          "./dist/cjs/midwest-clock.cjs.entry.js",
-          "./dist/cjs/midwest-clock.cjs.entry.js.map",
           "./dist/cjs/midwest-code.cjs.entry.js",
           "./dist/cjs/midwest-code.cjs.entry.js.map",
           "./dist/cjs/midwest-color-library.cjs.entry.js",
@@ -626,8 +620,6 @@
           "./dist/esm/midwest-calendar-date.entry.js.map",
           "./dist/esm/midwest-callout.entry.js",
           "./dist/esm/midwest-callout.entry.js.map",
-          "./dist/esm/midwest-clock.entry.js",
-          "./dist/esm/midwest-clock.entry.js.map",
           "./dist/esm/midwest-code.entry.js",
           "./dist/esm/midwest-code.entry.js.map",
           "./dist/esm/midwest-color-library.entry.js",
@@ -840,8 +832,6 @@
           "./dist/new-tab/p-83c161cc.entry.js.map",
           "./dist/new-tab/p-846adde2.entry.js",
           "./dist/new-tab/p-846adde2.entry.js.map",
-          "./dist/new-tab/p-8a85ccdf.entry.js",
-          "./dist/new-tab/p-8a85ccdf.entry.js.map",
           "./dist/new-tab/p-8eb1ad5c.entry.js",
           "./dist/new-tab/p-8eb1ad5c.entry.js.map",
           "./dist/new-tab/p-91cdb1e8.entry.js",
@@ -1014,8 +1004,6 @@
           "./www/build/p-83c161cc.entry.js.map",
           "./www/build/p-846adde2.entry.js",
           "./www/build/p-846adde2.entry.js.map",
-          "./www/build/p-8a85ccdf.entry.js",
-          "./www/build/p-8a85ccdf.entry.js.map",
           "./www/build/p-8eb1ad5c.entry.js",
           "./www/build/p-8eb1ad5c.entry.js.map",
           "./www/build/p-91cdb1e8.entry.js",
@@ -1967,18 +1955,6 @@
           "p-f6c733ff.js"
         ],
         "originalByteSize": 2336
-      },
-      {
-        "key": "midwest-clock.entry",
-        "components": [
-          "midwest-clock"
-        ],
-        "bundleId": "p-8a85ccdf",
-        "fileName": "p-8a85ccdf.entry.js",
-        "imports": [
-          "p-71be04f7.js"
-        ],
-        "originalByteSize": 5746
       },
       {
         "key": "midwest-code.entry",
@@ -2939,18 +2915,6 @@
         "originalByteSize": 2367
       },
       {
-        "key": "midwest-clock.entry",
-        "components": [
-          "midwest-clock"
-        ],
-        "bundleId": "midwest-clock",
-        "fileName": "midwest-clock.entry.js",
-        "imports": [
-          "index-33369d46.js"
-        ],
-        "originalByteSize": 5750
-      },
-      {
         "key": "midwest-code.entry",
         "components": [
           "midwest-code"
@@ -3909,18 +3873,6 @@
           "_commonjsHelpers-cb2db9e6.js"
         ],
         "originalByteSize": 2441
-      },
-      {
-        "key": "midwest-clock.entry",
-        "components": [
-          "midwest-clock"
-        ],
-        "bundleId": "midwest-clock.cjs",
-        "fileName": "midwest-clock.cjs.entry.js",
-        "imports": [
-          "index-aa74354c.js"
-        ],
-        "originalByteSize": 5875
       },
       {
         "key": "midwest-code.entry",
@@ -7147,14 +7099,11 @@
       "componentClassName": "CalendarDate",
       "assetsDirs": [],
       "dependencies": [
-        "midwest-clock",
-        "midwest-label",
-        "midwest-tooltip"
+        "midwest-label"
       ],
       "dependents": [],
       "directDependencies": [
-        "midwest-label",
-        "midwest-clock"
+        "midwest-label"
       ],
       "directDependents": [],
       "docs": {
@@ -7921,141 +7870,6 @@
         },
         {
           "name": "pjax"
-        }
-      ]
-    },
-    {
-      "tag": "midwest-clock",
-      "path": "../helpers/dist/collection/components/clock/clock.js",
-      "source": "../helpers/dist/collection/components/clock/clock.js",
-      "elementRef": "element",
-      "componentClassName": "Clock",
-      "assetsDirs": [],
-      "dependencies": [
-        "midwest-tooltip"
-      ],
-      "dependents": [
-        "midwest-calendar-date"
-      ],
-      "directDependencies": [
-        "midwest-tooltip"
-      ],
-      "directDependents": [
-        "midwest-calendar-date"
-      ],
-      "docs": {
-        "tags": [],
-        "text": ""
-      },
-      "encapsulation": "shadow",
-      "excludeFromCollection": false,
-      "events": [],
-      "internal": false,
-      "legacyConnect": [],
-      "legacyContext": [],
-      "listeners": [],
-      "methods": [],
-      "potentialCmpRefs": [
-        "midwest-chart",
-        "midwest-tooltip"
-      ],
-      "properties": [
-        {
-          "name": "time",
-          "type": "string",
-          "attribute": "time",
-          "reflect": false,
-          "mutable": true,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string | Date",
-            "resolved": "Date | string",
-            "references": {
-              "Date": {
-                "location": "global"
-              }
-            }
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "between",
-          "type": "string",
-          "attribute": "between",
-          "reflect": false,
-          "mutable": true,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "string | Date",
-            "resolved": "Date | string",
-            "references": {
-              "Date": {
-                "location": "global"
-              }
-            }
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "size",
-          "type": "number",
-          "attribute": "size",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "200",
-          "complexType": {
-            "original": "number",
-            "resolved": "number",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "animated",
-          "type": "boolean",
-          "attribute": "animated",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        }
-      ],
-      "shadowDelegatesFocus": false,
-      "states": [
-        {
-          "name": "hourAngle"
-        },
-        {
-          "name": "minuteAngle"
-        },
-        {
-          "name": "secondAngle"
         }
       ]
     },
@@ -22644,8 +22458,6 @@
       "dependents": [
         "app-home",
         "midwest-avatar",
-        "midwest-calendar-date",
-        "midwest-clock",
         "midwest-docs",
         "midwest-form-rollup",
         "midwest-group",
@@ -22663,7 +22475,6 @@
       "directDependencies": [],
       "directDependents": [
         "midwest-avatar",
-        "midwest-clock",
         "midwest-group-overflow",
         "midwest-input",
         "midwest-input-file",
@@ -38470,8 +38281,6 @@
           "dependents": [
             "app-home",
             "midwest-avatar",
-            "midwest-calendar-date",
-            "midwest-clock",
             "midwest-docs",
             "midwest-form-rollup",
             "midwest-group",
@@ -38488,7 +38297,6 @@
           ],
           "directDependents": [
             "midwest-avatar",
-            "midwest-clock",
             "midwest-group-overflow",
             "midwest-input",
             "midwest-input-file",
@@ -41450,13 +41258,10 @@
             "midwest-clock"
           ],
           "directDependencies": [
-            "midwest-label",
-            "midwest-clock"
+            "midwest-label"
           ],
           "dependencies": [
-            "midwest-clock",
-            "midwest-label",
-            "midwest-tooltip"
+            "midwest-label"
           ],
           "dependents": [],
           "directDependents": []
@@ -55315,255 +55120,6 @@
     {
       "cmps": [
         {
-          "tagName": "midwest-clock",
-          "excludeFromCollection": false,
-          "isCollectionDependency": true,
-          "componentClassName": "Clock",
-          "elementRef": "element",
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
-          "properties": [
-            {
-              "name": "time",
-              "type": "string",
-              "attribute": "time",
-              "reflect": false,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string | Date",
-                "resolved": "Date | string",
-                "references": {
-                  "Date": {
-                    "location": "global"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "between",
-              "type": "string",
-              "attribute": "between",
-              "reflect": false,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string | Date",
-                "resolved": "Date | string",
-                "references": {
-                  "Date": {
-                    "location": "global"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "size",
-              "type": "number",
-              "attribute": "size",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "200",
-              "complexType": {
-                "original": "number",
-                "resolved": "number",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "animated",
-              "type": "boolean",
-              "attribute": "animated",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "hourAngle"
-            },
-            {
-              "name": "minuteAngle"
-            },
-            {
-              "name": "secondAngle"
-            }
-          ],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [
-            {
-              "propName": "time",
-              "methodName": "handleTime"
-            },
-            {
-              "propName": "between",
-              "methodName": "handleBetween"
-            },
-            {
-              "propName": "size",
-              "methodName": "handleBetween"
-            },
-            {
-              "propName": "time",
-              "methodName": "handleBetween"
-            }
-          ],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MIDWEST-CLOCK",
-              "styleStr": null,
-              "styleIdentifier": "midwestClockStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/will/Sites/midwest/packages/helpers/dist/collection/components/clock/clock.css",
-                  "relativePath": "clock.css",
-                  "originalComponentPath": "clock.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/will/Sites/midwest/packages/helpers/dist/collection/components/clock/clock.js",
-          "sourceFilePath": "/Users/will/Sites/midwest/packages/helpers/dist/collection/components/clock/clock.js",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": true,
-          "hasComponentDidLoadFn": true,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": true,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": true,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": true,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": true,
-          "hasVdomText": true,
-          "hasWatchCallback": true,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "style",
-            "viewBox",
-            "id",
-            "cx",
-            "cy",
-            "r",
-            "x1",
-            "y1",
-            "x2",
-            "y2",
-            "transform",
-            "type",
-            "class",
-            "align"
-          ],
-          "htmlTagNames": [
-            "svg",
-            "g",
-            "circle",
-            "line",
-            "midwest-chart",
-            "midwest-tooltip"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [
-            "midwest-chart",
-            "midwest-tooltip"
-          ],
-          "directDependencies": [
-            "midwest-tooltip"
-          ],
-          "dependencies": [
-            "midwest-tooltip"
-          ],
-          "dependents": [
-            "midwest-calendar-date"
-          ],
-          "directDependents": [
-            "midwest-calendar-date"
-          ]
-        }
-      ],
-      "entryKey": "midwest-clock.entry"
-    },
-    {
-      "cmps": [
-        {
           "tagName": "midwest-code",
           "excludeFromCollection": false,
           "isCollectionDependency": true,
@@ -58865,9 +58421,6 @@
       "p-e71e9bb4.js",
       "p-1fca4d8b.js"
     ],
-    "sc-midwest-clock": [
-      "p-71be04f7.js"
-    ],
     "sc-midwest-code": [
       "p-71be04f7.js",
       "p-f6c733ff.js",
@@ -59602,7 +59155,6 @@
       "../forms/dist/collection/components/validate/lib/validator"
     ],
     "../helpers/dist/collection/components/asset-library/asset-library.js": [],
-    "../helpers/dist/collection/components/clock/clock.js": [],
     "../helpers/dist/collection/components/code/code.js": [],
     "../helpers/dist/collection/components/color-library/color-library.js": [],
     "../helpers/dist/collection/components/comment/comment.js": [],
@@ -59848,9 +59400,6 @@
         ],
         [
           "midwest-asset-library"
-        ],
-        [
-          "midwest-clock"
         ],
         [
           "midwest-code"

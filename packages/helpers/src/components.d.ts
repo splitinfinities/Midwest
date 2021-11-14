@@ -10,12 +10,6 @@ export namespace Components {
     }
     interface MidwestAssetLibrary {
     }
-    interface MidwestClock {
-        "animated": boolean;
-        "between": string | Date;
-        "size": number;
-        "time": string | Date;
-    }
     interface MidwestCode {
         "clipboard": () => Promise<void>;
         "codeString": string;
@@ -198,12 +192,6 @@ declare global {
         prototype: HTMLMidwestAssetLibraryElement;
         new (): HTMLMidwestAssetLibraryElement;
     };
-    interface HTMLMidwestClockElement extends Components.MidwestClock, HTMLStencilElement {
-    }
-    var HTMLMidwestClockElement: {
-        prototype: HTMLMidwestClockElement;
-        new (): HTMLMidwestClockElement;
-    };
     interface HTMLMidwestCodeElement extends Components.MidwestCode, HTMLStencilElement {
     }
     var HTMLMidwestCodeElement: {
@@ -315,7 +303,6 @@ declare global {
     interface HTMLElementTagNameMap {
         "horizontal-scroll": HTMLHorizontalScrollElement;
         "midwest-asset-library": HTMLMidwestAssetLibraryElement;
-        "midwest-clock": HTMLMidwestClockElement;
         "midwest-code": HTMLMidwestCodeElement;
         "midwest-color-library": HTMLMidwestColorLibraryElement;
         "midwest-comment": HTMLMidwestCommentElement;
@@ -340,12 +327,6 @@ declare namespace LocalJSX {
     interface HorizontalScroll {
     }
     interface MidwestAssetLibrary {
-    }
-    interface MidwestClock {
-        "animated"?: boolean;
-        "between"?: string | Date;
-        "size"?: number;
-        "time"?: string | Date;
     }
     interface MidwestCode {
         "codeString"?: string;
@@ -509,7 +490,6 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "horizontal-scroll": HorizontalScroll;
         "midwest-asset-library": MidwestAssetLibrary;
-        "midwest-clock": MidwestClock;
         "midwest-code": MidwestCode;
         "midwest-color-library": MidwestColorLibrary;
         "midwest-comment": MidwestComment;
@@ -536,7 +516,6 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "horizontal-scroll": LocalJSX.HorizontalScroll & JSXBase.HTMLAttributes<HTMLHorizontalScrollElement>;
             "midwest-asset-library": LocalJSX.MidwestAssetLibrary & JSXBase.HTMLAttributes<HTMLMidwestAssetLibraryElement>;
-            "midwest-clock": LocalJSX.MidwestClock & JSXBase.HTMLAttributes<HTMLMidwestClockElement>;
             "midwest-code": LocalJSX.MidwestCode & JSXBase.HTMLAttributes<HTMLMidwestCodeElement>;
             "midwest-color-library": LocalJSX.MidwestColorLibrary & JSXBase.HTMLAttributes<HTMLMidwestColorLibraryElement>;
             "midwest-comment": LocalJSX.MidwestComment & JSXBase.HTMLAttributes<HTMLMidwestCommentElement>;
