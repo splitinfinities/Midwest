@@ -1,7 +1,7 @@
 {
   "name": "@midwest-design/common",
   "public": true,
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Common stuff for midwest",
   "main": "dist/main/index.js",
   "typings": "dist/main/index.d.ts",
