@@ -1,6 +1,6 @@
 {
   "name": "@midwest-design/angular",
-  "version": "0.0.0",
+  "version": "0.0.17",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -26,17 +26,17 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@midwest-design/audio": "latest",
     "@midwest-design/common": "latest",
     "@midwest-design/core": "latest",
-    "@midwest-design/audio": "latest",
-    "@midwest-design/forms": "latest",
     "@midwest-design/device": "latest",
     "@midwest-design/export-to-figma": "latest",
+    "@midwest-design/forms": "latest",
     "@midwest-design/helpers": "latest",
     "@midwest-design/media": "latest",
     "@midwest-design/motion": "latest",
-    "rxjs": "~7.4.0",
     "highcharts": "~8.2.2",
+    "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
