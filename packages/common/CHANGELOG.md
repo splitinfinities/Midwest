@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.2 (2022-03-03)</small>
+
+* build: v0.0.18 ([3cf8007](https://github.com/splitinfinities/midwest/commit/3cf8007))
+* build: v0.1.0 ([368ef9c](https://github.com/splitinfinities/midwest/commit/368ef9c))
+* build(deps): Updates ([8ea08a1](https://github.com/splitinfinities/midwest/commit/8ea08a1))
+
+
+
+
+
 ## [0.1.0](https://github.com/splitinfinities/midwest/compare/v0.0.17...v0.1.0) (2021-11-14)
 
 **Note:** Version bump only for package @midwest-design/common

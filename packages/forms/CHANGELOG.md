@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.2 (2022-03-03)</small>
+
+* build: Prep for release ([c370316](https://github.com/splitinfinities/Midwest/commit/c370316))
+* build: v0.0.18 ([3cf8007](https://github.com/splitinfinities/Midwest/commit/3cf8007))
+* build: v0.1.0 ([368ef9c](https://github.com/splitinfinities/Midwest/commit/368ef9c))
+* build: v0.1.1 ([055cd1f](https://github.com/splitinfinities/Midwest/commit/055cd1f))
+* build(deps): Updates ([8ea08a1](https://github.com/splitinfinities/Midwest/commit/8ea08a1))
+
+
+
+
+
 ### [0.1.1](https://github.com/splitinfinities/midwest/compare/v0.1.0...v0.1.1) (2021-11-14)
 
 **Note:** Version bump only for package @midwest-design/forms
