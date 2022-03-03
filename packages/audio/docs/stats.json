@@ -1,15 +1,15 @@
 {
-  "timestamp": "2021-11-14T04:34:47",
+  "timestamp": "2022-03-03T23:38:07",
   "compiler": {
     "name": "node",
-    "version": "17.0.1"
+    "version": "16.14.0"
   },
   "app": {
     "namespace": "audio",
     "fsNamespace": "audio",
     "components": 7,
     "entries": 7,
-    "bundles": 190,
+    "bundles": 187,
     "outputs": [
       {
         "name": "dist-collection",
@@ -90,15 +90,6 @@
         ]
       },
       {
-        "name": "dist-custom-elements-bundle",
-        "files": 3,
-        "generatedFiles": [
-          "./dist/dist-custom-elements-bundle/index.d.ts",
-          "./dist/dist-custom-elements-bundle/index.js",
-          "./dist/dist-custom-elements-bundle/index.js.map"
-        ]
-      },
-      {
         "name": "dist-lazy",
         "files": 118,
         "generatedFiles": [
@@ -106,30 +97,30 @@
           "./dist/audio/audio.esm.js.map",
           "./dist/audio/index.esm.js",
           "./dist/audio/index.esm.js.map",
+          "./dist/audio/p-0497fa60.entry.js",
+          "./dist/audio/p-0497fa60.entry.js.map",
+          "./dist/audio/p-04dfbd80.entry.js",
+          "./dist/audio/p-04dfbd80.entry.js.map",
           "./dist/audio/p-2937528b.js",
           "./dist/audio/p-2937528b.js.map",
-          "./dist/audio/p-53dc6570.entry.js",
-          "./dist/audio/p-53dc6570.entry.js.map",
-          "./dist/audio/p-57b70df5.entry.js",
-          "./dist/audio/p-57b70df5.entry.js.map",
-          "./dist/audio/p-5fcd8b5e.entry.js",
-          "./dist/audio/p-5fcd8b5e.entry.js.map",
-          "./dist/audio/p-6dbce598.entry.js",
-          "./dist/audio/p-6dbce598.entry.js.map",
-          "./dist/audio/p-86eb9dff.entry.js",
-          "./dist/audio/p-86eb9dff.entry.js.map",
-          "./dist/audio/p-9f3a0325.js",
-          "./dist/audio/p-9f3a0325.js.map",
+          "./dist/audio/p-3a57e59f.entry.js",
+          "./dist/audio/p-3a57e59f.entry.js.map",
+          "./dist/audio/p-4558affa.js",
+          "./dist/audio/p-4558affa.js.map",
+          "./dist/audio/p-581a9bcd.entry.js",
+          "./dist/audio/p-581a9bcd.entry.js.map",
+          "./dist/audio/p-617463ee.entry.js",
+          "./dist/audio/p-617463ee.entry.js.map",
+          "./dist/audio/p-8bba3bf3.js",
+          "./dist/audio/p-8bba3bf3.js.map",
+          "./dist/audio/p-8dd76206.entry.js",
+          "./dist/audio/p-8dd76206.entry.js.map",
           "./dist/audio/p-b192f5a1.js",
           "./dist/audio/p-b192f5a1.js.map",
-          "./dist/audio/p-be33bcbb.entry.js",
-          "./dist/audio/p-be33bcbb.entry.js.map",
-          "./dist/audio/p-e7c55ca6.js",
-          "./dist/audio/p-e7c55ca6.js.map",
-          "./dist/audio/p-ec215e33.entry.js",
-          "./dist/audio/p-ec215e33.entry.js.map",
           "./dist/audio/p-ed3e2a5d.js",
           "./dist/audio/p-ed3e2a5d.js.map",
+          "./dist/audio/p-f16474b5.entry.js",
+          "./dist/audio/p-f16474b5.entry.js.map",
           "./dist/cjs/_commonjsHelpers-5d04ef05.js",
           "./dist/cjs/_commonjsHelpers-5d04ef05.js.map",
           "./dist/cjs/audio.cjs.js",
@@ -138,14 +129,14 @@
           "./dist/cjs/colors-1fa1fe7f.js.map",
           "./dist/cjs/helpers-0c5465f5.js",
           "./dist/cjs/helpers-0c5465f5.js.map",
-          "./dist/cjs/index-68ad6581.js",
-          "./dist/cjs/index-68ad6581.js.map",
+          "./dist/cjs/index-c91fa01b.js",
+          "./dist/cjs/index-c91fa01b.js.map",
           "./dist/cjs/index.cjs.js",
           "./dist/cjs/index.cjs.js.map",
           "./dist/cjs/loader.cjs.js",
           "./dist/cjs/loader.cjs.js.map",
-          "./dist/cjs/web-audio-debugger-83b213bf.js",
-          "./dist/cjs/web-audio-debugger-83b213bf.js.map",
+          "./dist/cjs/web-audio-debugger-5038bc43.js",
+          "./dist/cjs/web-audio-debugger-5038bc43.js.map",
           "./dist/cjs/web-audio-debugger.cjs.entry.js",
           "./dist/cjs/web-audio-debugger.cjs.entry.js.map",
           "./dist/cjs/web-audio-effect.cjs.entry.js",
@@ -168,14 +159,14 @@
           "./dist/esm/colors-b60c6a8d.js.map",
           "./dist/esm/helpers-ae574b08.js",
           "./dist/esm/helpers-ae574b08.js.map",
-          "./dist/esm/index-cb056f50.js",
-          "./dist/esm/index-cb056f50.js.map",
+          "./dist/esm/index-3c3cf363.js",
+          "./dist/esm/index-3c3cf363.js.map",
           "./dist/esm/index.js",
           "./dist/esm/index.js.map",
           "./dist/esm/loader.js",
           "./dist/esm/loader.js.map",
-          "./dist/esm/web-audio-debugger-56ea8162.js",
-          "./dist/esm/web-audio-debugger-56ea8162.js.map",
+          "./dist/esm/web-audio-debugger-4ad32be1.js",
+          "./dist/esm/web-audio-debugger-4ad32be1.js.map",
           "./dist/esm/web-audio-debugger.entry.js",
           "./dist/esm/web-audio-debugger.entry.js.map",
           "./dist/esm/web-audio-effect.entry.js",
@@ -196,30 +187,30 @@
           "./www/build/audio.esm.js.map",
           "./www/build/index.esm.js",
           "./www/build/index.esm.js.map",
+          "./www/build/p-0497fa60.entry.js",
+          "./www/build/p-0497fa60.entry.js.map",
+          "./www/build/p-04dfbd80.entry.js",
+          "./www/build/p-04dfbd80.entry.js.map",
           "./www/build/p-2937528b.js",
           "./www/build/p-2937528b.js.map",
-          "./www/build/p-53dc6570.entry.js",
-          "./www/build/p-53dc6570.entry.js.map",
-          "./www/build/p-57b70df5.entry.js",
-          "./www/build/p-57b70df5.entry.js.map",
-          "./www/build/p-5fcd8b5e.entry.js",
-          "./www/build/p-5fcd8b5e.entry.js.map",
-          "./www/build/p-6dbce598.entry.js",
-          "./www/build/p-6dbce598.entry.js.map",
-          "./www/build/p-86eb9dff.entry.js",
-          "./www/build/p-86eb9dff.entry.js.map",
-          "./www/build/p-9f3a0325.js",
-          "./www/build/p-9f3a0325.js.map",
+          "./www/build/p-3a57e59f.entry.js",
+          "./www/build/p-3a57e59f.entry.js.map",
+          "./www/build/p-4558affa.js",
+          "./www/build/p-4558affa.js.map",
+          "./www/build/p-581a9bcd.entry.js",
+          "./www/build/p-581a9bcd.entry.js.map",
+          "./www/build/p-617463ee.entry.js",
+          "./www/build/p-617463ee.entry.js.map",
+          "./www/build/p-8bba3bf3.js",
+          "./www/build/p-8bba3bf3.js.map",
+          "./www/build/p-8dd76206.entry.js",
+          "./www/build/p-8dd76206.entry.js.map",
           "./www/build/p-b192f5a1.js",
           "./www/build/p-b192f5a1.js.map",
-          "./www/build/p-be33bcbb.entry.js",
-          "./www/build/p-be33bcbb.entry.js.map",
-          "./www/build/p-e7c55ca6.js",
-          "./www/build/p-e7c55ca6.js.map",
-          "./www/build/p-ec215e33.entry.js",
-          "./www/build/p-ec215e33.entry.js.map",
           "./www/build/p-ed3e2a5d.js",
-          "./www/build/p-ed3e2a5d.js.map"
+          "./www/build/p-ed3e2a5d.js.map",
+          "./www/build/p-f16474b5.entry.js",
+          "./www/build/p-f16474b5.entry.js.map"
         ]
       },
       {
@@ -253,11 +244,11 @@
         "components": [
           "web-audio"
         ],
-        "bundleId": "p-ec215e33",
-        "fileName": "p-ec215e33.entry.js",
+        "bundleId": "p-617463ee",
+        "fileName": "p-617463ee.entry.js",
         "imports": [
-          "p-9f3a0325.js",
-          "p-e7c55ca6.js",
+          "p-8bba3bf3.js",
+          "p-4558affa.js",
           "p-ed3e2a5d.js",
           "p-2937528b.js",
           "p-b192f5a1.js"
@@ -269,11 +260,11 @@
         "components": [
           "web-audio-debugger"
         ],
-        "bundleId": "p-5fcd8b5e",
-        "fileName": "p-5fcd8b5e.entry.js",
+        "bundleId": "p-8dd76206",
+        "fileName": "p-8dd76206.entry.js",
         "imports": [
-          "p-e7c55ca6.js",
-          "p-9f3a0325.js"
+          "p-4558affa.js",
+          "p-8bba3bf3.js"
         ],
         "originalByteSize": 159
       },
@@ -282,10 +273,10 @@
         "components": [
           "web-audio-effect"
         ],
-        "bundleId": "p-57b70df5",
-        "fileName": "p-57b70df5.entry.js",
+        "bundleId": "p-3a57e59f",
+        "fileName": "p-3a57e59f.entry.js",
         "imports": [
-          "p-9f3a0325.js",
+          "p-8bba3bf3.js",
           "p-ed3e2a5d.js"
         ],
         "originalByteSize": 4990
@@ -295,10 +286,10 @@
         "components": [
           "web-audio-sequencer"
         ],
-        "bundleId": "p-be33bcbb",
-        "fileName": "p-be33bcbb.entry.js",
+        "bundleId": "p-04dfbd80",
+        "fileName": "p-04dfbd80.entry.js",
         "imports": [
-          "p-9f3a0325.js"
+          "p-8bba3bf3.js"
         ],
         "originalByteSize": 2070
       },
@@ -307,10 +298,10 @@
         "components": [
           "web-audio-source"
         ],
-        "bundleId": "p-53dc6570",
-        "fileName": "p-53dc6570.entry.js",
+        "bundleId": "p-581a9bcd",
+        "fileName": "p-581a9bcd.entry.js",
         "imports": [
-          "p-9f3a0325.js",
+          "p-8bba3bf3.js",
           "p-2937528b.js"
         ],
         "originalByteSize": 7776
@@ -320,10 +311,10 @@
         "components": [
           "web-audio-visualizer"
         ],
-        "bundleId": "p-6dbce598",
-        "fileName": "p-6dbce598.entry.js",
+        "bundleId": "p-0497fa60",
+        "fileName": "p-0497fa60.entry.js",
         "imports": [
-          "p-9f3a0325.js",
+          "p-8bba3bf3.js",
           "p-b192f5a1.js",
           "p-2937528b.js"
         ],
@@ -334,10 +325,10 @@
         "components": [
           "web-audio-visualizer-shader"
         ],
-        "bundleId": "p-86eb9dff",
-        "fileName": "p-86eb9dff.entry.js",
+        "bundleId": "p-f16474b5",
+        "fileName": "p-f16474b5.entry.js",
         "imports": [
-          "p-9f3a0325.js"
+          "p-8bba3bf3.js"
         ],
         "originalByteSize": 341
       }
@@ -351,8 +342,8 @@
         "bundleId": "web-audio",
         "fileName": "web-audio.entry.js",
         "imports": [
-          "index-cb056f50.js",
-          "web-audio-debugger-56ea8162.js",
+          "index-3c3cf363.js",
+          "web-audio-debugger-4ad32be1.js",
           "helpers-ae574b08.js",
           "_commonjsHelpers-f791ee5f.js",
           "colors-b60c6a8d.js"
@@ -367,8 +358,8 @@
         "bundleId": "web-audio-debugger",
         "fileName": "web-audio-debugger.entry.js",
         "imports": [
-          "web-audio-debugger-56ea8162.js",
-          "index-cb056f50.js"
+          "web-audio-debugger-4ad32be1.js",
+          "index-3c3cf363.js"
         ],
         "originalByteSize": 180
       },
@@ -380,7 +371,7 @@
         "bundleId": "web-audio-effect",
         "fileName": "web-audio-effect.entry.js",
         "imports": [
-          "index-cb056f50.js",
+          "index-3c3cf363.js",
           "helpers-ae574b08.js"
         ],
         "originalByteSize": 5000
@@ -393,7 +384,7 @@
         "bundleId": "web-audio-sequencer",
         "fileName": "web-audio-sequencer.entry.js",
         "imports": [
-          "index-cb056f50.js"
+          "index-3c3cf363.js"
         ],
         "originalByteSize": 2074
       },
@@ -405,7 +396,7 @@
         "bundleId": "web-audio-source",
         "fileName": "web-audio-source.entry.js",
         "imports": [
-          "index-cb056f50.js",
+          "index-3c3cf363.js",
           "_commonjsHelpers-f791ee5f.js"
         ],
         "originalByteSize": 7795
@@ -418,7 +409,7 @@
         "bundleId": "web-audio-visualizer",
         "fileName": "web-audio-visualizer.entry.js",
         "imports": [
-          "index-cb056f50.js",
+          "index-3c3cf363.js",
           "colors-b60c6a8d.js",
           "_commonjsHelpers-f791ee5f.js"
         ],
@@ -432,7 +423,7 @@
         "bundleId": "web-audio-visualizer-shader",
         "fileName": "web-audio-visualizer-shader.entry.js",
         "imports": [
-          "index-cb056f50.js"
+          "index-3c3cf363.js"
         ],
         "originalByteSize": 345
       }
@@ -448,8 +439,8 @@
         "bundleId": "web-audio.cjs",
         "fileName": "web-audio.cjs.entry.js",
         "imports": [
-          "index-68ad6581.js",
-          "web-audio-debugger-83b213bf.js",
+          "index-c91fa01b.js",
+          "web-audio-debugger-5038bc43.js",
           "helpers-0c5465f5.js",
           "_commonjsHelpers-5d04ef05.js",
           "colors-1fa1fe7f.js"
@@ -464,8 +455,8 @@
         "bundleId": "web-audio-debugger.cjs",
         "fileName": "web-audio-debugger.cjs.entry.js",
         "imports": [
-          "web-audio-debugger-83b213bf.js",
-          "index-68ad6581.js"
+          "web-audio-debugger-5038bc43.js",
+          "index-c91fa01b.js"
         ],
         "originalByteSize": 322
       },
@@ -477,7 +468,7 @@
         "bundleId": "web-audio-effect.cjs",
         "fileName": "web-audio-effect.cjs.entry.js",
         "imports": [
-          "index-68ad6581.js",
+          "index-c91fa01b.js",
           "helpers-0c5465f5.js"
         ],
         "originalByteSize": 5060
@@ -490,7 +481,7 @@
         "bundleId": "web-audio-sequencer.cjs",
         "fileName": "web-audio-sequencer.cjs.entry.js",
         "imports": [
-          "index-68ad6581.js"
+          "index-c91fa01b.js"
         ],
         "originalByteSize": 2140
       },
@@ -502,7 +493,7 @@
         "bundleId": "web-audio-source.cjs",
         "fileName": "web-audio-source.cjs.entry.js",
         "imports": [
-          "index-68ad6581.js",
+          "index-c91fa01b.js",
           "_commonjsHelpers-5d04ef05.js"
         ],
         "originalByteSize": 7860
@@ -515,7 +506,7 @@
         "bundleId": "web-audio-visualizer.cjs",
         "fileName": "web-audio-visualizer.cjs.entry.js",
         "imports": [
-          "index-68ad6581.js",
+          "index-c91fa01b.js",
           "colors-1fa1fe7f.js",
           "_commonjsHelpers-5d04ef05.js"
         ],
@@ -529,7 +520,7 @@
         "bundleId": "web-audio-visualizer-shader.cjs",
         "fileName": "web-audio-visualizer-shader.cjs.entry.js",
         "imports": [
-          "index-68ad6581.js"
+          "index-c91fa01b.js"
         ],
         "originalByteSize": 411
       }
@@ -4106,34 +4097,34 @@
   ],
   "componentGraph": {
     "sc-web-audio": [
-      "p-9f3a0325.js",
-      "p-e7c55ca6.js",
+      "p-8bba3bf3.js",
+      "p-4558affa.js",
       "p-ed3e2a5d.js",
       "p-2937528b.js",
       "p-b192f5a1.js"
     ],
     "sc-web-audio-debugger": [
-      "p-e7c55ca6.js",
-      "p-9f3a0325.js"
+      "p-4558affa.js",
+      "p-8bba3bf3.js"
     ],
     "sc-web-audio-effect": [
-      "p-9f3a0325.js",
+      "p-8bba3bf3.js",
       "p-ed3e2a5d.js"
     ],
     "sc-web-audio-sequencer": [
-      "p-9f3a0325.js"
+      "p-8bba3bf3.js"
     ],
     "sc-web-audio-source": [
-      "p-9f3a0325.js",
+      "p-8bba3bf3.js",
       "p-2937528b.js"
     ],
     "sc-web-audio-visualizer": [
-      "p-9f3a0325.js",
+      "p-8bba3bf3.js",
       "p-b192f5a1.js",
       "p-2937528b.js"
     ],
     "sc-web-audio-visualizer-shader": [
-      "p-9f3a0325.js"
+      "p-8bba3bf3.js"
     ]
   },
   "sourceGraph": {

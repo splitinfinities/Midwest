@@ -1,15 +1,15 @@
 {
-  "timestamp": "2021-11-14T04:35:41",
+  "timestamp": "2022-03-03T23:39:47",
   "compiler": {
     "name": "node",
-    "version": "17.0.1"
+    "version": "16.14.0"
   },
   "app": {
     "namespace": "motion",
     "fsNamespace": "motion",
     "components": 16,
     "entries": 16,
-    "bundles": 270,
+    "bundles": 267,
     "outputs": [
       {
         "name": "dist-collection",
@@ -122,15 +122,6 @@
         ]
       },
       {
-        "name": "dist-custom-elements-bundle",
-        "files": 3,
-        "generatedFiles": [
-          "./dist/dist-custom-elements-bundle/index.d.ts",
-          "./dist/dist-custom-elements-bundle/index.js",
-          "./dist/dist-custom-elements-bundle/index.js.map"
-        ]
-      },
-      {
         "name": "dist-lazy",
         "files": 166,
         "generatedFiles": [
@@ -138,8 +129,8 @@
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js.map",
           "./dist/cjs/css-custom-properties.min-5507c24f.js",
           "./dist/cjs/css-custom-properties.min-5507c24f.js.map",
-          "./dist/cjs/index-f0c0f040.js",
-          "./dist/cjs/index-f0c0f040.js.map",
+          "./dist/cjs/index-ee00e15c.js",
+          "./dist/cjs/index-ee00e15c.js.map",
           "./dist/cjs/index.cjs.js",
           "./dist/cjs/index.cjs.js.map",
           "./dist/cjs/ion-icon.cjs.entry.js",
@@ -180,8 +171,8 @@
           "./dist/esm/_commonjsHelpers-856c13bf.js.map",
           "./dist/esm/css-custom-properties.min-0a9e262e.js",
           "./dist/esm/css-custom-properties.min-0a9e262e.js.map",
-          "./dist/esm/index-fab8151a.js",
-          "./dist/esm/index-fab8151a.js.map",
+          "./dist/esm/index-352c0a62.js",
+          "./dist/esm/index-352c0a62.js.map",
           "./dist/esm/index.js",
           "./dist/esm/index.js.map",
           "./dist/esm/ion-icon.entry.js",
@@ -224,80 +215,80 @@
           "./dist/motion/index.esm.js.map",
           "./dist/motion/motion.esm.js",
           "./dist/motion/motion.esm.js.map",
-          "./dist/motion/p-055b866e.entry.js",
-          "./dist/motion/p-055b866e.entry.js.map",
-          "./dist/motion/p-055c1a4d.entry.js",
-          "./dist/motion/p-055c1a4d.entry.js.map",
-          "./dist/motion/p-2c12d47d.entry.js",
-          "./dist/motion/p-2c12d47d.entry.js.map",
-          "./dist/motion/p-55609044.entry.js",
-          "./dist/motion/p-55609044.entry.js.map",
-          "./dist/motion/p-60462514.entry.js",
-          "./dist/motion/p-60462514.entry.js.map",
-          "./dist/motion/p-62676a17.js",
-          "./dist/motion/p-62676a17.js.map",
-          "./dist/motion/p-69dfbaee.entry.js",
-          "./dist/motion/p-69dfbaee.entry.js.map",
-          "./dist/motion/p-784bb28a.entry.js",
-          "./dist/motion/p-784bb28a.entry.js.map",
-          "./dist/motion/p-7d2283fe.entry.js",
-          "./dist/motion/p-7d2283fe.entry.js.map",
-          "./dist/motion/p-91bd22e1.entry.js",
-          "./dist/motion/p-91bd22e1.entry.js.map",
-          "./dist/motion/p-a13a5f04.entry.js",
-          "./dist/motion/p-a13a5f04.entry.js.map",
-          "./dist/motion/p-abc0e0c9.entry.js",
-          "./dist/motion/p-abc0e0c9.entry.js.map",
-          "./dist/motion/p-bdda29a2.entry.js",
-          "./dist/motion/p-bdda29a2.entry.js.map",
-          "./dist/motion/p-d8d0368d.entry.js",
-          "./dist/motion/p-d8d0368d.entry.js.map",
-          "./dist/motion/p-db8a4009.entry.js",
-          "./dist/motion/p-db8a4009.entry.js.map",
+          "./dist/motion/p-03ab935a.entry.js",
+          "./dist/motion/p-03ab935a.entry.js.map",
+          "./dist/motion/p-166248d9.entry.js",
+          "./dist/motion/p-166248d9.entry.js.map",
+          "./dist/motion/p-2291bd54.entry.js",
+          "./dist/motion/p-2291bd54.entry.js.map",
+          "./dist/motion/p-23ecb46d.entry.js",
+          "./dist/motion/p-23ecb46d.entry.js.map",
+          "./dist/motion/p-2d2eb645.entry.js",
+          "./dist/motion/p-2d2eb645.entry.js.map",
+          "./dist/motion/p-384d7c2d.entry.js",
+          "./dist/motion/p-384d7c2d.entry.js.map",
+          "./dist/motion/p-3a159583.entry.js",
+          "./dist/motion/p-3a159583.entry.js.map",
+          "./dist/motion/p-5024b96d.entry.js",
+          "./dist/motion/p-5024b96d.entry.js.map",
+          "./dist/motion/p-67b35d5a.entry.js",
+          "./dist/motion/p-67b35d5a.entry.js.map",
+          "./dist/motion/p-82e8029b.entry.js",
+          "./dist/motion/p-82e8029b.entry.js.map",
+          "./dist/motion/p-8e331294.entry.js",
+          "./dist/motion/p-8e331294.entry.js.map",
+          "./dist/motion/p-a4b84880.entry.js",
+          "./dist/motion/p-a4b84880.entry.js.map",
+          "./dist/motion/p-cc32008e.entry.js",
+          "./dist/motion/p-cc32008e.entry.js.map",
+          "./dist/motion/p-d60191bd.entry.js",
+          "./dist/motion/p-d60191bd.entry.js.map",
+          "./dist/motion/p-e0c81824.entry.js",
+          "./dist/motion/p-e0c81824.entry.js.map",
+          "./dist/motion/p-f52837ea.js",
+          "./dist/motion/p-f52837ea.js.map",
           "./dist/motion/p-f6c733ff.js",
           "./dist/motion/p-f6c733ff.js.map",
-          "./dist/motion/p-f7acfb26.entry.js",
-          "./dist/motion/p-f7acfb26.entry.js.map",
           "./dist/motion/p-f8c7a9b3.js",
           "./dist/motion/p-f8c7a9b3.js.map",
           "./www/build/index.esm.js",
           "./www/build/index.esm.js.map",
           "./www/build/motion.esm.js",
           "./www/build/motion.esm.js.map",
-          "./www/build/p-055b866e.entry.js",
-          "./www/build/p-055b866e.entry.js.map",
-          "./www/build/p-055c1a4d.entry.js",
-          "./www/build/p-055c1a4d.entry.js.map",
-          "./www/build/p-2c12d47d.entry.js",
-          "./www/build/p-2c12d47d.entry.js.map",
-          "./www/build/p-55609044.entry.js",
-          "./www/build/p-55609044.entry.js.map",
-          "./www/build/p-60462514.entry.js",
-          "./www/build/p-60462514.entry.js.map",
-          "./www/build/p-62676a17.js",
-          "./www/build/p-62676a17.js.map",
-          "./www/build/p-69dfbaee.entry.js",
-          "./www/build/p-69dfbaee.entry.js.map",
-          "./www/build/p-784bb28a.entry.js",
-          "./www/build/p-784bb28a.entry.js.map",
-          "./www/build/p-7d2283fe.entry.js",
-          "./www/build/p-7d2283fe.entry.js.map",
-          "./www/build/p-91bd22e1.entry.js",
-          "./www/build/p-91bd22e1.entry.js.map",
-          "./www/build/p-a13a5f04.entry.js",
-          "./www/build/p-a13a5f04.entry.js.map",
-          "./www/build/p-abc0e0c9.entry.js",
-          "./www/build/p-abc0e0c9.entry.js.map",
-          "./www/build/p-bdda29a2.entry.js",
-          "./www/build/p-bdda29a2.entry.js.map",
-          "./www/build/p-d8d0368d.entry.js",
-          "./www/build/p-d8d0368d.entry.js.map",
-          "./www/build/p-db8a4009.entry.js",
-          "./www/build/p-db8a4009.entry.js.map",
+          "./www/build/p-03ab935a.entry.js",
+          "./www/build/p-03ab935a.entry.js.map",
+          "./www/build/p-166248d9.entry.js",
+          "./www/build/p-166248d9.entry.js.map",
+          "./www/build/p-2291bd54.entry.js",
+          "./www/build/p-2291bd54.entry.js.map",
+          "./www/build/p-23ecb46d.entry.js",
+          "./www/build/p-23ecb46d.entry.js.map",
+          "./www/build/p-2d2eb645.entry.js",
+          "./www/build/p-2d2eb645.entry.js.map",
+          "./www/build/p-384d7c2d.entry.js",
+          "./www/build/p-384d7c2d.entry.js.map",
+          "./www/build/p-3a159583.entry.js",
+          "./www/build/p-3a159583.entry.js.map",
+          "./www/build/p-5024b96d.entry.js",
+          "./www/build/p-5024b96d.entry.js.map",
+          "./www/build/p-67b35d5a.entry.js",
+          "./www/build/p-67b35d5a.entry.js.map",
+          "./www/build/p-82e8029b.entry.js",
+          "./www/build/p-82e8029b.entry.js.map",
+          "./www/build/p-8e331294.entry.js",
+          "./www/build/p-8e331294.entry.js.map",
+          "./www/build/p-a4b84880.entry.js",
+          "./www/build/p-a4b84880.entry.js.map",
+          "./www/build/p-cc32008e.entry.js",
+          "./www/build/p-cc32008e.entry.js.map",
+          "./www/build/p-d60191bd.entry.js",
+          "./www/build/p-d60191bd.entry.js.map",
+          "./www/build/p-e0c81824.entry.js",
+          "./www/build/p-e0c81824.entry.js.map",
+          "./www/build/p-f52837ea.js",
+          "./www/build/p-f52837ea.js.map",
           "./www/build/p-f6c733ff.js",
           "./www/build/p-f6c733ff.js.map",
-          "./www/build/p-f7acfb26.entry.js",
-          "./www/build/p-f7acfb26.entry.js.map",
           "./www/build/p-f8c7a9b3.js",
           "./www/build/p-f8c7a9b3.js.map"
         ]
@@ -333,10 +324,10 @@
         "components": [
           "midwest-animate-text"
         ],
-        "bundleId": "p-7d2283fe",
-        "fileName": "p-7d2283fe.entry.js",
+        "bundleId": "p-3a159583",
+        "fileName": "p-3a159583.entry.js",
         "imports": [
-          "p-62676a17.js",
+          "p-f52837ea.js",
           "p-f8c7a9b3.js",
           "p-f6c733ff.js"
         ],
@@ -347,10 +338,10 @@
         "components": [
           "midwest-auto-scroll"
         ],
-        "bundleId": "p-f7acfb26",
-        "fileName": "p-f7acfb26.entry.js",
+        "bundleId": "p-2d2eb645",
+        "fileName": "p-2d2eb645.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
         "originalByteSize": 906
       },
@@ -359,10 +350,10 @@
         "components": [
           "midwest-blur"
         ],
-        "bundleId": "p-055b866e",
-        "fileName": "p-055b866e.entry.js",
+        "bundleId": "p-384d7c2d",
+        "fileName": "p-384d7c2d.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
         "originalByteSize": 2264
       },
@@ -371,10 +362,10 @@
         "components": [
           "midwest-follow"
         ],
-        "bundleId": "p-69dfbaee",
-        "fileName": "p-69dfbaee.entry.js",
+        "bundleId": "p-8e331294",
+        "fileName": "p-8e331294.entry.js",
         "imports": [
-          "p-62676a17.js",
+          "p-f52837ea.js",
           "p-f8c7a9b3.js",
           "p-f6c733ff.js"
         ],
@@ -385,10 +376,10 @@
         "components": [
           "midwest-keyframes"
         ],
-        "bundleId": "p-abc0e0c9",
-        "fileName": "p-abc0e0c9.entry.js",
+        "bundleId": "p-67b35d5a",
+        "fileName": "p-67b35d5a.entry.js",
         "imports": [
-          "p-62676a17.js",
+          "p-f52837ea.js",
           "p-f8c7a9b3.js",
           "p-f6c733ff.js"
         ],
@@ -399,10 +390,10 @@
         "components": [
           "midwest-scatter"
         ],
-        "bundleId": "p-2c12d47d",
-        "fileName": "p-2c12d47d.entry.js",
+        "bundleId": "p-d60191bd",
+        "fileName": "p-d60191bd.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
         "originalByteSize": 2721
       },
@@ -411,10 +402,10 @@
         "components": [
           "midwest-scroll-z-root"
         ],
-        "bundleId": "p-91bd22e1",
-        "fileName": "p-91bd22e1.entry.js",
+        "bundleId": "p-166248d9",
+        "fileName": "p-166248d9.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
         "originalByteSize": 5405
       },
@@ -423,10 +414,10 @@
         "components": [
           "midwest-scroll-z-section"
         ],
-        "bundleId": "p-d8d0368d",
-        "fileName": "p-d8d0368d.entry.js",
+        "bundleId": "p-e0c81824",
+        "fileName": "p-e0c81824.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
         "originalByteSize": 286
       },
@@ -435,10 +426,10 @@
         "components": [
           "midwest-slick-slides"
         ],
-        "bundleId": "p-784bb28a",
-        "fileName": "p-784bb28a.entry.js",
+        "bundleId": "p-a4b84880",
+        "fileName": "p-a4b84880.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
         "originalByteSize": 296587
       },
@@ -447,10 +438,10 @@
         "components": [
           "midwest-slide"
         ],
-        "bundleId": "p-60462514",
-        "fileName": "p-60462514.entry.js",
+        "bundleId": "p-cc32008e",
+        "fileName": "p-cc32008e.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
         "originalByteSize": 1973
       },
@@ -459,10 +450,10 @@
         "components": [
           "midwest-slides"
         ],
-        "bundleId": "p-bdda29a2",
-        "fileName": "p-bdda29a2.entry.js",
+        "bundleId": "p-82e8029b",
+        "fileName": "p-82e8029b.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
         "originalByteSize": 4517
       },
@@ -471,10 +462,10 @@
         "components": [
           "midwest-starscape"
         ],
-        "bundleId": "p-55609044",
-        "fileName": "p-55609044.entry.js",
+        "bundleId": "p-23ecb46d",
+        "fileName": "p-23ecb46d.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
         "originalByteSize": 1956
       },
@@ -483,10 +474,10 @@
         "components": [
           "midwest-story"
         ],
-        "bundleId": "p-055c1a4d",
-        "fileName": "p-055c1a4d.entry.js",
+        "bundleId": "p-5024b96d",
+        "fileName": "p-5024b96d.entry.js",
         "imports": [
-          "p-62676a17.js",
+          "p-f52837ea.js",
           "p-f6c733ff.js"
         ],
         "originalByteSize": 9889
@@ -496,12 +487,12 @@
         "components": [
           "ion-icon"
         ],
-        "bundleId": "p-a13a5f04",
-        "fileName": "p-a13a5f04.entry.js",
+        "bundleId": "p-2291bd54",
+        "fileName": "p-2291bd54.entry.js",
         "imports": [
-          "p-62676a17.js"
+          "p-f52837ea.js"
         ],
-        "originalByteSize": 9088
+        "originalByteSize": 10606
       },
       {
         "key": "midwest-parallax.midwest-parallax-section.entry",
@@ -509,10 +500,10 @@
           "midwest-parallax",
           "midwest-parallax-section"
         ],
-        "bundleId": "p-db8a4009",
-        "fileName": "p-db8a4009.entry.js",
+        "bundleId": "p-03ab935a",
+        "fileName": "p-03ab935a.entry.js",
         "imports": [
-          "p-62676a17.js",
+          "p-f52837ea.js",
           "p-f6c733ff.js"
         ],
         "originalByteSize": 12357
@@ -527,7 +518,7 @@
         "bundleId": "midwest-animate-text",
         "fileName": "midwest-animate-text.entry.js",
         "imports": [
-          "index-fab8151a.js",
+          "index-352c0a62.js",
           "css-custom-properties.min-0a9e262e.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -541,7 +532,7 @@
         "bundleId": "midwest-auto-scroll",
         "fileName": "midwest-auto-scroll.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
         "originalByteSize": 910
       },
@@ -553,7 +544,7 @@
         "bundleId": "midwest-blur",
         "fileName": "midwest-blur.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
         "originalByteSize": 2268
       },
@@ -565,7 +556,7 @@
         "bundleId": "midwest-follow",
         "fileName": "midwest-follow.entry.js",
         "imports": [
-          "index-fab8151a.js",
+          "index-352c0a62.js",
           "css-custom-properties.min-0a9e262e.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -579,7 +570,7 @@
         "bundleId": "midwest-keyframes",
         "fileName": "midwest-keyframes.entry.js",
         "imports": [
-          "index-fab8151a.js",
+          "index-352c0a62.js",
           "css-custom-properties.min-0a9e262e.js",
           "_commonjsHelpers-856c13bf.js"
         ],
@@ -593,7 +584,7 @@
         "bundleId": "midwest-scatter",
         "fileName": "midwest-scatter.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
         "originalByteSize": 2725
       },
@@ -605,7 +596,7 @@
         "bundleId": "midwest-scroll-z-root",
         "fileName": "midwest-scroll-z-root.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
         "originalByteSize": 5409
       },
@@ -617,7 +608,7 @@
         "bundleId": "midwest-scroll-z-section",
         "fileName": "midwest-scroll-z-section.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
         "originalByteSize": 290
       },
@@ -629,7 +620,7 @@
         "bundleId": "midwest-slick-slides",
         "fileName": "midwest-slick-slides.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
         "originalByteSize": 296591
       },
@@ -641,7 +632,7 @@
         "bundleId": "midwest-slide",
         "fileName": "midwest-slide.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
         "originalByteSize": 1977
       },
@@ -653,7 +644,7 @@
         "bundleId": "midwest-slides",
         "fileName": "midwest-slides.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
         "originalByteSize": 4521
       },
@@ -665,7 +656,7 @@
         "bundleId": "midwest-starscape",
         "fileName": "midwest-starscape.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
         "originalByteSize": 1960
       },
@@ -677,7 +668,7 @@
         "bundleId": "midwest-story",
         "fileName": "midwest-story.entry.js",
         "imports": [
-          "index-fab8151a.js",
+          "index-352c0a62.js",
           "_commonjsHelpers-856c13bf.js"
         ],
         "originalByteSize": 9908
@@ -690,9 +681,9 @@
         "bundleId": "ion-icon",
         "fileName": "ion-icon.entry.js",
         "imports": [
-          "index-fab8151a.js"
+          "index-352c0a62.js"
         ],
-        "originalByteSize": 9092
+        "originalByteSize": 10610
       },
       {
         "key": "midwest-parallax.midwest-parallax-section.entry",
@@ -703,7 +694,7 @@
         "bundleId": "midwest-parallax_2",
         "fileName": "midwest-parallax_2.entry.js",
         "imports": [
-          "index-fab8151a.js",
+          "index-352c0a62.js",
           "_commonjsHelpers-856c13bf.js"
         ],
         "originalByteSize": 12376
@@ -720,7 +711,7 @@
         "bundleId": "midwest-animate-text.cjs",
         "fileName": "midwest-animate-text.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js",
+          "index-ee00e15c.js",
           "css-custom-properties.min-5507c24f.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -734,7 +725,7 @@
         "bundleId": "midwest-auto-scroll.cjs",
         "fileName": "midwest-auto-scroll.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
         "originalByteSize": 976
       },
@@ -746,7 +737,7 @@
         "bundleId": "midwest-blur.cjs",
         "fileName": "midwest-blur.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
         "originalByteSize": 2357
       },
@@ -758,7 +749,7 @@
         "bundleId": "midwest-follow.cjs",
         "fileName": "midwest-follow.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js",
+          "index-ee00e15c.js",
           "css-custom-properties.min-5507c24f.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -772,7 +763,7 @@
         "bundleId": "midwest-keyframes.cjs",
         "fileName": "midwest-keyframes.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js",
+          "index-ee00e15c.js",
           "css-custom-properties.min-5507c24f.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
@@ -786,7 +777,7 @@
         "bundleId": "midwest-scatter.cjs",
         "fileName": "midwest-scatter.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
         "originalByteSize": 2783
       },
@@ -798,7 +789,7 @@
         "bundleId": "midwest-scroll-z-root.cjs",
         "fileName": "midwest-scroll-z-root.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
         "originalByteSize": 5479
       },
@@ -810,7 +801,7 @@
         "bundleId": "midwest-scroll-z-section.cjs",
         "fileName": "midwest-scroll-z-section.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
         "originalByteSize": 356
       },
@@ -822,7 +813,7 @@
         "bundleId": "midwest-slick-slides.cjs",
         "fileName": "midwest-slick-slides.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
         "originalByteSize": 296728
       },
@@ -834,7 +825,7 @@
         "bundleId": "midwest-slide.cjs",
         "fileName": "midwest-slide.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
         "originalByteSize": 2030
       },
@@ -846,7 +837,7 @@
         "bundleId": "midwest-slides.cjs",
         "fileName": "midwest-slides.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
         "originalByteSize": 4622
       },
@@ -858,7 +849,7 @@
         "bundleId": "midwest-starscape.cjs",
         "fileName": "midwest-starscape.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
         "originalByteSize": 2055
       },
@@ -870,7 +861,7 @@
         "bundleId": "midwest-story.cjs",
         "fileName": "midwest-story.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js",
+          "index-ee00e15c.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
         "originalByteSize": 10000
@@ -883,9 +874,9 @@
         "bundleId": "ion-icon.cjs",
         "fileName": "ion-icon.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js"
+          "index-ee00e15c.js"
         ],
-        "originalByteSize": 9144
+        "originalByteSize": 10662
       },
       {
         "key": "midwest-parallax.midwest-parallax-section.entry",
@@ -896,7 +887,7 @@
         "bundleId": "midwest-parallax_2.cjs",
         "fileName": "midwest-parallax_2.cjs.entry.js",
         "imports": [
-          "index-f0c0f040.js",
+          "index-ee00e15c.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
         "originalByteSize": 12489
@@ -975,44 +966,6 @@
           "docs": {
             "tags": [],
             "text": "The color to use for the background of the item."
-          },
-          "internal": false
-        },
-        {
-          "name": "ariaLabel",
-          "type": "string",
-          "attribute": "aria-label",
-          "reflect": true,
-          "mutable": true,
-          "required": false,
-          "optional": true,
-          "complexType": {
-            "original": "string",
-            "resolved": "string | undefined",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "Specifies the label to use for accessibility. Defaults to the icon name."
-          },
-          "internal": false
-        },
-        {
-          "name": "ariaHidden",
-          "type": "string",
-          "attribute": "aria-hidden",
-          "reflect": true,
-          "mutable": false,
-          "required": false,
-          "optional": true,
-          "complexType": {
-            "original": "string",
-            "resolved": "string | undefined",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "Set the icon to hidden, respectively `true`, to remove it from the accessibility tree."
           },
           "internal": false
         },
@@ -1202,6 +1155,9 @@
         },
         {
           "name": "isVisible"
+        },
+        {
+          "name": "ariaLabel"
         }
       ]
     },
@@ -6732,44 +6688,6 @@
               "internal": false
             },
             {
-              "name": "ariaLabel",
-              "type": "string",
-              "attribute": "aria-label",
-              "reflect": true,
-              "mutable": true,
-              "required": false,
-              "optional": true,
-              "complexType": {
-                "original": "string",
-                "resolved": "string | undefined",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Specifies the label to use for accessibility. Defaults to the icon name."
-              },
-              "internal": false
-            },
-            {
-              "name": "ariaHidden",
-              "type": "string",
-              "attribute": "aria-hidden",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": true,
-              "complexType": {
-                "original": "string",
-                "resolved": "string | undefined",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Set the icon to hidden, respectively `true`, to remove it from the accessibility tree."
-              },
-              "internal": false
-            },
-            {
               "name": "ios",
               "type": "string",
               "attribute": "ios",
@@ -6955,6 +6873,9 @@
             },
             {
               "name": "isVisible"
+            },
+            {
+              "name": "ariaLabel"
             }
           ],
           "methods": [],
@@ -7008,7 +6929,7 @@
           "sourceFilePath": "/Users/will/Sites/midwest/node_modules/ionicons/dist/collection/components/icon/icon.js",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
+          "hasComponentWillLoadFn": true,
           "hasComponentDidLoadFn": false,
           "hasComponentShouldUpdateFn": false,
           "hasComponentWillUpdateFn": false,
@@ -7020,7 +6941,7 @@
           "hasDisconnectedCallbackFn": true,
           "hasElement": false,
           "hasEvent": false,
-          "hasLifecycle": false,
+          "hasLifecycle": true,
           "hasListener": false,
           "hasListenerTarget": false,
           "hasListenerTargetWindow": false,
@@ -7041,20 +6962,19 @@
           "hasState": true,
           "hasStyle": true,
           "hasVdomAttribute": true,
-          "hasVdomXlink": false,
+          "hasVdomXlink": true,
           "hasVdomClass": true,
           "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
+          "hasVdomKey": true,
+          "hasVdomListener": true,
           "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
+          "hasVdomRef": true,
           "hasVdomRender": true,
-          "hasVdomStyle": false,
+          "hasVdomStyle": true,
           "hasVdomText": true,
           "hasWatchCallback": true,
           "isPlain": false,
           "htmlAttrNames": [
-            "role",
             "class",
             "innerHTML"
           ],
@@ -7356,60 +7276,60 @@
   ],
   "componentGraph": {
     "sc-ion-icon": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-animate-text": [
-      "p-62676a17.js",
+      "p-f52837ea.js",
       "p-f8c7a9b3.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-auto-scroll": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-blur": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-follow": [
-      "p-62676a17.js",
+      "p-f52837ea.js",
       "p-f8c7a9b3.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-keyframes": [
-      "p-62676a17.js",
+      "p-f52837ea.js",
       "p-f8c7a9b3.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-parallax": [
-      "p-62676a17.js",
+      "p-f52837ea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-parallax-section": [
-      "p-62676a17.js",
+      "p-f52837ea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-scatter": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-scroll-z-root": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-scroll-z-section": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-slick-slides": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-slide": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-slides": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-starscape": [
-      "p-62676a17.js"
+      "p-f52837ea.js"
     ],
     "sc-midwest-story": [
-      "p-62676a17.js",
+      "p-f52837ea.js",
       "p-f6c733ff.js"
     ]
   },

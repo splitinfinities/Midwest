@@ -1,15 +1,15 @@
 {
-  "timestamp": "2021-11-14T04:34:58",
+  "timestamp": "2022-03-03T23:38:11",
   "compiler": {
     "name": "node",
-    "version": "17.0.1"
+    "version": "16.14.0"
   },
   "app": {
     "namespace": "device",
     "fsNamespace": "device",
     "components": 1,
     "entries": 1,
-    "bundles": 54,
+    "bundles": 51,
     "outputs": [
       {
         "name": "dist-collection",
@@ -34,22 +34,13 @@
         ]
       },
       {
-        "name": "dist-custom-elements-bundle",
-        "files": 3,
-        "generatedFiles": [
-          "./dist/dist-custom-elements-bundle/index.d.ts",
-          "./dist/dist-custom-elements-bundle/index.js",
-          "./dist/dist-custom-elements-bundle/index.js.map"
-        ]
-      },
-      {
         "name": "dist-lazy",
         "files": 38,
         "generatedFiles": [
           "./dist/cjs/device.cjs.js",
           "./dist/cjs/device.cjs.js.map",
-          "./dist/cjs/index-c7b7d1c8.js",
-          "./dist/cjs/index-c7b7d1c8.js.map",
+          "./dist/cjs/index-ac7fa36b.js",
+          "./dist/cjs/index-ac7fa36b.js.map",
           "./dist/cjs/index.cjs.js",
           "./dist/cjs/index.cjs.js.map",
           "./dist/cjs/loader.cjs.js",
@@ -60,14 +51,14 @@
           "./dist/device/device.esm.js.map",
           "./dist/device/index.esm.js",
           "./dist/device/index.esm.js.map",
-          "./dist/device/p-6977ce65.js",
-          "./dist/device/p-6977ce65.js.map",
-          "./dist/device/p-fc372f01.entry.js",
-          "./dist/device/p-fc372f01.entry.js.map",
+          "./dist/device/p-460dd4ad.entry.js",
+          "./dist/device/p-460dd4ad.entry.js.map",
+          "./dist/device/p-dae4d096.js",
+          "./dist/device/p-dae4d096.js.map",
           "./dist/esm/device.js",
           "./dist/esm/device.js.map",
-          "./dist/esm/index-38c1b0a8.js",
-          "./dist/esm/index-38c1b0a8.js.map",
+          "./dist/esm/index-859000f1.js",
+          "./dist/esm/index-859000f1.js.map",
           "./dist/esm/index.js",
           "./dist/esm/index.js.map",
           "./dist/esm/loader.js",
@@ -80,10 +71,10 @@
           "./www/build/device.esm.js.map",
           "./www/build/index.esm.js",
           "./www/build/index.esm.js.map",
-          "./www/build/p-6977ce65.js",
-          "./www/build/p-6977ce65.js.map",
-          "./www/build/p-fc372f01.entry.js",
-          "./www/build/p-fc372f01.entry.js.map"
+          "./www/build/p-460dd4ad.entry.js",
+          "./www/build/p-460dd4ad.entry.js.map",
+          "./www/build/p-dae4d096.js",
+          "./www/build/p-dae4d096.js.map"
         ]
       },
       {
@@ -117,10 +108,10 @@
         "components": [
           "midwest-device"
         ],
-        "bundleId": "p-fc372f01",
-        "fileName": "p-fc372f01.entry.js",
+        "bundleId": "p-460dd4ad",
+        "fileName": "p-460dd4ad.entry.js",
         "imports": [
-          "p-6977ce65.js"
+          "p-dae4d096.js"
         ],
         "originalByteSize": 5257
       }
@@ -134,7 +125,7 @@
         "bundleId": "midwest-device",
         "fileName": "midwest-device.entry.js",
         "imports": [
-          "index-38c1b0a8.js"
+          "index-859000f1.js"
         ],
         "originalByteSize": 5261
       }
@@ -150,7 +141,7 @@
         "bundleId": "midwest-device.cjs",
         "fileName": "midwest-device.cjs.entry.js",
         "imports": [
-          "index-c7b7d1c8.js"
+          "index-ac7fa36b.js"
         ],
         "originalByteSize": 5360
       }
@@ -394,7 +385,7 @@
   ],
   "componentGraph": {
     "sc-midwest-device": [
-      "p-6977ce65.js"
+      "p-dae4d096.js"
     ]
   },
   "sourceGraph": {

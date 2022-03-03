@@ -19,13 +19,13 @@
     "access": "public"
   },
   "devDependencies": {
-    "@ionic/core": "^5.3.1",
+    "@ionic/core": "^6.0.10",
     "@midwest-design/audio": "^0.1.1",
     "@midwest-design/common": "^0.1.0",
     "@midwest-design/core": "^0.1.1",
     "@midwest-design/helpers": "^0.1.1",
     "@midwest-design/media": "^0.1.1",
     "@midwest-design/motion": "^0.1.1",
-    "@stencil/core": "latest"
+    "@stencil/core": "^2.14.0"
   }
 }

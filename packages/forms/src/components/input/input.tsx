@@ -341,8 +341,13 @@ export class Input {
   }
 
   renderLabel() {
-    if (this.label) {
-      return <midwest-label for="input" size={this.size}>{this.label}{this.required && <span class="star">*</span>}</midwest-label>
+    if (this.label && this.label !== 'false') {
+      return (
+        <midwest-label for="input" size={this.size}>
+          {this.label}
+          {this.required && <span class="star">*</span>}
+        </midwest-label>
+      );
     }
   }
 

@@ -1,15 +1,15 @@
 {
-  "timestamp": "2021-11-14T04:34:43",
+  "timestamp": "2022-03-03T23:38:06",
   "compiler": {
     "name": "node",
-    "version": "17.0.1"
+    "version": "16.14.0"
   },
   "app": {
     "namespace": "ExportToFigma",
     "fsNamespace": "export-to-figma",
     "components": 3,
     "entries": 3,
-    "bundles": 120,
+    "bundles": 117,
     "outputs": [
       {
         "name": "dist-collection",
@@ -100,15 +100,6 @@
         ]
       },
       {
-        "name": "dist-custom-elements-bundle",
-        "files": 3,
-        "generatedFiles": [
-          "./dist/dist-custom-elements-bundle/index.d.ts",
-          "./dist/dist-custom-elements-bundle/index.js",
-          "./dist/dist-custom-elements-bundle/index.js.map"
-        ]
-      },
-      {
         "name": "dist-lazy",
         "files": 38,
         "generatedFiles": [
@@ -116,8 +107,8 @@
           "./dist/cjs/example-no-shadow_3.cjs.entry.js.map",
           "./dist/cjs/export-to-figma.cjs.js",
           "./dist/cjs/export-to-figma.cjs.js.map",
-          "./dist/cjs/index-39f33318.js",
-          "./dist/cjs/index-39f33318.js.map",
+          "./dist/cjs/index-5334755c.js",
+          "./dist/cjs/index-5334755c.js.map",
           "./dist/cjs/index.cjs.js",
           "./dist/cjs/index.cjs.js.map",
           "./dist/cjs/loader.cjs.js",
@@ -126,8 +117,8 @@
           "./dist/esm/example-no-shadow_3.entry.js.map",
           "./dist/esm/export-to-figma.js",
           "./dist/esm/export-to-figma.js.map",
-          "./dist/esm/index-687774ae.js",
-          "./dist/esm/index-687774ae.js.map",
+          "./dist/esm/index-514c4b60.js",
+          "./dist/esm/index-514c4b60.js.map",
           "./dist/esm/index.js",
           "./dist/esm/index.js.map",
           "./dist/esm/loader.js",
@@ -136,20 +127,20 @@
           "./dist/export-to-figma/export-to-figma.esm.js.map",
           "./dist/export-to-figma/index.esm.js",
           "./dist/export-to-figma/index.esm.js.map",
-          "./dist/export-to-figma/p-cce68048.entry.js",
-          "./dist/export-to-figma/p-cce68048.entry.js.map",
-          "./dist/export-to-figma/p-d87442d2.js",
-          "./dist/export-to-figma/p-d87442d2.js.map",
+          "./dist/export-to-figma/p-458cf7c8.entry.js",
+          "./dist/export-to-figma/p-458cf7c8.entry.js.map",
+          "./dist/export-to-figma/p-c196622b.js",
+          "./dist/export-to-figma/p-c196622b.js.map",
           "./dist/index.cjs.js",
           "./dist/index.js",
           "./www/build/export-to-figma.esm.js",
           "./www/build/export-to-figma.esm.js.map",
           "./www/build/index.esm.js",
           "./www/build/index.esm.js.map",
-          "./www/build/p-cce68048.entry.js",
-          "./www/build/p-cce68048.entry.js.map",
-          "./www/build/p-d87442d2.js",
-          "./www/build/p-d87442d2.js.map"
+          "./www/build/p-458cf7c8.entry.js",
+          "./www/build/p-458cf7c8.entry.js.map",
+          "./www/build/p-c196622b.js",
+          "./www/build/p-c196622b.js.map"
         ]
       },
       {
@@ -185,12 +176,12 @@
           "example-with-shadow",
           "export-to-figma"
         ],
-        "bundleId": "p-cce68048",
-        "fileName": "p-cce68048.entry.js",
+        "bundleId": "p-458cf7c8",
+        "fileName": "p-458cf7c8.entry.js",
         "imports": [
-          "p-d87442d2.js"
+          "p-c196622b.js"
         ],
-        "originalByteSize": 37397
+        "originalByteSize": 37385
       }
     ],
     "esm": [
@@ -204,9 +195,9 @@
         "bundleId": "example-no-shadow_3",
         "fileName": "example-no-shadow_3.entry.js",
         "imports": [
-          "index-687774ae.js"
+          "index-514c4b60.js"
         ],
-        "originalByteSize": 37401
+        "originalByteSize": 37389
       }
     ],
     "es5": [],
@@ -222,9 +213,9 @@
         "bundleId": "example-no-shadow_3.cjs",
         "fileName": "example-no-shadow_3.cjs.entry.js",
         "imports": [
-          "index-39f33318.js"
+          "index-5334755c.js"
         ],
-        "originalByteSize": 37552
+        "originalByteSize": 37540
       }
     ]
   },
@@ -791,13 +782,13 @@
   ],
   "componentGraph": {
     "sc-example-no-shadow": [
-      "p-d87442d2.js"
+      "p-c196622b.js"
     ],
     "sc-example-with-shadow": [
-      "p-d87442d2.js"
+      "p-c196622b.js"
     ],
     "sc-export-to-figma": [
-      "p-d87442d2.js"
+      "p-c196622b.js"
     ]
   },
   "sourceGraph": {

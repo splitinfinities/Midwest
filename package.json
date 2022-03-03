@@ -7,9 +7,9 @@
     "start.core": "run-p dev.core storybook",
     "test": "lerna run test --stream",
     "test.watch": "lerna run test.watch --stream",
-    "build": "yarn build.stencil && yarn build.angular",
+    "build": "yarn build.stencil",
     "build.angular": "lerna run build --stream --scope=@midwest-design/angular",
-    "build.stencil": "lerna run build --stream --scope={@midwest-design/common,@midwest-design/motion,@midwest-design/audio,@midwest-design/core,@midwest-design/forms,@midwest-design/media,@midwest-design/helpers,@midwest-design/new-tab,@midwest-design/export-to-figma,@midwest-design/device}",
+    "build.stencil": "lerna run build --stream --scope={@midwest-design/common,@midwest-design/motion,@midwest-design/audio,@midwest-design/core,@midwest-design/forms,@midwest-design/media,@midwest-design/helpers,@midwest-design/export-to-figma,@midwest-design/device}",
     "build.common": "lerna run build --stream --scope=@midwest-design/common",
     "build.motion": "lerna run build --stream --scope=@midwest-design/motion",
     "build.audio": "lerna run build --stream --scope=@midwest-design/audio",
@@ -17,7 +17,6 @@
     "build.forms": "lerna run build --stream --scope=@midwest-design/forms",
     "build.media": "lerna run build --stream --scope=@midwest-design/media",
     "build.helpers": "lerna run build --stream --scope=@midwest-design/helpers",
-    "build.new-tab": "lerna run build --stream --scope=@midwest-design/new-tab",
     "build.export-to-figma": "lerna run build --stream --scope=@midwest-design/export-to-figma",
     "build.device": "lerna run build --stream --scope=@midwest-design/device",
     "build.docs": "lerna run build --stream --scope=@midwest-design/docs",
@@ -31,7 +30,6 @@
     "dev.forms": "lerna run start --stream --scope=@midwest-design/forms",
     "dev.media": "lerna run start --stream --scope=@midwest-design/media",
     "dev.helpers": "lerna run start --stream --scope=@midwest-design/helpers",
-    "dev.new-tab": "lerna run start --stream --scope=@midwest-design/new-tab",
     "dev.export-to-figma": "lerna run start --stream --scope=@midwest-design/export-to-figma",
     "dev.device": "lerna run start --stream --scope=@midwest-design/device",
     "dev.docs": "lerna run start --stream --scope=@midwest-design/docs",
@@ -63,25 +61,23 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-knobs": "^6.3.1",
-    "@storybook/web-components": "^6.3.12",
-    "@storybook/addon-storysource": "^6.3.12",
+    "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/addon-storysource": "^6.4.19",
+    "@storybook/web-components": "^6.4.19",
     "bp-smart-commit": "^1.4.1",
-    "husky": "^4.2.5",
-    "lerna": "^3.13.4",
-    "standard-version": "8.0.0",
-    "typescript": "^3.8.3",
-    "tslint": "^6.1.2",
+    "husky": "^4.3.8",
+    "lerna": "^3.22.1",
+    "standard-version": "8.0.2",
+    "stencil-tslint": "latest",
+    "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
     "tslint-immutable": "^6.0.1",
-    "stencil-tslint": "latest"
+    "typescript": "^3.9.10"
   },
-  "resolutions": {
-    "@midwest-design/common": "0.0.16",
-    "@midwest-design/core": "0.0.16",
-    "@midwest-design/helpers": "0.0.16",
-    "@midwest-design/motion": "0.0.16"
-  }
+  "dependencies": {
+    "@stencil/core": "^2.14.0"
+  },
+  "packageManager": "yarn@3.2.0"
 }

@@ -1,15 +1,15 @@
 {
-  "timestamp": "2021-11-14T04:35:46",
+  "timestamp": "2022-03-03T23:39:50",
   "compiler": {
     "name": "node",
-    "version": "17.0.1"
+    "version": "16.14.0"
   },
   "app": {
     "namespace": "media",
     "fsNamespace": "media",
     "components": 19,
     "entries": 19,
-    "bundles": 346,
+    "bundles": 343,
     "outputs": [
       {
         "name": "dist-collection",
@@ -134,15 +134,6 @@
         ]
       },
       {
-        "name": "dist-custom-elements-bundle",
-        "files": 3,
-        "generatedFiles": [
-          "./dist/dist-custom-elements-bundle/index.d.ts",
-          "./dist/dist-custom-elements-bundle/index.js",
-          "./dist/dist-custom-elements-bundle/index.js.map"
-        ]
-      },
-      {
         "name": "dist-lazy",
         "files": 230,
         "generatedFiles": [
@@ -158,8 +149,8 @@
           "./dist/cjs/helpers-8a5bcc29.js.map",
           "./dist/cjs/index-b3ec0b83.js",
           "./dist/cjs/index-b3ec0b83.js.map",
-          "./dist/cjs/index-c31ba577.js",
-          "./dist/cjs/index-c31ba577.js.map",
+          "./dist/cjs/index-db43a374.js",
+          "./dist/cjs/index-db43a374.js.map",
           "./dist/cjs/index.cjs.js",
           "./dist/cjs/index.cjs.js.map",
           "./dist/cjs/ion-icon.cjs.entry.js",
@@ -192,8 +183,8 @@
           "./dist/cjs/skeleton-img_2.cjs.entry.js.map",
           "./dist/cjs/skeleton-text.cjs.entry.js",
           "./dist/cjs/skeleton-text.cjs.entry.js.map",
-          "./dist/cjs/web-audio-debugger-868e9e73.js",
-          "./dist/cjs/web-audio-debugger-868e9e73.js.map",
+          "./dist/cjs/web-audio-debugger-26d07a9f.js",
+          "./dist/cjs/web-audio-debugger-26d07a9f.js.map",
           "./dist/cjs/web-audio-debugger.cjs.entry.js",
           "./dist/cjs/web-audio-debugger.cjs.entry.js.map",
           "./dist/cjs/web-audio-effect.cjs.entry.js",
@@ -214,10 +205,10 @@
           "./dist/esm/helpers-f689eca3.js.map",
           "./dist/esm/helpers-fb5372c9.js",
           "./dist/esm/helpers-fb5372c9.js.map",
+          "./dist/esm/index-1488f973.js",
+          "./dist/esm/index-1488f973.js.map",
           "./dist/esm/index-ce34695c.js",
           "./dist/esm/index-ce34695c.js.map",
-          "./dist/esm/index-eb5239e3.js",
-          "./dist/esm/index-eb5239e3.js.map",
           "./dist/esm/index.js",
           "./dist/esm/index.js.map",
           "./dist/esm/ion-icon.entry.js",
@@ -250,8 +241,8 @@
           "./dist/esm/skeleton-img_2.entry.js.map",
           "./dist/esm/skeleton-text.entry.js",
           "./dist/esm/skeleton-text.entry.js.map",
-          "./dist/esm/web-audio-debugger-e05c6353.js",
-          "./dist/esm/web-audio-debugger-e05c6353.js.map",
+          "./dist/esm/web-audio-debugger-eb68591e.js",
+          "./dist/esm/web-audio-debugger-eb68591e.js.map",
           "./dist/esm/web-audio-debugger.entry.js",
           "./dist/esm/web-audio-debugger.entry.js.map",
           "./dist/esm/web-audio-effect.entry.js",
@@ -268,114 +259,114 @@
           "./dist/media/index.esm.js.map",
           "./dist/media/media.esm.js",
           "./dist/media/media.esm.js.map",
-          "./dist/media/p-05d2fbd0.entry.js",
-          "./dist/media/p-05d2fbd0.entry.js.map",
-          "./dist/media/p-14f0afe1.entry.js",
-          "./dist/media/p-14f0afe1.entry.js.map",
-          "./dist/media/p-16903adf.entry.js",
-          "./dist/media/p-16903adf.entry.js.map",
-          "./dist/media/p-1f037712.entry.js",
-          "./dist/media/p-1f037712.entry.js.map",
-          "./dist/media/p-4b963aec.entry.js",
-          "./dist/media/p-4b963aec.entry.js.map",
+          "./dist/media/p-01b0faf8.entry.js",
+          "./dist/media/p-01b0faf8.entry.js.map",
+          "./dist/media/p-049cc99b.entry.js",
+          "./dist/media/p-049cc99b.entry.js.map",
+          "./dist/media/p-0f122cd8.entry.js",
+          "./dist/media/p-0f122cd8.entry.js.map",
+          "./dist/media/p-1c325254.entry.js",
+          "./dist/media/p-1c325254.entry.js.map",
+          "./dist/media/p-28ba1795.entry.js",
+          "./dist/media/p-28ba1795.entry.js.map",
+          "./dist/media/p-3356e686.entry.js",
+          "./dist/media/p-3356e686.entry.js.map",
+          "./dist/media/p-3a64cfc3.entry.js",
+          "./dist/media/p-3a64cfc3.entry.js.map",
+          "./dist/media/p-41bd01e1.entry.js",
+          "./dist/media/p-41bd01e1.entry.js.map",
+          "./dist/media/p-4479b7df.js",
+          "./dist/media/p-4479b7df.js.map",
+          "./dist/media/p-4a3e48dc.entry.js",
+          "./dist/media/p-4a3e48dc.entry.js.map",
+          "./dist/media/p-567f6f41.entry.js",
+          "./dist/media/p-567f6f41.entry.js.map",
           "./dist/media/p-5903483d.js",
           "./dist/media/p-5903483d.js.map",
-          "./dist/media/p-6f4f772f.entry.js",
-          "./dist/media/p-6f4f772f.entry.js.map",
+          "./dist/media/p-5bedf06c.entry.js",
+          "./dist/media/p-5bedf06c.entry.js.map",
+          "./dist/media/p-66023a9c.entry.js",
+          "./dist/media/p-66023a9c.entry.js.map",
+          "./dist/media/p-6ab84bd3.entry.js",
+          "./dist/media/p-6ab84bd3.entry.js.map",
           "./dist/media/p-73c11cad.js",
           "./dist/media/p-73c11cad.js.map",
-          "./dist/media/p-7acdf3c2.entry.js",
-          "./dist/media/p-7acdf3c2.entry.js.map",
-          "./dist/media/p-8796c3c8.entry.js",
-          "./dist/media/p-8796c3c8.entry.js.map",
           "./dist/media/p-98a4926c.js",
           "./dist/media/p-98a4926c.js.map",
-          "./dist/media/p-9a52c210.js",
-          "./dist/media/p-9a52c210.js.map",
           "./dist/media/p-9f7e214d.js",
           "./dist/media/p-9f7e214d.js.map",
-          "./dist/media/p-a4f9db0d.entry.js",
-          "./dist/media/p-a4f9db0d.entry.js.map",
           "./dist/media/p-a577e61e.js",
           "./dist/media/p-a577e61e.js.map",
-          "./dist/media/p-b167a6ef.entry.js",
-          "./dist/media/p-b167a6ef.entry.js.map",
+          "./dist/media/p-a9427bd4.entry.js",
+          "./dist/media/p-a9427bd4.entry.js.map",
+          "./dist/media/p-b103ac53.entry.js",
+          "./dist/media/p-b103ac53.entry.js.map",
+          "./dist/media/p-b3f4479e.js",
+          "./dist/media/p-b3f4479e.js.map",
           "./dist/media/p-b46e1302.js",
           "./dist/media/p-b46e1302.js.map",
-          "./dist/media/p-c49c1a5f.entry.js",
-          "./dist/media/p-c49c1a5f.entry.js.map",
-          "./dist/media/p-caa225ae.entry.js",
-          "./dist/media/p-caa225ae.entry.js.map",
-          "./dist/media/p-cf3dd4c8.entry.js",
-          "./dist/media/p-cf3dd4c8.entry.js.map",
-          "./dist/media/p-d5d2efae.js",
-          "./dist/media/p-d5d2efae.js.map",
-          "./dist/media/p-deced9e5.entry.js",
-          "./dist/media/p-deced9e5.entry.js.map",
-          "./dist/media/p-e2412bdc.entry.js",
-          "./dist/media/p-e2412bdc.entry.js.map",
+          "./dist/media/p-cc0790b7.entry.js",
+          "./dist/media/p-cc0790b7.entry.js.map",
           "./dist/media/p-e2c6ae7b.js",
           "./dist/media/p-e2c6ae7b.js.map",
-          "./dist/media/p-e70df386.entry.js",
-          "./dist/media/p-e70df386.entry.js.map",
-          "./dist/media/p-ecd906e5.entry.js",
-          "./dist/media/p-ecd906e5.entry.js.map",
+          "./dist/media/p-fca41468.entry.js",
+          "./dist/media/p-fca41468.entry.js.map",
           "./www/build/index.esm.js",
           "./www/build/index.esm.js.map",
           "./www/build/media.esm.js",
           "./www/build/media.esm.js.map",
-          "./www/build/p-05d2fbd0.entry.js",
-          "./www/build/p-05d2fbd0.entry.js.map",
-          "./www/build/p-14f0afe1.entry.js",
-          "./www/build/p-14f0afe1.entry.js.map",
-          "./www/build/p-16903adf.entry.js",
-          "./www/build/p-16903adf.entry.js.map",
-          "./www/build/p-1f037712.entry.js",
-          "./www/build/p-1f037712.entry.js.map",
-          "./www/build/p-4b963aec.entry.js",
-          "./www/build/p-4b963aec.entry.js.map",
+          "./www/build/p-01b0faf8.entry.js",
+          "./www/build/p-01b0faf8.entry.js.map",
+          "./www/build/p-049cc99b.entry.js",
+          "./www/build/p-049cc99b.entry.js.map",
+          "./www/build/p-0f122cd8.entry.js",
+          "./www/build/p-0f122cd8.entry.js.map",
+          "./www/build/p-1c325254.entry.js",
+          "./www/build/p-1c325254.entry.js.map",
+          "./www/build/p-28ba1795.entry.js",
+          "./www/build/p-28ba1795.entry.js.map",
+          "./www/build/p-3356e686.entry.js",
+          "./www/build/p-3356e686.entry.js.map",
+          "./www/build/p-3a64cfc3.entry.js",
+          "./www/build/p-3a64cfc3.entry.js.map",
+          "./www/build/p-41bd01e1.entry.js",
+          "./www/build/p-41bd01e1.entry.js.map",
+          "./www/build/p-4479b7df.js",
+          "./www/build/p-4479b7df.js.map",
+          "./www/build/p-4a3e48dc.entry.js",
+          "./www/build/p-4a3e48dc.entry.js.map",
+          "./www/build/p-567f6f41.entry.js",
+          "./www/build/p-567f6f41.entry.js.map",
           "./www/build/p-5903483d.js",
           "./www/build/p-5903483d.js.map",
-          "./www/build/p-6f4f772f.entry.js",
-          "./www/build/p-6f4f772f.entry.js.map",
+          "./www/build/p-5bedf06c.entry.js",
+          "./www/build/p-5bedf06c.entry.js.map",
+          "./www/build/p-66023a9c.entry.js",
+          "./www/build/p-66023a9c.entry.js.map",
+          "./www/build/p-6ab84bd3.entry.js",
+          "./www/build/p-6ab84bd3.entry.js.map",
           "./www/build/p-73c11cad.js",
           "./www/build/p-73c11cad.js.map",
-          "./www/build/p-7acdf3c2.entry.js",
-          "./www/build/p-7acdf3c2.entry.js.map",
-          "./www/build/p-8796c3c8.entry.js",
-          "./www/build/p-8796c3c8.entry.js.map",
           "./www/build/p-98a4926c.js",
           "./www/build/p-98a4926c.js.map",
-          "./www/build/p-9a52c210.js",
-          "./www/build/p-9a52c210.js.map",
           "./www/build/p-9f7e214d.js",
           "./www/build/p-9f7e214d.js.map",
-          "./www/build/p-a4f9db0d.entry.js",
-          "./www/build/p-a4f9db0d.entry.js.map",
           "./www/build/p-a577e61e.js",
           "./www/build/p-a577e61e.js.map",
-          "./www/build/p-b167a6ef.entry.js",
-          "./www/build/p-b167a6ef.entry.js.map",
+          "./www/build/p-a9427bd4.entry.js",
+          "./www/build/p-a9427bd4.entry.js.map",
+          "./www/build/p-b103ac53.entry.js",
+          "./www/build/p-b103ac53.entry.js.map",
+          "./www/build/p-b3f4479e.js",
+          "./www/build/p-b3f4479e.js.map",
           "./www/build/p-b46e1302.js",
           "./www/build/p-b46e1302.js.map",
-          "./www/build/p-c49c1a5f.entry.js",
-          "./www/build/p-c49c1a5f.entry.js.map",
-          "./www/build/p-caa225ae.entry.js",
-          "./www/build/p-caa225ae.entry.js.map",
-          "./www/build/p-cf3dd4c8.entry.js",
-          "./www/build/p-cf3dd4c8.entry.js.map",
-          "./www/build/p-d5d2efae.js",
-          "./www/build/p-d5d2efae.js.map",
-          "./www/build/p-deced9e5.entry.js",
-          "./www/build/p-deced9e5.entry.js.map",
-          "./www/build/p-e2412bdc.entry.js",
-          "./www/build/p-e2412bdc.entry.js.map",
+          "./www/build/p-cc0790b7.entry.js",
+          "./www/build/p-cc0790b7.entry.js.map",
           "./www/build/p-e2c6ae7b.js",
           "./www/build/p-e2c6ae7b.js.map",
-          "./www/build/p-e70df386.entry.js",
-          "./www/build/p-e70df386.entry.js.map",
-          "./www/build/p-ecd906e5.entry.js",
-          "./www/build/p-ecd906e5.entry.js.map"
+          "./www/build/p-fca41468.entry.js",
+          "./www/build/p-fca41468.entry.js.map"
         ]
       },
       {
@@ -409,10 +400,10 @@
         "components": [
           "midwest-360-image"
         ],
-        "bundleId": "p-e70df386",
-        "fileName": "p-e70df386.entry.js",
+        "bundleId": "p-5bedf06c",
+        "fileName": "p-5bedf06c.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-e2c6ae7b.js"
         ],
         "originalByteSize": 1260
@@ -422,10 +413,10 @@
         "components": [
           "midwest-360-video"
         ],
-        "bundleId": "p-6f4f772f",
-        "fileName": "p-6f4f772f.entry.js",
+        "bundleId": "p-0f122cd8",
+        "fileName": "p-0f122cd8.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-e2c6ae7b.js"
         ],
         "originalByteSize": 935
@@ -435,10 +426,10 @@
         "components": [
           "midwest-image"
         ],
-        "bundleId": "p-deced9e5",
-        "fileName": "p-deced9e5.entry.js",
+        "bundleId": "p-1c325254",
+        "fileName": "p-1c325254.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-b46e1302.js",
           "p-a577e61e.js"
         ],
@@ -449,10 +440,10 @@
         "components": [
           "midwest-interview"
         ],
-        "bundleId": "p-8796c3c8",
-        "fileName": "p-8796c3c8.entry.js",
+        "bundleId": "p-6ab84bd3",
+        "fileName": "p-6ab84bd3.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-9f7e214d.js",
           "p-5903483d.js",
           "p-b46e1302.js",
@@ -465,10 +456,10 @@
         "components": [
           "midwest-interview-line"
         ],
-        "bundleId": "p-7acdf3c2",
-        "fileName": "p-7acdf3c2.entry.js",
+        "bundleId": "p-a9427bd4",
+        "fileName": "p-a9427bd4.entry.js",
         "imports": [
-          "p-d5d2efae.js"
+          "p-b3f4479e.js"
         ],
         "originalByteSize": 1175
       },
@@ -477,10 +468,10 @@
         "components": [
           "midwest-playlist"
         ],
-        "bundleId": "p-16903adf",
-        "fileName": "p-16903adf.entry.js",
+        "bundleId": "p-b103ac53",
+        "fileName": "p-b103ac53.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-73c11cad.js",
           "p-a577e61e.js"
         ],
@@ -491,10 +482,10 @@
         "components": [
           "midwest-song"
         ],
-        "bundleId": "p-4b963aec",
-        "fileName": "p-4b963aec.entry.js",
+        "bundleId": "p-4a3e48dc",
+        "fileName": "p-4a3e48dc.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-73c11cad.js",
           "p-a577e61e.js"
         ],
@@ -505,10 +496,10 @@
         "components": [
           "midwest-video-interview"
         ],
-        "bundleId": "p-b167a6ef",
-        "fileName": "p-b167a6ef.entry.js",
+        "bundleId": "p-3356e686",
+        "fileName": "p-3356e686.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-9f7e214d.js",
           "p-b46e1302.js",
           "p-a577e61e.js"
@@ -520,10 +511,10 @@
         "components": [
           "skeleton-text"
         ],
-        "bundleId": "p-cf3dd4c8",
-        "fileName": "p-cf3dd4c8.entry.js",
+        "bundleId": "p-66023a9c",
+        "fileName": "p-66023a9c.entry.js",
         "imports": [
-          "p-d5d2efae.js"
+          "p-b3f4479e.js"
         ],
         "originalByteSize": 2581
       },
@@ -532,11 +523,11 @@
         "components": [
           "web-audio-debugger"
         ],
-        "bundleId": "p-c49c1a5f",
-        "fileName": "p-c49c1a5f.entry.js",
+        "bundleId": "p-3a64cfc3",
+        "fileName": "p-3a64cfc3.entry.js",
         "imports": [
-          "p-9a52c210.js",
-          "p-d5d2efae.js"
+          "p-4479b7df.js",
+          "p-b3f4479e.js"
         ],
         "originalByteSize": 159
       },
@@ -545,10 +536,10 @@
         "components": [
           "web-audio-effect"
         ],
-        "bundleId": "p-05d2fbd0",
-        "fileName": "p-05d2fbd0.entry.js",
+        "bundleId": "p-41bd01e1",
+        "fileName": "p-41bd01e1.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-98a4926c.js"
         ],
         "originalByteSize": 5064
@@ -558,10 +549,10 @@
         "components": [
           "web-audio-sequencer"
         ],
-        "bundleId": "p-e2412bdc",
-        "fileName": "p-e2412bdc.entry.js",
+        "bundleId": "p-28ba1795",
+        "fileName": "p-28ba1795.entry.js",
         "imports": [
-          "p-d5d2efae.js"
+          "p-b3f4479e.js"
         ],
         "originalByteSize": 2070
       },
@@ -570,10 +561,10 @@
         "components": [
           "web-audio-visualizer-shader"
         ],
-        "bundleId": "p-14f0afe1",
-        "fileName": "p-14f0afe1.entry.js",
+        "bundleId": "p-fca41468",
+        "fileName": "p-fca41468.entry.js",
         "imports": [
-          "p-d5d2efae.js"
+          "p-b3f4479e.js"
         ],
         "originalByteSize": 341
       },
@@ -582,14 +573,14 @@
         "components": [
           "midwest-video"
         ],
-        "bundleId": "p-1f037712",
-        "fileName": "p-1f037712.entry.js",
+        "bundleId": "p-567f6f41",
+        "fileName": "p-567f6f41.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-5903483d.js",
           "p-a577e61e.js"
         ],
-        "originalByteSize": 4549
+        "originalByteSize": 4598
       },
       {
         "key": "web-audio.web-audio-source.entry",
@@ -597,11 +588,11 @@
           "web-audio",
           "web-audio-source"
         ],
-        "bundleId": "p-ecd906e5",
-        "fileName": "p-ecd906e5.entry.js",
+        "bundleId": "p-049cc99b",
+        "fileName": "p-049cc99b.entry.js",
         "imports": [
-          "p-d5d2efae.js",
-          "p-9a52c210.js",
+          "p-b3f4479e.js",
+          "p-4479b7df.js",
           "p-98a4926c.js",
           "p-a577e61e.js",
           "p-73c11cad.js"
@@ -614,10 +605,10 @@
           "skeleton-img",
           "web-audio-visualizer"
         ],
-        "bundleId": "p-a4f9db0d",
-        "fileName": "p-a4f9db0d.entry.js",
+        "bundleId": "p-01b0faf8",
+        "fileName": "p-01b0faf8.entry.js",
         "imports": [
-          "p-d5d2efae.js",
+          "p-b3f4479e.js",
           "p-73c11cad.js",
           "p-a577e61e.js"
         ],
@@ -628,12 +619,12 @@
         "components": [
           "ion-icon"
         ],
-        "bundleId": "p-caa225ae",
-        "fileName": "p-caa225ae.entry.js",
+        "bundleId": "p-cc0790b7",
+        "fileName": "p-cc0790b7.entry.js",
         "imports": [
-          "p-d5d2efae.js"
+          "p-b3f4479e.js"
         ],
-        "originalByteSize": 9088
+        "originalByteSize": 10606
       }
     ],
     "esm": [
@@ -645,7 +636,7 @@
         "bundleId": "midwest-360-image",
         "fileName": "midwest-360-image.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "kaleidoscope.es-6388c93b.js"
         ],
         "originalByteSize": 1278
@@ -658,7 +649,7 @@
         "bundleId": "midwest-360-video",
         "fileName": "midwest-360-video.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "kaleidoscope.es-6388c93b.js"
         ],
         "originalByteSize": 953
@@ -671,7 +662,7 @@
         "bundleId": "midwest-image",
         "fileName": "midwest-image.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "index-ce34695c.js",
           "_commonjsHelpers-26a50a15.js"
         ],
@@ -685,7 +676,7 @@
         "bundleId": "midwest-interview",
         "fileName": "midwest-interview.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "helpers-f689eca3.js",
           "css-custom-properties.min-8ef2b0ba.js",
           "index-ce34695c.js",
@@ -701,7 +692,7 @@
         "bundleId": "midwest-interview-line",
         "fileName": "midwest-interview-line.entry.js",
         "imports": [
-          "index-eb5239e3.js"
+          "index-1488f973.js"
         ],
         "originalByteSize": 1179
       },
@@ -713,7 +704,7 @@
         "bundleId": "midwest-playlist",
         "fileName": "midwest-playlist.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "colors-617abcaf.js",
           "_commonjsHelpers-26a50a15.js"
         ],
@@ -727,7 +718,7 @@
         "bundleId": "midwest-song",
         "fileName": "midwest-song.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "colors-617abcaf.js",
           "_commonjsHelpers-26a50a15.js"
         ],
@@ -741,7 +732,7 @@
         "bundleId": "midwest-video-interview",
         "fileName": "midwest-video-interview.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "helpers-f689eca3.js",
           "index-ce34695c.js",
           "_commonjsHelpers-26a50a15.js"
@@ -756,7 +747,7 @@
         "bundleId": "skeleton-text",
         "fileName": "skeleton-text.entry.js",
         "imports": [
-          "index-eb5239e3.js"
+          "index-1488f973.js"
         ],
         "originalByteSize": 2585
       },
@@ -768,8 +759,8 @@
         "bundleId": "web-audio-debugger",
         "fileName": "web-audio-debugger.entry.js",
         "imports": [
-          "web-audio-debugger-e05c6353.js",
-          "index-eb5239e3.js"
+          "web-audio-debugger-eb68591e.js",
+          "index-1488f973.js"
         ],
         "originalByteSize": 180
       },
@@ -781,7 +772,7 @@
         "bundleId": "web-audio-effect",
         "fileName": "web-audio-effect.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "helpers-fb5372c9.js"
         ],
         "originalByteSize": 5074
@@ -794,7 +785,7 @@
         "bundleId": "web-audio-sequencer",
         "fileName": "web-audio-sequencer.entry.js",
         "imports": [
-          "index-eb5239e3.js"
+          "index-1488f973.js"
         ],
         "originalByteSize": 2074
       },
@@ -806,7 +797,7 @@
         "bundleId": "web-audio-visualizer-shader",
         "fileName": "web-audio-visualizer-shader.entry.js",
         "imports": [
-          "index-eb5239e3.js"
+          "index-1488f973.js"
         ],
         "originalByteSize": 345
       },
@@ -818,11 +809,11 @@
         "bundleId": "midwest-video",
         "fileName": "midwest-video.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "css-custom-properties.min-8ef2b0ba.js",
           "_commonjsHelpers-26a50a15.js"
         ],
-        "originalByteSize": 4592
+        "originalByteSize": 4641
       },
       {
         "key": "web-audio.web-audio-source.entry",
@@ -833,8 +824,8 @@
         "bundleId": "web-audio_2",
         "fileName": "web-audio_2.entry.js",
         "imports": [
-          "index-eb5239e3.js",
-          "web-audio-debugger-e05c6353.js",
+          "index-1488f973.js",
+          "web-audio-debugger-eb68591e.js",
           "helpers-fb5372c9.js",
           "_commonjsHelpers-26a50a15.js",
           "colors-617abcaf.js"
@@ -850,7 +841,7 @@
         "bundleId": "skeleton-img_2",
         "fileName": "skeleton-img_2.entry.js",
         "imports": [
-          "index-eb5239e3.js",
+          "index-1488f973.js",
           "colors-617abcaf.js",
           "_commonjsHelpers-26a50a15.js"
         ],
@@ -864,9 +855,9 @@
         "bundleId": "ion-icon",
         "fileName": "ion-icon.entry.js",
         "imports": [
-          "index-eb5239e3.js"
+          "index-1488f973.js"
         ],
-        "originalByteSize": 9092
+        "originalByteSize": 10610
       }
     ],
     "es5": [],
@@ -880,7 +871,7 @@
         "bundleId": "midwest-360-image.cjs",
         "fileName": "midwest-360-image.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "kaleidoscope.es-78649ee3.js"
         ],
         "originalByteSize": 1382
@@ -893,7 +884,7 @@
         "bundleId": "midwest-360-video.cjs",
         "fileName": "midwest-360-video.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "kaleidoscope.es-78649ee3.js"
         ],
         "originalByteSize": 1040
@@ -906,7 +897,7 @@
         "bundleId": "midwest-image.cjs",
         "fileName": "midwest-image.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "index-b3ec0b83.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
@@ -920,7 +911,7 @@
         "bundleId": "midwest-interview.cjs",
         "fileName": "midwest-interview.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "helpers-8a5bcc29.js",
           "css-custom-properties.min-36ba1d6c.js",
           "index-b3ec0b83.js",
@@ -936,7 +927,7 @@
         "bundleId": "midwest-interview-line.cjs",
         "fileName": "midwest-interview-line.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js"
+          "index-db43a374.js"
         ],
         "originalByteSize": 1249
       },
@@ -948,7 +939,7 @@
         "bundleId": "midwest-playlist.cjs",
         "fileName": "midwest-playlist.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "colors-d71cfd71.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
@@ -962,7 +953,7 @@
         "bundleId": "midwest-song.cjs",
         "fileName": "midwest-song.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "colors-d71cfd71.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
@@ -976,7 +967,7 @@
         "bundleId": "midwest-video-interview.cjs",
         "fileName": "midwest-video-interview.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "helpers-8a5bcc29.js",
           "index-b3ec0b83.js",
           "_commonjsHelpers-b2f405b5.js"
@@ -991,7 +982,7 @@
         "bundleId": "skeleton-text.cjs",
         "fileName": "skeleton-text.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js"
+          "index-db43a374.js"
         ],
         "originalByteSize": 2650
       },
@@ -1003,8 +994,8 @@
         "bundleId": "web-audio-debugger.cjs",
         "fileName": "web-audio-debugger.cjs.entry.js",
         "imports": [
-          "web-audio-debugger-868e9e73.js",
-          "index-c31ba577.js"
+          "web-audio-debugger-26d07a9f.js",
+          "index-db43a374.js"
         ],
         "originalByteSize": 322
       },
@@ -1016,7 +1007,7 @@
         "bundleId": "web-audio-effect.cjs",
         "fileName": "web-audio-effect.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "helpers-29f42b79.js"
         ],
         "originalByteSize": 5134
@@ -1029,7 +1020,7 @@
         "bundleId": "web-audio-sequencer.cjs",
         "fileName": "web-audio-sequencer.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js"
+          "index-db43a374.js"
         ],
         "originalByteSize": 2140
       },
@@ -1041,7 +1032,7 @@
         "bundleId": "web-audio-visualizer-shader.cjs",
         "fileName": "web-audio-visualizer-shader.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js"
+          "index-db43a374.js"
         ],
         "originalByteSize": 411
       },
@@ -1053,11 +1044,11 @@
         "bundleId": "midwest-video.cjs",
         "fileName": "midwest-video.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "css-custom-properties.min-36ba1d6c.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
-        "originalByteSize": 4704
+        "originalByteSize": 4753
       },
       {
         "key": "web-audio.web-audio-source.entry",
@@ -1068,8 +1059,8 @@
         "bundleId": "web-audio_2.cjs",
         "fileName": "web-audio_2.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
-          "web-audio-debugger-868e9e73.js",
+          "index-db43a374.js",
+          "web-audio-debugger-26d07a9f.js",
           "helpers-29f42b79.js",
           "_commonjsHelpers-b2f405b5.js",
           "colors-d71cfd71.js"
@@ -1085,7 +1076,7 @@
         "bundleId": "skeleton-img_2.cjs",
         "fileName": "skeleton-img_2.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js",
+          "index-db43a374.js",
           "colors-d71cfd71.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
@@ -1099,9 +1090,9 @@
         "bundleId": "ion-icon.cjs",
         "fileName": "ion-icon.cjs.entry.js",
         "imports": [
-          "index-c31ba577.js"
+          "index-db43a374.js"
         ],
-        "originalByteSize": 9144
+        "originalByteSize": 10662
       }
     ]
   },
@@ -1186,44 +1177,6 @@
           "docs": {
             "tags": [],
             "text": "The color to use for the background of the item."
-          },
-          "internal": false
-        },
-        {
-          "name": "ariaLabel",
-          "type": "string",
-          "attribute": "aria-label",
-          "reflect": true,
-          "mutable": true,
-          "required": false,
-          "optional": true,
-          "complexType": {
-            "original": "string",
-            "resolved": "string | undefined",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "Specifies the label to use for accessibility. Defaults to the icon name."
-          },
-          "internal": false
-        },
-        {
-          "name": "ariaHidden",
-          "type": "string",
-          "attribute": "aria-hidden",
-          "reflect": true,
-          "mutable": false,
-          "required": false,
-          "optional": true,
-          "complexType": {
-            "original": "string",
-            "resolved": "string | undefined",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "Set the icon to hidden, respectively `true`, to remove it from the accessibility tree."
           },
           "internal": false
         },
@@ -1413,6 +1366,9 @@
         },
         {
           "name": "isVisible"
+        },
+        {
+          "name": "ariaLabel"
         }
       ]
     },
@@ -11353,44 +11309,6 @@
               "internal": false
             },
             {
-              "name": "ariaLabel",
-              "type": "string",
-              "attribute": "aria-label",
-              "reflect": true,
-              "mutable": true,
-              "required": false,
-              "optional": true,
-              "complexType": {
-                "original": "string",
-                "resolved": "string | undefined",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Specifies the label to use for accessibility. Defaults to the icon name."
-              },
-              "internal": false
-            },
-            {
-              "name": "ariaHidden",
-              "type": "string",
-              "attribute": "aria-hidden",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": true,
-              "complexType": {
-                "original": "string",
-                "resolved": "string | undefined",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Set the icon to hidden, respectively `true`, to remove it from the accessibility tree."
-              },
-              "internal": false
-            },
-            {
               "name": "ios",
               "type": "string",
               "attribute": "ios",
@@ -11576,6 +11494,9 @@
             },
             {
               "name": "isVisible"
+            },
+            {
+              "name": "ariaLabel"
             }
           ],
           "methods": [],
@@ -11629,7 +11550,7 @@
           "sourceFilePath": "/Users/will/Sites/midwest/node_modules/ionicons/dist/collection/components/icon/icon.js",
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
+          "hasComponentWillLoadFn": true,
           "hasComponentDidLoadFn": false,
           "hasComponentShouldUpdateFn": false,
           "hasComponentWillUpdateFn": false,
@@ -11641,7 +11562,7 @@
           "hasDisconnectedCallbackFn": true,
           "hasElement": false,
           "hasEvent": false,
-          "hasLifecycle": false,
+          "hasLifecycle": true,
           "hasListener": false,
           "hasListenerTarget": false,
           "hasListenerTargetWindow": false,
@@ -11662,20 +11583,19 @@
           "hasState": true,
           "hasStyle": true,
           "hasVdomAttribute": true,
-          "hasVdomXlink": false,
+          "hasVdomXlink": true,
           "hasVdomClass": true,
           "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
+          "hasVdomKey": true,
+          "hasVdomListener": true,
           "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
+          "hasVdomRef": true,
           "hasVdomRender": true,
-          "hasVdomStyle": false,
+          "hasVdomStyle": true,
           "hasVdomText": true,
           "hasWatchCallback": true,
           "isPlain": false,
           "htmlAttrNames": [
-            "role",
             "class",
             "innerHTML"
           ],
@@ -11709,92 +11629,92 @@
   ],
   "componentGraph": {
     "sc-ion-icon": [
-      "p-d5d2efae.js"
+      "p-b3f4479e.js"
     ],
     "sc-midwest-360-image": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-e2c6ae7b.js"
     ],
     "sc-midwest-360-video": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-e2c6ae7b.js"
     ],
     "sc-midwest-image": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-b46e1302.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-interview": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-9f7e214d.js",
       "p-5903483d.js",
       "p-b46e1302.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-interview-line": [
-      "p-d5d2efae.js"
+      "p-b3f4479e.js"
     ],
     "sc-midwest-playlist": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-73c11cad.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-song": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-73c11cad.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-video": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-5903483d.js",
       "p-a577e61e.js"
     ],
     "sc-midwest-video-interview": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-9f7e214d.js",
       "p-b46e1302.js",
       "p-a577e61e.js"
     ],
     "sc-skeleton-img": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-73c11cad.js",
       "p-a577e61e.js"
     ],
     "sc-skeleton-text": [
-      "p-d5d2efae.js"
+      "p-b3f4479e.js"
     ],
     "sc-web-audio": [
-      "p-d5d2efae.js",
-      "p-9a52c210.js",
+      "p-b3f4479e.js",
+      "p-4479b7df.js",
       "p-98a4926c.js",
       "p-a577e61e.js",
       "p-73c11cad.js"
     ],
     "sc-web-audio-debugger": [
-      "p-9a52c210.js",
-      "p-d5d2efae.js"
+      "p-4479b7df.js",
+      "p-b3f4479e.js"
     ],
     "sc-web-audio-effect": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-98a4926c.js"
     ],
     "sc-web-audio-sequencer": [
-      "p-d5d2efae.js"
+      "p-b3f4479e.js"
     ],
     "sc-web-audio-source": [
-      "p-d5d2efae.js",
-      "p-9a52c210.js",
+      "p-b3f4479e.js",
+      "p-4479b7df.js",
       "p-98a4926c.js",
       "p-a577e61e.js",
       "p-73c11cad.js"
     ],
     "sc-web-audio-visualizer": [
-      "p-d5d2efae.js",
+      "p-b3f4479e.js",
       "p-73c11cad.js",
       "p-a577e61e.js"
     ],
     "sc-web-audio-visualizer-shader": [
-      "p-d5d2efae.js"
+      "p-b3f4479e.js"
     ]
   },
   "sourceGraph": {

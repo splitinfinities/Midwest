@@ -1,6 +1,6 @@
 import { Component, Host, Prop, h } from '@stencil/core';
 import convert from 'convert-units';
-import roundTo from 'round-to';
+import { roundTo } from 'round-to';
 
 @Component({
   tag: 'midwest-unit'

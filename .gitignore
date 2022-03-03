@@ -6,3 +6,4 @@ lerna-debug.log
 documentation.json
 custom-elements.json
 packages/core/tests
+.yarn

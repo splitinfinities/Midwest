@@ -6,9 +6,13 @@ import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 import { Components } from '@midwest-design/export-to-figma';
 
 
+
+
 export declare interface ExampleNoShadow extends Components.ExampleNoShadow {}
 
-
+@ProxyCmp({
+  defineCustomElementFn: undefined
+})
 @Component({
   selector: 'example-no-shadow',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -25,7 +29,9 @@ export class ExampleNoShadow {
 
 export declare interface ExampleWithShadow extends Components.ExampleWithShadow {}
 
-
+@ProxyCmp({
+  defineCustomElementFn: undefined
+})
 @Component({
   selector: 'example-with-shadow',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -43,6 +49,7 @@ export class ExampleWithShadow {
 export declare interface ExportToFigma extends Components.ExportToFigma {}
 
 @ProxyCmp({
+  defineCustomElementFn: undefined,
   inputs: ['element', 'noKey'],
   methods: ['export']
 })

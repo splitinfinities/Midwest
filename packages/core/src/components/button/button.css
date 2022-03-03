@@ -157,6 +157,7 @@
 :host([icon-only]) .button,
 :host([only-icon]) .button {
   grid-template-columns: auto;
+  grid-gap: 0;
 }
 
 :host([icon-only]) ::slotted([slot="icon"]),

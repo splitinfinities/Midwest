@@ -79,7 +79,7 @@ export class FieldGroup {
         const result = await element.validate(validate);
         namedResults[result.name] = result.value;
         results.push(result);
-      } catch (e) {
+      } catch (e: any) {
         namedResults[`${element.name}`] = undefined;
         results.push({
           name: `${element.name}`,
