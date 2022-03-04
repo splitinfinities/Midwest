@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.3 (2022-03-04)</small>
+
+**Note:** Version bump only for package @midwest-design/angular
+
+
+
+
+
 ## <small>0.1.2 (2022-03-03)</small>
 
 * build: Allow angular to be public ([5f195ad](https://github.com/splitinfinities/Midwest/commit/5f195ad))
