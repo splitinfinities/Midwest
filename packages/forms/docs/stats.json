@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-03-04T00:09:01",
+  "timestamp": "2022-03-04T00:25:53",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -499,6 +499,8 @@
           "./dist/forms/p-295ef69b.entry.js.map",
           "./dist/forms/p-3318dc3c.entry.js",
           "./dist/forms/p-3318dc3c.entry.js.map",
+          "./dist/forms/p-347478d5.entry.js",
+          "./dist/forms/p-347478d5.entry.js.map",
           "./dist/forms/p-3ca5c20c.entry.js",
           "./dist/forms/p-3ca5c20c.entry.js.map",
           "./dist/forms/p-3fd90676.entry.js",
@@ -553,8 +555,6 @@
           "./dist/forms/p-a29c3a48.entry.js.map",
           "./dist/forms/p-a58d2d81.js",
           "./dist/forms/p-a58d2d81.js.map",
-          "./dist/forms/p-afdcba8a.entry.js",
-          "./dist/forms/p-afdcba8a.entry.js.map",
           "./dist/forms/p-c76a0077.entry.js",
           "./dist/forms/p-c76a0077.entry.js.map",
           "./dist/forms/p-cf105836.entry.js",
@@ -613,6 +613,8 @@
           "./www/build/p-295ef69b.entry.js.map",
           "./www/build/p-3318dc3c.entry.js",
           "./www/build/p-3318dc3c.entry.js.map",
+          "./www/build/p-347478d5.entry.js",
+          "./www/build/p-347478d5.entry.js.map",
           "./www/build/p-3ca5c20c.entry.js",
           "./www/build/p-3ca5c20c.entry.js.map",
           "./www/build/p-3fd90676.entry.js",
@@ -667,8 +669,6 @@
           "./www/build/p-a29c3a48.entry.js.map",
           "./www/build/p-a58d2d81.js",
           "./www/build/p-a58d2d81.js.map",
-          "./www/build/p-afdcba8a.entry.js",
-          "./www/build/p-afdcba8a.entry.js.map",
           "./www/build/p-c76a0077.entry.js",
           "./www/build/p-c76a0077.entry.js.map",
           "./www/build/p-cf105836.entry.js",
@@ -890,8 +890,8 @@
         "components": [
           "midwest-form"
         ],
-        "bundleId": "p-afdcba8a",
-        "fileName": "p-afdcba8a.entry.js",
+        "bundleId": "p-347478d5",
+        "fileName": "p-347478d5.entry.js",
         "imports": [
           "p-65f37d00.js",
           "p-4af0a0ee.js",
@@ -901,7 +901,7 @@
           "p-16f1b7c0.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 8456
+        "originalByteSize": 8459
       },
       {
         "key": "midwest-input-file.entry",
@@ -1573,7 +1573,7 @@
           "index-216e665c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 8502
+        "originalByteSize": 8505
       },
       {
         "key": "midwest-input-file.entry",
@@ -2247,7 +2247,7 @@
           "index-73a2de1e.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 8635
+        "originalByteSize": 8638
       },
       {
         "key": "midwest-input-file.entry",
@@ -19700,7 +19700,7 @@
           "hasVdomKey": false,
           "hasVdomListener": true,
           "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
+          "hasVdomRef": true,
           "hasVdomRender": true,
           "hasVdomStyle": true,
           "hasVdomText": true,
@@ -19716,6 +19716,7 @@
             "name",
             "novalidate",
             "target",
+            "ref",
             "onSubmit",
             "type",
             "class"

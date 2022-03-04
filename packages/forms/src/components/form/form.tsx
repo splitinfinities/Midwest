@@ -39,6 +39,7 @@ export class Form {
   @State() submitting: boolean;
 
   autosaveEl: any;
+  formEl: HTMLFormElement;
   els: HTMLElement[] = [];
   fieldGroups: HTMLMidwestFieldGroupElement[] = [];
 
@@ -229,9 +230,8 @@ export class Form {
         if (this.ajax) {
           this.submitted.emit(state);
         } else {
-          const form = this.element.querySelector('form');
-          addDataToForm(form, state.namedResults);
-          form.submit();
+          addDataToForm(this.formEl, state.namedResults);
+          this.formEl.submit();
         }
 
         if (this.closeModalOnSuccess && !this.error) {
@@ -262,6 +262,9 @@ export class Form {
           novalidate={!!this.validate}
           target={this.target}
           style={{ margin: '0' }}
+          ref={el => {
+            this.formEl = el;
+          }}
           onSubmit={e => {
             e.preventDefault();
             this.submitForm();
