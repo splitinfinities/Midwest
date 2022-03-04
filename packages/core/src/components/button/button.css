@@ -149,19 +149,19 @@
   --padding-horizontal: 1.5em;
 }
 
-:host([icon-only]),
-:host([only-icon]) {
+:host([icon][icon-only]),
+:host([icon][only-icon]) {
   --padding: var(--padding-vertical);
 }
 
-:host([icon-only]) .button,
-:host([only-icon]) .button {
+:host([icon][icon-only]) .button,
+:host([icon][only-icon]) .button {
   grid-template-columns: auto;
   grid-gap: 0;
 }
 
-:host([icon-only]) ::slotted([slot="icon"]),
-:host([only-icon]) ::slotted([slot="icon"]) {
+:host([icon][icon-only]) ::slotted([slot="icon"]),
+:host([icon][only-icon]) ::slotted([slot="icon"]) {
   margin: 0;
 }
 
