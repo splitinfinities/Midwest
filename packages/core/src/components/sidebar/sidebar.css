@@ -1,0 +1,30 @@
+:host {
+  display: grid;
+  grid-template-columns: 7.5rem;
+  background-color: var(--gray-12);
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:host .sidebar-wrap {
+  grid-template-columns: 7.5rem;
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  display: grid;
+  align-content: flex-start;
+}
+
+:host(.db) .sidebar-wrap {
+  display: block;
+}
+
+:host ::slotted(*) {
+  color: var(--gray-9);
+  width: 100%;
+  max-width: 100%;
+}
+
+:host([dark]) {
+  background-color: var(--theme-7);
+}

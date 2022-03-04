@@ -282,7 +282,15 @@
       },
       "attributes": [
         {
+          "name": "activate",
+          "description": ""
+        },
+        {
           "name": "active",
+          "description": ""
+        },
+        {
+          "name": "authenticity-token",
           "description": ""
         },
         {
@@ -291,6 +299,10 @@
         },
         {
           "name": "button-tab-index",
+          "description": ""
+        },
+        {
+          "name": "circle",
           "description": ""
         },
         {
@@ -342,6 +354,27 @@
           "description": ""
         },
         {
+          "name": "method",
+          "description": "",
+          "values": [
+            {
+              "name": "delete"
+            },
+            {
+              "name": "get"
+            },
+            {
+              "name": "patch"
+            },
+            {
+              "name": "post"
+            },
+            {
+              "name": "put"
+            }
+          ]
+        },
+        {
           "name": "modal-href",
           "description": ""
         },
@@ -357,6 +390,9 @@
           "name": "padding",
           "description": "",
           "values": [
+            {
+              "name": "default"
+            },
             {
               "name": "large"
             },
@@ -385,9 +421,28 @@
           "description": ""
         },
         {
+          "name": "side-effect",
+          "description": "",
+          "values": [
+            {
+              "name": "close-modal"
+            },
+            {
+              "name": "copy"
+            }
+          ]
+        },
+        {
+          "name": "sidebar",
+          "description": ""
+        },
+        {
           "name": "size",
           "description": "",
           "values": [
+            {
+              "name": "default"
+            },
             {
               "name": "large"
             },
@@ -398,6 +453,10 @@
               "name": "tiny"
             }
           ]
+        },
+        {
+          "name": "stop-propagation",
+          "description": ""
         },
         {
           "name": "tag",
@@ -1136,6 +1195,29 @@
       ]
     },
     {
+      "name": "midwest-panel",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "close-on-blur",
+          "description": ""
+        },
+        {
+          "name": "hide-close",
+          "description": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/panel/panel.tsx"
+        }
+      ]
+    },
+    {
       "name": "midwest-progress",
       "description": {
         "kind": "markdown",
@@ -1183,6 +1265,20 @@
         {
           "name": "Source code",
           "url": "./https:/github.com/splitinfinities/midwest/src/components/progress/progress.tsx"
+        }
+      ]
+    },
+    {
+      "name": "midwest-sidebar",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [],
+      "references": [
+        {
+          "name": "Source code",
+          "url": "./https:/github.com/splitinfinities/midwest/src/components/sidebar/sidebar.tsx"
         }
       ]
     },

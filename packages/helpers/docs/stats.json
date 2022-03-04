@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-03-04T00:25:51",
+  "timestamp": "2022-03-04T05:50:59",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -7,9 +7,9 @@
   "app": {
     "namespace": "helpers",
     "fsNamespace": "helpers",
-    "components": 51,
-    "entries": 51,
-    "bundles": 652,
+    "components": 53,
+    "entries": 53,
+    "bundles": 672,
     "outputs": [
       {
         "name": "dist-collection",
@@ -61,7 +61,7 @@
       },
       {
         "name": "dist-custom-elements",
-        "files": 169,
+        "files": 173,
         "generatedFiles": [
           "./dist/custom-elements/_commonjsHelpers.js",
           "./dist/custom-elements/_commonjsHelpers.js.map",
@@ -198,11 +198,15 @@
           "./dist/custom-elements/midwest-onboarding.js.map",
           "./dist/custom-elements/midwest-pagination.js",
           "./dist/custom-elements/midwest-pagination.js.map",
+          "./dist/custom-elements/midwest-panel.js",
+          "./dist/custom-elements/midwest-panel.js.map",
           "./dist/custom-elements/midwest-pjax.d.ts",
           "./dist/custom-elements/midwest-pjax.js",
           "./dist/custom-elements/midwest-pjax.js.map",
           "./dist/custom-elements/midwest-progress.js",
           "./dist/custom-elements/midwest-progress.js.map",
+          "./dist/custom-elements/midwest-sidebar.js",
+          "./dist/custom-elements/midwest-sidebar.js.map",
           "./dist/custom-elements/midwest-step.js",
           "./dist/custom-elements/midwest-step.js.map",
           "./dist/custom-elements/midwest-steps.js",
@@ -236,7 +240,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 438,
+        "files": 454,
         "generatedFiles": [
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js",
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js.map",
@@ -330,8 +334,12 @@
           "./dist/cjs/midwest-onboarding.cjs.entry.js.map",
           "./dist/cjs/midwest-pagination.cjs.entry.js",
           "./dist/cjs/midwest-pagination.cjs.entry.js.map",
+          "./dist/cjs/midwest-panel.cjs.entry.js",
+          "./dist/cjs/midwest-panel.cjs.entry.js.map",
           "./dist/cjs/midwest-pjax.cjs.entry.js",
           "./dist/cjs/midwest-pjax.cjs.entry.js.map",
+          "./dist/cjs/midwest-sidebar.cjs.entry.js",
+          "./dist/cjs/midwest-sidebar.cjs.entry.js.map",
           "./dist/cjs/midwest-step.cjs.entry.js",
           "./dist/cjs/midwest-step.cjs.entry.js.map",
           "./dist/cjs/midwest-steps.cjs.entry.js",
@@ -440,8 +448,12 @@
           "./dist/esm/midwest-onboarding.entry.js.map",
           "./dist/esm/midwest-pagination.entry.js",
           "./dist/esm/midwest-pagination.entry.js.map",
+          "./dist/esm/midwest-panel.entry.js",
+          "./dist/esm/midwest-panel.entry.js.map",
           "./dist/esm/midwest-pjax.entry.js",
           "./dist/esm/midwest-pjax.entry.js.map",
+          "./dist/esm/midwest-sidebar.entry.js",
+          "./dist/esm/midwest-sidebar.entry.js.map",
           "./dist/esm/midwest-step.entry.js",
           "./dist/esm/midwest-step.entry.js.map",
           "./dist/esm/midwest-steps.entry.js",
@@ -488,6 +500,8 @@
           "./dist/helpers/p-30bbbabc.entry.js.map",
           "./dist/helpers/p-38ee53c6.js",
           "./dist/helpers/p-38ee53c6.js.map",
+          "./dist/helpers/p-3937d597.entry.js",
+          "./dist/helpers/p-3937d597.entry.js.map",
           "./dist/helpers/p-3e0d9a0a.entry.js",
           "./dist/helpers/p-3e0d9a0a.entry.js.map",
           "./dist/helpers/p-43af556b.entry.js",
@@ -514,6 +528,8 @@
           "./dist/helpers/p-676af339.js.map",
           "./dist/helpers/p-67c75b26.entry.js",
           "./dist/helpers/p-67c75b26.entry.js.map",
+          "./dist/helpers/p-703a09e1.entry.js",
+          "./dist/helpers/p-703a09e1.entry.js.map",
           "./dist/helpers/p-7a17504b.entry.js",
           "./dist/helpers/p-7a17504b.entry.js.map",
           "./dist/helpers/p-8ddd87c7.entry.js",
@@ -538,10 +554,10 @@
           "./dist/helpers/p-b239c758.entry.js.map",
           "./dist/helpers/p-b2f92065.entry.js",
           "./dist/helpers/p-b2f92065.entry.js.map",
-          "./dist/helpers/p-b62f4c50.entry.js",
-          "./dist/helpers/p-b62f4c50.entry.js.map",
           "./dist/helpers/p-b70dd2c7.entry.js",
           "./dist/helpers/p-b70dd2c7.entry.js.map",
+          "./dist/helpers/p-c4bc281d.entry.js",
+          "./dist/helpers/p-c4bc281d.entry.js.map",
           "./dist/helpers/p-c6e15828.entry.js",
           "./dist/helpers/p-c6e15828.entry.js.map",
           "./dist/helpers/p-cd78ee7d.entry.js",
@@ -598,6 +614,8 @@
           "./www/build/p-30bbbabc.entry.js.map",
           "./www/build/p-38ee53c6.js",
           "./www/build/p-38ee53c6.js.map",
+          "./www/build/p-3937d597.entry.js",
+          "./www/build/p-3937d597.entry.js.map",
           "./www/build/p-3e0d9a0a.entry.js",
           "./www/build/p-3e0d9a0a.entry.js.map",
           "./www/build/p-43af556b.entry.js",
@@ -624,6 +642,8 @@
           "./www/build/p-676af339.js.map",
           "./www/build/p-67c75b26.entry.js",
           "./www/build/p-67c75b26.entry.js.map",
+          "./www/build/p-703a09e1.entry.js",
+          "./www/build/p-703a09e1.entry.js.map",
           "./www/build/p-7a17504b.entry.js",
           "./www/build/p-7a17504b.entry.js.map",
           "./www/build/p-8ddd87c7.entry.js",
@@ -648,10 +668,10 @@
           "./www/build/p-b239c758.entry.js.map",
           "./www/build/p-b2f92065.entry.js",
           "./www/build/p-b2f92065.entry.js.map",
-          "./www/build/p-b62f4c50.entry.js",
-          "./www/build/p-b62f4c50.entry.js.map",
           "./www/build/p-b70dd2c7.entry.js",
           "./www/build/p-b70dd2c7.entry.js.map",
+          "./www/build/p-c4bc281d.entry.js",
+          "./www/build/p-c4bc281d.entry.js.map",
           "./www/build/p-c6e15828.entry.js",
           "./www/build/p-c6e15828.entry.js.map",
           "./www/build/p-cd78ee7d.entry.js",
@@ -716,17 +736,17 @@
           "midwest-theme",
           "resize-observer"
         ],
-        "bundleId": "p-b62f4c50",
-        "fileName": "p-b62f4c50.entry.js",
+        "bundleId": "p-703a09e1",
+        "fileName": "p-703a09e1.entry.js",
         "imports": [
           "p-38ee53c6.js",
+          "p-16f1b7c0.js",
           "p-4af0a0ee.js",
           "p-176ce63d.js",
           "p-5866cdea.js",
-          "p-16f1b7c0.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 147742
+        "originalByteSize": 154012
       },
       {
         "key": "animated-route-switch.entry",
@@ -1127,6 +1147,18 @@
         "originalByteSize": 9617
       },
       {
+        "key": "midwest-panel.entry",
+        "components": [
+          "midwest-panel"
+        ],
+        "bundleId": "p-c4bc281d",
+        "fileName": "p-c4bc281d.entry.js",
+        "imports": [
+          "p-38ee53c6.js"
+        ],
+        "originalByteSize": 2090
+      },
+      {
         "key": "midwest-pjax.entry",
         "components": [
           "midwest-pjax"
@@ -1139,6 +1171,18 @@
           "p-16f1b7c0.js"
         ],
         "originalByteSize": 33184
+      },
+      {
+        "key": "midwest-sidebar.entry",
+        "components": [
+          "midwest-sidebar"
+        ],
+        "bundleId": "p-3937d597",
+        "fileName": "p-3937d597.entry.js",
+        "imports": [
+          "p-38ee53c6.js"
+        ],
+        "originalByteSize": 1105
       },
       {
         "key": "midwest-step.entry",
@@ -1356,13 +1400,13 @@
         "fileName": "ion-icon_8.entry.js",
         "imports": [
           "index-297f5f9e.js",
+          "index-216e665c.js",
           "dayjs.min-40f18934.js",
           "colors-d562b251.js",
           "darkMode-76deeecd.js",
-          "index-216e665c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 147785
+        "originalByteSize": 154055
       },
       {
         "key": "animated-route-switch.entry",
@@ -1763,6 +1807,18 @@
         "originalByteSize": 9656
       },
       {
+        "key": "midwest-panel.entry",
+        "components": [
+          "midwest-panel"
+        ],
+        "bundleId": "midwest-panel",
+        "fileName": "midwest-panel.entry.js",
+        "imports": [
+          "index-297f5f9e.js"
+        ],
+        "originalByteSize": 2094
+      },
+      {
         "key": "midwest-pjax.entry",
         "components": [
           "midwest-pjax"
@@ -1775,6 +1831,18 @@
           "index-216e665c.js"
         ],
         "originalByteSize": 33207
+      },
+      {
+        "key": "midwest-sidebar.entry",
+        "components": [
+          "midwest-sidebar"
+        ],
+        "bundleId": "midwest-sidebar",
+        "fileName": "midwest-sidebar.entry.js",
+        "imports": [
+          "index-297f5f9e.js"
+        ],
+        "originalByteSize": 1109
       },
       {
         "key": "midwest-step.entry",
@@ -1994,13 +2062,13 @@
         "fileName": "ion-icon_8.cjs.entry.js",
         "imports": [
           "index-92a60252.js",
+          "index-73a2de1e.js",
           "dayjs.min-7594f47b.js",
           "colors-1a9d4af6.js",
           "darkMode-ee75726a.js",
-          "index-73a2de1e.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 148487
+        "originalByteSize": 154762
       },
       {
         "key": "animated-route-switch.entry",
@@ -2401,6 +2469,18 @@
         "originalByteSize": 9810
       },
       {
+        "key": "midwest-panel.entry",
+        "components": [
+          "midwest-panel"
+        ],
+        "bundleId": "midwest-panel.cjs",
+        "fileName": "midwest-panel.cjs.entry.js",
+        "imports": [
+          "index-92a60252.js"
+        ],
+        "originalByteSize": 2159
+      },
+      {
         "key": "midwest-pjax.entry",
         "components": [
           "midwest-pjax"
@@ -2413,6 +2493,18 @@
           "index-73a2de1e.js"
         ],
         "originalByteSize": 33288
+      },
+      {
+        "key": "midwest-sidebar.entry",
+        "components": [
+          "midwest-sidebar"
+        ],
+        "bundleId": "midwest-sidebar.cjs",
+        "fileName": "midwest-sidebar.cjs.entry.js",
+        "imports": [
+          "index-92a60252.js"
+        ],
+        "originalByteSize": 1180
       },
       {
         "key": "midwest-step.entry",
@@ -4242,6 +4334,23 @@
       "excludeFromCollection": false,
       "events": [
         {
+          "name": "confirmed",
+          "method": "confirmed",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "complexType": {
+            "original": "any",
+            "resolved": "any",
+            "references": {}
+          },
+          "internal": false
+        },
+        {
           "name": "modalOpen",
           "method": "openModal",
           "bubbles": true,
@@ -4334,6 +4443,25 @@
           "complexType": {
             "original": "'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route'",
             "resolved": "\"button\" | \"link\" | \"modal\" | \"onboarding\" | \"span\" | \"stencil-route\" | \"submit\"",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "sideEffect",
+          "type": "string",
+          "attribute": "side-effect",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "'copy' | 'close-modal'",
+            "resolved": "\"close-modal\" | \"copy\"",
             "references": {}
           },
           "docs": {
@@ -4505,9 +4633,10 @@
           "mutable": false,
           "required": false,
           "optional": false,
+          "defaultValue": "'default'",
           "complexType": {
-            "original": "'tiny' | 'small' | 'large'",
-            "resolved": "\"large\" | \"small\" | \"tiny\"",
+            "original": "'tiny' | 'small' | 'default' | 'large'",
+            "resolved": "\"default\" | \"large\" | \"small\" | \"tiny\"",
             "references": {}
           },
           "docs": {
@@ -4524,9 +4653,10 @@
           "mutable": false,
           "required": false,
           "optional": false,
+          "defaultValue": "'default'",
           "complexType": {
-            "original": "'tiny' | 'small' | 'large'",
-            "resolved": "\"large\" | \"small\" | \"tiny\"",
+            "original": "'tiny' | 'small' | 'default' | 'large'",
+            "resolved": "\"default\" | \"large\" | \"small\" | \"tiny\"",
             "references": {}
           },
           "docs": {
@@ -4596,6 +4726,101 @@
           "internal": false
         },
         {
+          "name": "activate",
+          "type": "string",
+          "attribute": "activate",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "attribute": "method",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "'get' | 'post' | 'patch' | 'put' | 'delete'",
+            "resolved": "\"delete\" | \"get\" | \"patch\" | \"post\" | \"put\"",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "authenticityToken",
+          "type": "string",
+          "attribute": "authenticity-token",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "sidebar",
+          "type": "boolean",
+          "attribute": "sidebar",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "stopPropagation",
+          "type": "boolean",
+          "attribute": "stop-propagation",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
           "name": "disabled",
           "type": "boolean",
           "attribute": "disabled",
@@ -4619,6 +4844,26 @@
           "name": "pill",
           "type": "boolean",
           "attribute": "pill",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "circle",
+          "type": "boolean",
+          "attribute": "circle",
           "reflect": true,
           "mutable": false,
           "required": false,
@@ -4716,31 +4961,11 @@
           "internal": false
         },
         {
-          "name": "ghost",
-          "type": "boolean",
-          "attribute": "ghost",
-          "reflect": true,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "false",
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
           "name": "dark",
           "type": "boolean",
           "attribute": "dark",
           "reflect": true,
-          "mutable": true,
+          "mutable": false,
           "required": false,
           "optional": false,
           "defaultValue": "false",
@@ -4835,6 +5060,26 @@
           "internal": false
         },
         {
+          "name": "ghost",
+          "type": "boolean",
+          "attribute": "ghost",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
           "name": "usePjax",
           "type": "boolean",
           "attribute": "use-pjax",
@@ -4875,7 +5120,11 @@
         }
       ],
       "shadowDelegatesFocus": false,
-      "states": []
+      "states": [
+        {
+          "name": "copied"
+        }
+      ]
     },
     {
       "tag": "midwest-calendar-date",
@@ -10110,6 +10359,90 @@
       ]
     },
     {
+      "tag": "midwest-panel",
+      "path": "../core/dist/collection/components/panel/panel.js",
+      "source": "../core/dist/collection/components/panel/panel.js",
+      "elementRef": "element",
+      "componentClassName": "Panel",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [
+        {
+          "name": "click",
+          "method": "click",
+          "capture": false,
+          "passive": false,
+          "target": "window"
+        }
+      ],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "closeOnBlur",
+          "type": "boolean",
+          "attribute": "close-on-blur",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "hideClose",
+          "type": "boolean",
+          "attribute": "hide-close",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "position"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
       "tag": "midwest-pjax",
       "path": "./src/components/pjax/pjax.js",
       "source": "./src/components/pjax/pjax.tsx",
@@ -10471,6 +10804,34 @@
           "internal": false
         }
       ],
+      "shadowDelegatesFocus": false,
+      "states": []
+    },
+    {
+      "tag": "midwest-sidebar",
+      "path": "../core/dist/collection/components/sidebar/sidebar.js",
+      "source": "../core/dist/collection/components/sidebar/sidebar.js",
+      "elementRef": "element",
+      "componentClassName": "Sidebar",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [],
       "shadowDelegatesFocus": false,
       "states": []
     },
@@ -12927,6 +13288,25 @@
               "internal": false
             },
             {
+              "name": "sideEffect",
+              "type": "string",
+              "attribute": "side-effect",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "'copy' | 'close-modal'",
+                "resolved": "\"close-modal\" | \"copy\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "label",
               "type": "string",
               "attribute": "label",
@@ -13089,9 +13469,10 @@
               "mutable": false,
               "required": false,
               "optional": false,
+              "defaultValue": "'default'",
               "complexType": {
-                "original": "'tiny' | 'small' | 'large'",
-                "resolved": "\"large\" | \"small\" | \"tiny\"",
+                "original": "'tiny' | 'small' | 'default' | 'large'",
+                "resolved": "\"default\" | \"large\" | \"small\" | \"tiny\"",
                 "references": {}
               },
               "docs": {
@@ -13108,9 +13489,10 @@
               "mutable": false,
               "required": false,
               "optional": false,
+              "defaultValue": "'default'",
               "complexType": {
-                "original": "'tiny' | 'small' | 'large'",
-                "resolved": "\"large\" | \"small\" | \"tiny\"",
+                "original": "'tiny' | 'small' | 'default' | 'large'",
+                "resolved": "\"default\" | \"large\" | \"small\" | \"tiny\"",
                 "references": {}
               },
               "docs": {
@@ -13180,6 +13562,101 @@
               "internal": false
             },
             {
+              "name": "activate",
+              "type": "string",
+              "attribute": "activate",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "method",
+              "type": "string",
+              "attribute": "method",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "'get' | 'post' | 'patch' | 'put' | 'delete'",
+                "resolved": "\"delete\" | \"get\" | \"patch\" | \"post\" | \"put\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "authenticityToken",
+              "type": "string",
+              "attribute": "authenticity-token",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "sidebar",
+              "type": "boolean",
+              "attribute": "sidebar",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "stopPropagation",
+              "type": "boolean",
+              "attribute": "stop-propagation",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "disabled",
               "type": "boolean",
               "attribute": "disabled",
@@ -13203,6 +13680,26 @@
               "name": "pill",
               "type": "boolean",
               "attribute": "pill",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "circle",
+              "type": "boolean",
+              "attribute": "circle",
               "reflect": true,
               "mutable": false,
               "required": false,
@@ -13300,31 +13797,11 @@
               "internal": false
             },
             {
-              "name": "ghost",
-              "type": "boolean",
-              "attribute": "ghost",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
               "name": "dark",
               "type": "boolean",
               "attribute": "dark",
               "reflect": true,
-              "mutable": true,
+              "mutable": false,
               "required": false,
               "optional": false,
               "defaultValue": "false",
@@ -13419,6 +13896,26 @@
               "internal": false
             },
             {
+              "name": "ghost",
+              "type": "boolean",
+              "attribute": "ghost",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "usePjax",
               "type": "boolean",
               "attribute": "use-pjax",
@@ -13459,10 +13956,31 @@
             }
           ],
           "virtualProperties": [],
-          "states": [],
+          "states": [
+            {
+              "name": "copied"
+            }
+          ],
           "methods": [],
           "listeners": [],
           "events": [
+            {
+              "name": "confirmed",
+              "method": "confirmed",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            },
             {
               "name": "modalOpen",
               "method": "openModal",
@@ -13591,7 +14109,7 @@
           "hasPropMutable": true,
           "hasReflect": true,
           "hasRenderFn": true,
-          "hasState": false,
+          "hasState": true,
           "hasStyle": true,
           "hasVdomAttribute": true,
           "hasVdomXlink": false,
@@ -13626,6 +14144,8 @@
             "aria-label"
           ],
           "htmlTagNames": [
+            "form",
+            "input",
             "midwest-progress",
             "slot",
             "button",
@@ -22653,6 +23173,170 @@
     {
       "cmps": [
         {
+          "tagName": "midwest-panel",
+          "excludeFromCollection": false,
+          "isCollectionDependency": true,
+          "componentClassName": "Panel",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "closeOnBlur",
+              "type": "boolean",
+              "attribute": "close-on-blur",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "hideClose",
+              "type": "boolean",
+              "attribute": "hide-close",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "position"
+            },
+            {
+              "name": "ready"
+            }
+          ],
+          "methods": [],
+          "listeners": [
+            {
+              "name": "click",
+              "method": "click",
+              "capture": false,
+              "passive": false,
+              "target": "window"
+            }
+          ],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MIDWEST-PANEL",
+              "styleStr": null,
+              "styleIdentifier": "midwestPanelStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/core/dist/collection/components/panel/panel.css",
+                  "relativePath": "panel.css",
+                  "originalComponentPath": "panel.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/core/dist/collection/components/panel/panel.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/core/dist/collection/components/panel/panel.js",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": true,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": true,
+          "hasListenerTarget": true,
+          "hasListenerTargetWindow": true,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": true,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "midwest-panel.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "midwest-pjax",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -22833,6 +23517,115 @@
         }
       ],
       "entryKey": "midwest-pjax.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "midwest-sidebar",
+          "excludeFromCollection": false,
+          "isCollectionDependency": true,
+          "componentClassName": "Sidebar",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MIDWEST-SIDEBAR",
+              "styleStr": null,
+              "styleIdentifier": "midwestSidebarStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/core/dist/collection/components/sidebar/sidebar.css",
+                  "relativePath": "sidebar.css",
+                  "originalComponentPath": "sidebar.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/core/dist/collection/components/sidebar/sidebar.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/core/dist/collection/components/sidebar/sidebar.js",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "name"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "midwest-sidebar.entry"
     },
     {
       "cmps": [
@@ -26637,10 +27430,10 @@
     ],
     "sc-ion-icon": [
       "p-38ee53c6.js",
+      "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
-      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-accordion": [
@@ -26676,10 +27469,10 @@
     ],
     "sc-midwest-button": [
       "p-38ee53c6.js",
+      "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
-      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-calendar-date": [
@@ -26698,18 +27491,18 @@
     ],
     "sc-midwest-card": [
       "p-38ee53c6.js",
+      "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
-      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-code": [
       "p-38ee53c6.js",
+      "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
-      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-color-library": [
@@ -26762,10 +27555,10 @@
     ],
     "sc-midwest-label": [
       "p-38ee53c6.js",
+      "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
-      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-layout": [
@@ -26826,6 +27619,9 @@
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
+    "sc-midwest-panel": [
+      "p-38ee53c6.js"
+    ],
     "sc-midwest-pjax": [
       "p-38ee53c6.js",
       "p-f6c733ff.js",
@@ -26833,11 +27629,14 @@
     ],
     "sc-midwest-progress": [
       "p-38ee53c6.js",
+      "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
-      "p-16f1b7c0.js",
       "p-f6c733ff.js"
+    ],
+    "sc-midwest-sidebar": [
+      "p-38ee53c6.js"
     ],
     "sc-midwest-step": [
       "p-38ee53c6.js",
@@ -26878,10 +27677,10 @@
     ],
     "sc-midwest-theme": [
       "p-38ee53c6.js",
+      "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
-      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-time": [
@@ -26902,10 +27701,10 @@
     ],
     "sc-resize-observer": [
       "p-38ee53c6.js",
+      "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
-      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ]
   },
@@ -26939,7 +27738,9 @@
     "../core/dist/collection/components/layout/layout.js": [],
     "../core/dist/collection/components/message/message.js": [],
     "../core/dist/collection/components/pagination/pagination.js": [],
+    "../core/dist/collection/components/panel/panel.js": [],
     "../core/dist/collection/components/progress/progress.js": [],
+    "../core/dist/collection/components/sidebar/sidebar.js": [],
     "../core/dist/collection/components/step/step.js": [],
     "../core/dist/collection/components/steps/steps.js": [],
     "../core/dist/collection/components/tab/tab.js": [],
@@ -27035,7 +27836,13 @@
           "midwest-pagination"
         ],
         [
+          "midwest-panel"
+        ],
+        [
           "midwest-progress"
+        ],
+        [
+          "midwest-sidebar"
         ],
         [
           "midwest-step"

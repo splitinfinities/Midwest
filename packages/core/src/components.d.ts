@@ -48,9 +48,12 @@ export namespace Components {
         "size": "tiny" | "small" | "medium" | "large";
     }
     interface MidwestButton {
+        "activate": string;
         "active": boolean;
+        "authenticityToken": string;
         "block": boolean;
         "buttonTabIndex": number;
+        "circle": boolean;
         "confirm": string;
         "contrast": boolean;
         "dark": boolean;
@@ -63,15 +66,19 @@ export namespace Components {
         "iconOnly": boolean;
         "invert": boolean;
         "label": string;
+        "method": 'get' | 'post' | 'patch' | 'put' | 'delete';
         "modalHref": string;
         "name": string;
         "outline": boolean;
-        "padding": 'tiny' | 'small' | 'large';
+        "padding": 'tiny' | 'small' | 'default' | 'large';
         "pill": boolean;
         "pjaxSelector": string;
         "processable": boolean;
         "processing": boolean;
-        "size": 'tiny' | 'small' | 'large';
+        "sideEffect": 'copy' | 'close-modal';
+        "sidebar": boolean;
+        "size": 'tiny' | 'small' | 'default' | 'large';
+        "stopPropagation": boolean;
         "tag": 'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route';
         "target": string;
         "usePjax": boolean;
@@ -199,6 +206,10 @@ export namespace Components {
         "type": "full" | "compact";
         "url": any;
     }
+    interface MidwestPanel {
+        "closeOnBlur": boolean;
+        "hideClose": boolean;
+    }
     interface MidwestProgress {
         "dark": boolean;
         "ease": boolean;
@@ -209,6 +220,8 @@ export namespace Components {
         "secondary": number;
         "slender": boolean;
         "value": number;
+    }
+    interface MidwestSidebar {
     }
     interface MidwestStep {
         "activate": () => Promise<void>;
@@ -417,11 +430,23 @@ declare global {
         prototype: HTMLMidwestPaginationElement;
         new (): HTMLMidwestPaginationElement;
     };
+    interface HTMLMidwestPanelElement extends Components.MidwestPanel, HTMLStencilElement {
+    }
+    var HTMLMidwestPanelElement: {
+        prototype: HTMLMidwestPanelElement;
+        new (): HTMLMidwestPanelElement;
+    };
     interface HTMLMidwestProgressElement extends Components.MidwestProgress, HTMLStencilElement {
     }
     var HTMLMidwestProgressElement: {
         prototype: HTMLMidwestProgressElement;
         new (): HTMLMidwestProgressElement;
+    };
+    interface HTMLMidwestSidebarElement extends Components.MidwestSidebar, HTMLStencilElement {
+    }
+    var HTMLMidwestSidebarElement: {
+        prototype: HTMLMidwestSidebarElement;
+        new (): HTMLMidwestSidebarElement;
     };
     interface HTMLMidwestStepElement extends Components.MidwestStep, HTMLStencilElement {
     }
@@ -496,7 +521,9 @@ declare global {
         "midwest-layout": HTMLMidwestLayoutElement;
         "midwest-message": HTMLMidwestMessageElement;
         "midwest-pagination": HTMLMidwestPaginationElement;
+        "midwest-panel": HTMLMidwestPanelElement;
         "midwest-progress": HTMLMidwestProgressElement;
+        "midwest-sidebar": HTMLMidwestSidebarElement;
         "midwest-step": HTMLMidwestStepElement;
         "midwest-steps": HTMLMidwestStepsElement;
         "midwest-tab": HTMLMidwestTabElement;
@@ -553,9 +580,12 @@ declare namespace LocalJSX {
         "size"?: "tiny" | "small" | "medium" | "large";
     }
     interface MidwestButton {
+        "activate"?: string;
         "active"?: boolean;
+        "authenticityToken"?: string;
         "block"?: boolean;
         "buttonTabIndex"?: number;
+        "circle"?: boolean;
         "confirm"?: string;
         "contrast"?: boolean;
         "dark"?: boolean;
@@ -568,19 +598,24 @@ declare namespace LocalJSX {
         "iconOnly"?: boolean;
         "invert"?: boolean;
         "label"?: string;
+        "method"?: 'get' | 'post' | 'patch' | 'put' | 'delete';
         "modalHref"?: string;
         "name"?: string;
+        "onConfirmed"?: (event: CustomEvent<any>) => void;
         "onModalClose"?: (event: CustomEvent<any>) => void;
         "onModalOpen"?: (event: CustomEvent<any>) => void;
         "onOnboardingClose"?: (event: CustomEvent<any>) => void;
         "onOnboardingOpen"?: (event: CustomEvent<any>) => void;
         "outline"?: boolean;
-        "padding"?: 'tiny' | 'small' | 'large';
+        "padding"?: 'tiny' | 'small' | 'default' | 'large';
         "pill"?: boolean;
         "pjaxSelector"?: string;
         "processable"?: boolean;
         "processing"?: boolean;
-        "size"?: 'tiny' | 'small' | 'large';
+        "sideEffect"?: 'copy' | 'close-modal';
+        "sidebar"?: boolean;
+        "size"?: 'tiny' | 'small' | 'default' | 'large';
+        "stopPropagation"?: boolean;
         "tag"?: 'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route';
         "target"?: string;
         "usePjax"?: boolean;
@@ -706,6 +741,10 @@ declare namespace LocalJSX {
         "type"?: "full" | "compact";
         "url"?: any;
     }
+    interface MidwestPanel {
+        "closeOnBlur"?: boolean;
+        "hideClose"?: boolean;
+    }
     interface MidwestProgress {
         "dark"?: boolean;
         "ease"?: boolean;
@@ -717,6 +756,8 @@ declare namespace LocalJSX {
         "secondary"?: number;
         "slender"?: boolean;
         "value"?: number;
+    }
+    interface MidwestSidebar {
     }
     interface MidwestStep {
         "complete"?: boolean;
@@ -827,7 +868,9 @@ declare namespace LocalJSX {
         "midwest-layout": MidwestLayout;
         "midwest-message": MidwestMessage;
         "midwest-pagination": MidwestPagination;
+        "midwest-panel": MidwestPanel;
         "midwest-progress": MidwestProgress;
+        "midwest-sidebar": MidwestSidebar;
         "midwest-step": MidwestStep;
         "midwest-steps": MidwestSteps;
         "midwest-tab": MidwestTab;
@@ -861,7 +904,9 @@ declare module "@stencil/core" {
             "midwest-layout": LocalJSX.MidwestLayout & JSXBase.HTMLAttributes<HTMLMidwestLayoutElement>;
             "midwest-message": LocalJSX.MidwestMessage & JSXBase.HTMLAttributes<HTMLMidwestMessageElement>;
             "midwest-pagination": LocalJSX.MidwestPagination & JSXBase.HTMLAttributes<HTMLMidwestPaginationElement>;
+            "midwest-panel": LocalJSX.MidwestPanel & JSXBase.HTMLAttributes<HTMLMidwestPanelElement>;
             "midwest-progress": LocalJSX.MidwestProgress & JSXBase.HTMLAttributes<HTMLMidwestProgressElement>;
+            "midwest-sidebar": LocalJSX.MidwestSidebar & JSXBase.HTMLAttributes<HTMLMidwestSidebarElement>;
             "midwest-step": LocalJSX.MidwestStep & JSXBase.HTMLAttributes<HTMLMidwestStepElement>;
             "midwest-steps": LocalJSX.MidwestSteps & JSXBase.HTMLAttributes<HTMLMidwestStepsElement>;
             "midwest-tab": LocalJSX.MidwestTab & JSXBase.HTMLAttributes<HTMLMidwestTabElement>;

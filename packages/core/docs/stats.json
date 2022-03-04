@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-03-04T00:25:38",
+  "timestamp": "2022-03-04T05:50:47",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -7,13 +7,13 @@
   "app": {
     "namespace": "core",
     "fsNamespace": "core",
-    "components": 31,
-    "entries": 31,
-    "bundles": 480,
+    "components": 33,
+    "entries": 33,
+    "bundles": 474,
     "outputs": [
       {
         "name": "dist-collection",
-        "files": 62,
+        "files": 66,
         "generatedFiles": [
           "./dist/collection/components/accordion/accordion.js",
           "./dist/collection/components/accordion/accordion.js.map",
@@ -51,8 +51,12 @@
           "./dist/collection/components/message/message.js.map",
           "./dist/collection/components/pagination/pagination.js",
           "./dist/collection/components/pagination/pagination.js.map",
+          "./dist/collection/components/panel/panel.js",
+          "./dist/collection/components/panel/panel.js.map",
           "./dist/collection/components/progress/progress.js",
           "./dist/collection/components/progress/progress.js.map",
+          "./dist/collection/components/sidebar/sidebar.js",
+          "./dist/collection/components/sidebar/sidebar.js.map",
           "./dist/collection/components/step/step.js",
           "./dist/collection/components/step/step.js.map",
           "./dist/collection/components/steps/steps.js",
@@ -81,7 +85,7 @@
       },
       {
         "name": "dist-custom-elements",
-        "files": 121,
+        "files": 127,
         "generatedFiles": [
           "./dist/custom-elements/_commonjsHelpers.js",
           "./dist/custom-elements/_commonjsHelpers.js.map",
@@ -168,9 +172,15 @@
           "./dist/custom-elements/midwest-pagination.d.ts",
           "./dist/custom-elements/midwest-pagination.js",
           "./dist/custom-elements/midwest-pagination.js.map",
+          "./dist/custom-elements/midwest-panel.d.ts",
+          "./dist/custom-elements/midwest-panel.js",
+          "./dist/custom-elements/midwest-panel.js.map",
           "./dist/custom-elements/midwest-progress.d.ts",
           "./dist/custom-elements/midwest-progress.js",
           "./dist/custom-elements/midwest-progress.js.map",
+          "./dist/custom-elements/midwest-sidebar.d.ts",
+          "./dist/custom-elements/midwest-sidebar.js",
+          "./dist/custom-elements/midwest-sidebar.js.map",
           "./dist/custom-elements/midwest-step.d.ts",
           "./dist/custom-elements/midwest-step.js",
           "./dist/custom-elements/midwest-step.js.map",
@@ -208,7 +218,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 294,
+        "files": 278,
         "generatedFiles": [
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js",
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js.map",
@@ -234,8 +244,8 @@
           "./dist/cjs/index-e88292c0.js.map",
           "./dist/cjs/index.cjs.js",
           "./dist/cjs/index.cjs.js.map",
-          "./dist/cjs/ion-icon_5.cjs.entry.js",
-          "./dist/cjs/ion-icon_5.cjs.entry.js.map",
+          "./dist/cjs/ion-icon_9.cjs.entry.js",
+          "./dist/cjs/ion-icon_9.cjs.entry.js.map",
           "./dist/cjs/loader.cjs.js",
           "./dist/cjs/loader.cjs.js.map",
           "./dist/cjs/midwest-accordion.cjs.entry.js",
@@ -244,8 +254,6 @@
           "./dist/cjs/midwest-breadcrumb.cjs.entry.js.map",
           "./dist/cjs/midwest-breadcrumbs.cjs.entry.js",
           "./dist/cjs/midwest-breadcrumbs.cjs.entry.js.map",
-          "./dist/cjs/midwest-button.cjs.entry.js",
-          "./dist/cjs/midwest-button.cjs.entry.js.map",
           "./dist/cjs/midwest-calendar-date.cjs.entry.js",
           "./dist/cjs/midwest-calendar-date.cjs.entry.js.map",
           "./dist/cjs/midwest-callout.cjs.entry.js",
@@ -262,8 +270,6 @@
           "./dist/cjs/midwest-group-overflow.cjs.entry.js.map",
           "./dist/cjs/midwest-group.cjs.entry.js",
           "./dist/cjs/midwest-group.cjs.entry.js.map",
-          "./dist/cjs/midwest-label.cjs.entry.js",
-          "./dist/cjs/midwest-label.cjs.entry.js.map",
           "./dist/cjs/midwest-layout.cjs.entry.js",
           "./dist/cjs/midwest-layout.cjs.entry.js.map",
           "./dist/cjs/midwest-message.cjs.entry.js",
@@ -328,18 +334,16 @@
           "./dist/core/p-71a084ed.entry.js.map",
           "./dist/core/p-7d7c231c.entry.js",
           "./dist/core/p-7d7c231c.entry.js.map",
-          "./dist/core/p-9467d2c4.entry.js",
-          "./dist/core/p-9467d2c4.entry.js.map",
           "./dist/core/p-a5a6af9c.entry.js",
           "./dist/core/p-a5a6af9c.entry.js.map",
           "./dist/core/p-ac967193.entry.js",
           "./dist/core/p-ac967193.entry.js.map",
-          "./dist/core/p-aec97be4.entry.js",
-          "./dist/core/p-aec97be4.entry.js.map",
           "./dist/core/p-b065d717.entry.js",
           "./dist/core/p-b065d717.entry.js.map",
           "./dist/core/p-b88a51a0.entry.js",
           "./dist/core/p-b88a51a0.entry.js.map",
+          "./dist/core/p-bea0976a.entry.js",
+          "./dist/core/p-bea0976a.entry.js.map",
           "./dist/core/p-bf679ceb.entry.js",
           "./dist/core/p-bf679ceb.entry.js.map",
           "./dist/core/p-c1ae6807.entry.js",
@@ -348,8 +352,6 @@
           "./dist/core/p-d92afd2a.entry.js.map",
           "./dist/core/p-e0bdc912.entry.js",
           "./dist/core/p-e0bdc912.entry.js.map",
-          "./dist/core/p-e60276cd.entry.js",
-          "./dist/core/p-e60276cd.entry.js.map",
           "./dist/core/p-f25bdef3.entry.js",
           "./dist/core/p-f25bdef3.entry.js.map",
           "./dist/core/p-f6c733ff.js",
@@ -380,8 +382,8 @@
           "./dist/esm/index-dcb3f3ba.js.map",
           "./dist/esm/index.js",
           "./dist/esm/index.js.map",
-          "./dist/esm/ion-icon_5.entry.js",
-          "./dist/esm/ion-icon_5.entry.js.map",
+          "./dist/esm/ion-icon_9.entry.js",
+          "./dist/esm/ion-icon_9.entry.js.map",
           "./dist/esm/loader.js",
           "./dist/esm/loader.js.map",
           "./dist/esm/midwest-accordion.entry.js",
@@ -390,8 +392,6 @@
           "./dist/esm/midwest-breadcrumb.entry.js.map",
           "./dist/esm/midwest-breadcrumbs.entry.js",
           "./dist/esm/midwest-breadcrumbs.entry.js.map",
-          "./dist/esm/midwest-button.entry.js",
-          "./dist/esm/midwest-button.entry.js.map",
           "./dist/esm/midwest-calendar-date.entry.js",
           "./dist/esm/midwest-calendar-date.entry.js.map",
           "./dist/esm/midwest-callout.entry.js",
@@ -408,8 +408,6 @@
           "./dist/esm/midwest-group-overflow.entry.js.map",
           "./dist/esm/midwest-group.entry.js",
           "./dist/esm/midwest-group.entry.js.map",
-          "./dist/esm/midwest-label.entry.js",
-          "./dist/esm/midwest-label.entry.js.map",
           "./dist/esm/midwest-layout.entry.js",
           "./dist/esm/midwest-layout.entry.js.map",
           "./dist/esm/midwest-message.entry.js",
@@ -476,18 +474,16 @@
           "./www/build/p-71a084ed.entry.js.map",
           "./www/build/p-7d7c231c.entry.js",
           "./www/build/p-7d7c231c.entry.js.map",
-          "./www/build/p-9467d2c4.entry.js",
-          "./www/build/p-9467d2c4.entry.js.map",
           "./www/build/p-a5a6af9c.entry.js",
           "./www/build/p-a5a6af9c.entry.js.map",
           "./www/build/p-ac967193.entry.js",
           "./www/build/p-ac967193.entry.js.map",
-          "./www/build/p-aec97be4.entry.js",
-          "./www/build/p-aec97be4.entry.js.map",
           "./www/build/p-b065d717.entry.js",
           "./www/build/p-b065d717.entry.js.map",
           "./www/build/p-b88a51a0.entry.js",
           "./www/build/p-b88a51a0.entry.js.map",
+          "./www/build/p-bea0976a.entry.js",
+          "./www/build/p-bea0976a.entry.js.map",
           "./www/build/p-bf679ceb.entry.js",
           "./www/build/p-bf679ceb.entry.js.map",
           "./www/build/p-c1ae6807.entry.js",
@@ -496,8 +492,6 @@
           "./www/build/p-d92afd2a.entry.js.map",
           "./www/build/p-e0bdc912.entry.js",
           "./www/build/p-e0bdc912.entry.js.map",
-          "./www/build/p-e60276cd.entry.js",
-          "./www/build/p-e60276cd.entry.js.map",
           "./www/build/p-f25bdef3.entry.js",
           "./www/build/p-f25bdef3.entry.js.map",
           "./www/build/p-f6c733ff.js",
@@ -533,24 +527,29 @@
   "formats": {
     "esmBrowser": [
       {
-        "key": "ion-icon.midwest-avatar.midwest-progress.midwest-theme.midwest-tooltip.entry",
+        "key": "ion-icon.midwest-avatar.midwest-button.midwest-label.midwest-panel.midwest-progress.midwest-sidebar.midwest-theme.midwest-tooltip.entry",
         "components": [
           "ion-icon",
           "midwest-avatar",
+          "midwest-button",
+          "midwest-label",
+          "midwest-panel",
           "midwest-progress",
+          "midwest-sidebar",
           "midwest-theme",
           "midwest-tooltip"
         ],
-        "bundleId": "p-e60276cd",
-        "fileName": "p-e60276cd.entry.js",
+        "bundleId": "p-bea0976a",
+        "fileName": "p-bea0976a.entry.js",
         "imports": [
           "p-16ad8274.js",
           "p-4af0a0ee.js",
           "p-176ce63d.js",
           "p-5866cdea.js",
+          "p-16f1b7c0.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 45632
+        "originalByteSize": 68120
       },
       {
         "key": "animated-route-switch.entry",
@@ -881,22 +880,6 @@
         "originalByteSize": 7178
       },
       {
-        "key": "midwest-button.entry",
-        "components": [
-          "midwest-button"
-        ],
-        "bundleId": "p-9467d2c4",
-        "fileName": "p-9467d2c4.entry.js",
-        "imports": [
-          "p-16ad8274.js",
-          "p-4af0a0ee.js",
-          "p-176ce63d.js",
-          "p-5866cdea.js",
-          "p-f6c733ff.js"
-        ],
-        "originalByteSize": 13027
-      },
-      {
         "key": "midwest-group-overflow.entry",
         "components": [
           "midwest-group-overflow"
@@ -923,44 +906,33 @@
           "p-f6c733ff.js"
         ],
         "originalByteSize": 1696
-      },
-      {
-        "key": "midwest-label.entry",
-        "components": [
-          "midwest-label"
-        ],
-        "bundleId": "p-aec97be4",
-        "fileName": "p-aec97be4.entry.js",
-        "imports": [
-          "p-16ad8274.js",
-          "p-4af0a0ee.js",
-          "p-176ce63d.js",
-          "p-5866cdea.js",
-          "p-f6c733ff.js"
-        ],
-        "originalByteSize": 1403
       }
     ],
     "esm": [
       {
-        "key": "ion-icon.midwest-avatar.midwest-progress.midwest-theme.midwest-tooltip.entry",
+        "key": "ion-icon.midwest-avatar.midwest-button.midwest-label.midwest-panel.midwest-progress.midwest-sidebar.midwest-theme.midwest-tooltip.entry",
         "components": [
           "ion-icon",
           "midwest-avatar",
+          "midwest-button",
+          "midwest-label",
+          "midwest-panel",
           "midwest-progress",
+          "midwest-sidebar",
           "midwest-theme",
           "midwest-tooltip"
         ],
-        "bundleId": "ion-icon_5",
-        "fileName": "ion-icon_5.entry.js",
+        "bundleId": "ion-icon_9",
+        "fileName": "ion-icon_9.entry.js",
         "imports": [
           "index-0481e8cd.js",
           "dayjs.min-40f18934.js",
           "colors-d562b251.js",
           "darkMode-76deeecd.js",
+          "index-216e665c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 45671
+        "originalByteSize": 68163
       },
       {
         "key": "animated-route-switch.entry",
@@ -1291,22 +1263,6 @@
         "originalByteSize": 7186
       },
       {
-        "key": "midwest-button.entry",
-        "components": [
-          "midwest-button"
-        ],
-        "bundleId": "midwest-button",
-        "fileName": "midwest-button.entry.js",
-        "imports": [
-          "index-0481e8cd.js",
-          "dayjs.min-40f18934.js",
-          "colors-d562b251.js",
-          "darkMode-76deeecd.js",
-          "_commonjsHelpers-856c13bf.js"
-        ],
-        "originalByteSize": 13066
-      },
-      {
         "key": "midwest-group-overflow.entry",
         "components": [
           "midwest-group-overflow"
@@ -1333,46 +1289,35 @@
           "_commonjsHelpers-856c13bf.js"
         ],
         "originalByteSize": 1735
-      },
-      {
-        "key": "midwest-label.entry",
-        "components": [
-          "midwest-label"
-        ],
-        "bundleId": "midwest-label",
-        "fileName": "midwest-label.entry.js",
-        "imports": [
-          "index-0481e8cd.js",
-          "dayjs.min-40f18934.js",
-          "colors-d562b251.js",
-          "darkMode-76deeecd.js",
-          "_commonjsHelpers-856c13bf.js"
-        ],
-        "originalByteSize": 1442
       }
     ],
     "es5": [],
     "system": [],
     "commonjs": [
       {
-        "key": "ion-icon.midwest-avatar.midwest-progress.midwest-theme.midwest-tooltip.entry",
+        "key": "ion-icon.midwest-avatar.midwest-button.midwest-label.midwest-panel.midwest-progress.midwest-sidebar.midwest-theme.midwest-tooltip.entry",
         "components": [
           "ion-icon",
           "midwest-avatar",
+          "midwest-button",
+          "midwest-label",
+          "midwest-panel",
           "midwest-progress",
+          "midwest-sidebar",
           "midwest-theme",
           "midwest-tooltip"
         ],
-        "bundleId": "ion-icon_5.cjs",
-        "fileName": "ion-icon_5.cjs.entry.js",
+        "bundleId": "ion-icon_9.cjs",
+        "fileName": "ion-icon_9.cjs.entry.js",
         "imports": [
           "index-e88292c0.js",
           "dayjs.min-7594f47b.js",
           "colors-1a9d4af6.js",
           "darkMode-ee75726a.js",
+          "index-73a2de1e.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 45958
+        "originalByteSize": 68799
       },
       {
         "key": "animated-route-switch.entry",
@@ -1703,22 +1648,6 @@
         "originalByteSize": 7255
       },
       {
-        "key": "midwest-button.entry",
-        "components": [
-          "midwest-button"
-        ],
-        "bundleId": "midwest-button.cjs",
-        "fileName": "midwest-button.cjs.entry.js",
-        "imports": [
-          "index-e88292c0.js",
-          "dayjs.min-7594f47b.js",
-          "colors-1a9d4af6.js",
-          "darkMode-ee75726a.js",
-          "_commonjsHelpers-cb2db9e6.js"
-        ],
-        "originalByteSize": 13274
-      },
-      {
         "key": "midwest-group-overflow.entry",
         "components": [
           "midwest-group-overflow"
@@ -1745,22 +1674,6 @@
           "_commonjsHelpers-cb2db9e6.js"
         ],
         "originalByteSize": 1829
-      },
-      {
-        "key": "midwest-label.entry",
-        "components": [
-          "midwest-label"
-        ],
-        "bundleId": "midwest-label.cjs",
-        "fileName": "midwest-label.cjs.entry.js",
-        "imports": [
-          "index-e88292c0.js",
-          "dayjs.min-7594f47b.js",
-          "colors-1a9d4af6.js",
-          "darkMode-ee75726a.js",
-          "_commonjsHelpers-cb2db9e6.js"
-        ],
-        "originalByteSize": 1518
       }
     ]
   },
@@ -3298,6 +3211,23 @@
       "excludeFromCollection": false,
       "events": [
         {
+          "name": "confirmed",
+          "method": "confirmed",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "complexType": {
+            "original": "any",
+            "resolved": "any",
+            "references": {}
+          },
+          "internal": false
+        },
+        {
           "name": "modalOpen",
           "method": "openModal",
           "bubbles": true,
@@ -3390,6 +3320,25 @@
           "complexType": {
             "original": "'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route'",
             "resolved": "\"button\" | \"link\" | \"modal\" | \"onboarding\" | \"span\" | \"stencil-route\" | \"submit\"",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "sideEffect",
+          "type": "string",
+          "attribute": "side-effect",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "'copy' | 'close-modal'",
+            "resolved": "\"close-modal\" | \"copy\"",
             "references": {}
           },
           "docs": {
@@ -3561,9 +3510,10 @@
           "mutable": false,
           "required": false,
           "optional": false,
+          "defaultValue": "'default'",
           "complexType": {
-            "original": "'tiny' | 'small' | 'large'",
-            "resolved": "\"large\" | \"small\" | \"tiny\"",
+            "original": "'tiny' | 'small' | 'default' | 'large'",
+            "resolved": "\"default\" | \"large\" | \"small\" | \"tiny\"",
             "references": {}
           },
           "docs": {
@@ -3580,9 +3530,10 @@
           "mutable": false,
           "required": false,
           "optional": false,
+          "defaultValue": "'default'",
           "complexType": {
-            "original": "'tiny' | 'small' | 'large'",
-            "resolved": "\"large\" | \"small\" | \"tiny\"",
+            "original": "'tiny' | 'small' | 'default' | 'large'",
+            "resolved": "\"default\" | \"large\" | \"small\" | \"tiny\"",
             "references": {}
           },
           "docs": {
@@ -3652,6 +3603,101 @@
           "internal": false
         },
         {
+          "name": "activate",
+          "type": "string",
+          "attribute": "activate",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "attribute": "method",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "'get' | 'post' | 'patch' | 'put' | 'delete'",
+            "resolved": "\"delete\" | \"get\" | \"patch\" | \"post\" | \"put\"",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "authenticityToken",
+          "type": "string",
+          "attribute": "authenticity-token",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "sidebar",
+          "type": "boolean",
+          "attribute": "sidebar",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "stopPropagation",
+          "type": "boolean",
+          "attribute": "stop-propagation",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
           "name": "disabled",
           "type": "boolean",
           "attribute": "disabled",
@@ -3675,6 +3721,26 @@
           "name": "pill",
           "type": "boolean",
           "attribute": "pill",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "circle",
+          "type": "boolean",
+          "attribute": "circle",
           "reflect": true,
           "mutable": false,
           "required": false,
@@ -3772,31 +3838,11 @@
           "internal": false
         },
         {
-          "name": "ghost",
-          "type": "boolean",
-          "attribute": "ghost",
-          "reflect": true,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "false",
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
           "name": "dark",
           "type": "boolean",
           "attribute": "dark",
           "reflect": true,
-          "mutable": true,
+          "mutable": false,
           "required": false,
           "optional": false,
           "defaultValue": "false",
@@ -3891,6 +3937,26 @@
           "internal": false
         },
         {
+          "name": "ghost",
+          "type": "boolean",
+          "attribute": "ghost",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
           "name": "usePjax",
           "type": "boolean",
           "attribute": "use-pjax",
@@ -3931,7 +3997,11 @@
         }
       ],
       "shadowDelegatesFocus": false,
-      "states": []
+      "states": [
+        {
+          "name": "copied"
+        }
+      ]
     },
     {
       "tag": "midwest-calendar-date",
@@ -6318,6 +6388,90 @@
       ]
     },
     {
+      "tag": "midwest-panel",
+      "path": "./src/components/panel/panel.js",
+      "source": "./src/components/panel/panel.tsx",
+      "elementRef": "element",
+      "componentClassName": "Panel",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [
+        {
+          "name": "click",
+          "method": "click",
+          "capture": false,
+          "passive": false,
+          "target": "window"
+        }
+      ],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "closeOnBlur",
+          "type": "boolean",
+          "attribute": "close-on-blur",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "hideClose",
+          "type": "boolean",
+          "attribute": "hide-close",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "position"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
       "tag": "midwest-progress",
       "path": "./src/components/progress/progress.js",
       "source": "./src/components/progress/progress.tsx",
@@ -6548,6 +6702,34 @@
           "internal": false
         }
       ],
+      "shadowDelegatesFocus": false,
+      "states": []
+    },
+    {
+      "tag": "midwest-sidebar",
+      "path": "./src/components/sidebar/sidebar.js",
+      "source": "./src/components/sidebar/sidebar.tsx",
+      "elementRef": "element",
+      "componentClassName": "Sidebar",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [],
       "shadowDelegatesFocus": false,
       "states": []
     },
@@ -9234,6 +9416,1283 @@
           "directDependents": []
         },
         {
+          "tagName": "midwest-button",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "Button",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "tag",
+              "type": "string",
+              "attribute": "tag",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'link'",
+              "complexType": {
+                "original": "'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route'",
+                "resolved": "\"button\" | \"link\" | \"modal\" | \"onboarding\" | \"span\" | \"stencil-route\" | \"submit\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "sideEffect",
+              "type": "string",
+              "attribute": "side-effect",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "'copy' | 'close-modal'",
+                "resolved": "\"close-modal\" | \"copy\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "attribute": "label",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'Submit'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "attribute": "name",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "export",
+              "type": "boolean",
+              "attribute": "export",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "value",
+              "type": "string",
+              "attribute": "value",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "href",
+              "type": "string",
+              "attribute": "href",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'#'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "modalHref",
+              "type": "string",
+              "attribute": "modal-href",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "for",
+              "type": "string",
+              "attribute": "for",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "target",
+              "type": "string",
+              "attribute": "target",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'_self'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "size",
+              "type": "string",
+              "attribute": "size",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'default'",
+              "complexType": {
+                "original": "'tiny' | 'small' | 'default' | 'large'",
+                "resolved": "\"default\" | \"large\" | \"small\" | \"tiny\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "padding",
+              "type": "string",
+              "attribute": "padding",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'default'",
+              "complexType": {
+                "original": "'tiny' | 'small' | 'default' | 'large'",
+                "resolved": "\"default\" | \"large\" | \"small\" | \"tiny\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "icon",
+              "type": "boolean",
+              "attribute": "icon",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "iconOnly",
+              "type": "boolean",
+              "attribute": "icon-only",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "active",
+              "type": "boolean",
+              "attribute": "active",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "activate",
+              "type": "string",
+              "attribute": "activate",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "method",
+              "type": "string",
+              "attribute": "method",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "'get' | 'post' | 'patch' | 'put' | 'delete'",
+                "resolved": "\"delete\" | \"get\" | \"patch\" | \"post\" | \"put\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "authenticityToken",
+              "type": "string",
+              "attribute": "authenticity-token",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "sidebar",
+              "type": "boolean",
+              "attribute": "sidebar",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "stopPropagation",
+              "type": "boolean",
+              "attribute": "stop-propagation",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "disabled",
+              "type": "boolean",
+              "attribute": "disabled",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "pill",
+              "type": "boolean",
+              "attribute": "pill",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "circle",
+              "type": "boolean",
+              "attribute": "circle",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "block",
+              "type": "boolean",
+              "attribute": "block",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "outline",
+              "type": "boolean",
+              "attribute": "outline",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "invert",
+              "type": "boolean",
+              "attribute": "invert",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "contrast",
+              "type": "boolean",
+              "attribute": "contrast",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "dark",
+              "type": "boolean",
+              "attribute": "dark",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "processable",
+              "type": "boolean",
+              "attribute": "processable",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "processing",
+              "type": "boolean",
+              "attribute": "processing",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "buttonTabIndex",
+              "type": "number",
+              "attribute": "button-tab-index",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "0",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "pjaxSelector",
+              "type": "string",
+              "attribute": "pjax-selector",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "ghost",
+              "type": "boolean",
+              "attribute": "ghost",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "usePjax",
+              "type": "boolean",
+              "attribute": "use-pjax",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "confirm",
+              "type": "string",
+              "attribute": "confirm",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "copied"
+            }
+          ],
+          "methods": [],
+          "listeners": [],
+          "events": [
+            {
+              "name": "confirmed",
+              "method": "confirmed",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            },
+            {
+              "name": "modalOpen",
+              "method": "openModal",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            },
+            {
+              "name": "modalClose",
+              "method": "closeModal",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            },
+            {
+              "name": "onboardingOpen",
+              "method": "openOnboarding",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            },
+            {
+              "name": "onboardingClose",
+              "method": "closeOnboarding",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MIDWEST-BUTTON",
+              "styleStr": null,
+              "styleIdentifier": "midwestButtonStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/core/src/components/button/button.css",
+                  "relativePath": "button.css",
+                  "originalComponentPath": "button.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/core/src/components/button/button.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/core/src/components/button/button.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/core/src/components/button/button.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": true,
+          "hasReflect": true,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": true,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "indeterminate",
+            "type",
+            "class",
+            "title",
+            "data-disabled",
+            "onClick",
+            "onKeyDown",
+            "onKeyUp",
+            "tabIndex",
+            "name",
+            "size",
+            "value",
+            "href",
+            "target",
+            "url",
+            "anchorClass",
+            "aria-label"
+          ],
+          "htmlTagNames": [
+            "form",
+            "input",
+            "midwest-progress",
+            "slot",
+            "button",
+            "midwest-label",
+            "div",
+            "a",
+            "stencil-route-link",
+            "span",
+            "export-to-figma"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "midwest-progress",
+            "midwest-label",
+            "stencil-route-link",
+            "export-to-figma"
+          ],
+          "directDependencies": [
+            "midwest-progress",
+            "midwest-label"
+          ],
+          "dependencies": [
+            "midwest-label",
+            "midwest-progress"
+          ],
+          "dependents": [
+            "midwest-card"
+          ],
+          "directDependents": [
+            "midwest-card"
+          ]
+        },
+        {
+          "tagName": "midwest-label",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "Label",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "for",
+              "type": "string",
+              "attribute": "for",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "underneath",
+              "type": "boolean",
+              "attribute": "underneath",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "size",
+              "type": "string",
+              "attribute": "size",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "dark",
+              "type": "boolean",
+              "attribute": "dark",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MIDWEST-LABEL",
+              "styleStr": null,
+              "styleIdentifier": "midwestLabelStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/core/src/components/label/label.css",
+                  "relativePath": "label.css",
+                  "originalComponentPath": "label.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/core/src/components/label/label.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/core/src/components/label/label.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/core/src/components/label/label.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": true,
+          "hasReflect": true,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "htmlFor"
+          ],
+          "htmlTagNames": [
+            "label",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "midwest-button",
+            "midwest-calendar-date",
+            "midwest-card",
+            "midwest-group",
+            "midwest-group-overflow",
+            "midwest-step",
+            "midwest-tab",
+            "midwest-tag"
+          ],
+          "directDependents": [
+            "midwest-button",
+            "midwest-calendar-date",
+            "midwest-group-overflow",
+            "midwest-step",
+            "midwest-tab",
+            "midwest-tag"
+          ]
+        },
+        {
+          "tagName": "midwest-panel",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "Panel",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "closeOnBlur",
+              "type": "boolean",
+              "attribute": "close-on-blur",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "hideClose",
+              "type": "boolean",
+              "attribute": "hide-close",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "position"
+            },
+            {
+              "name": "ready"
+            }
+          ],
+          "methods": [],
+          "listeners": [
+            {
+              "name": "click",
+              "method": "click",
+              "capture": false,
+              "passive": false,
+              "target": "window"
+            }
+          ],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MIDWEST-PANEL",
+              "styleStr": null,
+              "styleIdentifier": "midwestPanelStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/core/src/components/panel/panel.css",
+                  "relativePath": "panel.css",
+                  "originalComponentPath": "panel.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/core/src/components/panel/panel.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/core/src/components/panel/panel.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/core/src/components/panel/panel.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": true,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": true,
+          "hasListenerTarget": true,
+          "hasListenerTargetWindow": true,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": true,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        },
+        {
           "tagName": "midwest-progress",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -9551,6 +11010,110 @@
             "midwest-avatar",
             "midwest-button"
           ]
+        },
+        {
+          "tagName": "midwest-sidebar",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "Sidebar",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MIDWEST-SIDEBAR",
+              "styleStr": null,
+              "styleIdentifier": "midwestSidebarStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/core/src/components/sidebar/sidebar.css",
+                  "relativePath": "sidebar.css",
+                  "originalComponentPath": "sidebar.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/core/src/components/sidebar/sidebar.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/core/src/components/sidebar/sidebar.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/core/src/components/sidebar/sidebar.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": false,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": false,
+          "hasProp": false,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "name"
+          ],
+          "htmlTagNames": [
+            "div",
+            "slot"
+          ],
+          "htmlParts": [],
+          "isUpdateable": false,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
         },
         {
           "tagName": "midwest-theme",
@@ -10038,7 +11601,7 @@
           ]
         }
       ],
-      "entryKey": "ion-icon.midwest-avatar.midwest-progress.midwest-theme.midwest-tooltip.entry"
+      "entryKey": "ion-icon.midwest-avatar.midwest-button.midwest-label.midwest-panel.midwest-progress.midwest-sidebar.midwest-theme.midwest-tooltip.entry"
     },
     {
       "cmps": [
@@ -16556,773 +18119,6 @@
     {
       "cmps": [
         {
-          "tagName": "midwest-button",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "Button",
-          "elementRef": "element",
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
-          "properties": [
-            {
-              "name": "tag",
-              "type": "string",
-              "attribute": "tag",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'link'",
-              "complexType": {
-                "original": "'button' | 'submit' | 'link' | 'span' | 'modal' | 'onboarding' | 'stencil-route'",
-                "resolved": "\"button\" | \"link\" | \"modal\" | \"onboarding\" | \"span\" | \"stencil-route\" | \"submit\"",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "label",
-              "type": "string",
-              "attribute": "label",
-              "reflect": false,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'Submit'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "name",
-              "type": "string",
-              "attribute": "name",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "export",
-              "type": "boolean",
-              "attribute": "export",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "value",
-              "type": "string",
-              "attribute": "value",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "href",
-              "type": "string",
-              "attribute": "href",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'#'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "modalHref",
-              "type": "string",
-              "attribute": "modal-href",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "for",
-              "type": "string",
-              "attribute": "for",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "target",
-              "type": "string",
-              "attribute": "target",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'_self'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "size",
-              "type": "string",
-              "attribute": "size",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "'tiny' | 'small' | 'large'",
-                "resolved": "\"large\" | \"small\" | \"tiny\"",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "padding",
-              "type": "string",
-              "attribute": "padding",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "'tiny' | 'small' | 'large'",
-                "resolved": "\"large\" | \"small\" | \"tiny\"",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "icon",
-              "type": "boolean",
-              "attribute": "icon",
-              "reflect": true,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "iconOnly",
-              "type": "boolean",
-              "attribute": "icon-only",
-              "reflect": true,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "active",
-              "type": "boolean",
-              "attribute": "active",
-              "reflect": true,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "disabled",
-              "type": "boolean",
-              "attribute": "disabled",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "pill",
-              "type": "boolean",
-              "attribute": "pill",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "block",
-              "type": "boolean",
-              "attribute": "block",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "outline",
-              "type": "boolean",
-              "attribute": "outline",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "invert",
-              "type": "boolean",
-              "attribute": "invert",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "contrast",
-              "type": "boolean",
-              "attribute": "contrast",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "ghost",
-              "type": "boolean",
-              "attribute": "ghost",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "dark",
-              "type": "boolean",
-              "attribute": "dark",
-              "reflect": true,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "processable",
-              "type": "boolean",
-              "attribute": "processable",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "processing",
-              "type": "boolean",
-              "attribute": "processing",
-              "reflect": false,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "buttonTabIndex",
-              "type": "number",
-              "attribute": "button-tab-index",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "0",
-              "complexType": {
-                "original": "number",
-                "resolved": "number",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "pjaxSelector",
-              "type": "string",
-              "attribute": "pjax-selector",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "usePjax",
-              "type": "boolean",
-              "attribute": "use-pjax",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "confirm",
-              "type": "string",
-              "attribute": "confirm",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [
-            {
-              "name": "modalOpen",
-              "method": "openModal",
-              "bubbles": true,
-              "cancelable": true,
-              "composed": true,
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "complexType": {
-                "original": "any",
-                "resolved": "any",
-                "references": {}
-              },
-              "internal": false
-            },
-            {
-              "name": "modalClose",
-              "method": "closeModal",
-              "bubbles": true,
-              "cancelable": true,
-              "composed": true,
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "complexType": {
-                "original": "any",
-                "resolved": "any",
-                "references": {}
-              },
-              "internal": false
-            },
-            {
-              "name": "onboardingOpen",
-              "method": "openOnboarding",
-              "bubbles": true,
-              "cancelable": true,
-              "composed": true,
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "complexType": {
-                "original": "any",
-                "resolved": "any",
-                "references": {}
-              },
-              "internal": false
-            },
-            {
-              "name": "onboardingClose",
-              "method": "closeOnboarding",
-              "bubbles": true,
-              "cancelable": true,
-              "composed": true,
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "complexType": {
-                "original": "any",
-                "resolved": "any",
-                "references": {}
-              },
-              "internal": false
-            }
-          ],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MIDWEST-BUTTON",
-              "styleStr": null,
-              "styleIdentifier": "midwestButtonStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/will/Sites/midwest/packages/core/src/components/button/button.css",
-                  "relativePath": "button.css",
-                  "originalComponentPath": "button.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/will/Sites/midwest/packages/core/src/components/button/button.js",
-          "sourceFilePath": "/Users/will/Sites/midwest/packages/core/src/components/button/button.tsx",
-          "sourceMapPath": "/Users/will/Sites/midwest/packages/core/src/components/button/button.js.map",
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": true,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": true,
-          "hasLifecycle": true,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": true,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": true,
-          "hasReflect": true,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": true,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "indeterminate",
-            "type",
-            "class",
-            "title",
-            "data-disabled",
-            "onClick",
-            "onKeyDown",
-            "onKeyUp",
-            "tabIndex",
-            "name",
-            "size",
-            "value",
-            "href",
-            "target",
-            "url",
-            "anchorClass",
-            "aria-label"
-          ],
-          "htmlTagNames": [
-            "midwest-progress",
-            "slot",
-            "button",
-            "midwest-label",
-            "div",
-            "a",
-            "stencil-route-link",
-            "span",
-            "export-to-figma"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [
-            "midwest-progress",
-            "midwest-label",
-            "stencil-route-link",
-            "export-to-figma"
-          ],
-          "directDependencies": [
-            "midwest-progress",
-            "midwest-label"
-          ],
-          "dependencies": [
-            "midwest-label",
-            "midwest-progress"
-          ],
-          "dependents": [
-            "midwest-card"
-          ],
-          "directDependents": [
-            "midwest-card"
-          ]
-        }
-      ],
-      "entryKey": "midwest-button.entry"
-    },
-    {
-      "cmps": [
-        {
           "tagName": "midwest-group-overflow",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -17725,208 +18521,6 @@
         }
       ],
       "entryKey": "midwest-tag.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "midwest-label",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "Label",
-          "elementRef": "element",
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
-          "properties": [
-            {
-              "name": "for",
-              "type": "string",
-              "attribute": "for",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "underneath",
-              "type": "boolean",
-              "attribute": "underneath",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "size",
-              "type": "string",
-              "attribute": "size",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "dark",
-              "type": "boolean",
-              "attribute": "dark",
-              "reflect": true,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [],
-          "methods": [],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MIDWEST-LABEL",
-              "styleStr": null,
-              "styleIdentifier": "midwestLabelStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/will/Sites/midwest/packages/core/src/components/label/label.css",
-                  "relativePath": "label.css",
-                  "originalComponentPath": "label.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/will/Sites/midwest/packages/core/src/components/label/label.js",
-          "sourceFilePath": "/Users/will/Sites/midwest/packages/core/src/components/label/label.tsx",
-          "sourceMapPath": "/Users/will/Sites/midwest/packages/core/src/components/label/label.js.map",
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": true,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": true,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": true,
-          "hasReflect": true,
-          "hasRenderFn": true,
-          "hasState": false,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": false,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": false,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "htmlFor"
-          ],
-          "htmlTagNames": [
-            "label",
-            "slot"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [
-            "midwest-button",
-            "midwest-calendar-date",
-            "midwest-card",
-            "midwest-group",
-            "midwest-group-overflow",
-            "midwest-step",
-            "midwest-tab",
-            "midwest-tag"
-          ],
-          "directDependents": [
-            "midwest-button",
-            "midwest-calendar-date",
-            "midwest-group-overflow",
-            "midwest-step",
-            "midwest-tab",
-            "midwest-tag"
-          ]
-        }
-      ],
-      "entryKey": "midwest-label.entry"
     }
   ],
   "componentGraph": {
@@ -17946,6 +18540,7 @@
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
+      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-accordion": [
@@ -17960,6 +18555,7 @@
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
+      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-breadcrumb": [
@@ -17981,6 +18577,7 @@
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
+      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-calendar-date": [
@@ -18033,6 +18630,7 @@
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
+      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-layout": [
@@ -18052,11 +18650,28 @@
       "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
+    "sc-midwest-panel": [
+      "p-16ad8274.js",
+      "p-4af0a0ee.js",
+      "p-176ce63d.js",
+      "p-5866cdea.js",
+      "p-16f1b7c0.js",
+      "p-f6c733ff.js"
+    ],
     "sc-midwest-progress": [
       "p-16ad8274.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
+      "p-16f1b7c0.js",
+      "p-f6c733ff.js"
+    ],
+    "sc-midwest-sidebar": [
+      "p-16ad8274.js",
+      "p-4af0a0ee.js",
+      "p-176ce63d.js",
+      "p-5866cdea.js",
+      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-step": [
@@ -18101,6 +18716,7 @@
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
+      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-time": [
@@ -18113,6 +18729,7 @@
       "p-4af0a0ee.js",
       "p-176ce63d.js",
       "p-5866cdea.js",
+      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-unit": [
@@ -18150,7 +18767,9 @@
     "./src/components/layout/layout.tsx": [],
     "./src/components/message/message.tsx": [],
     "./src/components/pagination/pagination.tsx": [],
+    "./src/components/panel/panel.tsx": [],
     "./src/components/progress/progress.tsx": [],
+    "./src/components/sidebar/sidebar.tsx": [],
     "./src/components/step/step.tsx": [],
     "./src/components/steps/steps.tsx": [],
     "./src/components/tab/tab.tsx": [],
