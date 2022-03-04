@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.4 (2022-03-04)</small>
+
+* build(deps): Patch forms ([0807648](https://github.com/splitinfinities/Midwest/commit/0807648))
+
+
+
+
+
 ## <small>0.1.3 (2022-03-04)</small>
 
 * build(deps): stats ([0c018dc](https://github.com/splitinfinities/Midwest/commit/0c018dc))
