@@ -11,13 +11,13 @@
 | ------------- | ------------- | ----------- | -------------------------- | -------------------- |
 | `appendCopy`  | `append-copy` |             | `string`                   | `undefined`          |
 | `count`       | `count`       |             | `number`                   | `3`                  |
-| `fallback`    | `fallback`    |             | `string`                   | `"Choose something"` |
+| `fallback`    | `fallback`    |             | `string`                   | `'Choose something'` |
 | `for`         | `for`         |             | `string`                   | `undefined`          |
 | `noAvatars`   | `no-avatars`  |             | `boolean`                  | `undefined`          |
 | `options`     | --            |             | `HTMLMidwestItemElement[]` | `undefined`          |
 | `placeholder` | `placeholder` |             | `string`                   | `undefined`          |
 | `show`        | `show`        |             | `boolean`                  | `true`               |
-| `verbiage`    | `verbiage`    |             | `string`                   | `"item"`             |
+| `verbiage`    | `verbiage`    |             | `string`                   | `'item'`             |
 | `view`        | `view`        |             | `string`                   | `undefined`          |
 
 

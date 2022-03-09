@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-03-04T05:51:02",
+  "timestamp": "2022-03-09T16:58:43",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -505,6 +505,8 @@
           "./dist/forms/p-0c502921.js.map",
           "./dist/forms/p-16f1b7c0.js",
           "./dist/forms/p-16f1b7c0.js.map",
+          "./dist/forms/p-20a2c6e1.entry.js",
+          "./dist/forms/p-20a2c6e1.entry.js.map",
           "./dist/forms/p-243a2db5.entry.js",
           "./dist/forms/p-243a2db5.entry.js.map",
           "./dist/forms/p-246e4d91.entry.js",
@@ -513,14 +515,14 @@
           "./dist/forms/p-295ef69b.entry.js.map",
           "./dist/forms/p-3318dc3c.entry.js",
           "./dist/forms/p-3318dc3c.entry.js.map",
-          "./dist/forms/p-347478d5.entry.js",
-          "./dist/forms/p-347478d5.entry.js.map",
           "./dist/forms/p-3ca5c20c.entry.js",
           "./dist/forms/p-3ca5c20c.entry.js.map",
           "./dist/forms/p-3fd90676.entry.js",
           "./dist/forms/p-3fd90676.entry.js.map",
           "./dist/forms/p-4072521e.entry.js",
           "./dist/forms/p-4072521e.entry.js.map",
+          "./dist/forms/p-4424a475.entry.js",
+          "./dist/forms/p-4424a475.entry.js.map",
           "./dist/forms/p-4ab2c4e8.js",
           "./dist/forms/p-4ab2c4e8.js.map",
           "./dist/forms/p-4af0a0ee.js",
@@ -567,8 +569,6 @@
           "./dist/forms/p-a12117c3.entry.js.map",
           "./dist/forms/p-a1c0002e.entry.js",
           "./dist/forms/p-a1c0002e.entry.js.map",
-          "./dist/forms/p-a29c3a48.entry.js",
-          "./dist/forms/p-a29c3a48.entry.js.map",
           "./dist/forms/p-a58d2d81.js",
           "./dist/forms/p-a58d2d81.js.map",
           "./dist/forms/p-c1025741.entry.js",
@@ -623,6 +623,8 @@
           "./www/build/p-0c502921.js.map",
           "./www/build/p-16f1b7c0.js",
           "./www/build/p-16f1b7c0.js.map",
+          "./www/build/p-20a2c6e1.entry.js",
+          "./www/build/p-20a2c6e1.entry.js.map",
           "./www/build/p-243a2db5.entry.js",
           "./www/build/p-243a2db5.entry.js.map",
           "./www/build/p-246e4d91.entry.js",
@@ -631,14 +633,14 @@
           "./www/build/p-295ef69b.entry.js.map",
           "./www/build/p-3318dc3c.entry.js",
           "./www/build/p-3318dc3c.entry.js.map",
-          "./www/build/p-347478d5.entry.js",
-          "./www/build/p-347478d5.entry.js.map",
           "./www/build/p-3ca5c20c.entry.js",
           "./www/build/p-3ca5c20c.entry.js.map",
           "./www/build/p-3fd90676.entry.js",
           "./www/build/p-3fd90676.entry.js.map",
           "./www/build/p-4072521e.entry.js",
           "./www/build/p-4072521e.entry.js.map",
+          "./www/build/p-4424a475.entry.js",
+          "./www/build/p-4424a475.entry.js.map",
           "./www/build/p-4ab2c4e8.js",
           "./www/build/p-4ab2c4e8.js.map",
           "./www/build/p-4af0a0ee.js",
@@ -685,8 +687,6 @@
           "./www/build/p-a12117c3.entry.js.map",
           "./www/build/p-a1c0002e.entry.js",
           "./www/build/p-a1c0002e.entry.js.map",
-          "./www/build/p-a29c3a48.entry.js",
-          "./www/build/p-a29c3a48.entry.js.map",
           "./www/build/p-a58d2d81.js",
           "./www/build/p-a58d2d81.js.map",
           "./www/build/p-c1025741.entry.js",
@@ -910,18 +910,18 @@
         "components": [
           "midwest-form"
         ],
-        "bundleId": "p-347478d5",
-        "fileName": "p-347478d5.entry.js",
+        "bundleId": "p-4424a475",
+        "fileName": "p-4424a475.entry.js",
         "imports": [
           "p-65f37d00.js",
+          "p-4d23a23e.js",
+          "p-16f1b7c0.js",
           "p-4af0a0ee.js",
           "p-09396ade.js",
           "p-a58d2d81.js",
-          "p-4d23a23e.js",
-          "p-16f1b7c0.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 8459
+        "originalByteSize": 10365
       },
       {
         "key": "midwest-input-file.entry",
@@ -1296,8 +1296,8 @@
           "midwest-group",
           "midwest-input"
         ],
-        "bundleId": "p-a29c3a48",
-        "fileName": "p-a29c3a48.entry.js",
+        "bundleId": "p-20a2c6e1",
+        "fileName": "p-20a2c6e1.entry.js",
         "imports": [
           "p-65f37d00.js",
           "p-4ab2c4e8.js",
@@ -1306,7 +1306,7 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 31361
+        "originalByteSize": 31375
       },
       {
         "key": "midwest-grid.entry",
@@ -1608,14 +1608,14 @@
         "fileName": "midwest-form.entry.js",
         "imports": [
           "index-25aecc32.js",
+          "index-292b16f1.js",
+          "index-216e665c.js",
           "dayjs.min-40f18934.js",
           "colors-3b15fe6b.js",
           "form2js-dfeb70ef.js",
-          "index-292b16f1.js",
-          "index-216e665c.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 8505
+        "originalByteSize": 10411
       },
       {
         "key": "midwest-input-file.entry",
@@ -2000,7 +2000,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 31408
+        "originalByteSize": 31422
       },
       {
         "key": "midwest-grid.entry",
@@ -2304,14 +2304,14 @@
         "fileName": "midwest-form.cjs.entry.js",
         "imports": [
           "index-2923bbbf.js",
+          "index-70fb2f40.js",
+          "index-73a2de1e.js",
           "dayjs.min-7594f47b.js",
           "colors-1aa6a2b2.js",
           "form2js-e6bf6fea.js",
-          "index-70fb2f40.js",
-          "index-73a2de1e.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 8638
+        "originalByteSize": 10544
       },
       {
         "key": "midwest-input-file.entry",
@@ -2696,7 +2696,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 31842
+        "originalByteSize": 31856
       },
       {
         "key": "midwest-grid.entry",
@@ -6707,7 +6707,7 @@
         "tags": [],
         "text": ""
       },
-      "encapsulation": "shadow",
+      "encapsulation": "none",
       "excludeFromCollection": false,
       "events": [
         {
@@ -7184,6 +7184,25 @@
           "internal": false
         },
         {
+          "name": "inert",
+          "type": "boolean",
+          "attribute": "inert",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
           "name": "validate",
           "type": "boolean",
           "attribute": "validate",
@@ -7240,9 +7259,28 @@
             "text": ""
           },
           "internal": false
+        },
+        {
+          "name": "focusScroll",
+          "type": "boolean",
+          "attribute": "focus-scroll",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
         }
       ],
-      "shadowDelegatesFocus": false,
+      "shadowDelegatesFocus": null,
       "states": [
         {
           "name": "clickedButton"
@@ -7376,7 +7414,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"item\"",
+          "defaultValue": "'item'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -7396,7 +7434,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"Choose something\"",
+          "defaultValue": "'Choose something'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -19458,8 +19496,8 @@
           "isCollectionDependency": false,
           "componentClassName": "Form",
           "elementRef": "element",
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
           "properties": [
             {
               "name": "ajax",
@@ -19639,6 +19677,25 @@
               "internal": false
             },
             {
+              "name": "inert",
+              "type": "boolean",
+              "attribute": "inert",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "validate",
               "type": "boolean",
               "attribute": "validate",
@@ -19681,6 +19738,25 @@
               "name": "closeModalOnSuccess",
               "type": "boolean",
               "attribute": "close-modal-on-success",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "focusScroll",
+              "type": "boolean",
+              "attribute": "focus-scroll",
               "reflect": false,
               "mutable": false,
               "required": false,
@@ -20055,7 +20131,7 @@
           "hasVdomKey": false,
           "hasVdomListener": true,
           "hasVdomPropOrAttr": true,
-          "hasVdomRef": true,
+          "hasVdomRef": false,
           "hasVdomRender": true,
           "hasVdomStyle": true,
           "hasVdomText": true,
@@ -20071,7 +20147,6 @@
             "name",
             "novalidate",
             "target",
-            "ref",
             "onSubmit",
             "type",
             "class"
@@ -29744,7 +29819,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"item\"",
+              "defaultValue": "'item'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -29764,7 +29839,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"Choose something\"",
+              "defaultValue": "'Choose something'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -35158,11 +35233,11 @@
     ],
     "sc-midwest-form": [
       "p-65f37d00.js",
+      "p-4d23a23e.js",
+      "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-09396ade.js",
       "p-a58d2d81.js",
-      "p-4d23a23e.js",
-      "p-16f1b7c0.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-form-rollup": [

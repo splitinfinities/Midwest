@@ -3037,18 +3037,6 @@
   resolved "https://registry.yarnpkg.com/@stencil/react-output-target/-/react-output-target-0.1.0.tgz#cdb586051bbd54e4a3d9af5da66b55b66244b558"
   integrity sha512-NWeN2S43dwWDIousfojzGXIMkJJhfcdS1JxpwgE7IOqy4tZ+nqlDLPhM6tXvZ3eq4rJm8bkF+3/WbPJNR9xR7Q==
 
-"@stencil/router@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-1.0.1.tgz#f95bcc67ef8d832c16a117487a277d4ce2973d2a"
-  integrity sha512-ZMholl1BE+glNAc/8pcEb9RYkeH0XETxsJbx6D7f3azTmaTXqKYty1IACP/3BtVjuimpfLdxQJ+J95wKmnYBtA==
-  dependencies:
-    "@stencil/state-tunnel" "^1.0.1"
-
-"@stencil/state-tunnel@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@stencil/state-tunnel/-/state-tunnel-1.0.1.tgz#21324f494ad719732505c8134099e415ac4c3c81"
-  integrity sha512-DYG8uROgL9hkjVTCtCfRBb0d3FwpiFB0muRrNZQ2X1Qo5hxMuNNji76/ILddqeq0AfgkKCW82xrMPDpy+rNIhQ==
-
 "@stencil/store@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@stencil/store/-/store-1.5.0.tgz#5c4e14ed078771bb8ed635867cfa8c3452f15ac4"

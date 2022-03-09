@@ -37,7 +37,9 @@ export namespace Components {
         "autosave": boolean;
         "closeModalOnSuccess": boolean;
         "enctype": string;
+        "focusScroll": boolean;
         "get": (name?: string, validate?: boolean) => Promise<{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string; }; formData: any; valid: boolean; }>;
+        "inert": boolean;
         "method": string;
         "name": string;
         "perform": boolean;
@@ -481,6 +483,8 @@ declare namespace LocalJSX {
         "autosave"?: boolean;
         "closeModalOnSuccess"?: boolean;
         "enctype"?: string;
+        "focusScroll"?: boolean;
+        "inert"?: boolean;
         "method"?: string;
         "name"?: string;
         "onFastUpdates"?: (event: CustomEvent<any>) => void;

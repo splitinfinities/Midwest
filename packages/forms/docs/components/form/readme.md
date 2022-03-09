@@ -16,6 +16,8 @@
 | `autosave`            | `autosave`               |             | `boolean` | `false`                 |
 | `closeModalOnSuccess` | `close-modal-on-success` |             | `boolean` | `undefined`             |
 | `enctype`             | `enctype`                |             | `string`  | `'multipart/form-data'` |
+| `focusScroll`         | `focus-scroll`           |             | `boolean` | `undefined`             |
+| `inert`               | `inert`                  |             | `boolean` | `undefined`             |
 | `method`              | `method`                 |             | `string`  | `'get'`                 |
 | `name`                | `name`                   |             | `string`  | `undefined`             |
 | `perform`             | `perform`                |             | `boolean` | `false`                 |

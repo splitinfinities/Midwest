@@ -1,11 +1,10 @@
 import { Component, Prop, Element, Method, Listen, Event, EventEmitter, h, State, Host } from '@stencil/core';
-import { asyncForEach, form2js, addDataToForm } from '@midwest-design/common';
 import Debounce from 'debounce-decorator';
 import delay from 'async-delay';
+import { addDataToForm, asyncForEach, form2js } from '@midwest-design/common';
 
 @Component({
   tag: 'midwest-form',
-  shadow: true,
 })
 export class Form {
   @Element() element: HTMLElement;
@@ -20,11 +19,15 @@ export class Form {
   @Prop() autocomplete: string = 'on';
   @Prop() enctype: string = 'multipart/form-data';
   @Prop() name: string;
+  @Prop() inert: boolean;
   @Prop() validate: boolean = true;
   @Prop() target: string;
   @Prop() closeModalOnSuccess: boolean;
 
-  @State() clickedButton: any;
+  // All sub inputs center when element is focused
+  @Prop() focusScroll: boolean;
+
+  @State() clickedButton: HTMLMidwestButtonElement;
   @State() error: string;
 
   @Event() submitted: EventEmitter;
@@ -38,15 +41,13 @@ export class Form {
 
   @State() submitting: boolean;
 
-  autosaveEl: any;
-  formEl: HTMLFormElement;
+  autosaveEl: HTMLMidwestButtonElement;
   els: HTMLElement[] = [];
   fieldGroups: HTMLMidwestFieldGroupElement[] = [];
 
   componentWillLoad() {
     if (this.autosave) {
       this.autosaveEl = this.element.querySelector("midwest-button[for='autosave']");
-      this.autosaveEl.disabled = true;
     }
   }
 
@@ -116,9 +117,7 @@ export class Form {
   ): Promise<{ els: any; json: any; results: FormResult[]; namedResults: { [name: string]: string }; formData: any; valid: boolean }> {
     return this.returnValue(
       validate,
-      this.els.filter(el => {
-        return (el as HTMLInputElement).name === name;
-      }),
+      this.els.filter(el => (el as HTMLInputElement).name === name),
     );
   }
 
@@ -176,11 +175,7 @@ export class Form {
 
     if (this.clickedButton) {
       namedResults[this.clickedButton.name] = this.clickedButton.value;
-      results.push({
-        name: this.clickedButton.name,
-        value: this.clickedButton.value,
-        valid: true,
-      });
+      results.push({ name: this.clickedButton.name, value: this.clickedButton.value, valid: true });
     }
 
     await asyncForEach(this.fieldGroups, async (group: any) => {
@@ -227,16 +222,63 @@ export class Form {
       const state = await this.state();
 
       if (state.valid) {
-        if (this.ajax) {
+        if (this.ajax || this.inert) {
           this.submitted.emit(state);
+
+          if (this.perform) {
+            const token = state.namedResults.authenticity_token;
+            const method = state.namedResults._method;
+
+            try {
+              const result = await fetch(this.action, {
+                method: method?.toUpperCase() ?? this.method.toUpperCase(),
+                body: JSON.stringify(state.json),
+                headers: {
+                  'Content-Type': 'application/json',
+                  'X-CSRF-Token': token,
+                },
+              });
+
+              const responseType = result.headers.get('CONTENT-TYPE').split(';')[0];
+              const redirectTo = result.redirected ? result.url : result.headers.get('location');
+
+              if (!this.autosave) {
+                if (redirectTo) {
+                  if (this.pjax) {
+                    this.pjax.loadUrl(redirectTo);
+                  } else {
+                    window.location.href = redirectTo;
+                  }
+                }
+
+                if (result.status < 200 || result.status > 299 || !redirectTo) {
+                  if (!result.redirected) {
+                    throw new Error(result.statusText);
+                  }
+                } else if (responseType === 'text/html') {
+                  this.pjax.loadContent(await result.text());
+                }
+              }
+            } catch (e: any) {
+              console.error(e);
+              this.error = e.message;
+            }
+          }
         } else {
-          addDataToForm(this.formEl, state.namedResults);
-          this.formEl.submit();
+          if (!this.inert) {
+            const form = this.element.querySelector('form');
+            addDataToForm(form, state.namedResults);
+            form.submit();
+          }
         }
 
-        if (this.closeModalOnSuccess && !this.error) {
+        if (this.closeModalOnSuccess && !this.error && !this.inert) {
           this.closeModal.emit({});
         }
+      } else {
+        const firstInvalidName = state.results.find(el => !el.valid);
+        const firstInvalidElement = state.els.find((el: any) => el.name === firstInvalidName.name);
+        firstInvalidElement?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
       }
 
       if (button) {
@@ -261,10 +303,6 @@ export class Form {
           name={this.name}
           novalidate={!!this.validate}
           target={this.target}
-          style={{ margin: '0' }}
-          ref={el => {
-            this.formEl = el;
-          }}
           onSubmit={e => {
             e.preventDefault();
             this.submitForm();

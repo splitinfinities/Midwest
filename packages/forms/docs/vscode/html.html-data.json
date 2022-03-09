@@ -113,6 +113,14 @@
           "description": ""
         },
         {
+          "name": "focus-scroll",
+          "description": ""
+        },
+        {
+          "name": "inert",
+          "description": ""
+        },
+        {
           "name": "method",
           "description": ""
         },
