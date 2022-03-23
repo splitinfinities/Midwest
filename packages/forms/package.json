@@ -1,7 +1,7 @@
 {
   "name": "@midwest-design/forms",
   "public": true,
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Stencil Component Starter",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",
@@ -28,7 +28,7 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.1.3",
     "@midwest-design/common": "^0.1.2",
-    "@midwest-design/core": "^0.1.6",
+    "@midwest-design/core": "^0.1.7",
     "@stencil/core": "^2.14.0",
     "@stencil/postcss": "^2.1.0",
     "animejs": "^3.2.1",

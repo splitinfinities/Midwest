@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.7 (2022-03-23)</small>
+
+* build(deps): Adding a clickable method to buttons ([68864be](https://github.com/splitinfinities/Midwest/commit/68864be))
+
+
+
+
+
 ## <small>0.1.6 (2022-03-09)</small>
 
 * build(deps): build(deps): Updating forms behavior ([9eb525f](https://github.com/splitinfinities/Midwest/commit/9eb525f))
