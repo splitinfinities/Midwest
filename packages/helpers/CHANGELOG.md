@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.8 (2022-03-23)</small>
+
+* build(deps): align labels in steps ([0471942](https://github.com/splitinfinities/Midwest/commit/0471942))
+
+
+
+
+
 ## <small>0.1.7 (2022-03-23)</small>
 
 * build(deps): Adding a clickable method to buttons ([68864be](https://github.com/splitinfinities/Midwest/commit/68864be))
