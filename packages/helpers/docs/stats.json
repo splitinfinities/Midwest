@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-03-09T16:58:41",
+  "timestamp": "2022-03-23T14:58:31",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -528,8 +528,6 @@
           "./dist/helpers/p-676af339.js.map",
           "./dist/helpers/p-67c75b26.entry.js",
           "./dist/helpers/p-67c75b26.entry.js.map",
-          "./dist/helpers/p-703a09e1.entry.js",
-          "./dist/helpers/p-703a09e1.entry.js.map",
           "./dist/helpers/p-7a17504b.entry.js",
           "./dist/helpers/p-7a17504b.entry.js.map",
           "./dist/helpers/p-8ddd87c7.entry.js",
@@ -550,6 +548,8 @@
           "./dist/helpers/p-a7b7f407.entry.js.map",
           "./dist/helpers/p-b0e71c59.entry.js",
           "./dist/helpers/p-b0e71c59.entry.js.map",
+          "./dist/helpers/p-b0ffd36e.entry.js",
+          "./dist/helpers/p-b0ffd36e.entry.js.map",
           "./dist/helpers/p-b239c758.entry.js",
           "./dist/helpers/p-b239c758.entry.js.map",
           "./dist/helpers/p-b2f92065.entry.js",
@@ -642,8 +642,6 @@
           "./www/build/p-676af339.js.map",
           "./www/build/p-67c75b26.entry.js",
           "./www/build/p-67c75b26.entry.js.map",
-          "./www/build/p-703a09e1.entry.js",
-          "./www/build/p-703a09e1.entry.js.map",
           "./www/build/p-7a17504b.entry.js",
           "./www/build/p-7a17504b.entry.js.map",
           "./www/build/p-8ddd87c7.entry.js",
@@ -664,6 +662,8 @@
           "./www/build/p-a7b7f407.entry.js.map",
           "./www/build/p-b0e71c59.entry.js",
           "./www/build/p-b0e71c59.entry.js.map",
+          "./www/build/p-b0ffd36e.entry.js",
+          "./www/build/p-b0ffd36e.entry.js.map",
           "./www/build/p-b239c758.entry.js",
           "./www/build/p-b239c758.entry.js.map",
           "./www/build/p-b2f92065.entry.js",
@@ -736,8 +736,8 @@
           "midwest-theme",
           "resize-observer"
         ],
-        "bundleId": "p-703a09e1",
-        "fileName": "p-703a09e1.entry.js",
+        "bundleId": "p-b0ffd36e",
+        "fileName": "p-b0ffd36e.entry.js",
         "imports": [
           "p-38ee53c6.js",
           "p-16f1b7c0.js",
@@ -746,7 +746,7 @@
           "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 154012
+        "originalByteSize": 154062
       },
       {
         "key": "animated-route-switch.entry",
@@ -1406,7 +1406,7 @@
           "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 154055
+        "originalByteSize": 154105
       },
       {
         "key": "animated-route-switch.entry",
@@ -2068,7 +2068,7 @@
           "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 154762
+        "originalByteSize": 154812
       },
       {
         "key": "animated-route-switch.entry",
@@ -4423,7 +4423,26 @@
       "legacyConnect": [],
       "legacyContext": [],
       "listeners": [],
-      "methods": [],
+      "methods": [
+        {
+          "name": "fireClick",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
       "potentialCmpRefs": [
         "midwest-progress",
         "midwest-label",
@@ -13961,7 +13980,26 @@
               "name": "copied"
             }
           ],
-          "methods": [],
+          "methods": [
+            {
+              "name": "fireClick",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
           "listeners": [],
           "events": [
             {
@@ -14099,7 +14137,7 @@
           "hasListenerTargetBody": false,
           "hasListenerTargetParent": false,
           "hasMember": true,
-          "hasMethod": false,
+          "hasMethod": true,
           "hasMode": false,
           "hasAttribute": true,
           "hasProp": true,

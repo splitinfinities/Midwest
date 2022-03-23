@@ -59,6 +59,7 @@ export namespace Components {
         "dark": boolean;
         "disabled": boolean;
         "export": boolean;
+        "fireClick": () => Promise<void>;
         "for": string;
         "ghost": boolean;
         "href": string;

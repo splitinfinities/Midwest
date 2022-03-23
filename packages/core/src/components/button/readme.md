@@ -57,6 +57,19 @@
 | `onboardingOpen`  |             | `CustomEvent<any>` |
 
 
+## Methods
+
+### `fireClick() => Promise<void>`
+
+
+
+#### Returns
+
+Type: `Promise<void>`
+
+
+
+
 ## Dependencies
 
 ### Used by

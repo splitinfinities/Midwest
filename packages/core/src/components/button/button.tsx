@@ -1,4 +1,4 @@
-import { Component, Prop, Element, h, Host, Event, EventEmitter, State } from '@stencil/core';
+import { Component, Prop, Element, h, Host, Event, EventEmitter, State, Method } from '@stencil/core';
 import ezClipboard from 'ez-clipboard';
 import delay from 'async-delay';
 
@@ -102,6 +102,11 @@ export class Button {
     if (this.sideEffect && this.sideEffect.includes('modalClose')) {
       await this.closeModalSideEffect();
     }
+  }
+
+  @Method()
+  async fireClick() {
+    await this.click();
   }
 
   async click() {
