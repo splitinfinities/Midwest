@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.12 (2022-03-25)</small>
+
+* build(deps): updates to step ([f48a101](https://github.com/splitinfinities/Midwest/commit/f48a101))
+
+
+
+
+
 ## <small>0.1.11 (2022-03-25)</small>
 
 * build(deps): Update step styles ([6b416f3](https://github.com/splitinfinities/Midwest/commit/6b416f3))
