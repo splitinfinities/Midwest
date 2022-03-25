@@ -66,52 +66,52 @@
   right: 0;
 }
 
-:host([complete]) button {
+:host([complete]) .step-button {
   background: var(--theme-7);
 }
 
-:host([complete]) button:hover,
-:host([complete]) button:focus {
+:host([complete]) .step-button:hover,
+:host([complete]) .step-button:focus {
   background: var(--theme-8);
 }
 
-:host([open]) button,
-:host([current]) button {
+:host([open]) .step-button,
+:host([current]) .step-button {
   background: var(--theme-6);
 }
 
-:host([open]) button .loading,
-:host([current]) button .loading {
+:host([open]) .step-button .loading,
+:host([current]) .step-button .loading {
   opacity: 1;
 }
 
 
-:host([dark]) button {
+:host([dark]) .step-button {
   background: var(--gray-9);
 }
 
-:host([dark]) sa-icon.valid {
+:host([dark]) ion-icon.valid {
   --secondary: var(--theme-6);
   color: var(--theme-2);
 }
 
 
-:host([dark][complete]) button {
+:host([dark][complete]) .step-button {
   background: var(--theme-10);
 }
 
-:host([dark][complete]) button:hover,
-:host([dark][complete]) button:focus {
+:host([dark][complete]) .step-button:hover,
+:host([dark][complete]) .step-button:focus {
   background: var(--theme-9);
 }
 
-:host([dark][open]) button,
-:host([dark][current]) button {
+:host([dark][open]) .step-button,
+:host([dark][current]) .step-button {
   background: var(--theme-8);
 }
 
-:host([dark][open]) button .loading,
-:host([dark][current]) button .loading {
+:host([dark][open]) .step-button .loading,
+:host([dark][current]) .step-button .loading {
   opacity: 1;
 }
 
