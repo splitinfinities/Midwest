@@ -7,23 +7,13 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type      | Default     |
-| -------- | --------- | ----------- | --------- | ----------- |
-| `dark`   | `dark`    |             | `boolean` | `false`     |
-| `name`   | `name`    |             | `string`  | `undefined` |
+| Property   | Attribute  | Description | Type      | Default     |
+| ---------- | ---------- | ----------- | --------- | ----------- |
+| `name`     | `name`     |             | `string`  | `undefined` |
+| `validate` | `validate` |             | `boolean` | `undefined` |
 
 
 ## Methods
-
-### `advance() => Promise<void>`
-
-
-
-#### Returns
-
-Type: `Promise<void>`
-
-
 
 ### `contents() => Promise<HTMLMidwestContentElement[]>`
 

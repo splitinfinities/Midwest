@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-03-23T18:03:03",
+  "timestamp": "2022-03-25T17:12:14",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -9,7 +9,7 @@
     "fsNamespace": "forms",
     "components": 50,
     "entries": 50,
-    "bundles": 697,
+    "bundles": 707,
     "outputs": [
       {
         "name": "dist-collection",
@@ -65,7 +65,7 @@
       },
       {
         "name": "dist-custom-elements",
-        "files": 178,
+        "files": 180,
         "generatedFiles": [
           "./dist/custom-elements/_commonjsHelpers.js",
           "./dist/custom-elements/_commonjsHelpers.js.map",
@@ -75,6 +75,8 @@
           "./dist/custom-elements/animate-presence2.js.map",
           "./dist/custom-elements/animated-route-switch.js",
           "./dist/custom-elements/animated-route-switch.js.map",
+          "./dist/custom-elements/asyncForEach.js",
+          "./dist/custom-elements/asyncForEach.js.map",
           "./dist/custom-elements/avatar.js",
           "./dist/custom-elements/avatar.js.map",
           "./dist/custom-elements/box.js",
@@ -249,7 +251,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 470,
+        "files": 478,
         "generatedFiles": [
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js",
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js.map",
@@ -257,6 +259,8 @@
           "./dist/cjs/animate-presence.cjs.entry.js.map",
           "./dist/cjs/animated-route-switch.cjs.entry.js",
           "./dist/cjs/animated-route-switch.cjs.entry.js.map",
+          "./dist/cjs/asyncForEach-d424f614.js",
+          "./dist/cjs/asyncForEach-d424f614.js.map",
           "./dist/cjs/colors-1aa6a2b2.js",
           "./dist/cjs/colors-1aa6a2b2.js.map",
           "./dist/cjs/copy-wrap_2.cjs.entry.js",
@@ -265,8 +269,8 @@
           "./dist/cjs/darkMode-ee75726a.js.map",
           "./dist/cjs/dayjs.min-7594f47b.js",
           "./dist/cjs/dayjs.min-7594f47b.js.map",
-          "./dist/cjs/form2js-e6bf6fea.js",
-          "./dist/cjs/form2js-e6bf6fea.js.map",
+          "./dist/cjs/form2js-1f924cd9.js",
+          "./dist/cjs/form2js-1f924cd9.js.map",
           "./dist/cjs/forms.cjs.js",
           "./dist/cjs/forms.cjs.js.map",
           "./dist/cjs/index-2923bbbf.js",
@@ -375,6 +379,8 @@
           "./dist/esm/animate-presence.entry.js.map",
           "./dist/esm/animated-route-switch.entry.js",
           "./dist/esm/animated-route-switch.entry.js.map",
+          "./dist/esm/asyncForEach-c7d78bc5.js",
+          "./dist/esm/asyncForEach-c7d78bc5.js.map",
           "./dist/esm/colors-3b15fe6b.js",
           "./dist/esm/colors-3b15fe6b.js.map",
           "./dist/esm/copy-wrap_2.entry.js",
@@ -383,8 +389,8 @@
           "./dist/esm/darkMode-76deeecd.js.map",
           "./dist/esm/dayjs.min-40f18934.js",
           "./dist/esm/dayjs.min-40f18934.js.map",
-          "./dist/esm/form2js-dfeb70ef.js",
-          "./dist/esm/form2js-dfeb70ef.js.map",
+          "./dist/esm/form2js-a68f4cde.js",
+          "./dist/esm/form2js-a68f4cde.js.map",
           "./dist/esm/forms.js",
           "./dist/esm/forms.js.map",
           "./dist/esm/index-216e665c.js",
@@ -521,8 +527,10 @@
           "./dist/forms/p-3fd90676.entry.js.map",
           "./dist/forms/p-4072521e.entry.js",
           "./dist/forms/p-4072521e.entry.js.map",
-          "./dist/forms/p-4424a475.entry.js",
-          "./dist/forms/p-4424a475.entry.js.map",
+          "./dist/forms/p-41f0ec52.entry.js",
+          "./dist/forms/p-41f0ec52.entry.js.map",
+          "./dist/forms/p-46cbd112.js",
+          "./dist/forms/p-46cbd112.js.map",
           "./dist/forms/p-4ab2c4e8.js",
           "./dist/forms/p-4ab2c4e8.js.map",
           "./dist/forms/p-4af0a0ee.js",
@@ -531,16 +539,16 @@
           "./dist/forms/p-4be291a6.entry.js.map",
           "./dist/forms/p-4d23a23e.js",
           "./dist/forms/p-4d23a23e.js.map",
-          "./dist/forms/p-5471c478.entry.js",
-          "./dist/forms/p-5471c478.entry.js.map",
+          "./dist/forms/p-569ae4f8.entry.js",
+          "./dist/forms/p-569ae4f8.entry.js.map",
           "./dist/forms/p-5866cdea.js",
           "./dist/forms/p-5866cdea.js.map",
           "./dist/forms/p-5de9c776.entry.js",
           "./dist/forms/p-5de9c776.entry.js.map",
+          "./dist/forms/p-61069ba4.entry.js",
+          "./dist/forms/p-61069ba4.entry.js.map",
           "./dist/forms/p-628ffdaf.entry.js",
           "./dist/forms/p-628ffdaf.entry.js.map",
-          "./dist/forms/p-6478e4ea.entry.js",
-          "./dist/forms/p-6478e4ea.entry.js.map",
           "./dist/forms/p-65f37d00.js",
           "./dist/forms/p-65f37d00.js.map",
           "./dist/forms/p-676af339.js",
@@ -557,10 +565,10 @@
           "./dist/forms/p-7595bb4b.entry.js.map",
           "./dist/forms/p-7fdc523a.entry.js",
           "./dist/forms/p-7fdc523a.entry.js.map",
-          "./dist/forms/p-854b7942.entry.js",
-          "./dist/forms/p-854b7942.entry.js.map",
           "./dist/forms/p-8f1867de.entry.js",
           "./dist/forms/p-8f1867de.entry.js.map",
+          "./dist/forms/p-909e1197.entry.js",
+          "./dist/forms/p-909e1197.entry.js.map",
           "./dist/forms/p-9ce7fb2d.entry.js",
           "./dist/forms/p-9ce7fb2d.entry.js.map",
           "./dist/forms/p-9fc4ed94.entry.js",
@@ -569,8 +577,6 @@
           "./dist/forms/p-a12117c3.entry.js.map",
           "./dist/forms/p-a1c0002e.entry.js",
           "./dist/forms/p-a1c0002e.entry.js.map",
-          "./dist/forms/p-a58d2d81.js",
-          "./dist/forms/p-a58d2d81.js.map",
           "./dist/forms/p-c76a0077.entry.js",
           "./dist/forms/p-c76a0077.entry.js.map",
           "./dist/forms/p-cf105836.entry.js",
@@ -595,6 +601,8 @@
           "./dist/forms/p-e837092b.entry.js.map",
           "./dist/forms/p-ebed2d6b.entry.js",
           "./dist/forms/p-ebed2d6b.entry.js.map",
+          "./dist/forms/p-ed163ee5.js",
+          "./dist/forms/p-ed163ee5.js.map",
           "./dist/forms/p-f0b41ca2.entry.js",
           "./dist/forms/p-f0b41ca2.entry.js.map",
           "./dist/forms/p-f588874a.entry.js",
@@ -639,8 +647,10 @@
           "./www/build/p-3fd90676.entry.js.map",
           "./www/build/p-4072521e.entry.js",
           "./www/build/p-4072521e.entry.js.map",
-          "./www/build/p-4424a475.entry.js",
-          "./www/build/p-4424a475.entry.js.map",
+          "./www/build/p-41f0ec52.entry.js",
+          "./www/build/p-41f0ec52.entry.js.map",
+          "./www/build/p-46cbd112.js",
+          "./www/build/p-46cbd112.js.map",
           "./www/build/p-4ab2c4e8.js",
           "./www/build/p-4ab2c4e8.js.map",
           "./www/build/p-4af0a0ee.js",
@@ -649,16 +659,16 @@
           "./www/build/p-4be291a6.entry.js.map",
           "./www/build/p-4d23a23e.js",
           "./www/build/p-4d23a23e.js.map",
-          "./www/build/p-5471c478.entry.js",
-          "./www/build/p-5471c478.entry.js.map",
+          "./www/build/p-569ae4f8.entry.js",
+          "./www/build/p-569ae4f8.entry.js.map",
           "./www/build/p-5866cdea.js",
           "./www/build/p-5866cdea.js.map",
           "./www/build/p-5de9c776.entry.js",
           "./www/build/p-5de9c776.entry.js.map",
+          "./www/build/p-61069ba4.entry.js",
+          "./www/build/p-61069ba4.entry.js.map",
           "./www/build/p-628ffdaf.entry.js",
           "./www/build/p-628ffdaf.entry.js.map",
-          "./www/build/p-6478e4ea.entry.js",
-          "./www/build/p-6478e4ea.entry.js.map",
           "./www/build/p-65f37d00.js",
           "./www/build/p-65f37d00.js.map",
           "./www/build/p-676af339.js",
@@ -675,10 +685,10 @@
           "./www/build/p-7595bb4b.entry.js.map",
           "./www/build/p-7fdc523a.entry.js",
           "./www/build/p-7fdc523a.entry.js.map",
-          "./www/build/p-854b7942.entry.js",
-          "./www/build/p-854b7942.entry.js.map",
           "./www/build/p-8f1867de.entry.js",
           "./www/build/p-8f1867de.entry.js.map",
+          "./www/build/p-909e1197.entry.js",
+          "./www/build/p-909e1197.entry.js.map",
           "./www/build/p-9ce7fb2d.entry.js",
           "./www/build/p-9ce7fb2d.entry.js.map",
           "./www/build/p-9fc4ed94.entry.js",
@@ -687,8 +697,6 @@
           "./www/build/p-a12117c3.entry.js.map",
           "./www/build/p-a1c0002e.entry.js",
           "./www/build/p-a1c0002e.entry.js.map",
-          "./www/build/p-a58d2d81.js",
-          "./www/build/p-a58d2d81.js.map",
           "./www/build/p-c76a0077.entry.js",
           "./www/build/p-c76a0077.entry.js.map",
           "./www/build/p-cf105836.entry.js",
@@ -713,6 +721,8 @@
           "./www/build/p-e837092b.entry.js.map",
           "./www/build/p-ebed2d6b.entry.js",
           "./www/build/p-ebed2d6b.entry.js.map",
+          "./www/build/p-ed163ee5.js",
+          "./www/build/p-ed163ee5.js.map",
           "./www/build/p-f0b41ca2.entry.js",
           "./www/build/p-f0b41ca2.entry.js.map",
           "./www/build/p-f588874a.entry.js",
@@ -893,35 +903,37 @@
         "components": [
           "midwest-field-group"
         ],
-        "bundleId": "p-854b7942",
-        "fileName": "p-854b7942.entry.js",
+        "bundleId": "p-61069ba4",
+        "fileName": "p-61069ba4.entry.js",
         "imports": [
           "p-65f37d00.js",
           "p-4af0a0ee.js",
           "p-09396ade.js",
-          "p-a58d2d81.js",
+          "p-ed163ee5.js",
+          "p-46cbd112.js",
           "p-4d23a23e.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 4029
+        "originalByteSize": 4063
       },
       {
         "key": "midwest-form.entry",
         "components": [
           "midwest-form"
         ],
-        "bundleId": "p-4424a475",
-        "fileName": "p-4424a475.entry.js",
+        "bundleId": "p-909e1197",
+        "fileName": "p-909e1197.entry.js",
         "imports": [
           "p-65f37d00.js",
           "p-4d23a23e.js",
           "p-16f1b7c0.js",
           "p-4af0a0ee.js",
           "p-09396ade.js",
-          "p-a58d2d81.js",
+          "p-ed163ee5.js",
+          "p-46cbd112.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 10365
+        "originalByteSize": 10399
       },
       {
         "key": "midwest-input-file.entry",
@@ -1089,32 +1101,28 @@
         "components": [
           "midwest-step"
         ],
-        "bundleId": "p-5471c478",
-        "fileName": "p-5471c478.entry.js",
+        "bundleId": "p-569ae4f8",
+        "fileName": "p-569ae4f8.entry.js",
         "imports": [
           "p-65f37d00.js",
           "p-4af0a0ee.js",
           "p-09396ade.js",
-          "p-5866cdea.js",
+          "p-ed163ee5.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 4247
+        "originalByteSize": 6372
       },
       {
         "key": "midwest-steps.entry",
         "components": [
           "midwest-steps"
         ],
-        "bundleId": "p-6478e4ea",
-        "fileName": "p-6478e4ea.entry.js",
+        "bundleId": "p-41f0ec52",
+        "fileName": "p-41f0ec52.entry.js",
         "imports": [
-          "p-65f37d00.js",
-          "p-4af0a0ee.js",
-          "p-09396ade.js",
-          "p-5866cdea.js",
-          "p-f6c733ff.js"
+          "p-65f37d00.js"
         ],
-        "originalByteSize": 3136
+        "originalByteSize": 4074
       },
       {
         "key": "midwest-switch.entry",
@@ -1593,11 +1601,12 @@
           "index-25aecc32.js",
           "dayjs.min-40f18934.js",
           "colors-3b15fe6b.js",
-          "form2js-dfeb70ef.js",
+          "asyncForEach-c7d78bc5.js",
+          "form2js-a68f4cde.js",
           "index-292b16f1.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 4071
+        "originalByteSize": 4116
       },
       {
         "key": "midwest-form.entry",
@@ -1612,10 +1621,11 @@
           "index-216e665c.js",
           "dayjs.min-40f18934.js",
           "colors-3b15fe6b.js",
-          "form2js-dfeb70ef.js",
+          "asyncForEach-c7d78bc5.js",
+          "form2js-a68f4cde.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 10411
+        "originalByteSize": 10456
       },
       {
         "key": "midwest-input-file.entry",
@@ -1789,10 +1799,10 @@
           "index-25aecc32.js",
           "dayjs.min-40f18934.js",
           "colors-3b15fe6b.js",
-          "darkMode-76deeecd.js",
+          "asyncForEach-c7d78bc5.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 4286
+        "originalByteSize": 6415
       },
       {
         "key": "midwest-steps.entry",
@@ -1802,13 +1812,9 @@
         "bundleId": "midwest-steps",
         "fileName": "midwest-steps.entry.js",
         "imports": [
-          "index-25aecc32.js",
-          "dayjs.min-40f18934.js",
-          "colors-3b15fe6b.js",
-          "darkMode-76deeecd.js",
-          "_commonjsHelpers-856c13bf.js"
+          "index-25aecc32.js"
         ],
-        "originalByteSize": 3175
+        "originalByteSize": 4078
       },
       {
         "key": "midwest-switch.entry",
@@ -2289,11 +2295,12 @@
           "index-2923bbbf.js",
           "dayjs.min-7594f47b.js",
           "colors-1aa6a2b2.js",
-          "form2js-e6bf6fea.js",
+          "asyncForEach-d424f614.js",
+          "form2js-1f924cd9.js",
           "index-70fb2f40.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 4140
+        "originalByteSize": 4205
       },
       {
         "key": "midwest-form.entry",
@@ -2308,10 +2315,11 @@
           "index-73a2de1e.js",
           "dayjs.min-7594f47b.js",
           "colors-1aa6a2b2.js",
-          "form2js-e6bf6fea.js",
+          "asyncForEach-d424f614.js",
+          "form2js-1f924cd9.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 10544
+        "originalByteSize": 10614
       },
       {
         "key": "midwest-input-file.entry",
@@ -2485,10 +2493,10 @@
           "index-2923bbbf.js",
           "dayjs.min-7594f47b.js",
           "colors-1aa6a2b2.js",
-          "darkMode-ee75726a.js",
+          "asyncForEach-d424f614.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 4356
+        "originalByteSize": 6526
       },
       {
         "key": "midwest-steps.entry",
@@ -2498,13 +2506,9 @@
         "bundleId": "midwest-steps.cjs",
         "fileName": "midwest-steps.cjs.entry.js",
         "imports": [
-          "index-2923bbbf.js",
-          "dayjs.min-7594f47b.js",
-          "colors-1aa6a2b2.js",
-          "darkMode-ee75726a.js",
-          "_commonjsHelpers-cb2db9e6.js"
+          "index-2923bbbf.js"
         ],
-        "originalByteSize": 3251
+        "originalByteSize": 4143
       },
       {
         "key": "midwest-switch.entry",
@@ -3340,6 +3344,7 @@
         "midwest-password-requirements",
         "midwest-repeatable-fields",
         "midwest-select",
+        "midwest-step",
         "midwest-switch",
         "midwest-tabs"
       ],
@@ -3359,6 +3364,7 @@
         "midwest-password-requirements",
         "midwest-repeatable-fields",
         "midwest-select",
+        "midwest-step",
         "midwest-switch"
       ],
       "docs": {
@@ -13542,10 +13548,12 @@
       "componentClassName": "Step",
       "assetsDirs": [],
       "dependencies": [
+        "ion-icon",
         "midwest-label"
       ],
       "dependents": [],
       "directDependencies": [
+        "ion-icon",
         "midwest-label"
       ],
       "directDependents": [],
@@ -13572,13 +13580,74 @@
             "references": {}
           },
           "internal": false
+        },
+        {
+          "name": "updated",
+          "method": "updated",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "complexType": {
+            "original": "any",
+            "resolved": "any",
+            "references": {}
+          },
+          "internal": false
         }
       ],
       "internal": false,
       "legacyConnect": [],
       "legacyContext": [],
-      "listeners": [],
+      "listeners": [
+        {
+          "name": "update",
+          "method": "handleAddedForm",
+          "capture": false,
+          "passive": false,
+          "target": "document"
+        }
+      ],
       "methods": [
+        {
+          "name": "isValid",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<boolean>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<boolean>"
+          },
+          "internal": false
+        },
+        {
+          "name": "showValidation",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
         {
           "name": "activate",
           "docs": {
@@ -13599,20 +13668,22 @@
         }
       ],
       "potentialCmpRefs": [
+        "ion-icon",
         "midwest-label"
       ],
       "properties": [
         {
-          "name": "dark",
-          "type": "boolean",
-          "attribute": "dark",
+          "name": "type",
+          "type": "string",
+          "attribute": "type",
           "reflect": true,
-          "mutable": false,
+          "mutable": true,
           "required": false,
           "optional": false,
+          "defaultValue": "'button'",
           "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
+            "original": "'button' | 'link'",
+            "resolved": "\"button\" | \"link\"",
             "references": {}
           },
           "docs": {
@@ -13629,7 +13700,7 @@
           "mutable": true,
           "required": false,
           "optional": false,
-          "defaultValue": "\"#\"",
+          "defaultValue": "'#'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -13702,6 +13773,26 @@
           "internal": false
         },
         {
+          "name": "error",
+          "type": "boolean",
+          "attribute": "error",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
           "name": "past",
           "type": "boolean",
           "attribute": "past",
@@ -13730,6 +13821,45 @@
           "required": false,
           "optional": false,
           "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "export",
+          "type": "boolean",
+          "attribute": "export",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "validate",
+          "type": "boolean",
+          "attribute": "validate",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
           "complexType": {
             "original": "boolean",
             "resolved": "boolean",
@@ -13789,6 +13919,9 @@
           "name": "contentEl"
         },
         {
+          "name": "valid"
+        },
+        {
           "name": "ready"
         }
       ]
@@ -13816,27 +13949,6 @@
       "legacyContext": [],
       "listeners": [],
       "methods": [
-        {
-          "name": "advance",
-          "docs": {
-            "text": "",
-            "tags": []
-          },
-          "complexType": {
-            "signature": "() => Promise<void>",
-            "parameters": [],
-            "references": {
-              "Promise": {
-                "location": "global"
-              },
-              "HTMLMidwestStepElement": {
-                "location": "global"
-              }
-            },
-            "return": "Promise<void>"
-          },
-          "internal": false
-        },
         {
           "name": "steps",
           "docs": {
@@ -13928,14 +14040,13 @@
           "internal": false
         },
         {
-          "name": "dark",
+          "name": "validate",
           "type": "boolean",
-          "attribute": "dark",
-          "reflect": true,
+          "attribute": "validate",
+          "reflect": false,
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "false",
           "complexType": {
             "original": "boolean",
             "resolved": "boolean",
@@ -23827,16 +23938,17 @@
           "shadowDelegatesFocus": false,
           "properties": [
             {
-              "name": "dark",
-              "type": "boolean",
-              "attribute": "dark",
+              "name": "type",
+              "type": "string",
+              "attribute": "type",
               "reflect": true,
-              "mutable": false,
+              "mutable": true,
               "required": false,
               "optional": false,
+              "defaultValue": "'button'",
               "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
+                "original": "'button' | 'link'",
+                "resolved": "\"button\" | \"link\"",
                 "references": {}
               },
               "docs": {
@@ -23853,7 +23965,7 @@
               "mutable": true,
               "required": false,
               "optional": false,
-              "defaultValue": "\"#\"",
+              "defaultValue": "'#'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -23926,6 +24038,26 @@
               "internal": false
             },
             {
+              "name": "error",
+              "type": "boolean",
+              "attribute": "error",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "past",
               "type": "boolean",
               "attribute": "past",
@@ -23954,6 +24086,45 @@
               "required": false,
               "optional": false,
               "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "export",
+              "type": "boolean",
+              "attribute": "export",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "validate",
+              "type": "boolean",
+              "attribute": "validate",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
               "complexType": {
                 "original": "boolean",
                 "resolved": "boolean",
@@ -24013,10 +24184,49 @@
               "name": "contentEl"
             },
             {
+              "name": "valid"
+            },
+            {
               "name": "ready"
             }
           ],
           "methods": [
+            {
+              "name": "isValid",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<boolean>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<boolean>"
+              },
+              "internal": false
+            },
+            {
+              "name": "showValidation",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
             {
               "name": "activate",
               "docs": {
@@ -24036,11 +24246,36 @@
               "internal": false
             }
           ],
-          "listeners": [],
+          "listeners": [
+            {
+              "name": "update",
+              "method": "handleAddedForm",
+              "capture": false,
+              "passive": false,
+              "target": "document"
+            }
+          ],
           "events": [
             {
               "name": "contentChange",
               "method": "contentChange",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            },
+            {
+              "name": "updated",
+              "method": "updated",
               "bubbles": true,
               "cancelable": true,
               "composed": true,
@@ -24103,10 +24338,10 @@
           "hasElement": false,
           "hasEvent": true,
           "hasLifecycle": true,
-          "hasListener": false,
-          "hasListenerTarget": false,
+          "hasListener": true,
+          "hasListenerTarget": true,
           "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
+          "hasListenerTargetDocument": true,
           "hasListenerTargetBody": false,
           "hasListenerTargetParent": false,
           "hasMember": true,
@@ -24125,40 +24360,45 @@
           "hasVdomAttribute": true,
           "hasVdomXlink": false,
           "hasVdomClass": true,
-          "hasVdomFunctional": false,
+          "hasVdomFunctional": true,
           "hasVdomKey": false,
           "hasVdomListener": true,
           "hasVdomPropOrAttr": true,
           "hasVdomRef": false,
           "hasVdomRender": true,
           "hasVdomStyle": false,
-          "hasVdomText": false,
+          "hasVdomText": true,
           "hasWatchCallback": true,
           "isPlain": false,
           "htmlAttrNames": [
+            "class",
+            "name",
             "role",
             "aria-selected",
             "disabled",
             "aria-setsize",
             "aria-posinset",
             "tabindex",
-            "class",
             "onClick"
           ],
           "htmlTagNames": [
-            "button",
-            "midwest-label",
-            "slot"
+            "span",
+            "ion-icon",
+            "slot",
+            "midwest-label"
           ],
           "htmlParts": [],
           "isUpdateable": true,
           "potentialCmpRefs": [
+            "ion-icon",
             "midwest-label"
           ],
           "directDependencies": [
+            "ion-icon",
             "midwest-label"
           ],
           "dependencies": [
+            "ion-icon",
             "midwest-label"
           ],
           "dependents": [],
@@ -24198,14 +24438,13 @@
               "internal": false
             },
             {
-              "name": "dark",
+              "name": "validate",
               "type": "boolean",
-              "attribute": "dark",
-              "reflect": true,
+              "attribute": "validate",
+              "reflect": false,
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "false",
               "complexType": {
                 "original": "boolean",
                 "resolved": "boolean",
@@ -24231,27 +24470,6 @@
             }
           ],
           "methods": [
-            {
-              "name": "advance",
-              "docs": {
-                "text": "",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "() => Promise<void>",
-                "parameters": [],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  },
-                  "HTMLMidwestStepElement": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            },
             {
               "name": "steps",
               "docs": {
@@ -34912,6 +35130,7 @@
             "midwest-password-requirements",
             "midwest-repeatable-fields",
             "midwest-select",
+            "midwest-step",
             "midwest-switch",
             "midwest-tabs"
           ],
@@ -34930,6 +35149,7 @@
             "midwest-password-requirements",
             "midwest-repeatable-fields",
             "midwest-select",
+            "midwest-step",
             "midwest-switch"
           ]
         }
@@ -35265,7 +35485,8 @@
       "p-65f37d00.js",
       "p-4af0a0ee.js",
       "p-09396ade.js",
-      "p-a58d2d81.js",
+      "p-ed163ee5.js",
+      "p-46cbd112.js",
       "p-4d23a23e.js",
       "p-f6c733ff.js"
     ],
@@ -35275,7 +35496,8 @@
       "p-16f1b7c0.js",
       "p-4af0a0ee.js",
       "p-09396ade.js",
-      "p-a58d2d81.js",
+      "p-ed163ee5.js",
+      "p-46cbd112.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-form-rollup": [
@@ -35410,15 +35632,11 @@
       "p-65f37d00.js",
       "p-4af0a0ee.js",
       "p-09396ade.js",
-      "p-5866cdea.js",
+      "p-ed163ee5.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-steps": [
-      "p-65f37d00.js",
-      "p-4af0a0ee.js",
-      "p-09396ade.js",
-      "p-5866cdea.js",
-      "p-f6c733ff.js"
+      "p-65f37d00.js"
     ],
     "sc-midwest-switch": [
       "p-65f37d00.js",

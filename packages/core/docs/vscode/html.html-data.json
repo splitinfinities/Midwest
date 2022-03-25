@@ -1298,11 +1298,15 @@
           "description": ""
         },
         {
-          "name": "dark",
+          "name": "disabled",
           "description": ""
         },
         {
-          "name": "disabled",
+          "name": "error",
+          "description": ""
+        },
+        {
+          "name": "export",
           "description": ""
         },
         {
@@ -1324,6 +1328,22 @@
         {
           "name": "tab-count",
           "description": ""
+        },
+        {
+          "name": "type",
+          "description": "",
+          "values": [
+            {
+              "name": "button"
+            },
+            {
+              "name": "link"
+            }
+          ]
+        },
+        {
+          "name": "validate",
+          "description": ""
         }
       ],
       "references": [
@@ -1341,11 +1361,11 @@
       },
       "attributes": [
         {
-          "name": "dark",
+          "name": "name",
           "description": ""
         },
         {
-          "name": "name",
+          "name": "validate",
           "description": ""
         }
       ],

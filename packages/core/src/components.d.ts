@@ -228,21 +228,25 @@ export namespace Components {
         "activate": () => Promise<void>;
         "complete": boolean;
         "current": boolean;
-        "dark": boolean;
         "disabled": boolean;
+        "error": boolean;
+        "export": boolean;
         "href": string;
+        "isValid": () => Promise<boolean>;
         "open": boolean;
         "order": number;
         "past": boolean;
+        "showValidation": () => Promise<void>;
         "tabCount": number;
+        "type": 'button' | 'link';
+        "validate": boolean;
     }
     interface MidwestSteps {
-        "advance": () => Promise<void>;
         "contents": () => Promise<HTMLMidwestContentElement[]>;
-        "dark": boolean;
         "name": string;
         "steps": () => Promise<HTMLMidwestStepElement[]>;
         "switch": (step: HTMLMidwestStepElement) => Promise<void>;
+        "validate": boolean;
     }
     interface MidwestTab {
         "activate": () => Promise<void>;
@@ -763,18 +767,22 @@ declare namespace LocalJSX {
     interface MidwestStep {
         "complete"?: boolean;
         "current"?: boolean;
-        "dark"?: boolean;
         "disabled"?: boolean;
+        "error"?: boolean;
+        "export"?: boolean;
         "href"?: string;
         "onContentChange"?: (event: CustomEvent<any>) => void;
+        "onUpdated"?: (event: CustomEvent<any>) => void;
         "open"?: boolean;
         "order"?: number;
         "past"?: boolean;
         "tabCount"?: number;
+        "type"?: 'button' | 'link';
+        "validate"?: boolean;
     }
     interface MidwestSteps {
-        "dark"?: boolean;
         "name"?: string;
+        "validate"?: boolean;
     }
     interface MidwestTab {
         "dark"?: boolean;

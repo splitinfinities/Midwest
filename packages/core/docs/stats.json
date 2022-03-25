@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-03-23T18:02:48",
+  "timestamp": "2022-03-25T17:12:01",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -296,6 +296,8 @@
           "./dist/core/index.esm.js.map",
           "./dist/core/p-0853ac7c.entry.js",
           "./dist/core/p-0853ac7c.entry.js.map",
+          "./dist/core/p-0d321ba4.entry.js",
+          "./dist/core/p-0d321ba4.entry.js.map",
           "./dist/core/p-0dc81434.entry.js",
           "./dist/core/p-0dc81434.entry.js.map",
           "./dist/core/p-163c6d5f.entry.js",
@@ -320,8 +322,6 @@
           "./dist/core/p-49f333c0.entry.js.map",
           "./dist/core/p-4af0a0ee.js",
           "./dist/core/p-4af0a0ee.js.map",
-          "./dist/core/p-4cdf671c.entry.js",
-          "./dist/core/p-4cdf671c.entry.js.map",
           "./dist/core/p-55a344d2.entry.js",
           "./dist/core/p-55a344d2.entry.js.map",
           "./dist/core/p-5866cdea.js",
@@ -346,6 +346,8 @@
           "./dist/core/p-bf679ceb.entry.js.map",
           "./dist/core/p-c1ae6807.entry.js",
           "./dist/core/p-c1ae6807.entry.js.map",
+          "./dist/core/p-d1dd926e.entry.js",
+          "./dist/core/p-d1dd926e.entry.js.map",
           "./dist/core/p-d92afd2a.entry.js",
           "./dist/core/p-d92afd2a.entry.js.map",
           "./dist/core/p-e0bdc912.entry.js",
@@ -354,8 +356,6 @@
           "./dist/core/p-f25bdef3.entry.js.map",
           "./dist/core/p-f6c733ff.js",
           "./dist/core/p-f6c733ff.js.map",
-          "./dist/core/p-fccff4b0.entry.js",
-          "./dist/core/p-fccff4b0.entry.js.map",
           "./dist/core/p-fdf65eb2.entry.js",
           "./dist/core/p-fdf65eb2.entry.js.map",
           "./dist/esm/_commonjsHelpers-856c13bf.js",
@@ -436,6 +436,8 @@
           "./www/build/index.esm.js.map",
           "./www/build/p-0853ac7c.entry.js",
           "./www/build/p-0853ac7c.entry.js.map",
+          "./www/build/p-0d321ba4.entry.js",
+          "./www/build/p-0d321ba4.entry.js.map",
           "./www/build/p-0dc81434.entry.js",
           "./www/build/p-0dc81434.entry.js.map",
           "./www/build/p-163c6d5f.entry.js",
@@ -460,8 +462,6 @@
           "./www/build/p-49f333c0.entry.js.map",
           "./www/build/p-4af0a0ee.js",
           "./www/build/p-4af0a0ee.js.map",
-          "./www/build/p-4cdf671c.entry.js",
-          "./www/build/p-4cdf671c.entry.js.map",
           "./www/build/p-55a344d2.entry.js",
           "./www/build/p-55a344d2.entry.js.map",
           "./www/build/p-5866cdea.js",
@@ -486,6 +486,8 @@
           "./www/build/p-bf679ceb.entry.js.map",
           "./www/build/p-c1ae6807.entry.js",
           "./www/build/p-c1ae6807.entry.js.map",
+          "./www/build/p-d1dd926e.entry.js",
+          "./www/build/p-d1dd926e.entry.js.map",
           "./www/build/p-d92afd2a.entry.js",
           "./www/build/p-d92afd2a.entry.js.map",
           "./www/build/p-e0bdc912.entry.js",
@@ -494,8 +496,6 @@
           "./www/build/p-f25bdef3.entry.js.map",
           "./www/build/p-f6c733ff.js",
           "./www/build/p-f6c733ff.js.map",
-          "./www/build/p-fccff4b0.entry.js",
-          "./www/build/p-fccff4b0.entry.js.map",
           "./www/build/p-fdf65eb2.entry.js",
           "./www/build/p-fdf65eb2.entry.js.map"
         ]
@@ -778,32 +778,27 @@
         "components": [
           "midwest-step"
         ],
-        "bundleId": "p-fccff4b0",
-        "fileName": "p-fccff4b0.entry.js",
+        "bundleId": "p-0d321ba4",
+        "fileName": "p-0d321ba4.entry.js",
         "imports": [
           "p-16ad8274.js",
           "p-4af0a0ee.js",
           "p-176ce63d.js",
-          "p-5866cdea.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 4153
+        "originalByteSize": 6400
       },
       {
         "key": "midwest-steps.entry",
         "components": [
           "midwest-steps"
         ],
-        "bundleId": "p-4cdf671c",
-        "fileName": "p-4cdf671c.entry.js",
+        "bundleId": "p-d1dd926e",
+        "fileName": "p-d1dd926e.entry.js",
         "imports": [
-          "p-16ad8274.js",
-          "p-4af0a0ee.js",
-          "p-176ce63d.js",
-          "p-5866cdea.js",
-          "p-f6c733ff.js"
+          "p-16ad8274.js"
         ],
-        "originalByteSize": 3042
+        "originalByteSize": 3980
       },
       {
         "key": "midwest-tab.entry",
@@ -1167,10 +1162,9 @@
           "index-0481e8cd.js",
           "dayjs.min-40f18934.js",
           "colors-d562b251.js",
-          "darkMode-76deeecd.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 4192
+        "originalByteSize": 6432
       },
       {
         "key": "midwest-steps.entry",
@@ -1180,13 +1174,9 @@
         "bundleId": "midwest-steps",
         "fileName": "midwest-steps.entry.js",
         "imports": [
-          "index-0481e8cd.js",
-          "dayjs.min-40f18934.js",
-          "colors-d562b251.js",
-          "darkMode-76deeecd.js",
-          "_commonjsHelpers-856c13bf.js"
+          "index-0481e8cd.js"
         ],
-        "originalByteSize": 3081
+        "originalByteSize": 3984
       },
       {
         "key": "midwest-tab.entry",
@@ -1552,10 +1542,9 @@
           "index-e88292c0.js",
           "dayjs.min-7594f47b.js",
           "colors-1a9d4af6.js",
-          "darkMode-ee75726a.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 4262
+        "originalByteSize": 6521
       },
       {
         "key": "midwest-steps.entry",
@@ -1565,13 +1554,9 @@
         "bundleId": "midwest-steps.cjs",
         "fileName": "midwest-steps.cjs.entry.js",
         "imports": [
-          "index-e88292c0.js",
-          "dayjs.min-7594f47b.js",
-          "colors-1a9d4af6.js",
-          "darkMode-ee75726a.js",
-          "_commonjsHelpers-cb2db9e6.js"
+          "index-e88292c0.js"
         ],
-        "originalByteSize": 3157
+        "originalByteSize": 4049
       },
       {
         "key": "midwest-tab.entry",
@@ -2171,7 +2156,8 @@
         "midwest-card",
         "midwest-dropdown",
         "midwest-message",
-        "midwest-pagination"
+        "midwest-pagination",
+        "midwest-step"
       ],
       "directDependencies": [],
       "directDependents": [
@@ -2180,7 +2166,8 @@
         "midwest-card",
         "midwest-dropdown",
         "midwest-message",
-        "midwest-pagination"
+        "midwest-pagination",
+        "midwest-step"
       ],
       "docs": {
         "tags": [],
@@ -6760,10 +6747,12 @@
       "componentClassName": "Step",
       "assetsDirs": [],
       "dependencies": [
+        "ion-icon",
         "midwest-label"
       ],
       "dependents": [],
       "directDependencies": [
+        "ion-icon",
         "midwest-label"
       ],
       "directDependents": [],
@@ -6790,13 +6779,74 @@
             "references": {}
           },
           "internal": false
+        },
+        {
+          "name": "updated",
+          "method": "updated",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "complexType": {
+            "original": "any",
+            "resolved": "any",
+            "references": {}
+          },
+          "internal": false
         }
       ],
       "internal": false,
       "legacyConnect": [],
       "legacyContext": [],
-      "listeners": [],
+      "listeners": [
+        {
+          "name": "update",
+          "method": "handleAddedForm",
+          "capture": false,
+          "passive": false,
+          "target": "document"
+        }
+      ],
       "methods": [
+        {
+          "name": "isValid",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<boolean>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<boolean>"
+          },
+          "internal": false
+        },
+        {
+          "name": "showValidation",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "() => Promise<void>",
+            "parameters": [],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        },
         {
           "name": "activate",
           "docs": {
@@ -6817,20 +6867,22 @@
         }
       ],
       "potentialCmpRefs": [
+        "ion-icon",
         "midwest-label"
       ],
       "properties": [
         {
-          "name": "dark",
-          "type": "boolean",
-          "attribute": "dark",
+          "name": "type",
+          "type": "string",
+          "attribute": "type",
           "reflect": true,
-          "mutable": false,
+          "mutable": true,
           "required": false,
           "optional": false,
+          "defaultValue": "'button'",
           "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
+            "original": "'button' | 'link'",
+            "resolved": "\"button\" | \"link\"",
             "references": {}
           },
           "docs": {
@@ -6847,7 +6899,7 @@
           "mutable": true,
           "required": false,
           "optional": false,
-          "defaultValue": "\"#\"",
+          "defaultValue": "'#'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -6920,6 +6972,26 @@
           "internal": false
         },
         {
+          "name": "error",
+          "type": "boolean",
+          "attribute": "error",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
           "name": "past",
           "type": "boolean",
           "attribute": "past",
@@ -6948,6 +7020,45 @@
           "required": false,
           "optional": false,
           "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "export",
+          "type": "boolean",
+          "attribute": "export",
+          "reflect": true,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "validate",
+          "type": "boolean",
+          "attribute": "validate",
+          "reflect": true,
+          "mutable": false,
+          "required": false,
+          "optional": false,
           "complexType": {
             "original": "boolean",
             "resolved": "boolean",
@@ -7007,6 +7118,9 @@
           "name": "contentEl"
         },
         {
+          "name": "valid"
+        },
+        {
           "name": "ready"
         }
       ]
@@ -7034,27 +7148,6 @@
       "legacyContext": [],
       "listeners": [],
       "methods": [
-        {
-          "name": "advance",
-          "docs": {
-            "text": "",
-            "tags": []
-          },
-          "complexType": {
-            "signature": "() => Promise<void>",
-            "parameters": [],
-            "references": {
-              "Promise": {
-                "location": "global"
-              },
-              "HTMLMidwestStepElement": {
-                "location": "global"
-              }
-            },
-            "return": "Promise<void>"
-          },
-          "internal": false
-        },
         {
           "name": "steps",
           "docs": {
@@ -7146,14 +7239,13 @@
           "internal": false
         },
         {
-          "name": "dark",
+          "name": "validate",
           "type": "boolean",
-          "attribute": "dark",
-          "reflect": true,
+          "attribute": "validate",
+          "reflect": false,
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "false",
           "complexType": {
             "original": "boolean",
             "resolved": "boolean",
@@ -9081,7 +9173,8 @@
             "midwest-card",
             "midwest-dropdown",
             "midwest-message",
-            "midwest-pagination"
+            "midwest-pagination",
+            "midwest-step"
           ],
           "directDependents": [
             "midwest-accordion",
@@ -9089,7 +9182,8 @@
             "midwest-card",
             "midwest-dropdown",
             "midwest-message",
-            "midwest-pagination"
+            "midwest-pagination",
+            "midwest-step"
           ]
         },
         {
@@ -15831,16 +15925,17 @@
           "shadowDelegatesFocus": false,
           "properties": [
             {
-              "name": "dark",
-              "type": "boolean",
-              "attribute": "dark",
+              "name": "type",
+              "type": "string",
+              "attribute": "type",
               "reflect": true,
-              "mutable": false,
+              "mutable": true,
               "required": false,
               "optional": false,
+              "defaultValue": "'button'",
               "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
+                "original": "'button' | 'link'",
+                "resolved": "\"button\" | \"link\"",
                 "references": {}
               },
               "docs": {
@@ -15857,7 +15952,7 @@
               "mutable": true,
               "required": false,
               "optional": false,
-              "defaultValue": "\"#\"",
+              "defaultValue": "'#'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -15930,6 +16025,26 @@
               "internal": false
             },
             {
+              "name": "error",
+              "type": "boolean",
+              "attribute": "error",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "past",
               "type": "boolean",
               "attribute": "past",
@@ -15958,6 +16073,45 @@
               "required": false,
               "optional": false,
               "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "export",
+              "type": "boolean",
+              "attribute": "export",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "validate",
+              "type": "boolean",
+              "attribute": "validate",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
               "complexType": {
                 "original": "boolean",
                 "resolved": "boolean",
@@ -16017,10 +16171,49 @@
               "name": "contentEl"
             },
             {
+              "name": "valid"
+            },
+            {
               "name": "ready"
             }
           ],
           "methods": [
+            {
+              "name": "isValid",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<boolean>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<boolean>"
+              },
+              "internal": false
+            },
+            {
+              "name": "showValidation",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "() => Promise<void>",
+                "parameters": [],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            },
             {
               "name": "activate",
               "docs": {
@@ -16040,11 +16233,36 @@
               "internal": false
             }
           ],
-          "listeners": [],
+          "listeners": [
+            {
+              "name": "update",
+              "method": "handleAddedForm",
+              "capture": false,
+              "passive": false,
+              "target": "document"
+            }
+          ],
           "events": [
             {
               "name": "contentChange",
               "method": "contentChange",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            },
+            {
+              "name": "updated",
+              "method": "updated",
               "bubbles": true,
               "cancelable": true,
               "composed": true,
@@ -16107,10 +16325,10 @@
           "hasElement": false,
           "hasEvent": true,
           "hasLifecycle": true,
-          "hasListener": false,
-          "hasListenerTarget": false,
+          "hasListener": true,
+          "hasListenerTarget": true,
           "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
+          "hasListenerTargetDocument": true,
           "hasListenerTargetBody": false,
           "hasListenerTargetParent": false,
           "hasMember": true,
@@ -16129,40 +16347,45 @@
           "hasVdomAttribute": true,
           "hasVdomXlink": false,
           "hasVdomClass": true,
-          "hasVdomFunctional": false,
+          "hasVdomFunctional": true,
           "hasVdomKey": false,
           "hasVdomListener": true,
           "hasVdomPropOrAttr": true,
           "hasVdomRef": false,
           "hasVdomRender": true,
           "hasVdomStyle": false,
-          "hasVdomText": false,
+          "hasVdomText": true,
           "hasWatchCallback": true,
           "isPlain": false,
           "htmlAttrNames": [
+            "class",
+            "name",
             "role",
             "aria-selected",
             "disabled",
             "aria-setsize",
             "aria-posinset",
             "tabindex",
-            "class",
             "onClick"
           ],
           "htmlTagNames": [
-            "button",
-            "midwest-label",
-            "slot"
+            "span",
+            "ion-icon",
+            "slot",
+            "midwest-label"
           ],
           "htmlParts": [],
           "isUpdateable": true,
           "potentialCmpRefs": [
+            "ion-icon",
             "midwest-label"
           ],
           "directDependencies": [
+            "ion-icon",
             "midwest-label"
           ],
           "dependencies": [
+            "ion-icon",
             "midwest-label"
           ],
           "dependents": [],
@@ -16202,14 +16425,13 @@
               "internal": false
             },
             {
-              "name": "dark",
+              "name": "validate",
               "type": "boolean",
-              "attribute": "dark",
-              "reflect": true,
+              "attribute": "validate",
+              "reflect": false,
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "false",
               "complexType": {
                 "original": "boolean",
                 "resolved": "boolean",
@@ -16235,27 +16457,6 @@
             }
           ],
           "methods": [
-            {
-              "name": "advance",
-              "docs": {
-                "text": "",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "() => Promise<void>",
-                "parameters": [],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  },
-                  "HTMLMidwestStepElement": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            },
             {
               "name": "steps",
               "docs": {
@@ -18716,15 +18917,10 @@
       "p-16ad8274.js",
       "p-4af0a0ee.js",
       "p-176ce63d.js",
-      "p-5866cdea.js",
       "p-f6c733ff.js"
     ],
     "sc-midwest-steps": [
-      "p-16ad8274.js",
-      "p-4af0a0ee.js",
-      "p-176ce63d.js",
-      "p-5866cdea.js",
-      "p-f6c733ff.js"
+      "p-16ad8274.js"
     ],
     "sc-midwest-tab": [
       "p-16ad8274.js",
