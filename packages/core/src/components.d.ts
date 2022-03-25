@@ -236,9 +236,12 @@ export namespace Components {
         "open": boolean;
         "order": number;
         "past": boolean;
+        "pjaxSelector": string;
         "showValidation": () => Promise<void>;
         "tabCount": number;
+        "target": string;
         "type": 'button' | 'link';
+        "usePjax": boolean;
         "validate": boolean;
     }
     interface MidwestSteps {
@@ -776,8 +779,11 @@ declare namespace LocalJSX {
         "open"?: boolean;
         "order"?: number;
         "past"?: boolean;
+        "pjaxSelector"?: string;
         "tabCount"?: number;
+        "target"?: string;
         "type"?: 'button' | 'link';
+        "usePjax"?: boolean;
         "validate"?: boolean;
     }
     interface MidwestSteps {

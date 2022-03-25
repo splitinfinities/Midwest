@@ -7,20 +7,23 @@
 
 ## Properties
 
-| Property   | Attribute   | Description | Type                 | Default     |
-| ---------- | ----------- | ----------- | -------------------- | ----------- |
-| `complete` | `complete`  |             | `boolean`            | `false`     |
-| `current`  | `current`   |             | `boolean`            | `false`     |
-| `disabled` | `disabled`  |             | `boolean`            | `false`     |
-| `error`    | `error`     |             | `boolean`            | `false`     |
-| `export`   | `export`    |             | `boolean`            | `false`     |
-| `href`     | `href`      |             | `string`             | `'#'`       |
-| `open`     | `open`      |             | `boolean`            | `false`     |
-| `order`    | `order`     |             | `number`             | `undefined` |
-| `past`     | `past`      |             | `boolean`            | `false`     |
-| `tabCount` | `tab-count` |             | `number`             | `undefined` |
-| `type`     | `type`      |             | `"button" \| "link"` | `'button'`  |
-| `validate` | `validate`  |             | `boolean`            | `undefined` |
+| Property       | Attribute       | Description | Type                 | Default     |
+| -------------- | --------------- | ----------- | -------------------- | ----------- |
+| `complete`     | `complete`      |             | `boolean`            | `false`     |
+| `current`      | `current`       |             | `boolean`            | `false`     |
+| `disabled`     | `disabled`      |             | `boolean`            | `false`     |
+| `error`        | `error`         |             | `boolean`            | `false`     |
+| `export`       | `export`        |             | `boolean`            | `false`     |
+| `href`         | `href`          |             | `string`             | `'#'`       |
+| `open`         | `open`          |             | `boolean`            | `false`     |
+| `order`        | `order`         |             | `number`             | `undefined` |
+| `past`         | `past`          |             | `boolean`            | `false`     |
+| `pjaxSelector` | `pjax-selector` |             | `string`             | `undefined` |
+| `tabCount`     | `tab-count`     |             | `number`             | `undefined` |
+| `target`       | `target`        |             | `string`             | `'_self'`   |
+| `type`         | `type`          |             | `"button" \| "link"` | `'button'`  |
+| `usePjax`      | `use-pjax`      |             | `boolean`            | `true`      |
+| `validate`     | `validate`      |             | `boolean`            | `undefined` |
 
 
 ## Events

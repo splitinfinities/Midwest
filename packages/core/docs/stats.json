@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-03-25T18:34:34",
+  "timestamp": "2022-03-25T18:44:18",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -324,14 +324,14 @@
           "./dist/core/p-55a344d2.entry.js.map",
           "./dist/core/p-5866cdea.js",
           "./dist/core/p-5866cdea.js.map",
+          "./dist/core/p-5b3b4f76.entry.js",
+          "./dist/core/p-5b3b4f76.entry.js.map",
           "./dist/core/p-64ebab02.entry.js",
           "./dist/core/p-64ebab02.entry.js.map",
           "./dist/core/p-676af339.js",
           "./dist/core/p-676af339.js.map",
           "./dist/core/p-71a084ed.entry.js",
           "./dist/core/p-71a084ed.entry.js.map",
-          "./dist/core/p-7c349ff8.entry.js",
-          "./dist/core/p-7c349ff8.entry.js.map",
           "./dist/core/p-7d7c231c.entry.js",
           "./dist/core/p-7d7c231c.entry.js.map",
           "./dist/core/p-a5a6af9c.entry.js",
@@ -464,14 +464,14 @@
           "./www/build/p-55a344d2.entry.js.map",
           "./www/build/p-5866cdea.js",
           "./www/build/p-5866cdea.js.map",
+          "./www/build/p-5b3b4f76.entry.js",
+          "./www/build/p-5b3b4f76.entry.js.map",
           "./www/build/p-64ebab02.entry.js",
           "./www/build/p-64ebab02.entry.js.map",
           "./www/build/p-676af339.js",
           "./www/build/p-676af339.js.map",
           "./www/build/p-71a084ed.entry.js",
           "./www/build/p-71a084ed.entry.js.map",
-          "./www/build/p-7c349ff8.entry.js",
-          "./www/build/p-7c349ff8.entry.js.map",
           "./www/build/p-7d7c231c.entry.js",
           "./www/build/p-7d7c231c.entry.js.map",
           "./www/build/p-a5a6af9c.entry.js",
@@ -778,15 +778,15 @@
         "components": [
           "midwest-step"
         ],
-        "bundleId": "p-7c349ff8",
-        "fileName": "p-7c349ff8.entry.js",
+        "bundleId": "p-5b3b4f76",
+        "fileName": "p-5b3b4f76.entry.js",
         "imports": [
           "p-16ad8274.js",
           "p-4af0a0ee.js",
           "p-176ce63d.js",
           "p-f6c733ff.js"
         ],
-        "originalByteSize": 6569
+        "originalByteSize": 7084
       },
       {
         "key": "midwest-steps.entry",
@@ -1164,7 +1164,7 @@
           "colors-d562b251.js",
           "_commonjsHelpers-856c13bf.js"
         ],
-        "originalByteSize": 6601
+        "originalByteSize": 7116
       },
       {
         "key": "midwest-steps.entry",
@@ -1544,7 +1544,7 @@
           "colors-1a9d4af6.js",
           "_commonjsHelpers-cb2db9e6.js"
         ],
-        "originalByteSize": 6690
+        "originalByteSize": 7205
       },
       {
         "key": "midwest-steps.entry",
@@ -6912,6 +6912,26 @@
           "internal": false
         },
         {
+          "name": "target",
+          "type": "string",
+          "attribute": "target",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'_self'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
           "name": "disabled",
           "type": "boolean",
           "attribute": "disabled",
@@ -7100,6 +7120,45 @@
           "complexType": {
             "original": "number",
             "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "usePjax",
+          "type": "boolean",
+          "attribute": "use-pjax",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "pjaxSelector",
+          "type": "string",
+          "attribute": "pjax-selector",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
             "references": {}
           },
           "docs": {
@@ -15965,6 +16024,26 @@
               "internal": false
             },
             {
+              "name": "target",
+              "type": "string",
+              "attribute": "target",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'_self'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "disabled",
               "type": "boolean",
               "attribute": "disabled",
@@ -16153,6 +16232,45 @@
               "complexType": {
                 "original": "number",
                 "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "usePjax",
+              "type": "boolean",
+              "attribute": "use-pjax",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "pjaxSelector",
+              "type": "string",
+              "attribute": "pjax-selector",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
                 "references": {}
               },
               "docs": {

@@ -12,6 +12,7 @@ export class Step {
   @Prop({ mutable: true, reflect: true }) type: 'button' | 'link' = 'button';
 
   @Prop({ mutable: true, reflect: true }) href: string = '#';
+  @Prop() target: string = '_self';
   @Prop() disabled: boolean = false;
   @Prop({ mutable: true, reflect: true }) open: boolean = false;
   @Prop({ mutable: true, reflect: true }) complete: boolean = false;
@@ -25,6 +26,8 @@ export class Step {
   @Prop({ reflect: true }) validate: boolean;
   @Prop({ reflect: true }) order: number;
   @Prop({ reflect: true }) tabCount: number;
+  @Prop() usePjax: boolean = true;
+  @Prop() pjaxSelector: string;
 
   @State() parent: HTMLMidwestStepsElement;
   @State() contentEl: HTMLMidwestContentElement;
@@ -33,6 +36,7 @@ export class Step {
 
   @Event() contentChange: EventEmitter;
   @Event() updated: EventEmitter;
+  pjaxElement: any = document.querySelector('midwest-pjax');
 
   validatables: any[] = [];
 
@@ -149,14 +153,26 @@ export class Step {
   }
 
   async handleClick(force = false) {
-    if (!this.disabled || force) {
-      this.ready = true;
-      this.parent.switch(this.element as HTMLMidwestStepElement);
+    if (this.type === 'button') {
+      if (!this.disabled || force) {
+        this.ready = true;
+        this.parent.switch(this.element as HTMLMidwestStepElement);
 
-      this.contentChange.emit({
-        parent: this.parent,
-        name: this.href.replace(/[#]/g, ''),
-      });
+        this.contentChange.emit({
+          parent: this.parent,
+          name: this.href.replace(/[#]/g, ''),
+        });
+      }
+    } else if (this.type === 'link') {
+      if (this.usePjax && this.pjaxElement) {
+        if (this.pjaxSelector) {
+          this.pjaxElement.replace(this.pjaxSelector, this.href);
+        } else {
+          this.pjaxElement.loadUrl(this.href);
+        }
+      } else {
+        window.open(this.href, this.target);
+      }
     }
   }
 

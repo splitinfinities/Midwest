@@ -1326,7 +1326,15 @@
           "description": ""
         },
         {
+          "name": "pjax-selector",
+          "description": ""
+        },
+        {
           "name": "tab-count",
+          "description": ""
+        },
+        {
+          "name": "target",
           "description": ""
         },
         {
@@ -1340,6 +1348,10 @@
               "name": "link"
             }
           ]
+        },
+        {
+          "name": "use-pjax",
+          "description": ""
         },
         {
           "name": "validate",
