@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.13 (2022-03-28)</small>
+
+* build(deps): Allow buttons text to wrap ([40a0942](https://github.com/splitinfinities/Midwest/commit/40a0942))
+
+
+
+
+
 ## <small>0.1.12 (2022-03-25)</small>
 
 * build(deps): updates to step ([f48a101](https://github.com/splitinfinities/Midwest/commit/f48a101))
