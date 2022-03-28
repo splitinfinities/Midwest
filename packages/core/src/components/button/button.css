@@ -28,6 +28,7 @@
   --border: none;
   --border-radius: 0.2em;
   --font-size: 1rem;
+  --white-space: nowrap;
   --text-decoration: none;
   --text-transform: uppercase;
 }
@@ -300,7 +301,7 @@
   vertical-align: -webkit-baseline-middle;
   text-decoration: var(--text-decoration);
   line-height: 1;
-  white-space: nowrap;
+  white-space: var(--white-space);
   color: var(--color);
   letter-spacing: 0.125em;
   font-family: inherit;
