@@ -128,18 +128,14 @@ export class FormRollup {
           </midwest-label>
         )}
 
-        {this.show && this.checked.length === 1 && <midwest-label class="multiple cursor-pointer">{this.showCheckedContent()}</midwest-label>}
+        {this.show && this.checked.length === 1 && <midwest-label class="multiple cursor-pointer" innerHTML={this.showCheckedContent()} />}
 
         {this.show && this.checked.length === this.count - 1 && (
-          <midwest-label class="multiple cursor-pointer">
-            {this.showCheckedContent()} and {this.showCheckedContent(1)}
-          </midwest-label>
+          <midwest-label class="multiple cursor-pointer" innerHTML={`${this.showCheckedContent()} and ${this.showCheckedContent(1)}`} />
         )}
 
         {this.show && this.checked.length === this.count && (
-          <midwest-label class="multiple cursor-pointer">
-            {this.showCheckedContent()}, {this.showCheckedContent(1)}, and {this.showCheckedContent(2)}
-          </midwest-label>
+          <midwest-label class="multiple cursor-pointer" innerHTML={`${this.showCheckedContent()}, ${this.showCheckedContent(1)}, and ${this.showCheckedContent(2)}`} />
         )}
       </Fragment>
     );

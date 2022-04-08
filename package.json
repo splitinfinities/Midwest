@@ -5,6 +5,7 @@
   "scripts": {
     "start": "run-p dev storybook",
     "start.core": "run-p dev.core storybook",
+    "start.forms": "run-p dev.core dev.forms storybook",
     "test": "lerna run test --stream",
     "test.watch": "lerna run test.watch --stream",
     "build": "yarn build.stencil",

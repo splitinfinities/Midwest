@@ -6,9 +6,29 @@
     <title>Stencil Component Starter</title>
 
     <script type="module" src="/build/forms.esm.js"></script>
-    <script nomodule src="/build/forms.js"></script>
+    <script type="module" src="http://localhost:3333/build/core.esm.js"></script>
+    
+    <link rel="stylesheet" href="http://localhost:3333/build/core.css" />
   </head>
   <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+<midwest-layout padding='tiny' size='medium' style='--layout-grid-gap: 2rem;'>
+
+<copy-wrap align='center'>
+<h4 class='inline-flex items-center gap-4'>
+Region:
+<midwest-select nolabel="true" align="right" class="w-80" name="caregiver_application[region_id]" no-avatars="true" value="1"><midwest-item value="1" label="Omaha <small class='text-gray-6 block'>(Offers Cello, Violin, Viola, and Bass classes)</small>" checked="checked" tag="checkbox" content="Omaha <small class='text-gray-6 block'>(Offers Cello, Violin, Viola, and Bass classes)</small>" settable-content="false">Omaha <small class='text-gray-6 block'>(Offers Cello, Violin, Viola, and Bass classes)</small></midwest-item><midwest-item value="2" label="Scottsbluff <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Scottsbluff <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Scottsbluff <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="4" label="Council Bluffs <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Council Bluffs <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Council Bluffs <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="5" label="Kansas City <small class='text-gray-6 block'>(Offers Cello and Violin classes)</small>" tag="checkbox" content="Kansas City <small class='text-gray-6 block'>(Offers Cello and Violin classes)</small>" settable-content="false">Kansas City <small class='text-gray-6 block'>(Offers Cello and Violin classes)</small></midwest-item><midwest-item value="7" label="Fullerton School District, Fullerton CA <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Fullerton School District, Fullerton CA <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Fullerton School District, Fullerton CA <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="8" label="Fremont <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Fremont <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Fremont <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item></midwest-select>
+</h4>
+<h4>
+Program Cycle:
+2021-2022 - Omaha
+</h4>
+<p class='text-xs italic max-w-lg'>
+<strong>Heads up!</strong>
+<br>
+* If you are registering a student for Omaha (bass, cello, or viola class) and another for Council Bluffs (violin only), please fill out an application for each student.
+</p>
+</copy-wrap>
+
+</midwest-layout>
   </body>
 </html>
