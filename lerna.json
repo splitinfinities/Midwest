@@ -70,7 +70,7 @@
     "userUrlFormat": "{{host}}/{{user}}"
   },
   "lerna": "^3.22.1",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "npmClient": "yarn",
   "useWorkspaces": true
 }

@@ -1,7 +1,7 @@
 {
   "name": "@midwest-design/audio",
   "public": true,
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Stencil Component Starter",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",
