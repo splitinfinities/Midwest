@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.15 (2022-04-12)</small>
+
+* build(deps): Adding some changes to allow portability of some things ([3fab51f](https://github.com/splitinfinities/Midwest/commit/3fab51f))
+
+
+
+
+
 ## <small>0.1.14 (2022-04-08)</small>
 
 * build(deps): Patching how active items in selects work ([be17104](https://github.com/splitinfinities/Midwest/commit/be17104))
