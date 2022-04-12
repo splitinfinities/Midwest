@@ -81,35 +81,41 @@ export class RepeatableFields {
   }
 
   setInitialContent() {
-    this.content.forEach((item, index) => {
-      const keys = Object.keys(item);
-      const row = document.createRange().createContextualFragment(`<div class="repeated" style="order: ${index}" data-index="${index}">${this.templateContent.replace(new RegExp('{index}', 'g'), `${index}`)}</div>`);
+    Object.entries(this.content).forEach((item, index) => {
+      const keys = Object.keys(item[1]);
+      const row = document
+        .createRange()
+        .createContextualFragment(
+          `<div class="repeated" style="order: ${index}" data-index="${index}">${this.templateContent.replace(new RegExp('{index}', 'g'), `${index}`)}</div>`,
+        );
 
-      keys.forEach((key) => {
-        this.latestIndex = parseInt(key, 10);
+      console.log(item, index);
 
+      this.latestIndex = index;
+
+      keys.forEach(key => {
         if (this.custom) {
-          const element = row?.querySelector(".repeated > *");
-          element.setAttribute("data", JSON.stringify(item))
+          const element = row?.querySelector('.repeated > *');
+          element.setAttribute('data', JSON.stringify(item[1]));
         } else {
           const element = row?.querySelector(`[name*="${key}"]`);
 
-          if (element.nodeName === "MIDWEST-INPUT" && !!item[key]) {
-            (element as HTMLMidwestInputElement).setAttribute("value", item[key]);
+          if (element.nodeName === 'MIDWEST-INPUT' && !!item[1][key]) {
+            (element as HTMLMidwestInputElement).setAttribute('value', item[1][key]);
           }
 
-          if (element.nodeName === "MIDWEST-TOGGLE" && !!item[key]) {
+          if (element.nodeName === 'MIDWEST-TOGGLE' && !!item[1][key]) {
             //@ts-ignore
-            if (element.type === "radio") {
-              (element as HTMLMidwestToggleElement).setAttribute("value", item[key]);
-              const itemEl: HTMLMidwestItemElement = element.querySelector(`midwest-item[value="${item[key]}"]`);
-              itemEl.setAttribute("checked", "true");
-            //@ts-ignore
-            } else if(element.type === "checkbox") {              
-              (element as HTMLMidwestToggleElement).setAttribute("value", item[key]);
-              const itemEl: HTMLMidwestItemElement = element.querySelector("midwest-item");
-              itemEl.setAttribute("value", item[key]);
-              itemEl.setAttribute("checked", item[key]);
+            if (element.type === 'radio') {
+              (element as HTMLMidwestToggleElement).setAttribute('value', item[1][key]);
+              const itemEl: HTMLMidwestItemElement = element.querySelector(`midwest-item[value="${item[1][key]}"]`);
+              itemEl.setAttribute('checked', 'true');
+              //@ts-ignore
+            } else if (element.type === 'checkbox') {
+              (element as HTMLMidwestToggleElement).setAttribute('value', item[1][key]);
+              const itemEl: HTMLMidwestItemElement = element.querySelector('midwest-item');
+              itemEl.setAttribute('value', item[1][key]);
+              itemEl.setAttribute('checked', item[1][key]);
             }
           }
         }
@@ -137,14 +143,34 @@ export class RepeatableFields {
   }
 
   render() {
-    return <Host>
-      <midwest-grid cols={1} responsive={false} ref={(el) => { this.gridEl = el}} />
-      <midwest-empty class={`${this.count > 0 ? "hidden" : "block"}`}><slot name="empty" /></midwest-empty>
-      {!this.readonly && <midwest-button outline tag="button" class="mt-6" onClick={() => this.appendEmptyTemplate()} onKeyDown={(e) => {this.handleKeyDown(e)}}>
-        <ion-icon name="add" slot="icon"/>
-        Add Another {this.verbiage}
-      </midwest-button>}
-    </Host>
+    return (
+      <Host>
+        <midwest-grid
+          cols={1}
+          responsive={'false'}
+          ref={el => {
+            this.gridEl = el;
+          }}
+        />
+        <midwest-empty class={`${this.count > 0 ? 'hidden' : 'block'}`}>
+          <slot name="empty" />
+        </midwest-empty>
+        {!this.readonly && (
+          <midwest-button
+            outline
+            tag="button"
+            class="mt-6"
+            onClick={() => this.appendEmptyTemplate()}
+            onKeyDown={e => {
+              this.handleKeyDown(e);
+            }}
+          >
+            <ion-icon name="add" slot="icon" />
+            Add Another {this.verbiage}
+          </midwest-button>
+        )}
+      </Host>
+    );
   }
 
 }

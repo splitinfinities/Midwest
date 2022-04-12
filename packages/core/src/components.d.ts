@@ -140,7 +140,7 @@ export namespace Components {
         "columnWidth": number;
         "padding": boolean;
         "refresh": () => Promise<void>;
-        "responsive": boolean;
+        "responsive": 'true' | 'false' | boolean;
     }
     interface MidwestGroup {
         "avatars": boolean;
@@ -685,7 +685,7 @@ declare namespace LocalJSX {
         "columnGap"?: number;
         "columnWidth"?: number;
         "padding"?: boolean;
-        "responsive"?: boolean;
+        "responsive"?: 'true' | 'false' | boolean;
     }
     interface MidwestGroup {
         "avatars"?: boolean;

@@ -84,9 +84,14 @@ export class Input {
       this.value = this.default;
     }
 
-    if (this.type === "currency" && this.value) {
+    if (this.type === 'currency' && this.value) {
       // @ts-ignore
-      this.value = parseFloat(this.value).toString()
+      this.value = parseFloat(this.value).toString();
+      this.leftIcon = 'cash';
+    }
+
+    if (this.type === 'search') {
+      this.leftIcon = 'search';
     }
 
     if (this.type === "password") {
@@ -219,6 +224,9 @@ export class Input {
 
   @Method()
   async stepUp() {
+    if (this.disabled || this.readonly) {
+      return;
+    }
     if (typeof this.value === "string" || typeof this.value === "number") {
       const newVal = parseFloat(this.value) + this.step;
       if (!this.max || newVal <= this.max) {
@@ -231,6 +239,9 @@ export class Input {
 
   @Method()
   async stepDown() {
+    if (this.disabled || this.readonly) {
+      return;
+    }
     if (typeof this.value === "string" || typeof this.value === "number") {
       const newVal = parseFloat(this.value) - this.step;
       if (!this.max || newVal >= this.min) {
@@ -353,9 +364,9 @@ export class Input {
 
   renderLeftIcon() {
     if (this.type === "search" && !this.leftIcon) {
-      return <ion-icon name="search" class="search" />
+      return <ion-icon name="search" class="search left-icon" />;
     } else if (this.leftIcon) {
-      return <ion-icon name={this.leftIcon} class="search" />
+      return <ion-icon name={this.leftIcon} class="left-icon" />;
     }
   }
 

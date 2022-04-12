@@ -816,7 +816,15 @@
         },
         {
           "name": "responsive",
-          "description": ""
+          "description": "",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ]
         }
       ],
       "references": [

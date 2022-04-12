@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-04-08T17:53:13",
+  "timestamp": "2022-04-12T21:33:38",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -1332,7 +1332,7 @@
         "imports": [
           "p-38ee53c6.js"
         ],
-        "originalByteSize": 2445
+        "originalByteSize": 2447
       },
       {
         "key": "midwest-tag.entry",
@@ -1988,7 +1988,7 @@
         "imports": [
           "index-297f5f9e.js"
         ],
-        "originalByteSize": 2449
+        "originalByteSize": 2451
       },
       {
         "key": "midwest-tag.entry",
@@ -2646,7 +2646,7 @@
         "imports": [
           "index-92a60252.js"
         ],
-        "originalByteSize": 2508
+        "originalByteSize": 2510
       },
       {
         "key": "midwest-tag.entry",
@@ -6902,7 +6902,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"auto\"",
+          "defaultValue": "'auto'",
           "complexType": {
             "original": "number | string",
             "resolved": "number | string",
@@ -6936,7 +6936,7 @@
         },
         {
           "name": "responsive",
-          "type": "boolean",
+          "type": "any",
           "attribute": "responsive",
           "reflect": true,
           "mutable": false,
@@ -6944,8 +6944,8 @@
           "optional": false,
           "defaultValue": "true",
           "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
+            "original": "'true' | 'false' | boolean",
+            "resolved": "\"false\" | \"true\" | boolean",
             "references": {}
           },
           "docs": {
@@ -26962,7 +26962,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"auto\"",
+              "defaultValue": "'auto'",
               "complexType": {
                 "original": "number | string",
                 "resolved": "number | string",
@@ -26996,7 +26996,7 @@
             },
             {
               "name": "responsive",
-              "type": "boolean",
+              "type": "any",
               "attribute": "responsive",
               "reflect": true,
               "mutable": false,
@@ -27004,8 +27004,8 @@
               "optional": false,
               "defaultValue": "true",
               "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
+                "original": "'true' | 'false' | boolean",
+                "resolved": "\"false\" | \"true\" | boolean",
                 "references": {}
               },
               "docs": {

@@ -7,13 +7,13 @@
 
 ## Properties
 
-| Property      | Attribute      | Description | Type               | Default  |
-| ------------- | -------------- | ----------- | ------------------ | -------- |
-| `cols`        | `cols`         |             | `number \| string` | `"auto"` |
-| `columnGap`   | `column-gap`   |             | `number`           | `2`      |
-| `columnWidth` | `column-width` |             | `number`           | `200`    |
-| `padding`     | `padding`      |             | `boolean`          | `false`  |
-| `responsive`  | `responsive`   |             | `boolean`          | `true`   |
+| Property      | Attribute      | Description | Type                           | Default  |
+| ------------- | -------------- | ----------- | ------------------------------ | -------- |
+| `cols`        | `cols`         |             | `number \| string`             | `'auto'` |
+| `columnGap`   | `column-gap`   |             | `number`                       | `2`      |
+| `columnWidth` | `column-width` |             | `number`                       | `200`    |
+| `padding`     | `padding`      |             | `boolean`                      | `false`  |
+| `responsive`  | `responsive`   |             | `"false" \| "true" \| boolean` | `true`   |
 
 
 ## Methods
