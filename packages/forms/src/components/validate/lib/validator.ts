@@ -21,7 +21,7 @@ export default class Validator {
 		try {
 			this.errors = []
 			this.element = instance
-			this.value = await this.element.value;
+			this.value = (await this.element.value) || (await this.element.default);
 
 			if (!this.element.novalidate) {
 				await this.tests()

@@ -13,7 +13,7 @@
   <body>
 <midwest-layout padding='tiny' size='medium' style='--layout-grid-gap: 2rem;'>
 
-<midwest-form  action="/updated/pricings" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="MivIkyJZWmp0GxGmPUdPdaghVrf/UYI/j2FL7slGrNwavbtL3TA8a8Ejs7+P+W6Vmsi3y+WIwdV4ZzWe9fGfgA==" /><midwest-layout size='medium' style='--layout-grid-gap: 2rem;'>
+<midwest-form  action="/updated/pricings" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="eEgt7OSlqEyxzU11Xpzz2Aa/5ftYzaj8u3f7+BijLiFQ3l40G8zOTQT172zsItI4NFYEh0IU6xZMcYWIJBQdfQ==" /><midwest-layout size='medium' style='--layout-grid-gap: 2rem;'>
 
 <midwest-card class=' filter drop-shadow' flip-icon='create'>
 <header class='flex'>
@@ -21,16 +21,20 @@
 </header>
 <section>
 <midwest-grid cols='1' column-gap='1rem' responsive='false'>
-<midwest-input name="pricing[name]" label="Name" value="Pricing Name"></midwest-input>
+<midwest-input name="pricing[name]" label="Name"></midwest-input>
 <midwest-input min="2000" max="2100" type="number" name="pricing[year]" label="Year" value="2022"></midwest-input>
 <midwest-select name="pricing[region]" no-avatars="true" label="Region" value="1"><midwest-item value="1" label="Omaha <small class='text-gray-6 block'>(Offers Cello, Violin, Viola, and Bass classes)</small>" checked="checked" tag="checkbox" content="Omaha <small class='text-gray-6 block'>(Offers Cello, Violin, Viola, and Bass classes)</small>" settable-content="false">Omaha <small class='text-gray-6 block'>(Offers Cello, Violin, Viola, and Bass classes)</small></midwest-item><midwest-item value="2" label="Scottsbluff <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Scottsbluff <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Scottsbluff <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="4" label="Council Bluffs <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Council Bluffs <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Council Bluffs <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="5" label="Kansas City <small class='text-gray-6 block'>(Offers Cello and Violin classes)</small>" tag="checkbox" content="Kansas City <small class='text-gray-6 block'>(Offers Cello and Violin classes)</small>" settable-content="false">Kansas City <small class='text-gray-6 block'>(Offers Cello and Violin classes)</small></midwest-item><midwest-item value="7" label="Fullerton School District, Fullerton CA <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Fullerton School District, Fullerton CA <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Fullerton School District, Fullerton CA <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="8" label="Fremont <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Fremont <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Fremont <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item></midwest-select>
 <midwest-repeatable-fields add-one-if-empty class='block' data='{"1":{"name":"Free","price":"0","percentage":"200"},"2":{"name":"Charged","price":"600","percentage":"201"}}' verbiage='Pricing tier'>
 <template>
 <div class='bg-gray-0 p-6 b rounded border-default border-gray-1 relative'>
-<midwest-grid column-width='150'>
+<midwest-grid column-gap='1' column-width='150'>
 <midwest-input name="pricing[tiers][{index}][name]" label="Tier Name" no_magic_name="true"></midwest-input>
 <midwest-input name="pricing[tiers][{index}][price]" label="Price" no_magic_name="true" type="currency"></midwest-input>
-<midwest-input name="pricing[tiers][{index}][percentage]" label="Percentage of Poverty Level" no_magic_name="true" type="number"></midwest-input>
+<midwest-input name="pricing[tiers][{index}][percentage]" label="Percentage of Poverty Level" tooltip="From the previous tier&#39;s value to this value. 
+
+If this is the first tier, the floor is 0% of the federal poverty level. 
+
+If this is the last tier, the ceiling will be unlimited!" no_magic_name="true" type="number"></midwest-input>
 </midwest-grid>
 </div>
 </template>
