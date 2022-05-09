@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.16 (2022-05-09)</small>
+
+* build(deps): Allowing empty default values ([bf65af9](https://github.com/splitinfinities/Midwest/commit/bf65af9))
+
+
+
+
+
 ## <small>0.1.15 (2022-04-12)</small>
 
 * build(deps): Adding some changes to allow portability of some things ([3fab51f](https://github.com/splitinfinities/Midwest/commit/3fab51f))
