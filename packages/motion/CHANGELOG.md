@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.17 (2022-05-20)</small>
+
+* build(deps): A couple form fixes ([fea36dd](https://github.com/splitinfinities/Midwest/commit/fea36dd))
+
+
+
+
+
 ## <small>0.1.16 (2022-05-09)</small>
 
 * build(deps): Allowing empty default values ([bf65af9](https://github.com/splitinfinities/Midwest/commit/bf65af9))
