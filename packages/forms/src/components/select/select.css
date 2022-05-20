@@ -4,7 +4,8 @@
   --item-size: 3rem;
   --background: var(--white);
   --border-color: var(--gray-2);
-  --initial-height: calc(var(--item-size) * 6);
+  --initial-height: calc(var(--item-size) * 2);
+  --max-height: calc(var(--item-size) * 6);
 
   box-sizing: border-box;
   display: block;
@@ -216,7 +217,7 @@
     transition: none;
     opacity: 1;
     pointer-events: initial;
-    max-height: calc(var(--item-size) * 10);
+    max-height: var(--max-height);
     border: 1px solid var(--border-color);
   }
 }
@@ -227,7 +228,7 @@
   transition: none;
   opacity: 1;
   pointer-events: initial;
-  max-height: calc(var(--item-size) * 10);
+  max-height: var(--max-height);
   border: 1px solid var(--border-color);
 }
 }
@@ -238,7 +239,7 @@
     max-height 200ms var(--ease) 0ms;
   opacity: 1;
   pointer-events: initial;
-  max-height: calc(var(--item-size) * 10);
+  max-height: var(--max-height);
   border: 1px solid var(--border-color);
 }
 

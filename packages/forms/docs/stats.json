@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-05-09T15:48:25",
+  "timestamp": "2022-05-20T20:50:36",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -9,7 +9,7 @@
     "fsNamespace": "forms",
     "components": 50,
     "entries": 50,
-    "bundles": 571,
+    "bundles": 579,
     "outputs": [
       {
         "name": "dist-collection",
@@ -251,7 +251,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 342,
+        "files": 350,
         "generatedFiles": [
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js",
           "./dist/cjs/_commonjsHelpers-cb2db9e6.js.map",
@@ -263,8 +263,8 @@
           "./dist/cjs/asyncForEach-d424f614.js.map",
           "./dist/cjs/colors-1aa6a2b2.js",
           "./dist/cjs/colors-1aa6a2b2.js.map",
-          "./dist/cjs/copy-wrap_22.cjs.entry.js",
-          "./dist/cjs/copy-wrap_22.cjs.entry.js.map",
+          "./dist/cjs/copy-wrap_21.cjs.entry.js",
+          "./dist/cjs/copy-wrap_21.cjs.entry.js.map",
           "./dist/cjs/darkMode-ee75726a.js",
           "./dist/cjs/darkMode-ee75726a.js.map",
           "./dist/cjs/dayjs.min-7594f47b.js",
@@ -317,6 +317,8 @@
           "./dist/cjs/midwest-panel.cjs.entry.js.map",
           "./dist/cjs/midwest-password-requirements.cjs.entry.js",
           "./dist/cjs/midwest-password-requirements.cjs.entry.js.map",
+          "./dist/cjs/midwest-repeatable-fields.cjs.entry.js",
+          "./dist/cjs/midwest-repeatable-fields.cjs.entry.js.map",
           "./dist/cjs/midwest-show-if.cjs.entry.js",
           "./dist/cjs/midwest-show-if.cjs.entry.js.map",
           "./dist/cjs/midwest-sidebar.cjs.entry.js",
@@ -349,8 +351,8 @@
           "./dist/esm/asyncForEach-c7d78bc5.js.map",
           "./dist/esm/colors-3b15fe6b.js",
           "./dist/esm/colors-3b15fe6b.js.map",
-          "./dist/esm/copy-wrap_22.entry.js",
-          "./dist/esm/copy-wrap_22.entry.js.map",
+          "./dist/esm/copy-wrap_21.entry.js",
+          "./dist/esm/copy-wrap_21.entry.js.map",
           "./dist/esm/darkMode-76deeecd.js",
           "./dist/esm/darkMode-76deeecd.js.map",
           "./dist/esm/dayjs.min-40f18934.js",
@@ -403,6 +405,8 @@
           "./dist/esm/midwest-panel.entry.js.map",
           "./dist/esm/midwest-password-requirements.entry.js",
           "./dist/esm/midwest-password-requirements.entry.js.map",
+          "./dist/esm/midwest-repeatable-fields.entry.js",
+          "./dist/esm/midwest-repeatable-fields.entry.js.map",
           "./dist/esm/midwest-show-if.entry.js",
           "./dist/esm/midwest-show-if.entry.js.map",
           "./dist/esm/midwest-sidebar.entry.js",
@@ -437,8 +441,6 @@
           "./dist/forms/p-0c502921.js.map",
           "./dist/forms/p-16f1b7c0.js",
           "./dist/forms/p-16f1b7c0.js.map",
-          "./dist/forms/p-18c41301.entry.js",
-          "./dist/forms/p-18c41301.entry.js.map",
           "./dist/forms/p-1e811be4.entry.js",
           "./dist/forms/p-1e811be4.entry.js.map",
           "./dist/forms/p-2d18704f.entry.js",
@@ -499,8 +501,12 @@
           "./dist/forms/p-c8b774f6.entry.js.map",
           "./dist/forms/p-d73c177c.entry.js",
           "./dist/forms/p-d73c177c.entry.js.map",
+          "./dist/forms/p-dd7966e6.entry.js",
+          "./dist/forms/p-dd7966e6.entry.js.map",
           "./dist/forms/p-e39b36a7.entry.js",
           "./dist/forms/p-e39b36a7.entry.js.map",
+          "./dist/forms/p-e6aca934.entry.js",
+          "./dist/forms/p-e6aca934.entry.js.map",
           "./dist/forms/p-ed163ee5.js",
           "./dist/forms/p-ed163ee5.js.map",
           "./dist/forms/p-f2034e9c.entry.js",
@@ -523,8 +529,6 @@
           "./www/build/p-0c502921.js.map",
           "./www/build/p-16f1b7c0.js",
           "./www/build/p-16f1b7c0.js.map",
-          "./www/build/p-18c41301.entry.js",
-          "./www/build/p-18c41301.entry.js.map",
           "./www/build/p-1e811be4.entry.js",
           "./www/build/p-1e811be4.entry.js.map",
           "./www/build/p-2d18704f.entry.js",
@@ -585,8 +589,12 @@
           "./www/build/p-c8b774f6.entry.js.map",
           "./www/build/p-d73c177c.entry.js",
           "./www/build/p-d73c177c.entry.js.map",
+          "./www/build/p-dd7966e6.entry.js",
+          "./www/build/p-dd7966e6.entry.js.map",
           "./www/build/p-e39b36a7.entry.js",
           "./www/build/p-e39b36a7.entry.js.map",
+          "./www/build/p-e6aca934.entry.js",
+          "./www/build/p-e6aca934.entry.js.map",
           "./www/build/p-ed163ee5.js",
           "./www/build/p-ed163ee5.js.map",
           "./www/build/p-f2034e9c.entry.js",
@@ -624,7 +632,7 @@
   "formats": {
     "esmBrowser": [
       {
-        "key": "copy-wrap.ion-icon.midwest-avatar.midwest-box.midwest-button.midwest-callout.midwest-card.midwest-form.midwest-form-rollup.midwest-grid.midwest-group.midwest-group-overflow.midwest-input.midwest-item.midwest-label.midwest-layout.midwest-progress.midwest-repeatable-fields.midwest-select.midwest-tag.midwest-tooltip.midwest-validate.entry",
+        "key": "copy-wrap.ion-icon.midwest-avatar.midwest-box.midwest-button.midwest-callout.midwest-card.midwest-form.midwest-form-rollup.midwest-grid.midwest-group.midwest-group-overflow.midwest-input.midwest-item.midwest-label.midwest-layout.midwest-progress.midwest-select.midwest-tag.midwest-tooltip.midwest-validate.entry",
         "components": [
           "copy-wrap",
           "ion-icon",
@@ -643,14 +651,13 @@
           "midwest-label",
           "midwest-layout",
           "midwest-progress",
-          "midwest-repeatable-fields",
           "midwest-select",
           "midwest-tag",
           "midwest-tooltip",
           "midwest-validate"
         ],
-        "bundleId": "p-18c41301",
-        "fileName": "p-18c41301.entry.js",
+        "bundleId": "p-e6aca934",
+        "fileName": "p-e6aca934.entry.js",
         "imports": [
           "p-717c8eab.js",
           "p-4af0a0ee.js",
@@ -663,7 +670,7 @@
           "p-f6c733ff.js",
           "p-0c502921.js"
         ],
-        "originalByteSize": 394359
+        "originalByteSize": 389564
       },
       {
         "key": "animated-route-switch.entry",
@@ -915,6 +922,20 @@
         "originalByteSize": 3126
       },
       {
+        "key": "midwest-repeatable-fields.entry",
+        "components": [
+          "midwest-repeatable-fields"
+        ],
+        "bundleId": "p-dd7966e6",
+        "fileName": "p-dd7966e6.entry.js",
+        "imports": [
+          "p-717c8eab.js",
+          "p-16f1b7c0.js",
+          "p-f6c733ff.js"
+        ],
+        "originalByteSize": 5098
+      },
+      {
         "key": "midwest-show-if.entry",
         "components": [
           "midwest-show-if"
@@ -1092,7 +1113,7 @@
     ],
     "esm": [
       {
-        "key": "copy-wrap.ion-icon.midwest-avatar.midwest-box.midwest-button.midwest-callout.midwest-card.midwest-form.midwest-form-rollup.midwest-grid.midwest-group.midwest-group-overflow.midwest-input.midwest-item.midwest-label.midwest-layout.midwest-progress.midwest-repeatable-fields.midwest-select.midwest-tag.midwest-tooltip.midwest-validate.entry",
+        "key": "copy-wrap.ion-icon.midwest-avatar.midwest-box.midwest-button.midwest-callout.midwest-card.midwest-form.midwest-form-rollup.midwest-grid.midwest-group.midwest-group-overflow.midwest-input.midwest-item.midwest-label.midwest-layout.midwest-progress.midwest-select.midwest-tag.midwest-tooltip.midwest-validate.entry",
         "components": [
           "copy-wrap",
           "ion-icon",
@@ -1111,14 +1132,13 @@
           "midwest-label",
           "midwest-layout",
           "midwest-progress",
-          "midwest-repeatable-fields",
           "midwest-select",
           "midwest-tag",
           "midwest-tooltip",
           "midwest-validate"
         ],
-        "bundleId": "copy-wrap_22",
-        "fileName": "copy-wrap_22.entry.js",
+        "bundleId": "copy-wrap_21",
+        "fileName": "copy-wrap_21.entry.js",
         "imports": [
           "index-5bcf352d.js",
           "dayjs.min-40f18934.js",
@@ -1131,7 +1151,7 @@
           "_commonjsHelpers-856c13bf.js",
           "main-3ef50fdf.js"
         ],
-        "originalByteSize": 394426
+        "originalByteSize": 389631
       },
       {
         "key": "animated-route-switch.entry",
@@ -1383,6 +1403,20 @@
         "originalByteSize": 3168
       },
       {
+        "key": "midwest-repeatable-fields.entry",
+        "components": [
+          "midwest-repeatable-fields"
+        ],
+        "bundleId": "midwest-repeatable-fields",
+        "fileName": "midwest-repeatable-fields.entry.js",
+        "imports": [
+          "index-5bcf352d.js",
+          "index-216e665c.js",
+          "_commonjsHelpers-856c13bf.js"
+        ],
+        "originalByteSize": 5121
+      },
+      {
         "key": "midwest-show-if.entry",
         "components": [
           "midwest-show-if"
@@ -1562,7 +1596,7 @@
     "system": [],
     "commonjs": [
       {
-        "key": "copy-wrap.ion-icon.midwest-avatar.midwest-box.midwest-button.midwest-callout.midwest-card.midwest-form.midwest-form-rollup.midwest-grid.midwest-group.midwest-group-overflow.midwest-input.midwest-item.midwest-label.midwest-layout.midwest-progress.midwest-repeatable-fields.midwest-select.midwest-tag.midwest-tooltip.midwest-validate.entry",
+        "key": "copy-wrap.ion-icon.midwest-avatar.midwest-box.midwest-button.midwest-callout.midwest-card.midwest-form.midwest-form-rollup.midwest-grid.midwest-group.midwest-group-overflow.midwest-input.midwest-item.midwest-label.midwest-layout.midwest-progress.midwest-select.midwest-tag.midwest-tooltip.midwest-validate.entry",
         "components": [
           "copy-wrap",
           "ion-icon",
@@ -1581,14 +1615,13 @@
           "midwest-label",
           "midwest-layout",
           "midwest-progress",
-          "midwest-repeatable-fields",
           "midwest-select",
           "midwest-tag",
           "midwest-tooltip",
           "midwest-validate"
         ],
-        "bundleId": "copy-wrap_22.cjs",
-        "fileName": "copy-wrap_22.cjs.entry.js",
+        "bundleId": "copy-wrap_21.cjs",
+        "fileName": "copy-wrap_21.cjs.entry.js",
         "imports": [
           "index-2923bbbf.js",
           "dayjs.min-7594f47b.js",
@@ -1601,7 +1634,7 @@
           "_commonjsHelpers-cb2db9e6.js",
           "main-8e97029e.js"
         ],
-        "originalByteSize": 398283
+        "originalByteSize": 393413
       },
       {
         "key": "animated-route-switch.entry",
@@ -1851,6 +1884,20 @@
           "_commonjsHelpers-cb2db9e6.js"
         ],
         "originalByteSize": 3257
+      },
+      {
+        "key": "midwest-repeatable-fields.entry",
+        "components": [
+          "midwest-repeatable-fields"
+        ],
+        "bundleId": "midwest-repeatable-fields.cjs",
+        "fileName": "midwest-repeatable-fields.cjs.entry.js",
+        "imports": [
+          "index-2923bbbf.js",
+          "index-73a2de1e.js",
+          "_commonjsHelpers-cb2db9e6.js"
+        ],
+        "originalByteSize": 5200
       },
       {
         "key": "midwest-show-if.entry",
@@ -23531,290 +23578,6 @@
           ]
         },
         {
-          "tagName": "midwest-repeatable-fields",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "RepeatableFields",
-          "elementRef": "element",
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "data",
-              "type": "string",
-              "attribute": "data",
-              "reflect": true,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "custom",
-              "type": "boolean",
-              "attribute": "custom",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "verbiage",
-              "type": "string",
-              "attribute": "verbiage",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "\"Item\"",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "addOneIfEmpty",
-              "type": "boolean",
-              "attribute": "add-one-if-empty",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "readonly",
-              "type": "boolean",
-              "attribute": "readonly",
-              "reflect": true,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "content"
-            },
-            {
-              "name": "count"
-            }
-          ],
-          "methods": [
-            {
-              "name": "removeByIndex",
-              "docs": {
-                "text": "",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(index: number) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [
-            {
-              "name": "delete-entry",
-              "method": "handleDeleteEntry",
-              "capture": false,
-              "passive": false
-            }
-          ],
-          "events": [
-            {
-              "name": "update",
-              "method": "update",
-              "bubbles": true,
-              "cancelable": true,
-              "composed": true,
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "complexType": {
-                "original": "any",
-                "resolved": "any",
-                "references": {}
-              },
-              "internal": false
-            }
-          ],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MIDWEST-REPEATABLE-FIELDS",
-              "styleStr": null,
-              "styleIdentifier": "midwestRepeatableFieldsStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/Users/will/Sites/midwest/packages/forms/src/components/repeatable-fields/repeatable-fields.css",
-                  "relativePath": "repeatable-fields.css",
-                  "originalComponentPath": "repeatable-fields.css"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/Users/will/Sites/midwest/packages/forms/src/components/repeatable-fields/repeatable-fields.js",
-          "sourceFilePath": "/Users/will/Sites/midwest/packages/forms/src/components/repeatable-fields/repeatable-fields.tsx",
-          "sourceMapPath": "/Users/will/Sites/midwest/packages/forms/src/components/repeatable-fields/repeatable-fields.js.map",
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": true,
-          "hasComponentDidLoadFn": true,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": false,
-          "hasDisconnectedCallbackFn": false,
-          "hasElement": false,
-          "hasEvent": true,
-          "hasLifecycle": true,
-          "hasListener": true,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": true,
-          "hasReflect": true,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": true,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": true,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "cols",
-            "responsive",
-            "ref",
-            "class",
-            "name",
-            "outline",
-            "tag",
-            "onClick",
-            "onKeyDown",
-            "slot"
-          ],
-          "htmlTagNames": [
-            "midwest-grid",
-            "midwest-empty",
-            "slot",
-            "midwest-button",
-            "ion-icon"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [
-            "midwest-grid",
-            "midwest-empty",
-            "midwest-button",
-            "ion-icon"
-          ],
-          "directDependencies": [
-            "midwest-grid",
-            "midwest-button",
-            "ion-icon"
-          ],
-          "dependencies": [
-            "ion-icon",
-            "midwest-button",
-            "midwest-grid",
-            "midwest-label",
-            "midwest-progress"
-          ],
-          "dependents": [],
-          "directDependents": []
-        },
-        {
           "tagName": "midwest-select",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -25537,7 +25300,7 @@
           ]
         }
       ],
-      "entryKey": "copy-wrap.ion-icon.midwest-avatar.midwest-box.midwest-button.midwest-callout.midwest-card.midwest-form.midwest-form-rollup.midwest-grid.midwest-group.midwest-group-overflow.midwest-input.midwest-item.midwest-label.midwest-layout.midwest-progress.midwest-repeatable-fields.midwest-select.midwest-tag.midwest-tooltip.midwest-validate.entry"
+      "entryKey": "copy-wrap.ion-icon.midwest-avatar.midwest-box.midwest-button.midwest-callout.midwest-card.midwest-form.midwest-form-rollup.midwest-grid.midwest-group.midwest-group-overflow.midwest-input.midwest-item.midwest-label.midwest-layout.midwest-progress.midwest-select.midwest-tag.midwest-tooltip.midwest-validate.entry"
     },
     {
       "cmps": [
@@ -30299,6 +30062,295 @@
     {
       "cmps": [
         {
+          "tagName": "midwest-repeatable-fields",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "RepeatableFields",
+          "elementRef": "element",
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "data",
+              "type": "string",
+              "attribute": "data",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "custom",
+              "type": "boolean",
+              "attribute": "custom",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "verbiage",
+              "type": "string",
+              "attribute": "verbiage",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"Item\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "addOneIfEmpty",
+              "type": "boolean",
+              "attribute": "add-one-if-empty",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "readonly",
+              "type": "boolean",
+              "attribute": "readonly",
+              "reflect": true,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "content"
+            },
+            {
+              "name": "count"
+            }
+          ],
+          "methods": [
+            {
+              "name": "removeByIndex",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(index: number) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [
+            {
+              "name": "delete-entry",
+              "method": "handleDeleteEntry",
+              "capture": false,
+              "passive": false
+            }
+          ],
+          "events": [
+            {
+              "name": "update",
+              "method": "update",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MIDWEST-REPEATABLE-FIELDS",
+              "styleStr": null,
+              "styleIdentifier": "midwestRepeatableFieldsStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/Users/will/Sites/midwest/packages/forms/src/components/repeatable-fields/repeatable-fields.css",
+                  "relativePath": "repeatable-fields.css",
+                  "originalComponentPath": "repeatable-fields.css"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/Users/will/Sites/midwest/packages/forms/src/components/repeatable-fields/repeatable-fields.js",
+          "sourceFilePath": "/Users/will/Sites/midwest/packages/forms/src/components/repeatable-fields/repeatable-fields.tsx",
+          "sourceMapPath": "/Users/will/Sites/midwest/packages/forms/src/components/repeatable-fields/repeatable-fields.js.map",
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": true,
+          "hasComponentDidLoadFn": true,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": true,
+          "hasListener": true,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": true,
+          "hasReflect": true,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": true,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": true,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "cols",
+            "responsive",
+            "ref",
+            "class",
+            "name",
+            "outline",
+            "tag",
+            "onClick",
+            "onKeyDown",
+            "slot"
+          ],
+          "htmlTagNames": [
+            "midwest-grid",
+            "midwest-empty",
+            "slot",
+            "midwest-button",
+            "ion-icon"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "midwest-grid",
+            "midwest-empty",
+            "midwest-button",
+            "ion-icon"
+          ],
+          "directDependencies": [
+            "midwest-grid",
+            "midwest-button",
+            "ion-icon"
+          ],
+          "dependencies": [
+            "ion-icon",
+            "midwest-button",
+            "midwest-grid",
+            "midwest-label",
+            "midwest-progress"
+          ],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "midwest-repeatable-fields.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "midwest-show-if",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -34931,15 +34983,8 @@
     ],
     "sc-midwest-repeatable-fields": [
       "p-717c8eab.js",
-      "p-4af0a0ee.js",
-      "p-09396ade.js",
-      "p-5866cdea.js",
       "p-16f1b7c0.js",
-      "p-4d23a23e.js",
-      "p-ed163ee5.js",
-      "p-46cbd112.js",
-      "p-f6c733ff.js",
-      "p-0c502921.js"
+      "p-f6c733ff.js"
     ],
     "sc-midwest-select": [
       "p-717c8eab.js",

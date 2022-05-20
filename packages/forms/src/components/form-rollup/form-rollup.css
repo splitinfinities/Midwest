@@ -18,6 +18,10 @@
   margin: auto 0 auto 0.5rem;
 }
 
+:host .flourish {
+  display: none;
+}
+
 :host midwest-group {
   overflow: initial;
 }

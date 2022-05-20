@@ -13,43 +13,111 @@
   <body>
 <midwest-layout padding='tiny' size='medium' style='--layout-grid-gap: 2rem;'>
 
-<midwest-form  action="/updated/pricings" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="eEgt7OSlqEyxzU11Xpzz2Aa/5ftYzaj8u3f7+BijLiFQ3l40G8zOTQT172zsItI4NFYEh0IU6xZMcYWIJBQdfQ==" /><midwest-layout size='medium' style='--layout-grid-gap: 2rem;'>
-
-<midwest-card class=' filter drop-shadow' flip-icon='create'>
-<header class='flex'>
-<h3>Edit Pricing Model (Pricing Name)</h3>
+<midwest-form  class="focus-within:z-10" action="/admin/caregiver_applications/2095" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="bINVbndXV/4Vzur9yZtx9vO9b+T3FKy6ZX8vyidQWCxCjnlyZgdoTlGnb7sYVVxf+Uub8LZnEOvPCmf3JQZkzA==" /><midwest-card class=' filter drop-shadow' flip-icon='create'>
+<header class='flush'>
+<h4>Caregiver Application #2095</h4>
 </header>
-<section>
-<midwest-grid cols='1' column-gap='1rem' responsive='false'>
-<midwest-input name="pricing[name]" label="Name"></midwest-input>
-<midwest-input min="2000" max="2100" type="number" name="pricing[year]" label="Year" value="2022"></midwest-input>
-<midwest-select name="pricing[region]" no-avatars="true" label="Region" value="1"><midwest-item value="1" label="Omaha <small class='text-gray-6 block'>(Offers Cello, Violin, Viola, and Bass classes)</small>" checked="checked" tag="checkbox" content="Omaha <small class='text-gray-6 block'>(Offers Cello, Violin, Viola, and Bass classes)</small>" settable-content="false">Omaha <small class='text-gray-6 block'>(Offers Cello, Violin, Viola, and Bass classes)</small></midwest-item><midwest-item value="2" label="Scottsbluff <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Scottsbluff <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Scottsbluff <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="4" label="Council Bluffs <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Council Bluffs <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Council Bluffs <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="5" label="Kansas City <small class='text-gray-6 block'>(Offers Cello and Violin classes)</small>" tag="checkbox" content="Kansas City <small class='text-gray-6 block'>(Offers Cello and Violin classes)</small>" settable-content="false">Kansas City <small class='text-gray-6 block'>(Offers Cello and Violin classes)</small></midwest-item><midwest-item value="7" label="Fullerton School District, Fullerton CA <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Fullerton School District, Fullerton CA <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Fullerton School District, Fullerton CA <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="8" label="Fremont <small class='text-gray-6 block'>(Offers Violin classes)</small>" tag="checkbox" content="Fremont <small class='text-gray-6 block'>(Offers Violin classes)</small>" settable-content="false">Fremont <small class='text-gray-6 block'>(Offers Violin classes)</small></midwest-item></midwest-select>
-<midwest-repeatable-fields add-one-if-empty class='block' data='{"1":{"name":"Free","price":"0","percentage":"200"},"2":{"name":"Charged","price":"600","percentage":"201"}}' verbiage='Pricing tier'>
-<template>
-<div class='bg-gray-0 p-6 b rounded border-default border-gray-1 relative'>
-<midwest-grid column-gap='1' column-width='150'>
-<midwest-input name="pricing[tiers][{index}][name]" label="Tier Name" no_magic_name="true"></midwest-input>
-<midwest-input name="pricing[tiers][{index}][price]" label="Price" no_magic_name="true" type="currency"></midwest-input>
-<midwest-input name="pricing[tiers][{index}][percentage]" label="Percentage of Poverty Level" tooltip="From the previous tier&#39;s value to this value. 
+<section class='flush'>
+<midwest-grid cols='1' column-gap='1' responsive='false'>
 
-If this is the first tier, the floor is 0% of the federal poverty level. 
-
-If this is the last tier, the ceiling will be unlimited!" no_magic_name="true" type="number"></midwest-input>
-</midwest-grid>
-</div>
-</template>
-</midwest-repeatable-fields>
+<midwest-input value="review" name="caregiver_application[step_name]" label="Step name" type="hidden"></midwest-input>
+<midwest-select placeholder="Choose an application status..." name="caregiver_application[caregiver_application_status_id]" no-avatars="true" label="Caregiver application status" value="1"><midwest-item value="2" label="        Submitted
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>Finished and submitted app, on-screen message thanking them and we'll be in touch.</small>
+" tag="checkbox" content="        Submitted
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>Finished and submitted app, on-screen message thanking them and we'll be in touch.</small>
+" settable-content="false">        Submitted
+        <small class="flourish text-xs text-gray-4 block">Finished and submitted app, on-screen message thanking them and we'll be in touch.</small>
+</midwest-item><midwest-item value="14" label="        Done
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>Changes to Done once Liz manually sends the bulk emails containing class assignment info.</small>
+" tag="checkbox" content="        Done
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>Changes to Done once Liz manually sends the bulk emails containing class assignment info.</small>
+" settable-content="false">        Done
+        <small class="flourish text-xs text-gray-4 block">Changes to Done once Liz manually sends the bulk emails containing class assignment info.</small>
+</midwest-item><midwest-item value="1" label="        Draft
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>The application is incomplete</small>
+" checked="checked" tag="checkbox" content="        Draft
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>The application is incomplete</small>
+" settable-content="false">        Draft
+        <small class="flourish text-xs text-gray-4 block">The application is incomplete</small>
+</midwest-item><midwest-item value="3" label="        Hold
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>The application is on hold pending additional information</small>
+" tag="checkbox" content="        Hold
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>The application is on hold pending additional information</small>
+" settable-content="false">        Hold
+        <small class="flourish text-xs text-gray-4 block">The application is on hold pending additional information</small>
+</midwest-item><midwest-item value="8" label="        Partially Accepted
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>At least one applicant has been accepted</small>
+" tag="checkbox" content="        Partially Accepted
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>At least one applicant has been accepted</small>
+" settable-content="false">        Partially Accepted
+        <small class="flourish text-xs text-gray-4 block">At least one applicant has been accepted</small>
+</midwest-item><midwest-item value="13" label="        Pending
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;></small>
+" tag="checkbox" content="        Pending
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;></small>
+" settable-content="false">        Pending
+        <small class="flourish text-xs text-gray-4 block"></small>
+</midwest-item><midwest-item value="15" label="        Fully Accepted
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;></small>
+" tag="checkbox" content="        Fully Accepted
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;></small>
+" settable-content="false">        Fully Accepted
+        <small class="flourish text-xs text-gray-4 block"></small>
+</midwest-item><midwest-item value="16" label="        Age Rejection
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;></small>
+" tag="checkbox" content="        Age Rejection
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;></small>
+" settable-content="false">        Age Rejection
+        <small class="flourish text-xs text-gray-4 block"></small>
+</midwest-item><midwest-item value="35" label="        In Progress
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>They've received email to get their payment, waiting on payment. Also applies to families with one or more students not in age range - Liz sends manual email about age.</small>
+" tag="checkbox" content="        In Progress
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>They've received email to get their payment, waiting on payment. Also applies to families with one or more students not in age range - Liz sends manual email about age.</small>
+" settable-content="false">        In Progress
+        <small class="flourish text-xs text-gray-4 block">They've received email to get their payment, waiting on payment. Also applies to families with one or more students not in age range - Liz sends manual email about age.</small>
+</midwest-item><midwest-item value="36" label="        Ready to Enroll
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>Payment made.</small>
+" tag="checkbox" content="        Ready to Enroll
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>Payment made.</small>
+" settable-content="false">        Ready to Enroll
+        <small class="flourish text-xs text-gray-4 block">Payment made.</small>
+</midwest-item><midwest-item value="37" label="        Enrolled
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>Placed into class.</small>
+" tag="checkbox" content="        Enrolled
+        <small class=&quot;flourish text-xs text-gray-4 block&quot;>Placed into class.</small>
+" settable-content="false">        Enrolled
+        <small class="flourish text-xs text-gray-4 block">Placed into class.</small>
+</midwest-item></midwest-select>
+<midwest-select placeholder="Choose your region..." name="caregiver_application[region_id]" no-avatars="true" label="Region" value="1"><midwest-item value="1" label="Omaha <small class='flourish text-xs text-gray-4 block'>(Offers Cello, Violin, Viola, and Bass classes)</small>" checked="checked" tag="checkbox" content="Omaha <small class='flourish text-xs text-gray-4 block'>(Offers Cello, Violin, Viola, and Bass classes)</small>" settable-content="false">Omaha <small class='flourish text-xs text-gray-4 block'>(Offers Cello, Violin, Viola, and Bass classes)</small></midwest-item><midwest-item value="2" label="Scottsbluff <small class='flourish text-xs text-gray-4 block'>(Offers Violin classes)</small>" tag="checkbox" content="Scottsbluff <small class='flourish text-xs text-gray-4 block'>(Offers Violin classes)</small>" settable-content="false">Scottsbluff <small class='flourish text-xs text-gray-4 block'>(Offers Violin classes)</small></midwest-item><midwest-item value="4" label="Council Bluffs <small class='flourish text-xs text-gray-4 block'>(Offers Violin classes)</small>" tag="checkbox" content="Council Bluffs <small class='flourish text-xs text-gray-4 block'>(Offers Violin classes)</small>" settable-content="false">Council Bluffs <small class='flourish text-xs text-gray-4 block'>(Offers Violin classes)</small></midwest-item></midwest-select>
+<midwest-select placeholder="Choose the program cycle..." name="caregiver_application[program_cycle_id]" no-avatars="true" label="Program cycle" value="43"><midwest-item value="42" label="2022-2023 - Scottsbluff" tag="checkbox" content="2022-2023 - Scottsbluff" settable-content="false">2022-2023 - Scottsbluff</midwest-item><midwest-item value="43" label="2022-2023 - Omaha" checked="checked" tag="checkbox" content="2022-2023 - Omaha" settable-content="false">2022-2023 - Omaha</midwest-item><midwest-item value="44" label="2022-2023 - Council Bluffs" tag="checkbox" content="2022-2023 - Council Bluffs" settable-content="false">2022-2023 - Council Bluffs</midwest-item></midwest-select>
 </midwest-grid>
 </section>
-
-<footer class='flex'>
-<midwest-button tag="submit" name="pricing[]" label="">Save</midwest-button>
-<midwest-button ghost="true" class="theme-red" href="/updated/pricings">Cancel
-</midwest-button></footer>
+<footer class='flush flex'>
+<midwest-button tag="submit" name="caregiver_application[]" label="">Save</midwest-button>
+</footer>
 
 </midwest-card>
+</midwest-form><midwest-form  class="focus-within:z-10" action="/admin/caregiver_applications/2095/students/c26b8946-5813-413d-a7ea-6ea5d7563de1" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="BAQxITOUrus546rvq6F5RDB44tvWgwuFZawjmYN5lx2nxEKd0uzePTb1Ui4FRwpQvMUYa3bt7OyHrNwsRzqjfA==" /><midwest-card class=' filter drop-shadow' flip-icon='create'>
+<header class='flush'>
+<h4>
+Student:
+Willy Riley
+</h4>
+</header>
+<section class='flush'>
+<midwest-grid cols='1' column-gap='1' responsive='false'>
 
-</midwest-layout>
+<midwest-input value="review" name="student[step_name]" label="Step name" type="hidden"></midwest-input>
+<midwest-input value="8581" name="student[student_meeting_id]" label="Student meeting" type="hidden"></midwest-input>
+<midwest-select placeholder="Choose this students application status..." name="student[caregiver_application_status_id]" no-avatars="true" label="Caregiver application status"><midwest-item value="4" label="Age Hold" tag="checkbox" content="Age Hold" settable-content="false">Age Hold</midwest-item><midwest-item value="5" label="Financial Hold" tag="checkbox" content="Financial Hold" settable-content="false">Financial Hold</midwest-item><midwest-item value="6" label="Accepted" checked="checked" tag="checkbox" content="Accepted" settable-content="false">Accepted</midwest-item><midwest-item value="9" label="Age Rejection - Young" tag="checkbox" content="Age Rejection - Young" settable-content="false">Age Rejection - Young</midwest-item><midwest-item value="10" label="Age Rejection - Old" tag="checkbox" content="Age Rejection - Old" settable-content="false">Age Rejection - Old</midwest-item><midwest-item value="11" label="Financial Rejection" tag="checkbox" content="Financial Rejection" settable-content="false">Financial Rejection</midwest-item></midwest-select>
+<midwest-select placeholder="Choose the class this student is enrolled in..." description="Cello level 2" name="student[meeting_id]" no-avatars="true" label="Meeting"><midwest-item value="" label="No preference" tag="checkbox" content="No preference" settable-content="false">No preference</midwest-item><midwest-item value="741" label="L2 OCoM Monday 4:30 Cello 22-23" checked="checked" tag="checkbox" content="L2 OCoM Monday 4:30 Cello 22-23" settable-content="false">L2 OCoM Monday 4:30 Cello 22-23</midwest-item><midwest-item value="769" label="L2 Midtown TBD Wednesday 5:45 Cello 22-23 HOLD" tag="checkbox" content="L2 Midtown TBD Wednesday 5:45 Cello 22-23 HOLD" settable-content="false">L2 Midtown TBD Wednesday 5:45 Cello 22-23 HOLD</midwest-item></midwest-select>
+</midwest-grid>
+</section>
+<footer class='flush flex'>
+<midwest-button tag="submit" name="student[]" label="">Save</midwest-button>
+</footer>
+
+</midwest-card>
 </midwest-form>
 
 </midwest-layout>
