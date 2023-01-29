@@ -85,6 +85,7 @@ export namespace Components {
         "controls": boolean;
         "getDuration": () => Promise<number>;
         "height": number;
+        "loop": boolean;
         "muted": boolean;
         "overlay": boolean;
         "pause": () => Promise<void>;
@@ -272,6 +273,7 @@ declare namespace LocalJSX {
         "autoplay"?: boolean;
         "controls"?: boolean;
         "height"?: number;
+        "loop"?: boolean;
         "muted"?: boolean;
         "onLoaded"?: (event: CustomEvent<any>) => void;
         "onPaused"?: (event: CustomEvent<any>) => void;

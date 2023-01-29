@@ -350,6 +350,10 @@
           "description": ""
         },
         {
+          "name": "loop",
+          "description": ""
+        },
+        {
           "name": "muted",
           "description": ""
         },

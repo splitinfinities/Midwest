@@ -12,12 +12,13 @@
 | `autoplay`    | `autoplay`      |             | `boolean` | `false`     |
 | `controls`    | `controls`      |             | `boolean` | `true`      |
 | `height`      | `height`        |             | `number`  | `undefined` |
+| `loop`        | `loop`          |             | `boolean` | `false`     |
 | `muted`       | `muted`         |             | `boolean` | `false`     |
 | `overlay`     | `overlay`       |             | `boolean` | `undefined` |
 | `playing`     | `playing`       |             | `boolean` | `false`     |
 | `playsinline` | `playsinline`   |             | `boolean` | `false`     |
 | `poster`      | `poster`        |             | `string`  | `undefined` |
-| `preload`     | `preload`       |             | `string`  | `"auto"`    |
+| `preload`     | `preload`       |             | `string`  | `'auto'`    |
 | `trackInView` | `track-in-view` |             | `boolean` | `true`      |
 | `width`       | `width`         |             | `number`  | `undefined` |
 

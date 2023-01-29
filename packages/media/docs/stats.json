@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-05-20T20:50:33",
+  "timestamp": "2023-01-29T03:27:11",
   "compiler": {
     "name": "node",
     "version": "16.14.0"
@@ -265,26 +265,26 @@
           "./dist/media/p-049cc99b.entry.js.map",
           "./dist/media/p-0f122cd8.entry.js",
           "./dist/media/p-0f122cd8.entry.js.map",
-          "./dist/media/p-1c325254.entry.js",
-          "./dist/media/p-1c325254.entry.js.map",
           "./dist/media/p-28ba1795.entry.js",
           "./dist/media/p-28ba1795.entry.js.map",
           "./dist/media/p-3356e686.entry.js",
           "./dist/media/p-3356e686.entry.js.map",
           "./dist/media/p-3a64cfc3.entry.js",
           "./dist/media/p-3a64cfc3.entry.js.map",
+          "./dist/media/p-3ada9c17.entry.js",
+          "./dist/media/p-3ada9c17.entry.js.map",
           "./dist/media/p-41bd01e1.entry.js",
           "./dist/media/p-41bd01e1.entry.js.map",
           "./dist/media/p-4479b7df.js",
           "./dist/media/p-4479b7df.js.map",
           "./dist/media/p-4a3e48dc.entry.js",
           "./dist/media/p-4a3e48dc.entry.js.map",
-          "./dist/media/p-567f6f41.entry.js",
-          "./dist/media/p-567f6f41.entry.js.map",
           "./dist/media/p-5903483d.js",
           "./dist/media/p-5903483d.js.map",
           "./dist/media/p-5bedf06c.entry.js",
           "./dist/media/p-5bedf06c.entry.js.map",
+          "./dist/media/p-6183097b.entry.js",
+          "./dist/media/p-6183097b.entry.js.map",
           "./dist/media/p-66023a9c.entry.js",
           "./dist/media/p-66023a9c.entry.js.map",
           "./dist/media/p-6ab84bd3.entry.js",
@@ -321,26 +321,26 @@
           "./www/build/p-049cc99b.entry.js.map",
           "./www/build/p-0f122cd8.entry.js",
           "./www/build/p-0f122cd8.entry.js.map",
-          "./www/build/p-1c325254.entry.js",
-          "./www/build/p-1c325254.entry.js.map",
           "./www/build/p-28ba1795.entry.js",
           "./www/build/p-28ba1795.entry.js.map",
           "./www/build/p-3356e686.entry.js",
           "./www/build/p-3356e686.entry.js.map",
           "./www/build/p-3a64cfc3.entry.js",
           "./www/build/p-3a64cfc3.entry.js.map",
+          "./www/build/p-3ada9c17.entry.js",
+          "./www/build/p-3ada9c17.entry.js.map",
           "./www/build/p-41bd01e1.entry.js",
           "./www/build/p-41bd01e1.entry.js.map",
           "./www/build/p-4479b7df.js",
           "./www/build/p-4479b7df.js.map",
           "./www/build/p-4a3e48dc.entry.js",
           "./www/build/p-4a3e48dc.entry.js.map",
-          "./www/build/p-567f6f41.entry.js",
-          "./www/build/p-567f6f41.entry.js.map",
           "./www/build/p-5903483d.js",
           "./www/build/p-5903483d.js.map",
           "./www/build/p-5bedf06c.entry.js",
           "./www/build/p-5bedf06c.entry.js.map",
+          "./www/build/p-6183097b.entry.js",
+          "./www/build/p-6183097b.entry.js.map",
           "./www/build/p-66023a9c.entry.js",
           "./www/build/p-66023a9c.entry.js.map",
           "./www/build/p-6ab84bd3.entry.js",
@@ -426,14 +426,14 @@
         "components": [
           "midwest-image"
         ],
-        "bundleId": "p-1c325254",
-        "fileName": "p-1c325254.entry.js",
+        "bundleId": "p-3ada9c17",
+        "fileName": "p-3ada9c17.entry.js",
         "imports": [
           "p-b3f4479e.js",
           "p-b46e1302.js",
           "p-a577e61e.js"
         ],
-        "originalByteSize": 32179
+        "originalByteSize": 32276
       },
       {
         "key": "midwest-interview.entry",
@@ -573,14 +573,14 @@
         "components": [
           "midwest-video"
         ],
-        "bundleId": "p-567f6f41",
-        "fileName": "p-567f6f41.entry.js",
+        "bundleId": "p-6183097b",
+        "fileName": "p-6183097b.entry.js",
         "imports": [
           "p-b3f4479e.js",
           "p-5903483d.js",
           "p-a577e61e.js"
         ],
-        "originalByteSize": 4598
+        "originalByteSize": 4641
       },
       {
         "key": "web-audio.web-audio-source.entry",
@@ -666,7 +666,7 @@
           "index-ce34695c.js",
           "_commonjsHelpers-26a50a15.js"
         ],
-        "originalByteSize": 32202
+        "originalByteSize": 32299
       },
       {
         "key": "midwest-interview.entry",
@@ -813,7 +813,7 @@
           "css-custom-properties.min-8ef2b0ba.js",
           "_commonjsHelpers-26a50a15.js"
         ],
-        "originalByteSize": 4641
+        "originalByteSize": 4684
       },
       {
         "key": "web-audio.web-audio-source.entry",
@@ -901,7 +901,7 @@
           "index-b3ec0b83.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
-        "originalByteSize": 32311
+        "originalByteSize": 32408
       },
       {
         "key": "midwest-interview.entry",
@@ -1048,7 +1048,7 @@
           "css-custom-properties.min-36ba1d6c.js",
           "_commonjsHelpers-b2f405b5.js"
         ],
-        "originalByteSize": 4753
+        "originalByteSize": 4796
       },
       {
         "key": "web-audio.web-audio-source.entry",
@@ -3298,7 +3298,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"auto\"",
+          "defaultValue": "'auto'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -3314,6 +3314,26 @@
           "name": "autoplay",
           "type": "boolean",
           "attribute": "autoplay",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "loop",
+          "type": "boolean",
+          "attribute": "loop",
           "reflect": false,
           "mutable": false,
           "required": false,
@@ -9299,7 +9319,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"auto\"",
+              "defaultValue": "'auto'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -9315,6 +9335,26 @@
               "name": "autoplay",
               "type": "boolean",
               "attribute": "autoplay",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "loop",
+              "type": "boolean",
+              "attribute": "loop",
               "reflect": false,
               "mutable": false,
               "required": false,
@@ -9759,6 +9799,7 @@
             "width",
             "height",
             "autoplay",
+            "loop",
             "muted",
             "playsinline",
             "poster",
