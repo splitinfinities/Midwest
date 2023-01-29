@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.18 (2023-01-29)</small>
+
+* build(deps): prepare next version ([d91db9f](https://github.com/splitinfinities/Midwest/commit/d91db9f))
+
+
+
+
+
 ## <small>0.1.17 (2022-05-20)</small>
 
 * build(deps): A couple form fixes ([fea36dd](https://github.com/splitinfinities/Midwest/commit/fea36dd))
